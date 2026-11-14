@@ -1,0 +1,84 @@
+# Experiment configurations for each main table.
+# Edit N or templates per table if you want a smaller / larger evaluation budget.
+# Every pair uses the `seeds` value of its table (VoiceCraft and EdiTTS in Table 2:
+# `system_seeds`). Tables A2 and A10 have no section here and use seed 42. The pairs in
+# configs/pair_seeds.csv are the exceptions and use the seed listed there.
+
+table1_cross_lingual:
+  description: Cross-lingual injection, listening tests, and speech quality
+  languages: [en, ja, zh]
+  n_per_lang: 300
+  human_pairs_per_lang: 50
+  metrics:
+    - inj_selected_rate      # A/B preference test, 10 judgments per item
+    - mos_bl
+    - mos_inj
+    - whisper_inj_rate       # EN/ZH: Whisper large-v3; JA: Furigana Whisper
+    - utmos_bl
+    - utmos_inj
+    - spk_sim_bl_inj         # WavLM-SV cosine
+    - spk_sim_inj_prompt
+    - f0_abs_delta_ratio
+  seeds: [42]
+
+table2_system_comparison:
+  description: SpeechSplice against published generation and editing systems
+  language: en
+  n: 300
+  systems: [speechsplice, voicecraft_zeroshot_tts, editts]
+  judge: whisper_large_v3
+  metrics:
+    - whisper_inj_rate
+    - utmos_bl
+    - utmos_edited
+    - utmos_wilcoxon_p
+    - spk_sim_bl_inj
+    - spk_sim_inj_prompt
+    - f0_abs_delta_ratio
+    - abs_duration_delta_sec
+  seeds: [42]                       # speechsplice
+  system_seeds:                     # set once when each run starts; pairs 0-99,
+                                    # 100-199 and 200-299 were three separate runs
+    voicecraft_zeroshot_tts: 2026
+    editts: 1234                    # set by EdiTTS's own edit_content.py
+
+table_a5_baselines:
+  description: Text-side and weight-side pronunciation-control baselines (Table A5, Appendix E)
+  language: ja
+  n: 300
+  conditions: [baseline, g2p, text_hint, rome, speechsplice]
+  metrics: [trm_strict_v2, g2p_cer_match_lenient]
+  rome:
+    layers: [2, 5, 8]
+    edit_mode: memit
+    label: L258_memit
+  seeds: [42]
+  seed_overrides: configs/pair_seeds.csv   # rows with table = Table A5 (Text Hint)
+
+table3_cross_arch:
+  description: Cross-architecture comparison, 10 systems in 17 model-language conditions
+  conditions:                      # see eval_results/table3_cross_arch/manifest.json
+    encoder_decoder: [t5gemma_en, t5gemma_ja, t5gemma_zh, speecht5_en, longcat_en, longcat_zh,
+                      irodori_ja, kiseki_ja]
+    decoder_only: [qwen3_en, qwen3_ja, qwen3_zh, xtts_en, llasa_en, llasa_zh, csm_en,
+                   bark_en, bark_ja]
+  n_per_cell: 300                  # two-entity columns: 300 sentences with two slots each
+  data_source: cross_culture       # two-entity columns: their own 300 sentences per language
+  metrics: [mcd_pysptk_whole, phoneme_inj_better, layer_sweep_phoneme_inj_better,
+            two_entity_slot_accuracy]
+  seeds: [42]
+  seed_overrides: configs/pair_seeds.csv   # rows with table = Table 3
+
+table_a1_crossattn_mask:
+  description: Acoustic cross-attention mask ablation, length-preserving variant (Table A1, Appendix A)
+  model: t5gemma_tts
+  languages: [en, ja, zh]
+  n_per_lang: 300
+  data_source: cross_culture
+  inject_mode: length_preserve   # mean-pool word_b hidden to fit word_a token count
+  conditions: [bl, inj, bl_mask, inj_mask]
+  metrics:
+    - mcd_dtw_cmvn_mfcc      # CMVN-normalized MFCC, c0 dropped; NOT the pysptk MCD of Table 3
+    - mel_similarity_time_mean  # time-averaged (tmean_*_mel fields)
+  seeds: [42]
+  seed_overrides: configs/pair_seeds.csv   # rows with table = Table A1

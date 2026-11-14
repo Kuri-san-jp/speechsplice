@@ -1,0 +1,8 @@
+# Dependencies for the GPU-free reproduction in README section 4.
+# Versions below are the ones the reproduction was verified against
+# (Python 3.10.12). Newer patch releases are expected to work.
+numpy==1.26.4
+scipy==1.15.3
+pandas==2.2.3
+statsmodels==0.14.6
+pykakasi==2.3.0          # Table A6 (JA) only

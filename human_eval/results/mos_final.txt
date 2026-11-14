@@ -1,0 +1,24 @@
+================================================================================
+[EN] 20 valid listeners, 1000 accepted ratings (mean 10.0 per clip)
+  BL 3.564  INJ 3.522  Δ=-0.042  95%CI[-0.231,+0.162]
+  Wilcoxon by listener p=0.3977 / by item p=0.4477
+    sentence-initial person name (ei, 13 pairs): BL 3.570 INJ 3.214 Δ-0.356
+    sentence-medial person name (em, 16 pairs): BL 3.538 INJ 3.725 Δ+0.187
+    sentence-medial/final person name (ee, 21 pairs): BL 3.576 INJ 3.559 Δ-0.017
+
+[ZH] 20 valid listeners, 1000 accepted ratings (mean 10.0 per clip)
+  BL 3.668  INJ 3.710  Δ=+0.042  95%CI[-0.180,+0.270]
+  Wilcoxon by listener p=0.7644 / by item p=0.9608
+    place name (zc, 37 pairs): BL 3.673 INJ 3.732 Δ+0.059
+    place name, additional (zd, 11 pairs): BL 3.755 INJ 3.800 Δ+0.045
+    person name (zp, 2 pairs): BL 3.100 INJ 2.800 Δ-0.300
+  [sensitivity] including the one all-5 straight-liner: BL 3.731 INJ 3.771 Δ=+0.040 (item p=0.8526)
+
+[JA] 20 valid listeners, 1000 accepted ratings (mean 10.0 per clip)
+  BL 3.684  INJ 3.640  Δ=-0.044  95%CI[-0.266,+0.182]
+  Wilcoxon by listener p=0.4299 / by item p=0.7388
+    sentence-medial surname (rm, 10 pairs): BL 3.530 INJ 3.770 Δ+0.240
+    surname replacement (rs, 24 pairs): BL 3.783 INJ 3.771 Δ-0.012
+    surname replacement, new (rx, 14 pairs): BL 3.614 INJ 3.321 Δ-0.293
+    surname replacement, additional (re, 2 pairs): BL 3.750 INJ 3.650 Δ-0.100
+

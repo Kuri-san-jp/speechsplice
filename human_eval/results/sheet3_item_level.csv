@@ -1,0 +1,201 @@
+item_id,set,language,source_word,target_word,source_reading,target_reading,sentence,bl_n,nopref_n,inj_n,n,auto_bl_says_source,auto_inj_says_target,item_type,block
+0001,proper_name_steering,en,Michael,John,,,John is famous.,0,0,10,10,True,True,main,b
+0002,proper_name_steering,en,Einstein,Newton,,,Newton is famous.,0,0,10,10,True,True,main,a
+0009,proper_name_steering,en,Christmas,Halloween,,,Halloween is famous.,0,0,10,10,True,True,main,a
+0013,proper_name_steering,en,Everest,Kilimanjaro,,,Kilimanjaro is famous.,0,0,10,10,True,True,main,b
+0016,proper_name_steering,en,Samsung,Apple,,,Apple is famous.,0,0,10,10,True,True,main,b
+0017,proper_name_steering,en,Tokyo,Berlin,,,Berlin is famous.,0,0,10,10,True,True,main,a
+0018,proper_name_steering,en,Sydney,Toronto,,,Toronto is famous.,0,0,10,10,True,True,main,a
+0023,proper_name_steering,en,Boeing,Airbus,,,Airbus is famous.,0,0,10,10,True,True,main,a
+0035,proper_name_steering,en,Moscow,Beijing,,,Beijing is famous.,0,0,10,10,True,True,main,a
+0044,proper_name_steering,en,Netflix,Spotify,,,Spotify is famous.,0,1,9,10,True,True,main,b
+0045,proper_name_steering,en,Facebook,Twitter,,,Twitter is famous.,0,0,10,10,True,True,main,b
+0047,proper_name_steering,en,Mumbai,Delhi,,,Delhi is famous.,0,0,10,10,True,True,main,b
+0055,proper_name_steering,en,Harvard,Oxford,,,"Yesterday, Oxford became famous.",0,0,10,10,True,True,main,b
+0056,proper_name_steering,en,Ferrari,Porsche,,,"Yesterday, Porsche became famous.",0,0,10,10,True,True,main,a
+0057,proper_name_steering,en,Saturn,Jupiter,,,"Yesterday, Jupiter became famous.",0,0,10,10,True,True,main,a
+0069,proper_name_steering,en,Stanford,Berkeley,,,"Yesterday, Berkeley became famous.",0,0,10,10,True,True,main,a
+0070,proper_name_steering,en,Napoleon,Caesar,,,"Yesterday, Caesar became famous.",0,0,10,10,True,True,main,b
+0075,proper_name_steering,en,Intel,AMD,,,"Yesterday, AMD became famous.",0,0,10,10,True,True,main,a
+0081,proper_name_steering,en,Toyota,Honda,,,"Yesterday, Honda became famous.",0,0,10,10,True,True,main,b
+0086,proper_name_steering,en,Lincoln,Washington,,,"Yesterday, Washington became famous.",0,0,10,10,True,True,main,b
+0091,proper_name_steering,en,Brazil,Argentina,,,"Yesterday, Argentina became famous.",0,0,10,10,True,True,main,a
+0092,proper_name_steering,en,Nissan,Mazda,,,"Yesterday, Mazda became famous.",0,0,10,10,True,True,main,b
+0104,proper_name_steering,en,Amazon,Google,,,"Around the world, Google is known.",0,0,10,10,True,True,main,a
+0134,proper_name_steering,en,Vienna,Prague,,,"Around the world, Prague is known.",0,0,10,10,True,True,main,b
+0139,proper_name_steering,en,Mercury,Neptune,,,"Around the world, Neptune is known.",0,0,10,10,True,True,main,b
+0140,proper_name_steering,en,Sahara,Gobi,,,"Around the world, Gobi is known.",0,0,10,10,True,True,main,b
+0143,proper_name_steering,en,Audi,BMW,,,"Around the world, BMW is known.",0,0,10,10,True,True,main,b
+0148,proper_name_steering,en,Seoul,Bangkok,,,"Around the world, Bangkok is known.",0,0,10,10,True,True,main,a
+0149,proper_name_steering,en,Milan,Barcelona,,,"Around the world, Barcelona is known.",0,0,10,10,True,True,main,a
+0165,proper_name_steering,en,Shakespeare,Dickens,,,Many people know Dickens very well.,0,0,10,10,True,True,main,b
+0180,proper_name_steering,en,Nike,Adidas,,,Many people know Adidas very well.,0,0,10,10,True,True,main,a
+0182,proper_name_steering,en,Columbus,Magellan,,,Many people know Magellan very well.,0,1,9,10,True,True,main,b
+0188,proper_name_steering,en,Mars,Venus,,,Many people know Venus very well.,0,0,10,10,True,True,main,a
+0196,proper_name_steering,en,Cairo,Lagos,,,Many people know Lagos very well.,0,0,10,10,True,True,main,b
+0212,proper_name_steering,en,Leonardo,Picasso,,,They respect Picasso.,0,0,10,10,True,True,main,a
+0214,proper_name_steering,en,Atlantic,Pacific,,,They respect Pacific.,0,0,10,10,True,True,main,b
+0221,proper_name_steering,en,Darwin,Galileo,,,They respect Galileo.,0,0,10,10,True,True,main,a
+0222,proper_name_steering,en,Tesla,Edison,,,They respect Edison.,0,0,10,10,True,True,main,a
+0224,proper_name_steering,en,Disney,Warner,,,They respect Warner.,0,1,9,10,True,True,main,b
+0229,proper_name_steering,en,Miami,Atlanta,,,They respect Atlanta.,0,0,10,10,True,True,main,b
+0233,proper_name_steering,en,Madrid,Rome,,,They respect Rome.,0,0,10,10,True,True,main,a
+0250,proper_name_steering,en,London,Paris,,,Everyone looks up to Paris today.,0,0,10,10,True,True,main,b
+0253,proper_name_steering,en,Mozart,Beethoven,,,Everyone looks up to Beethoven today.,0,0,10,10,True,True,main,a
+0258,proper_name_steering,en,Diamond,Emerald,,,Everyone looks up to Emerald today.,0,0,10,10,True,False,main,b
+0260,proper_name_steering,en,Hollywood,Broadway,,,Everyone looks up to Broadway today.,0,0,10,10,True,True,main,a
+0261,proper_name_steering,en,Victoria,Elizabeth,,,Everyone looks up to Elizabeth today.,0,0,10,10,True,True,main,b
+0276,proper_name_steering,en,Chicago,Boston,,,Everyone looks up to Boston today.,0,0,10,10,True,True,main,a
+0277,proper_name_steering,en,Dallas,Houston,,,Everyone looks up to Houston today.,0,0,10,10,True,True,main,a
+0278,proper_name_steering,en,Denver,Seattle,,,Everyone looks up to Seattle today.,0,0,10,10,True,True,main,b
+0287,proper_name_steering,en,Kennedy,Roosevelt,,,Everyone looks up to Roosevelt today.,0,0,10,10,True,True,main,a
+0005,proper_name_steering,ja,田中,鈴木,,すずき,最後に発表するのは鈴木さんです。,0,0,10,10,True,True,main,b
+0006,proper_name_steering,ja,佐藤,高橋,,たかはし,高橋さんが会議の資料を準備してくれた。,0,0,10,10,True,True,main,a
+0012,proper_name_steering,ja,伊藤,渡辺,,わたなべ,渡辺さんが会議の資料を準備してくれた。,0,0,10,10,True,True,main,a
+0023,proper_name_steering,ja,山本,中村,,なかむら,最後に発表するのは中村さんです。,0,0,10,10,True,True,main,b
+0026,proper_name_steering,ja,小林,加藤,,かとう,その提案は加藤さんが考えたものです。,0,0,10,10,True,True,main,b
+0031,proper_name_steering,ja,吉田,山田,,やまだ,昨日、山田さんに駅で偶然会った。,0,0,10,10,True,True,main,a
+0037,proper_name_steering,ja,佐々木,山口,,やまぐち,昨日、山口さんに駅で偶然会った。,0,0,10,10,True,True,main,a
+0043,proper_name_steering,ja,松本,井上,,いのうえ,昨日、井上さんに駅で偶然会った。,0,0,10,10,True,True,main,a
+0053,proper_name_steering,ja,木村,斎藤,,さいとう,最後に発表するのは斎藤さんです。,0,0,10,10,True,True,main,a
+0054,proper_name_steering,ja,清水,山崎,,やまざき,山崎さんが会議の資料を準備してくれた。,0,0,10,10,True,True,main,b
+0065,proper_name_steering,ja,森田,池田,,いけだ,最後に発表するのは池田さんです。,0,0,10,10,True,True,main,b
+0071,proper_name_steering,ja,橋本,阿部,,あべ,最後に発表するのは阿部さんです。,0,0,10,10,True,True,main,b
+0076,proper_name_steering,ja,石川,前田,,まえだ,受付で前田さんを呼んでください。,0,0,10,10,False,True,main,b
+0078,proper_name_steering,ja,藤田,後藤,,ごとう,後藤さんが会議の資料を準備してくれた。,0,0,10,10,True,True,main,a
+0088,proper_name_steering,ja,岡田,村上,,むらかみ,受付で村上さんを呼んでください。,0,0,10,10,True,True,main,a
+0093,proper_name_steering,ja,近藤,石井,,いしい,今度の企画は石井さんに任せたい。,0,0,10,10,True,True,main,a
+0096,proper_name_steering,ja,坂本,遠藤,,えんどう,遠藤さんが会議の資料を準備してくれた。,0,0,10,10,True,True,main,b
+0102,proper_name_steering,ja,青木,藤井,,ふじい,藤井さんが会議の資料を準備してくれた。,0,0,10,10,True,True,main,a
+0108,proper_name_steering,ja,西村,福田,,ふくだ,福田さんが会議の資料を準備してくれた。,0,0,10,10,True,True,main,b
+0115,proper_name_steering,ja,太田,三浦,,みうら,昨日、三浦さんに駅で偶然会った。,0,0,10,10,True,True,main,b
+0121,proper_name_steering,ja,藤原,岡本,,おかもと,昨日、岡本さんに駅で偶然会った。,0,0,10,10,True,True,main,a
+0130,proper_name_steering,ja,松田,中野,,なかの,受付で中野さんを呼んでください。,0,0,10,10,True,True,main,b
+0136,proper_name_steering,ja,原田,小川,,おがわ,受付で小川さんを呼んでください。,0,0,10,10,True,True,main,a
+0138,proper_name_steering,ja,竹内,中島,,なかじま,中島さんが会議の資料を準備してくれた。,0,0,10,10,True,True,main,b
+0148,proper_name_steering,ja,金子,藤本,,ふじもと,受付で藤本さんを呼んでください。,0,0,10,10,True,True,main,b
+0151,proper_name_steering,ja,中山,安藤,,あんどう,昨日、安藤さんに駅で偶然会った。,0,0,10,10,False,True,main,b
+0161,proper_name_steering,ja,石田,上田,,うえだ,最後に発表するのは上田さんです。,0,0,10,10,True,True,main,b
+0167,proper_name_steering,ja,小島,武田,,たけだ,最後に発表するのは武田さんです。,0,0,10,10,True,True,main,a
+0178,proper_name_steering,ja,平野,大塚,,おおつか,受付で大塚さんを呼んでください。,0,0,10,10,False,True,main,a
+0183,proper_name_steering,ja,清水,山下,,やました,今度の企画は山下さんに任せたい。,0,0,10,10,True,True,main,b
+0187,proper_name_steering,ja,林,三浦,,みうら,昨日、三浦さんに駅で偶然会った。,0,0,10,10,True,True,main,a
+0195,proper_name_steering,ja,山崎,野村,,のむら,今度の企画は野村さんに任せたい。,0,0,10,10,True,True,main,b
+0202,proper_name_steering,ja,阿部,秋山,,あきやま,受付で秋山さんを呼んでください。,0,0,10,10,True,True,main,a
+0206,proper_name_steering,ja,橋本,小野,,おの,その提案は小野さんが考えたものです。,0,0,10,10,True,True,main,b
+0210,proper_name_steering,ja,太田,田口,,たぐち,田口さんが会議の資料を準備してくれた。,0,0,10,10,True,False,main,a
+0217,proper_name_steering,ja,星野,荒木,,あらき,昨日、荒木さんに駅で偶然会った。,0,0,10,10,True,True,main,b
+0227,proper_name_steering,ja,内藤,藤岡,,ふじおか,最後に発表するのは藤岡さんです。,0,0,10,10,True,True,main,a
+0231,proper_name_steering,ja,浜田,望月,,もちづき,今度の企画は望月さんに任せたい。,0,0,10,10,False,True,main,a
+0236,proper_name_steering,ja,横田,今村,,いまむら,その提案は今村さんが考えたものです。,0,0,10,10,True,True,main,b
+0242,proper_name_steering,ja,西田,河合,,かわい,その提案は河合さんが考えたものです。,0,7,3,10,True,True,main,b
+0247,proper_name_steering,ja,松尾,中川,,なかがわ,昨日、中川さんに駅で偶然会った。,0,0,10,10,True,False,main,a
+0253,proper_name_steering,ja,杉本,平井,,ひらい,昨日、平井さんに駅で偶然会った。,0,0,10,10,True,True,main,b
+0260,proper_name_steering,ja,森,石橋,,いしばし,その提案は石橋さんが考えたものです。,0,0,10,10,True,True,main,a
+0264,proper_name_steering,ja,岸本,大森,,おおもり,大森さんが会議の資料を準備してくれた。,0,0,10,10,True,True,main,b
+0270,proper_name_steering,ja,児玉,水野,,みずの,水野さんが会議の資料を準備してくれた。,0,0,10,10,False,True,main,a
+0279,proper_name_steering,ja,松浦,片山,,かたやま,今度の企画は片山さんに任せたい。,0,0,10,10,True,True,main,b
+0282,proper_name_steering,ja,古川,奥村,,おくむら,奥村さんが会議の資料を準備してくれた。,0,0,10,10,True,True,main,a
+0290,proper_name_steering,ja,大橋,吉川,,よしかわ,その提案は吉川さんが考えたものです。,0,0,10,10,True,False,main,a
+0296,proper_name_steering,ja,永田,広瀬,,ひろせ,その提案は広瀬さんが考えたものです。,0,0,10,10,True,True,main,b
+7001,proper_name_steering,ja,吉村,岡崎,,おかざき,最後に発表するのは岡崎さんです。,0,0,10,10,,,main,a
+0005,proper_name_steering,zh,北京,上海,,,他打算明年搬到上海去。,0,0,10,10,True,True,main,b
+0006,proper_name_steering,zh,广州,深圳,,,他们下个月要去深圳出差。,0,0,10,10,True,True,main,a
+0012,proper_name_steering,zh,成都,重庆,,,他们下个月要去重庆出差。,0,0,10,10,True,True,main,a
+0023,proper_name_steering,zh,杭州,南京,,,他打算明年搬到南京去。,0,0,10,10,True,True,main,b
+0026,proper_name_steering,zh,武汉,长沙,,,我朋友住在长沙很多年了。,0,0,10,10,True,True,main,b
+0031,proper_name_steering,zh,西安,洛阳,,,洛阳的天气最近很好。,0,0,10,10,True,True,main,a
+0037,proper_name_steering,zh,天津,青岛,,,青岛的天气最近很好。,0,0,10,10,True,False,main,a
+0043,proper_name_steering,zh,苏州,无锡,,,无锡的天气最近很好。,0,0,10,10,True,True,main,a
+0053,proper_name_steering,zh,大连,厦门,,,他打算明年搬到厦门去。,0,0,10,10,True,True,main,a
+0054,proper_name_steering,zh,昆明,贵阳,,,他们下个月要去贵阳出差。,0,0,10,10,True,True,main,b
+0065,proper_name_steering,zh,郑州,济南,,,他打算明年搬到济南去。,0,0,10,10,True,True,main,b
+0071,proper_name_steering,zh,哈尔滨,沈阳,,,他打算明年搬到沈阳去。,0,0,10,10,True,True,main,b
+0072,proper_name_steering,zh,福州,南昌,,,他们下个月要去南昌出差。,0,0,10,10,True,True,main,b
+0082,proper_name_steering,zh,合肥,石家庄,,,石家庄是一座美丽的城市。,0,0,10,10,True,True,main,a
+0087,proper_name_steering,zh,兰州,西宁,,,这趟高铁直达西宁。,0,0,10,10,True,True,main,a
+0090,proper_name_steering,zh,桂林,丽江,,,他们下个月要去丽江出差。,0,0,10,10,True,True,main,a
+0096,proper_name_steering,zh,拉萨,敦煌,,,他们下个月要去敦煌出差。,0,0,10,10,True,True,main,a
+0102,proper_name_steering,zh,香港,澳门,,,他们下个月要去澳门出差。,0,0,10,10,True,True,main,a
+0109,proper_name_steering,zh,台北,首尔,,,首尔的天气最近很好。,0,0,10,10,True,True,main,b
+0115,proper_name_steering,zh,东京,大阪,,,大阪的天气最近很好。,0,0,10,10,True,True,main,b
+0123,proper_name_steering,zh,纽约,伦敦,,,这趟高铁直达伦敦。,0,0,10,10,True,True,main,a
+0130,proper_name_steering,zh,巴黎,罗马,,,罗马是一座美丽的城市。,0,0,10,10,True,True,main,b
+0132,proper_name_steering,zh,柏林,维也纳,,,他们下个月要去维也纳出差。,0,0,10,10,True,True,main,a
+0142,proper_name_steering,zh,莫斯科,华沙,,,华沙是一座美丽的城市。,0,0,10,10,True,True,main,b
+0145,proper_name_steering,zh,悉尼,墨尔本,,,墨尔本的天气最近很好。,0,0,10,10,False,True,main,b
+0155,proper_name_steering,zh,曼谷,新加坡,,,他打算明年搬到新加坡去。,0,0,10,10,True,True,main,b
+0161,proper_name_steering,zh,开罗,雅典,,,他打算明年搬到雅典去。,0,0,10,10,True,True,main,b
+0167,proper_name_steering,zh,多伦多,温哥华,,,他打算明年搬到温哥华去。,0,0,10,10,True,True,main,a
+0172,proper_name_steering,zh,芝加哥,波士顿,,,波士顿是一座美丽的城市。,0,0,10,10,True,True,main,a
+0177,proper_name_steering,zh,日本,韩国,,,这趟高铁直达韩国。,0,0,10,10,True,True,main,b
+0181,proper_name_steering,zh,法国,德国,,,德国的天气最近很好。,0,0,10,10,True,True,main,a
+0189,proper_name_steering,zh,印度,埃及,,,这趟高铁直达埃及。,0,0,10,10,True,True,main,b
+0196,proper_name_steering,zh,巴西,智利,,,智利是一座美丽的城市。,0,0,10,10,True,True,main,a
+0200,proper_name_steering,zh,挪威,瑞士,,,我朋友住在瑞士很多年了。,0,0,10,10,True,True,main,b
+0204,proper_name_steering,zh,长城,故宫,,,他们下个月要去故宫出差。,0,0,10,10,True,True,main,a
+0211,proper_name_steering,zh,西湖,黄山,,,黄山的天气最近很好。,0,0,10,10,True,True,main,b
+0221,proper_name_steering,zh,泰山,华山,,,他打算明年搬到华山去。,0,0,10,10,True,True,main,a
+0225,proper_name_steering,zh,漓江,洱海,,,这趟高铁直达洱海。,0,0,10,10,True,True,main,a
+0229,proper_name_steering,zh,清华,北大,,,北大的天气最近很好。,0,0,10,10,True,True,main,b
+0236,proper_name_steering,zh,春节,中秋,,,我朋友住在中秋很多年了。,0,0,10,10,True,True,main,b
+0241,proper_name_steering,zh,上海,北京,,,北京的天气最近很好。,0,0,10,10,True,True,main,a
+0247,proper_name_steering,zh,深圳,广州,,,广州的天气最近很好。,0,0,10,10,True,True,main,b
+0254,proper_name_steering,zh,重庆,成都,,,我朋友住在成都很多年了。,0,0,10,10,True,True,main,a
+0258,proper_name_steering,zh,南京,杭州,,,他们下个月要去杭州出差。,0,0,10,10,True,True,main,b
+0264,proper_name_steering,zh,长沙,武汉,,,他们下个月要去武汉出差。,0,0,10,10,True,True,main,a
+0273,proper_name_steering,zh,洛阳,西安,,,这趟高铁直达西安。,0,0,10,10,True,True,main,b
+0276,proper_name_steering,zh,青岛,天津,,,他们下个月要去天津出差。,0,0,10,10,True,True,main,a
+0284,proper_name_steering,zh,厦门,大连,,,我朋友住在大连很多年了。,0,0,10,10,True,True,main,a
+0290,proper_name_steering,zh,南京,苏州,,,我朋友住在苏州很多年了。,0,0,10,10,True,True,main,b
+0298,proper_name_steering,zh,天津,武汉,,,武汉是一座美丽的城市。,0,0,10,10,True,True,main,b
+1013,same_surface_correction,ja_het,九時,九時,,くじ,,0,0,10,10,False,True,main,a
+1015,same_surface_correction,ja_het,朔日,朔日,,ついたち,,0,0,10,10,False,True,main,b
+1020,same_surface_correction,ja_het,大水,大水,,おおみず,,0,0,10,10,False,True,main,b
+1021,same_surface_correction,ja_het,発意,発意,,ほつい,,0,0,10,10,False,True,main,a
+1024,same_surface_correction,ja_het,強ち,強ち,,あながち,,0,0,10,10,False,True,main,a
+1027,same_surface_correction,ja_het,月極,月極,,つきぎめ,,0,0,10,10,False,True,main,a
+1029,same_surface_correction,ja_het,五分,五分,,ごぶ,,0,0,10,10,False,True,main,a
+1031,same_surface_correction,ja_het,十月,十月,,とつき,,0,0,10,10,False,True,main,b
+1032,same_surface_correction,ja_het,一石,一石,,いちこく,,0,0,10,10,False,True,main,b
+1040,same_surface_correction,ja_het,上手,上手,,かみて,,0,0,10,10,False,True,main,b
+1041,same_surface_correction,ja_het,気質,気質,,かたぎ,,0,0,10,10,False,True,main,b
+1042,same_surface_correction,ja_het,十八番,十八番,,おはこ,,0,0,10,10,False,True,main,a
+1054,same_surface_correction,ja_het,一人,一人,,かずと,,0,0,10,10,False,True,main,a
+1058,same_surface_correction,ja_het,一二,一二,,じゅうに,,0,0,10,10,False,True,main,b
+1068,same_surface_correction,ja_het,間髪,間髪,,かんはつ,,0,0,10,10,False,True,main,a
+1071,same_surface_correction,ja_het,悪口,悪口,,あっこう,,0,0,10,10,False,True,main,b
+1074,same_surface_correction,ja_het,二十分の一,二十分の一,,にじゅうぶんのいち,,1,0,9,10,False,True,main,b
+2001,same_surface_correction,ja_het,下手,下手,,しもて,,0,0,10,10,False,True,main,a
+2002,same_surface_correction,ja_het,故郷,故郷,,ふるさと,,0,0,10,10,False,True,main,b
+2003,same_surface_correction,ja_het,理由,理由,,わけ,,0,0,10,10,False,True,main,a
+2007,same_surface_correction,ja_het,下手,下手,,したて,,0,0,10,10,False,True,main,b
+2008,same_surface_correction,ja_het,早急,早急,,さっきゅう,,0,0,10,10,False,True,main,b
+2012,same_surface_correction,ja_het,続柄,続柄,,つづきがら,,0,0,10,10,False,True,main,b
+2028,same_surface_correction,ja_het,金子,金子,,きんす,,0,0,10,10,False,True,main,b
+2035,same_surface_correction,ja_het,運命,運命,,さだめ,,0,0,10,10,False,True,main,a
+2040,same_surface_correction,ja_het,女,女,,ひと,,0,0,10,10,False,True,main,a
+2043,same_surface_correction,ja_het,気質,気質,,かたぎ,,0,0,10,10,False,True,main,a
+2046,same_surface_correction,ja_het,十分,十分,,じっぷん,,0,0,10,10,False,True,main,a
+2048,same_surface_correction,ja_het,行方,行方,,なめがた,,0,0,10,10,False,True,main,b
+2051,same_surface_correction,ja_het,強か,強か,,したたか,,0,0,10,10,False,True,main,b
+2052,same_surface_correction,ja_het,梅雨,梅雨,,ばいう,,0,1,9,10,False,True,main,a
+2060,same_surface_correction,ja_het,被った,被った,,こうむった,,0,0,10,10,False,True,main,a
+2063,same_surface_correction,ja_het,雨具,雨具,,あまぐ,,0,0,10,10,False,True,main,b
+2072,same_surface_correction,ja_het,昔気質,昔気質,,むかしかたぎ,,0,0,10,10,False,True,main,b
+2073,same_surface_correction,ja_het,大事,大事,,おおごと,,0,0,10,10,False,True,main,a
+2075,same_surface_correction,ja_het,山河,山河,,さんが,,0,0,10,10,False,True,main,b
+2080,same_surface_correction,ja_het,汚した,汚した,,けがした,,0,0,10,10,False,True,main,b
+2082,same_surface_correction,ja_het,娘,娘,,こ,,1,1,8,10,False,True,main,a
+3001,same_surface_correction,ja_het,中百舌鳥,中百舌鳥,,なかもず,中百舌鳥の駅で友人と落ち合った。,0,0,10,10,False,True,main,b
+3002,same_surface_correction,ja_het,石神井,石神井,,しゃくじい,石神井の公園で池を一周して歩いた。,0,1,9,10,False,True,main,a
+3003,same_surface_correction,ja_het,保土ケ谷,保土ケ谷,,ほどがや,保土ケ谷で各駅停車に乗り換えた。,0,0,10,10,False,True,main,a
+3004,same_surface_correction,ja_het,廿日市,廿日市,,はつかいち,廿日市の工場から新製品が出荷される。,0,0,10,10,False,True,main,b
+3005,same_surface_correction,ja_het,太秦,太秦,,うずまさ,太秦で古い街並みをゆっくり歩いた。,1,0,9,10,False,True,main,a
+3006,same_surface_correction,ja_het,等々力,等々力,,とどろき,等々力の渓谷は夏でも涼しい。,0,0,10,10,False,True,main,a
+3007,same_surface_correction,ja_het,放出,放出,,はなてん,彼は放出の中古車店で車を買った。,0,0,10,10,False,True,main,b
+3008,same_surface_correction,ja_het,栗花落,栗花落,,つゆり,栗花落さんの誕生日は六月だそうだ。,0,1,9,10,False,True,main,a
+3009,same_surface_correction,ja_het,服部,服部,,はっとり,服部さんの手料理は近所でも評判だ。,0,0,10,10,False,True,main,a
+3010,same_surface_correction,ja_het,御手洗,御手洗,,みたらい,御手洗さんは経理部で長く働いている。,0,0,10,10,False,True,main,b
+3011,same_surface_correction,ja_het,百目鬼,百目鬼,,どうめき,百目鬼さんの家は古い寺の近くにある。,0,0,10,10,False,True,main,a
+3012,same_surface_correction,ja_het,一青,一青,,ひとと,一青さんが歌の先生を紹介してくれた。,0,0,10,10,False,True,main,b

@@ -1,0 +1,18 @@
+{
+ "en_bl.json": {
+  "source": "eval_results/en_wordrepl100_metrics/results.json",
+  "md5": "518e3f63761d481b8e5a22d07a3d9298"
+ },
+ "en_inj.json": {
+  "source": "eval_results/en_wordrepl300_splice_inj/final_merged_300.json",
+  "md5": "80a6859b8791a9e3af07cb32b0d5f962"
+ },
+ "ja.json": {
+  "source": "eval_results/ja_wordrepl300_gen/judge.json",
+  "md5": "7b78c5421a7c30332f443beeae9bcde3"
+ },
+ "zh.json": {
+  "source": "eval_results/zh_wordrepl300_gen/judge.json",
+  "md5": "dabaad444a836f4ef3e6f6335ed11938"
+ }
+}

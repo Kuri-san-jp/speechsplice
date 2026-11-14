@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Local model / dataset caches (never commit model weights)
+.cache/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# Audio is deliberately not redistributed (cloned speaker identity),
+# except the listening-test clips on the sample page (docs/audio/)
+*.wav
+*.flac
+*.mp3
+*.ogg
+!docs/audio/**/*.wav
+
+# Run artifacts
+human_eval/analysis/sim_ab.db
+*.db
+out/
+eval_results/**/checkpoint.json
+eval_results/_cc_wavs*/
+eval_results/appendix_f_baselines/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

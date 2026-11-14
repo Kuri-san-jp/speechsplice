@@ -1,0 +1,113 @@
+table,cell,system,language,pair_idx,clips,seed
+Table 3,At our replacement point; Layer sweep,Llasa-3B,EN,97,bl;tgt;inj at l*=1/8/15/22/27,43
+Table 3,At our replacement point; Layer sweep,Llasa-3B,EN,177,bl;tgt;inj at l*=1/8/15/22/27,43
+Table 3,At our replacement point; Layer sweep,Llasa-3B,EN,257,bl;tgt;inj at l*=1/8/15/22/27,43
+Table 3,At our replacement point; Layer sweep,Llasa-3B,ZH,85,bl;tgt;inj at l*=1/8/15/22/27,43
+Table 3,At our replacement point; Layer sweep,Llasa-3B,ZH,180,bl;tgt;inj at l*=1/8/15/22/27,43
+Table 3,At our replacement point; Layer sweep,Llasa-3B,ZH,199,bl;tgt;inj at l*=1/8/15/22/27,43
+Table 3,At our replacement point; Layer sweep,Llasa-3B,ZH,284,bl;tgt;inj at l*=1/8/15/22/27,43
+Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,112,bl;tgt;inj at l*=1/8/15/22/26,43
+Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,118,bl;tgt;inj at l*=1/8/15/22/26,43
+Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,128,bl;tgt;inj at l*=1/8/15/22/26,43
+Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,138,bl;tgt;inj at l*=1/8/15/22/26,43
+Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,141,bl;tgt;inj at l*=1/8/15/22/26,43
+Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,158,bl;tgt;inj at l*=1/8/15/22/26,43
+Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,238,bl;tgt;inj at l*=1/8/15/22/26,43
+Table 3,At our replacement point,T5Gemma-TTS,ZH,196,bl;inj;tgt,43
+Table 3,Layer sweep,T5Gemma-TTS,ZH,196,bl;tgt;inj at l*=1/8/15/22/26,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,2,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,5,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,21,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,30,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,43,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,47,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,111,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,141,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,153,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,241,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,251,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,257,bl;inj1;inj2;inj12;tgt1;tgt2,44
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,272,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table 3,Two-entity sentences,T5Gemma-TTS,EN,276,bl;inj1;inj2;inj12;tgt1;tgt2,43
+Table A1,-,T5Gemma-TTS,EN,38,bl;inj;bl_mask;inj_mask;tgt,43
+Table A1,-,T5Gemma-TTS,EN,53,bl;inj;bl_mask;inj_mask;tgt,44
+Table A1,-,T5Gemma-TTS,EN,88,bl;inj;bl_mask;inj_mask;tgt,43
+Table A1,-,T5Gemma-TTS,EN,112,bl;inj;bl_mask;inj_mask;tgt,43
+Table A1,-,T5Gemma-TTS,EN,128,bl;inj;bl_mask;inj_mask;tgt,43
+Table A1,-,T5Gemma-TTS,EN,138,bl;inj;bl_mask;inj_mask;tgt,43
+Table A1,-,T5Gemma-TTS,EN,158,bl;inj;bl_mask;inj_mask;tgt,43
+Table A1,-,T5Gemma-TTS,EN,237,bl;inj;bl_mask;inj_mask;tgt,44
+Table A1,-,T5Gemma-TTS,EN,238,bl;inj;bl_mask;inj_mask;tgt,43
+Table A1,-,T5Gemma-TTS,EN,280,bl;inj;bl_mask;inj_mask;tgt,43
+Table A1,-,T5Gemma-TTS,ZH,42,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,20,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,30,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,31,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,32,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,33,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,34,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,35,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,95,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,155,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,230,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,231,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,232,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,233,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,234,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,235,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,252,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,264,bl;inj;bl_mask;inj_mask;tgt,44
+Table A2,-,T5Gemma-TTS,EN,273,bl;inj;bl_mask;inj_mask;tgt,43
+Table A2,-,T5Gemma-TTS,EN,292,bl;inj;bl_mask;inj_mask;tgt,43
+Table A5,Text Hint,T5Gemma-TTS,JA,27,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,46,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,47,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,70,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,155,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,160,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,162,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,186,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,188,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,267,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,275,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,277,text_hint,43
+Table A5,Text Hint,T5Gemma-TTS,JA,296,text_hint,43
+Table A10,-,T5Gemma-TTS,EN,23,bl;inj,44
+Table A10,-,T5Gemma-TTS,ZH,104,bl;inj,43
+Table A10,-,T5Gemma-TTS,ZH,150,bl;inj,44
+Table A10,-,T5Gemma-TTS,ZH,200,bl;inj,44
+Table A10,-,T5Gemma-TTS,ZH,220,bl;inj,43
+Table A10,-,T5Gemma-TTS,ZH,232,bl;inj,43
+Table A10,-,T5Gemma-TTS,KO,57,bl;inj,43
+Table A10,-,T5Gemma-TTS,KO,70,bl;inj,43
+Table A10,-,T5Gemma-TTS,KO,94,bl;inj,43
+Table A10,-,T5Gemma-TTS,KO,126,bl;inj,43
+Table A10,-,T5Gemma-TTS,KO,129,bl;inj,43
+Table A10,-,T5Gemma-TTS,KO,205,bl;inj,43
+Table A10,-,T5Gemma-TTS,KO,298,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,0,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,1,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,2,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,56,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,69,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,114,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,135,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,136,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,137,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,138,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,139,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,140,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,214,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,225,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,226,bl;inj,43
+Table A10,-,T5Gemma-TTS,FR,227,bl;inj,43
+Table A10,-,T5Gemma-TTS,DE,54,bl;inj,43
+Table A10,-,T5Gemma-TTS,DE,55,bl;inj,43
+Table A10,-,T5Gemma-TTS,DE,81,bl;inj,43
+Table A10,-,T5Gemma-TTS,DE,82,bl;inj,43
+Table A10,-,T5Gemma-TTS,DE,83,bl;inj,43
+Table A10,-,T5Gemma-TTS,DE,90,bl;inj,43
+Table A10,-,T5Gemma-TTS,DE,91,bl;inj,43
+Table A10,-,T5Gemma-TTS,DE,92,bl;inj,43
+Table A10,-,T5Gemma-TTS,DE,228,bl;inj,43
+Table A10,-,T5Gemma-TTS,DE,229,bl;inj,43

@@ -1,0 +1,23 @@
+# Voice cloning reference prompts for T5Gemma-TTS synthesis.
+#
+# Each entry pairs a natural-speech wav file (relative to REPO_ROOT) with the
+# transcript that exactly matches the audio content. These are used as the
+# voice cloning prompt during synthesis; the actual experiment input texts are
+# defined in `data/{en,ja,zh}_cross_culture_names.py` (shipped in this archive).
+#
+# Replace these with your own recordings (any speaker, any natural utterance,
+# 5-15 seconds). The transcript must match the audio exactly.
+
+en:
+  wav: eval_results/_natural_refs_norm/en_natural_norm.wav
+  text: "Let me see, I'll give them a new pair of boots every Christmas."
+
+ja:
+  wav: eval_results/_natural_refs_norm/ja_natural_norm.wav
+  # Replace with a 5-15 second natural Japanese utterance and its exact transcript.
+  text: ""
+
+zh:
+  wav: eval_results/_natural_refs_norm/zh_natural_norm.wav
+  # Replace with a 5-15 second natural Mandarin utterance and its exact transcript.
+  text: ""

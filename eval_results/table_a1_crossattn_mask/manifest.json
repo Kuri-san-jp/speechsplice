@@ -1,0 +1,26 @@
+{
+ "en.json": {
+  "source": "eval_results/_spanfix_appB_en/final_20261002_081631/results.json",
+  "md5": "9467708a9dac2ef5ef53c35f7f11dac9"
+ },
+ "en_selection_record.json": {
+  "source": "eval_results/_spanfix_appB_en/final_20261002_081631/selection_record.json",
+  "md5": "cd628b876884b873d5d36426f6314525"
+ },
+ "ja.json": {
+  "source": "eval_results/_spanfix_appB_jazh/merged_20261003_010815/jacc_lp_n300/results.json",
+  "md5": "0bee8ff1beda2bb0fc5525def5555087"
+ },
+ "ja_merge_record.json": {
+  "source": "eval_results/_spanfix_appB_jazh/merged_20261003_010815/jacc_lp_n300/merge_record.json",
+  "md5": "666f4253a038ce4e79133c7bb0be4ee5"
+ },
+ "zh.json": {
+  "source": "eval_results/_spanfix_appB_jazh/merged_20261003_010815/zhcc_lp_n300/results.json",
+  "md5": "d08bae4c896f9d66fb17db165f4860b9"
+ },
+ "zh_merge_record.json": {
+  "source": "eval_results/_spanfix_appB_jazh/merged_20261003_010815/zhcc_lp_n300/merge_record.json",
+  "md5": "905c101f414d107838861f389594c446"
+ }
+}

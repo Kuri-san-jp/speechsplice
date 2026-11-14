@@ -1,0 +1,51 @@
+=== ARR D5: listener demographics (self-reported, preference test) ===
+
+Age group:
+  en_a: {'60+': 2, '30s': 2, '40s': 2, '20s': 2, '50s': 2}
+  en_b: {'20s': 2, '10s': 1, '30s': 2, '40s': 3, '50s': 2}
+  ja_a: {'40s': 8, '50s': 8, '20s': 1, '30s': 3}
+  ja_b: {'40s': 11, '50s': 4, '30s': 5}
+  zh_a: {'30s': 5, '40s': 3, '20s': 1, '50s': 1}
+  zh_b: {'30s': 5, '20s': 3, '50s': 2}
+
+Gender:
+  en_a: {'male': 5, 'female': 4, 'other': 1}
+  en_b: {'female': 5, 'male': 5}
+  ja_a: {'male': 19, 'female': 1}
+  ja_b: {'male': 17, 'female': 3}
+  zh_a: {'female': 6, 'male': 4}
+  zh_b: {'female': 7, 'male': 3}
+
+Listening device:
+  en_a: {'external_speakers': 1, 'headphones': 8, 'laptop_speakers': 1}
+  en_b: {'headphones': 4, 'laptop_speakers': 5, 'external_speakers': 1}
+  ja_a: {'headphones': 19, 'laptop_speakers': 1}
+  ja_b: {'laptop_speakers': 2, 'headphones': 18}
+  zh_a: {'laptop_speakers': 2, 'headphones': 8}
+  zh_b: {'laptop_speakers': 2, 'headphones': 8}
+
+=== MOS study (July) listener demographics (after removing 1 over-recruited ZH listener) ===
+
+Age group:
+  en_a: {'30s': 7, '50s': 1, '10s': 2, '40s': 1}
+  en_b: {'60+': 2, '20s': 2, '30s': 4, '50s': 3}
+  ja_a: {'40s': 6, '30s': 3, '50s': 1}
+  ja_b: {'30s': 3, '40s': 5, '50s': 2}
+  zh_a: {'40s': 2, '20s': 8, '30s': 2}
+  zh_b: {'50s': 1, '30s': 8, '20s': 1}
+
+Gender:
+  en_a: {'female': 5, 'male': 6}
+  en_b: {'male': 6, 'female': 5}
+  ja_a: {'male': 8, 'female': 2}
+  ja_b: {'male': 10}
+  zh_a: {'female': 7, 'male': 5}
+  zh_b: {'female': 5, 'male': 5}
+
+Listening device:
+  en_a: {'laptop_speakers': 2, 'headphones': 9}
+  en_b: {'external_speakers': 1, 'headphones': 10}
+  ja_a: {'headphones': 9, 'laptop_speakers': 1}
+  ja_b: {'headphones': 10}
+  zh_a: {'headphones': 8, 'laptop_speakers': 4}
+  zh_b: {'headphones': 8, 'external_speakers': 2}

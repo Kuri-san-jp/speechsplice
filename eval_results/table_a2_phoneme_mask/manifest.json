@@ -1,0 +1,10 @@
+{
+ "en.json": {
+  "source": "eval_results/_spanfix_appC_en/aggregate/aggregate_20261002_081643.json",
+  "md5": "691c13f3f92011753dc47616c8d04928"
+ },
+ "ja.json": {
+  "source": "eval_results/_spanfix_appC_ja/aggregate/aggregate_20261003_122008.json",
+  "md5": "b956b2ffde61a391ac0c64197f74866b"
+ }
+}

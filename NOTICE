@@ -1,0 +1,50 @@
+SpeechSplice
+Copyright (c) 2026-2027 Kiyoshi Kurihara, Yusuke Iwasawa, Yutaka Matsuo
+
+This product includes software developed by third parties, as listed below.
+The MIT License in the top-level LICENSE file applies to the remainder of this
+repository.
+
+--------------------------------------------------------------------------------
+1. T5Gemma-TTS  (vendored under src/_vendor/t5gemma_tts/)
+--------------------------------------------------------------------------------
+
+Minimal inference utilities (configuration, data tokenizer, duration
+estimator, model definition, and inference helpers) taken from the T5Gemma-TTS
+project and redistributed unmodified, together with its license.
+
+    Upstream: https://github.com/Aratako/T5Gemma-TTS
+    License:  MIT License
+    Copyright (c) 2025 Aratako
+
+The full license text is retained at src/_vendor/t5gemma_tts/LICENSE, and the
+upstream README at src/_vendor/t5gemma_tts/README.md.
+
+--------------------------------------------------------------------------------
+2. Models used but not redistributed
+--------------------------------------------------------------------------------
+
+SpeechSplice is training-free and edits no weights. The experiments load
+published frozen checkpoints from their original sources; none of them are
+redistributed in this repository, and each remains under its own license and
+terms of use:
+
+    Aratako/T5Gemma-TTS-2b-2b          (gated; accept the license on Hugging Face)
+    microsoft/speecht5_tts             (SpeechT5)
+    Qwen3-TTS
+    VoiceCraft
+    EdiTTS
+    openai/whisper-large-v3, openai/whisper-medium.en
+    Parakeet-Inc/furigana_whisper_small_jsut
+    facebook/wav2vec2-xlsr-53-espeak-cv-ft
+    UTMOS (sarulab-speech/UTMOS22)
+    WavLM-SV (microsoft/wavlm-base-plus-sv)
+
+--------------------------------------------------------------------------------
+3. Speech data
+--------------------------------------------------------------------------------
+
+Voice prompts were drawn from LibriTTS and from in-house recordings. No
+synthesized audio is redistributed here: the generated waveforms clone a
+prompt speaker's voice, so the repository releases the item lists, the scoring
+code, and the per-sample scores instead.

@@ -1,0 +1,150 @@
+{
+ "date": "2026-09-29 21:21:01",
+ "decision": "author 2026-09-29: pairs whose BL or INJ wav is non-silent but gets an empty IPA transcript are excluded from the IPA change rate (exception to N=300 for this table only)",
+ "source_summary": "/data/kiyoshi.kurihara/TTS/TTS26/eval_results/_appk_redo/ipa_summary_n300.json",
+ "langs": {
+  "en": {
+   "n_all": 300,
+   "excluded_empty_ipa_pairs": [],
+   "n_used": 300,
+   "k_changed": 275,
+   "ipa_change_pct": 91.67,
+   "wilson95": [
+    87.99,
+    94.29
+   ],
+   "mean_ipa_edit_distance_used": 3.41
+  },
+  "fr": {
+   "n_all": 300,
+   "excluded_empty_ipa_pairs": [
+    36,
+    37,
+    38,
+    57,
+    58,
+    59,
+    70,
+    71,
+    77,
+    90,
+    91,
+    92,
+    115,
+    135,
+    139,
+    141,
+    155,
+    177,
+    178,
+    179,
+    189,
+    190,
+    207,
+    208,
+    235,
+    275,
+    284,
+    299
+   ],
+   "n_used": 272,
+   "k_changed": 265,
+   "ipa_change_pct": 97.43,
+   "wilson95": [
+    94.78,
+    98.75
+   ],
+   "mean_ipa_edit_distance_used": 12.65
+  },
+  "de": {
+   "n_all": 300,
+   "excluded_empty_ipa_pairs": [
+    16,
+    21,
+    34,
+    55,
+    69,
+    70,
+    71,
+    102,
+    107,
+    108,
+    110,
+    122,
+    124,
+    125,
+    133,
+    183,
+    184,
+    185,
+    204,
+    205,
+    228,
+    249,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    277,
+    284
+   ],
+   "n_used": 270,
+   "k_changed": 267,
+   "ipa_change_pct": 98.89,
+   "wilson95": [
+    96.78,
+    99.62
+   ],
+   "mean_ipa_edit_distance_used": 13.34
+  },
+  "ko": {
+   "n_all": 300,
+   "excluded_empty_ipa_pairs": [
+    15,
+    98,
+    103,
+    106,
+    129,
+    144,
+    146,
+    160,
+    161,
+    205
+   ],
+   "n_used": 290,
+   "k_changed": 289,
+   "ipa_change_pct": 99.66,
+   "wilson95": [
+    98.07,
+    99.94
+   ],
+   "mean_ipa_edit_distance_used": 9.83
+  },
+  "ja": {
+   "n_all": 300,
+   "excluded_empty_ipa_pairs": [],
+   "n_used": 300,
+   "k_changed": 300,
+   "ipa_change_pct": 100.0,
+   "wilson95": [
+    98.74,
+    100.0
+   ],
+   "mean_ipa_edit_distance_used": 9.76
+  },
+  "zh": {
+   "n_all": 300,
+   "excluded_empty_ipa_pairs": [],
+   "n_used": 300,
+   "k_changed": 299,
+   "ipa_change_pct": 99.67,
+   "wilson95": [
+    98.14,
+    99.94
+   ],
+   "mean_ipa_edit_distance_used": 8.02
+  }
+ }
+}

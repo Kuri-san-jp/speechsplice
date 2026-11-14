@@ -1,0 +1,257 @@
+<title>SpeechSplice Audio Samples</title>
+<style>
+:root{
+  --bg:#fbfbfa; --panel:#ffffff; --ink:#1d1d1f; --muted:#5f6368;
+  --line:#e2e2df; --accent:#2f5d8a; --accent-soft:#eef3f8;
+  --yes:#1c6b4a; --no:#a33a2a; --quote:#f4f4f1;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,
+  "Hiragino Kaku Gothic ProN","Noto Sans JP","Microsoft YaHei",sans-serif;
+  font-size:15px;line-height:1.6;-webkit-text-size-adjust:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 20px 72px}
+header{border-bottom:2px solid var(--ink);padding-bottom:22px;margin-bottom:26px}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:27px;line-height:1.3;margin:.35em 0 .5em;font-weight:650}
+.authors{font-size:15px;margin:0 0 .25em}
+.affil{font-size:13px;color:var(--muted);margin:0}
+h2{font-size:20px;margin:2.1em 0 .5em;padding-bottom:.25em;border-bottom:1px solid var(--line)}
+h3{font-size:16px;margin:1.6em 0 .4em}
+p{margin:.6em 0}
+blockquote{margin:0;padding:16px 18px;background:var(--quote);
+  border-left:3px solid var(--accent);border-radius:2px}
+blockquote p{margin:0}
+.qsrc{font-size:12px;color:var(--muted);margin-top:.7em}
+.note{font-size:13px;color:var(--muted)}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:3px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:8px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+thead th{background:var(--accent-soft);font-weight:600;font-size:12.5px;line-height:1.35;
+  white-space:nowrap;border-bottom:1px solid var(--line)}
+tbody tr:last-child td{border-bottom:none}
+td.id,th.id{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px;white-space:nowrap}
+td.sent{min-width:20em}
+td.w{white-space:nowrap;font-weight:600}
+td.au{min-width:190px}
+td.res{white-space:nowrap}
+audio{width:180px;height:32px;vertical-align:middle}
+.small{font-size:12px;color:var(--muted);font-weight:400}
+.asr{font-size:12px;color:var(--muted);margin-top:4px}
+.asr span{display:inline-block;min-width:6.6em;color:var(--accent);font-weight:600}
+.yes{color:var(--yes);font-weight:600}
+.no{color:var(--no);font-weight:600}
+table.num td,table.num th{white-space:nowrap}
+table.num td.set{white-space:normal;font-weight:600}
+table.num td.long{white-space:normal}
+.attr{background:var(--panel);border:1px solid var(--line);border-radius:3px;
+  padding:4px 16px;margin:.8em 0}
+.attr dt{font-weight:650;margin-top:.9em}
+.attr dd{margin:.2em 0 .9em;font-size:14px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;
+  background:#f1f1ee;padding:1px 4px;border-radius:2px}
+a{color:var(--accent)}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--muted)}
+ul{margin:.5em 0;padding-left:1.3em}
+li{margin:.3em 0}
+@media (max-width:760px){
+  .wrap{padding:20px 12px 56px} h1{font-size:22px} audio{width:150px}
+}
+</style>
+<div class="wrap">
+
+<header>
+<div class="kicker">Audio sample page</div>
+<h1>SpeechSplice: Pronunciation Control in Encoder&ndash;Decoder LLM-based TTS by Replacing Encoder Hidden States</h1>
+<p class="authors">Kiyoshi Kurihara, Jumpei Ukita, Yusuke Iwasawa, Yutaka Matsuo</p>
+<p class="affil">Matsuo Institute, Inc. &nbsp;/&nbsp; The University of Tokyo</p>
+</header>
+
+<h2>Method</h2>
+<blockquote><p>Most large language model (LLM)-based text-to-speech (TTS) methods offer no explicit function for correcting pronunciation. Consequently, these systems frequently mispronounce many everyday words, such as proper nouns, heteronyms, numerals, and domain-specific terms. While weight-editing or fine-tuning can mitigate this, these solutions risk quality degradation and must operate offline. We propose SpeechSplice, a training-free encoder-output replacement approach for pronunciation control in encoder&ndash;decoder LLM-based TTS. SpeechSplice replaces the encoder-output hidden states of a word with those of its intended reading. Cross-architecture and cross-lingual experiments cover ten public TTS systems in 17 model&ndash;language conditions. At the hidden state we replace, the intervention moves pronunciation toward the target reading more often when the generator reads the text through cross-attention than when text and speech share one self-attention sequence. In human evaluations, native-language listeners identified speech generated with SpeechSplice as realizing the target reading in 98.6&ndash;100.0% of judgments, while a separate study found no significant naturalness difference from unmodified synthesis. By clarifying the conditions under which pronunciation correction succeeds, this study informs the design of future LLM-based TTS architectures capable of pronunciation-controlled speech synthesis.</p></blockquote>
+<p class="qsrc">Quoted verbatim from the Abstract of the paper. No part of this page paraphrases or restates the method in other words.</p>
+
+<h2>Reported results</h2>
+<p>All figures in this table are transcribed from the paper. Nothing on this page is recomputed.</p>
+<div class="scroll"><table class="num">
+<thead><tr>
+<th>Listening-test set</th>
+<th>Listeners</th><th>Items</th><th>Judgments</th>
+<th>SpeechSplice selected<br><span class="small">AB selection test, %</span></th>
+<th>MOS<br>baseline</th><th>MOS<br>SpeechSplice</th><th>MOS<br>Wilcoxon <i>p</i></th>
+</tr></thead>
+<tbody>
+<tr><td class="set">English proper names</td><td>20</td><td>50</td><td>500</td><td>99.4 (+0.6/&minus;0.8)</td><td>3.56 &plusmn; 0.09</td><td>3.52 &plusmn; 0.08</td><td>0.45</td></tr>
+<tr><td class="set">Japanese proper names</td><td>20</td><td>50</td><td>500</td><td>98.6 (+1.4/&minus;2.8)</td><td>3.68 &plusmn; 0.09</td><td>3.64 &plusmn; 0.09</td><td>0.74</td></tr>
+<tr><td class="set">Chinese proper names</td><td>20</td><td>50</td><td>500</td><td>100.0 (+0.0/&minus;0.0)</td><td>3.67 &plusmn; 0.10</td><td>3.71 &plusmn; 0.10</td><td>0.96</td></tr>
+<tr><td class="set">Japanese same-surface correction</td><td>20</td><td>50</td><td>500</td><td>98.6 (95% CI 97.4&ndash;99.6)</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
+</tbody></table></div>
+<p class="note">AB selection test: 20 native listeners per set, 50 items per set, ten independent judgments per item, 500 judgments per set; ties count as failures. For the three proper-name sets the paper gives an item-level bootstrap 95% interval, written as (+upper/&minus;lower); for the same-surface set it gives the interval as a range. Naturalness MOS comes from a separate blinded study on the proper-name stimuli (five-point scale, 20 native listeners per language, ten ratings per clip, item-mean paired Wilcoxon signed-rank test); the same-surface set was not part of the MOS study, so its MOS cells are empty. The paper also reports that the item-level majority reached the target for 50 of the 50 same-surface items.</p>
+
+<h2>Audio samples</h2>
+<p>Every clip below is one of the stimuli that the listeners in the paper's AB selection test actually heard, copied here unchanged. Within each pair, the baseline clip and the SpeechSplice clip were generated from the same input text, the same speaker prompt, the same decoding configuration and the same random seed, so they differ only in the encoder-output splice.</p>
+<p><b>How these items were chosen.</b> For the three proper-name sets we take the first ten items of each 50-item set in item-id order without looking at their outcome; for the Japanese same-surface set we take the lowest-numbered item of each of its ten misreading categories, so that every category is represented.</p>
+<p class="note">The last column of each table reports, for that item, whether the majority of its ten listener judgments went to the clip realizing the target &mdash; the item-level aggregate of the AB selection test.</p>
+
+<h2>Japanese same-surface correction</h2>
+<p>Here the written sentence is not changed at all: the baseline misreads the target word, and SpeechSplice supplies the intended reading at inference time. This is the setting the paper's claim rests on. The two grey lines under each sentence are the kana transcripts of the two clips, produced by the furigana ASR model used in the paper.</p>
+
+<div class="scroll"><table>
+<thead><tr>
+<th class="id">Item</th>
+<th>Category</th>
+<th>Input sentence (target word in bold)<br><span class="small">with the kana ASR transcript of each clip</span></th>
+<th>Target word</th>
+<th>Specified<br>target reading</th>
+<th>Reading in the<br>baseline output</th>
+<th>Baseline</th><th>SpeechSplice</th>
+<th>Majority reached<br>the target</th>
+</tr></thead><tbody>
+<tr><td class="id">1013</td><td class="small">Contextual numeral</td><td class="sent" lang="ja">毎晩<strong>九時</strong>には寝るなんて、君もずいぶん健康的になったな。<div class="asr"><span>Baseline</span> マイバンキュウジニワネルナンテ、キミモズイブンケンコウテキニナッタナ。</div><div class="asr"><span>SpeechSplice</span> マエバンクジネルナンテキミモズイブンケンコウテキニナッタナ。</div></td><td class="w">九時</td><td class="w">くじ</td><td class="w">きゅうじ</td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-1013-baseline.wav"><a href="audio/ja_het/ja_het-1013-baseline.wav">ja_het-1013-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-1013-speechsplice.wav"><a href="audio/ja_het/ja_het-1013-speechsplice.wav">ja_het-1013-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">1020</td><td class="small">Heteronym</td><td class="sent" lang="ja">昨夜からの豪雨で、川が氾濫して<strong>大水</strong>が出たらしい。<div class="asr"><span>Baseline</span> サクヤカラノゴウデ、カワガハンナンシテタイスイガデタラシ。</div><div class="asr"><span>SpeechSplice</span> サクヤカラノゴウウデ、カワガハンランシテオオミズガデタラシイ。</div></td><td class="w">大水</td><td class="w">おおみず</td><td class="w">たいすい</td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-1020-baseline.wav"><a href="audio/ja_het/ja_het-1020-baseline.wav">ja_het-1020-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-1020-speechsplice.wav"><a href="audio/ja_het/ja_het-1020-speechsplice.wav">ja_het-1020-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">2001</td><td class="small">Drama-specific reading</td><td class="sent" lang="ja">犯人は舞台の<strong>下手</strong>から現れ、客席に銃を向けた。<div class="asr"><span>Baseline</span> ハンニンワブタイノヘタカラアラワレ、キャクセキニジュウオムケタ。</div><div class="asr"><span>SpeechSplice</span> ハンニンワブタイニシモテカラアラワレ、キャクセキニジュウオムケタ。</div></td><td class="w">下手</td><td class="w">しもて</td><td class="w">へた</td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2001-baseline.wav"><a href="audio/ja_het/ja_het-2001-baseline.wav">ja_het-2001-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2001-speechsplice.wav"><a href="audio/ja_het/ja_het-2001-speechsplice.wav">ja_het-2001-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">2007</td><td class="small">Okurigana</td><td class="sent" lang="ja">彼はどんな相手にも常に<strong>下手</strong>に出て、場を和ませる。<div class="asr"><span>Baseline</span> カレワドンナアイテニモツネニヘタニデテ、バヲナゴマセル</div><div class="asr"><span>SpeechSplice</span> カレワドンナアイテニモツネニシタテニデテ、バオナゴマセル</div></td><td class="w">下手</td><td class="w">したて</td><td class="w">へた</td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2007-baseline.wav"><a href="audio/ja_het/ja_het-2007-baseline.wav">ja_het-2007-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2007-speechsplice.wav"><a href="audio/ja_het/ja_het-2007-speechsplice.wav">ja_het-2007-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">2052</td><td class="small">Jukujikun</td><td class="sent" lang="ja"><strong>梅雨</strong>前線が北上し、本格的な雨の季節となります。<div class="asr"><span>Baseline</span> ツユゼンセンガホクジョウシ、ホンカクテキナアメノキセツトナリマス。</div><div class="asr"><span>SpeechSplice</span> バイウゼンセンガホクジョウシ、ホンカクテキナアメノキセツトナリマス。</div></td><td class="w">梅雨</td><td class="w">ばいう</td><td class="w">つゆ</td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2052-baseline.wav"><a href="audio/ja_het/ja_het-2052-baseline.wav">ja_het-2052-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2052-speechsplice.wav"><a href="audio/ja_het/ja_het-2052-speechsplice.wav">ja_het-2052-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">9/10</span></td></tr>
+<tr><td class="id">2060</td><td class="small">Verb conjugation</td><td class="sent" lang="ja">君の失敗のせいで、俺がどれだけ多大な損害を<strong>被った</strong>と思ってるんだ。<div class="asr"><span>Baseline</span> キミノシッパイノセイデ、オレガドレダケタダイナソンガイヲカブッタトオモッテルンダ。</div><div class="asr"><span>SpeechSplice</span> キミノシッパイノセイデ、オレガドレダケタダイナソンガイヲコウムッタトオモッテルンダ。</div></td><td class="w">被った</td><td class="w">こうむった</td><td class="w">かぶった</td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2060-baseline.wav"><a href="audio/ja_het/ja_het-2060-baseline.wav">ja_het-2060-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2060-speechsplice.wav"><a href="audio/ja_het/ja_het-2060-speechsplice.wav">ja_het-2060-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">2063</td><td class="small">Juubako/Yuto</td><td class="sent" lang="ja">山の天気は変わりやすいから、念のため<strong>雨具</strong>は持っていこう。<div class="asr"><span>Baseline</span> ヤマノテンキワカワリヤスイカラ、デンノタメウグワモッテイコウ。</div><div class="asr"><span>SpeechSplice</span> ヤマノテンキワカワリヤスイカラ、ネンノタメイアマグワモッテイコウ。</div></td><td class="w">雨具</td><td class="w">あまぐ</td><td class="w">うぐ</td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2063-baseline.wav"><a href="audio/ja_het/ja_het-2063-baseline.wav">ja_het-2063-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2063-speechsplice.wav"><a href="audio/ja_het/ja_het-2063-speechsplice.wav">ja_het-2063-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">2072</td><td class="small">On/kun domain</td><td class="sent" lang="ja">あの人は曲がったことが嫌いな、<strong>昔気質</strong>の職人なんだ。<div class="asr"><span>Baseline</span> アノヒトワマガッタコトバキライナ、ムカシキシツノショクニンナンダ。</div><div class="asr"><span>SpeechSplice</span> アノヒトワマガッタコトガキライナ、ムカシカタギノショクニンナンダ。</div></td><td class="w">昔気質</td><td class="w">むかしかたぎ</td><td class="w">むかしきしつ</td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2072-baseline.wav"><a href="audio/ja_het/ja_het-2072-baseline.wav">ja_het-2072-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-2072-speechsplice.wav"><a href="audio/ja_het/ja_het-2072-speechsplice.wav">ja_het-2072-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">3001</td><td class="small">Place name</td><td class="sent" lang="ja"><strong>中百舌鳥</strong>の駅で友人と落ち合った。<div class="asr"><span>Baseline</span> チュウヒャクダチョウノエキデユウジントウチヤク</div><div class="asr"><span>SpeechSplice</span> ナカモズノエキデユウジントウチアッタ。</div></td><td class="w">中百舌鳥</td><td class="w">なかもず</td><td class="w">チュウヒャクダチョウ<sup>&dagger;</sup></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-3001-baseline.wav"><a href="audio/ja_het/ja_het-3001-baseline.wav">ja_het-3001-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-3001-speechsplice.wav"><a href="audio/ja_het/ja_het-3001-speechsplice.wav">ja_het-3001-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">3008</td><td class="small">Rare surname</td><td class="sent" lang="ja"><strong>栗花落</strong>さんの誕生日は六月だそうだ。<div class="asr"><span>Baseline</span> クリハナライサンノタンジョウビワ、ロクガツダソウダ。</div><div class="asr"><span>SpeechSplice</span> ツユリサンノタンジョウビワ、ロクガツダソウダ。</div></td><td class="w">栗花落</td><td class="w">つゆり</td><td class="w">クリハナライ<sup>&dagger;</sup></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-3008-baseline.wav"><a href="audio/ja_het/ja_het-3008-baseline.wav">ja_het-3008-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja_het/ja_het-3008-speechsplice.wav"><a href="audio/ja_het/ja_het-3008-speechsplice.wav">ja_het-3008-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">9/10</span></td></tr>
+</tbody></table></div>
+
+<p class="note">&dagger; These two items have no single pre-registered competing reading; the reading shown is the one the baseline actually produced, read off its kana transcript and quoted in katakana exactly as the ASR wrote it, whereas the other rows give the item's pre-registered competing reading in hiragana. Item 3001 is a place name, item 3008 a rare surname.</p>
+
+<h2>Proper-name control</h2>
+<p>In these three sets the target word in the input text and the specified target are two different words, so the reading cannot be reached by any method that only edits the input text upstream. Listeners judged which of the two clips realized the displayed target: the orthographic form in English and Chinese, the kana reading alone in Japanese.</p>
+
+<h3>English</h3>
+
+<div class="scroll"><table>
+<thead><tr>
+<th class="id">Item</th>
+<th>Input sentence (target word in bold)</th>
+<th>Target word<br><span class="small">in the input text</span></th>
+<th>Specified target<br><span class="small">supplied at inference</span></th>
+<th>Baseline</th><th>SpeechSplice</th>
+<th>Majority reached<br>the target</th>
+</tr></thead><tbody>
+<tr><td class="id">0001</td><td class="sent" lang="en"><strong>Michael</strong> is famous.</td><td class="w">Michael</td><td class="w">John</td><td class="au"><audio controls preload="none" src="audio/en/en-0001-baseline.wav"><a href="audio/en/en-0001-baseline.wav">en-0001-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/en/en-0001-speechsplice.wav"><a href="audio/en/en-0001-speechsplice.wav">en-0001-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0002</td><td class="sent" lang="en"><strong>Einstein</strong> is famous.</td><td class="w">Einstein</td><td class="w">Newton</td><td class="au"><audio controls preload="none" src="audio/en/en-0002-baseline.wav"><a href="audio/en/en-0002-baseline.wav">en-0002-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/en/en-0002-speechsplice.wav"><a href="audio/en/en-0002-speechsplice.wav">en-0002-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0009</td><td class="sent" lang="en"><strong>Christmas</strong> is famous.</td><td class="w">Christmas</td><td class="w">Halloween</td><td class="au"><audio controls preload="none" src="audio/en/en-0009-baseline.wav"><a href="audio/en/en-0009-baseline.wav">en-0009-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/en/en-0009-speechsplice.wav"><a href="audio/en/en-0009-speechsplice.wav">en-0009-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0013</td><td class="sent" lang="en"><strong>Everest</strong> is famous.</td><td class="w">Everest</td><td class="w">Kilimanjaro</td><td class="au"><audio controls preload="none" src="audio/en/en-0013-baseline.wav"><a href="audio/en/en-0013-baseline.wav">en-0013-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/en/en-0013-speechsplice.wav"><a href="audio/en/en-0013-speechsplice.wav">en-0013-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0016</td><td class="sent" lang="en"><strong>Samsung</strong> is famous.</td><td class="w">Samsung</td><td class="w">Apple</td><td class="au"><audio controls preload="none" src="audio/en/en-0016-baseline.wav"><a href="audio/en/en-0016-baseline.wav">en-0016-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/en/en-0016-speechsplice.wav"><a href="audio/en/en-0016-speechsplice.wav">en-0016-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0017</td><td class="sent" lang="en"><strong>Tokyo</strong> is famous.</td><td class="w">Tokyo</td><td class="w">Berlin</td><td class="au"><audio controls preload="none" src="audio/en/en-0017-baseline.wav"><a href="audio/en/en-0017-baseline.wav">en-0017-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/en/en-0017-speechsplice.wav"><a href="audio/en/en-0017-speechsplice.wav">en-0017-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0018</td><td class="sent" lang="en"><strong>Sydney</strong> is famous.</td><td class="w">Sydney</td><td class="w">Toronto</td><td class="au"><audio controls preload="none" src="audio/en/en-0018-baseline.wav"><a href="audio/en/en-0018-baseline.wav">en-0018-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/en/en-0018-speechsplice.wav"><a href="audio/en/en-0018-speechsplice.wav">en-0018-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0023</td><td class="sent" lang="en"><strong>Boeing</strong> is famous.</td><td class="w">Boeing</td><td class="w">Airbus</td><td class="au"><audio controls preload="none" src="audio/en/en-0023-baseline.wav"><a href="audio/en/en-0023-baseline.wav">en-0023-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/en/en-0023-speechsplice.wav"><a href="audio/en/en-0023-speechsplice.wav">en-0023-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0035</td><td class="sent" lang="en"><strong>Moscow</strong> is famous.</td><td class="w">Moscow</td><td class="w">Beijing</td><td class="au"><audio controls preload="none" src="audio/en/en-0035-baseline.wav"><a href="audio/en/en-0035-baseline.wav">en-0035-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/en/en-0035-speechsplice.wav"><a href="audio/en/en-0035-speechsplice.wav">en-0035-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0044</td><td class="sent" lang="en"><strong>Netflix</strong> is famous.</td><td class="w">Netflix</td><td class="w">Spotify</td><td class="au"><audio controls preload="none" src="audio/en/en-0044-baseline.wav"><a href="audio/en/en-0044-baseline.wav">en-0044-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/en/en-0044-speechsplice.wav"><a href="audio/en/en-0044-speechsplice.wav">en-0044-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">9/10</span></td></tr>
+</tbody></table></div>
+
+<h3>Japanese</h3>
+
+<div class="scroll"><table>
+<thead><tr>
+<th class="id">Item</th>
+<th>Input sentence (target word in bold)</th>
+<th>Target word<br><span class="small">in the input text</span></th>
+<th>Specified target<br><span class="small">supplied at inference</span></th>
+<th>Baseline</th><th>SpeechSplice</th>
+<th>Majority reached<br>the target</th>
+</tr></thead><tbody>
+<tr><td class="id">0005</td><td class="sent" lang="ja">最後に発表するのは<strong>田中</strong>さんです。</td><td class="w">田中</td><td class="w">鈴木<br><span class="small">shown to listeners: すずき</span></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0005-baseline.wav"><a href="audio/ja/ja-0005-baseline.wav">ja-0005-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0005-speechsplice.wav"><a href="audio/ja/ja-0005-speechsplice.wav">ja-0005-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0006</td><td class="sent" lang="ja"><strong>佐藤</strong>さんが会議の資料を準備してくれた。</td><td class="w">佐藤</td><td class="w">高橋<br><span class="small">shown to listeners: たかはし</span></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0006-baseline.wav"><a href="audio/ja/ja-0006-baseline.wav">ja-0006-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0006-speechsplice.wav"><a href="audio/ja/ja-0006-speechsplice.wav">ja-0006-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0012</td><td class="sent" lang="ja"><strong>伊藤</strong>さんが会議の資料を準備してくれた。</td><td class="w">伊藤</td><td class="w">渡辺<br><span class="small">shown to listeners: わたなべ</span></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0012-baseline.wav"><a href="audio/ja/ja-0012-baseline.wav">ja-0012-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0012-speechsplice.wav"><a href="audio/ja/ja-0012-speechsplice.wav">ja-0012-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0023</td><td class="sent" lang="ja">最後に発表するのは<strong>山本</strong>さんです。</td><td class="w">山本</td><td class="w">中村<br><span class="small">shown to listeners: なかむら</span></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0023-baseline.wav"><a href="audio/ja/ja-0023-baseline.wav">ja-0023-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0023-speechsplice.wav"><a href="audio/ja/ja-0023-speechsplice.wav">ja-0023-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0026</td><td class="sent" lang="ja">その提案は<strong>小林</strong>さんが考えたものです。</td><td class="w">小林</td><td class="w">加藤<br><span class="small">shown to listeners: かとう</span></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0026-baseline.wav"><a href="audio/ja/ja-0026-baseline.wav">ja-0026-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0026-speechsplice.wav"><a href="audio/ja/ja-0026-speechsplice.wav">ja-0026-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0031</td><td class="sent" lang="ja">昨日、<strong>吉田</strong>さんに駅で偶然会った。</td><td class="w">吉田</td><td class="w">山田<br><span class="small">shown to listeners: やまだ</span></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0031-baseline.wav"><a href="audio/ja/ja-0031-baseline.wav">ja-0031-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0031-speechsplice.wav"><a href="audio/ja/ja-0031-speechsplice.wav">ja-0031-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0037</td><td class="sent" lang="ja">昨日、<strong>佐々木</strong>さんに駅で偶然会った。</td><td class="w">佐々木</td><td class="w">山口<br><span class="small">shown to listeners: やまぐち</span></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0037-baseline.wav"><a href="audio/ja/ja-0037-baseline.wav">ja-0037-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0037-speechsplice.wav"><a href="audio/ja/ja-0037-speechsplice.wav">ja-0037-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0043</td><td class="sent" lang="ja">昨日、<strong>松本</strong>さんに駅で偶然会った。</td><td class="w">松本</td><td class="w">井上<br><span class="small">shown to listeners: いのうえ</span></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0043-baseline.wav"><a href="audio/ja/ja-0043-baseline.wav">ja-0043-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0043-speechsplice.wav"><a href="audio/ja/ja-0043-speechsplice.wav">ja-0043-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0053</td><td class="sent" lang="ja">最後に発表するのは<strong>木村</strong>さんです。</td><td class="w">木村</td><td class="w">斎藤<br><span class="small">shown to listeners: さいとう</span></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0053-baseline.wav"><a href="audio/ja/ja-0053-baseline.wav">ja-0053-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0053-speechsplice.wav"><a href="audio/ja/ja-0053-speechsplice.wav">ja-0053-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0054</td><td class="sent" lang="ja"><strong>清水</strong>さんが会議の資料を準備してくれた。</td><td class="w">清水</td><td class="w">山崎<br><span class="small">shown to listeners: やまざき</span></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0054-baseline.wav"><a href="audio/ja/ja-0054-baseline.wav">ja-0054-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/ja/ja-0054-speechsplice.wav"><a href="audio/ja/ja-0054-speechsplice.wav">ja-0054-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+</tbody></table></div>
+
+<h3>Chinese</h3>
+
+<div class="scroll"><table>
+<thead><tr>
+<th class="id">Item</th>
+<th>Input sentence (target word in bold)</th>
+<th>Target word<br><span class="small">in the input text</span></th>
+<th>Specified target<br><span class="small">supplied at inference</span></th>
+<th>Baseline</th><th>SpeechSplice</th>
+<th>Majority reached<br>the target</th>
+</tr></thead><tbody>
+<tr><td class="id">0005</td><td class="sent" lang="zh">他打算明年搬到<strong>北京</strong>去。</td><td class="w">北京</td><td class="w">上海</td><td class="au"><audio controls preload="none" src="audio/zh/zh-0005-baseline.wav"><a href="audio/zh/zh-0005-baseline.wav">zh-0005-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/zh/zh-0005-speechsplice.wav"><a href="audio/zh/zh-0005-speechsplice.wav">zh-0005-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0006</td><td class="sent" lang="zh">他们下个月要去<strong>广州</strong>出差。</td><td class="w">广州</td><td class="w">深圳</td><td class="au"><audio controls preload="none" src="audio/zh/zh-0006-baseline.wav"><a href="audio/zh/zh-0006-baseline.wav">zh-0006-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/zh/zh-0006-speechsplice.wav"><a href="audio/zh/zh-0006-speechsplice.wav">zh-0006-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0012</td><td class="sent" lang="zh">他们下个月要去<strong>成都</strong>出差。</td><td class="w">成都</td><td class="w">重庆</td><td class="au"><audio controls preload="none" src="audio/zh/zh-0012-baseline.wav"><a href="audio/zh/zh-0012-baseline.wav">zh-0012-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/zh/zh-0012-speechsplice.wav"><a href="audio/zh/zh-0012-speechsplice.wav">zh-0012-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0023</td><td class="sent" lang="zh">他打算明年搬到<strong>杭州</strong>去。</td><td class="w">杭州</td><td class="w">南京</td><td class="au"><audio controls preload="none" src="audio/zh/zh-0023-baseline.wav"><a href="audio/zh/zh-0023-baseline.wav">zh-0023-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/zh/zh-0023-speechsplice.wav"><a href="audio/zh/zh-0023-speechsplice.wav">zh-0023-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0026</td><td class="sent" lang="zh">我朋友住在<strong>武汉</strong>很多年了。</td><td class="w">武汉</td><td class="w">长沙</td><td class="au"><audio controls preload="none" src="audio/zh/zh-0026-baseline.wav"><a href="audio/zh/zh-0026-baseline.wav">zh-0026-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/zh/zh-0026-speechsplice.wav"><a href="audio/zh/zh-0026-speechsplice.wav">zh-0026-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0031</td><td class="sent" lang="zh"><strong>西安</strong>的天气最近很好。</td><td class="w">西安</td><td class="w">洛阳</td><td class="au"><audio controls preload="none" src="audio/zh/zh-0031-baseline.wav"><a href="audio/zh/zh-0031-baseline.wav">zh-0031-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/zh/zh-0031-speechsplice.wav"><a href="audio/zh/zh-0031-speechsplice.wav">zh-0031-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0037</td><td class="sent" lang="zh"><strong>天津</strong>的天气最近很好。</td><td class="w">天津</td><td class="w">青岛</td><td class="au"><audio controls preload="none" src="audio/zh/zh-0037-baseline.wav"><a href="audio/zh/zh-0037-baseline.wav">zh-0037-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/zh/zh-0037-speechsplice.wav"><a href="audio/zh/zh-0037-speechsplice.wav">zh-0037-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0043</td><td class="sent" lang="zh"><strong>苏州</strong>的天气最近很好。</td><td class="w">苏州</td><td class="w">无锡</td><td class="au"><audio controls preload="none" src="audio/zh/zh-0043-baseline.wav"><a href="audio/zh/zh-0043-baseline.wav">zh-0043-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/zh/zh-0043-speechsplice.wav"><a href="audio/zh/zh-0043-speechsplice.wav">zh-0043-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0053</td><td class="sent" lang="zh">他打算明年搬到<strong>大连</strong>去。</td><td class="w">大连</td><td class="w">厦门</td><td class="au"><audio controls preload="none" src="audio/zh/zh-0053-baseline.wav"><a href="audio/zh/zh-0053-baseline.wav">zh-0053-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/zh/zh-0053-speechsplice.wav"><a href="audio/zh/zh-0053-speechsplice.wav">zh-0053-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+<tr><td class="id">0054</td><td class="sent" lang="zh">他们下个月要去<strong>昆明</strong>出差。</td><td class="w">昆明</td><td class="w">贵阳</td><td class="au"><audio controls preload="none" src="audio/zh/zh-0054-baseline.wav"><a href="audio/zh/zh-0054-baseline.wav">zh-0054-baseline.wav</a></audio></td><td class="au"><audio controls preload="none" src="audio/zh/zh-0054-speechsplice.wav"><a href="audio/zh/zh-0054-speechsplice.wav">zh-0054-speechsplice.wav</a></audio></td><td class="res"><span class="yes">Yes</span><br><span class="small">10/10</span></td></tr>
+</tbody></table></div>
+
+<h2>Voice prompt (reference speaker)</h2>
+<p>The file below is a <b>recording of a real human speaker</b> from the JSUT corpus. It is not synthetic speech. It is the voice-cloning prompt behind every Japanese clip on this page &mdash; both the proper-name set and the same-surface set &mdash; so the voice timbre heard in those synthetic clips is cloned from this single recording.</p>
+<div class="scroll"><table class="num">
+<thead><tr><th>File</th><th>Corpus item</th><th>Transcript</th><th>Format</th><th>Duration</th><th>Processing applied</th><th>Listen</th></tr></thead>
+<tbody><tr>
+<td><code>audio/prompt/jsut-basic5000-0011.wav</code></td>
+<td>JSUT <code>basic5000</code> / <code>BASIC5000_0011</code></td>
+<td class="long" lang="ja">木曽川は、しばしば日本のライン川と呼ばれている。</td>
+<td>WAV, 16-bit PCM, mono, 48 kHz</td>
+<td>3.58 s</td>
+<td class="long">None. Byte-for-byte identical to the corpus file: no cut, no concatenation, no loudness change, no resampling.</td>
+<td class="au"><audio controls preload="none" src="audio/prompt/jsut-basic5000-0011.wav"><a href="audio/prompt/jsut-basic5000-0011.wav">jsut-basic5000-0011.wav</a></audio></td>
+</tr></tbody></table></div>
+<p class="note">The prompt is kept in its own directory, <code>audio/prompt/</code>, and out of the sample tables above, because the listeners in the paper heard only synthetic clips &mdash; never this recording. Mixing the two would misrepresent what was evaluated.</p>
+<p>The English and Chinese clips use different prompt speakers, and those two recordings are <b>not</b> redistributed here: English uses a 3.25-second LibriTTS <code>train-clean-100</code> excerpt, Chinese a BZNSYP excerpt resampled to 44.1 kHz mono. Both corpora are credited below.</p>
+
+<h2>Licensing, provenance and attribution</h2>
+<p><b>Everything in the sample tables is synthetic speech.</b> Each clip is the output of a frozen T5Gemma-TTS model performing zero-shot voice cloning from a prompt recording. No clip is a recording of a real person saying the sentence next to it, and no speaker on this page uttered, consented to or is aware of these particular sentences. The one exception is the voice prompt in the section above, which is marked as a real recording.</p>
+
+<h3>Terms for the synthetic clips</h3>
+<p>The clips in the sample tables are released <b>for non-commercial research use</b>, which is the strictest of the conditions attached to the resources they derive from. This page does <b>not</b> place them under CC BY-SA 4.0. The reason is the JSUT audio used as the Japanese voice prompt: JSUT's audio is not distributed under a Creative Commons licence at all (its terms are quoted below; only its text is CC BY-SA 4.0), so no blanket copyleft grant can be made over speech that clones that speaker. The Japanese same-surface <i>sentences</i> are a separate matter: they come from <code>ja-tts-g2p-bench</code> under CC BY-SA 4.0, and that share-alike condition continues to apply to those sentence texts and to adaptations of them.</p>
+<p>For terms beyond non-commercial research use, contact the rights holders of the underlying corpora directly; the JSUT page lists a contact address for commercial use.</p>
+
+<h3>Third-party resources</h3>
+<dl class="attr">
+
+<dt>JSUT corpus &mdash; Japanese voice-cloning prompt, and the prompt recording published on this page</dt>
+<dd>Ryosuke Sonobe, Shinnosuke Takamichi and Hiroshi Saruwatari (Saruwatari Lab, The University of Tokyo); Shinnosuke Takamichi is the main contributor. <a href="https://sites.google.com/site/shinnosuketakamichi/publication/jsut">sites.google.com/site/shinnosuketakamichi/publication/jsut</a><br>
+<b>Licence, as stated by the distributor:</b> the corpus has no single licence. Its <i>text</i> is licensed under CC BY-SA 4.0 and comparable terms (for <code>basic5000</code>: Wikipedia CC BY-SA 3.0, Tanaka Corpus CC BY 2.0, and the authors' own sentences CC BY-SA 4.0). Its <i>audio</i> is <b>not</b> under a Creative Commons licence. The distributed terms of use read: the audio data &ldquo;may be used for &mdash; Research by academic institutions; Non-commercial research, including research conducted within commercial organizations; Personal use, including blog posts&rdquo;, and &ldquo;Re-distribution is not permited, but you can upload a part of this corpus (e.g., ~100 audio files) in your webpage or blog.&rdquo; The single prompt file published here falls inside that allowance; the corpus itself is not redistributed. Commercial use requires contacting the authors.<br>
+<b>Citation:</b> Ryosuke Sonobe, Shinnosuke Takamichi and Hiroshi Saruwatari, &ldquo;JSUT corpus: free large-scale Japanese speech corpus for end-to-end speech synthesis,&rdquo; arXiv preprint 1711.00354, 2017.</dd>
+
+<dt>ja-tts-g2p-bench &mdash; source of the Japanese same-surface items</dt>
+<dd>kawajiri-tellernovel (filmapp). <a href="https://huggingface.co/datasets/kawajiri-tellernovel/ja-tts-g2p-bench">huggingface.co/datasets/kawajiri-tellernovel/ja-tts-g2p-bench</a><br>
+<b>Licence:</b> CC BY-SA 4.0, as declared on the dataset card. Suggested credit: &ldquo;ja-tts-g2p-bench: Japanese TTS Kanji Reading Benchmark&rdquo; by filmapp (2025). The same-surface sentences on this page are taken from this benchmark; items that were not uniquely answerable were replaced, and the set was filled to 50 items with hard-to-read Japanese place names and surnames drawn from Wikipedia.</dd>
+
+<dt>LibriTTS &mdash; English voice-cloning prompt (not redistributed here)</dt>
+<dd>Heiga Zen, Viet Dang, Rob Clark, Yu Zhang, Ron J. Weiss, Ye Jia, Zhifeng Chen and Yonghui Wu. <a href="https://www.openslr.org/60/">openslr.org/60</a><br>
+<b>Licence:</b> CC BY 4.0. A 3.25-second <code>train-clean-100</code> excerpt served as the English speaker prompt; the excerpt itself is not published on this page.</dd>
+
+<dt>BZNSYP / Chinese Standard Mandarin Speech Corpus &mdash; Chinese voice-cloning prompt (not redistributed here)</dt>
+<dd>Beijing DataBaker Technology. <a href="https://www.data-baker.com/en/#/data/index/source">data-baker.com</a><br>
+<b>Licence:</b> released by the distributor for non-commercial use; it is not a Creative Commons corpus. One excerpt, resampled to 44.1 kHz mono, served as the Chinese speaker prompt; the excerpt itself is not published on this page.</dd>
+
+<dt>T5Gemma-TTS &mdash; the frozen TTS model that produced every synthetic clip</dt>
+<dd>Aratako. <a href="https://huggingface.co/Aratako/T5Gemma-TTS-2b-2b">huggingface.co/Aratako/T5Gemma-TTS-2b-2b</a><br>
+Used without modification and without retraining; SpeechSplice changes nothing in the model weights. See the model card for its own licence terms.</dd>
+
+<dt>Wikipedia &mdash; source of the additional place names and surnames</dt>
+<dd><a href="https://www.wikipedia.org/">wikipedia.org</a><br>
+<b>Licence:</b> CC BY-SA 4.0. Articles on hard-to-read Japanese place names and surnames supplied the items that filled the same-surface set to 50.</dd>
+
+</dl>
+<p class="note">The same terms, with file-by-file provenance for everything in the audio directory, are repeated in <a href="LICENSE_AUDIO.md">LICENSE_AUDIO.md</a>.</p>
+
+<footer>
+<p><b>What is on this page.</b> 80 synthetic clips (40 baseline / SpeechSplice pairs) taken unchanged from the paper's AB selection test, plus one JSUT prompt recording. All files are 16-bit mono PCM WAV; the synthetic clips are 44.1 kHz, the prompt recording 48 kHz. Nothing was re-encoded, resampled or trimmed for this page.</p>
+<p>The synthetic clips are offered for non-commercial research use. The Japanese same-surface sentence texts are CC BY-SA 4.0 (ja-tts-g2p-bench). The JSUT prompt recording remains under the JSUT terms of use quoted above: academic, non-commercial or personal use, with no redistribution of the corpus. Everything in the sample tables is machine-generated speech, not the utterance of any real speaker.</p>
+<p>No analytics, no external fonts, no third-party scripts, no tracking. This page loads nothing but the audio files stored beside it.</p>
+</footer>
+
+</div>

@@ -1,0 +1,5 @@
+set,language,items,listeners,judgments,bl_n,nopref_n,inj_n,bl_pct,nopref_pct,inj_pct
+proper_name_steering,en,50,20,500,0,3,497,0.0,0.6,99.4
+proper_name_steering,ja,50,20,500,0,7,493,0.0,1.4,98.6
+proper_name_steering,zh,50,20,500,0,0,500,0.0,0.0,100.0
+same_surface_correction,ja_het,50,20,500,3,4,493,0.6,0.8,98.6
