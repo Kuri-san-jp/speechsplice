@@ -1,0 +1,148 @@
+{
+ "rows": [
+  {
+   "pair_idx": 13,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "whisper": "Kilimanjaro's famous.",
+   "target_in": true,
+   "utmos": 2.4918196201324463,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 15,
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "whisper": "Dickens famous.",
+   "target_in": true,
+   "utmos": 4.234656810760498,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 21,
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "whisper": "Galileo famous",
+   "target_in": true,
+   "utmos": 3.7374510765075684,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 23,
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "whisper": "Airbus famous",
+   "target_in": true,
+   "utmos": 3.9831762313842773,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 32,
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "whisper": "Magellan is famous.",
+   "target_in": true,
+   "utmos": 4.126891613006592,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 37,
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "whisper": "Roosevelt's famous.",
+   "target_in": true,
+   "utmos": 3.598228931427002,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 63,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "whisper": "Yesterday, Kilimanjaro became famous.",
+   "target_in": true,
+   "utmos": 4.153783321380615,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 90,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "whisper": "Yesterday, Gobi became famous.",
+   "target_in": true,
+   "utmos": 3.6925249099731445,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 113,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "whisper": "Around the world Kilimanjaro is known.",
+   "target_in": true,
+   "utmos": 3.4673714637756348,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 140,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "whisper": "Around the world, Gobi is known.",
+   "target_in": true,
+   "utmos": 3.516019821166992,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 163,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "whisper": "Many people know Kilimanjaro very well.",
+   "target_in": true,
+   "utmos": 4.008938789367676,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 190,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "whisper": "Many people know Gobi very well.",
+   "target_in": true,
+   "utmos": 4.387484550476074,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 213,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "whisper": "They respect Kilimanjaro.",
+   "target_in": true,
+   "utmos": 3.6910736560821533,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 240,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "whisper": "They respect Gooby.",
+   "target_in": false,
+   "utmos": 3.1496787071228027,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 263,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "whisper": "Everyone looks up to Kilimanjaro today.",
+   "target_in": true,
+   "utmos": 3.1886160373687744,
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 290,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "whisper": "Everyone looks up to Gobi today.",
+   "target_in": true,
+   "utmos": 4.193535327911377,
+   "delta_tok": 1
+  }
+ ]
+}

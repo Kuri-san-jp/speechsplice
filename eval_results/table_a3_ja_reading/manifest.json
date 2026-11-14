@@ -1,0 +1,53 @@
+{
+ "files": [
+  {
+   "file": "hetnum77_bl.json",
+   "source": "eval_results/bench_hetnum77_gen/furigana_verify.json",
+   "source_md5": "21753bb25f480ba2479adc812d7b2414",
+   "note": "BL: baseline synthesis of the sentence"
+  },
+  {
+   "file": "hetnum77_injsc.json",
+   "source": "eval_results/bench_hetnum77_gen/furigana_verify_injsc.json",
+   "source_md5": "1d2ce37c3f1736239c8f96fead1d34ed",
+   "note": "INJ: splice injection, only the BL-wrong items"
+  },
+  {
+   "file": "hetnum77_ref_c.json",
+   "source": "eval_results/bench_hetnum77_gen/furigana_verify_ref_c.json",
+   "source_md5": "f5b0b5d09eb841fe833bb45ce8f47bcc",
+   "note": "correct-reading reference synthesis (validation)"
+  },
+  {
+   "file": "hetnum77_ref_w.json",
+   "source": "eval_results/bench_hetnum77_gen/furigana_verify_ref_w.json",
+   "source_md5": "253a2ec202a12108f00662d0cf2563d7",
+   "note": "competing-reading reference synthesis (validation)"
+  },
+  {
+   "file": "ext83_bl.json",
+   "source": "eval_results/bench_ext83_gen/furigana_verify.json",
+   "source_md5": "7c34de8afaec2b12df73d1b12c886b4d",
+   "note": "BL: baseline synthesis of the sentence"
+  },
+  {
+   "file": "ext83_injsc.json",
+   "source": "eval_results/bench_ext83_gen/furigana_verify_injsc.json",
+   "source_md5": "bc8c69c0a485290f5fd91e0548554f87",
+   "note": "INJ: splice injection, only the BL-wrong items"
+  },
+  {
+   "file": "ext83_ref_c.json",
+   "source": "eval_results/bench_ext83_gen/furigana_verify_ref_c.json",
+   "source_md5": "283b7f82b7673d0708d43f828e8f8244",
+   "note": "correct-reading reference synthesis (validation)"
+  },
+  {
+   "file": "ext83_ref_w.json",
+   "source": "eval_results/bench_ext83_gen/furigana_verify_ref_w.json",
+   "source_md5": "e6b05e9ed6cd6065ff627a9e2706e411",
+   "note": "competing-reading reference synthesis (validation)"
+  }
+ ],
+ "license": "The sentences, targets and readings come from ja-tts-g2p-bench (CC BY-SA 4.0); see data/external/README.md"
+}

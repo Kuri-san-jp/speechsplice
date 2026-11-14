@@ -1,23 +1,46 @@
-# Voice cloning reference prompts for T5Gemma-TTS synthesis.
+# Voice-cloning prompts used in the experiments (paths relative to REPO_ROOT).
 #
-# Each entry pairs a natural-speech wav file (relative to REPO_ROOT) with the
-# transcript that exactly matches the audio content. These are used as the
-# voice cloning prompt during synthesis; the actual experiment input texts are
-# defined in `data/{en,ja,zh}_cross_culture_names.py` (shipped in this archive).
-#
-# Replace these with your own recordings (any speaker, any natural utterance,
-# 5-15 seconds). The transcript must match the audio exactly.
+# The files are not redistributed (corpus terms); scripts/prepare_voice_prompts.py rebuilds
+# them from the corpora and checks their MD5 against the files that were used.
+# `text` is the prompt transcript passed to the generator; an empty value means the script
+# was run without --reference_text, so T5Gemma-TTS transcribed the prompt with Whisper
+# large-v3-turbo. REPRODUCE.md §0.1 gives the details.
 
-en:
-  wav: eval_results/_natural_refs_norm/en_natural_norm.wav
-  text: "Let me see, I'll give them a new pair of boots every Christmas."
+prompts:
+  en_natural_norm:
+    wav: eval_results/_natural_refs_norm/en_natural_norm.wav
+    source: LibriTTS test-clean 260_123440_000002_000004 (CC BY 4.0), 44.1 kHz mono
+    md5: ea7e3416d4984961a25ba231ca136374
+  zh_natural_bznsyp_norm:
+    wav: eval_results/_natural_refs_norm/zh_natural_bznsyp_norm.wav
+    source: Databaker BZNSYP 000801 (Hugging Face yvonne66/BZNSYP_new, train shard 0, row 800), 44.1 kHz mono
+    md5: d3395c36d22484c47116925e8bb6b2eb
+  ja_natural_norm:
+    wav: eval_results/_natural_refs_norm/ja_natural_norm.wav
+    source: JSUT ver1.1 BASIC5000_0079, 44.1 kHz mono
+    md5: 3a924426f00a7206fa8e557fa2cafe28
+  zh_natural_norm:
+    wav: eval_results/_natural_refs_norm/zh_natural_norm.wav
+    source: FLEURS cmn_hans_cn test 10040380210557600780 (CC BY 4.0), 44.1 kHz mono
+    md5: 440a3eb1a3bc8968401cdc13395d92ee
+  jsut_basic5000_0011:
+    wav: eval_results/subjective_eval_jsut_audio/000_GT_BASIC5000_0011.wav
+    source: JSUT ver1.1 BASIC5000_0011, unchanged (identical to docs/audio/prompt/jsut-basic5000-0011.wav)
+    md5: 129902fbafbe7437c411a5c40028095e
 
-ja:
-  wav: eval_results/_natural_refs_norm/ja_natural_norm.wav
-  # Replace with a 5-15 second natural Japanese utterance and its exact transcript.
-  text: ""
-
-zh:
-  wav: eval_results/_natural_refs_norm/zh_natural_norm.wav
-  # Replace with a 5-15 second natural Mandarin utterance and its exact transcript.
-  text: ""
+usage:
+  table1_en:        {prompt: en_natural_norm, text: ""}
+  table1_ja:        {prompt: jsut_basic5000_0011, text: "木曽川は、しばしば日本のライン川と呼ばれている。"}
+  table1_zh:        {prompt: zh_natural_bznsyp_norm, text: "他二人皮划艇比赛获得银牌",
+                     note: "not the transcript of this prompt; pairs 67 and 76 were regenerated with text: \"\""}
+  table2_voicecraft: {prompt: en_natural_norm, note: "VoiceCraft transcribes the prompt with Whisper medium.en"}
+  table3_t5gemma:   {prompt: null, note: "zero-shot (single-entity conditions)"}
+  table3_two_entity_t5gemma: {prompt: jsut_basic5000_0011, text: ""}
+  table3_qwen3:     {en: en_natural_norm, ja: ja_natural_norm, zh: zh_natural_norm,
+                     note: "x_vector_only_mode; the reference text is not used"}
+  table3_xtts_csm:  {prompt: en_natural_norm}
+  table3_llasa:     {en: en_natural_norm, zh: zh_natural_bznsyp_norm}
+  table_a1_a2_a10_ja_zh: {prompt: null, note: "zero-shot"}
+  table_a3:         {prompt: jsut_basic5000_0011, text: ""}
+  table_a5:         {prompt: ja_natural_norm, text: ""}
+  table_a10_en_fr_de_ko: {prompt: jsut_basic5000_0011, text: "木曽川は、しばしば日本のライン川と呼ばれている。"}

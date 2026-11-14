@@ -1,0 +1,105 @@
+{
+ "align": "splice",
+ "pairs_module": "en_wordrepl300_pairs",
+ "lang": "en",
+ "ref_wav": "/mnt/eval_results/_natural_refs_norm/en_natural_norm.wav",
+ "only_unequal": true,
+ "rows": [
+  {
+   "pair_idx": 13,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 15,
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 21,
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 23,
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 32,
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 37,
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 63,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 90,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 113,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 140,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 163,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 190,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 213,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 240,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 263,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "delta_tok": 1
+  },
+  {
+   "pair_idx": 290,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "delta_tok": 1
+  }
+ ]
+}

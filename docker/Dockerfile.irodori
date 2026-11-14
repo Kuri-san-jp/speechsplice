@@ -1,0 +1,48 @@
+# Irodori-TTS image of Table 3 ("irodori-tts:latest").
+# Irodori-TTS v4.1 needs torch>=2.10 and transformers>=5.12.1,<6, which cannot share the
+# main image (torch 2.6.0, transformers 4.57.3), so it ran in this separate image.
+# Not installed on purpose: silentcipher (audio watermark; without it the runtime passes
+# the audio through, so the evaluation audio carries no watermark), torchcodec, peft and
+# torchao (training, LoRA and quantized checkpoints only).
+# Build: docker build -f docker/Dockerfile.irodori -t irodori-tts:latest docker
+FROM pytorch/pytorch:2.10.0-cuda12.8-cudnn9-runtime
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PIP_NO_CACHE_DIR=1
+ENV PYTHONDONTWRITEBYTECODE=1
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        git ffmpeg libsndfile1 \
+    && rm -rf /var/lib/apt/lists/*
+
+# compatibility link for launchers that set LD_LIBRARY_PATH to a python3.11 path
+RUN PYDIR="$(python -c 'import sysconfig,os; print(os.path.dirname(sysconfig.get_paths()["purelib"]))')" \
+    && if [ ! -d /opt/conda/lib/python3.11 ] && [ -d "${PYDIR}" ]; then \
+         mkdir -p /opt/conda/lib && ln -s "${PYDIR}" /opt/conda/lib/python3.11 ; \
+       fi \
+    && python -V
+
+# the base image's Python 3.12 is marked EXTERNALLY-MANAGED (PEP 668)
+ENV PIP_BREAK_SYSTEM_PACKAGES=1
+
+RUN pip install --no-cache-dir \
+        "transformers>=5.12.1,<6" \
+        "tokenizers>=0.22" \
+        "safetensors>=0.7.0" \
+        "huggingface-hub>=0.34.0" \
+        soundfile \
+        "numpy<3" \
+        einops \
+        tqdm \
+        pyyaml \
+        "sentencepiece>=0.2.0"
+
+# dacvae's dependencies first, then dacvae itself without dependencies, so that its
+# "torch" requirement cannot replace the image's CUDA build of torch
+RUN pip install --no-cache-dir "descript-audiotools>=0.7.2" "argbind>=0.3.7"
+RUN pip install --no-cache-dir --no-deps "git+https://github.com/facebookresearch/dacvae"
+
+COPY verify_irodori_env.py /opt/verify_irodori_env.py
+RUN python /opt/verify_irodori_env.py
+
+WORKDIR /mnt

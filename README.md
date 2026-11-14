@@ -17,6 +17,13 @@ Contact: `{kiyoshi.kurihara, jumpei.ukita, iwasawa, matsuo}@weblab.t.u-tokyo.ac.
 SpeechSplice pairs that the listeners in the paper heard.
 
 Table and appendix numbers below follow the camera-ready version of the paper.
+Every experiment of the paper can be checked at two levels:
+
+- **From the shipped per-pair outputs, on a CPU** (§4): every value of every table,
+  in a few seconds.
+- **From scratch, on a GPU** (`REPRODUCE.md`): the generation, scoring and aggregation
+  code that produced those outputs, with the commands, containers, model revisions,
+  voice prompts and random seeds of the original runs.
 
 ---
 
@@ -24,16 +31,18 @@ Table and appendix numbers below follow the camera-ready version of the paper.
 
 | Path | Contents |
 |---|---|
-| `src/` | Implementation modules: encoder-output injection (`injection.py`), ROME/MEMIT editor (`rome.py`), forced alignment (`alignment.py`), scorers (`mcd_pysptk.py`, `phoneme_per.py`, `score_utmos.py`, `score_trm_g2pcer.py`, `strict_v2.py`) |
-| `src/_vendor/t5gemma_tts/` | Minimal T5Gemma-TTS inference utilities, vendored with their original MIT license (see `NOTICE`) |
-| `data/` | **Benchmark item lists.** 11 sets, 3,500 sentence pairs in total, across 6 languages |
-| `scripts/` | Generation and scoring scripts for T5Gemma-TTS and the comparison systems, and the table aggregators (`aggregate_*.py`) |
+| `scripts/` | All code of the experiments, in the folder layout in which it ran (`projection/`, `analysis/`, `layer_ablation/`, one folder per TTS system, `spanfix/` and `regen2/` for the reruns and re-seeded pairs, ...), plus the table aggregators `scripts/aggregate_*.py` and the setup scripts (`env.sh`, `setup_third_party.sh`, `download_models.py`, `prepare_voice_prompts.py`) |
+| `src/` | The scorers shared by many scripts: phoneme PER / PIB (`phoneme_per.py`), MCD (`mcd_pysptk.py`), and the TRM / G2P-CER scorer of Table A5; `src/_vendor/t5gemma_tts/` is the T5Gemma-TTS inference code (see `NOTICE`) |
+| `third_party/` | Vendored model code: LongCat-AudioDiT and whisper-pinyin (see `NOTICE`) |
+| `docker/` | The container definitions of the runs and the `pip freeze` of the main image |
+| `data/` | **Benchmark item lists**: the 11 sets of 3,500 sentence pairs, the two-entity sentence sets, the Table A3 benchmark items (`data/external/`), and the Table A10 item lists |
 | `configs/` | Experiment configuration (`table_specs.yaml`, `voice_prompts.yaml`, `pair_seeds.csv`) |
-| `eval_results/` | **Pre-computed per-pair evaluation outputs**, one directory per table (`table1_*`, `table2_*`, `table3_*`, `table_a*`). Each `manifest.json` names the experiment file a copy came from and its MD5 |
+| `eval_results/` | **Pre-computed per-pair evaluation outputs**, one directory per table (`table1_*`, `table2_*`, `table3_*`, `table_a*`, `appendix_j_compute`). Each `manifest.json` names the experiment file a copy came from and its MD5 |
 | `human_eval/` | **Listening-test materials and results**: stimulus manifests, verbatim instructions in three languages, interface screenshots, item-level and aggregate results, and the pre-specified analysis code. See [`human_eval/README.md`](human_eval/README.md) |
 | `docs/` | The audio sample page (`index.html`) and its clips, under the terms in `docs/LICENSE_AUDIO.md` |
-| `requirements.txt` | Full dependency set (needed only for the GPU synthesis/scoring pipeline) |
-| `requirements-cpu.txt` | The packages needed for the GPU-free reproduction below |
+| `REPRODUCE.md` | Commands to rerun every experiment on a GPU |
+| `requirements-cpu.txt` | The packages needed for the GPU-free reproduction (§4) |
+| `requirements.txt` | The main packages of the GPU environment; `docker/my_lab_image_freeze.txt` pins all of them |
 
 ## 2. Newly released resources
 
@@ -51,34 +60,37 @@ independently of our method.
    Chinese**, built from 30 name pairs crossed with 10 sentence templates, with
    a Japanese surname as the target (`data/{en,ja,zh}_cross_culture_names.py`).
    Table 3, Table A1, and Table A5 use these.
-3. **Six-language heteronym / polyphone sets**: EN heteronyms (500 pairs), ZH
+3. **Two-entity sentence sets: 300 sentences per language** with two entity slots
+   each (`data/{en,ja}_multientity_300.py`, `data/zh_multientity_300_v2.py`), used by the
+   two-entity columns of Table 3 and by Table A12.
+4. **Six-language heteronym / polyphone sets**: EN heteronyms (500 pairs), ZH
    polyphones, KO hanja polyphones, FR and DE heteronyms (300 pairs each). With
-   the two sets above, 3,500 pairs in total across all 11 sets, all
-   materialized by one command (§4, step 1).
-4. **Listening-test stimulus manifests, 200 items** across four sets
+   the first two sets above, 3,500 pairs in total across 11 sets, all
+   materialized by one command (§4, step 1). The JA and ZH items of Table A10 come
+   from `data/entities_10000.jsonl` and `data/zh_polyphones_v2.json`.
+5. **Listening-test stimulus manifests, 200 items** across four sets
    (EN/JA/ZH name sets and the JA same-surface set, 50 main items each, plus 3
    catch and 2 practice items per set), with source/target words, the reading
    shown on screen, and the block assignment: `human_eval/stimuli/`.
-5. **Item-level listening results for all 200 items**
+6. **Item-level listening results for all 200 items**
    (`human_eval/results/sheet3_item_level.csv`): per-item counts of INJ / BL /
    neither, the number of judgments, and the automatic (Whisper) verdict for
    both conditions. This is enough to recompute the published preference rates
    and their confidence intervals without any participant-level data (§4,
    step 2).
-6. **Verbatim instruction text in three languages** for both studies
+7. **Verbatim instruction text in three languages** for both studies
    (`human_eval/instructions_verbatim.md`, with English glosses of the
    Japanese and Chinese text), and **32 screenshots** of the deployed
    experiment interface (`human_eval/screenshots/`). These let others
    replicate the exact listener-facing protocol rather than reconstruct it
    from prose.
-7. **Pre-computed per-pair outputs behind the tables** (`eval_results/`), so
-   the published values can be recomputed and audited without rerunning
-   synthesis. For Table 3 this covers all 17 model-language conditions:
-   the MCD and phoneme scores at our replacement point, the phoneme scores at
-   each of the five swept depths, and the per-slot judge verdicts on the
-   two-entity sentences (which also list each sentence's word pairs and
-   template id).
-8. **The pre-specified analysis code** for both listening studies
+8. **Pre-computed per-pair outputs behind every table** (`eval_results/`), so the
+   published values can be recomputed and audited without rerunning synthesis:
+   the per-pair UTMOS, durations and verdicts of Tables 1 and 2; for Table 3, all
+   17 model-language conditions at our replacement point, at each of the five
+   swept depths, and on the two-entity sentences; and the per-item results of
+   Tables A1, A2, A3, A5, A6, A10 and A12.
+9. **The pre-specified analysis code** for both listening studies
    (`human_eval/analysis/`), including a self-test mode that runs on synthetic
    data with planted ground truth (§4, step 4).
 
@@ -91,8 +103,8 @@ The reproduction in §4 needs Python 3.10+ and the packages in
 pip install -r requirements-cpu.txt     # numpy, scipy, pandas, statsmodels, pykakasi
 ```
 
-`requirements.txt` is the full environment, and is needed only to rerun the
-synthesis and scoring pipeline on a GPU (§6).
+Rerunning the experiments themselves needs a GPU and the containers of `docker/`;
+see `REPRODUCE.md`.
 
 ## 4. Reproduction without a GPU
 
@@ -112,31 +124,40 @@ python3 scripts/verify_benchmark.py
 Materializes all 11 sets and asserts their sizes; prints `TOTAL 3500`.
 Add `--dump out/` to write one JSONL file per set.
 
-**Step 2 - recompute the human-evaluation preference results.**
+```bash
+python3 scripts/verify_item_lists.py
+```
+
+Rebuilds the items of Table A10 (JA and ZH), the two-entity sentences of Table 3,
+and the Table A3 benchmark from `data/` and checks them against the items recorded
+in the shipped outputs.
+
+**Step 2 - recompute the human-evaluation results.**
 
 ```bash
 python3 scripts/aggregate_human_eval.py
+python3 scripts/aggregate_failure_cases.py
 ```
 
-Recomputes the INJ-selection rates and their item-bootstrap intervals from the
-item-level counts, reproducing the human columns of Table 1 (EN
+The first recomputes the INJ-selection rates and their item-bootstrap intervals
+from the item-level counts, reproducing the human columns of Table 1 (EN
 `99.4 [98.6, 100.0]`, JA `98.6 [95.8, 100.0]`, ZH `100.0 [100.0, 100.0]`) and
 Table A4, the Japanese same-surface set (`98.6 [97.4, 99.6]`, 493/3/4
-judgments, 50/50 items reaching target). Also echoes the shipped MOS results.
+judgments, 50/50 items reaching target), and echoes the shipped MOS results.
+The second joins the item-level counts with the automatic verdicts and prints
+the eight disagreements of Table A9.
 
 **Step 3 - recompute the automatic-evaluation tables.**
 
 ```bash
-python3 scripts/aggregate_table1.py      # Whisper-INJ: EN 96.33±2.19, JA 92.33±3.04, ZH 96.00±2.28
-python3 scripts/aggregate_table2.py      # SpeechSplice 96.33±2.19, VoiceCraft 90.00±3.41, EdiTTS 86.00±3.93
+python3 scripts/aggregate_table1.py      # Table 1, automatic columns (Whisper-INJ, UTMOS, speaker similarity, |dF0| ratio)
+python3 scripts/aggregate_table2.py      # Table 2, every column, with the Wilcoxon and McNemar tests
 python3 scripts/aggregate_table3.py      # Table 3: all 17 rows, every column
-python3 scripts/aggregate_appendix.py    # Tables A1, A2, A5, A6, A10, A12
+python3 scripts/aggregate_appendix.py    # Tables A1, A2, A3, A5, A6, A10, A11, A12 and the compute figures
 ```
 
-`aggregate_table1.py` and `aggregate_table2.py` print, in a footer, which
-columns they cannot derive from the shipped files and why. The definitions
-behind every value (counts, denominators, interval formulas) are written at
-the top of each script.
+The definitions behind every value (counts, denominators, interval formulas)
+are written at the top of each script.
 
 **Step 4 - self-test the pre-specified listening-test analysis (~30 s).**
 
@@ -154,23 +175,23 @@ is safe to delete.
 
 ## 5. Table-to-file map
 
-| Paper | Command | Files read | Reproduced here? |
+| Paper | CPU command (§4) | Files read | Code that produced them (`REPRODUCE.md`) |
 |---|---|---|---|
-| Table 1, human columns (INJ selected, A/B %) | `scripts/aggregate_human_eval.py` | `human_eval/results/sheet3_item_level.csv`, `sheet2_main_results.csv` | Yes |
-| Table 1, GEE `z` and MOS columns | — | `human_eval/results/primary_analysis.txt`, `mos_final.txt` | Shipped as text; recomputation needs participant-level data (withheld) |
-| Table 1, Whisper-INJ column | `scripts/aggregate_table1.py` | `eval_results/table1_cross_lingual/{ja,zh}_judge.json`, `eval_results/table2_system_comparison/whisper_inj_large_v3.json` | Yes, all three languages |
-| Table 1, UTMOS / speaker similarity / \|ΔF0\| | `scripts/aggregate_table1.py` | as above + `speaker_similarity_tests.json` | Partly: UTMOS (INJ) for EN and the BL–INJ similarity tests only. The rest needs the GPU run |
-| Table 2 (VoiceCraft / EdiTTS comparison) | `scripts/aggregate_table2.py` | `eval_results/table2_system_comparison/whisper_inj_large_v3.json`, `speaker_similarity_tests.json` | Whisper-INJ, McNemar, and speaker-identity statistics: yes. UTMOS / \|ΔF0\| / \|Δduration\|: needs the GPU run |
-| Table 3 (cross-architecture, 17 conditions) | `scripts/aggregate_table3.py` | `eval_results/table3_cross_arch/manifest.json` and its `point_mcd/`, `point_pib/`, `sweep_pib/`, `two_entity/` | Yes: MCD, PIB, the five swept depths with their min–max, and the three two-entity columns |
-| Table A1 (acoustic cross-attention mask ablation) | `scripts/aggregate_appendix.py` | `eval_results/table_a1_crossattn_mask/{en,ja,zh}.json` | Yes |
-| Table A2 (phoneme-level mask ablation) | `scripts/aggregate_appendix.py` | `eval_results/table_a2_phoneme_mask/{en,ja}.json` | Yes |
-| Table A3 (Japanese 160-item reading benchmark) | — | — | No. The items come from ja-tts-g2p-bench; per-item outputs are not shipped |
-| Table A4 (same-surface listening test) | `scripts/aggregate_human_eval.py` | `human_eval/results/sheet3_item_level.csv` | Yes |
-| Table A5 (text- and weight-level baselines) | `scripts/aggregate_appendix.py` | `eval_results/table_a5_baselines/ja.json` | Yes, from the stored per-pair verdicts (see the caveats) |
-| Table A6 (full-sentence CER) | `scripts/aggregate_appendix.py` | `eval_results/table_a6_cer/*.json`, `data/` | Yes (JA needs `pykakasi`) |
-| Table A8 (listener demographics) | — | `human_eval/results/demographics_aggregate.txt` | Shipped as text |
-| Table A10 (six-language same-surface test) | `scripts/aggregate_appendix.py` | `eval_results/table_a10_six_language/` | Yes |
-| Table A12 (UTMOS of the two-entity sentences) | `scripts/aggregate_appendix.py` | `eval_results/table_a12_two_entity_utmos/` | Yes |
+| Table 1, human columns; Table A4 | `aggregate_human_eval.py` | `human_eval/results/sheet3_item_level.csv`, `sheet2_main_results.csv` | `human_eval/analysis/` |
+| Table 1, GEE `z` and MOS | — | `human_eval/results/primary_analysis.txt`, `mos_final.txt` | `human_eval/analysis/` (needs the withheld participant-level data) |
+| Table 1, automatic columns | `aggregate_table1.py` | `eval_results/table1_cross_lingual/` | §1: `scripts/projection/eval_utmos_speaker_fixed.py`, judges and scorers in `scripts/analysis/` |
+| Table 2 | `aggregate_table2.py` | `eval_results/table2_system_comparison/`, `table1_cross_lingual/` | §1: also `scripts/voicecraft/`, `scripts/editts/` |
+| Table 3 | `aggregate_table3.py` | `eval_results/table3_cross_arch/` (`manifest.json` lists the file of every cell) | §2: one folder per system, `scripts/layer_ablation/`, `src/phoneme_per.py`, `src/mcd_pysptk.py` |
+| Table A1 | `aggregate_appendix.py` | `eval_results/table_a1_crossattn_mask/` | §3: `scripts/projection/eval_crossattn_entity_dtw.py` |
+| Table A2 | `aggregate_appendix.py` | `eval_results/table_a2_phoneme_mask/` | §3: `scripts/projection/eval_crossattn_entity_per.py` |
+| Table A3 | `aggregate_appendix.py` | `eval_results/table_a3_ja_reading/` | §3: `scripts/analysis/numerals_verify_generic.py`, `bench_hetnum77_{inj,furigana}.py` |
+| Table A5 | `aggregate_appendix.py` | `eval_results/table_a5_baselines/` | §3: `scripts/regen2/appg_vc_*.py`, `scripts/projection/eval_baseline_text_edit.py` |
+| Table A6 | `aggregate_appendix.py` | `eval_results/table_a6_cer/`, `data/` (JA needs `pykakasi`) | §1: transcripts of the Table 1 runs |
+| Table A8 | — | `human_eval/results/demographics_aggregate.txt` | — |
+| Table A9 | `aggregate_failure_cases.py` | `human_eval/results/sheet3_item_level.csv`, the Table 1/2 judge files | — |
+| Table A10 | `aggregate_appendix.py` | `eval_results/table_a10_six_language/` | §3: `scripts/projection/eval_cjk_n300*.py`, `scripts/regen2/appk_*.py` |
+| Table A11, compute (Appendix J) | `aggregate_appendix.py` | `eval_results/appendix_j_compute/` | `scripts/spanfix/c7_param_count.py`, `c6_compute_budget.py` |
+| Table A12 | `aggregate_appendix.py` | `eval_results/table_a12_two_entity_utmos/` | §2: `scripts/spanfix/utmos_multi_now.py` |
 
 ### Known caveats in the shipped files
 
@@ -179,17 +200,11 @@ is safe to delete.
   with the sample standard deviation; Table 3 PIB and the rates of Tables A2,
   A5, and A10 use Wilson intervals; Table A1 uses 1.96 × the population
   standard deviation / √n.
-- **Table 3, four MCD files were computed at camera-ready time.** For
-  T5Gemma-TTS EN, SpeechT5 EN, and Llasa-3B EN/ZH, the value at our
-  replacement point is taken from the layer-sweep run at that depth. The MCD of
-  those four sweep folders was computed on 2026-11-14 with the same function as
-  the other MCD files (`manifest.json` marks them); their per-pair rows are
-  unchanged from that computation.
-- **Table 3, T5Gemma-TTS JA and ZH:** the value at our replacement point
-  (`point_pib/`) and the sweep value at l* = 26 (`sweep_pib/..._l26.json`) come
-  from runs whose audio differs in a few pairs (JA 59, 99, 164, 179; ZH 15, 30,
-  145, 246, 295), so the two files give 51.33 vs 52.00 (JA) and 54.67 vs 55.00
-  (ZH). Both values lie inside the printed sweep range.
+- **Table 3, six MCD files were computed at camera-ready time.** For
+  T5Gemma-TTS EN/JA/ZH, SpeechT5 EN, and Llasa-3B EN/ZH the value at our
+  replacement point is taken from the layer-sweep run at that depth, whose MCD
+  had not been computed. It was computed on 2026-11-14 with the same function as
+  the other MCD files (`manifest.json` marks them).
 - **Table 3, Irodori-TTS** replaces after the projection at our replacement
   point and before it in the sweep (the dagger in the paper), so its point and
   sweep files come from different runs by design.
@@ -200,59 +215,50 @@ is safe to delete.
   per-row verdicts. Re-deriving the ZH verdicts from the transcripts needs
   `pypinyin`; re-deriving the Table A5 verdicts needs `pykakasi` and
   `src/score_trm_g2pcer_nopyojt.py`.
+- **Table 1, ZH:** the voice-prompt transcript given to T5Gemma-TTS was not the
+  transcript of the prompt for 298 pairs, and the Whisper large-v3-turbo transcript
+  for pairs 67 and 76, which were regenerated (`REPRODUCE.md` §0.1).
+- **Table 1, speaker similarity and |ΔF0|** are shipped as the summaries the scorers
+  wrote ([mean, 1.96·SE, SD]); the per-pair values were not stored and need the audio.
 - **Table A10, Japanese injection success:** the per-row file stores the strict
-  containment result (255/300). The paper's 256/300 applies a kana
-  normalization (ー expansion, おう = おお, えい = ええ, variant kana) whose
-  original code was not preserved; `scripts/aggregate_appendix.py`
-  re-implements it from its documented rules and reproduces 256 (the only
-  changed item is pair 105).
+  containment result (255/300). The paper's 256/300 applies the kana
+  normalization `norm_kana` of `scripts/analysis/ja_wordrepl_judge.py`
+  (ー expansion, おう = おお, えい = ええ, variant kana), which `scripts/aggregate_appendix.py`
+  copies; the only changed item is pair 105.
 - **Table A10, IPA change:** pairs whose BL or INJ IPA transcript is empty are
   excluded (KO 10, FR 28, DE 30 pairs; listed in
   `ipa_excluded_empty.json`), as stated in the paper.
-- `eval_results/table1_cross_lingual/en_judge.json` records a separate
-  g2p-containment scoring pass (291/300). The paper's EN Whisper-INJ value
-  (289/300 = 96.33%) comes from
-  `eval_results/table2_system_comparison/whisper_inj_large_v3.json`, which is
-  the same run scored by the Table 2 judge. `aggregate_table1.py` reads the
-  latter and says so in a comment.
+- **Appendix J, compute:** the job-record recount covers jobs up to 2026-10-02
+  (272.86 GPU-hours); a few later regenerations (the Table A2 JA rerun, 8 pairs of
+  Table A1, 8 pairs of Table 3) bring it to about 275, the value in the paper.
+- `eval_results/table1_cross_lingual/en_judge.json` records Whisper medium.en
+  containment (291/300). The paper's EN Whisper-INJ value (289/300 = 96.33%) comes
+  from `eval_results/table2_system_comparison/whisper_inj_large_v3.json`, the same
+  run scored by Whisper large-v3; `aggregate_table1.py` reads the latter.
 
-## 6. What needs a GPU
+## 6. Rerunning the experiments
 
-Nothing in §4 does. The synthesis and scoring pipeline does, and is not
-exercised by the reproduction above.
+`REPRODUCE.md` gives the command of every run behind the shipped outputs, with the
+containers (`docker/`), the model revisions (`scripts/download_models.py`), the
+third-party code (`scripts/setup_third_party.sh`), the voice prompts
+(`scripts/prepare_voice_prompts.py`, which rebuilds them from their corpora and
+checks their MD5) and the re-seeded pairs (`configs/pair_seeds.csv`).
 
-- **Generation code included:** T5Gemma-TTS (`src/injection.py`, the Table 1
-  and Table A1 scripts, and the Table A5 baselines including ROME/MEMIT),
-  and the VoiceCraft and EdiTTS runs of Table 2
-  (`scripts/table2_voicecraft/`, `scripts/table2_editts/`).
-- **Not included:** the splice code for the other nine systems of Table 3
-  (SpeechT5, LongCat-AudioDiT, Irodori-TTS, Kiseki-TTS, Qwen3-TTS, XTTS-v2,
-  Llasa-3B, CSM-1B, Bark), the layer-sweep and two-entity generation, the
-  phoneme-level scoring of Table A2, and the Table A3 runs. Except for Table
-  A3, their per-pair outputs are shipped instead (§5).
-- The base TTS model `Aratako/T5Gemma-TTS-2b-2b` is a gated Hugging Face
-  repository. Accept its license and export `HF_TOKEN` before running any
-  generation script.
-- `espeak-ng` is required by the IPA phonemizer
-  (`apt-get install -y espeak-ng`, or `brew install espeak`).
+- The base TTS model `Aratako/T5Gemma-TTS-2b-2b` and some others are gated
+  Hugging Face repositories. Accept their licenses and export `HF_TOKEN` before
+  downloading.
+- The original runs used one NVIDIA A100-PCIE-40GB. Most systems sample during
+  synthesis (and SpeechT5 applies dropout at inference), so on other GPUs the audio
+  and the per-pair scores differ even with the same seeds; `REPRODUCE.md` reports a
+  rerun on an H100.
+- The scripts are the files that ran, and many of their comments and messages are
+  in Japanese. Only the host paths (now `$REPO_ROOT`, default `/mnt`), the module
+  locations of this repository, and the Japanese kana helpers outside the generation
+  path (now pykakasi) were changed.
 
-Producing the utterances behind all tables of the paper took about 290
-GPU-hours on one NVIDIA A100-PCIE-40GB, at a median of 8.0 seconds per
-utterance; the layer sweep of Table 3 accounts for about two thirds of that.
-
-### Portability note for the GPU scripts
-
-The generation and scoring scripts were run inside a container with this
-repository mounted at `/mnt`. Most of them detect that (`os.path.isdir(
-"/mnt/scripts")`) and otherwise fall back to `REPO_ROOT` or the working
-directory, so they run unchanged outside the container. A few still hardcode
-`/mnt` and need editing for another layout: `scripts/appendix_f_eval_rome.py`,
-`scripts/appendix_f_eval_g2p_baseline.py`,
-`scripts/appendix_f_eval_baseline_text_edit.py`,
-`scripts/table2_voicecraft/edit_entity_en.py`, and the cache defaults in
-`src/phoneme_per.py`. None of these are on the GPU-free path in section 4.
-The `appendix_f_*` and `table4_*` file names predate the camera-ready
-numbering; they belong to Table A5 and Table A1, respectively.
+Producing the utterances behind all tables of the paper took about 275
+GPU-hours on one NVIDIA A100-PCIE-40GB, at 8.7 seconds per utterance on average;
+the layer sweep of Table 3 accounts for about 43% of that.
 
 ### Random seeds
 
@@ -266,15 +272,14 @@ synthesized with the seed in `seed`. `table` is the table number in the paper,
 
 - **Model weights.** SpeechSplice trains nothing and edits no weights. All
   experiments use published frozen checkpoints, obtained from their original
-  sources: the ten TTS systems of Table 3, VoiceCraft and EdiTTS, and the
-  evaluation models (Whisper large-v3 and medium.en, Furigana Whisper,
-  whisper-pinyin, wav2vec2-xlsr-53-espeak-cv-ft, UTMOS, WavLM-SV). Appendix J
-  of the paper lists them with links. There is no checkpoint of ours to
-  release.
+  sources (`scripts/download_models.py`). There is no checkpoint of ours to release.
+- **Voice prompts.** The corpus recordings used as voice-cloning prompts (LibriTTS,
+  JSUT, the Databaker corpus, FLEURS) are not redistributed, apart from the JSUT
+  recording on the sample page; `scripts/prepare_voice_prompts.py` rebuilds them.
 - **Synthesized audio.** The generated waveforms clone a prompt speaker's
   voice, so redistributing them would redistribute that speaker identity.
   Apart from the 80 listening-test clips on the sample page (`docs/`), we
-  release the item lists, the scoring code, and the per-pair scores instead,
+  release the item lists, the code, and the per-pair scores instead,
   so the numbers can be audited without the audio.
 - **Participant-level listening responses.** Listeners consented to aggregate
   reporting, not to release of individual-level records. We release item-level
@@ -296,11 +301,11 @@ released files.
 ## 9. License
 
 Our code, benchmark item lists, and listening-test materials are released under
-the MIT License (`LICENSE`). The vendored T5Gemma-TTS utilities under
-`src/_vendor/t5gemma_tts/` are third-party code under their own MIT license;
-see `NOTICE` and `src/_vendor/t5gemma_tts/LICENSE`. The audio and sentence
-texts on the sample page (`docs/`) are not covered by the MIT License; their
-terms are in `docs/LICENSE_AUDIO.md`.
+the MIT License (`LICENSE`). Third-party code under `src/_vendor/` and
+`third_party/` keeps its own license, and the ja-tts-g2p-bench items
+(`data/external/`, `eval_results/table_a3_ja_reading/`) are CC BY-SA 4.0; see
+`NOTICE`. The audio and sentence texts on the sample page (`docs/`) are not
+covered by the MIT License; their terms are in `docs/LICENSE_AUDIO.md`.
 
 ## 10. Citation
 

@@ -1,0 +1,660 @@
+{
+ "created": "2026-10-02 15:33:51",
+ "script": "scripts/spanfix/c7_param_count.py",
+ "rule": "* count floating-point tensors that are module parameters;\n  * leave out non-parameter buffers (positional-encoding tables `.pe`, BatchNorm running statistics,\n    the openai-whisper encoder `positional_embedding` buffer, iSTFT windows, causal-mask buffers, integer tensors);\n  * count a tensor stored twice with identical bytes (tied weights) once;\n  * for a TTS row, leave out the waveform codec / vocoder (\"tts_only\"); the full checkpoint is also reported\n    (\"checkpoint_total\") so the author can pick either reading.\n  For the HF-supported architectures the result is cross-checked against the model built on the meta device\n  (`num_parameters()`), which needs no weights.",
+ "rows": [
+  {
+   "row": "T5Gemma-TTS-2b-2b",
+   "printed_in_main_tex": "4.0B",
+   "files": [
+    ".cache/huggingface/hub/models--Aratako--T5Gemma-TTS-2b-2b/blobs/12a5d05741e9c00c966521b5692810785f882a5141d4ae440deefcdd2886cab5",
+    ".cache/huggingface/hub/models--Aratako--T5Gemma-TTS-2b-2b/blobs/f548b2f61fb3f0771913c1e6f03dc387ec9a6dc4b7a63050b10e1e3f72ae0c29",
+    ".cache/huggingface/hub/models--Aratako--T5Gemma-TTS-2b-2b/blobs/a2c60fba107fb9ee6051c4fbe69ad65f42312d1765d559c614ba912f471ee816"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--Aratako--T5Gemma-TTS-2b-2b/snapshots/e548f8358891975e61d2107e3d7ccc47b1b7294e/model-00001-of-00003.safetensors",
+    ".cache/huggingface/hub/models--Aratako--T5Gemma-TTS-2b-2b/snapshots/e548f8358891975e61d2107e3d7ccc47b1b7294e/model-00002-of-00003.safetensors",
+    ".cache/huggingface/hub/models--Aratako--T5Gemma-TTS-2b-2b/snapshots/e548f8358891975e61d2107e3d7ccc47b1b7294e/model-00003-of-00003.safetensors"
+   ],
+   "codec_or_vocoder": "NandemoGHS/Anime-XCodec2-44.1kHz-v2 (separate file; XCodec2 row)",
+   "params": 5314418949,
+   "params_before_tie_dedup": 5314418949,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "backbone": 5007029760,
+    "predict_layer": 156382725,
+    "audio_embedding": 151006464
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 5314418949,
+   "checkpoint_total": 5314418949,
+   "tts_only_fmt": "5.31B",
+   "checkpoint_total_fmt": "5.31B"
+  },
+  {
+   "row": "SpeechT5 (TTS)",
+   "printed_in_main_tex": "144M",
+   "files": [
+    ".cache/huggingface/hub/models--microsoft--speecht5_tts/blobs/13f9c8e2c431ed64b5b56490d3ceaadac9d60d1e7224cadd1c26fbb462036fec"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--microsoft--speecht5_tts/snapshots/a01d4f293234515125d07f68be3c36d739ccac93/model.safetensors"
+   ],
+   "codec_or_vocoder": "microsoft/speecht5_hifigan (separate file)",
+   "params": 144431684,
+   "params_before_tie_dedup": 144431684,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "speecht5": 143117058,
+    "speech_decoder_postnet": 1314626
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 1903776,
+   "excluded_buffers_examples": [
+    "speech_decoder_postnet.layers.0.batch_norm.running_mean",
+    "speech_decoder_postnet.layers.0.batch_norm.running_var",
+    "speech_decoder_postnet.layers.1.batch_norm.running_mean",
+    "speech_decoder_postnet.layers.1.batch_norm.running_var",
+    "speech_decoder_postnet.layers.2.batch_norm.running_mean",
+    "speech_decoder_postnet.layers.2.batch_norm.running_var"
+   ],
+   "nonfloat_numel": 5,
+   "tts_only": 144431684,
+   "checkpoint_total": 144431684,
+   "separate_codec_params": 12656417,
+   "separate_codec_files": [
+    ".cache/huggingface/hub/models--microsoft--speecht5_hifigan/snapshots/bb6f429406e86a9992357a972c0698b22043307d/pytorch_model.bin"
+   ],
+   "meta_num_parameters": 144431684,
+   "meta_excluded_module": null,
+   "meta_excluded_module_params": 0,
+   "meta_tts_only": 144431684,
+   "tts_only_fmt": "144M",
+   "checkpoint_total_fmt": "144M"
+  },
+  {
+   "row": "LongCat-AudioDiT-1B",
+   "printed_in_main_tex": "--",
+   "files": [
+    ".cache/huggingface/hub/models--meituan-longcat--LongCat-AudioDiT-1B/blobs/7f41b20933e4466400b8487fd20ca195efa65c5ca7c61f8e9bba6316aa3edcde"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--meituan-longcat--LongCat-AudioDiT-1B/snapshots/4f4c19434f2e3b991998d0ead6ab2cd056d947b7/model.safetensors"
+   ],
+   "codec_or_vocoder": "waveform VAE inside the same checkpoint (prefix vae.)",
+   "params": 1263817024,
+   "params_before_tie_dedup": 1263817024,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "transformer": 981955648,
+    "text_encoder": 281861376
+   },
+   "excluded_prefixes": {
+    "vae.": 156106625
+   },
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 1263817024,
+   "checkpoint_total": 1419923649,
+   "tts_only_fmt": "1.26B",
+   "checkpoint_total_fmt": "1.42B"
+  },
+  {
+   "row": "Irodori-TTS-v4.1-Small",
+   "printed_in_main_tex": "--",
+   "files": [
+    ".cache/huggingface/hub/models--Aratako--Irodori-TTS-v4.1-Small/blobs/c85de88c01700cb53538e706f128ebcb1b8513ad21d7d0e75f58bc82cdbf89f6"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--Aratako--Irodori-TTS-v4.1-Small/snapshots/2b28324dc263ed5e6638b3cf3dd94c82ead07b4b/model.safetensors"
+   ],
+   "codec_or_vocoder": "Aratako/Semantic-DACVAE-Japanese-32dim (separate file)",
+   "params": 766052385,
+   "params_before_tie_dedup": 766052385,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "blocks": 358440960,
+    "pretrained_text_backbone": 314611968,
+    "speaker_encoder": 60506880,
+    "duration_predictor": 21783809,
+    "cond_module": 7208960,
+    "caption_encoder": 1706752,
+    "text_encoder": 1706752,
+    "in_proj": 42240,
+    "out_proj": 40992,
+    "out_norm": 1280,
+    "speaker_norm": 768,
+    "caption_norm": 512,
+    "text_norm": 512
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 766052385,
+   "checkpoint_total": 766052385,
+   "separate_codec_params": 107375875,
+   "separate_codec_files": [
+    ".cache/huggingface/hub/models--Aratako--Semantic-DACVAE-Japanese-32dim/snapshots/47376ee24834d7a05a48ebabfe3cde29b3c5e214/weights.pth"
+   ],
+   "tts_only_fmt": "766M",
+   "checkpoint_total_fmt": "766M"
+  },
+  {
+   "row": "Kiseki-TTS",
+   "printed_in_main_tex": "0.41B",
+   "files": [
+    ".cache/huggingface/hub/models--telecomadm1145--Kiseki-TTS/blobs/5c9207598bdceaf26accfd6d829ff246c24cc3f4caaaa9617c2b031a28c2f861"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--telecomadm1145--Kiseki-TTS/snapshots/ceb563aff4a052173d4c11e5b6541be7e9992a45/model.safetensors"
+   ],
+   "codec_or_vocoder": "not part of this checkpoint",
+   "params": 411134016,
+   "params_before_tie_dedup": 411134016,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "encoder": 268723200,
+    "decoder": 64779328,
+    "audio_head": 41979904,
+    "audio_embed": 35651584
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 411134016,
+   "checkpoint_total": 411134016,
+   "tts_only_fmt": "411M",
+   "checkpoint_total_fmt": "411M"
+  },
+  {
+   "row": "Qwen3-TTS-12Hz-1.7B",
+   "printed_in_main_tex": "1.7B",
+   "files": [
+    ".cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-1.7B-Base/blobs/38fc7fc51c5e776e840414b6fd443962e9411b9654888fd7913e4da643cb857c"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-1.7B-Base/snapshots/fd4b254389122332181a7c3db7f27e918eec64e3/model.safetensors"
+   ],
+   "codec_or_vocoder": "speech_tokenizer/ (same repository, separate file)",
+   "params": 1928677440,
+   "params_before_tie_dedup": 1928677440,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "talker": 1916676352,
+    "speaker_encoder": 12001088
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 1928677440,
+   "checkpoint_total": 1928677440,
+   "separate_codec_params": 170557441,
+   "separate_codec_files": [
+    ".cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-1.7B-Base/snapshots/fd4b254389122332181a7c3db7f27e918eec64e3/speech_tokenizer/model.safetensors"
+   ],
+   "tts_only_fmt": "1.93B",
+   "checkpoint_total_fmt": "1.93B"
+  },
+  {
+   "row": "XTTS-v2",
+   "printed_in_main_tex": "--",
+   "files": [
+    ".cache/huggingface/hub/models--coqui--XTTS-v2/blobs/c7ea20001c6a0a841c77e252d8409f6a74fb423e79b3206a0771ba5989776187"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--coqui--XTTS-v2/snapshots/6c2b0d75eae4b7047358e3b6bd9325f857d43f77/model.pth"
+   ],
+   "codec_or_vocoder": "HiFi-GAN decoder inside the same checkpoint (prefix hifigan_decoder.)",
+   "params": 441018643,
+   "params_before_tie_dedup": 441018643,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "gpt": 441018563,
+    "mel_stats": 80
+   },
+   "excluded_prefixes": {
+    "hifigan_decoder.": 25872750
+   },
+   "excluded_buffers_numel": 9168,
+   "excluded_buffers_examples": [
+    "hifigan_decoder.speaker_encoder.bn1.running_mean",
+    "hifigan_decoder.speaker_encoder.bn1.running_var",
+    "hifigan_decoder.speaker_encoder.layer1.0.bn1.running_mean",
+    "hifigan_decoder.speaker_encoder.layer1.0.bn1.running_var",
+    "hifigan_decoder.speaker_encoder.layer1.0.bn2.running_mean",
+    "hifigan_decoder.speaker_encoder.layer1.0.bn2.running_var"
+   ],
+   "nonfloat_numel": 37,
+   "tts_only": 441018643,
+   "checkpoint_total": 466891393,
+   "tts_only_fmt": "441M",
+   "checkpoint_total_fmt": "467M"
+  },
+  {
+   "row": "Llasa-3B",
+   "printed_in_main_tex": "--",
+   "files": [
+    ".cache/huggingface/hub/models--HKUSTAudio--Llasa-3B/blobs/f3f8a625a2d6b0761a4cd70230741d1f98b5efb77d39f445ba6ca593d3a44d52",
+    ".cache/huggingface/hub/models--HKUSTAudio--Llasa-3B/blobs/7afe408f2b2fbf71f8306c91149b032cf59255dc0e00ddd5a09d90748b3d10a6"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--HKUSTAudio--Llasa-3B/snapshots/740b08c956fdde4a5a33f2caffbf004ff76e2748/model-00001-of-00002.safetensors",
+    ".cache/huggingface/hub/models--HKUSTAudio--Llasa-3B/snapshots/740b08c956fdde4a5a33f2caffbf004ff76e2748/model-00002-of-00002.safetensors"
+   ],
+   "codec_or_vocoder": "HKUSTAudio/xcodec2 (separate repository; XCodec2 row)",
+   "params": 3414100992,
+   "params_before_tie_dedup": 4009454592,
+   "tied_duplicates": [
+    {
+     "dup": "lm_head.weight",
+     "of": "model.embed_tokens.weight",
+     "numel": 595353600
+    }
+   ],
+   "by_top_level_prefix": {
+    "model": 3414100992,
+    "lm_head": 595353600
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 3414100992,
+   "checkpoint_total": 3414100992,
+   "meta_num_parameters": 3414100992,
+   "meta_excluded_module": null,
+   "meta_excluded_module_params": 0,
+   "meta_tts_only": 3414100992,
+   "tts_only_fmt": "3.41B",
+   "checkpoint_total_fmt": "3.41B"
+  },
+  {
+   "row": "CSM-1B",
+   "printed_in_main_tex": "--",
+   "files": [
+    ".cache/huggingface/hub/models--sesame--csm-1b/blobs/f2dac3b296f50609f57addb82a25bf75f5de2232967d78f5375da3c71fd596d4",
+    ".cache/huggingface/hub/models--sesame--csm-1b/blobs/fdb68548b7422bc623c83885e78802c2c4cc6fc3f864f4fabdd715f94abca4ef"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--sesame--csm-1b/snapshots/c92a71e1c419772e25be7dc14d952c2521a740ab/transformers-00001-of-00002.safetensors",
+    ".cache/huggingface/hub/models--sesame--csm-1b/snapshots/c92a71e1c419772e25be7dc14d952c2521a740ab/transformers-00002-of-00002.safetensors"
+   ],
+   "codec_or_vocoder": "Mimi codec inside the transformers checkpoint (prefix codec_model.)",
+   "params": 1552791552,
+   "params_before_tie_dedup": 1687205888,
+   "tied_duplicates": [
+    {
+     "dup": "depth_decoder.model.embed_tokens.weight",
+     "of": "backbone_model.embed_tokens.embed_audio_tokens.weight",
+     "numel": 134414336
+    }
+   ],
+   "by_top_level_prefix": {
+    "backbone_model": 1107560448,
+    "depth_decoder": 312776704,
+    "embed_text_tokens": 262668288,
+    "lm_head": 4200448
+   },
+   "excluded_prefixes": {
+    "codec_model.": 96151393
+   },
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 1552791552,
+   "checkpoint_total": 1648942945,
+   "meta_num_parameters": 1632100161,
+   "meta_excluded_module": "codec_model",
+   "meta_excluded_module_params": 79308609,
+   "meta_tts_only": 1552791552,
+   "tts_only_fmt": "1.55B",
+   "checkpoint_total_fmt": "1.65B"
+  },
+  {
+   "row": "Bark",
+   "printed_in_main_tex": "--",
+   "files": [
+    ".cache/huggingface/hub/models--suno--bark/blobs/4e3d407b9b3b619da184c85786c88e5e35f90f9089303e16db696ed0be477989"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--suno--bark/snapshots/70a8a7d34168586dc5d028fa9666aceade177992/pytorch_model.bin"
+   ],
+   "codec_or_vocoder": "EnCodec inside the same checkpoint (prefix codec_model.)",
+   "params": 1085739008,
+   "params_before_tie_dedup": 1093308416,
+   "tied_duplicates": [
+    {
+     "dup": "fine_acoustics.lm_heads.0.weight",
+     "of": "fine_acoustics.input_embeds_layers.1.weight",
+     "numel": 1081344
+    },
+    {
+     "dup": "fine_acoustics.lm_heads.1.weight",
+     "of": "fine_acoustics.input_embeds_layers.2.weight",
+     "numel": 1081344
+    },
+    {
+     "dup": "fine_acoustics.lm_heads.2.weight",
+     "of": "fine_acoustics.input_embeds_layers.3.weight",
+     "numel": 1081344
+    },
+    {
+     "dup": "fine_acoustics.lm_heads.3.weight",
+     "of": "fine_acoustics.input_embeds_layers.4.weight",
+     "numel": 1081344
+    },
+    {
+     "dup": "fine_acoustics.lm_heads.4.weight",
+     "of": "fine_acoustics.input_embeds_layers.5.weight",
+     "numel": 1081344
+    },
+    {
+     "dup": "fine_acoustics.lm_heads.5.weight",
+     "of": "fine_acoustics.input_embeds_layers.6.weight",
+     "numel": 1081344
+    },
+    {
+     "dup": "fine_acoustics.lm_heads.6.weight",
+     "of": "fine_acoustics.input_embeds_layers.7.weight",
+     "numel": 1081344
+    }
+   ],
+   "by_top_level_prefix": {
+    "semantic": 446088192,
+    "coarse_acoustics": 327861248,
+    "fine_acoustics": 319358976
+   },
+   "excluded_prefixes": {
+    "codec_model.": 23273218
+   },
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 50331648,
+   "tts_only": 1085739008,
+   "checkpoint_total": 1109012226,
+   "meta_error": "AttributeError: 'NoneType' object has no attribute 'data'",
+   "tts_only_fmt": "1.09B",
+   "checkpoint_total_fmt": "1.11B"
+  },
+  {
+   "row": "XCodec2 [as used by T5Gemma-TTS: NandemoGHS/Anime-XCodec2-44.1kHz-v2]",
+   "printed_in_main_tex": "0.5B",
+   "files": [
+    ".cache/huggingface/hub/models--NandemoGHS--Anime-XCodec2-44.1kHz-v2/blobs/a9c4ba4d0261d9ec1db0e323273c3e05d68725a055673874551ce78365822352"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--NandemoGHS--Anime-XCodec2-44.1kHz-v2/snapshots/58a5080a103abd861052b323279ccabb2333b636/model.safetensors"
+   ],
+   "codec_or_vocoder": "(this row is the codec)",
+   "params": 829962050,
+   "params_before_tie_dedup": 829962050,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "semantic_model": 580493120,
+    "generator": 192126098,
+    "CodecEnc": 38463344,
+    "SemanticEncoder_module": 12584960,
+    "fc_prior": 4196352,
+    "fc_post_a": 2098176
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 392,
+   "excluded_buffers_examples": [
+    "generator.head.istft.window"
+   ],
+   "nonfloat_numel": 0,
+   "tts_only": 829962050,
+   "checkpoint_total": 829962050,
+   "tts_only_fmt": "830M",
+   "checkpoint_total_fmt": "830M"
+  },
+  {
+   "row": "XCodec2 [as used by Llasa-3B: HKUSTAudio/xcodec2]",
+   "printed_in_main_tex": "0.5B",
+   "files": [
+    ".cache/huggingface/hub/models--HKUSTAudio--xcodec2/blobs/a27b1544a394b9aff722da55366281f00480a5479fe5cbfc84f2e2e74eab4db0"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--HKUSTAudio--xcodec2/snapshots/e412427ed30f0cf9d5e3c95562113deb10a32d03/model.safetensors"
+   ],
+   "codec_or_vocoder": "(this row is the codec)",
+   "params": 822737850,
+   "params_before_tie_dedup": 822737850,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "semantic_model": 580493120,
+    "generator": 184901898,
+    "CodecEnc": 38463344,
+    "SemanticEncoder_module": 12584960,
+    "fc_prior": 4196352,
+    "fc_post_a": 2098176
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 1280,
+   "excluded_buffers_examples": [
+    "generator.head.istft.window"
+   ],
+   "nonfloat_numel": 0,
+   "tts_only": 822737850,
+   "checkpoint_total": 822737850,
+   "tts_only_fmt": "823M",
+   "checkpoint_total_fmt": "823M"
+  },
+  {
+   "row": "VoiceCraft",
+   "printed_in_main_tex": "830M",
+   "files": [
+    ".cache/huggingface/hub/models--pyp1--VoiceCraft_830M_TTSEnhanced/blobs/a948e73b5c8217b75f296b2b62f5c7eefad79518c1b27b02b2786f3003772160"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--pyp1--VoiceCraft_830M_TTSEnhanced/snapshots/15ff81999431f57897a945a0d261a561a02ea342/model.safetensors"
+   ],
+   "codec_or_vocoder": "pyp1/VoiceCraft encodec_4cb2048_giga.th (separate file)",
+   "params": 839606290,
+   "params_before_tie_dedup": 839606290,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "decoder": 805736448,
+    "audio_embedding": 16809984,
+    "predict_layer": 16805904,
+    "text_embedding": 247808,
+    "mask_embedding": 6144,
+    "audio_positional_embedding": 1,
+    "text_positional_embedding": 1
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 8,
+   "tts_only": 839606290,
+   "checkpoint_total": 839606290,
+   "separate_codec_params": 58924486,
+   "separate_codec_files": [
+    ".cache/huggingface/hub/models--pyp1--VoiceCraft/snapshots/52b0f909d652ea016966804767320f13ede39abd/encodec_4cb2048_giga.th"
+   ],
+   "tts_only_fmt": "840M",
+   "checkpoint_total_fmt": "840M"
+  },
+  {
+   "row": "EdiTTS",
+   "printed_in_main_tex": "--",
+   "files": [
+    "third_party/EdiTTS/checkpts/grad-tts-old.pt"
+   ],
+   "file_links": [
+    "third_party/EdiTTS/checkpts/grad-tts-old.pt"
+   ],
+   "codec_or_vocoder": "HiFi-GAN generator, third_party/EdiTTS/checkpts/hifigan.pt (separate file)",
+   "params": 14835032,
+   "params_before_tie_dedup": 14835032,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "decoder": 7634887,
+    "encoder": 7200145
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 14835032,
+   "checkpoint_total": 14835032,
+   "separate_codec_params": 13936130,
+   "separate_codec_files": [
+    "third_party/EdiTTS/checkpts/hifigan.pt"
+   ],
+   "tts_only_fmt": "14.8M",
+   "checkpoint_total_fmt": "14.8M"
+  },
+  {
+   "row": "Whisper large-v3",
+   "printed_in_main_tex": "1.5B",
+   "files": [
+    ".cache/huggingface/hub/models--openai--whisper-large-v3/blobs/a8e94b85976e5864ba3e9525c7e6c83b2a1eca42d4b797a0c7c24d778e40fd95"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--openai--whisper-large-v3/snapshots/06f233fe06e710322aca913c1bc4249a0d71fce1/model.safetensors"
+   ],
+   "codec_or_vocoder": "",
+   "params": 1543490560,
+   "params_before_tie_dedup": 1543490560,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "model": 1543490560
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 1543490560,
+   "checkpoint_total": 1543490560,
+   "meta_num_parameters": 1543490560,
+   "meta_excluded_module": null,
+   "meta_excluded_module_params": 0,
+   "meta_tts_only": 1543490560,
+   "tts_only_fmt": "1.54B",
+   "checkpoint_total_fmt": "1.54B"
+  },
+  {
+   "row": "Whisper medium.en",
+   "printed_in_main_tex": "--",
+   "files": [
+    ".cache/whisper/medium.en.pt"
+   ],
+   "file_links": [
+    ".cache/whisper/medium.en.pt"
+   ],
+   "codec_or_vocoder": "",
+   "params": 762320896,
+   "params_before_tie_dedup": 762320896,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "decoder": 456640512,
+    "encoder": 305680384
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 1536000,
+   "excluded_buffers_examples": [
+    "encoder.positional_embedding"
+   ],
+   "nonfloat_numel": 0,
+   "tts_only": 762320896,
+   "checkpoint_total": 762320896,
+   "tts_only_fmt": "762M",
+   "checkpoint_total_fmt": "762M"
+  },
+  {
+   "row": "wav2vec2-xlsr-53-espeak-cv-ft",
+   "printed_in_main_tex": "0.3B",
+   "files": [
+    ".cache/huggingface/hub/models--facebook--wav2vec2-xlsr-53-espeak-cv-ft/blobs/cd23ca5a57a252ee44abfea3b06d28020285015b83b8bb0e59293193ef8c2bd4"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--facebook--wav2vec2-xlsr-53-espeak-cv-ft/snapshots/3e836924cfd3b858a0bbdbc1f7ef412105d00446/model.safetensors"
+   ],
+   "codec_or_vocoder": "",
+   "params": 315840520,
+   "params_before_tie_dedup": 315840520,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "wav2vec2": 315438720,
+    "lm_head": 401800
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 315840520,
+   "checkpoint_total": 315840520,
+   "meta_num_parameters": 315840520,
+   "meta_excluded_module": null,
+   "meta_excluded_module_params": 0,
+   "meta_tts_only": 315840520,
+   "tts_only_fmt": "316M",
+   "checkpoint_total_fmt": "316M"
+  },
+  {
+   "row": "whisper-pinyin",
+   "printed_in_main_tex": "--",
+   "files": [
+    ".cache/huggingface/hub/models--walston--whisper-pinyin/blobs/7bd0ca47d3f916870d887e64c173da336f18c2222751aa4b7296c4439a8f66c6"
+   ],
+   "file_links": [
+    ".cache/huggingface/hub/models--walston--whisper-pinyin/snapshots/7840ab2afafecd7b03aa66c7517d756c180dbb43/checkpoint-epoch=0009.ckpt"
+   ],
+   "codec_or_vocoder": "",
+   "params": 243578934,
+   "params_before_tie_dedup": 243578934,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "model": 243572018,
+    "quantize_t": 6916
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 1152000,
+   "excluded_buffers_examples": [
+    "model.encoder.positional_embedding"
+   ],
+   "nonfloat_numel": 0,
+   "tts_only": 243578934,
+   "checkpoint_total": 243578934,
+   "tts_only_fmt": "244M",
+   "checkpoint_total_fmt": "244M"
+  },
+  {
+   "row": "UTMOS22",
+   "printed_in_main_tex": "35M",
+   "files": [
+    ".cache/torch/hub/checkpoints/utmos22_strong_step7459_v1.pt"
+   ],
+   "file_links": [
+    ".cache/torch/hub/checkpoints/utmos22_strong_step7459_v1.pt"
+   ],
+   "codec_or_vocoder": "",
+   "params": 102772865,
+   "params_before_tie_dedup": 102772865,
+   "tied_duplicates": [],
+   "by_top_level_prefix": {
+    "wav2vec2": 94371712,
+    "blstm": 6299648,
+    "projection": 2101249,
+    "domain_emb": 128,
+    "judge_emb": 128
+   },
+   "excluded_prefixes": {},
+   "excluded_buffers_numel": 0,
+   "excluded_buffers_examples": [],
+   "nonfloat_numel": 0,
+   "tts_only": 102772865,
+   "checkpoint_total": 102772865,
+   "tts_only_fmt": "103M",
+   "checkpoint_total_fmt": "103M"
+  }
+ ]
+}

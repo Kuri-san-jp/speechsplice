@@ -1,16 +1,22 @@
-"""Aggregate the appendix tables A1, A2, A5, A6, A10, and A12 from per-sample files.
+"""Aggregate the appendix tables A1, A2, A3, A5, A6, A10, A11, and A12 and the compute figures.
 
-Reads eval_results/table_a{1,2,5,6,10,12}_*/ (one manifest.json per folder
-names the experiment file each copy came from). Every printed value is
-recomputed from per-pair rows:
+Reads eval_results/table_a*/ and eval_results/appendix_j_compute/ (one
+manifest.json per folder names the experiment file each copy came from).
+Every printed value is recomputed from per-pair rows:
 
   A1   acoustic cross-attention mask ablation (T5Gemma-TTS, EN/JA/ZH).
        Rows with aligned=True; MCD = mcd_bl_inj (Intact) and
        mcd_bl_mask_inj_mask (Blocked); MEL Similarity = the time-averaged
-       tmean_*_mel fields. Mean +- 1.96 * std (ddof=0) / sqrt(n).
+       tmean_*_mel fields. Mean +- 1.96 * std (ddof=0) / sqrt(n). Also the JA
+       subset whose source and target entity spans have the same number of
+       tokens (ja_token_counts.json).
   A2   phoneme-level mask ablation (EN/JA): target-match rate (PER < 0.3) with
        a Wilson 95% half-width (upper bound only when the count is 0), and the
        mean entity PER +- its standard deviation (ddof=0).
+  A3   Japanese 160-item reading benchmark: per category, BL read with the
+       intended (correct) or the competing (wrong) reading, ambiguous BL items
+       left out, and the BL-wrong items that INJ read correctly; plus the
+       validation on 320 references of known polarity.
   A5   conventional baselines on JA entity replacement: TRM and G2P-CER Match
        counts with Wilson 95% intervals.
   A6   full-sentence CER (mean over 300 pairs). EN uses Whisper medium.en
@@ -22,9 +28,14 @@ recomputed from per-pair rows:
        Whisper transcript contains the target reading after kana
        normalization), and IPA change over the pairs whose BL and INJ IPA
        transcripts are both non-empty.
+  A11  parameter counts (appendix_j_compute/param_count.json, computed from
+       the released weights by scripts/spanfix/c7_param_count.py).
   A12  UTMOS of the two-entity sentences: BL, INJ (one) = mean of
        (inj1 + inj2) / 2, INJ (both), and the paired INJ (both) - BL difference
        with 1.96 * SD (ddof=1) / sqrt(n).
+  Compute (Appendix J): GPU-hours and seconds per utterance recounted from the
+       job records (appendix_j_compute/compute_budget.json, written by
+       scripts/spanfix/c6_compute_budget.py).
 """
 import ast, importlib.util, json, os, re, unicodedata
 from math import sqrt
@@ -87,6 +98,13 @@ def table_a1():
             n, m, sd = mean_sd([r[key] for r in rows if r.get(key) is not None], 0)
             cells.append("%.2f +- %.2f" % (m, Z * sd / sqrt(n)))
         print("  %-3s " % lang.upper() + "   ".join("%s %s" % (c, v) for (c, _), v in zip(cols, cells)))
+    tok = {r["pair_idx"]: r for r in load("table_a1_crossattn_mask", "ja_token_counts.json")["rows"]}
+    rows = [r for r in load("table_a1_crossattn_mask", "ja.json")["rows"]
+            if r.get("aligned") and tok[r["pair_idx"]]["src_tokens"] == tok[r["pair_idx"]]["tgt_tokens"]]
+    mcd = [r["mcd_bl_mask_inj_mask"] for r in rows]
+    mel = [r["tmean_bl_mask_inj_mask_mel"] for r in rows]
+    print("  JA, equal token counts (n=%d): Blocked MCD %.2f (max %.2f), Blocked MEL %.4f (min %.4f)" % (
+        len(rows), sum(mcd) / len(mcd), max(mcd), sum(mel) / len(mel), min(mel)))
     print()
 
 
@@ -101,6 +119,63 @@ def table_a2():
             _, m, sd = mean_sd([r[c + "_per"] for r in rows if r.get(c + "_per") is not None], 0)
             out.append("%s %s / %.3f +- %.3f" % (c.upper(), fmt_rate(k, n), m, sd))
         print("  %-3s " % lang.upper() + "   ".join(out))
+    print()
+
+
+A3_CATS = [("heteronym", "Heteronym"), ("context_numeral", "Contextual numeral"),
+           ("drama_specific", "Drama-specific reading"), ("okurigana", "Okurigana"),
+           ("jukujikun", "Jukujikun"), ("verb_conjugation", "Verb conjugation"),
+           ("juubako_yuto", "Mixed on/kun compounds"), ("onkun_domain", "Domain-dependent on/kun")]
+
+
+def table_a3():
+    print("Table A3  Japanese 160-item reading benchmark (items, BL correct, BL wrong, corrected/wrong)")
+    bl, inj, ref = [], [], {"c": [], "w": []}
+    for sub in ("hetnum77", "ext83"):
+        bl += [dict(r, sub=sub) for r in load("table_a3_ja_reading", sub + "_bl.json")["rows"]]
+        inj += [dict(r, sub=sub) for r in load("table_a3_ja_reading", sub + "_injsc.json")["rows"]]
+        for k in ("c", "w"):
+            ref[k] += load("table_a3_ja_reading", "%s_ref_%s.json" % (sub, k))["rows"]
+    fixed = {(r["sub"], r["idx"]) for r in inj if r["label"] == "correct"}
+    tot = [0, 0, 0, 0, 0]
+    for cat, nice in A3_CATS:
+        rows = [r for r in bl if r["category"] == cat]
+        c = sum(r["label"] == "correct" for r in rows)
+        w = [r for r in rows if r["label"] == "wrong"]
+        f = sum((r["sub"], r["idx"]) in fixed for r in w)
+        print("  %-24s %3d %3d %3d  %d/%d" % (nice, len(rows), c, len(w), f, len(w)))
+        for i, v in enumerate((len(rows), c, len(w), f, len(w))):
+            tot[i] += v
+    print("  %-24s %3d %3d %3d  %d/%d" % ("Total", *tot))
+    print("  corrected items decided by containment: %d/%d" % (
+        sum(r["method"] == "containment" for r in inj if r["label"] == "correct"), len(fixed)))
+    ok = sum(r["label"] == "correct" for r in ref["c"]) + sum(r["label"] == "wrong" for r in ref["w"])
+    rev = sum(r["label"] == "wrong" for r in ref["c"]) + sum(r["label"] == "correct" for r in ref["w"])
+    n = len(ref["c"]) + len(ref["w"])
+    print("  validation on references: %d/%d expected label (%.2f%%), %d reversed, %d ambiguous" % (
+        ok, n, 100 * ok / n, rev, n - ok - rev))
+    print()
+
+
+def table_a11():
+    print("Table A11  parameter counts (TTS rows exclude the codec/vocoder)")
+    rows = load("appendix_j_compute", "param_count.json")["rows"] + \
+        load("appendix_j_compute", "param_count_added_20261114.json")["rows"]
+    for r in rows:
+        v = r["params"]
+        print("  %-34s %15s" % (r.get("row"), "{:,}".format(v) if isinstance(v, int) else v))
+    print()
+
+
+def compute():
+    print("Appendix J  compute (generation behind the paper, recounted from the job records)")
+    g = load("appendix_j_compute", "compute_budget.json")
+    a, b = g["generation_behind_paper"], g["scoring_jobs_on_paper_speech"]
+    print("  %.2f GPU-h for %d utterances, %.2f s per utterance on average; layer sweep %.2f GPU-h (%.1f%%);"
+          " scoring %.2f GPU-h" % (a["gpu_h"], a["utterances"], a["mean_sec_per_utt"], a["layer_sweep_gpu_h"],
+                                   100 * a["layer_sweep_share"], b["gpu_h"]))
+    print("  (jobs up to %s; the few single-pair regenerations after that date are not included)"
+          % g["sacct_last_job_start_TTS26"][:10])
     print()
 
 
@@ -198,16 +273,18 @@ def table_a6():
     print()
 
 
-HIRA_VOWEL = {}
-for _v, _cs in {"あ": "あかさたなはまやらわがざだばぱぁゃゎ", "い": "いきしちにひみりぎじぢびぴぃ",
-                "う": "うくすつぬふむゆるぐずづぶぷぅゅゔっ", "え": "えけせてねへめれげぜでべぺぇ",
-                "お": "おこそとのほもよろをごぞどぼぽぉょ"}.items():
-    for _c in _cs:
-        HIRA_VOWEL[_c] = _v
-VARIANT = str.maketrans({"ぢ": "じ", "づ": "ず", "ゔ": "ぶ", "ゐ": "い", "ゑ": "え", "を": "お"})
+# Kana normalization of the Table A10 JA judge, copied verbatim from
+# scripts/analysis/ja_wordrepl_judge.py (norm_kana): kana unification, ー expansion,
+# おう = おお, えい = ええ, and variant kana.
+VOWEL = {}
+for row_, v in [("あかがさざただなはばぱまやらわゃぁっ", "あ"), ("いきぎしじちぢにひびぴみりゐぃ", "い"),
+                ("うくぐすずつづぬふぶぷむゆるゔゅぅ", "う"), ("えけげせぜてでねへべぺめれゑぇ", "え"),
+                ("おこごそぞとどのほぼぽもよろをょぉ", "お"), ("ん", "ん")]:
+    for c in row_:
+        VOWEL[c] = v
 
 
-def norm_hira(s):
+def norm_kana(s):
     out = []
     for c in s:
         o = ord(c)
@@ -216,16 +293,16 @@ def norm_hira(s):
             o = ord(c)
         if 0x3041 <= o <= 0x3096 or c == "ー":
             out.append(c)
-    return "".join(out)
-
-
-def norm_ja(s):
-    """Kana unification, long-vowel unification (ー expansion, おう = おお, えい = ええ), variant kana."""
-    s = norm_hira(s)
-    out = []
-    for c in s:
-        out.append(HIRA_VOWEL.get(out[-1], c) if (c == "ー" and out) else c)
-    return "".join(out).replace("おう", "おお").replace("えい", "ええ").translate(VARIANT)
+    t = []
+    for c in out:
+        if c == "ー" and t:
+            t.append(VOWEL.get(t[-1], ""))
+        else:
+            t.append(c)
+    s = "".join(t).replace("おう", "おお").replace("えい", "ええ")
+    for a, b in [("ぢ", "じ"), ("づ", "ず"), ("ゔ", "ぶ"), ("ゐ", "い"), ("ゑ", "え"), ("を", "お")]:
+        s = s.replace(a, b)
+    return s
 
 
 def table_a10():
@@ -236,7 +313,7 @@ def table_a10():
         k = sum(1 for r in rows if (r["inj_lp_tgt"] - r["inj_lp_src"]) - (r["bl_lp_tgt"] - r["bl_lp_src"]) > 0)
         succ[lang] = fmt_rate(k, len(rows))
     rows = load("table_a10_six_language", "ja_injection_furigana.json")["rows"]
-    k = sum(1 for r in rows if norm_ja(r["word_b"]) in norm_ja(r["oeoi_tr"]))
+    k = sum(1 for r in rows if norm_kana(r["word_b"]) in norm_kana(r["oeoi_tr"]))
     succ["ja"] = fmt_rate(k, len(rows))
     for lang in ("en", "ja", "zh", "ko", "fr", "de"):
         pp = load("table_a10_six_language", "ipa_%s.json" % lang)["per_pair"]
@@ -264,5 +341,5 @@ def table_a12():
 
 
 if __name__ == "__main__":
-    for fn in (table_a1, table_a2, table_a5, table_a6, table_a10, table_a12):
+    for fn in (table_a1, table_a2, table_a3, table_a5, table_a6, table_a10, table_a11, table_a12, compute):
         fn()

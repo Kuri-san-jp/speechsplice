@@ -11,7 +11,10 @@ repository.
 
 Minimal inference utilities (configuration, data tokenizer, duration
 estimator, model definition, and inference helpers) taken from the T5Gemma-TTS
-project and redistributed unmodified, together with its license.
+project at commit 7b502d8e9f524b725b54287eff13bef669937f8f, together with its
+license. One line differs from that commit: models/t5gemma.py passes
+trust_remote_code=True when it loads the T5Gemma backbone. The other files are
+unmodified.
 
     Upstream: https://github.com/Aratako/T5Gemma-TTS
     License:  MIT License
@@ -21,30 +24,71 @@ The full license text is retained at src/_vendor/t5gemma_tts/LICENSE, and the
 upstream README at src/_vendor/t5gemma_tts/README.md.
 
 --------------------------------------------------------------------------------
-2. Models used but not redistributed
+2. LongCat-AudioDiT  (vendored under third_party/longcat_audiodit_survey/)
 --------------------------------------------------------------------------------
 
-SpeechSplice is training-free and edits no weights. The experiments load
-published frozen checkpoints from their original sources; none of them are
-redistributed in this repository, and each remains under its own license and
-terms of use:
+The model definition files (configuration, modeling, utils) of the official
+LongCat-AudioDiT implementation, copied unmodified on 2026-09-16 and imported by
+scripts/longcat/.
 
-    Aratako/T5Gemma-TTS-2b-2b          (gated; accept the license on Hugging Face)
-    microsoft/speecht5_tts             (SpeechT5)
-    Qwen3-TTS
-    VoiceCraft
-    EdiTTS
-    openai/whisper-large-v3, openai/whisper-medium.en
-    Parakeet-Inc/furigana_whisper_small_jsut
-    facebook/wav2vec2-xlsr-53-espeak-cv-ft
-    UTMOS (sarulab-speech/UTMOS22)
-    WavLM-SV (microsoft/wavlm-base-plus-sv)
+    Upstream: https://github.com/meituan-longcat/LongCat-AudioDiT
+    License:  MIT License
+    Copyright (c) 2026 Meituan
 
 --------------------------------------------------------------------------------
-3. Speech data
+3. whisper-pinyin  (vendored under third_party/whisper_pinyin/)
 --------------------------------------------------------------------------------
 
-Voice prompts were drawn from LibriTTS and from in-house recordings. No
-synthesized audio is redistributed here: the generated waveforms clone a
+The whisper/ package of Whisper-Pinyin (branch otc, commit
+bacacb9e7a96d0456e6c82161d5d476eb1e674f2), copied unmodified because the
+upstream repository is no longer reachable; it is itself based on OpenAI
+Whisper.
+
+    Upstream: https://github.com/oshindow/whisper_pinyin
+    License:  MIT License, Copyright (c) 2026 Xintong Wang
+              (OpenAI Whisper: MIT License, Copyright (c) 2022 OpenAI)
+
+The license texts are in third_party/whisper_pinyin/LICENSE and
+third_party/whisper_pinyin/LICENSES/.
+
+--------------------------------------------------------------------------------
+4. Fetched, not redistributed
+--------------------------------------------------------------------------------
+
+scripts/setup_third_party.sh clones Irodori-TTS (MIT), EdiTTS and VoiceCraft at
+the commits used, applies scripts/editts/edit_content.patch to EdiTTS (an
+output-index offset and a torch>=2.6 load flag), and installs qwen-tts 0.1.1,
+sox 1.5.0 and coqui-tts 0.27.5 into the script folders that import them. Each
+remains under its own license.
+
+--------------------------------------------------------------------------------
+5. Models used but not redistributed
+--------------------------------------------------------------------------------
+
+SpeechSplice is training-free; apart from the ROME/MEMIT baselines of Table A5,
+which edit encoder weights in memory, it edits no weights. The experiments load
+published frozen checkpoints from their original sources
+(scripts/download_models.py lists them with the revisions used); none of them
+are redistributed in this repository, and each remains under its own license
+and terms of use. They include the ten TTS systems of Table 3 (T5Gemma-TTS,
+SpeechT5, LongCat-AudioDiT, Irodori-TTS, Kiseki-TTS, Qwen3-TTS, XTTS-v2 (Coqui
+Public Model License), Llasa-3B, CSM-1B, Bark), XCodec2, VoiceCraft, EdiTTS
+(Grad-TTS), Whisper large-v3, large-v3-turbo and medium.en, Furigana Whisper,
+whisper-pinyin, wav2vec2-xlsr-53-espeak-cv-ft, WavLM-SV, and UTMOS22.
+
+--------------------------------------------------------------------------------
+6. Data
+--------------------------------------------------------------------------------
+
+data/external/ja_tts_g2p_bench_v1.jsonl and eval_results/table_a3_ja_reading/
+contain items of ja-tts-g2p-bench (kawajiri-tellernovel/ja-tts-g2p-bench,
+CC BY-SA 4.0), redistributed under that license; see data/external/README.md.
+
+The voice-cloning prompts (LibriTTS, JSUT, the Databaker Chinese Standard
+Mandarin Speech Corpus, FLEURS) are not redistributed, except the one JSUT
+recording on the sample page (docs/audio/prompt/, under the JSUT terms quoted in
+docs/LICENSE_AUDIO.md). scripts/prepare_voice_prompts.py rebuilds the prompts
+from the original corpora. No synthesized audio is redistributed apart from the
+listening-test clips of the sample page (docs/); the generated waveforms clone a
 prompt speaker's voice, so the repository releases the item lists, the scoring
 code, and the per-sample scores instead.

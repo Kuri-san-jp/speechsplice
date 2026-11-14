@@ -1,0 +1,42 @@
+{
+ "files": [
+  {
+   "file": "whisper_inj_large_v3.json",
+   "source": "eval_results/table2_whisper_inj_lv3.json",
+   "source_md5": "d5527d7c92eafd1b248a4f2cc296ceb9",
+   "note": "Whisper large-v3 transcripts and target-containment verdicts of all three systems. The judge string was translated into English"
+  },
+  {
+   "file": "voicecraft_metrics.json",
+   "source": "eval_results/voicecraft_tts_wordrepl100_metrics/results.json",
+   "source_md5": "91e36b2c9705e5a388967906e8a33192",
+   "note": "VoiceCraft per-pair UTMOS (bl/inj), Whisper medium.en, IPA. The summary block labelled 'speechsplice' refers to the VoiceCraft rows"
+  },
+  {
+   "file": "editts_utmos.json",
+   "source": "eval_results/editts_edit_wordrepl300/utmos_results.json",
+   "source_md5": "8741cc2dc0a8b627331f7488e885d05f",
+   "note": "EdiTTS per-pair UTMOS: gradtts-1 = BL (Grad-TTS synthesis of the source sentence), EdiTTS = edited"
+  },
+  {
+   "file": "speaker_sim_systems.json",
+   "source": "eval_results/speaker_sim_systems_wavlm.json",
+   "source_md5": "ff963919d8c8c0c47f5311cbeffc0177",
+   "note": "WavLM-SV summary for VoiceCraft and EdiTTS [mean, 1.96*SE, SD]"
+  },
+  {
+   "file": "duration.json",
+   "source": "eval_results/_provenance/table2_duration_20261002_152752.json",
+   "source_md5": "2d0d8abff83f9e5aeff71e00eb8d0b09",
+   "paths_rewritten": "1 occurrence(s) of the host project path replaced by /mnt (the container mount)",
+   "note": "Per-pair durations from the wav headers, with the md5 of every wav"
+  },
+  {
+   "file": "cpu_recheck_cer_utmos_p.json",
+   "source": "eval_results/_provenance/cpuprop_cer_utmos_spk_20261002_152954.json",
+   "source_md5": "5cd9ab63abdd31c7ce0e4e497ee21508",
+   "paths_rewritten": "2 occurrence(s) of the host project path replaced by /mnt (the container mount)",
+   "note": "CPU recheck of the Table 2 UTMOS p values and the Table A6 CER cells (2026-10-02)"
+  }
+ ]
+}

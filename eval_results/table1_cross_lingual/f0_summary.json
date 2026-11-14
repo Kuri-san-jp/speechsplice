@@ -1,0 +1,32 @@
+{
+ "speechsplice": {
+  "n": 300,
+  "f0_mean_diff": 0.66,
+  "abs_diff": 24.67,
+  "anchor_abs_diff": 25.3
+ },
+ "vc_tts": {
+  "n": 300,
+  "f0_mean_diff": 1.13,
+  "abs_diff": 16.72,
+  "anchor_abs_diff": 17.12
+ },
+ "ja_wordrepl": {
+  "n": 300,
+  "f0_mean_diff": -0.65,
+  "abs_diff": 16.66,
+  "anchor_abs_diff": 23.55
+ },
+ "zh_wordrepl": {
+  "n": 300,
+  "f0_mean_diff": -0.78,
+  "abs_diff": 24.69,
+  "anchor_abs_diff": 28.14
+ },
+ "editts": {
+  "n": 300,
+  "f0_mean_diff": -1.47,
+  "abs_diff": 11.44,
+  "anchor_abs_diff": 15.49
+ }
+}
