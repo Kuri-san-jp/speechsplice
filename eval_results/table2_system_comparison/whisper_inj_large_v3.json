@@ -1,0 +1,5439 @@
+{
+ "judge": "whisper-large-v3 greedy, target-word containment (same judge as Table 1)",
+ "systems": {
+  "speechsplice": {
+   "k": 289,
+   "n": 300,
+   "pct": 96.33,
+   "wilson_half": 2.19,
+   "rows": [
+    {
+     "idx": 0,
+     "word_b": "Paris",
+     "transcript": "Paris famous.",
+     "hit": true
+    },
+    {
+     "idx": 1,
+     "word_b": "John",
+     "transcript": "John is famous.",
+     "hit": true
+    },
+    {
+     "idx": 2,
+     "word_b": "Newton",
+     "transcript": "Newton is famous.",
+     "hit": true
+    },
+    {
+     "idx": 3,
+     "word_b": "Beethoven",
+     "transcript": "Beethoven is famous.",
+     "hit": true
+    },
+    {
+     "idx": 4,
+     "word_b": "Google",
+     "transcript": "Google is famous.",
+     "hit": true
+    },
+    {
+     "idx": 5,
+     "word_b": "Oxford",
+     "transcript": "Oxford is famous.",
+     "hit": true
+    },
+    {
+     "idx": 6,
+     "word_b": "Porsche",
+     "transcript": "Porsche's famous.",
+     "hit": true
+    },
+    {
+     "idx": 7,
+     "word_b": "Jupiter",
+     "transcript": "Jupiter is famous.",
+     "hit": true
+    },
+    {
+     "idx": 8,
+     "word_b": "Emerald",
+     "transcript": "Emerald is famous.",
+     "hit": true
+    },
+    {
+     "idx": 9,
+     "word_b": "Halloween",
+     "transcript": "Halloween's famous.",
+     "hit": true
+    },
+    {
+     "idx": 10,
+     "word_b": "Broadway",
+     "transcript": "Broadway is famous.",
+     "hit": true
+    },
+    {
+     "idx": 11,
+     "word_b": "Elizabeth",
+     "transcript": "Elizabeth is famous.",
+     "hit": true
+    },
+    {
+     "idx": 12,
+     "word_b": "Picasso",
+     "transcript": "Picasso is famous.",
+     "hit": true
+    },
+    {
+     "idx": 13,
+     "word_b": "Kilimanjaro",
+     "transcript": "Kilimanjaro's famous.",
+     "hit": true
+    },
+    {
+     "idx": 14,
+     "word_b": "Pacific",
+     "transcript": "Pacific is famous.",
+     "hit": true
+    },
+    {
+     "idx": 15,
+     "word_b": "Dickens",
+     "transcript": "Dickens Famous",
+     "hit": true
+    },
+    {
+     "idx": 16,
+     "word_b": "Apple",
+     "transcript": "Apple was famous.",
+     "hit": true
+    },
+    {
+     "idx": 17,
+     "word_b": "Berlin",
+     "transcript": "Berlin's famous.",
+     "hit": true
+    },
+    {
+     "idx": 18,
+     "word_b": "Toronto",
+     "transcript": "Toronto is famous.",
+     "hit": true
+    },
+    {
+     "idx": 19,
+     "word_b": "Berkeley",
+     "transcript": "Berkeley is famous.",
+     "hit": true
+    },
+    {
+     "idx": 20,
+     "word_b": "Caesar",
+     "transcript": "Caesar is famous.",
+     "hit": true
+    },
+    {
+     "idx": 21,
+     "word_b": "Galileo",
+     "transcript": "Galileo famous.",
+     "hit": true
+    },
+    {
+     "idx": 22,
+     "word_b": "Edison",
+     "transcript": "Edison is famous.",
+     "hit": true
+    },
+    {
+     "idx": 23,
+     "word_b": "Airbus",
+     "transcript": "Airbus Famous.",
+     "hit": true
+    },
+    {
+     "idx": 24,
+     "word_b": "Warner",
+     "transcript": "Warner is famous",
+     "hit": true
+    },
+    {
+     "idx": 25,
+     "word_b": "AMD",
+     "transcript": "AMD is famous.",
+     "hit": true
+    },
+    {
+     "idx": 26,
+     "word_b": "Boston",
+     "transcript": "Austin is famous.",
+     "hit": false
+    },
+    {
+     "idx": 27,
+     "word_b": "Houston",
+     "transcript": "Houston's famous.",
+     "hit": true
+    },
+    {
+     "idx": 28,
+     "word_b": "Seattle",
+     "transcript": "Seattle is famous.",
+     "hit": true
+    },
+    {
+     "idx": 29,
+     "word_b": "Atlanta",
+     "transcript": "Atlanta's famous.",
+     "hit": true
+    },
+    {
+     "idx": 30,
+     "word_b": "Adidas",
+     "transcript": "Adidas famous.",
+     "hit": true
+    },
+    {
+     "idx": 31,
+     "word_b": "Honda",
+     "transcript": "Honda is famous.",
+     "hit": true
+    },
+    {
+     "idx": 32,
+     "word_b": "Magellan",
+     "transcript": "Magellan is famous.",
+     "hit": true
+    },
+    {
+     "idx": 33,
+     "word_b": "Rome",
+     "transcript": "Rome is famous.",
+     "hit": true
+    },
+    {
+     "idx": 34,
+     "word_b": "Prague",
+     "transcript": "Prague is famous.",
+     "hit": true
+    },
+    {
+     "idx": 35,
+     "word_b": "Beijing",
+     "transcript": "Beijing is famous",
+     "hit": true
+    },
+    {
+     "idx": 36,
+     "word_b": "Washington",
+     "transcript": "Washington is famous.",
+     "hit": true
+    },
+    {
+     "idx": 37,
+     "word_b": "Roosevelt",
+     "transcript": "Roosevelt's famous.",
+     "hit": true
+    },
+    {
+     "idx": 38,
+     "word_b": "Venus",
+     "transcript": "Venus Famous.",
+     "hit": true
+    },
+    {
+     "idx": 39,
+     "word_b": "Neptune",
+     "transcript": "Neptune is famous.",
+     "hit": true
+    },
+    {
+     "idx": 40,
+     "word_b": "Gobi",
+     "transcript": "Kobe is famous.",
+     "hit": false
+    },
+    {
+     "idx": 41,
+     "word_b": "Argentina",
+     "transcript": "Argentina's famous.",
+     "hit": true
+    },
+    {
+     "idx": 42,
+     "word_b": "Mazda",
+     "transcript": "Mars does famous.",
+     "hit": false
+    },
+    {
+     "idx": 43,
+     "word_b": "BMW",
+     "transcript": "BMW's famous.",
+     "hit": true
+    },
+    {
+     "idx": 44,
+     "word_b": "Spotify",
+     "transcript": "Spotify is famous.",
+     "hit": true
+    },
+    {
+     "idx": 45,
+     "word_b": "Twitter",
+     "transcript": "Twitter is famous.",
+     "hit": true
+    },
+    {
+     "idx": 46,
+     "word_b": "Lagos",
+     "transcript": "Lego's famous.",
+     "hit": false
+    },
+    {
+     "idx": 47,
+     "word_b": "Delhi",
+     "transcript": "Deli is famous.",
+     "hit": false
+    },
+    {
+     "idx": 48,
+     "word_b": "Bangkok",
+     "transcript": "Bangkok's famous.",
+     "hit": true
+    },
+    {
+     "idx": 49,
+     "word_b": "Barcelona",
+     "transcript": "Barcelona's famous.",
+     "hit": true
+    },
+    {
+     "idx": 50,
+     "word_b": "Paris",
+     "transcript": "Yesterday, Paris became famous.",
+     "hit": true
+    },
+    {
+     "idx": 51,
+     "word_b": "John",
+     "transcript": "Yesterday, John became famous.",
+     "hit": true
+    },
+    {
+     "idx": 52,
+     "word_b": "Newton",
+     "transcript": "Yesterday, Newton became famous.",
+     "hit": true
+    },
+    {
+     "idx": 53,
+     "word_b": "Beethoven",
+     "transcript": "Yesterday, Beethoven became famous.",
+     "hit": true
+    },
+    {
+     "idx": 54,
+     "word_b": "Google",
+     "transcript": "Yesterday, Google became famous.",
+     "hit": true
+    },
+    {
+     "idx": 55,
+     "word_b": "Oxford",
+     "transcript": "Yesterday, Oxford became famous.",
+     "hit": true
+    },
+    {
+     "idx": 56,
+     "word_b": "Porsche",
+     "transcript": "Yesterday, Portia became famous.",
+     "hit": false
+    },
+    {
+     "idx": 57,
+     "word_b": "Jupiter",
+     "transcript": "Yesterday, Jupiter became famous.",
+     "hit": true
+    },
+    {
+     "idx": 58,
+     "word_b": "Emerald",
+     "transcript": "Yesterday, Emerald became famous.",
+     "hit": true
+    },
+    {
+     "idx": 59,
+     "word_b": "Halloween",
+     "transcript": "Yesterday, Halloween became famous.",
+     "hit": true
+    },
+    {
+     "idx": 60,
+     "word_b": "Broadway",
+     "transcript": "Yesterday, Broadway became famous.",
+     "hit": true
+    },
+    {
+     "idx": 61,
+     "word_b": "Elizabeth",
+     "transcript": "Yesterday, Elizabeth became famous.",
+     "hit": true
+    },
+    {
+     "idx": 62,
+     "word_b": "Picasso",
+     "transcript": "Yesterday, Picasso became famous.",
+     "hit": true
+    },
+    {
+     "idx": 63,
+     "word_b": "Kilimanjaro",
+     "transcript": "Yesterday, Kilimanjaro became famous.",
+     "hit": true
+    },
+    {
+     "idx": 64,
+     "word_b": "Pacific",
+     "transcript": "Yesterday, Pacific became famous.",
+     "hit": true
+    },
+    {
+     "idx": 65,
+     "word_b": "Dickens",
+     "transcript": "Yesterday, Dickens became famous.",
+     "hit": true
+    },
+    {
+     "idx": 66,
+     "word_b": "Apple",
+     "transcript": "Yesterday, Apple became famous.",
+     "hit": true
+    },
+    {
+     "idx": 67,
+     "word_b": "Berlin",
+     "transcript": "Yesterday, Berlin became famous.",
+     "hit": true
+    },
+    {
+     "idx": 68,
+     "word_b": "Toronto",
+     "transcript": "Yesterday, Toronto became famous.",
+     "hit": true
+    },
+    {
+     "idx": 69,
+     "word_b": "Berkeley",
+     "transcript": "Yesterday, Berkeley became famous.",
+     "hit": true
+    },
+    {
+     "idx": 70,
+     "word_b": "Caesar",
+     "transcript": "Yesterday, Caesar became famous.",
+     "hit": true
+    },
+    {
+     "idx": 71,
+     "word_b": "Galileo",
+     "transcript": "Yesterday, Galileo became famous.",
+     "hit": true
+    },
+    {
+     "idx": 72,
+     "word_b": "Edison",
+     "transcript": "Yesterday Edison became famous.",
+     "hit": true
+    },
+    {
+     "idx": 73,
+     "word_b": "Airbus",
+     "transcript": "Yesterday Airbus became famous.",
+     "hit": true
+    },
+    {
+     "idx": 74,
+     "word_b": "Warner",
+     "transcript": "Yesterday Warner became famous",
+     "hit": true
+    },
+    {
+     "idx": 75,
+     "word_b": "AMD",
+     "transcript": "Yesterday AMD became famous.",
+     "hit": true
+    },
+    {
+     "idx": 76,
+     "word_b": "Boston",
+     "transcript": "Yesterday, Boston became famous.",
+     "hit": true
+    },
+    {
+     "idx": 77,
+     "word_b": "Houston",
+     "transcript": "Yesterday, Houston became famous.",
+     "hit": true
+    },
+    {
+     "idx": 78,
+     "word_b": "Seattle",
+     "transcript": "Yesterday, Seattle became famous.",
+     "hit": true
+    },
+    {
+     "idx": 79,
+     "word_b": "Atlanta",
+     "transcript": "Yesterday, Atlanta became famous.",
+     "hit": true
+    },
+    {
+     "idx": 80,
+     "word_b": "Adidas",
+     "transcript": "Yesterday, Adidas became famous.",
+     "hit": true
+    },
+    {
+     "idx": 81,
+     "word_b": "Honda",
+     "transcript": "Yesterday, Honda became famous.",
+     "hit": true
+    },
+    {
+     "idx": 82,
+     "word_b": "Magellan",
+     "transcript": "Yesterday, Magellan became famous.",
+     "hit": true
+    },
+    {
+     "idx": 83,
+     "word_b": "Rome",
+     "transcript": "Yesterday, Rome became famous.",
+     "hit": true
+    },
+    {
+     "idx": 84,
+     "word_b": "Prague",
+     "transcript": "Yesterday, Prague became famous.",
+     "hit": true
+    },
+    {
+     "idx": 85,
+     "word_b": "Beijing",
+     "transcript": "Yesterday, Beijing became famous.",
+     "hit": true
+    },
+    {
+     "idx": 86,
+     "word_b": "Washington",
+     "transcript": "Yesterday, Washington became famous.",
+     "hit": true
+    },
+    {
+     "idx": 87,
+     "word_b": "Roosevelt",
+     "transcript": "Yesterday, Roosevelt became famous.",
+     "hit": true
+    },
+    {
+     "idx": 88,
+     "word_b": "Venus",
+     "transcript": "Yesterday, Venus became famous.",
+     "hit": true
+    },
+    {
+     "idx": 89,
+     "word_b": "Neptune",
+     "transcript": "Yesterday, Neptune became famous.",
+     "hit": true
+    },
+    {
+     "idx": 90,
+     "word_b": "Gobi",
+     "transcript": "Yesterday, Gobi became famous.",
+     "hit": true
+    },
+    {
+     "idx": 91,
+     "word_b": "Argentina",
+     "transcript": "Yesterday, Argentina became famous.",
+     "hit": true
+    },
+    {
+     "idx": 92,
+     "word_b": "Mazda",
+     "transcript": "Yesterday, Mazda became famous.",
+     "hit": true
+    },
+    {
+     "idx": 93,
+     "word_b": "BMW",
+     "transcript": "Yesterday, BMW became famous.",
+     "hit": true
+    },
+    {
+     "idx": 94,
+     "word_b": "Spotify",
+     "transcript": "Yesterday, Spotify became famous.",
+     "hit": true
+    },
+    {
+     "idx": 95,
+     "word_b": "Twitter",
+     "transcript": "Yesterday, Twitter became famous.",
+     "hit": true
+    },
+    {
+     "idx": 96,
+     "word_b": "Lagos",
+     "transcript": "Yesterday, Lagos became famous.",
+     "hit": true
+    },
+    {
+     "idx": 97,
+     "word_b": "Delhi",
+     "transcript": "Yesterday, Delhi became famous.",
+     "hit": true
+    },
+    {
+     "idx": 98,
+     "word_b": "Bangkok",
+     "transcript": "Yesterday Bangkok became famous.",
+     "hit": true
+    },
+    {
+     "idx": 99,
+     "word_b": "Barcelona",
+     "transcript": "Yesterday, Barcelona became famous.",
+     "hit": true
+    },
+    {
+     "idx": 100,
+     "word_b": "Paris",
+     "transcript": "Around the world, Paris is known.",
+     "hit": true
+    },
+    {
+     "idx": 101,
+     "word_b": "John",
+     "transcript": "Around the world, John is known.",
+     "hit": true
+    },
+    {
+     "idx": 102,
+     "word_b": "Newton",
+     "transcript": "Around the world, Newton is known.",
+     "hit": true
+    },
+    {
+     "idx": 103,
+     "word_b": "Beethoven",
+     "transcript": "Around the world, Beethoven is known",
+     "hit": true
+    },
+    {
+     "idx": 104,
+     "word_b": "Google",
+     "transcript": "Around the world, Google is known.",
+     "hit": true
+    },
+    {
+     "idx": 105,
+     "word_b": "Oxford",
+     "transcript": "Around the world, Oxford is known",
+     "hit": true
+    },
+    {
+     "idx": 106,
+     "word_b": "Porsche",
+     "transcript": "Around the world, Porsche is known.",
+     "hit": true
+    },
+    {
+     "idx": 107,
+     "word_b": "Jupiter",
+     "transcript": "Around the world, Jupiter is known",
+     "hit": true
+    },
+    {
+     "idx": 108,
+     "word_b": "Emerald",
+     "transcript": "Around the world, Emerald is known",
+     "hit": true
+    },
+    {
+     "idx": 109,
+     "word_b": "Halloween",
+     "transcript": "Around the world, Halloween is known.",
+     "hit": true
+    },
+    {
+     "idx": 110,
+     "word_b": "Broadway",
+     "transcript": "Around the world, Broadway is known",
+     "hit": true
+    },
+    {
+     "idx": 111,
+     "word_b": "Elizabeth",
+     "transcript": "Around the world, Elizabeth is known",
+     "hit": true
+    },
+    {
+     "idx": 112,
+     "word_b": "Picasso",
+     "transcript": "Around the world, Picasso is known",
+     "hit": true
+    },
+    {
+     "idx": 113,
+     "word_b": "Kilimanjaro",
+     "transcript": "Around the world, Kilimanjaro's is known.",
+     "hit": true
+    },
+    {
+     "idx": 114,
+     "word_b": "Pacific",
+     "transcript": "Around the world, Pacific is known.",
+     "hit": true
+    },
+    {
+     "idx": 115,
+     "word_b": "Dickens",
+     "transcript": "Around the world, Dickens is known.",
+     "hit": true
+    },
+    {
+     "idx": 116,
+     "word_b": "Apple",
+     "transcript": "Around the world, Apple is known.",
+     "hit": true
+    },
+    {
+     "idx": 117,
+     "word_b": "Berlin",
+     "transcript": "Around the world Berlin is known.",
+     "hit": true
+    },
+    {
+     "idx": 118,
+     "word_b": "Toronto",
+     "transcript": "Around the world, Toronto is known",
+     "hit": true
+    },
+    {
+     "idx": 119,
+     "word_b": "Berkeley",
+     "transcript": "Around the world, Berkeley is known.",
+     "hit": true
+    },
+    {
+     "idx": 120,
+     "word_b": "Caesar",
+     "transcript": "Around the world, Caesar is known.",
+     "hit": true
+    },
+    {
+     "idx": 121,
+     "word_b": "Galileo",
+     "transcript": "Around the world Galileo's known.",
+     "hit": true
+    },
+    {
+     "idx": 122,
+     "word_b": "Edison",
+     "transcript": "Around the world Edison's known.",
+     "hit": true
+    },
+    {
+     "idx": 123,
+     "word_b": "Airbus",
+     "transcript": "Around the world, Airbus known",
+     "hit": true
+    },
+    {
+     "idx": 124,
+     "word_b": "Warner",
+     "transcript": "Around the world, Warner is known...",
+     "hit": true
+    },
+    {
+     "idx": 125,
+     "word_b": "AMD",
+     "transcript": "Around the world, AMD is known.",
+     "hit": true
+    },
+    {
+     "idx": 126,
+     "word_b": "Boston",
+     "transcript": "Around the world, Boston is known",
+     "hit": true
+    },
+    {
+     "idx": 127,
+     "word_b": "Houston",
+     "transcript": "Around the world, Houston is known.",
+     "hit": true
+    },
+    {
+     "idx": 128,
+     "word_b": "Seattle",
+     "transcript": "Around the world, Seattle is known",
+     "hit": true
+    },
+    {
+     "idx": 129,
+     "word_b": "Atlanta",
+     "transcript": "Around the world, Atlanta is known.",
+     "hit": true
+    },
+    {
+     "idx": 130,
+     "word_b": "Adidas",
+     "transcript": "Around the world, adidas known.",
+     "hit": true
+    },
+    {
+     "idx": 131,
+     "word_b": "Honda",
+     "transcript": "Around the world, Honda is known.",
+     "hit": true
+    },
+    {
+     "idx": 132,
+     "word_b": "Magellan",
+     "transcript": "Around the world, Magellan is known.",
+     "hit": true
+    },
+    {
+     "idx": 133,
+     "word_b": "Rome",
+     "transcript": "Around the world, Rome is known",
+     "hit": true
+    },
+    {
+     "idx": 134,
+     "word_b": "Prague",
+     "transcript": "Around the world, Prague is known",
+     "hit": true
+    },
+    {
+     "idx": 135,
+     "word_b": "Beijing",
+     "transcript": "Around the world, Beijing is known.",
+     "hit": true
+    },
+    {
+     "idx": 136,
+     "word_b": "Washington",
+     "transcript": "Around the world, Washington is known",
+     "hit": true
+    },
+    {
+     "idx": 137,
+     "word_b": "Roosevelt",
+     "transcript": "Around the world, Roosevelt's known.",
+     "hit": true
+    },
+    {
+     "idx": 138,
+     "word_b": "Venus",
+     "transcript": "Around the world, Venus is known.",
+     "hit": true
+    },
+    {
+     "idx": 139,
+     "word_b": "Neptune",
+     "transcript": "Around the world, Neptune is known.",
+     "hit": true
+    },
+    {
+     "idx": 140,
+     "word_b": "Gobi",
+     "transcript": "Around the world, Gobi is known",
+     "hit": true
+    },
+    {
+     "idx": 141,
+     "word_b": "Argentina",
+     "transcript": "Around the world, Argentina is known.",
+     "hit": true
+    },
+    {
+     "idx": 142,
+     "word_b": "Mazda",
+     "transcript": "Around the world, Mazda is known",
+     "hit": true
+    },
+    {
+     "idx": 143,
+     "word_b": "BMW",
+     "transcript": "Around the world, BMWs know.",
+     "hit": true
+    },
+    {
+     "idx": 144,
+     "word_b": "Spotify",
+     "transcript": "Around the world, Spotify's is known.",
+     "hit": true
+    },
+    {
+     "idx": 145,
+     "word_b": "Twitter",
+     "transcript": "Around the world, Twitter is known.",
+     "hit": true
+    },
+    {
+     "idx": 146,
+     "word_b": "Lagos",
+     "transcript": "Around the world, Lagos is known.",
+     "hit": true
+    },
+    {
+     "idx": 147,
+     "word_b": "Delhi",
+     "transcript": "Around the world, Delhi is known",
+     "hit": true
+    },
+    {
+     "idx": 148,
+     "word_b": "Bangkok",
+     "transcript": "Around the world, Bangkok is known.",
+     "hit": true
+    },
+    {
+     "idx": 149,
+     "word_b": "Barcelona",
+     "transcript": "Around the world, Barcelona is known",
+     "hit": true
+    },
+    {
+     "idx": 150,
+     "word_b": "Paris",
+     "transcript": "Many people know Paris very well.",
+     "hit": true
+    },
+    {
+     "idx": 151,
+     "word_b": "John",
+     "transcript": "Many people know John very well.",
+     "hit": true
+    },
+    {
+     "idx": 152,
+     "word_b": "Newton",
+     "transcript": "Many people know Newton very well.",
+     "hit": true
+    },
+    {
+     "idx": 153,
+     "word_b": "Beethoven",
+     "transcript": "Many people know Beethoven very well.",
+     "hit": true
+    },
+    {
+     "idx": 154,
+     "word_b": "Google",
+     "transcript": "Many people know Google very well.",
+     "hit": true
+    },
+    {
+     "idx": 155,
+     "word_b": "Oxford",
+     "transcript": "Many people know Oxford very well.",
+     "hit": true
+    },
+    {
+     "idx": 156,
+     "word_b": "Porsche",
+     "transcript": "Many people know Porsche very well.",
+     "hit": true
+    },
+    {
+     "idx": 157,
+     "word_b": "Jupiter",
+     "transcript": "Many people know Jupiter very well.",
+     "hit": true
+    },
+    {
+     "idx": 158,
+     "word_b": "Emerald",
+     "transcript": "Many people know Emerald very well.",
+     "hit": true
+    },
+    {
+     "idx": 159,
+     "word_b": "Halloween",
+     "transcript": "Many people know Halloween very well.",
+     "hit": true
+    },
+    {
+     "idx": 160,
+     "word_b": "Broadway",
+     "transcript": "Many people know Broadway very well.",
+     "hit": true
+    },
+    {
+     "idx": 161,
+     "word_b": "Elizabeth",
+     "transcript": "Many people know Elizabeth very well.",
+     "hit": true
+    },
+    {
+     "idx": 162,
+     "word_b": "Picasso",
+     "transcript": "Many people know Picasso very well.",
+     "hit": true
+    },
+    {
+     "idx": 163,
+     "word_b": "Kilimanjaro",
+     "transcript": "Many people know Kilimanjaro very well.",
+     "hit": true
+    },
+    {
+     "idx": 164,
+     "word_b": "Pacific",
+     "transcript": "Many people know Pacific very well.",
+     "hit": true
+    },
+    {
+     "idx": 165,
+     "word_b": "Dickens",
+     "transcript": "Many people know Dickens very well.",
+     "hit": true
+    },
+    {
+     "idx": 166,
+     "word_b": "Apple",
+     "transcript": "Many people know Apple very well.",
+     "hit": true
+    },
+    {
+     "idx": 167,
+     "word_b": "Berlin",
+     "transcript": "Many people know Berlin very well.",
+     "hit": true
+    },
+    {
+     "idx": 168,
+     "word_b": "Toronto",
+     "transcript": "Many people know Toronto very well.",
+     "hit": true
+    },
+    {
+     "idx": 169,
+     "word_b": "Berkeley",
+     "transcript": "Many people know Berkeley very well.",
+     "hit": true
+    },
+    {
+     "idx": 170,
+     "word_b": "Caesar",
+     "transcript": "Many people know Caesar very well.",
+     "hit": true
+    },
+    {
+     "idx": 171,
+     "word_b": "Galileo",
+     "transcript": "Many people know Galileo very well.",
+     "hit": true
+    },
+    {
+     "idx": 172,
+     "word_b": "Edison",
+     "transcript": "Many people know Edison very well.",
+     "hit": true
+    },
+    {
+     "idx": 173,
+     "word_b": "Airbus",
+     "transcript": "Many people know Airbus very well.",
+     "hit": true
+    },
+    {
+     "idx": 174,
+     "word_b": "Warner",
+     "transcript": "Many people know Warner very well.",
+     "hit": true
+    },
+    {
+     "idx": 175,
+     "word_b": "AMD",
+     "transcript": "Many people know AMD very well.",
+     "hit": true
+    },
+    {
+     "idx": 176,
+     "word_b": "Boston",
+     "transcript": "Many people know Boston very well.",
+     "hit": true
+    },
+    {
+     "idx": 177,
+     "word_b": "Houston",
+     "transcript": "Many people know Houston very well.",
+     "hit": true
+    },
+    {
+     "idx": 178,
+     "word_b": "Seattle",
+     "transcript": "Many people know Seattle very well.",
+     "hit": true
+    },
+    {
+     "idx": 179,
+     "word_b": "Atlanta",
+     "transcript": "Many people know Atlanta very well.",
+     "hit": true
+    },
+    {
+     "idx": 180,
+     "word_b": "Adidas",
+     "transcript": "Many people know Adidas very well.",
+     "hit": true
+    },
+    {
+     "idx": 181,
+     "word_b": "Honda",
+     "transcript": "Many people know Honda very well.",
+     "hit": true
+    },
+    {
+     "idx": 182,
+     "word_b": "Magellan",
+     "transcript": "Many people know Magellan very well.",
+     "hit": true
+    },
+    {
+     "idx": 183,
+     "word_b": "Rome",
+     "transcript": "Many people know Rome very well.",
+     "hit": true
+    },
+    {
+     "idx": 184,
+     "word_b": "Prague",
+     "transcript": "Many people know Prague very well.",
+     "hit": true
+    },
+    {
+     "idx": 185,
+     "word_b": "Beijing",
+     "transcript": "Many people know Beijing very well.",
+     "hit": true
+    },
+    {
+     "idx": 186,
+     "word_b": "Washington",
+     "transcript": "Many people know Washington very well.",
+     "hit": true
+    },
+    {
+     "idx": 187,
+     "word_b": "Roosevelt",
+     "transcript": "Many people know Roosevelt very well.",
+     "hit": true
+    },
+    {
+     "idx": 188,
+     "word_b": "Venus",
+     "transcript": "Many people know Venus very well.",
+     "hit": true
+    },
+    {
+     "idx": 189,
+     "word_b": "Neptune",
+     "transcript": "Many people know Neptune very well.",
+     "hit": true
+    },
+    {
+     "idx": 190,
+     "word_b": "Gobi",
+     "transcript": "Many people know Gobi very well.",
+     "hit": true
+    },
+    {
+     "idx": 191,
+     "word_b": "Argentina",
+     "transcript": "Many people know Argentina very well.",
+     "hit": true
+    },
+    {
+     "idx": 192,
+     "word_b": "Mazda",
+     "transcript": "Many people know Mazda very well.",
+     "hit": true
+    },
+    {
+     "idx": 193,
+     "word_b": "BMW",
+     "transcript": "Many people know BMW very well.",
+     "hit": true
+    },
+    {
+     "idx": 194,
+     "word_b": "Spotify",
+     "transcript": "Many people know Spotify very well.",
+     "hit": true
+    },
+    {
+     "idx": 195,
+     "word_b": "Twitter",
+     "transcript": "Many people know Twitter very well.",
+     "hit": true
+    },
+    {
+     "idx": 196,
+     "word_b": "Lagos",
+     "transcript": "Many people know Lagos very well.",
+     "hit": true
+    },
+    {
+     "idx": 197,
+     "word_b": "Delhi",
+     "transcript": "Many people know Delhi very well.",
+     "hit": true
+    },
+    {
+     "idx": 198,
+     "word_b": "Bangkok",
+     "transcript": "Many people know Bangkok very well.",
+     "hit": true
+    },
+    {
+     "idx": 199,
+     "word_b": "Barcelona",
+     "transcript": "Many people know Barcelona very well.",
+     "hit": true
+    },
+    {
+     "idx": 200,
+     "word_b": "Paris",
+     "transcript": "They respect Paris.",
+     "hit": true
+    },
+    {
+     "idx": 201,
+     "word_b": "John",
+     "transcript": "They respect John.",
+     "hit": true
+    },
+    {
+     "idx": 202,
+     "word_b": "Newton",
+     "transcript": "They respect Newton.",
+     "hit": true
+    },
+    {
+     "idx": 203,
+     "word_b": "Beethoven",
+     "transcript": "They respect Beethoven.",
+     "hit": true
+    },
+    {
+     "idx": 204,
+     "word_b": "Google",
+     "transcript": "They respect Google.",
+     "hit": true
+    },
+    {
+     "idx": 205,
+     "word_b": "Oxford",
+     "transcript": "They respect Oxford.",
+     "hit": true
+    },
+    {
+     "idx": 206,
+     "word_b": "Porsche",
+     "transcript": "They respect Portia.",
+     "hit": false
+    },
+    {
+     "idx": 207,
+     "word_b": "Jupiter",
+     "transcript": "They respect Jupiter.",
+     "hit": true
+    },
+    {
+     "idx": 208,
+     "word_b": "Emerald",
+     "transcript": "They respect Emerald.",
+     "hit": true
+    },
+    {
+     "idx": 209,
+     "word_b": "Halloween",
+     "transcript": "They respect Halloween.",
+     "hit": true
+    },
+    {
+     "idx": 210,
+     "word_b": "Broadway",
+     "transcript": "They respect Broadway.",
+     "hit": true
+    },
+    {
+     "idx": 211,
+     "word_b": "Elizabeth",
+     "transcript": "They respect Elizabeth.",
+     "hit": true
+    },
+    {
+     "idx": 212,
+     "word_b": "Picasso",
+     "transcript": "They respect Picasso.",
+     "hit": true
+    },
+    {
+     "idx": 213,
+     "word_b": "Kilimanjaro",
+     "transcript": "They respect Kilimanjaro.",
+     "hit": true
+    },
+    {
+     "idx": 214,
+     "word_b": "Pacific",
+     "transcript": "They respect Pacific.",
+     "hit": true
+    },
+    {
+     "idx": 215,
+     "word_b": "Dickens",
+     "transcript": "They respect Dickens.",
+     "hit": true
+    },
+    {
+     "idx": 216,
+     "word_b": "Apple",
+     "transcript": "They respect Apple.",
+     "hit": true
+    },
+    {
+     "idx": 217,
+     "word_b": "Berlin",
+     "transcript": "They respect Berlin.",
+     "hit": true
+    },
+    {
+     "idx": 218,
+     "word_b": "Toronto",
+     "transcript": "They respect Toronto.",
+     "hit": true
+    },
+    {
+     "idx": 219,
+     "word_b": "Berkeley",
+     "transcript": "They respect Berkeley.",
+     "hit": true
+    },
+    {
+     "idx": 220,
+     "word_b": "Caesar",
+     "transcript": "They respect Caesar.",
+     "hit": true
+    },
+    {
+     "idx": 221,
+     "word_b": "Galileo",
+     "transcript": "They respect Galileo.",
+     "hit": true
+    },
+    {
+     "idx": 222,
+     "word_b": "Edison",
+     "transcript": "They respect Edison.",
+     "hit": true
+    },
+    {
+     "idx": 223,
+     "word_b": "Airbus",
+     "transcript": "They respect Airbus.",
+     "hit": true
+    },
+    {
+     "idx": 224,
+     "word_b": "Warner",
+     "transcript": "They respect Warner.",
+     "hit": true
+    },
+    {
+     "idx": 225,
+     "word_b": "AMD",
+     "transcript": "They respect AMD.",
+     "hit": true
+    },
+    {
+     "idx": 226,
+     "word_b": "Boston",
+     "transcript": "They respect Boston.",
+     "hit": true
+    },
+    {
+     "idx": 227,
+     "word_b": "Houston",
+     "transcript": "They respect Houston.",
+     "hit": true
+    },
+    {
+     "idx": 228,
+     "word_b": "Seattle",
+     "transcript": "They respect Seattle.",
+     "hit": true
+    },
+    {
+     "idx": 229,
+     "word_b": "Atlanta",
+     "transcript": "They respect Atlanta.",
+     "hit": true
+    },
+    {
+     "idx": 230,
+     "word_b": "Adidas",
+     "transcript": "They respect Adidas.",
+     "hit": true
+    },
+    {
+     "idx": 231,
+     "word_b": "Honda",
+     "transcript": "They respect Honda.",
+     "hit": true
+    },
+    {
+     "idx": 232,
+     "word_b": "Magellan",
+     "transcript": "They respect Magellan.",
+     "hit": true
+    },
+    {
+     "idx": 233,
+     "word_b": "Rome",
+     "transcript": "They respect Rome.",
+     "hit": true
+    },
+    {
+     "idx": 234,
+     "word_b": "Prague",
+     "transcript": "They respect Prague.",
+     "hit": true
+    },
+    {
+     "idx": 235,
+     "word_b": "Beijing",
+     "transcript": "They respect Beijing.",
+     "hit": true
+    },
+    {
+     "idx": 236,
+     "word_b": "Washington",
+     "transcript": "They respect Washington.",
+     "hit": true
+    },
+    {
+     "idx": 237,
+     "word_b": "Roosevelt",
+     "transcript": "They respect Roosevelt.",
+     "hit": true
+    },
+    {
+     "idx": 238,
+     "word_b": "Venus",
+     "transcript": "They respect Venus.",
+     "hit": true
+    },
+    {
+     "idx": 239,
+     "word_b": "Neptune",
+     "transcript": "They respect Neptune.",
+     "hit": true
+    },
+    {
+     "idx": 240,
+     "word_b": "Gobi",
+     "transcript": "They respect Gobi.",
+     "hit": true
+    },
+    {
+     "idx": 241,
+     "word_b": "Argentina",
+     "transcript": "They respect Argentina.",
+     "hit": true
+    },
+    {
+     "idx": 242,
+     "word_b": "Mazda",
+     "transcript": "They respect Mazda.",
+     "hit": true
+    },
+    {
+     "idx": 243,
+     "word_b": "BMW",
+     "transcript": "They respect B&W.",
+     "hit": false
+    },
+    {
+     "idx": 244,
+     "word_b": "Spotify",
+     "transcript": "They respect Spotify.",
+     "hit": true
+    },
+    {
+     "idx": 245,
+     "word_b": "Twitter",
+     "transcript": "They respect Twitter.",
+     "hit": true
+    },
+    {
+     "idx": 246,
+     "word_b": "Lagos",
+     "transcript": "They respect Lagos.",
+     "hit": true
+    },
+    {
+     "idx": 247,
+     "word_b": "Delhi",
+     "transcript": "They respect Delhi.",
+     "hit": true
+    },
+    {
+     "idx": 248,
+     "word_b": "Bangkok",
+     "transcript": "They respect Bangkok.",
+     "hit": true
+    },
+    {
+     "idx": 249,
+     "word_b": "Barcelona",
+     "transcript": "They respect Barcelona.",
+     "hit": true
+    },
+    {
+     "idx": 250,
+     "word_b": "Paris",
+     "transcript": "Everyone looks up to Paris today.",
+     "hit": true
+    },
+    {
+     "idx": 251,
+     "word_b": "John",
+     "transcript": "Everyone looks up to Jon today.",
+     "hit": false
+    },
+    {
+     "idx": 252,
+     "word_b": "Newton",
+     "transcript": "Everyone looks up to Newton today.",
+     "hit": true
+    },
+    {
+     "idx": 253,
+     "word_b": "Beethoven",
+     "transcript": "Everyone looks up to Beethoven today.",
+     "hit": true
+    },
+    {
+     "idx": 254,
+     "word_b": "Google",
+     "transcript": "Everyone looks up to Google today.",
+     "hit": true
+    },
+    {
+     "idx": 255,
+     "word_b": "Oxford",
+     "transcript": "Everyone looks up to Oxford today.",
+     "hit": true
+    },
+    {
+     "idx": 256,
+     "word_b": "Porsche",
+     "transcript": "Everyone looks up to Portia today.",
+     "hit": false
+    },
+    {
+     "idx": 257,
+     "word_b": "Jupiter",
+     "transcript": "Everyone looks up to Jupiter today.",
+     "hit": true
+    },
+    {
+     "idx": 258,
+     "word_b": "Emerald",
+     "transcript": "Everyone looks up to Emeril today.",
+     "hit": false
+    },
+    {
+     "idx": 259,
+     "word_b": "Halloween",
+     "transcript": "Everyone looks up to Halloween today.",
+     "hit": true
+    },
+    {
+     "idx": 260,
+     "word_b": "Broadway",
+     "transcript": "Everyone looks up to Broadway today.",
+     "hit": true
+    },
+    {
+     "idx": 261,
+     "word_b": "Elizabeth",
+     "transcript": "Everyone looks up to Elizabeth today.",
+     "hit": true
+    },
+    {
+     "idx": 262,
+     "word_b": "Picasso",
+     "transcript": "Everyone looks up to Picasso today.",
+     "hit": true
+    },
+    {
+     "idx": 263,
+     "word_b": "Kilimanjaro",
+     "transcript": "Everyone looks up to Kilimanjaro today.",
+     "hit": true
+    },
+    {
+     "idx": 264,
+     "word_b": "Pacific",
+     "transcript": "Everyone looks up to Pacific today.",
+     "hit": true
+    },
+    {
+     "idx": 265,
+     "word_b": "Dickens",
+     "transcript": "Everyone looks up to Dickens today.",
+     "hit": true
+    },
+    {
+     "idx": 266,
+     "word_b": "Apple",
+     "transcript": "Everyone looks up to Apple today.",
+     "hit": true
+    },
+    {
+     "idx": 267,
+     "word_b": "Berlin",
+     "transcript": "Everyone looks up to Berlin today.",
+     "hit": true
+    },
+    {
+     "idx": 268,
+     "word_b": "Toronto",
+     "transcript": "Everyone looks up to Toronto today.",
+     "hit": true
+    },
+    {
+     "idx": 269,
+     "word_b": "Berkeley",
+     "transcript": "Everyone looks up to Berkeley today.",
+     "hit": true
+    },
+    {
+     "idx": 270,
+     "word_b": "Caesar",
+     "transcript": "Everyone looks up to Caesar today.",
+     "hit": true
+    },
+    {
+     "idx": 271,
+     "word_b": "Galileo",
+     "transcript": "Everyone looks up to Galileo today.",
+     "hit": true
+    },
+    {
+     "idx": 272,
+     "word_b": "Edison",
+     "transcript": "Everyone looks up to Edison today.",
+     "hit": true
+    },
+    {
+     "idx": 273,
+     "word_b": "Airbus",
+     "transcript": "Everyone looks up to Airbus today.",
+     "hit": true
+    },
+    {
+     "idx": 274,
+     "word_b": "Warner",
+     "transcript": "Everyone looks up to Warner today.",
+     "hit": true
+    },
+    {
+     "idx": 275,
+     "word_b": "AMD",
+     "transcript": "Everyone looks up to AMD today.",
+     "hit": true
+    },
+    {
+     "idx": 276,
+     "word_b": "Boston",
+     "transcript": "Everyone looks up to Boston today.",
+     "hit": true
+    },
+    {
+     "idx": 277,
+     "word_b": "Houston",
+     "transcript": "Everyone looks up to Houston today.",
+     "hit": true
+    },
+    {
+     "idx": 278,
+     "word_b": "Seattle",
+     "transcript": "Everyone looks up to Seattle today.",
+     "hit": true
+    },
+    {
+     "idx": 279,
+     "word_b": "Atlanta",
+     "transcript": "Everyone looks up to Atlanta today.",
+     "hit": true
+    },
+    {
+     "idx": 280,
+     "word_b": "Adidas",
+     "transcript": "Everyone looks up to Adidas today.",
+     "hit": true
+    },
+    {
+     "idx": 281,
+     "word_b": "Honda",
+     "transcript": "Everyone looks up to Honda today.",
+     "hit": true
+    },
+    {
+     "idx": 282,
+     "word_b": "Magellan",
+     "transcript": "Everyone looks up to Magellan today.",
+     "hit": true
+    },
+    {
+     "idx": 283,
+     "word_b": "Rome",
+     "transcript": "Everyone looks up to Rome today.",
+     "hit": true
+    },
+    {
+     "idx": 284,
+     "word_b": "Prague",
+     "transcript": "Everyone looks up to Prague today.",
+     "hit": true
+    },
+    {
+     "idx": 285,
+     "word_b": "Beijing",
+     "transcript": "Everyone looks up to Beijing today.",
+     "hit": true
+    },
+    {
+     "idx": 286,
+     "word_b": "Washington",
+     "transcript": "Everyone looks up to Washington today.",
+     "hit": true
+    },
+    {
+     "idx": 287,
+     "word_b": "Roosevelt",
+     "transcript": "Everyone looks up to Roosevelt today.",
+     "hit": true
+    },
+    {
+     "idx": 288,
+     "word_b": "Venus",
+     "transcript": "Everyone looks up to Venus today.",
+     "hit": true
+    },
+    {
+     "idx": 289,
+     "word_b": "Neptune",
+     "transcript": "Everyone looks up to Neptune today.",
+     "hit": true
+    },
+    {
+     "idx": 290,
+     "word_b": "Gobi",
+     "transcript": "Everyone looks up to Gobi today.",
+     "hit": true
+    },
+    {
+     "idx": 291,
+     "word_b": "Argentina",
+     "transcript": "Everyone looks up to Argentina today.",
+     "hit": true
+    },
+    {
+     "idx": 292,
+     "word_b": "Mazda",
+     "transcript": "Everyone looks up to Mazda today.",
+     "hit": true
+    },
+    {
+     "idx": 293,
+     "word_b": "BMW",
+     "transcript": "Everyone looks up to BMW today.",
+     "hit": true
+    },
+    {
+     "idx": 294,
+     "word_b": "Spotify",
+     "transcript": "Everyone looks up to Spotify today.",
+     "hit": true
+    },
+    {
+     "idx": 295,
+     "word_b": "Twitter",
+     "transcript": "Everyone looks up to Twitter today.",
+     "hit": true
+    },
+    {
+     "idx": 296,
+     "word_b": "Lagos",
+     "transcript": "Everyone looks up to Lagos today.",
+     "hit": true
+    },
+    {
+     "idx": 297,
+     "word_b": "Delhi",
+     "transcript": "Everyone looks up to Delhi today.",
+     "hit": true
+    },
+    {
+     "idx": 298,
+     "word_b": "Bangkok",
+     "transcript": "Everyone looks up to Bangkok today.",
+     "hit": true
+    },
+    {
+     "idx": 299,
+     "word_b": "Barcelona",
+     "transcript": "Everyone looks up to Barcelona today.",
+     "hit": true
+    }
+   ]
+  },
+  "vc_tts": {
+   "k": 270,
+   "n": 300,
+   "pct": 90.0,
+   "wilson_half": 3.41,
+   "rows": [
+    {
+     "idx": 0,
+     "word_b": "Paris",
+     "transcript": "Paris is famous.",
+     "hit": true
+    },
+    {
+     "idx": 1,
+     "word_b": "John",
+     "transcript": "John is famous.",
+     "hit": true
+    },
+    {
+     "idx": 2,
+     "word_b": "Newton",
+     "transcript": "Newton is famous.",
+     "hit": true
+    },
+    {
+     "idx": 3,
+     "word_b": "Beethoven",
+     "transcript": "But it's famous.",
+     "hit": false
+    },
+    {
+     "idx": 4,
+     "word_b": "Google",
+     "transcript": "Google is famous.",
+     "hit": true
+    },
+    {
+     "idx": 5,
+     "word_b": "Oxford",
+     "transcript": "Oxford is famous.",
+     "hit": true
+    },
+    {
+     "idx": 6,
+     "word_b": "Porsche",
+     "transcript": "Porsche is famous.",
+     "hit": true
+    },
+    {
+     "idx": 7,
+     "word_b": "Jupiter",
+     "transcript": "Jupiter is famous.",
+     "hit": true
+    },
+    {
+     "idx": 8,
+     "word_b": "Emerald",
+     "transcript": "Emerald is famous.",
+     "hit": true
+    },
+    {
+     "idx": 9,
+     "word_b": "Halloween",
+     "transcript": "Halloween is famous.",
+     "hit": true
+    },
+    {
+     "idx": 10,
+     "word_b": "Broadway",
+     "transcript": "Broadway is famous.",
+     "hit": true
+    },
+    {
+     "idx": 11,
+     "word_b": "Elizabeth",
+     "transcript": "Elizabeth is famous.",
+     "hit": true
+    },
+    {
+     "idx": 12,
+     "word_b": "Picasso",
+     "transcript": "Picasso is famous.",
+     "hit": true
+    },
+    {
+     "idx": 13,
+     "word_b": "Kilimanjaro",
+     "transcript": "Kilimanjaro is famous.",
+     "hit": true
+    },
+    {
+     "idx": 14,
+     "word_b": "Pacific",
+     "transcript": "Pacific is famous.",
+     "hit": true
+    },
+    {
+     "idx": 15,
+     "word_b": "Dickens",
+     "transcript": "Dickens is famous.",
+     "hit": true
+    },
+    {
+     "idx": 16,
+     "word_b": "Apple",
+     "transcript": "Apple is famous.",
+     "hit": true
+    },
+    {
+     "idx": 17,
+     "word_b": "Berlin",
+     "transcript": "Berlin is famous.",
+     "hit": true
+    },
+    {
+     "idx": 18,
+     "word_b": "Toronto",
+     "transcript": "Toronto is famous.",
+     "hit": true
+    },
+    {
+     "idx": 19,
+     "word_b": "Berkeley",
+     "transcript": "Berkeley is famous.",
+     "hit": true
+    },
+    {
+     "idx": 20,
+     "word_b": "Caesar",
+     "transcript": "Caesar is famous.",
+     "hit": true
+    },
+    {
+     "idx": 21,
+     "word_b": "Galileo",
+     "transcript": "Delalea was famous.",
+     "hit": false
+    },
+    {
+     "idx": 22,
+     "word_b": "Edison",
+     "transcript": "Edison is famous.",
+     "hit": true
+    },
+    {
+     "idx": 23,
+     "word_b": "Airbus",
+     "transcript": "Airbus is famous.",
+     "hit": true
+    },
+    {
+     "idx": 24,
+     "word_b": "Warner",
+     "transcript": "Warner is famous.",
+     "hit": true
+    },
+    {
+     "idx": 25,
+     "word_b": "AMD",
+     "transcript": "is famous.",
+     "hit": false
+    },
+    {
+     "idx": 26,
+     "word_b": "Boston",
+     "transcript": "Boston is famous.",
+     "hit": true
+    },
+    {
+     "idx": 27,
+     "word_b": "Houston",
+     "transcript": "Houston is famous.",
+     "hit": true
+    },
+    {
+     "idx": 28,
+     "word_b": "Seattle",
+     "transcript": "Seattle is famous.",
+     "hit": true
+    },
+    {
+     "idx": 29,
+     "word_b": "Atlanta",
+     "transcript": "Atlanta is things.",
+     "hit": true
+    },
+    {
+     "idx": 30,
+     "word_b": "Adidas",
+     "transcript": "Adelius is famous.",
+     "hit": false
+    },
+    {
+     "idx": 31,
+     "word_b": "Honda",
+     "transcript": "Honda is famous.",
+     "hit": true
+    },
+    {
+     "idx": 32,
+     "word_b": "Magellan",
+     "transcript": "Magellan is famous.",
+     "hit": true
+    },
+    {
+     "idx": 33,
+     "word_b": "Rome",
+     "transcript": "Rome was famous.",
+     "hit": true
+    },
+    {
+     "idx": 34,
+     "word_b": "Prague",
+     "transcript": "Prague is famous.",
+     "hit": true
+    },
+    {
+     "idx": 35,
+     "word_b": "Beijing",
+     "transcript": "Beijing is famous.",
+     "hit": true
+    },
+    {
+     "idx": 36,
+     "word_b": "Washington",
+     "transcript": "Washington is famous.",
+     "hit": true
+    },
+    {
+     "idx": 37,
+     "word_b": "Roosevelt",
+     "transcript": "Roosevelt is famous.",
+     "hit": true
+    },
+    {
+     "idx": 38,
+     "word_b": "Venus",
+     "transcript": "Venus is famous.",
+     "hit": true
+    },
+    {
+     "idx": 39,
+     "word_b": "Neptune",
+     "transcript": "Neptune is famous.",
+     "hit": true
+    },
+    {
+     "idx": 40,
+     "word_b": "Gobi",
+     "transcript": "Gobi is famous.",
+     "hit": true
+    },
+    {
+     "idx": 41,
+     "word_b": "Argentina",
+     "transcript": "Argentina is famous.",
+     "hit": true
+    },
+    {
+     "idx": 42,
+     "word_b": "Mazda",
+     "transcript": "Mazda is famous.",
+     "hit": true
+    },
+    {
+     "idx": 43,
+     "word_b": "BMW",
+     "transcript": "MW's famous.",
+     "hit": false
+    },
+    {
+     "idx": 44,
+     "word_b": "Spotify",
+     "transcript": "Spotify is famous.",
+     "hit": true
+    },
+    {
+     "idx": 45,
+     "word_b": "Twitter",
+     "transcript": "Twitter is famous.",
+     "hit": true
+    },
+    {
+     "idx": 46,
+     "word_b": "Lagos",
+     "transcript": "Lagos is famous.",
+     "hit": true
+    },
+    {
+     "idx": 47,
+     "word_b": "Delhi",
+     "transcript": "Delhi is famous.",
+     "hit": true
+    },
+    {
+     "idx": 48,
+     "word_b": "Bangkok",
+     "transcript": "Bangkok is famous.",
+     "hit": true
+    },
+    {
+     "idx": 49,
+     "word_b": "Barcelona",
+     "transcript": "Barcelona is famous.",
+     "hit": true
+    },
+    {
+     "idx": 50,
+     "word_b": "Paris",
+     "transcript": "Yesterday, Paris became famous.",
+     "hit": true
+    },
+    {
+     "idx": 51,
+     "word_b": "John",
+     "transcript": "Yesterday, John became famous.",
+     "hit": true
+    },
+    {
+     "idx": 52,
+     "word_b": "Newton",
+     "transcript": "Yesterday, Newton became famous.",
+     "hit": true
+    },
+    {
+     "idx": 53,
+     "word_b": "Beethoven",
+     "transcript": "Yesterday, Beethoven became famous.",
+     "hit": true
+    },
+    {
+     "idx": 54,
+     "word_b": "Google",
+     "transcript": "Yesterday, Google became famous.",
+     "hit": true
+    },
+    {
+     "idx": 55,
+     "word_b": "Oxford",
+     "transcript": "Yesterday, Oxford became famous.",
+     "hit": true
+    },
+    {
+     "idx": 56,
+     "word_b": "Porsche",
+     "transcript": "Yesterday, Porsche became famous.",
+     "hit": true
+    },
+    {
+     "idx": 57,
+     "word_b": "Jupiter",
+     "transcript": "Yesterday Jupiter became famous.",
+     "hit": true
+    },
+    {
+     "idx": 58,
+     "word_b": "Emerald",
+     "transcript": "Yesterday, Emeril became a s-",
+     "hit": false
+    },
+    {
+     "idx": 59,
+     "word_b": "Halloween",
+     "transcript": "Yesterday, Halloween became famous.",
+     "hit": true
+    },
+    {
+     "idx": 60,
+     "word_b": "Broadway",
+     "transcript": "Yesterday, Broadway became famous",
+     "hit": true
+    },
+    {
+     "idx": 61,
+     "word_b": "Elizabeth",
+     "transcript": "Yesterday, Elizabeth became famous.",
+     "hit": true
+    },
+    {
+     "idx": 62,
+     "word_b": "Picasso",
+     "transcript": "Yesterday, Picasso became famous.",
+     "hit": true
+    },
+    {
+     "idx": 63,
+     "word_b": "Kilimanjaro",
+     "transcript": "Yesterday, Killer Manjaro became famous.",
+     "hit": false
+    },
+    {
+     "idx": 64,
+     "word_b": "Pacific",
+     "transcript": "Yesterday, Pacific became famous.",
+     "hit": true
+    },
+    {
+     "idx": 65,
+     "word_b": "Dickens",
+     "transcript": "Yesterday, Dickens became famous.",
+     "hit": true
+    },
+    {
+     "idx": 66,
+     "word_b": "Apple",
+     "transcript": "Yesterday, Apple became famous.",
+     "hit": true
+    },
+    {
+     "idx": 67,
+     "word_b": "Berlin",
+     "transcript": "Yesterday, Berlin became famous.",
+     "hit": true
+    },
+    {
+     "idx": 68,
+     "word_b": "Toronto",
+     "transcript": "Yesterday, Toronto became famous.",
+     "hit": true
+    },
+    {
+     "idx": 69,
+     "word_b": "Berkeley",
+     "transcript": "Yesterday, Berkeley became famous.",
+     "hit": true
+    },
+    {
+     "idx": 70,
+     "word_b": "Caesar",
+     "transcript": "Yesterday, Caesar became famous.",
+     "hit": true
+    },
+    {
+     "idx": 71,
+     "word_b": "Galileo",
+     "transcript": "Yesterday, Galileo became famous.",
+     "hit": true
+    },
+    {
+     "idx": 72,
+     "word_b": "Edison",
+     "transcript": "Yesterday, Edison became famous.",
+     "hit": true
+    },
+    {
+     "idx": 73,
+     "word_b": "Airbus",
+     "transcript": "Yesterday, Airbus became famous.",
+     "hit": true
+    },
+    {
+     "idx": 74,
+     "word_b": "Warner",
+     "transcript": "Yesterday, Warner became famous.",
+     "hit": true
+    },
+    {
+     "idx": 75,
+     "word_b": "AMD",
+     "transcript": "yesterday and became famous.",
+     "hit": false
+    },
+    {
+     "idx": 76,
+     "word_b": "Boston",
+     "transcript": "Yesterday, Boston became famous.",
+     "hit": true
+    },
+    {
+     "idx": 77,
+     "word_b": "Houston",
+     "transcript": "Yesterday, Houston became famous.",
+     "hit": true
+    },
+    {
+     "idx": 78,
+     "word_b": "Seattle",
+     "transcript": "Yesterday, Seattle became famous.",
+     "hit": true
+    },
+    {
+     "idx": 79,
+     "word_b": "Atlanta",
+     "transcript": "Yesterday, Atlanta became famous.",
+     "hit": true
+    },
+    {
+     "idx": 80,
+     "word_b": "Adidas",
+     "transcript": "Yesterday, Adidas became famous.",
+     "hit": true
+    },
+    {
+     "idx": 81,
+     "word_b": "Honda",
+     "transcript": "Yesterday, Honda became famous.",
+     "hit": true
+    },
+    {
+     "idx": 82,
+     "word_b": "Magellan",
+     "transcript": "Yesterday, Magellan became famous.",
+     "hit": true
+    },
+    {
+     "idx": 83,
+     "word_b": "Rome",
+     "transcript": "Yesterday, Rome became famous.",
+     "hit": true
+    },
+    {
+     "idx": 84,
+     "word_b": "Prague",
+     "transcript": "Yesterday, Prague became famous.",
+     "hit": true
+    },
+    {
+     "idx": 85,
+     "word_b": "Beijing",
+     "transcript": "Yesterday, Beijing became famous",
+     "hit": true
+    },
+    {
+     "idx": 86,
+     "word_b": "Washington",
+     "transcript": "Yesterday, Washington became famous.",
+     "hit": true
+    },
+    {
+     "idx": 87,
+     "word_b": "Roosevelt",
+     "transcript": "Yesterday, Roosevelt became famous.",
+     "hit": true
+    },
+    {
+     "idx": 88,
+     "word_b": "Venus",
+     "transcript": "Yesterday, Venus became famous.",
+     "hit": true
+    },
+    {
+     "idx": 89,
+     "word_b": "Neptune",
+     "transcript": "Yesterday, Neptune became famous.",
+     "hit": true
+    },
+    {
+     "idx": 90,
+     "word_b": "Gobi",
+     "transcript": "Yesterday, Gooby became famous.",
+     "hit": false
+    },
+    {
+     "idx": 91,
+     "word_b": "Argentina",
+     "transcript": "Yesterday, Argentina became famous.",
+     "hit": true
+    },
+    {
+     "idx": 92,
+     "word_b": "Mazda",
+     "transcript": "Yesterday, Mazda became famous.",
+     "hit": true
+    },
+    {
+     "idx": 93,
+     "word_b": "BMW",
+     "transcript": "Yesterday, BKMD became famous.",
+     "hit": false
+    },
+    {
+     "idx": 94,
+     "word_b": "Spotify",
+     "transcript": "Yesterday, Spotify became famous.",
+     "hit": true
+    },
+    {
+     "idx": 95,
+     "word_b": "Twitter",
+     "transcript": "Yesterday, Twitter became famous.",
+     "hit": true
+    },
+    {
+     "idx": 96,
+     "word_b": "Lagos",
+     "transcript": "Yesterday, Léa became famous.",
+     "hit": false
+    },
+    {
+     "idx": 97,
+     "word_b": "Delhi",
+     "transcript": "Yesterday Delhi became famous.",
+     "hit": true
+    },
+    {
+     "idx": 98,
+     "word_b": "Bangkok",
+     "transcript": "Yesterday, Bangkok became famous.",
+     "hit": true
+    },
+    {
+     "idx": 99,
+     "word_b": "Barcelona",
+     "transcript": "Yesterday Barcelona became famous.",
+     "hit": true
+    },
+    {
+     "idx": 100,
+     "word_b": "Paris",
+     "transcript": "Around the world, Paris is known",
+     "hit": true
+    },
+    {
+     "idx": 101,
+     "word_b": "John",
+     "transcript": "Around the world, John is known.",
+     "hit": true
+    },
+    {
+     "idx": 102,
+     "word_b": "Newton",
+     "transcript": "Around the world, Newton is known.",
+     "hit": true
+    },
+    {
+     "idx": 103,
+     "word_b": "Beethoven",
+     "transcript": "Around the world, Beethoven is known",
+     "hit": true
+    },
+    {
+     "idx": 104,
+     "word_b": "Google",
+     "transcript": "Around the world, Google is known.",
+     "hit": true
+    },
+    {
+     "idx": 105,
+     "word_b": "Oxford",
+     "transcript": "Around the world, Oxford is known.",
+     "hit": true
+    },
+    {
+     "idx": 106,
+     "word_b": "Porsche",
+     "transcript": "Around the world, Porsche is known.",
+     "hit": true
+    },
+    {
+     "idx": 107,
+     "word_b": "Jupiter",
+     "transcript": "Around the world, Jupiter is known.",
+     "hit": true
+    },
+    {
+     "idx": 108,
+     "word_b": "Emerald",
+     "transcript": "Around the world, Emerald is known.",
+     "hit": true
+    },
+    {
+     "idx": 109,
+     "word_b": "Halloween",
+     "transcript": "Around the world, Halloween is known",
+     "hit": true
+    },
+    {
+     "idx": 110,
+     "word_b": "Broadway",
+     "transcript": "Around the world, Broadway is known.",
+     "hit": true
+    },
+    {
+     "idx": 111,
+     "word_b": "Elizabeth",
+     "transcript": "Around the world, Elizabeth is known",
+     "hit": true
+    },
+    {
+     "idx": 112,
+     "word_b": "Picasso",
+     "transcript": "Around the world, Picasso is known.",
+     "hit": true
+    },
+    {
+     "idx": 113,
+     "word_b": "Kilimanjaro",
+     "transcript": "Around the world, Kamenjaro is known.",
+     "hit": false
+    },
+    {
+     "idx": 114,
+     "word_b": "Pacific",
+     "transcript": "Air in the world, Pacific is known.",
+     "hit": true
+    },
+    {
+     "idx": 115,
+     "word_b": "Dickens",
+     "transcript": "Around the world, Dickens is known.",
+     "hit": true
+    },
+    {
+     "idx": 116,
+     "word_b": "Apple",
+     "transcript": "Around the world, Apple is known.",
+     "hit": true
+    },
+    {
+     "idx": 117,
+     "word_b": "Berlin",
+     "transcript": "Around the world, Berlin is known",
+     "hit": true
+    },
+    {
+     "idx": 118,
+     "word_b": "Toronto",
+     "transcript": "Around the world, Toronto is known.",
+     "hit": true
+    },
+    {
+     "idx": 119,
+     "word_b": "Berkeley",
+     "transcript": "Around the world, Berkeley's known.",
+     "hit": true
+    },
+    {
+     "idx": 120,
+     "word_b": "Caesar",
+     "transcript": "Around the world Caesar is known.",
+     "hit": true
+    },
+    {
+     "idx": 121,
+     "word_b": "Galileo",
+     "transcript": "Around the world, Galileo is known.",
+     "hit": true
+    },
+    {
+     "idx": 122,
+     "word_b": "Edison",
+     "transcript": "Around the world, Edison is now.",
+     "hit": true
+    },
+    {
+     "idx": 123,
+     "word_b": "Airbus",
+     "transcript": "Around the world, Airbus is known",
+     "hit": true
+    },
+    {
+     "idx": 124,
+     "word_b": "Warner",
+     "transcript": "Around the world, Warner is known.",
+     "hit": true
+    },
+    {
+     "idx": 125,
+     "word_b": "AMD",
+     "transcript": "around the world is known.",
+     "hit": false
+    },
+    {
+     "idx": 126,
+     "word_b": "Boston",
+     "transcript": "around the world, Connie Snowed.",
+     "hit": false
+    },
+    {
+     "idx": 127,
+     "word_b": "Houston",
+     "transcript": "Around the world, Houston is known.",
+     "hit": true
+    },
+    {
+     "idx": 128,
+     "word_b": "Seattle",
+     "transcript": "Around the world, Seattle is known.",
+     "hit": true
+    },
+    {
+     "idx": 129,
+     "word_b": "Atlanta",
+     "transcript": "Around the world, Atlanta is known.",
+     "hit": true
+    },
+    {
+     "idx": 130,
+     "word_b": "Adidas",
+     "transcript": "Around the world, Adidas is known.",
+     "hit": true
+    },
+    {
+     "idx": 131,
+     "word_b": "Honda",
+     "transcript": "Around the world, Honda is known.",
+     "hit": true
+    },
+    {
+     "idx": 132,
+     "word_b": "Magellan",
+     "transcript": "Around the world, Magellan is known.",
+     "hit": true
+    },
+    {
+     "idx": 133,
+     "word_b": "Rome",
+     "transcript": "Around the world, Rome is known",
+     "hit": true
+    },
+    {
+     "idx": 134,
+     "word_b": "Prague",
+     "transcript": "Around the world, Prague is known.",
+     "hit": true
+    },
+    {
+     "idx": 135,
+     "word_b": "Beijing",
+     "transcript": "Around the world, Beijing is known.",
+     "hit": true
+    },
+    {
+     "idx": 136,
+     "word_b": "Washington",
+     "transcript": "Around the world, Washington is known.",
+     "hit": true
+    },
+    {
+     "idx": 137,
+     "word_b": "Roosevelt",
+     "transcript": "Around the world, Roosevelt is known.",
+     "hit": true
+    },
+    {
+     "idx": 138,
+     "word_b": "Venus",
+     "transcript": "Around the world, Venus is known.",
+     "hit": true
+    },
+    {
+     "idx": 139,
+     "word_b": "Neptune",
+     "transcript": "Around the world, Neptune is known",
+     "hit": true
+    },
+    {
+     "idx": 140,
+     "word_b": "Gobi",
+     "transcript": "Around the world, Dobie is known.",
+     "hit": false
+    },
+    {
+     "idx": 141,
+     "word_b": "Argentina",
+     "transcript": "Around the world, Argentina is known",
+     "hit": true
+    },
+    {
+     "idx": 142,
+     "word_b": "Mazda",
+     "transcript": "Around the world, master's known.'",
+     "hit": false
+    },
+    {
+     "idx": 143,
+     "word_b": "BMW",
+     "transcript": "Around the world, BMW is known",
+     "hit": true
+    },
+    {
+     "idx": 144,
+     "word_b": "Spotify",
+     "transcript": "Around the world, Spotify is known",
+     "hit": true
+    },
+    {
+     "idx": 145,
+     "word_b": "Twitter",
+     "transcript": "Around the world, Twitter is known",
+     "hit": true
+    },
+    {
+     "idx": 146,
+     "word_b": "Lagos",
+     "transcript": "Around the world, Lagos is known.",
+     "hit": true
+    },
+    {
+     "idx": 147,
+     "word_b": "Delhi",
+     "transcript": "Around the world, Delhi is known",
+     "hit": true
+    },
+    {
+     "idx": 148,
+     "word_b": "Bangkok",
+     "transcript": "Around the world, Bangkok is known.",
+     "hit": true
+    },
+    {
+     "idx": 149,
+     "word_b": "Barcelona",
+     "transcript": "Around the world, Barcelona is known.",
+     "hit": true
+    },
+    {
+     "idx": 150,
+     "word_b": "Paris",
+     "transcript": "Many people know Paris very well.",
+     "hit": true
+    },
+    {
+     "idx": 151,
+     "word_b": "John",
+     "transcript": "Many people know John very well.",
+     "hit": true
+    },
+    {
+     "idx": 152,
+     "word_b": "Newton",
+     "transcript": "Many people know Newton very well.",
+     "hit": true
+    },
+    {
+     "idx": 153,
+     "word_b": "Beethoven",
+     "transcript": "Any people know Beethoven very well.",
+     "hit": true
+    },
+    {
+     "idx": 154,
+     "word_b": "Google",
+     "transcript": "Many people know Google very well.",
+     "hit": true
+    },
+    {
+     "idx": 155,
+     "word_b": "Oxford",
+     "transcript": "Many people know Oxford very well.",
+     "hit": true
+    },
+    {
+     "idx": 156,
+     "word_b": "Porsche",
+     "transcript": "Many people know Porsche very well.",
+     "hit": true
+    },
+    {
+     "idx": 157,
+     "word_b": "Jupiter",
+     "transcript": "Many people know Jupiter very well.",
+     "hit": true
+    },
+    {
+     "idx": 158,
+     "word_b": "Emerald",
+     "transcript": "many people know Emeril very well.",
+     "hit": false
+    },
+    {
+     "idx": 159,
+     "word_b": "Halloween",
+     "transcript": "Many people know Halloween very well.",
+     "hit": true
+    },
+    {
+     "idx": 160,
+     "word_b": "Broadway",
+     "transcript": "Many people know Broadway very well.",
+     "hit": true
+    },
+    {
+     "idx": 161,
+     "word_b": "Elizabeth",
+     "transcript": "Many people know Elizabeth very well.",
+     "hit": true
+    },
+    {
+     "idx": 162,
+     "word_b": "Picasso",
+     "transcript": "Many people know Picasso very well.",
+     "hit": true
+    },
+    {
+     "idx": 163,
+     "word_b": "Kilimanjaro",
+     "transcript": "Many people know Kilimanjaro very well.",
+     "hit": true
+    },
+    {
+     "idx": 164,
+     "word_b": "Pacific",
+     "transcript": "Many people know Pacific very well.",
+     "hit": true
+    },
+    {
+     "idx": 165,
+     "word_b": "Dickens",
+     "transcript": "Many people know Dickens very well.",
+     "hit": true
+    },
+    {
+     "idx": 166,
+     "word_b": "Apple",
+     "transcript": "Many people know Apple very well.",
+     "hit": true
+    },
+    {
+     "idx": 167,
+     "word_b": "Berlin",
+     "transcript": "Many people know Berlin very well.",
+     "hit": true
+    },
+    {
+     "idx": 168,
+     "word_b": "Toronto",
+     "transcript": "Many people know Toronto very well.",
+     "hit": true
+    },
+    {
+     "idx": 169,
+     "word_b": "Berkeley",
+     "transcript": "Many people know Berkeley very well.",
+     "hit": true
+    },
+    {
+     "idx": 170,
+     "word_b": "Caesar",
+     "transcript": "many people know Caesar very well.",
+     "hit": true
+    },
+    {
+     "idx": 171,
+     "word_b": "Galileo",
+     "transcript": "Many people know Galileo very well.",
+     "hit": true
+    },
+    {
+     "idx": 172,
+     "word_b": "Edison",
+     "transcript": "Many people know Edison very well.",
+     "hit": true
+    },
+    {
+     "idx": 173,
+     "word_b": "Airbus",
+     "transcript": "Many people know Airbus very well.",
+     "hit": true
+    },
+    {
+     "idx": 174,
+     "word_b": "Warner",
+     "transcript": "Many people know Warner very well.",
+     "hit": true
+    },
+    {
+     "idx": 175,
+     "word_b": "AMD",
+     "transcript": "many people know it very well.",
+     "hit": false
+    },
+    {
+     "idx": 176,
+     "word_b": "Boston",
+     "transcript": "Many people know Boston very well.",
+     "hit": true
+    },
+    {
+     "idx": 177,
+     "word_b": "Houston",
+     "transcript": "Many people know Houston very well.",
+     "hit": true
+    },
+    {
+     "idx": 178,
+     "word_b": "Seattle",
+     "transcript": "many people know Seattle very well.",
+     "hit": true
+    },
+    {
+     "idx": 179,
+     "word_b": "Atlanta",
+     "transcript": "many people know Atlanta very well.",
+     "hit": true
+    },
+    {
+     "idx": 180,
+     "word_b": "Adidas",
+     "transcript": "Many people know Adidas very well.",
+     "hit": true
+    },
+    {
+     "idx": 181,
+     "word_b": "Honda",
+     "transcript": "Many people know Honda very well.",
+     "hit": true
+    },
+    {
+     "idx": 182,
+     "word_b": "Magellan",
+     "transcript": "Many people know Magellan very well.",
+     "hit": true
+    },
+    {
+     "idx": 183,
+     "word_b": "Rome",
+     "transcript": "Many people know rum very well.",
+     "hit": false
+    },
+    {
+     "idx": 184,
+     "word_b": "Prague",
+     "transcript": "Many people know Prague very well.",
+     "hit": true
+    },
+    {
+     "idx": 185,
+     "word_b": "Beijing",
+     "transcript": "Many people know Beijing very well.",
+     "hit": true
+    },
+    {
+     "idx": 186,
+     "word_b": "Washington",
+     "transcript": "Many people know Washington very well.",
+     "hit": true
+    },
+    {
+     "idx": 187,
+     "word_b": "Roosevelt",
+     "transcript": "Many people know Roosevelt very well.",
+     "hit": true
+    },
+    {
+     "idx": 188,
+     "word_b": "Venus",
+     "transcript": "Many people know Venus very well.",
+     "hit": true
+    },
+    {
+     "idx": 189,
+     "word_b": "Neptune",
+     "transcript": "many people know Neptune very well.",
+     "hit": true
+    },
+    {
+     "idx": 190,
+     "word_b": "Gobi",
+     "transcript": "Many people know Gobi very well.",
+     "hit": true
+    },
+    {
+     "idx": 191,
+     "word_b": "Argentina",
+     "transcript": "Many people know Argentina very well.",
+     "hit": true
+    },
+    {
+     "idx": 192,
+     "word_b": "Mazda",
+     "transcript": "Many people know Mazda very well.",
+     "hit": true
+    },
+    {
+     "idx": 193,
+     "word_b": "BMW",
+     "transcript": "Many people know Bayer.",
+     "hit": false
+    },
+    {
+     "idx": 194,
+     "word_b": "Spotify",
+     "transcript": "Many people know Spotify very well.",
+     "hit": true
+    },
+    {
+     "idx": 195,
+     "word_b": "Twitter",
+     "transcript": "Many people know Twitter very well.",
+     "hit": true
+    },
+    {
+     "idx": 196,
+     "word_b": "Lagos",
+     "transcript": "Many people know Lagos very well.",
+     "hit": true
+    },
+    {
+     "idx": 197,
+     "word_b": "Delhi",
+     "transcript": "Many people know Delhi very well.",
+     "hit": true
+    },
+    {
+     "idx": 198,
+     "word_b": "Bangkok",
+     "transcript": "Many people know Bangkok very well.",
+     "hit": true
+    },
+    {
+     "idx": 199,
+     "word_b": "Barcelona",
+     "transcript": "Many people know Barcelona very well.",
+     "hit": true
+    },
+    {
+     "idx": 200,
+     "word_b": "Paris",
+     "transcript": "They respect Paris.",
+     "hit": true
+    },
+    {
+     "idx": 201,
+     "word_b": "John",
+     "transcript": "They respect John.",
+     "hit": true
+    },
+    {
+     "idx": 202,
+     "word_b": "Newton",
+     "transcript": "They respect Newton.",
+     "hit": true
+    },
+    {
+     "idx": 203,
+     "word_b": "Beethoven",
+     "transcript": "They respect Beethoven.",
+     "hit": true
+    },
+    {
+     "idx": 204,
+     "word_b": "Google",
+     "transcript": "They respect Google.",
+     "hit": true
+    },
+    {
+     "idx": 205,
+     "word_b": "Oxford",
+     "transcript": "They respect Oxford.",
+     "hit": true
+    },
+    {
+     "idx": 206,
+     "word_b": "Porsche",
+     "transcript": "They respect Porsche.",
+     "hit": true
+    },
+    {
+     "idx": 207,
+     "word_b": "Jupiter",
+     "transcript": "They respect Jupiter.",
+     "hit": true
+    },
+    {
+     "idx": 208,
+     "word_b": "Emerald",
+     "transcript": "They respect Emerald.",
+     "hit": true
+    },
+    {
+     "idx": 209,
+     "word_b": "Halloween",
+     "transcript": "They respect Halloween.",
+     "hit": true
+    },
+    {
+     "idx": 210,
+     "word_b": "Broadway",
+     "transcript": "They respect Broadway.",
+     "hit": true
+    },
+    {
+     "idx": 211,
+     "word_b": "Elizabeth",
+     "transcript": "They respect Elizabeth.",
+     "hit": true
+    },
+    {
+     "idx": 212,
+     "word_b": "Picasso",
+     "transcript": "They respect Picasso.",
+     "hit": true
+    },
+    {
+     "idx": 213,
+     "word_b": "Kilimanjaro",
+     "transcript": "They respect Clem and Jera.",
+     "hit": false
+    },
+    {
+     "idx": 214,
+     "word_b": "Pacific",
+     "transcript": "They respect Pacific.",
+     "hit": true
+    },
+    {
+     "idx": 215,
+     "word_b": "Dickens",
+     "transcript": "They respect Dickens.",
+     "hit": true
+    },
+    {
+     "idx": 216,
+     "word_b": "Apple",
+     "transcript": "They respect Apple.",
+     "hit": true
+    },
+    {
+     "idx": 217,
+     "word_b": "Berlin",
+     "transcript": "They respect Berlin.",
+     "hit": true
+    },
+    {
+     "idx": 218,
+     "word_b": "Toronto",
+     "transcript": "They respect Toronto.",
+     "hit": true
+    },
+    {
+     "idx": 219,
+     "word_b": "Berkeley",
+     "transcript": "They respect Berkeley.",
+     "hit": true
+    },
+    {
+     "idx": 220,
+     "word_b": "Caesar",
+     "transcript": "They respect Caesar.",
+     "hit": true
+    },
+    {
+     "idx": 221,
+     "word_b": "Galileo",
+     "transcript": "They respect Galileo.",
+     "hit": true
+    },
+    {
+     "idx": 222,
+     "word_b": "Edison",
+     "transcript": "They respect Edison.",
+     "hit": true
+    },
+    {
+     "idx": 223,
+     "word_b": "Airbus",
+     "transcript": "They respect Airbus.",
+     "hit": true
+    },
+    {
+     "idx": 224,
+     "word_b": "Warner",
+     "transcript": "They respect Warner.",
+     "hit": true
+    },
+    {
+     "idx": 225,
+     "word_b": "AMD",
+     "transcript": "They respect Ma.",
+     "hit": false
+    },
+    {
+     "idx": 226,
+     "word_b": "Boston",
+     "transcript": "I respect Boston.",
+     "hit": true
+    },
+    {
+     "idx": 227,
+     "word_b": "Houston",
+     "transcript": "They respect Houston.",
+     "hit": true
+    },
+    {
+     "idx": 228,
+     "word_b": "Seattle",
+     "transcript": "They respect Seattle.",
+     "hit": true
+    },
+    {
+     "idx": 229,
+     "word_b": "Atlanta",
+     "transcript": "They respect Atlanta.",
+     "hit": true
+    },
+    {
+     "idx": 230,
+     "word_b": "Adidas",
+     "transcript": "They respect Adidas.",
+     "hit": true
+    },
+    {
+     "idx": 231,
+     "word_b": "Honda",
+     "transcript": "They respect Honda.",
+     "hit": true
+    },
+    {
+     "idx": 232,
+     "word_b": "Magellan",
+     "transcript": "They respect Magellan.",
+     "hit": true
+    },
+    {
+     "idx": 233,
+     "word_b": "Rome",
+     "transcript": "They respect Rome.",
+     "hit": true
+    },
+    {
+     "idx": 234,
+     "word_b": "Prague",
+     "transcript": "They respect Prague.",
+     "hit": true
+    },
+    {
+     "idx": 235,
+     "word_b": "Beijing",
+     "transcript": "They respect I-Jing.",
+     "hit": false
+    },
+    {
+     "idx": 236,
+     "word_b": "Washington",
+     "transcript": "They respect Washington.",
+     "hit": true
+    },
+    {
+     "idx": 237,
+     "word_b": "Roosevelt",
+     "transcript": "I respect Roosevelt.",
+     "hit": true
+    },
+    {
+     "idx": 238,
+     "word_b": "Venus",
+     "transcript": "They respect Venus.",
+     "hit": true
+    },
+    {
+     "idx": 239,
+     "word_b": "Neptune",
+     "transcript": "They respect Neptune.",
+     "hit": true
+    },
+    {
+     "idx": 240,
+     "word_b": "Gobi",
+     "transcript": "They respect Gobi.",
+     "hit": true
+    },
+    {
+     "idx": 241,
+     "word_b": "Argentina",
+     "transcript": "They respect Argentina.",
+     "hit": true
+    },
+    {
+     "idx": 242,
+     "word_b": "Mazda",
+     "transcript": "They respect Master.",
+     "hit": false
+    },
+    {
+     "idx": 243,
+     "word_b": "BMW",
+     "transcript": "that respect BMW.",
+     "hit": true
+    },
+    {
+     "idx": 244,
+     "word_b": "Spotify",
+     "transcript": "They respect Spotify.",
+     "hit": true
+    },
+    {
+     "idx": 245,
+     "word_b": "Twitter",
+     "transcript": "They respect Twitter.",
+     "hit": true
+    },
+    {
+     "idx": 246,
+     "word_b": "Lagos",
+     "transcript": "They respect Legos.",
+     "hit": false
+    },
+    {
+     "idx": 247,
+     "word_b": "Delhi",
+     "transcript": "They respect Deli.",
+     "hit": false
+    },
+    {
+     "idx": 248,
+     "word_b": "Bangkok",
+     "transcript": "They respect Bangkok.",
+     "hit": true
+    },
+    {
+     "idx": 249,
+     "word_b": "Barcelona",
+     "transcript": "They respect Barcelona.",
+     "hit": true
+    },
+    {
+     "idx": 250,
+     "word_b": "Paris",
+     "transcript": "Everyone looks up to Paris today.",
+     "hit": true
+    },
+    {
+     "idx": 251,
+     "word_b": "John",
+     "transcript": "Everyone looks up to John today.",
+     "hit": true
+    },
+    {
+     "idx": 252,
+     "word_b": "Newton",
+     "transcript": "Everyone looks up to Newton today.",
+     "hit": true
+    },
+    {
+     "idx": 253,
+     "word_b": "Beethoven",
+     "transcript": "Everyone looks up to Beethoven today.",
+     "hit": true
+    },
+    {
+     "idx": 254,
+     "word_b": "Google",
+     "transcript": "Everyone looks up to Google today.",
+     "hit": true
+    },
+    {
+     "idx": 255,
+     "word_b": "Oxford",
+     "transcript": "Everyone looks up to Oxford today.",
+     "hit": true
+    },
+    {
+     "idx": 256,
+     "word_b": "Porsche",
+     "transcript": "\"'Everyone looks up to Porsche today.'",
+     "hit": true
+    },
+    {
+     "idx": 257,
+     "word_b": "Jupiter",
+     "transcript": "Everyone looks up to Jupiter today.",
+     "hit": true
+    },
+    {
+     "idx": 258,
+     "word_b": "Emerald",
+     "transcript": "Everyone looks up to Emerald today.",
+     "hit": true
+    },
+    {
+     "idx": 259,
+     "word_b": "Halloween",
+     "transcript": "Everyone looks up to Halloween today.",
+     "hit": true
+    },
+    {
+     "idx": 260,
+     "word_b": "Broadway",
+     "transcript": "Everyone looks up to Broadway today.",
+     "hit": true
+    },
+    {
+     "idx": 261,
+     "word_b": "Elizabeth",
+     "transcript": "Everyone looks up to Elizabeth today.",
+     "hit": true
+    },
+    {
+     "idx": 262,
+     "word_b": "Picasso",
+     "transcript": "Everyone looks up to Picasso today.",
+     "hit": true
+    },
+    {
+     "idx": 263,
+     "word_b": "Kilimanjaro",
+     "transcript": "Everyone looks up to Kilimanjaro today.",
+     "hit": true
+    },
+    {
+     "idx": 264,
+     "word_b": "Pacific",
+     "transcript": "Everyone looks up to Pacific today.",
+     "hit": true
+    },
+    {
+     "idx": 265,
+     "word_b": "Dickens",
+     "transcript": "Everyone looks up to Dickens today.",
+     "hit": true
+    },
+    {
+     "idx": 266,
+     "word_b": "Apple",
+     "transcript": "Everyone looks up to Apple today.",
+     "hit": true
+    },
+    {
+     "idx": 267,
+     "word_b": "Berlin",
+     "transcript": "Everyone looks up to Berlin today.",
+     "hit": true
+    },
+    {
+     "idx": 268,
+     "word_b": "Toronto",
+     "transcript": "Everyone looks up to Toronto today.",
+     "hit": true
+    },
+    {
+     "idx": 269,
+     "word_b": "Berkeley",
+     "transcript": "Everyone looks up to Berkeley today.",
+     "hit": true
+    },
+    {
+     "idx": 270,
+     "word_b": "Caesar",
+     "transcript": "Everyone looks up to Caesar today.",
+     "hit": true
+    },
+    {
+     "idx": 271,
+     "word_b": "Galileo",
+     "transcript": "Everyone looks up to Galileo today.",
+     "hit": true
+    },
+    {
+     "idx": 272,
+     "word_b": "Edison",
+     "transcript": "Everyone looks up to Edison today.",
+     "hit": true
+    },
+    {
+     "idx": 273,
+     "word_b": "Airbus",
+     "transcript": "Everyone looks up to Airbus today.",
+     "hit": true
+    },
+    {
+     "idx": 274,
+     "word_b": "Warner",
+     "transcript": "Everyone looks up to Warner today.",
+     "hit": true
+    },
+    {
+     "idx": 275,
+     "word_b": "AMD",
+     "transcript": "Everyone looks up to him today.",
+     "hit": false
+    },
+    {
+     "idx": 276,
+     "word_b": "Boston",
+     "transcript": "Everyone looks up to Boston today.",
+     "hit": true
+    },
+    {
+     "idx": 277,
+     "word_b": "Houston",
+     "transcript": "Everyone looks up to Houston today.",
+     "hit": true
+    },
+    {
+     "idx": 278,
+     "word_b": "Seattle",
+     "transcript": "Everyone looks up to Seattle today.",
+     "hit": true
+    },
+    {
+     "idx": 279,
+     "word_b": "Atlanta",
+     "transcript": "Everyone looks up to Atlanta today.",
+     "hit": true
+    },
+    {
+     "idx": 280,
+     "word_b": "Adidas",
+     "transcript": "Everyone looks up to Adidas today.",
+     "hit": true
+    },
+    {
+     "idx": 281,
+     "word_b": "Honda",
+     "transcript": "Everyone looks up to Honda today.",
+     "hit": true
+    },
+    {
+     "idx": 282,
+     "word_b": "Magellan",
+     "transcript": "Everyone looks up to Magellan today.",
+     "hit": true
+    },
+    {
+     "idx": 283,
+     "word_b": "Rome",
+     "transcript": "Everyone looks up to Rome today.",
+     "hit": true
+    },
+    {
+     "idx": 284,
+     "word_b": "Prague",
+     "transcript": "Everyone looks up to Prom today.",
+     "hit": false
+    },
+    {
+     "idx": 285,
+     "word_b": "Beijing",
+     "transcript": "Everyone looks up to Beijing today.",
+     "hit": true
+    },
+    {
+     "idx": 286,
+     "word_b": "Washington",
+     "transcript": "Everyone looks up to Washington today.",
+     "hit": true
+    },
+    {
+     "idx": 287,
+     "word_b": "Roosevelt",
+     "transcript": "Everyone looks up to Roosevelt today.",
+     "hit": true
+    },
+    {
+     "idx": 288,
+     "word_b": "Venus",
+     "transcript": "Everyone looks up to Venus today.",
+     "hit": true
+    },
+    {
+     "idx": 289,
+     "word_b": "Neptune",
+     "transcript": "Everyone looks up to Neptune today.",
+     "hit": true
+    },
+    {
+     "idx": 290,
+     "word_b": "Gobi",
+     "transcript": "Everyone looks up to Gobi today.",
+     "hit": true
+    },
+    {
+     "idx": 291,
+     "word_b": "Argentina",
+     "transcript": "Everyone looks up to Argentina today.",
+     "hit": true
+    },
+    {
+     "idx": 292,
+     "word_b": "Mazda",
+     "transcript": "Everyone looks up to Mazda today.",
+     "hit": true
+    },
+    {
+     "idx": 293,
+     "word_b": "BMW",
+     "transcript": "today.",
+     "hit": false
+    },
+    {
+     "idx": 294,
+     "word_b": "Spotify",
+     "transcript": "Everyone looks up to Spotify today.",
+     "hit": true
+    },
+    {
+     "idx": 295,
+     "word_b": "Twitter",
+     "transcript": "Everyone looks up to Twitter today",
+     "hit": true
+    },
+    {
+     "idx": 296,
+     "word_b": "Lagos",
+     "transcript": "Everyone looks up to Lagos today.",
+     "hit": true
+    },
+    {
+     "idx": 297,
+     "word_b": "Delhi",
+     "transcript": "Everyone looks up to Deli today.",
+     "hit": false
+    },
+    {
+     "idx": 298,
+     "word_b": "Bangkok",
+     "transcript": "Everyone looks up to Bangkok today.",
+     "hit": true
+    },
+    {
+     "idx": 299,
+     "word_b": "Barcelona",
+     "transcript": "Everyone looks up to Barcelona today.",
+     "hit": true
+    }
+   ]
+  },
+  "editts": {
+   "k": 258,
+   "n": 300,
+   "pct": 86.0,
+   "wilson_half": 3.93,
+   "rows": [
+    {
+     "idx": 0,
+     "word_b": "Paris",
+     "transcript": "Paris is famous.",
+     "hit": true
+    },
+    {
+     "idx": 1,
+     "word_b": "John",
+     "transcript": "John is famous.",
+     "hit": true
+    },
+    {
+     "idx": 2,
+     "word_b": "Newton",
+     "transcript": "Newton is famous.",
+     "hit": true
+    },
+    {
+     "idx": 3,
+     "word_b": "Beethoven",
+     "transcript": "Beethoven is famoos.",
+     "hit": true
+    },
+    {
+     "idx": 4,
+     "word_b": "Google",
+     "transcript": "Google is famous.",
+     "hit": true
+    },
+    {
+     "idx": 5,
+     "word_b": "Oxford",
+     "transcript": "Oxford is famous.",
+     "hit": true
+    },
+    {
+     "idx": 6,
+     "word_b": "Porsche",
+     "transcript": "portion is famous.",
+     "hit": false
+    },
+    {
+     "idx": 7,
+     "word_b": "Jupiter",
+     "transcript": "Jupiter is famous.",
+     "hit": true
+    },
+    {
+     "idx": 8,
+     "word_b": "Emerald",
+     "transcript": "and rolled his famous.",
+     "hit": false
+    },
+    {
+     "idx": 9,
+     "word_b": "Halloween",
+     "transcript": "Halloween is famous.",
+     "hit": true
+    },
+    {
+     "idx": 10,
+     "word_b": "Broadway",
+     "transcript": "Broadway is famous.",
+     "hit": true
+    },
+    {
+     "idx": 11,
+     "word_b": "Elizabeth",
+     "transcript": "Elizabeth is famous.",
+     "hit": true
+    },
+    {
+     "idx": 12,
+     "word_b": "Picasso",
+     "transcript": "Picasso is famous.",
+     "hit": true
+    },
+    {
+     "idx": 13,
+     "word_b": "Kilimanjaro",
+     "transcript": "Kilimanjaro is famous.",
+     "hit": true
+    },
+    {
+     "idx": 14,
+     "word_b": "Pacific",
+     "transcript": "Pacific is famous.",
+     "hit": true
+    },
+    {
+     "idx": 15,
+     "word_b": "Dickens",
+     "transcript": "Dickens is famous.",
+     "hit": true
+    },
+    {
+     "idx": 16,
+     "word_b": "Apple",
+     "transcript": "Apple is famous.",
+     "hit": true
+    },
+    {
+     "idx": 17,
+     "word_b": "Berlin",
+     "transcript": "Berlin is famous",
+     "hit": true
+    },
+    {
+     "idx": 18,
+     "word_b": "Toronto",
+     "transcript": "Toronto is famous.",
+     "hit": true
+    },
+    {
+     "idx": 19,
+     "word_b": "Berkeley",
+     "transcript": "Berkeley is famous.",
+     "hit": true
+    },
+    {
+     "idx": 20,
+     "word_b": "Caesar",
+     "transcript": "seizure is famous.",
+     "hit": false
+    },
+    {
+     "idx": 21,
+     "word_b": "Galileo",
+     "transcript": "Jiao Liu is famous.",
+     "hit": false
+    },
+    {
+     "idx": 22,
+     "word_b": "Edison",
+     "transcript": "Edison is famous.",
+     "hit": true
+    },
+    {
+     "idx": 23,
+     "word_b": "Airbus",
+     "transcript": "Herbes is famous.",
+     "hit": false
+    },
+    {
+     "idx": 24,
+     "word_b": "Warner",
+     "transcript": "Warner is famous.",
+     "hit": true
+    },
+    {
+     "idx": 25,
+     "word_b": "AMD",
+     "transcript": "MD is famous.",
+     "hit": false
+    },
+    {
+     "idx": 26,
+     "word_b": "Boston",
+     "transcript": "Boston is famous.",
+     "hit": true
+    },
+    {
+     "idx": 27,
+     "word_b": "Houston",
+     "transcript": "Houston is famous.",
+     "hit": true
+    },
+    {
+     "idx": 28,
+     "word_b": "Seattle",
+     "transcript": "Seattle is famous.",
+     "hit": true
+    },
+    {
+     "idx": 29,
+     "word_b": "Atlanta",
+     "transcript": "Atlanta is famos.",
+     "hit": true
+    },
+    {
+     "idx": 30,
+     "word_b": "Adidas",
+     "transcript": "Adidas is famous.",
+     "hit": true
+    },
+    {
+     "idx": 31,
+     "word_b": "Honda",
+     "transcript": "Honda is famous.",
+     "hit": true
+    },
+    {
+     "idx": 32,
+     "word_b": "Magellan",
+     "transcript": "Magellan is famous.",
+     "hit": true
+    },
+    {
+     "idx": 33,
+     "word_b": "Rome",
+     "transcript": "Rum is famous.",
+     "hit": false
+    },
+    {
+     "idx": 34,
+     "word_b": "Prague",
+     "transcript": "is famous.",
+     "hit": false
+    },
+    {
+     "idx": 35,
+     "word_b": "Beijing",
+     "transcript": "Beijing is famous.",
+     "hit": true
+    },
+    {
+     "idx": 36,
+     "word_b": "Washington",
+     "transcript": "Washington is famous.",
+     "hit": true
+    },
+    {
+     "idx": 37,
+     "word_b": "Roosevelt",
+     "transcript": "Roosevelt is famous.",
+     "hit": true
+    },
+    {
+     "idx": 38,
+     "word_b": "Venus",
+     "transcript": "Venus is famous.",
+     "hit": true
+    },
+    {
+     "idx": 39,
+     "word_b": "Neptune",
+     "transcript": "Neptune is famous.",
+     "hit": true
+    },
+    {
+     "idx": 40,
+     "word_b": "Gobi",
+     "transcript": "Gobi is famous.",
+     "hit": true
+    },
+    {
+     "idx": 41,
+     "word_b": "Argentina",
+     "transcript": "Argentina is famous.",
+     "hit": true
+    },
+    {
+     "idx": 42,
+     "word_b": "Mazda",
+     "transcript": "Mazda is famous.",
+     "hit": true
+    },
+    {
+     "idx": 43,
+     "word_b": "BMW",
+     "transcript": "BMW is famous.",
+     "hit": true
+    },
+    {
+     "idx": 44,
+     "word_b": "Spotify",
+     "transcript": "Spotify is famous.",
+     "hit": true
+    },
+    {
+     "idx": 45,
+     "word_b": "Twitter",
+     "transcript": "Twitter is famous.",
+     "hit": true
+    },
+    {
+     "idx": 46,
+     "word_b": "Lagos",
+     "transcript": "Lagos is famous.",
+     "hit": true
+    },
+    {
+     "idx": 47,
+     "word_b": "Delhi",
+     "transcript": "Delhi is famous.",
+     "hit": true
+    },
+    {
+     "idx": 48,
+     "word_b": "Bangkok",
+     "transcript": "Bangkok is famous.",
+     "hit": true
+    },
+    {
+     "idx": 49,
+     "word_b": "Barcelona",
+     "transcript": "Barcelona is famous.",
+     "hit": true
+    },
+    {
+     "idx": 50,
+     "word_b": "Paris",
+     "transcript": "Yesterday, Paris became famous.",
+     "hit": true
+    },
+    {
+     "idx": 51,
+     "word_b": "John",
+     "transcript": "Yesterday John became famous.",
+     "hit": true
+    },
+    {
+     "idx": 52,
+     "word_b": "Newton",
+     "transcript": "Yesterday, Newton became famous.",
+     "hit": true
+    },
+    {
+     "idx": 53,
+     "word_b": "Beethoven",
+     "transcript": "Yesterday, Beethoven became famous.",
+     "hit": true
+    },
+    {
+     "idx": 54,
+     "word_b": "Google",
+     "transcript": "And yesterday, Google became famous.",
+     "hit": true
+    },
+    {
+     "idx": 55,
+     "word_b": "Oxford",
+     "transcript": "Only yesterday, Oxford became famous.",
+     "hit": true
+    },
+    {
+     "idx": 56,
+     "word_b": "Porsche",
+     "transcript": "Yesterday, Portia became famous.",
+     "hit": false
+    },
+    {
+     "idx": 57,
+     "word_b": "Jupiter",
+     "transcript": "Yesterday Jupiter became famous.",
+     "hit": true
+    },
+    {
+     "idx": 58,
+     "word_b": "Emerald",
+     "transcript": "Yesterday, Emerald became famous.",
+     "hit": true
+    },
+    {
+     "idx": 59,
+     "word_b": "Halloween",
+     "transcript": "Yesterday, Halloween became famous.",
+     "hit": true
+    },
+    {
+     "idx": 60,
+     "word_b": "Broadway",
+     "transcript": "Yesterday, Broadway became famous.",
+     "hit": true
+    },
+    {
+     "idx": 61,
+     "word_b": "Elizabeth",
+     "transcript": "Yesterday Elizabeth became famous.",
+     "hit": true
+    },
+    {
+     "idx": 62,
+     "word_b": "Picasso",
+     "transcript": "Yesterday, Picasso became famous.",
+     "hit": true
+    },
+    {
+     "idx": 63,
+     "word_b": "Kilimanjaro",
+     "transcript": "The ester date Kalimbanjaro became famous.",
+     "hit": false
+    },
+    {
+     "idx": 64,
+     "word_b": "Pacific",
+     "transcript": "Yesterday, Pacific became famous.",
+     "hit": true
+    },
+    {
+     "idx": 65,
+     "word_b": "Dickens",
+     "transcript": "Yesterday, Dickens became famous.",
+     "hit": true
+    },
+    {
+     "idx": 66,
+     "word_b": "Apple",
+     "transcript": "Yesterday's apple became famous.",
+     "hit": true
+    },
+    {
+     "idx": 67,
+     "word_b": "Berlin",
+     "transcript": "Yesterday Berlin became famous.",
+     "hit": true
+    },
+    {
+     "idx": 68,
+     "word_b": "Toronto",
+     "transcript": "Yesterday, Toronto became famous.",
+     "hit": true
+    },
+    {
+     "idx": 69,
+     "word_b": "Berkeley",
+     "transcript": "Yesterday, Berkeley became famous.",
+     "hit": true
+    },
+    {
+     "idx": 70,
+     "word_b": "Caesar",
+     "transcript": "Yesterday, Caesar became famous.",
+     "hit": true
+    },
+    {
+     "idx": 71,
+     "word_b": "Galileo",
+     "transcript": "Yesterday, Gatleo became famous.",
+     "hit": false
+    },
+    {
+     "idx": 72,
+     "word_b": "Edison",
+     "transcript": "Yesterday, Edison became famous.",
+     "hit": true
+    },
+    {
+     "idx": 73,
+     "word_b": "Airbus",
+     "transcript": "Yesterday, Airbus became famous.",
+     "hit": true
+    },
+    {
+     "idx": 74,
+     "word_b": "Warner",
+     "transcript": "Yesterday, Warner became famous.",
+     "hit": true
+    },
+    {
+     "idx": 75,
+     "word_b": "AMD",
+     "transcript": "Yesterday, AMD became famous.",
+     "hit": true
+    },
+    {
+     "idx": 76,
+     "word_b": "Boston",
+     "transcript": "yesterday Boston became famous.",
+     "hit": true
+    },
+    {
+     "idx": 77,
+     "word_b": "Houston",
+     "transcript": "Yesterday, Houston became famous.",
+     "hit": true
+    },
+    {
+     "idx": 78,
+     "word_b": "Seattle",
+     "transcript": "Yesterday, Seattle became famous.",
+     "hit": true
+    },
+    {
+     "idx": 79,
+     "word_b": "Atlanta",
+     "transcript": "Yesterday, Atlanta became famous.",
+     "hit": true
+    },
+    {
+     "idx": 80,
+     "word_b": "Adidas",
+     "transcript": "Yesterday, Adidas became famous.",
+     "hit": true
+    },
+    {
+     "idx": 81,
+     "word_b": "Honda",
+     "transcript": "Yesterday, Honda became famous.",
+     "hit": true
+    },
+    {
+     "idx": 82,
+     "word_b": "Magellan",
+     "transcript": "Yesterday Magellan became famous.",
+     "hit": true
+    },
+    {
+     "idx": 83,
+     "word_b": "Rome",
+     "transcript": "Yesterday, Rome became famous.",
+     "hit": true
+    },
+    {
+     "idx": 84,
+     "word_b": "Prague",
+     "transcript": "Yesterday, prawn became famous.",
+     "hit": false
+    },
+    {
+     "idx": 85,
+     "word_b": "Beijing",
+     "transcript": "Yesterday, Beijing became famous.",
+     "hit": true
+    },
+    {
+     "idx": 86,
+     "word_b": "Washington",
+     "transcript": "Yesterday, Washington became famous.",
+     "hit": true
+    },
+    {
+     "idx": 87,
+     "word_b": "Roosevelt",
+     "transcript": "Yesterday, Roosevelt became famous.",
+     "hit": true
+    },
+    {
+     "idx": 88,
+     "word_b": "Venus",
+     "transcript": "Yesterday, Venus became famous.",
+     "hit": true
+    },
+    {
+     "idx": 89,
+     "word_b": "Neptune",
+     "transcript": "Yesterday, Neptune became famous.",
+     "hit": true
+    },
+    {
+     "idx": 90,
+     "word_b": "Gobi",
+     "transcript": "Yesterday, Gobi became famous.",
+     "hit": true
+    },
+    {
+     "idx": 91,
+     "word_b": "Argentina",
+     "transcript": "Yesterday, Argentina became famous.",
+     "hit": true
+    },
+    {
+     "idx": 92,
+     "word_b": "Mazda",
+     "transcript": "Yesterday, Mazda became famous.",
+     "hit": true
+    },
+    {
+     "idx": 93,
+     "word_b": "BMW",
+     "transcript": "Yesterday, BMW became famous.",
+     "hit": true
+    },
+    {
+     "idx": 94,
+     "word_b": "Spotify",
+     "transcript": "Yesterday, Spotify became famous.",
+     "hit": true
+    },
+    {
+     "idx": 95,
+     "word_b": "Twitter",
+     "transcript": "Yesterday, Twitter became famous.",
+     "hit": true
+    },
+    {
+     "idx": 96,
+     "word_b": "Lagos",
+     "transcript": "Yesterday, Lacus became famous.",
+     "hit": false
+    },
+    {
+     "idx": 97,
+     "word_b": "Delhi",
+     "transcript": "Yesterday, Delhi became famous.",
+     "hit": true
+    },
+    {
+     "idx": 98,
+     "word_b": "Bangkok",
+     "transcript": "Yesterday, Bangkok became famous.",
+     "hit": true
+    },
+    {
+     "idx": 99,
+     "word_b": "Barcelona",
+     "transcript": "Yesterday, Barcelona became famous.",
+     "hit": true
+    },
+    {
+     "idx": 100,
+     "word_b": "Paris",
+     "transcript": "Round the world, Paris is known.",
+     "hit": true
+    },
+    {
+     "idx": 101,
+     "word_b": "John",
+     "transcript": "Around the world, John is known.",
+     "hit": true
+    },
+    {
+     "idx": 102,
+     "word_b": "Newton",
+     "transcript": "Round the world Newton is known.",
+     "hit": true
+    },
+    {
+     "idx": 103,
+     "word_b": "Beethoven",
+     "transcript": "Round the world Beethoven is known.",
+     "hit": true
+    },
+    {
+     "idx": 104,
+     "word_b": "Google",
+     "transcript": "Around the world, Google is known.",
+     "hit": true
+    },
+    {
+     "idx": 105,
+     "word_b": "Oxford",
+     "transcript": "Round the world, Oxford is known.",
+     "hit": true
+    },
+    {
+     "idx": 106,
+     "word_b": "Porsche",
+     "transcript": "Around the world, Porsche is known.",
+     "hit": true
+    },
+    {
+     "idx": 107,
+     "word_b": "Jupiter",
+     "transcript": "Round the world Jupiter is known.",
+     "hit": true
+    },
+    {
+     "idx": 108,
+     "word_b": "Emerald",
+     "transcript": "Round the world, Emerald is known.",
+     "hit": true
+    },
+    {
+     "idx": 109,
+     "word_b": "Halloween",
+     "transcript": "Around the world, Halloween is known.",
+     "hit": true
+    },
+    {
+     "idx": 110,
+     "word_b": "Broadway",
+     "transcript": "Around the world, Broadway is known.",
+     "hit": true
+    },
+    {
+     "idx": 111,
+     "word_b": "Elizabeth",
+     "transcript": "Around the world, Elizabeth is known.",
+     "hit": true
+    },
+    {
+     "idx": 112,
+     "word_b": "Picasso",
+     "transcript": "Around the world, Picasso is known.",
+     "hit": true
+    },
+    {
+     "idx": 113,
+     "word_b": "Kilimanjaro",
+     "transcript": "Round the world, Kilimanjaro is known.",
+     "hit": true
+    },
+    {
+     "idx": 114,
+     "word_b": "Pacific",
+     "transcript": "Round the world, Pacific is known.",
+     "hit": true
+    },
+    {
+     "idx": 115,
+     "word_b": "Dickens",
+     "transcript": "round the world, Dickens is known.",
+     "hit": true
+    },
+    {
+     "idx": 116,
+     "word_b": "Apple",
+     "transcript": "Round the world, Apple is known.",
+     "hit": true
+    },
+    {
+     "idx": 117,
+     "word_b": "Berlin",
+     "transcript": "Around the world, Berlin is known",
+     "hit": true
+    },
+    {
+     "idx": 118,
+     "word_b": "Toronto",
+     "transcript": "Round the world, Toronto is known.",
+     "hit": true
+    },
+    {
+     "idx": 119,
+     "word_b": "Berkeley",
+     "transcript": "Around the world, Berkeley is known.",
+     "hit": true
+    },
+    {
+     "idx": 120,
+     "word_b": "Caesar",
+     "transcript": "Around the world, seizure is known.",
+     "hit": false
+    },
+    {
+     "idx": 121,
+     "word_b": "Galileo",
+     "transcript": "Round the world, Galileo is known.",
+     "hit": true
+    },
+    {
+     "idx": 122,
+     "word_b": "Edison",
+     "transcript": "Around the world, Pedicin is known.",
+     "hit": false
+    },
+    {
+     "idx": 123,
+     "word_b": "Airbus",
+     "transcript": "Round the world, Erebus is known.",
+     "hit": false
+    },
+    {
+     "idx": 124,
+     "word_b": "Warner",
+     "transcript": "Round the world, Warner is known.",
+     "hit": true
+    },
+    {
+     "idx": 125,
+     "word_b": "AMD",
+     "transcript": "Round the world, AMD is known.",
+     "hit": true
+    },
+    {
+     "idx": 126,
+     "word_b": "Boston",
+     "transcript": "Round the world, Boston is Noom.",
+     "hit": true
+    },
+    {
+     "idx": 127,
+     "word_b": "Houston",
+     "transcript": "Round the world, Houston is known.",
+     "hit": true
+    },
+    {
+     "idx": 128,
+     "word_b": "Seattle",
+     "transcript": "Round the world, Seattle is known.",
+     "hit": true
+    },
+    {
+     "idx": 129,
+     "word_b": "Atlanta",
+     "transcript": "Round the world, Atlanta is known.",
+     "hit": true
+    },
+    {
+     "idx": 130,
+     "word_b": "Adidas",
+     "transcript": "Around the world, Adidas is known.",
+     "hit": true
+    },
+    {
+     "idx": 131,
+     "word_b": "Honda",
+     "transcript": "Round the world, Honda is noun.",
+     "hit": true
+    },
+    {
+     "idx": 132,
+     "word_b": "Magellan",
+     "transcript": "Round the world, Magellan is now.",
+     "hit": true
+    },
+    {
+     "idx": 133,
+     "word_b": "Rome",
+     "transcript": "Round the world, Rome is known.",
+     "hit": true
+    },
+    {
+     "idx": 134,
+     "word_b": "Prague",
+     "transcript": "Around the world, the product is known.",
+     "hit": false
+    },
+    {
+     "idx": 135,
+     "word_b": "Beijing",
+     "transcript": "Around the world, Beijing is known.",
+     "hit": true
+    },
+    {
+     "idx": 136,
+     "word_b": "Washington",
+     "transcript": "Round the world, Washington is known.",
+     "hit": true
+    },
+    {
+     "idx": 137,
+     "word_b": "Roosevelt",
+     "transcript": "Round the world, Roosevelt is known.",
+     "hit": true
+    },
+    {
+     "idx": 138,
+     "word_b": "Venus",
+     "transcript": "Around the world, Venus is known.",
+     "hit": true
+    },
+    {
+     "idx": 139,
+     "word_b": "Neptune",
+     "transcript": "Round the world, Neptune is now",
+     "hit": true
+    },
+    {
+     "idx": 140,
+     "word_b": "Gobi",
+     "transcript": "round the world. Gobi is known",
+     "hit": true
+    },
+    {
+     "idx": 141,
+     "word_b": "Argentina",
+     "transcript": "Round the world, Argentina is known.",
+     "hit": true
+    },
+    {
+     "idx": 142,
+     "word_b": "Mazda",
+     "transcript": "Round the world, Mazda is known.",
+     "hit": true
+    },
+    {
+     "idx": 143,
+     "word_b": "BMW",
+     "transcript": "Round the world, BMW is now",
+     "hit": true
+    },
+    {
+     "idx": 144,
+     "word_b": "Spotify",
+     "transcript": "around the world, Spotify is known.",
+     "hit": true
+    },
+    {
+     "idx": 145,
+     "word_b": "Twitter",
+     "transcript": "Round the world, Twitter is known.",
+     "hit": true
+    },
+    {
+     "idx": 146,
+     "word_b": "Lagos",
+     "transcript": "round the world, Lagos is known.",
+     "hit": true
+    },
+    {
+     "idx": 147,
+     "word_b": "Delhi",
+     "transcript": "Round the world, Delhi is known.",
+     "hit": true
+    },
+    {
+     "idx": 148,
+     "word_b": "Bangkok",
+     "transcript": "Round the world, Van Gogh is known.",
+     "hit": false
+    },
+    {
+     "idx": 149,
+     "word_b": "Barcelona",
+     "transcript": "Round the world, Barcelona is known.",
+     "hit": true
+    },
+    {
+     "idx": 150,
+     "word_b": "Paris",
+     "transcript": "Many people know Paris very well.",
+     "hit": true
+    },
+    {
+     "idx": 151,
+     "word_b": "John",
+     "transcript": "Many people know John very well.",
+     "hit": true
+    },
+    {
+     "idx": 152,
+     "word_b": "Newton",
+     "transcript": "Many people note Newton very well.",
+     "hit": true
+    },
+    {
+     "idx": 153,
+     "word_b": "Beethoven",
+     "transcript": "Many people know Beethoven very well.",
+     "hit": true
+    },
+    {
+     "idx": 154,
+     "word_b": "Google",
+     "transcript": "Many people know Google very well.",
+     "hit": true
+    },
+    {
+     "idx": 155,
+     "word_b": "Oxford",
+     "transcript": "Many people know Oxford very well.",
+     "hit": true
+    },
+    {
+     "idx": 156,
+     "word_b": "Porsche",
+     "transcript": "Many people know Portia very well.",
+     "hit": false
+    },
+    {
+     "idx": 157,
+     "word_b": "Jupiter",
+     "transcript": "Many people know Jupiter very well.",
+     "hit": true
+    },
+    {
+     "idx": 158,
+     "word_b": "Emerald",
+     "transcript": "Many people know Emerald very well.",
+     "hit": true
+    },
+    {
+     "idx": 159,
+     "word_b": "Halloween",
+     "transcript": "Many people know Halloween very well.",
+     "hit": true
+    },
+    {
+     "idx": 160,
+     "word_b": "Broadway",
+     "transcript": "Many people know Broadway very well.",
+     "hit": true
+    },
+    {
+     "idx": 161,
+     "word_b": "Elizabeth",
+     "transcript": "Many people know Elizabeth very well.",
+     "hit": true
+    },
+    {
+     "idx": 162,
+     "word_b": "Picasso",
+     "transcript": "Many people know Picasso very well.",
+     "hit": true
+    },
+    {
+     "idx": 163,
+     "word_b": "Kilimanjaro",
+     "transcript": "Many people know Kalimanjaro very well.",
+     "hit": false
+    },
+    {
+     "idx": 164,
+     "word_b": "Pacific",
+     "transcript": "Many people know Pacific very well.",
+     "hit": true
+    },
+    {
+     "idx": 165,
+     "word_b": "Dickens",
+     "transcript": "Many people know Dickens very well.",
+     "hit": true
+    },
+    {
+     "idx": 166,
+     "word_b": "Apple",
+     "transcript": "Many people know Apple very well.",
+     "hit": true
+    },
+    {
+     "idx": 167,
+     "word_b": "Berlin",
+     "transcript": "Many people know Berlin very well.",
+     "hit": true
+    },
+    {
+     "idx": 168,
+     "word_b": "Toronto",
+     "transcript": "Many people know Toronto very well.",
+     "hit": true
+    },
+    {
+     "idx": 169,
+     "word_b": "Berkeley",
+     "transcript": "Many people know Berkeley very well.",
+     "hit": true
+    },
+    {
+     "idx": 170,
+     "word_b": "Caesar",
+     "transcript": "Many people know Caesar very well.",
+     "hit": true
+    },
+    {
+     "idx": 171,
+     "word_b": "Galileo",
+     "transcript": "Many people know Galileo very well,",
+     "hit": true
+    },
+    {
+     "idx": 172,
+     "word_b": "Edison",
+     "transcript": "Many people note Edison very well.",
+     "hit": true
+    },
+    {
+     "idx": 173,
+     "word_b": "Airbus",
+     "transcript": "Many people know Erebus very well.",
+     "hit": false
+    },
+    {
+     "idx": 174,
+     "word_b": "Warner",
+     "transcript": "Many people know Warner very well.",
+     "hit": true
+    },
+    {
+     "idx": 175,
+     "word_b": "AMD",
+     "transcript": "Many people know AMD very well.",
+     "hit": true
+    },
+    {
+     "idx": 176,
+     "word_b": "Boston",
+     "transcript": "Many people know Vosten very well.",
+     "hit": false
+    },
+    {
+     "idx": 177,
+     "word_b": "Houston",
+     "transcript": "Many people know Houston very well.",
+     "hit": true
+    },
+    {
+     "idx": 178,
+     "word_b": "Seattle",
+     "transcript": "Many people know Seattle very well.",
+     "hit": true
+    },
+    {
+     "idx": 179,
+     "word_b": "Atlanta",
+     "transcript": "Many people know Atlanta very well.",
+     "hit": true
+    },
+    {
+     "idx": 180,
+     "word_b": "Adidas",
+     "transcript": "Many people know Adidas very well.",
+     "hit": true
+    },
+    {
+     "idx": 181,
+     "word_b": "Honda",
+     "transcript": "Many people know Honda very well.",
+     "hit": true
+    },
+    {
+     "idx": 182,
+     "word_b": "Magellan",
+     "transcript": "Many people know Magellan very well.",
+     "hit": true
+    },
+    {
+     "idx": 183,
+     "word_b": "Rome",
+     "transcript": "Many people know Rome very well.",
+     "hit": true
+    },
+    {
+     "idx": 184,
+     "word_b": "Prague",
+     "transcript": "Many people know Proc very well.",
+     "hit": false
+    },
+    {
+     "idx": 185,
+     "word_b": "Beijing",
+     "transcript": "Many people know Beijing very well.",
+     "hit": true
+    },
+    {
+     "idx": 186,
+     "word_b": "Washington",
+     "transcript": "Many people know Washington very well.",
+     "hit": true
+    },
+    {
+     "idx": 187,
+     "word_b": "Roosevelt",
+     "transcript": "Many people know Roosevelt very well.",
+     "hit": true
+    },
+    {
+     "idx": 188,
+     "word_b": "Venus",
+     "transcript": "Many people know Venus very well.",
+     "hit": true
+    },
+    {
+     "idx": 189,
+     "word_b": "Neptune",
+     "transcript": "Many people know Neptune very well.",
+     "hit": true
+    },
+    {
+     "idx": 190,
+     "word_b": "Gobi",
+     "transcript": "many people know Gobi very well.",
+     "hit": true
+    },
+    {
+     "idx": 191,
+     "word_b": "Argentina",
+     "transcript": "Many people know Argentina very well.",
+     "hit": true
+    },
+    {
+     "idx": 192,
+     "word_b": "Mazda",
+     "transcript": "Many people know Mazda very well.",
+     "hit": true
+    },
+    {
+     "idx": 193,
+     "word_b": "BMW",
+     "transcript": "Many people know BMW very well.",
+     "hit": true
+    },
+    {
+     "idx": 194,
+     "word_b": "Spotify",
+     "transcript": "Many people know Spotify very well.",
+     "hit": true
+    },
+    {
+     "idx": 195,
+     "word_b": "Twitter",
+     "transcript": "Many people know Twitter very well.",
+     "hit": true
+    },
+    {
+     "idx": 196,
+     "word_b": "Lagos",
+     "transcript": "Many people know Lakers very well.",
+     "hit": false
+    },
+    {
+     "idx": 197,
+     "word_b": "Delhi",
+     "transcript": "Many people know Delhi very well.",
+     "hit": true
+    },
+    {
+     "idx": 198,
+     "word_b": "Bangkok",
+     "transcript": "Many people know Bangkok very well.",
+     "hit": true
+    },
+    {
+     "idx": 199,
+     "word_b": "Barcelona",
+     "transcript": "many people know Barcelona very well.",
+     "hit": true
+    },
+    {
+     "idx": 200,
+     "word_b": "Paris",
+     "transcript": "They respect Paris.",
+     "hit": true
+    },
+    {
+     "idx": 201,
+     "word_b": "John",
+     "transcript": "They respect John.",
+     "hit": true
+    },
+    {
+     "idx": 202,
+     "word_b": "Newton",
+     "transcript": "They respect Nugent.",
+     "hit": false
+    },
+    {
+     "idx": 203,
+     "word_b": "Beethoven",
+     "transcript": "They respect Beethoven.",
+     "hit": true
+    },
+    {
+     "idx": 204,
+     "word_b": "Google",
+     "transcript": "They respect Google.",
+     "hit": true
+    },
+    {
+     "idx": 205,
+     "word_b": "Oxford",
+     "transcript": "They respect Oxford.",
+     "hit": true
+    },
+    {
+     "idx": 206,
+     "word_b": "Porsche",
+     "transcript": "They respect Porsche.",
+     "hit": true
+    },
+    {
+     "idx": 207,
+     "word_b": "Jupiter",
+     "transcript": "They respect Jupiter.",
+     "hit": true
+    },
+    {
+     "idx": 208,
+     "word_b": "Emerald",
+     "transcript": "They respect Emerald.",
+     "hit": true
+    },
+    {
+     "idx": 209,
+     "word_b": "Halloween",
+     "transcript": "They respect Halloween.",
+     "hit": true
+    },
+    {
+     "idx": 210,
+     "word_b": "Broadway",
+     "transcript": "they respect broad weight.",
+     "hit": false
+    },
+    {
+     "idx": 211,
+     "word_b": "Elizabeth",
+     "transcript": "they respect Elizabeth.",
+     "hit": true
+    },
+    {
+     "idx": 212,
+     "word_b": "Picasso",
+     "transcript": "They respect Picasso.",
+     "hit": true
+    },
+    {
+     "idx": 213,
+     "word_b": "Kilimanjaro",
+     "transcript": "They respect Kalim and Jaroq.",
+     "hit": false
+    },
+    {
+     "idx": 214,
+     "word_b": "Pacific",
+     "transcript": "They respect Pacific.",
+     "hit": true
+    },
+    {
+     "idx": 215,
+     "word_b": "Dickens",
+     "transcript": "They respect Dickens.",
+     "hit": true
+    },
+    {
+     "idx": 216,
+     "word_b": "Apple",
+     "transcript": "They respect Apple.",
+     "hit": true
+    },
+    {
+     "idx": 217,
+     "word_b": "Berlin",
+     "transcript": "They respect Verlink.",
+     "hit": false
+    },
+    {
+     "idx": 218,
+     "word_b": "Toronto",
+     "transcript": "They respect Toronto.",
+     "hit": true
+    },
+    {
+     "idx": 219,
+     "word_b": "Berkeley",
+     "transcript": "They respect Berkley.",
+     "hit": false
+    },
+    {
+     "idx": 220,
+     "word_b": "Caesar",
+     "transcript": "They respect Caesar.",
+     "hit": true
+    },
+    {
+     "idx": 221,
+     "word_b": "Galileo",
+     "transcript": "They respect Galileo.",
+     "hit": true
+    },
+    {
+     "idx": 222,
+     "word_b": "Edison",
+     "transcript": "They respect innocent.",
+     "hit": false
+    },
+    {
+     "idx": 223,
+     "word_b": "Airbus",
+     "transcript": "They respect Erebus.",
+     "hit": false
+    },
+    {
+     "idx": 224,
+     "word_b": "Warner",
+     "transcript": "They respect Warner.",
+     "hit": true
+    },
+    {
+     "idx": 225,
+     "word_b": "AMD",
+     "transcript": "They respect AMD.",
+     "hit": true
+    },
+    {
+     "idx": 226,
+     "word_b": "Boston",
+     "transcript": "They respect Boston.",
+     "hit": true
+    },
+    {
+     "idx": 227,
+     "word_b": "Houston",
+     "transcript": "They respect Houston.",
+     "hit": true
+    },
+    {
+     "idx": 228,
+     "word_b": "Seattle",
+     "transcript": "They respect Seattle.",
+     "hit": true
+    },
+    {
+     "idx": 229,
+     "word_b": "Atlanta",
+     "transcript": "They respect Atlantic.",
+     "hit": false
+    },
+    {
+     "idx": 230,
+     "word_b": "Adidas",
+     "transcript": "They respect Adidas.",
+     "hit": true
+    },
+    {
+     "idx": 231,
+     "word_b": "Honda",
+     "transcript": "They respect Honduk.",
+     "hit": false
+    },
+    {
+     "idx": 232,
+     "word_b": "Magellan",
+     "transcript": "They respect Magellan.",
+     "hit": true
+    },
+    {
+     "idx": 233,
+     "word_b": "Rome",
+     "transcript": "They respect Rome,",
+     "hit": true
+    },
+    {
+     "idx": 234,
+     "word_b": "Prague",
+     "transcript": "They respect prop.",
+     "hit": false
+    },
+    {
+     "idx": 235,
+     "word_b": "Beijing",
+     "transcript": "They respect Beijing.",
+     "hit": true
+    },
+    {
+     "idx": 236,
+     "word_b": "Washington",
+     "transcript": "They respect Washington.",
+     "hit": true
+    },
+    {
+     "idx": 237,
+     "word_b": "Roosevelt",
+     "transcript": "They respect Roosevelt.",
+     "hit": true
+    },
+    {
+     "idx": 238,
+     "word_b": "Venus",
+     "transcript": "They respect Venus.",
+     "hit": true
+    },
+    {
+     "idx": 239,
+     "word_b": "Neptune",
+     "transcript": "They respect Neptune.",
+     "hit": true
+    },
+    {
+     "idx": 240,
+     "word_b": "Gobi",
+     "transcript": "They respect Gobi.",
+     "hit": true
+    },
+    {
+     "idx": 241,
+     "word_b": "Argentina",
+     "transcript": "They respect Argentina.",
+     "hit": true
+    },
+    {
+     "idx": 242,
+     "word_b": "Mazda",
+     "transcript": "They respect Mazog.",
+     "hit": false
+    },
+    {
+     "idx": 243,
+     "word_b": "BMW",
+     "transcript": "They respect BMW.",
+     "hit": true
+    },
+    {
+     "idx": 244,
+     "word_b": "Spotify",
+     "transcript": "They respect Spotify.",
+     "hit": true
+    },
+    {
+     "idx": 245,
+     "word_b": "Twitter",
+     "transcript": "They respect Twitter.",
+     "hit": true
+    },
+    {
+     "idx": 246,
+     "word_b": "Lagos",
+     "transcript": "They respect Lagos.",
+     "hit": true
+    },
+    {
+     "idx": 247,
+     "word_b": "Delhi",
+     "transcript": "They respect Dally.",
+     "hit": false
+    },
+    {
+     "idx": 248,
+     "word_b": "Bangkok",
+     "transcript": "They respect Van Kock.",
+     "hit": false
+    },
+    {
+     "idx": 249,
+     "word_b": "Barcelona",
+     "transcript": "They respect Barcelona.",
+     "hit": true
+    },
+    {
+     "idx": 250,
+     "word_b": "Paris",
+     "transcript": "Everyone looks up to Paris today.",
+     "hit": true
+    },
+    {
+     "idx": 251,
+     "word_b": "John",
+     "transcript": "Everyone looks up to John today.",
+     "hit": true
+    },
+    {
+     "idx": 252,
+     "word_b": "Newton",
+     "transcript": "Everyone looks up to Newton today.",
+     "hit": true
+    },
+    {
+     "idx": 253,
+     "word_b": "Beethoven",
+     "transcript": "Everyone looks up to Beethoven today.",
+     "hit": true
+    },
+    {
+     "idx": 254,
+     "word_b": "Google",
+     "transcript": "Everyone looks up to Google today.",
+     "hit": true
+    },
+    {
+     "idx": 255,
+     "word_b": "Oxford",
+     "transcript": "Everyone looks up to Oxford today.",
+     "hit": true
+    },
+    {
+     "idx": 256,
+     "word_b": "Porsche",
+     "transcript": "Everyone looks up to Porsche today.",
+     "hit": true
+    },
+    {
+     "idx": 257,
+     "word_b": "Jupiter",
+     "transcript": "Everyone looks up to Jupiter today.",
+     "hit": true
+    },
+    {
+     "idx": 258,
+     "word_b": "Emerald",
+     "transcript": "Everyone looks up to Emerald today.",
+     "hit": true
+    },
+    {
+     "idx": 259,
+     "word_b": "Halloween",
+     "transcript": "Everyone looks up to Halloween today.",
+     "hit": true
+    },
+    {
+     "idx": 260,
+     "word_b": "Broadway",
+     "transcript": "Everyone looks up to Broadway today.",
+     "hit": true
+    },
+    {
+     "idx": 261,
+     "word_b": "Elizabeth",
+     "transcript": "Everyone looks up to Elizabeth today.",
+     "hit": true
+    },
+    {
+     "idx": 262,
+     "word_b": "Picasso",
+     "transcript": "Everyone looks up to Picasso today.",
+     "hit": true
+    },
+    {
+     "idx": 263,
+     "word_b": "Kilimanjaro",
+     "transcript": "Everyone looks up to Kalimnjaro today.",
+     "hit": false
+    },
+    {
+     "idx": 264,
+     "word_b": "Pacific",
+     "transcript": "Everyone looks up to a Pacific today.",
+     "hit": true
+    },
+    {
+     "idx": 265,
+     "word_b": "Dickens",
+     "transcript": "Everyone looks up to Dickens today.",
+     "hit": true
+    },
+    {
+     "idx": 266,
+     "word_b": "Apple",
+     "transcript": "Everyone looks up to Apple today.",
+     "hit": true
+    },
+    {
+     "idx": 267,
+     "word_b": "Berlin",
+     "transcript": "Everyone looks up to Dverlin today.",
+     "hit": false
+    },
+    {
+     "idx": 268,
+     "word_b": "Toronto",
+     "transcript": "Everyone looks up to Toronto today.",
+     "hit": true
+    },
+    {
+     "idx": 269,
+     "word_b": "Berkeley",
+     "transcript": "Everyone looks up to Berkeley today.",
+     "hit": true
+    },
+    {
+     "idx": 270,
+     "word_b": "Caesar",
+     "transcript": "Everyone looks up to Caesar today",
+     "hit": true
+    },
+    {
+     "idx": 271,
+     "word_b": "Galileo",
+     "transcript": "Everyone looks up to Galileo today.",
+     "hit": true
+    },
+    {
+     "idx": 272,
+     "word_b": "Edison",
+     "transcript": "Everyone looks up to Edison today.",
+     "hit": true
+    },
+    {
+     "idx": 273,
+     "word_b": "Airbus",
+     "transcript": "Everyone looks up to Erebus today.",
+     "hit": false
+    },
+    {
+     "idx": 274,
+     "word_b": "Warner",
+     "transcript": "Everyone looks up to Warner today.",
+     "hit": true
+    },
+    {
+     "idx": 275,
+     "word_b": "AMD",
+     "transcript": "Everyone looks up to AMD today.",
+     "hit": true
+    },
+    {
+     "idx": 276,
+     "word_b": "Boston",
+     "transcript": "Everyone looks up to Boston today.",
+     "hit": true
+    },
+    {
+     "idx": 277,
+     "word_b": "Houston",
+     "transcript": "Everyone looks up to Houston today",
+     "hit": true
+    },
+    {
+     "idx": 278,
+     "word_b": "Seattle",
+     "transcript": "Everyone looks up to Seattle today.",
+     "hit": true
+    },
+    {
+     "idx": 279,
+     "word_b": "Atlanta",
+     "transcript": "Everyone looks up to Atlanta today.",
+     "hit": true
+    },
+    {
+     "idx": 280,
+     "word_b": "Adidas",
+     "transcript": "Everyone looks up to Adidas today.",
+     "hit": true
+    },
+    {
+     "idx": 281,
+     "word_b": "Honda",
+     "transcript": "Everyone looks up to Honda today.",
+     "hit": true
+    },
+    {
+     "idx": 282,
+     "word_b": "Magellan",
+     "transcript": "Everyone looks up to Magellan today.",
+     "hit": true
+    },
+    {
+     "idx": 283,
+     "word_b": "Rome",
+     "transcript": "Everyone looks up to Rome today.",
+     "hit": true
+    },
+    {
+     "idx": 284,
+     "word_b": "Prague",
+     "transcript": "Everyone looks up to Proc today.",
+     "hit": false
+    },
+    {
+     "idx": 285,
+     "word_b": "Beijing",
+     "transcript": "Everyone looks up to Beijing today",
+     "hit": true
+    },
+    {
+     "idx": 286,
+     "word_b": "Washington",
+     "transcript": "Everyone looks up to Washington today.",
+     "hit": true
+    },
+    {
+     "idx": 287,
+     "word_b": "Roosevelt",
+     "transcript": "Everyone looks up to Roosevelt today.",
+     "hit": true
+    },
+    {
+     "idx": 288,
+     "word_b": "Venus",
+     "transcript": "Everyone looks up to Venus today.",
+     "hit": true
+    },
+    {
+     "idx": 289,
+     "word_b": "Neptune",
+     "transcript": "Everyone looks up to Neptune today.",
+     "hit": true
+    },
+    {
+     "idx": 290,
+     "word_b": "Gobi",
+     "transcript": "Everyone looks up to Gobi today.",
+     "hit": true
+    },
+    {
+     "idx": 291,
+     "word_b": "Argentina",
+     "transcript": "Everyone looks up to Argentina today.",
+     "hit": true
+    },
+    {
+     "idx": 292,
+     "word_b": "Mazda",
+     "transcript": "Everyone looks up to Mazu today.",
+     "hit": false
+    },
+    {
+     "idx": 293,
+     "word_b": "BMW",
+     "transcript": "Everyone looks up to BMW today.",
+     "hit": true
+    },
+    {
+     "idx": 294,
+     "word_b": "Spotify",
+     "transcript": "Everyone looks up to Spotify today.",
+     "hit": true
+    },
+    {
+     "idx": 295,
+     "word_b": "Twitter",
+     "transcript": "Everyone looks up to Twitter today.",
+     "hit": true
+    },
+    {
+     "idx": 296,
+     "word_b": "Lagos",
+     "transcript": "Everyone looks up to Lagos today.",
+     "hit": true
+    },
+    {
+     "idx": 297,
+     "word_b": "Delhi",
+     "transcript": "Everyone looks up to Delhi today.",
+     "hit": true
+    },
+    {
+     "idx": 298,
+     "word_b": "Bangkok",
+     "transcript": "Everyone looks up to Bangkok today.",
+     "hit": true
+    },
+    {
+     "idx": 299,
+     "word_b": "Barcelona",
+     "transcript": "Everyone looks up to Barcelona today.",
+     "hit": true
+    }
+   ]
+  }
+ },
+ "mcnemar_speechsplice_vs_vc_tts": {
+  "b": 30,
+  "c": 11,
+  "p": 0.00432400493446039
+ },
+ "mcnemar_speechsplice_vs_editts": {
+  "b": 41,
+  "c": 10,
+  "p": 1.4737715885004832e-05
+ }
+}

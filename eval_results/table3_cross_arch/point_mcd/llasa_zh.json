@@ -1,0 +1,2133 @@
+{
+ "summary": {
+  "wav_dir": "/mnt/eval_results/_cc_wavs_a/llasa_zh_sweep_n300/L26",
+  "mode": "whole",
+  "order": 24,
+  "sr": 22050,
+  "n_target": 300,
+  "n_valid": 300,
+  "unit": "MCD (dB) via pysptk mel-cepstrum",
+  "orig_script": "scripts/projection/mcd_pysptk_standard.py --mode whole (experiment tree)",
+  "mcd_inj_vs_bl": {
+   "n": 300,
+   "mean": 2.2149,
+   "std": 2.4545,
+   "median": 1.1887
+  },
+  "mcd_inj_vs_tgt": {
+   "n": 300,
+   "mean": 6.3569,
+   "std": 1.5228,
+   "median": 6.1477
+  },
+  "mcd_bl_vs_tgt": {
+   "n": 300,
+   "mean": 6.3593,
+   "std": 1.512,
+   "median": 6.1756
+  },
+  "computed": "2026-11-14, CPU, from the layer-sweep audio at the replacement depth (camera-ready Table 3)"
+ },
+ "rows": [
+  {
+   "pair_idx": 0,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.7675,
+   "mcd_bl_vs_tgt": 4.7675
+  },
+  {
+   "pair_idx": 1,
+   "available": true,
+   "mcd_inj_vs_bl": 3.5436,
+   "mcd_inj_vs_tgt": 5.2503,
+   "mcd_bl_vs_tgt": 5.8919
+  },
+  {
+   "pair_idx": 2,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.5918,
+   "mcd_bl_vs_tgt": 7.5918
+  },
+  {
+   "pair_idx": 3,
+   "available": true,
+   "mcd_inj_vs_bl": 0.9217,
+   "mcd_inj_vs_tgt": 5.5427,
+   "mcd_bl_vs_tgt": 5.6155
+  },
+  {
+   "pair_idx": 4,
+   "available": true,
+   "mcd_inj_vs_bl": 4.9349,
+   "mcd_inj_vs_tgt": 7.2228,
+   "mcd_bl_vs_tgt": 6.9064
+  },
+  {
+   "pair_idx": 5,
+   "available": true,
+   "mcd_inj_vs_bl": 6.4733,
+   "mcd_inj_vs_tgt": 9.9112,
+   "mcd_bl_vs_tgt": 8.2291
+  },
+  {
+   "pair_idx": 6,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.7684,
+   "mcd_bl_vs_tgt": 5.7684
+  },
+  {
+   "pair_idx": 7,
+   "available": true,
+   "mcd_inj_vs_bl": 7.4681,
+   "mcd_inj_vs_tgt": 7.5327,
+   "mcd_bl_vs_tgt": 8.7403
+  },
+  {
+   "pair_idx": 8,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 8.3885,
+   "mcd_bl_vs_tgt": 8.3885
+  },
+  {
+   "pair_idx": 9,
+   "available": true,
+   "mcd_inj_vs_bl": 0.2592,
+   "mcd_inj_vs_tgt": 6.2512,
+   "mcd_bl_vs_tgt": 6.3294
+  },
+  {
+   "pair_idx": 10,
+   "available": true,
+   "mcd_inj_vs_bl": 5.6903,
+   "mcd_inj_vs_tgt": 4.6244,
+   "mcd_bl_vs_tgt": 4.8779
+  },
+  {
+   "pair_idx": 11,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.5645,
+   "mcd_bl_vs_tgt": 5.5645
+  },
+  {
+   "pair_idx": 12,
+   "available": true,
+   "mcd_inj_vs_bl": 4.1364,
+   "mcd_inj_vs_tgt": 5.6142,
+   "mcd_bl_vs_tgt": 6.0173
+  },
+  {
+   "pair_idx": 13,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.7247,
+   "mcd_bl_vs_tgt": 5.7247
+  },
+  {
+   "pair_idx": 14,
+   "available": true,
+   "mcd_inj_vs_bl": 5.2083,
+   "mcd_inj_vs_tgt": 5.3167,
+   "mcd_bl_vs_tgt": 4.9879
+  },
+  {
+   "pair_idx": 15,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 3.7742,
+   "mcd_bl_vs_tgt": 3.7742
+  },
+  {
+   "pair_idx": 16,
+   "available": true,
+   "mcd_inj_vs_bl": 2.3814,
+   "mcd_inj_vs_tgt": 4.8269,
+   "mcd_bl_vs_tgt": 4.6568
+  },
+  {
+   "pair_idx": 17,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.2461,
+   "mcd_bl_vs_tgt": 6.2461
+  },
+  {
+   "pair_idx": 18,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 11.2501,
+   "mcd_bl_vs_tgt": 11.2501
+  },
+  {
+   "pair_idx": 19,
+   "available": true,
+   "mcd_inj_vs_bl": 1.3385,
+   "mcd_inj_vs_tgt": 6.4981,
+   "mcd_bl_vs_tgt": 6.6064
+  },
+  {
+   "pair_idx": 20,
+   "available": true,
+   "mcd_inj_vs_bl": 0.4085,
+   "mcd_inj_vs_tgt": 4.1263,
+   "mcd_bl_vs_tgt": 4.1352
+  },
+  {
+   "pair_idx": 21,
+   "available": true,
+   "mcd_inj_vs_bl": 4.3863,
+   "mcd_inj_vs_tgt": 4.1213,
+   "mcd_bl_vs_tgt": 4.6482
+  },
+  {
+   "pair_idx": 22,
+   "available": true,
+   "mcd_inj_vs_bl": 1.3206,
+   "mcd_inj_vs_tgt": 6.2459,
+   "mcd_bl_vs_tgt": 6.4922
+  },
+  {
+   "pair_idx": 23,
+   "available": true,
+   "mcd_inj_vs_bl": 6.3835,
+   "mcd_inj_vs_tgt": 4.7094,
+   "mcd_bl_vs_tgt": 6.0479
+  },
+  {
+   "pair_idx": 24,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.4251,
+   "mcd_bl_vs_tgt": 6.4251
+  },
+  {
+   "pair_idx": 25,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.6012,
+   "mcd_bl_vs_tgt": 4.6012
+  },
+  {
+   "pair_idx": 26,
+   "available": true,
+   "mcd_inj_vs_bl": 3.5631,
+   "mcd_inj_vs_tgt": 6.4836,
+   "mcd_bl_vs_tgt": 6.7745
+  },
+  {
+   "pair_idx": 27,
+   "available": true,
+   "mcd_inj_vs_bl": 6.1553,
+   "mcd_inj_vs_tgt": 8.3573,
+   "mcd_bl_vs_tgt": 9.5929
+  },
+  {
+   "pair_idx": 28,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.513,
+   "mcd_bl_vs_tgt": 7.513
+  },
+  {
+   "pair_idx": 29,
+   "available": true,
+   "mcd_inj_vs_bl": 0.1234,
+   "mcd_inj_vs_tgt": 5.0095,
+   "mcd_bl_vs_tgt": 5.0171
+  },
+  {
+   "pair_idx": 30,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.0331,
+   "mcd_bl_vs_tgt": 5.0331
+  },
+  {
+   "pair_idx": 31,
+   "available": true,
+   "mcd_inj_vs_bl": 6.4938,
+   "mcd_inj_vs_tgt": 5.5662,
+   "mcd_bl_vs_tgt": 3.9173
+  },
+  {
+   "pair_idx": 32,
+   "available": true,
+   "mcd_inj_vs_bl": 8.3231,
+   "mcd_inj_vs_tgt": 5.464,
+   "mcd_bl_vs_tgt": 6.5019
+  },
+  {
+   "pair_idx": 33,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.7788,
+   "mcd_bl_vs_tgt": 5.7788
+  },
+  {
+   "pair_idx": 34,
+   "available": true,
+   "mcd_inj_vs_bl": 2.5668,
+   "mcd_inj_vs_tgt": 5.9081,
+   "mcd_bl_vs_tgt": 6.4205
+  },
+  {
+   "pair_idx": 35,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.9468,
+   "mcd_bl_vs_tgt": 4.9468
+  },
+  {
+   "pair_idx": 36,
+   "available": true,
+   "mcd_inj_vs_bl": 7.0768,
+   "mcd_inj_vs_tgt": 8.1174,
+   "mcd_bl_vs_tgt": 3.9844
+  },
+  {
+   "pair_idx": 37,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.7026,
+   "mcd_bl_vs_tgt": 6.7026
+  },
+  {
+   "pair_idx": 38,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.9983,
+   "mcd_bl_vs_tgt": 4.9983
+  },
+  {
+   "pair_idx": 39,
+   "available": true,
+   "mcd_inj_vs_bl": 2.072,
+   "mcd_inj_vs_tgt": 4.5866,
+   "mcd_bl_vs_tgt": 4.8773
+  },
+  {
+   "pair_idx": 40,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.512,
+   "mcd_bl_vs_tgt": 4.512
+  },
+  {
+   "pair_idx": 41,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.6649,
+   "mcd_bl_vs_tgt": 6.6649
+  },
+  {
+   "pair_idx": 42,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 9.3722,
+   "mcd_bl_vs_tgt": 9.3722
+  },
+  {
+   "pair_idx": 43,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.1852,
+   "mcd_bl_vs_tgt": 5.1852
+  },
+  {
+   "pair_idx": 44,
+   "available": true,
+   "mcd_inj_vs_bl": 9.5318,
+   "mcd_inj_vs_tgt": 8.9441,
+   "mcd_bl_vs_tgt": 7.5811
+  },
+  {
+   "pair_idx": 45,
+   "available": true,
+   "mcd_inj_vs_bl": 2.8052,
+   "mcd_inj_vs_tgt": 9.2462,
+   "mcd_bl_vs_tgt": 9.008
+  },
+  {
+   "pair_idx": 46,
+   "available": true,
+   "mcd_inj_vs_bl": 0.4609,
+   "mcd_inj_vs_tgt": 5.0202,
+   "mcd_bl_vs_tgt": 4.9666
+  },
+  {
+   "pair_idx": 47,
+   "available": true,
+   "mcd_inj_vs_bl": 3.4936,
+   "mcd_inj_vs_tgt": 12.4515,
+   "mcd_bl_vs_tgt": 12.2235
+  },
+  {
+   "pair_idx": 48,
+   "available": true,
+   "mcd_inj_vs_bl": 5.8273,
+   "mcd_inj_vs_tgt": 9.9069,
+   "mcd_bl_vs_tgt": 9.9433
+  },
+  {
+   "pair_idx": 49,
+   "available": true,
+   "mcd_inj_vs_bl": 3.1574,
+   "mcd_inj_vs_tgt": 5.3651,
+   "mcd_bl_vs_tgt": 5.5991
+  },
+  {
+   "pair_idx": 50,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.7633,
+   "mcd_bl_vs_tgt": 4.7633
+  },
+  {
+   "pair_idx": 51,
+   "available": true,
+   "mcd_inj_vs_bl": 1.4139,
+   "mcd_inj_vs_tgt": 5.2463,
+   "mcd_bl_vs_tgt": 5.6461
+  },
+  {
+   "pair_idx": 52,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.8208,
+   "mcd_bl_vs_tgt": 4.8208
+  },
+  {
+   "pair_idx": 53,
+   "available": true,
+   "mcd_inj_vs_bl": 4.217,
+   "mcd_inj_vs_tgt": 4.2078,
+   "mcd_bl_vs_tgt": 5.0284
+  },
+  {
+   "pair_idx": 54,
+   "available": true,
+   "mcd_inj_vs_bl": 1.5386,
+   "mcd_inj_vs_tgt": 7.1052,
+   "mcd_bl_vs_tgt": 7.0753
+  },
+  {
+   "pair_idx": 55,
+   "available": true,
+   "mcd_inj_vs_bl": 0.9307,
+   "mcd_inj_vs_tgt": 6.4521,
+   "mcd_bl_vs_tgt": 6.6976
+  },
+  {
+   "pair_idx": 56,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.3036,
+   "mcd_bl_vs_tgt": 5.3036
+  },
+  {
+   "pair_idx": 57,
+   "available": true,
+   "mcd_inj_vs_bl": 3.2568,
+   "mcd_inj_vs_tgt": 6.788,
+   "mcd_bl_vs_tgt": 6.5284
+  },
+  {
+   "pair_idx": 58,
+   "available": true,
+   "mcd_inj_vs_bl": 4.2453,
+   "mcd_inj_vs_tgt": 5.9343,
+   "mcd_bl_vs_tgt": 5.7447
+  },
+  {
+   "pair_idx": 59,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.9501,
+   "mcd_bl_vs_tgt": 4.9501
+  },
+  {
+   "pair_idx": 60,
+   "available": true,
+   "mcd_inj_vs_bl": 3.5069,
+   "mcd_inj_vs_tgt": 3.7142,
+   "mcd_bl_vs_tgt": 3.6304
+  },
+  {
+   "pair_idx": 61,
+   "available": true,
+   "mcd_inj_vs_bl": 5.0509,
+   "mcd_inj_vs_tgt": 6.5355,
+   "mcd_bl_vs_tgt": 5.97
+  },
+  {
+   "pair_idx": 62,
+   "available": true,
+   "mcd_inj_vs_bl": 4.1661,
+   "mcd_inj_vs_tgt": 6.2718,
+   "mcd_bl_vs_tgt": 5.9921
+  },
+  {
+   "pair_idx": 63,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.4313,
+   "mcd_bl_vs_tgt": 6.4313
+  },
+  {
+   "pair_idx": 64,
+   "available": true,
+   "mcd_inj_vs_bl": 5.7962,
+   "mcd_inj_vs_tgt": 6.4367,
+   "mcd_bl_vs_tgt": 5.0131
+  },
+  {
+   "pair_idx": 65,
+   "available": true,
+   "mcd_inj_vs_bl": 0.684,
+   "mcd_inj_vs_tgt": 6.5211,
+   "mcd_bl_vs_tgt": 6.3883
+  },
+  {
+   "pair_idx": 66,
+   "available": true,
+   "mcd_inj_vs_bl": 4.4858,
+   "mcd_inj_vs_tgt": 5.034,
+   "mcd_bl_vs_tgt": 5.6011
+  },
+  {
+   "pair_idx": 67,
+   "available": true,
+   "mcd_inj_vs_bl": 5.5836,
+   "mcd_inj_vs_tgt": 5.8484,
+   "mcd_bl_vs_tgt": 5.4779
+  },
+  {
+   "pair_idx": 68,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 8.2512,
+   "mcd_bl_vs_tgt": 8.2512
+  },
+  {
+   "pair_idx": 69,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.5926,
+   "mcd_bl_vs_tgt": 5.5926
+  },
+  {
+   "pair_idx": 70,
+   "available": true,
+   "mcd_inj_vs_bl": 3.3048,
+   "mcd_inj_vs_tgt": 4.8154,
+   "mcd_bl_vs_tgt": 5.1277
+  },
+  {
+   "pair_idx": 71,
+   "available": true,
+   "mcd_inj_vs_bl": 4.7539,
+   "mcd_inj_vs_tgt": 6.0376,
+   "mcd_bl_vs_tgt": 5.9452
+  },
+  {
+   "pair_idx": 72,
+   "available": true,
+   "mcd_inj_vs_bl": 3.0789,
+   "mcd_inj_vs_tgt": 7.3544,
+   "mcd_bl_vs_tgt": 7.2113
+  },
+  {
+   "pair_idx": 73,
+   "available": true,
+   "mcd_inj_vs_bl": 1.4991,
+   "mcd_inj_vs_tgt": 5.4682,
+   "mcd_bl_vs_tgt": 5.6272
+  },
+  {
+   "pair_idx": 74,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.1324,
+   "mcd_bl_vs_tgt": 7.1324
+  },
+  {
+   "pair_idx": 75,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 10.9215,
+   "mcd_bl_vs_tgt": 10.9215
+  },
+  {
+   "pair_idx": 76,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.7652,
+   "mcd_bl_vs_tgt": 4.7652
+  },
+  {
+   "pair_idx": 77,
+   "available": true,
+   "mcd_inj_vs_bl": 3.6824,
+   "mcd_inj_vs_tgt": 8.2065,
+   "mcd_bl_vs_tgt": 8.4593
+  },
+  {
+   "pair_idx": 78,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.9497,
+   "mcd_bl_vs_tgt": 6.9497
+  },
+  {
+   "pair_idx": 79,
+   "available": true,
+   "mcd_inj_vs_bl": 8.4343,
+   "mcd_inj_vs_tgt": 6.7261,
+   "mcd_bl_vs_tgt": 8.1386
+  },
+  {
+   "pair_idx": 80,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.0832,
+   "mcd_bl_vs_tgt": 4.0832
+  },
+  {
+   "pair_idx": 81,
+   "available": true,
+   "mcd_inj_vs_bl": 4.0338,
+   "mcd_inj_vs_tgt": 5.2145,
+   "mcd_bl_vs_tgt": 4.6849
+  },
+  {
+   "pair_idx": 82,
+   "available": true,
+   "mcd_inj_vs_bl": 4.2803,
+   "mcd_inj_vs_tgt": 7.2772,
+   "mcd_bl_vs_tgt": 6.9736
+  },
+  {
+   "pair_idx": 83,
+   "available": true,
+   "mcd_inj_vs_bl": 3.1783,
+   "mcd_inj_vs_tgt": 7.692,
+   "mcd_bl_vs_tgt": 6.9974
+  },
+  {
+   "pair_idx": 84,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.3833,
+   "mcd_bl_vs_tgt": 7.3833
+  },
+  {
+   "pair_idx": 85,
+   "available": true,
+   "mcd_inj_vs_bl": 6.5465,
+   "mcd_inj_vs_tgt": 9.7224,
+   "mcd_bl_vs_tgt": 9.0378
+  },
+  {
+   "pair_idx": 86,
+   "available": true,
+   "mcd_inj_vs_bl": 6.4019,
+   "mcd_inj_vs_tgt": 6.1906,
+   "mcd_bl_vs_tgt": 7.6866
+  },
+  {
+   "pair_idx": 87,
+   "available": true,
+   "mcd_inj_vs_bl": 4.535,
+   "mcd_inj_vs_tgt": 7.3614,
+   "mcd_bl_vs_tgt": 6.9247
+  },
+  {
+   "pair_idx": 88,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 9.1148,
+   "mcd_bl_vs_tgt": 9.1148
+  },
+  {
+   "pair_idx": 89,
+   "available": true,
+   "mcd_inj_vs_bl": 4.58,
+   "mcd_inj_vs_tgt": 4.0769,
+   "mcd_bl_vs_tgt": 4.3856
+  },
+  {
+   "pair_idx": 90,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.9346,
+   "mcd_bl_vs_tgt": 5.9346
+  },
+  {
+   "pair_idx": 91,
+   "available": true,
+   "mcd_inj_vs_bl": 5.5334,
+   "mcd_inj_vs_tgt": 4.2889,
+   "mcd_bl_vs_tgt": 6.8662
+  },
+  {
+   "pair_idx": 92,
+   "available": true,
+   "mcd_inj_vs_bl": 6.1845,
+   "mcd_inj_vs_tgt": 6.3125,
+   "mcd_bl_vs_tgt": 6.6161
+  },
+  {
+   "pair_idx": 93,
+   "available": true,
+   "mcd_inj_vs_bl": 3.2364,
+   "mcd_inj_vs_tgt": 6.1818,
+   "mcd_bl_vs_tgt": 6.8438
+  },
+  {
+   "pair_idx": 94,
+   "available": true,
+   "mcd_inj_vs_bl": 1.1647,
+   "mcd_inj_vs_tgt": 8.6647,
+   "mcd_bl_vs_tgt": 8.6086
+  },
+  {
+   "pair_idx": 95,
+   "available": true,
+   "mcd_inj_vs_bl": 4.6304,
+   "mcd_inj_vs_tgt": 6.2831,
+   "mcd_bl_vs_tgt": 5.4579
+  },
+  {
+   "pair_idx": 96,
+   "available": true,
+   "mcd_inj_vs_bl": 0.7852,
+   "mcd_inj_vs_tgt": 5.2353,
+   "mcd_bl_vs_tgt": 5.261
+  },
+  {
+   "pair_idx": 97,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 10.8471,
+   "mcd_bl_vs_tgt": 10.8471
+  },
+  {
+   "pair_idx": 98,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.9842,
+   "mcd_bl_vs_tgt": 7.9842
+  },
+  {
+   "pair_idx": 99,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.1135,
+   "mcd_bl_vs_tgt": 6.1135
+  },
+  {
+   "pair_idx": 100,
+   "available": true,
+   "mcd_inj_vs_bl": 3.2475,
+   "mcd_inj_vs_tgt": 4.3861,
+   "mcd_bl_vs_tgt": 4.4292
+  },
+  {
+   "pair_idx": 101,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.5343,
+   "mcd_bl_vs_tgt": 5.5343
+  },
+  {
+   "pair_idx": 102,
+   "available": true,
+   "mcd_inj_vs_bl": 4.2054,
+   "mcd_inj_vs_tgt": 5.8945,
+   "mcd_bl_vs_tgt": 3.9424
+  },
+  {
+   "pair_idx": 103,
+   "available": true,
+   "mcd_inj_vs_bl": 1.7152,
+   "mcd_inj_vs_tgt": 5.6012,
+   "mcd_bl_vs_tgt": 5.4792
+  },
+  {
+   "pair_idx": 104,
+   "available": true,
+   "mcd_inj_vs_bl": 3.0258,
+   "mcd_inj_vs_tgt": 7.0584,
+   "mcd_bl_vs_tgt": 7.0748
+  },
+  {
+   "pair_idx": 105,
+   "available": true,
+   "mcd_inj_vs_bl": 4.0288,
+   "mcd_inj_vs_tgt": 5.1557,
+   "mcd_bl_vs_tgt": 4.6543
+  },
+  {
+   "pair_idx": 106,
+   "available": true,
+   "mcd_inj_vs_bl": 8.1956,
+   "mcd_inj_vs_tgt": 6.2933,
+   "mcd_bl_vs_tgt": 6.331
+  },
+  {
+   "pair_idx": 107,
+   "available": true,
+   "mcd_inj_vs_bl": 3.1541,
+   "mcd_inj_vs_tgt": 6.685,
+   "mcd_bl_vs_tgt": 6.1787
+  },
+  {
+   "pair_idx": 108,
+   "available": true,
+   "mcd_inj_vs_bl": 4.8311,
+   "mcd_inj_vs_tgt": 6.1322,
+   "mcd_bl_vs_tgt": 6.771
+  },
+  {
+   "pair_idx": 109,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.2036,
+   "mcd_bl_vs_tgt": 6.2036
+  },
+  {
+   "pair_idx": 110,
+   "available": true,
+   "mcd_inj_vs_bl": 2.8763,
+   "mcd_inj_vs_tgt": 4.9607,
+   "mcd_bl_vs_tgt": 5.2662
+  },
+  {
+   "pair_idx": 111,
+   "available": true,
+   "mcd_inj_vs_bl": 0.5419,
+   "mcd_inj_vs_tgt": 6.062,
+   "mcd_bl_vs_tgt": 5.8943
+  },
+  {
+   "pair_idx": 112,
+   "available": true,
+   "mcd_inj_vs_bl": 4.0119,
+   "mcd_inj_vs_tgt": 4.8846,
+   "mcd_bl_vs_tgt": 4.6279
+  },
+  {
+   "pair_idx": 113,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.2225,
+   "mcd_bl_vs_tgt": 4.2225
+  },
+  {
+   "pair_idx": 114,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.6981,
+   "mcd_bl_vs_tgt": 4.6981
+  },
+  {
+   "pair_idx": 115,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.5393,
+   "mcd_bl_vs_tgt": 6.5393
+  },
+  {
+   "pair_idx": 116,
+   "available": true,
+   "mcd_inj_vs_bl": 5.7438,
+   "mcd_inj_vs_tgt": 5.2359,
+   "mcd_bl_vs_tgt": 5.4849
+  },
+  {
+   "pair_idx": 117,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 8.8749,
+   "mcd_bl_vs_tgt": 8.8749
+  },
+  {
+   "pair_idx": 118,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.6222,
+   "mcd_bl_vs_tgt": 6.6222
+  },
+  {
+   "pair_idx": 119,
+   "available": true,
+   "mcd_inj_vs_bl": 3.004,
+   "mcd_inj_vs_tgt": 4.5006,
+   "mcd_bl_vs_tgt": 5.4547
+  },
+  {
+   "pair_idx": 120,
+   "available": true,
+   "mcd_inj_vs_bl": 3.454,
+   "mcd_inj_vs_tgt": 6.3434,
+   "mcd_bl_vs_tgt": 5.256
+  },
+  {
+   "pair_idx": 121,
+   "available": true,
+   "mcd_inj_vs_bl": 6.1288,
+   "mcd_inj_vs_tgt": 5.7381,
+   "mcd_bl_vs_tgt": 8.1504
+  },
+  {
+   "pair_idx": 122,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.0221,
+   "mcd_bl_vs_tgt": 7.0221
+  },
+  {
+   "pair_idx": 123,
+   "available": true,
+   "mcd_inj_vs_bl": 5.172,
+   "mcd_inj_vs_tgt": 4.6789,
+   "mcd_bl_vs_tgt": 5.0451
+  },
+  {
+   "pair_idx": 124,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.2018,
+   "mcd_bl_vs_tgt": 7.2018
+  },
+  {
+   "pair_idx": 125,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.1396,
+   "mcd_bl_vs_tgt": 7.1396
+  },
+  {
+   "pair_idx": 126,
+   "available": true,
+   "mcd_inj_vs_bl": 1.0725,
+   "mcd_inj_vs_tgt": 6.5554,
+   "mcd_bl_vs_tgt": 6.6881
+  },
+  {
+   "pair_idx": 127,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.0252,
+   "mcd_bl_vs_tgt": 6.0252
+  },
+  {
+   "pair_idx": 128,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.15,
+   "mcd_bl_vs_tgt": 7.15
+  },
+  {
+   "pair_idx": 129,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.7605,
+   "mcd_bl_vs_tgt": 4.7605
+  },
+  {
+   "pair_idx": 130,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.0825,
+   "mcd_bl_vs_tgt": 6.0825
+  },
+  {
+   "pair_idx": 131,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.5386,
+   "mcd_bl_vs_tgt": 5.5386
+  },
+  {
+   "pair_idx": 132,
+   "available": true,
+   "mcd_inj_vs_bl": 4.1147,
+   "mcd_inj_vs_tgt": 4.3935,
+   "mcd_bl_vs_tgt": 4.1656
+  },
+  {
+   "pair_idx": 133,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.5676,
+   "mcd_bl_vs_tgt": 6.5676
+  },
+  {
+   "pair_idx": 134,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.4165,
+   "mcd_bl_vs_tgt": 5.4165
+  },
+  {
+   "pair_idx": 135,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.288,
+   "mcd_bl_vs_tgt": 4.288
+  },
+  {
+   "pair_idx": 136,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.6526,
+   "mcd_bl_vs_tgt": 4.6526
+  },
+  {
+   "pair_idx": 137,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.3799,
+   "mcd_bl_vs_tgt": 6.3799
+  },
+  {
+   "pair_idx": 138,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.7521,
+   "mcd_bl_vs_tgt": 5.7521
+  },
+  {
+   "pair_idx": 139,
+   "available": true,
+   "mcd_inj_vs_bl": 2.4778,
+   "mcd_inj_vs_tgt": 5.1219,
+   "mcd_bl_vs_tgt": 4.8412
+  },
+  {
+   "pair_idx": 140,
+   "available": true,
+   "mcd_inj_vs_bl": 5.2595,
+   "mcd_inj_vs_tgt": 5.9113,
+   "mcd_bl_vs_tgt": 6.0277
+  },
+  {
+   "pair_idx": 141,
+   "available": true,
+   "mcd_inj_vs_bl": 3.2949,
+   "mcd_inj_vs_tgt": 6.4814,
+   "mcd_bl_vs_tgt": 6.6843
+  },
+  {
+   "pair_idx": 142,
+   "available": true,
+   "mcd_inj_vs_bl": 3.1017,
+   "mcd_inj_vs_tgt": 7.7074,
+   "mcd_bl_vs_tgt": 7.6084
+  },
+  {
+   "pair_idx": 143,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.9017,
+   "mcd_bl_vs_tgt": 6.9017
+  },
+  {
+   "pair_idx": 144,
+   "available": true,
+   "mcd_inj_vs_bl": 2.2355,
+   "mcd_inj_vs_tgt": 6.0479,
+   "mcd_bl_vs_tgt": 6.1394
+  },
+  {
+   "pair_idx": 145,
+   "available": true,
+   "mcd_inj_vs_bl": 4.567,
+   "mcd_inj_vs_tgt": 6.6266,
+   "mcd_bl_vs_tgt": 6.9851
+  },
+  {
+   "pair_idx": 146,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.9109,
+   "mcd_bl_vs_tgt": 5.9109
+  },
+  {
+   "pair_idx": 147,
+   "available": true,
+   "mcd_inj_vs_bl": 2.8917,
+   "mcd_inj_vs_tgt": 8.8903,
+   "mcd_bl_vs_tgt": 9.2128
+  },
+  {
+   "pair_idx": 148,
+   "available": true,
+   "mcd_inj_vs_bl": 3.3057,
+   "mcd_inj_vs_tgt": 6.3764,
+   "mcd_bl_vs_tgt": 6.6262
+  },
+  {
+   "pair_idx": 149,
+   "available": true,
+   "mcd_inj_vs_bl": 6.1903,
+   "mcd_inj_vs_tgt": 7.5952,
+   "mcd_bl_vs_tgt": 7.0869
+  },
+  {
+   "pair_idx": 150,
+   "available": true,
+   "mcd_inj_vs_bl": 3.9572,
+   "mcd_inj_vs_tgt": 4.7691,
+   "mcd_bl_vs_tgt": 4.2645
+  },
+  {
+   "pair_idx": 151,
+   "available": true,
+   "mcd_inj_vs_bl": 3.2579,
+   "mcd_inj_vs_tgt": 4.6247,
+   "mcd_bl_vs_tgt": 4.0239
+  },
+  {
+   "pair_idx": 152,
+   "available": true,
+   "mcd_inj_vs_bl": 1.5465,
+   "mcd_inj_vs_tgt": 5.7854,
+   "mcd_bl_vs_tgt": 5.8122
+  },
+  {
+   "pair_idx": 153,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.5783,
+   "mcd_bl_vs_tgt": 6.5783
+  },
+  {
+   "pair_idx": 154,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.0042,
+   "mcd_bl_vs_tgt": 5.0042
+  },
+  {
+   "pair_idx": 155,
+   "available": true,
+   "mcd_inj_vs_bl": 5.7194,
+   "mcd_inj_vs_tgt": 5.4992,
+   "mcd_bl_vs_tgt": 5.3265
+  },
+  {
+   "pair_idx": 156,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.8138,
+   "mcd_bl_vs_tgt": 5.8138
+  },
+  {
+   "pair_idx": 157,
+   "available": true,
+   "mcd_inj_vs_bl": 1.7715,
+   "mcd_inj_vs_tgt": 10.6207,
+   "mcd_bl_vs_tgt": 10.6952
+  },
+  {
+   "pair_idx": 158,
+   "available": true,
+   "mcd_inj_vs_bl": 4.4878,
+   "mcd_inj_vs_tgt": 7.9894,
+   "mcd_bl_vs_tgt": 8.5575
+  },
+  {
+   "pair_idx": 159,
+   "available": true,
+   "mcd_inj_vs_bl": 2.6776,
+   "mcd_inj_vs_tgt": 4.446,
+   "mcd_bl_vs_tgt": 5.2066
+  },
+  {
+   "pair_idx": 160,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.5908,
+   "mcd_bl_vs_tgt": 6.5908
+  },
+  {
+   "pair_idx": 161,
+   "available": true,
+   "mcd_inj_vs_bl": 0.1253,
+   "mcd_inj_vs_tgt": 5.0501,
+   "mcd_bl_vs_tgt": 5.0634
+  },
+  {
+   "pair_idx": 162,
+   "available": true,
+   "mcd_inj_vs_bl": 4.4044,
+   "mcd_inj_vs_tgt": 6.9254,
+   "mcd_bl_vs_tgt": 6.6157
+  },
+  {
+   "pair_idx": 163,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.784,
+   "mcd_bl_vs_tgt": 6.784
+  },
+  {
+   "pair_idx": 164,
+   "available": true,
+   "mcd_inj_vs_bl": 3.7683,
+   "mcd_inj_vs_tgt": 6.2287,
+   "mcd_bl_vs_tgt": 6.3638
+  },
+  {
+   "pair_idx": 165,
+   "available": true,
+   "mcd_inj_vs_bl": 10.0105,
+   "mcd_inj_vs_tgt": 8.0068,
+   "mcd_bl_vs_tgt": 5.9145
+  },
+  {
+   "pair_idx": 166,
+   "available": true,
+   "mcd_inj_vs_bl": 5.873,
+   "mcd_inj_vs_tgt": 6.5056,
+   "mcd_bl_vs_tgt": 7.1654
+  },
+  {
+   "pair_idx": 167,
+   "available": true,
+   "mcd_inj_vs_bl": 3.4715,
+   "mcd_inj_vs_tgt": 7.6807,
+   "mcd_bl_vs_tgt": 7.5754
+  },
+  {
+   "pair_idx": 168,
+   "available": true,
+   "mcd_inj_vs_bl": 2.6109,
+   "mcd_inj_vs_tgt": 6.5983,
+   "mcd_bl_vs_tgt": 6.5153
+  },
+  {
+   "pair_idx": 169,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.871,
+   "mcd_bl_vs_tgt": 5.871
+  },
+  {
+   "pair_idx": 170,
+   "available": true,
+   "mcd_inj_vs_bl": 3.6501,
+   "mcd_inj_vs_tgt": 5.439,
+   "mcd_bl_vs_tgt": 5.5655
+  },
+  {
+   "pair_idx": 171,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 8.5046,
+   "mcd_bl_vs_tgt": 8.5046
+  },
+  {
+   "pair_idx": 172,
+   "available": true,
+   "mcd_inj_vs_bl": 6.2826,
+   "mcd_inj_vs_tgt": 6.5693,
+   "mcd_bl_vs_tgt": 7.2216
+  },
+  {
+   "pair_idx": 173,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.9535,
+   "mcd_bl_vs_tgt": 4.9535
+  },
+  {
+   "pair_idx": 174,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.1417,
+   "mcd_bl_vs_tgt": 7.1417
+  },
+  {
+   "pair_idx": 175,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.3658,
+   "mcd_bl_vs_tgt": 7.3658
+  },
+  {
+   "pair_idx": 176,
+   "available": true,
+   "mcd_inj_vs_bl": 5.6263,
+   "mcd_inj_vs_tgt": 7.0942,
+   "mcd_bl_vs_tgt": 6.927
+  },
+  {
+   "pair_idx": 177,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 10.6996,
+   "mcd_bl_vs_tgt": 10.6996
+  },
+  {
+   "pair_idx": 178,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 8.8465,
+   "mcd_bl_vs_tgt": 8.8465
+  },
+  {
+   "pair_idx": 179,
+   "available": true,
+   "mcd_inj_vs_bl": 2.9059,
+   "mcd_inj_vs_tgt": 5.8246,
+   "mcd_bl_vs_tgt": 6.4997
+  },
+  {
+   "pair_idx": 180,
+   "available": true,
+   "mcd_inj_vs_bl": 0.9689,
+   "mcd_inj_vs_tgt": 7.259,
+   "mcd_bl_vs_tgt": 7.3584
+  },
+  {
+   "pair_idx": 181,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.7378,
+   "mcd_bl_vs_tgt": 7.7378
+  },
+  {
+   "pair_idx": 182,
+   "available": true,
+   "mcd_inj_vs_bl": 5.1834,
+   "mcd_inj_vs_tgt": 7.1583,
+   "mcd_bl_vs_tgt": 7.2035
+  },
+  {
+   "pair_idx": 183,
+   "available": true,
+   "mcd_inj_vs_bl": 0.1401,
+   "mcd_inj_vs_tgt": 5.0589,
+   "mcd_bl_vs_tgt": 5.0817
+  },
+  {
+   "pair_idx": 184,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.807,
+   "mcd_bl_vs_tgt": 6.807
+  },
+  {
+   "pair_idx": 185,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.5836,
+   "mcd_bl_vs_tgt": 7.5836
+  },
+  {
+   "pair_idx": 186,
+   "available": true,
+   "mcd_inj_vs_bl": 6.7286,
+   "mcd_inj_vs_tgt": 6.3326,
+   "mcd_bl_vs_tgt": 7.5999
+  },
+  {
+   "pair_idx": 187,
+   "available": true,
+   "mcd_inj_vs_bl": 2.4987,
+   "mcd_inj_vs_tgt": 7.067,
+   "mcd_bl_vs_tgt": 7.3611
+  },
+  {
+   "pair_idx": 188,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.4511,
+   "mcd_bl_vs_tgt": 5.4511
+  },
+  {
+   "pair_idx": 189,
+   "available": true,
+   "mcd_inj_vs_bl": 6.6303,
+   "mcd_inj_vs_tgt": 6.3901,
+   "mcd_bl_vs_tgt": 4.9399
+  },
+  {
+   "pair_idx": 190,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.5731,
+   "mcd_bl_vs_tgt": 6.5731
+  },
+  {
+   "pair_idx": 191,
+   "available": true,
+   "mcd_inj_vs_bl": 4.2313,
+   "mcd_inj_vs_tgt": 10.0905,
+   "mcd_bl_vs_tgt": 8.2289
+  },
+  {
+   "pair_idx": 192,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.7315,
+   "mcd_bl_vs_tgt": 6.7315
+  },
+  {
+   "pair_idx": 193,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.7599,
+   "mcd_bl_vs_tgt": 4.7599
+  },
+  {
+   "pair_idx": 194,
+   "available": true,
+   "mcd_inj_vs_bl": 0.9802,
+   "mcd_inj_vs_tgt": 5.8202,
+   "mcd_bl_vs_tgt": 5.6175
+  },
+  {
+   "pair_idx": 195,
+   "available": true,
+   "mcd_inj_vs_bl": 4.4776,
+   "mcd_inj_vs_tgt": 5.9304,
+   "mcd_bl_vs_tgt": 5.2037
+  },
+  {
+   "pair_idx": 196,
+   "available": true,
+   "mcd_inj_vs_bl": 2.8582,
+   "mcd_inj_vs_tgt": 5.052,
+   "mcd_bl_vs_tgt": 5.2623
+  },
+  {
+   "pair_idx": 197,
+   "available": true,
+   "mcd_inj_vs_bl": 5.4994,
+   "mcd_inj_vs_tgt": 7.1444,
+   "mcd_bl_vs_tgt": 7.3715
+  },
+  {
+   "pair_idx": 198,
+   "available": true,
+   "mcd_inj_vs_bl": 5.4332,
+   "mcd_inj_vs_tgt": 8.7996,
+   "mcd_bl_vs_tgt": 9.8227
+  },
+  {
+   "pair_idx": 199,
+   "available": true,
+   "mcd_inj_vs_bl": 3.1365,
+   "mcd_inj_vs_tgt": 8.401,
+   "mcd_bl_vs_tgt": 8.4231
+  },
+  {
+   "pair_idx": 200,
+   "available": true,
+   "mcd_inj_vs_bl": 3.4516,
+   "mcd_inj_vs_tgt": 4.1295,
+   "mcd_bl_vs_tgt": 4.8184
+  },
+  {
+   "pair_idx": 201,
+   "available": true,
+   "mcd_inj_vs_bl": 3.5686,
+   "mcd_inj_vs_tgt": 5.5977,
+   "mcd_bl_vs_tgt": 5.5443
+  },
+  {
+   "pair_idx": 202,
+   "available": true,
+   "mcd_inj_vs_bl": 4.8703,
+   "mcd_inj_vs_tgt": 6.7119,
+   "mcd_bl_vs_tgt": 6.083
+  },
+  {
+   "pair_idx": 203,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.427,
+   "mcd_bl_vs_tgt": 4.427
+  },
+  {
+   "pair_idx": 204,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.2969,
+   "mcd_bl_vs_tgt": 5.2969
+  },
+  {
+   "pair_idx": 205,
+   "available": true,
+   "mcd_inj_vs_bl": 2.787,
+   "mcd_inj_vs_tgt": 6.2083,
+   "mcd_bl_vs_tgt": 6.5416
+  },
+  {
+   "pair_idx": 206,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.9404,
+   "mcd_bl_vs_tgt": 4.9404
+  },
+  {
+   "pair_idx": 207,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.8107,
+   "mcd_bl_vs_tgt": 5.8107
+  },
+  {
+   "pair_idx": 208,
+   "available": true,
+   "mcd_inj_vs_bl": 7.1911,
+   "mcd_inj_vs_tgt": 10.0354,
+   "mcd_bl_vs_tgt": 7.5971
+  },
+  {
+   "pair_idx": 209,
+   "available": true,
+   "mcd_inj_vs_bl": 0.1938,
+   "mcd_inj_vs_tgt": 4.2285,
+   "mcd_bl_vs_tgt": 4.2233
+  },
+  {
+   "pair_idx": 210,
+   "available": true,
+   "mcd_inj_vs_bl": 4.6226,
+   "mcd_inj_vs_tgt": 6.752,
+   "mcd_bl_vs_tgt": 7.1666
+  },
+  {
+   "pair_idx": 211,
+   "available": true,
+   "mcd_inj_vs_bl": 2.62,
+   "mcd_inj_vs_tgt": 5.7019,
+   "mcd_bl_vs_tgt": 5.8088
+  },
+  {
+   "pair_idx": 212,
+   "available": true,
+   "mcd_inj_vs_bl": 3.9226,
+   "mcd_inj_vs_tgt": 7.5017,
+   "mcd_bl_vs_tgt": 7.0529
+  },
+  {
+   "pair_idx": 213,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.1899,
+   "mcd_bl_vs_tgt": 5.1899
+  },
+  {
+   "pair_idx": 214,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 8.0696,
+   "mcd_bl_vs_tgt": 8.0696
+  },
+  {
+   "pair_idx": 215,
+   "available": true,
+   "mcd_inj_vs_bl": 0.1983,
+   "mcd_inj_vs_tgt": 5.731,
+   "mcd_bl_vs_tgt": 5.7706
+  },
+  {
+   "pair_idx": 216,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.6176,
+   "mcd_bl_vs_tgt": 6.6176
+  },
+  {
+   "pair_idx": 217,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.1563,
+   "mcd_bl_vs_tgt": 7.1563
+  },
+  {
+   "pair_idx": 218,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.9074,
+   "mcd_bl_vs_tgt": 7.9074
+  },
+  {
+   "pair_idx": 219,
+   "available": true,
+   "mcd_inj_vs_bl": 3.8267,
+   "mcd_inj_vs_tgt": 5.5236,
+   "mcd_bl_vs_tgt": 6.4837
+  },
+  {
+   "pair_idx": 220,
+   "available": true,
+   "mcd_inj_vs_bl": 2.9966,
+   "mcd_inj_vs_tgt": 4.1525,
+   "mcd_bl_vs_tgt": 4.1693
+  },
+  {
+   "pair_idx": 221,
+   "available": true,
+   "mcd_inj_vs_bl": 3.3441,
+   "mcd_inj_vs_tgt": 5.7235,
+   "mcd_bl_vs_tgt": 4.8092
+  },
+  {
+   "pair_idx": 222,
+   "available": true,
+   "mcd_inj_vs_bl": 3.0141,
+   "mcd_inj_vs_tgt": 5.549,
+   "mcd_bl_vs_tgt": 5.6156
+  },
+  {
+   "pair_idx": 223,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.79,
+   "mcd_bl_vs_tgt": 4.79
+  },
+  {
+   "pair_idx": 224,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 8.0135,
+   "mcd_bl_vs_tgt": 8.0135
+  },
+  {
+   "pair_idx": 225,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.7087,
+   "mcd_bl_vs_tgt": 5.7087
+  },
+  {
+   "pair_idx": 226,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.5729,
+   "mcd_bl_vs_tgt": 6.5729
+  },
+  {
+   "pair_idx": 227,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.0396,
+   "mcd_bl_vs_tgt": 7.0396
+  },
+  {
+   "pair_idx": 228,
+   "available": true,
+   "mcd_inj_vs_bl": 0.1728,
+   "mcd_inj_vs_tgt": 10.7036,
+   "mcd_bl_vs_tgt": 10.6904
+  },
+  {
+   "pair_idx": 229,
+   "available": true,
+   "mcd_inj_vs_bl": 4.472,
+   "mcd_inj_vs_tgt": 5.7711,
+   "mcd_bl_vs_tgt": 6.4767
+  },
+  {
+   "pair_idx": 230,
+   "available": true,
+   "mcd_inj_vs_bl": 2.3121,
+   "mcd_inj_vs_tgt": 4.0634,
+   "mcd_bl_vs_tgt": 4.0744
+  },
+  {
+   "pair_idx": 231,
+   "available": true,
+   "mcd_inj_vs_bl": 6.5168,
+   "mcd_inj_vs_tgt": 7.4915,
+   "mcd_bl_vs_tgt": 6.6079
+  },
+  {
+   "pair_idx": 232,
+   "available": true,
+   "mcd_inj_vs_bl": 4.3957,
+   "mcd_inj_vs_tgt": 6.9656,
+   "mcd_bl_vs_tgt": 6.9405
+  },
+  {
+   "pair_idx": 233,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.1347,
+   "mcd_bl_vs_tgt": 6.1347
+  },
+  {
+   "pair_idx": 234,
+   "available": true,
+   "mcd_inj_vs_bl": 6.833,
+   "mcd_inj_vs_tgt": 7.1038,
+   "mcd_bl_vs_tgt": 5.661
+  },
+  {
+   "pair_idx": 235,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.0101,
+   "mcd_bl_vs_tgt": 7.0101
+  },
+  {
+   "pair_idx": 236,
+   "available": true,
+   "mcd_inj_vs_bl": 4.1069,
+   "mcd_inj_vs_tgt": 5.1158,
+   "mcd_bl_vs_tgt": 4.6785
+  },
+  {
+   "pair_idx": 237,
+   "available": true,
+   "mcd_inj_vs_bl": 3.551,
+   "mcd_inj_vs_tgt": 3.8136,
+   "mcd_bl_vs_tgt": 4.5153
+  },
+  {
+   "pair_idx": 238,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.6226,
+   "mcd_bl_vs_tgt": 6.6226
+  },
+  {
+   "pair_idx": 239,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.8208,
+   "mcd_bl_vs_tgt": 5.8208
+  },
+  {
+   "pair_idx": 240,
+   "available": true,
+   "mcd_inj_vs_bl": 0.7126,
+   "mcd_inj_vs_tgt": 6.6918,
+   "mcd_bl_vs_tgt": 6.7619
+  },
+  {
+   "pair_idx": 241,
+   "available": true,
+   "mcd_inj_vs_bl": 4.6142,
+   "mcd_inj_vs_tgt": 5.2161,
+   "mcd_bl_vs_tgt": 6.1715
+  },
+  {
+   "pair_idx": 242,
+   "available": true,
+   "mcd_inj_vs_bl": 4.3201,
+   "mcd_inj_vs_tgt": 5.5974,
+   "mcd_bl_vs_tgt": 5.6646
+  },
+  {
+   "pair_idx": 243,
+   "available": true,
+   "mcd_inj_vs_bl": 4.5802,
+   "mcd_inj_vs_tgt": 5.6585,
+   "mcd_bl_vs_tgt": 5.7487
+  },
+  {
+   "pair_idx": 244,
+   "available": true,
+   "mcd_inj_vs_bl": 4.8043,
+   "mcd_inj_vs_tgt": 7.4298,
+   "mcd_bl_vs_tgt": 7.4551
+  },
+  {
+   "pair_idx": 245,
+   "available": true,
+   "mcd_inj_vs_bl": 3.0031,
+   "mcd_inj_vs_tgt": 6.3705,
+   "mcd_bl_vs_tgt": 6.4589
+  },
+  {
+   "pair_idx": 246,
+   "available": true,
+   "mcd_inj_vs_bl": 0.408,
+   "mcd_inj_vs_tgt": 5.7488,
+   "mcd_bl_vs_tgt": 5.8629
+  },
+  {
+   "pair_idx": 247,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.0648,
+   "mcd_bl_vs_tgt": 7.0648
+  },
+  {
+   "pair_idx": 248,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.8753,
+   "mcd_bl_vs_tgt": 6.8753
+  },
+  {
+   "pair_idx": 249,
+   "available": true,
+   "mcd_inj_vs_bl": 2.4005,
+   "mcd_inj_vs_tgt": 7.0895,
+   "mcd_bl_vs_tgt": 7.3031
+  },
+  {
+   "pair_idx": 250,
+   "available": true,
+   "mcd_inj_vs_bl": 1.2127,
+   "mcd_inj_vs_tgt": 4.1651,
+   "mcd_bl_vs_tgt": 4.0163
+  },
+  {
+   "pair_idx": 251,
+   "available": true,
+   "mcd_inj_vs_bl": 3.7082,
+   "mcd_inj_vs_tgt": 5.4856,
+   "mcd_bl_vs_tgt": 4.5496
+  },
+  {
+   "pair_idx": 252,
+   "available": true,
+   "mcd_inj_vs_bl": 4.4765,
+   "mcd_inj_vs_tgt": 6.3015,
+   "mcd_bl_vs_tgt": 6.7007
+  },
+  {
+   "pair_idx": 253,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.4655,
+   "mcd_bl_vs_tgt": 5.4655
+  },
+  {
+   "pair_idx": 254,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.0175,
+   "mcd_bl_vs_tgt": 6.0175
+  },
+  {
+   "pair_idx": 255,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.7302,
+   "mcd_bl_vs_tgt": 7.7302
+  },
+  {
+   "pair_idx": 256,
+   "available": true,
+   "mcd_inj_vs_bl": 4.0952,
+   "mcd_inj_vs_tgt": 5.8166,
+   "mcd_bl_vs_tgt": 6.9907
+  },
+  {
+   "pair_idx": 257,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.6438,
+   "mcd_bl_vs_tgt": 5.6438
+  },
+  {
+   "pair_idx": 258,
+   "available": true,
+   "mcd_inj_vs_bl": 7.6862,
+   "mcd_inj_vs_tgt": 7.7231,
+   "mcd_bl_vs_tgt": 7.6892
+  },
+  {
+   "pair_idx": 259,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.8975,
+   "mcd_bl_vs_tgt": 6.8975
+  },
+  {
+   "pair_idx": 260,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.2823,
+   "mcd_bl_vs_tgt": 6.2823
+  },
+  {
+   "pair_idx": 261,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.4993,
+   "mcd_bl_vs_tgt": 4.4993
+  },
+  {
+   "pair_idx": 262,
+   "available": true,
+   "mcd_inj_vs_bl": 2.0544,
+   "mcd_inj_vs_tgt": 7.3846,
+   "mcd_bl_vs_tgt": 7.7786
+  },
+  {
+   "pair_idx": 263,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 7.2594,
+   "mcd_bl_vs_tgt": 7.2594
+  },
+  {
+   "pair_idx": 264,
+   "available": true,
+   "mcd_inj_vs_bl": 0.9571,
+   "mcd_inj_vs_tgt": 6.0259,
+   "mcd_bl_vs_tgt": 6.2562
+  },
+  {
+   "pair_idx": 265,
+   "available": true,
+   "mcd_inj_vs_bl": 7.9983,
+   "mcd_inj_vs_tgt": 7.8448,
+   "mcd_bl_vs_tgt": 8.8153
+  },
+  {
+   "pair_idx": 266,
+   "available": true,
+   "mcd_inj_vs_bl": 5.9519,
+   "mcd_inj_vs_tgt": 5.0954,
+   "mcd_bl_vs_tgt": 5.2799
+  },
+  {
+   "pair_idx": 267,
+   "available": true,
+   "mcd_inj_vs_bl": 5.4926,
+   "mcd_inj_vs_tgt": 5.812,
+   "mcd_bl_vs_tgt": 6.3113
+  },
+  {
+   "pair_idx": 268,
+   "available": true,
+   "mcd_inj_vs_bl": 0.7889,
+   "mcd_inj_vs_tgt": 10.0805,
+   "mcd_bl_vs_tgt": 10.0071
+  },
+  {
+   "pair_idx": 269,
+   "available": true,
+   "mcd_inj_vs_bl": 1.4206,
+   "mcd_inj_vs_tgt": 5.0385,
+   "mcd_bl_vs_tgt": 5.184
+  },
+  {
+   "pair_idx": 270,
+   "available": true,
+   "mcd_inj_vs_bl": 3.6667,
+   "mcd_inj_vs_tgt": 4.8463,
+   "mcd_bl_vs_tgt": 3.7731
+  },
+  {
+   "pair_idx": 271,
+   "available": true,
+   "mcd_inj_vs_bl": 0.1334,
+   "mcd_inj_vs_tgt": 6.9214,
+   "mcd_bl_vs_tgt": 6.9101
+  },
+  {
+   "pair_idx": 272,
+   "available": true,
+   "mcd_inj_vs_bl": 5.3856,
+   "mcd_inj_vs_tgt": 5.2856,
+   "mcd_bl_vs_tgt": 5.6908
+  },
+  {
+   "pair_idx": 273,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 3.9436,
+   "mcd_bl_vs_tgt": 3.9436
+  },
+  {
+   "pair_idx": 274,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.5139,
+   "mcd_bl_vs_tgt": 5.5139
+  },
+  {
+   "pair_idx": 275,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.5571,
+   "mcd_bl_vs_tgt": 5.5571
+  },
+  {
+   "pair_idx": 276,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.0355,
+   "mcd_bl_vs_tgt": 6.0355
+  },
+  {
+   "pair_idx": 277,
+   "available": true,
+   "mcd_inj_vs_bl": 5.3117,
+   "mcd_inj_vs_tgt": 9.9387,
+   "mcd_bl_vs_tgt": 10.1868
+  },
+  {
+   "pair_idx": 278,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.0827,
+   "mcd_bl_vs_tgt": 6.0827
+  },
+  {
+   "pair_idx": 279,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 4.82,
+   "mcd_bl_vs_tgt": 4.82
+  },
+  {
+   "pair_idx": 280,
+   "available": true,
+   "mcd_inj_vs_bl": 0.3964,
+   "mcd_inj_vs_tgt": 5.385,
+   "mcd_bl_vs_tgt": 5.3246
+  },
+  {
+   "pair_idx": 281,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.7621,
+   "mcd_bl_vs_tgt": 6.7621
+  },
+  {
+   "pair_idx": 282,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 9.421,
+   "mcd_bl_vs_tgt": 9.421
+  },
+  {
+   "pair_idx": 283,
+   "available": true,
+   "mcd_inj_vs_bl": 4.892,
+   "mcd_inj_vs_tgt": 5.6103,
+   "mcd_bl_vs_tgt": 6.3646
+  },
+  {
+   "pair_idx": 284,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 9.0799,
+   "mcd_bl_vs_tgt": 9.0799
+  },
+  {
+   "pair_idx": 285,
+   "available": true,
+   "mcd_inj_vs_bl": 3.5425,
+   "mcd_inj_vs_tgt": 7.7145,
+   "mcd_bl_vs_tgt": 7.703
+  },
+  {
+   "pair_idx": 286,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.0197,
+   "mcd_bl_vs_tgt": 6.0197
+  },
+  {
+   "pair_idx": 287,
+   "available": true,
+   "mcd_inj_vs_bl": 1.9023,
+   "mcd_inj_vs_tgt": 8.9075,
+   "mcd_bl_vs_tgt": 8.9037
+  },
+  {
+   "pair_idx": 288,
+   "available": true,
+   "mcd_inj_vs_bl": 6.2792,
+   "mcd_inj_vs_tgt": 8.6824,
+   "mcd_bl_vs_tgt": 6.6871
+  },
+  {
+   "pair_idx": 289,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.7612,
+   "mcd_bl_vs_tgt": 5.7612
+  },
+  {
+   "pair_idx": 290,
+   "available": true,
+   "mcd_inj_vs_bl": 5.0858,
+   "mcd_inj_vs_tgt": 4.9223,
+   "mcd_bl_vs_tgt": 4.53
+  },
+  {
+   "pair_idx": 291,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.1725,
+   "mcd_bl_vs_tgt": 6.1725
+  },
+  {
+   "pair_idx": 292,
+   "available": true,
+   "mcd_inj_vs_bl": 1.8729,
+   "mcd_inj_vs_tgt": 4.7459,
+   "mcd_bl_vs_tgt": 4.6896
+  },
+  {
+   "pair_idx": 293,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 5.3204,
+   "mcd_bl_vs_tgt": 5.3204
+  },
+  {
+   "pair_idx": 294,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.1607,
+   "mcd_bl_vs_tgt": 6.1607
+  },
+  {
+   "pair_idx": 295,
+   "available": true,
+   "mcd_inj_vs_bl": 0.7014,
+   "mcd_inj_vs_tgt": 6.7538,
+   "mcd_bl_vs_tgt": 6.6794
+  },
+  {
+   "pair_idx": 296,
+   "available": true,
+   "mcd_inj_vs_bl": 0.3637,
+   "mcd_inj_vs_tgt": 4.9899,
+   "mcd_bl_vs_tgt": 5.0079
+  },
+  {
+   "pair_idx": 297,
+   "available": true,
+   "mcd_inj_vs_bl": 5.7424,
+   "mcd_inj_vs_tgt": 9.0816,
+   "mcd_bl_vs_tgt": 9.2197
+  },
+  {
+   "pair_idx": 298,
+   "available": true,
+   "mcd_inj_vs_bl": 5.5655,
+   "mcd_inj_vs_tgt": 6.2298,
+   "mcd_bl_vs_tgt": 7.6427
+  },
+  {
+   "pair_idx": 299,
+   "available": true,
+   "mcd_inj_vs_bl": 0.0,
+   "mcd_inj_vs_tgt": 6.0605,
+   "mcd_bl_vs_tgt": 6.0605
+  }
+ ]
+}

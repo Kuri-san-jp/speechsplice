@@ -1,0 +1,46 @@
+{
+ "en_injection_judge.json": {
+  "source": "eval_results/_appk_enjudge/judge_ctc/en_ctc_lr_judge.json",
+  "md5": "81cd4950efb00a6c49dd41d643917c61"
+ },
+ "zh_injection_judge.json": {
+  "source": "eval_results/_appk_zhjudge/rejudge_ctc/ctc_lr_judge.json",
+  "md5": "164b0b3fc2520c7cc9c56befae8bd7fe"
+ },
+ "ja_injection_furigana.json": {
+  "source": "eval_results/cjk_n300_rewav/furigana_verify.json",
+  "md5": "4652ce5c621b017bb7bc6b1c4604e4e5"
+ },
+ "ja_injection_norm_check.json": {
+  "source": "eval_results/cjk_n300_rewav/furigana_norm_check.json",
+  "md5": "e7785f0437a04b08f84a7869f438e38e"
+ },
+ "ipa_excluded_empty.json": {
+  "source": "eval_results/_appk_redo/ipa_summary_excl_empty.json",
+  "md5": "5bc392fe27d5daee1baaaeeb1e0231cf"
+ },
+ "ipa_en.json": {
+  "source": "eval_results/_appk_redo/ipa_en_n300.json",
+  "md5": "90e07144d2af1a704a954ecb5251a34b"
+ },
+ "ipa_ja.json": {
+  "source": "eval_results/_appk_redo/ipa_ja_n300.json",
+  "md5": "963cb9beeccc78cdc544e81c0818351f"
+ },
+ "ipa_zh.json": {
+  "source": "eval_results/_appk_redo/ipa_zh_n300.json",
+  "md5": "d983664c98371bf43fd1c25335990533"
+ },
+ "ipa_ko.json": {
+  "source": "eval_results/_appk_redo/ipa_ko_n300.json",
+  "md5": "fd4fb5f77a9febd60c9d4e0addd48fe2"
+ },
+ "ipa_fr.json": {
+  "source": "eval_results/_appk_redo/ipa_fr_n300.json",
+  "md5": "d767980b9bebef2cd78b35f5178e99c6"
+ },
+ "ipa_de.json": {
+  "source": "eval_results/_appk_redo/ipa_de_n300.json",
+  "md5": "463b73f8017baa47a7965753e6e63f7e"
+ }
+}

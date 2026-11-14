@@ -1,0 +1,943 @@
+{
+ "rows": [
+  {
+   "model": "T5Gemma-TTS",
+   "lang": "EN",
+   "key": "t5gemma_en",
+   "family": "encoder-decoder",
+   "L": 26,
+   "point_mcd": {
+    "file": "point_mcd/t5gemma_en.json",
+    "source": "restore_20261114/mcd_out/sweep_t5gemma_en_L25.json",
+    "md5": "5e42881e3a84dc9cab15cec60bd7dbdc",
+    "note": "recomputed on 2026-11-14 (per-row values unchanged; diagnostic fields removed)"
+   },
+   "point_pib": {
+    "file": "point_pib/t5gemma_en.json",
+    "source": "eval_results/_v1L_t5gemma_en_L25.json",
+    "md5": "0f1b46f61f3d32570c05e8de2db3785f"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/t5gemma_en_l01.json",
+     "source": "eval_results/_v1L_t5gemma_en_L0.json",
+     "md5": "62e36f70433d9f4e75367f83b2fdc30c",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/t5gemma_en_l08.json",
+     "source": "eval_results/_v1L_t5gemma_en_L7.json",
+     "md5": "7f709bfcba3a15a9d596cb7300ff0864",
+     "lstar": 8
+    },
+    {
+     "file": "sweep_pib/t5gemma_en_l15.json",
+     "source": "eval_results/_v1L_t5gemma_en_L14.json",
+     "md5": "5ef6c5485f9af03c879d85e43a8da64a",
+     "lstar": 15
+    },
+    {
+     "file": "sweep_pib/t5gemma_en_l22.json",
+     "source": "eval_results/_v1L_t5gemma_en_L21.json",
+     "md5": "d6227c24eda4d6a15d96617b82e3c0e2",
+     "lstar": 22
+    },
+    {
+     "file": "sweep_pib/t5gemma_en_l26.json",
+     "source": "eval_results/_v1L_t5gemma_en_L25.json",
+     "md5": "0f1b46f61f3d32570c05e8de2db3785f",
+     "lstar": 26
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/t5gemma_en.json",
+    "source": "eval_results/multientity_en_300/multientity_asr_scores.json",
+    "md5": "8631c5d440f8091acff3cd41070dea1b",
+    "judge": "whisper_surface"
+   }
+  },
+  {
+   "model": "T5Gemma-TTS",
+   "lang": "JA",
+   "key": "t5gemma_ja",
+   "family": "encoder-decoder",
+   "L": 26,
+   "point_mcd": {
+    "file": "point_mcd/t5gemma_ja.json",
+    "source": "eval_results/_caseSPTK_whole_t5gemma_ja.json",
+    "md5": "7262960f4b8160cbbc7a1959349cc92e"
+   },
+   "point_pib": {
+    "file": "point_pib/t5gemma_ja.json",
+    "source": "eval_results/_v1all_t5gemma_ja.json",
+    "md5": "a14a00eee6667699dca950d5683996a4"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/t5gemma_ja_l01.json",
+     "source": "eval_results/_v1L_t5gemma_ja_L0.json",
+     "md5": "146da4b1e5caa3edb59064be41310963",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/t5gemma_ja_l08.json",
+     "source": "eval_results/_v1L_t5gemma_ja_L7.json",
+     "md5": "a5127fc60bd66bcb6cb95192d3b53fc4",
+     "lstar": 8
+    },
+    {
+     "file": "sweep_pib/t5gemma_ja_l15.json",
+     "source": "eval_results/_v1L_t5gemma_ja_L14.json",
+     "md5": "b07e63189c1849e36fd6e190b8019792",
+     "lstar": 15
+    },
+    {
+     "file": "sweep_pib/t5gemma_ja_l22.json",
+     "source": "eval_results/_v1L_t5gemma_ja_L21.json",
+     "md5": "62d0ed0f48c49360da0925da20c1aed8",
+     "lstar": 22
+    },
+    {
+     "file": "sweep_pib/t5gemma_ja_l26.json",
+     "source": "eval_results/_v1L_t5gemma_ja_L25.json",
+     "md5": "355028234f62171b26f196e8cf1fb776",
+     "lstar": 26
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/t5gemma_ja.json",
+    "source": "eval_results/multientity_ja_300/asr_furigana.json",
+    "md5": "3196296b2d2ef05bca0b43003c36417e",
+    "judge": "furigana_reading"
+   }
+  },
+  {
+   "model": "T5Gemma-TTS",
+   "lang": "ZH",
+   "key": "t5gemma_zh",
+   "family": "encoder-decoder",
+   "L": 26,
+   "point_mcd": {
+    "file": "point_mcd/t5gemma_zh.json",
+    "source": "eval_results/_caseSPTK_whole_t5gemma_zh.json",
+    "md5": "80c5b8753dfe9c125f338ede59a9048c"
+   },
+   "point_pib": {
+    "file": "point_pib/t5gemma_zh.json",
+    "source": "eval_results/_v1all_t5gemma_zh.json",
+    "md5": "e170e141edc72ec82d7ee7ee9afdba0b"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/t5gemma_zh_l01.json",
+     "source": "eval_results/_v1L_t5gemma_zh_L0.json",
+     "md5": "de0318c6fae5354f61e33ebc000901fb",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/t5gemma_zh_l08.json",
+     "source": "eval_results/_v1L_t5gemma_zh_L7.json",
+     "md5": "919389b17e0c99687156a0fb4d7b5f9e",
+     "lstar": 8
+    },
+    {
+     "file": "sweep_pib/t5gemma_zh_l15.json",
+     "source": "eval_results/_v1L_t5gemma_zh_L14.json",
+     "md5": "d01115fc4c9b8c70465399e8ad53bd52",
+     "lstar": 15
+    },
+    {
+     "file": "sweep_pib/t5gemma_zh_l22.json",
+     "source": "eval_results/_v1L_t5gemma_zh_L21.json",
+     "md5": "71d482cabe34a485bc4105d016de5614",
+     "lstar": 22
+    },
+    {
+     "file": "sweep_pib/t5gemma_zh_l26.json",
+     "source": "eval_results/_v1L_t5gemma_zh_L25.json",
+     "md5": "d1635b87ca831dfb672353f34565a24b",
+     "lstar": 26
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/t5gemma_zh.json",
+    "source": "eval_results/multientity_zh_v2_300/multientity_asr_scores_pinyin.json",
+    "md5": "74301b74d0d03693121946d8b6d6cf3e",
+    "judge": "pinyin"
+   }
+  },
+  {
+   "model": "SpeechT5",
+   "lang": "EN",
+   "key": "speecht5_en",
+   "family": "encoder-decoder",
+   "L": 12,
+   "point_mcd": {
+    "file": "point_mcd/speecht5_en.json",
+    "source": "restore_20261114/mcd_out/sweep_s5_en_today.json",
+    "md5": "ff6d26b4fc679e87bbc2aa4ec702b9a0",
+    "note": "recomputed on 2026-11-14 (per-row values unchanged; diagnostic fields removed)"
+   },
+   "point_pib": {
+    "file": "point_pib/speecht5_en.json",
+    "source": "eval_results/_v1L_s5_en_today.json",
+    "md5": "073a65aa933fc8ab98fc4e95bdf40112"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/speecht5_en_l01.json",
+     "source": "eval_results/_v1L_s5_en_L1.json",
+     "md5": "d79cd046524af9cc4529362ce6155940",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/speecht5_en_l03.json",
+     "source": "eval_results/_v1L_s5_en_L3.json",
+     "md5": "70a017388788ee55db31ab8726a86a07",
+     "lstar": 3
+    },
+    {
+     "file": "sweep_pib/speecht5_en_l06.json",
+     "source": "eval_results/_v1L_s5_en_L6.json",
+     "md5": "be40cf15fd0cf60fb8e4bde1cb800596",
+     "lstar": 6
+    },
+    {
+     "file": "sweep_pib/speecht5_en_l09.json",
+     "source": "eval_results/_v1L_s5_en_L9.json",
+     "md5": "11f160ec3fbd28ef0847812b44017b6c",
+     "lstar": 9
+    },
+    {
+     "file": "sweep_pib/speecht5_en_l12.json",
+     "source": "eval_results/_v1L_s5_en_today.json",
+     "md5": "073a65aa933fc8ab98fc4e95bdf40112",
+     "lstar": 12
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/speecht5_en.json",
+    "source": "eval_results/multientity_speecht5_en_300/multientity_asr_scores.json",
+    "md5": "e8728c0fd1f63fb0047314ef889e67e3",
+    "judge": "whisper_surface"
+   }
+  },
+  {
+   "model": "LongCat-AudioDiT",
+   "lang": "EN",
+   "key": "longcat_en",
+   "family": "encoder-decoder",
+   "L": 12,
+   "point_mcd": {
+    "file": "point_mcd/longcat_en.json",
+    "source": "eval_results/_caseSPTK_whole_longcat_en.json",
+    "md5": "bd77c7f8173b8874e3f3834ca625aefc"
+   },
+   "point_pib": {
+    "file": "point_pib/longcat_en.json",
+    "source": "eval_results/_v1all_longcat_en.json",
+    "md5": "a8e78a9a36a1c65854936da5ae68280b"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/longcat_en_l01.json",
+     "source": "eval_results/_v1L_lc_en_L1.json",
+     "md5": "2a89e4d303e1bd3425b03483aeba9314",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/longcat_en_l03.json",
+     "source": "eval_results/_v1L_lc_en_L3.json",
+     "md5": "d535b44190d4c9cc3a46ce3efa722cc8",
+     "lstar": 3
+    },
+    {
+     "file": "sweep_pib/longcat_en_l06.json",
+     "source": "eval_results/_v1L_lc_en_L6.json",
+     "md5": "49b09e3199667275dd831529c8698815",
+     "lstar": 6
+    },
+    {
+     "file": "sweep_pib/longcat_en_l09.json",
+     "source": "eval_results/_v1L_lc_en_L9.json",
+     "md5": "be068f42a76096d46eb153f95cb21935",
+     "lstar": 9
+    },
+    {
+     "file": "sweep_pib/longcat_en_l12.json",
+     "source": "eval_results/_v1L_lc_en_L12.json",
+     "md5": "f0bc335ed555f6657be6be1c84841b83",
+     "lstar": 12
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/longcat_en.json",
+    "source": "eval_results/multientity_longcat_en_300/multientity_asr_scores.json",
+    "md5": "7c05f40d55f04afb9f478b9c7ae7987a",
+    "judge": "whisper_surface"
+   }
+  },
+  {
+   "model": "LongCat-AudioDiT",
+   "lang": "ZH",
+   "key": "longcat_zh",
+   "family": "encoder-decoder",
+   "L": 12,
+   "point_mcd": {
+    "file": "point_mcd/longcat_zh.json",
+    "source": "eval_results/_caseSPTK_whole_longcat_zh_ext.json",
+    "md5": "cf61a14a71276197114f53d28bd9dcc1"
+   },
+   "point_pib": {
+    "file": "point_pib/longcat_zh.json",
+    "source": "eval_results/_v1all_longcat_zh.json",
+    "md5": "6a3e006686f46f6cfa2a0ba716485e35"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/longcat_zh_l01.json",
+     "source": "eval_results/_v1L_lc_zh_L1.json",
+     "md5": "9785fcd33b962441e2ebd591c65801de",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/longcat_zh_l03.json",
+     "source": "eval_results/_v1L_lc_zh_L3.json",
+     "md5": "e42d56e20045d7637547b49eed75fb7c",
+     "lstar": 3
+    },
+    {
+     "file": "sweep_pib/longcat_zh_l06.json",
+     "source": "eval_results/_v1L_lc_zh_L6.json",
+     "md5": "8747fa0fd754c15e5bec32a095e2a1b2",
+     "lstar": 6
+    },
+    {
+     "file": "sweep_pib/longcat_zh_l09.json",
+     "source": "eval_results/_v1L_lc_zh_L9.json",
+     "md5": "2ab93218e6c2e70bf25431b3b773e90c",
+     "lstar": 9
+    },
+    {
+     "file": "sweep_pib/longcat_zh_l12.json",
+     "source": "eval_results/_v1L_lc_zh_L12.json",
+     "md5": "a724ee775e3941f56d155e7897df61e5",
+     "lstar": 12
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/longcat_zh.json",
+    "source": "eval_results/multientity_longcat_zh_300_ext/multientity_asr_scores_pinyin.json",
+    "md5": "2ae68993e7bc42b470235bb69163c3a7",
+    "judge": "pinyin"
+   }
+  },
+  {
+   "model": "Irodori-TTS",
+   "lang": "JA",
+   "key": "irodori_ja",
+   "family": "encoder-decoder",
+   "L": 25,
+   "point_mcd": {
+    "file": "point_mcd/irodori_ja.json",
+    "source": "eval_results/_caseSPTK_whole_irodori_ja.json",
+    "md5": "b1ccb2d8d3a956de94222ea7657fb7bb"
+   },
+   "point_pib": {
+    "file": "point_pib/irodori_ja.json",
+    "source": "eval_results/_v1all_irodori_ja.json",
+    "md5": "ec4e545f3c8ff3c2df0cecb07d19de02"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/irodori_ja_l01.json",
+     "source": "eval_results/_v1L_ir_ja_L1.json",
+     "md5": "625ea33cf0f1767958f3eccab17b1930",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/irodori_ja_l07.json",
+     "source": "eval_results/_v1L_ir_ja_L7.json",
+     "md5": "6406ebd1bad43f65874d97b7cdff24c6",
+     "lstar": 7
+    },
+    {
+     "file": "sweep_pib/irodori_ja_l13.json",
+     "source": "eval_results/_v1L_ir_ja_L13.json",
+     "md5": "47051ccc8358295915aa7b7e33191a9d",
+     "lstar": 13
+    },
+    {
+     "file": "sweep_pib/irodori_ja_l19.json",
+     "source": "eval_results/_v1L_ir_ja_L19.json",
+     "md5": "d5981eb7d81b703e25276e9f7ce0f6ad",
+     "lstar": 19
+    },
+    {
+     "file": "sweep_pib/irodori_ja_l25.json",
+     "source": "eval_results/_v1L_ir_ja_L25.json",
+     "md5": "271823f4d731983b3a3741cadf1be9e5",
+     "lstar": 25
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/irodori_ja.json",
+    "source": "eval_results/multientity_irodori_ja_300/asr_furigana.json",
+    "md5": "550b89df1c4f7d1096f58fd8f2ad6585",
+    "judge": "furigana_reading"
+   }
+  },
+  {
+   "model": "Kiseki-TTS",
+   "lang": "JA",
+   "key": "kiseki_ja",
+   "family": "encoder-decoder",
+   "L": 12,
+   "point_mcd": {
+    "file": "point_mcd/kiseki_ja.json",
+    "source": "eval_results/_caseSPTK_whole_kiseki_ja.json",
+    "md5": "e57b890756d22959fb2538bb44e69de3"
+   },
+   "point_pib": {
+    "file": "point_pib/kiseki_ja.json",
+    "source": "eval_results/_v1all_kiseki_ja.json",
+    "md5": "c97a2ee1de835cdecd0da798359cbe20"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/kiseki_ja_l01.json",
+     "source": "eval_results/_v1L_ki_ja_L1.json",
+     "md5": "7bad958c4d6a438f6193024087d9bf31",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/kiseki_ja_l03.json",
+     "source": "eval_results/_v1L_ki_ja_L3.json",
+     "md5": "e3465d2f14108055d6112aea0c9dbaac",
+     "lstar": 3
+    },
+    {
+     "file": "sweep_pib/kiseki_ja_l06.json",
+     "source": "eval_results/_v1L_ki_ja_L6.json",
+     "md5": "4ef87b07715b4bbfdb11a6451deca5a6",
+     "lstar": 6
+    },
+    {
+     "file": "sweep_pib/kiseki_ja_l09.json",
+     "source": "eval_results/_v1L_ki_ja_L9.json",
+     "md5": "7fda7d36eb6689502900ce4ab1066d97",
+     "lstar": 9
+    },
+    {
+     "file": "sweep_pib/kiseki_ja_l12.json",
+     "source": "eval_results/_v1L_ki_ja_L12.json",
+     "md5": "b59d93542ba243f444bfbf49aa2e983b",
+     "lstar": 12
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/kiseki_ja.json",
+    "source": "eval_results/multientity_kiseki_ja_300/asr_furigana.json",
+    "md5": "2ef5cbb296eac46fc602cc65c54fa3da",
+    "judge": "furigana_reading"
+   }
+  },
+  {
+   "model": "Qwen3-TTS",
+   "lang": "EN",
+   "key": "qwen3_en",
+   "family": "decoder-only",
+   "L": 28,
+   "point_mcd": {
+    "file": "point_mcd/qwen3_en.json",
+    "source": "eval_results/_caseSPTK_whole_qwen3_en.json",
+    "md5": "3b321d85acd0434b43dae529eb437fa9"
+   },
+   "point_pib": {
+    "file": "point_pib/qwen3_en.json",
+    "source": "eval_results/_v1all_qwen3_en.json",
+    "md5": "3dc8134f6f160aa3d8d8fa241ab67906"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/qwen3_en_l01.json",
+     "source": "eval_results/_v1L_qwen3_en_L0.json",
+     "md5": "3fc8172059a0de366e18b7a6c0fc9a8d",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/qwen3_en_l10.json",
+     "source": "eval_results/_v1L_qwen3_en_L9.json",
+     "md5": "11ae7fcbf5b5adc482dc232c59b822c5",
+     "lstar": 10
+    },
+    {
+     "file": "sweep_pib/qwen3_en_l14.json",
+     "source": "eval_results/_v1L_qwen3_en_L13.json",
+     "md5": "25575b51d741613f16234708dab5097f",
+     "lstar": 14
+    },
+    {
+     "file": "sweep_pib/qwen3_en_l21.json",
+     "source": "eval_results/_v1L_qwen3_en_L20.json",
+     "md5": "8952e66cb66be0058393d02e4a04bb81",
+     "lstar": 21
+    },
+    {
+     "file": "sweep_pib/qwen3_en_l27.json",
+     "source": "eval_results/_v1L_qwen3_en_L26.json",
+     "md5": "42639e38afde5dbe49f0687e234d8312",
+     "lstar": 27
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/qwen3_en.json",
+    "source": "eval_results/multientity_qwen3_en_300/multientity_asr_scores.json",
+    "md5": "d5ea431711ea9cda0097cbda41c2d745",
+    "judge": "whisper_surface"
+   }
+  },
+  {
+   "model": "Qwen3-TTS",
+   "lang": "JA",
+   "key": "qwen3_ja",
+   "family": "decoder-only",
+   "L": 28,
+   "point_mcd": {
+    "file": "point_mcd/qwen3_ja.json",
+    "source": "eval_results/_caseSPTK_whole_qwen3_ja.json",
+    "md5": "19d26b313bf73f75fd32579e35636bae"
+   },
+   "point_pib": {
+    "file": "point_pib/qwen3_ja.json",
+    "source": "eval_results/_v1all_qwen3_ja.json",
+    "md5": "cb81cbab320a3bd9053c302b6aabd89a"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/qwen3_ja_l01.json",
+     "source": "eval_results/_v1L_qwen3_ja_L0.json",
+     "md5": "3d856ad043f68e88fb6758825a9e87a5",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/qwen3_ja_l10.json",
+     "source": "eval_results/_v1L_qwen3_ja_L9.json",
+     "md5": "d08fd2865a9b2a503f6d8defcd673213",
+     "lstar": 10
+    },
+    {
+     "file": "sweep_pib/qwen3_ja_l14.json",
+     "source": "eval_results/_v1L_qwen3_ja_L13.json",
+     "md5": "cc8d4ccd95f681c6b195147a67944279",
+     "lstar": 14
+    },
+    {
+     "file": "sweep_pib/qwen3_ja_l21.json",
+     "source": "eval_results/_v1L_qwen3_ja_L20.json",
+     "md5": "0565d803298307abc64c11153b5bce6b",
+     "lstar": 21
+    },
+    {
+     "file": "sweep_pib/qwen3_ja_l27.json",
+     "source": "eval_results/_v1L_qwen3_ja_L26.json",
+     "md5": "91c7fc3c5ff7902e0a12e24cf75830fc",
+     "lstar": 27
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/qwen3_ja.json",
+    "source": "eval_results/multientity_qwen3_ja_300/asr_furigana.json",
+    "md5": "22f3dc58ff20400338b477025451a408",
+    "judge": "furigana_reading"
+   }
+  },
+  {
+   "model": "Qwen3-TTS",
+   "lang": "ZH",
+   "key": "qwen3_zh",
+   "family": "decoder-only",
+   "L": 28,
+   "point_mcd": {
+    "file": "point_mcd/qwen3_zh.json",
+    "source": "eval_results/_caseSPTK_whole_qwen3_zh.json",
+    "md5": "eae73c4f8d649dc07e7e2ad795deb829"
+   },
+   "point_pib": {
+    "file": "point_pib/qwen3_zh.json",
+    "source": "eval_results/_v1all_qwen3_zh.json",
+    "md5": "0cb920aac147d2d71eee3e32e0fbb43e"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/qwen3_zh_l01.json",
+     "source": "eval_results/_v1L_qwen3_zh_L0.json",
+     "md5": "12f6002dad253a4ee989e73b40f5a78e",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/qwen3_zh_l10.json",
+     "source": "eval_results/_v1L_qwen3_zh_L9.json",
+     "md5": "6a199d2a4dcdcfd23cfc14240b70e2db",
+     "lstar": 10
+    },
+    {
+     "file": "sweep_pib/qwen3_zh_l14.json",
+     "source": "eval_results/_v1L_qwen3_zh_L13.json",
+     "md5": "ce914c195d0010d72c42cbd777534059",
+     "lstar": 14
+    },
+    {
+     "file": "sweep_pib/qwen3_zh_l21.json",
+     "source": "eval_results/_v1L_qwen3_zh_L20.json",
+     "md5": "6bde8b4efb7ed277b4296f8459050093",
+     "lstar": 21
+    },
+    {
+     "file": "sweep_pib/qwen3_zh_l27.json",
+     "source": "eval_results/_v1L_qwen3_zh_L26.json",
+     "md5": "55d8b08e9e1ff9e28cf6a7dc787191d6",
+     "lstar": 27
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/qwen3_zh.json",
+    "source": "eval_results/multientity_qwen3_zh_v2_300/multientity_asr_scores_pinyin.json",
+    "md5": "7175a6302bec685f496ccc38ca035c5c",
+    "judge": "pinyin"
+   }
+  },
+  {
+   "model": "XTTS-v2",
+   "lang": "EN",
+   "key": "xtts_en",
+   "family": "decoder-only",
+   "L": 30,
+   "point_mcd": {
+    "file": "point_mcd/xtts_en.json",
+    "source": "eval_results/_caseSPTK_whole_xtts_en.json",
+    "md5": "31d5e0d1e8c07bc67d7927635a79b02c"
+   },
+   "point_pib": {
+    "file": "point_pib/xtts_en.json",
+    "source": "eval_results/_v1all_xtts_en.json",
+    "md5": "bcd7996ccdd81769a53a06f8eea2b8bf"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/xtts_en_l01.json",
+     "source": "eval_results/_v1L_xtts_en_L00.json",
+     "md5": "1256d46cdc6dbae9abb30ac2b2f100a0",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/xtts_en_l09.json",
+     "source": "eval_results/_v1L_xtts_en_L08.json",
+     "md5": "d2f41ab1205fa9c36a524cc93f97fe30",
+     "lstar": 9
+    },
+    {
+     "file": "sweep_pib/xtts_en_l16.json",
+     "source": "eval_results/_v1L_xtts_en_L15.json",
+     "md5": "511c532b6e936a8f8d2d407f8ce8ec91",
+     "lstar": 16
+    },
+    {
+     "file": "sweep_pib/xtts_en_l24.json",
+     "source": "eval_results/_v1L_xtts_en_L23.json",
+     "md5": "86070f18c49a47b6ef9a8b816be3e360",
+     "lstar": 24
+    },
+    {
+     "file": "sweep_pib/xtts_en_l29.json",
+     "source": "eval_results/_v1L_xtts_en_L28.json",
+     "md5": "17737c0e96108971652cecfd392d3296",
+     "lstar": 29
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/xtts_en.json",
+    "source": "eval_results/multientity_xtts_en_300/multientity_asr_scores.json",
+    "md5": "1559d43eea70d540d871b05161ea7a4b",
+    "judge": "whisper_surface"
+   }
+  },
+  {
+   "model": "Llasa-3B",
+   "lang": "EN",
+   "key": "llasa_en",
+   "family": "decoder-only",
+   "L": 28,
+   "point_mcd": {
+    "file": "point_mcd/llasa_en.json",
+    "source": "restore_20261114/mcd_out/sweep_llasa_en_L26.json",
+    "md5": "03d64985dc17fae11ff89517e0037c76",
+    "note": "recomputed on 2026-11-14 (per-row values unchanged; diagnostic fields removed)"
+   },
+   "point_pib": {
+    "file": "point_pib/llasa_en.json",
+    "source": "eval_results/_v1L_llasa_en_L26.json",
+    "md5": "70cf69089b65390417c012139cdc12dd"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/llasa_en_l01.json",
+     "source": "eval_results/_v1L_llasa_en_L00.json",
+     "md5": "6dddc33cc4f484405f607d7d91541e3f",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/llasa_en_l08.json",
+     "source": "eval_results/_v1L_llasa_en_L07.json",
+     "md5": "9af38c3549cac2e6649ee5b842642a44",
+     "lstar": 8
+    },
+    {
+     "file": "sweep_pib/llasa_en_l15.json",
+     "source": "eval_results/_v1L_llasa_en_L14.json",
+     "md5": "fcfd569b59924b3032e80e5c2a2f9715",
+     "lstar": 15
+    },
+    {
+     "file": "sweep_pib/llasa_en_l22.json",
+     "source": "eval_results/_v1L_llasa_en_L21.json",
+     "md5": "05efd7be6fa147d09584f79b196e5728",
+     "lstar": 22
+    },
+    {
+     "file": "sweep_pib/llasa_en_l27.json",
+     "source": "eval_results/_v1L_llasa_en_L26.json",
+     "md5": "70cf69089b65390417c012139cdc12dd",
+     "lstar": 27
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/llasa_en.json",
+    "source": "eval_results/multientity_llasa_en_300/multientity_asr_scores.json",
+    "md5": "e6ddd86b8293ec316e013fa51c1a3e8a",
+    "judge": "whisper_surface"
+   }
+  },
+  {
+   "model": "Llasa-3B",
+   "lang": "ZH",
+   "key": "llasa_zh",
+   "family": "decoder-only",
+   "L": 28,
+   "point_mcd": {
+    "file": "point_mcd/llasa_zh.json",
+    "source": "restore_20261114/mcd_out/sweep_llasa_zh_L26.json",
+    "md5": "e8ec6b629d98d3bc85fcd896a2f45f55",
+    "note": "recomputed on 2026-11-14 (per-row values unchanged; diagnostic fields removed)"
+   },
+   "point_pib": {
+    "file": "point_pib/llasa_zh.json",
+    "source": "eval_results/_v1L_llasa_zh_L26_n300.json",
+    "md5": "af1b1e1a3d5e931a40d51863e43c635a"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/llasa_zh_l01.json",
+     "source": "eval_results/_v1L_llasa_zh_L00_n300.json",
+     "md5": "d9e388aca289252ef00abff994461b52",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/llasa_zh_l08.json",
+     "source": "eval_results/_v1L_llasa_zh_L07_n300.json",
+     "md5": "6953a1b803186f5fabf333730ddde7d8",
+     "lstar": 8
+    },
+    {
+     "file": "sweep_pib/llasa_zh_l15.json",
+     "source": "eval_results/_v1L_llasa_zh_L14_n300.json",
+     "md5": "0e4db80e16285f4fb63562de95d273a4",
+     "lstar": 15
+    },
+    {
+     "file": "sweep_pib/llasa_zh_l22.json",
+     "source": "eval_results/_v1L_llasa_zh_L21_n300.json",
+     "md5": "dabac8587f817ccaa3d5d215856b7c16",
+     "lstar": 22
+    },
+    {
+     "file": "sweep_pib/llasa_zh_l27.json",
+     "source": "eval_results/_v1L_llasa_zh_L26_n300.json",
+     "md5": "af1b1e1a3d5e931a40d51863e43c635a",
+     "lstar": 27
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/llasa_zh.json",
+    "source": "eval_results/multientity_llasa_zh_300/multientity_asr_scores_pinyin.json",
+    "md5": "9115f31eeef5992ab447ae5eb561f57f",
+    "judge": "pinyin"
+   }
+  },
+  {
+   "model": "CSM-1B",
+   "lang": "EN",
+   "key": "csm_en",
+   "family": "decoder-only",
+   "L": 16,
+   "point_mcd": {
+    "file": "point_mcd/csm_en.json",
+    "source": "eval_results/_caseSPTK_whole_csm_en.json",
+    "md5": "6a757b362f3168b38f30da88003d5929"
+   },
+   "point_pib": {
+    "file": "point_pib/csm_en.json",
+    "source": "eval_results/_v1all_csm_en.json",
+    "md5": "cc40485d6fb69ff27c471600cc1af4c0"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/csm_en_l01.json",
+     "source": "eval_results/_v1L_csm_en_L0.json",
+     "md5": "697adf8018d74f3fb48ff91888b997bc",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/csm_en_l04.json",
+     "source": "eval_results/_v1L_csm_en_L3.json",
+     "md5": "785f1f041e56c8a18a77ce4427e77832",
+     "lstar": 4
+    },
+    {
+     "file": "sweep_pib/csm_en_l08.json",
+     "source": "eval_results/_v1L_csm_en_L7.json",
+     "md5": "4ef01c5e882b2b103e9afc68e8db1855",
+     "lstar": 8
+    },
+    {
+     "file": "sweep_pib/csm_en_l11.json",
+     "source": "eval_results/_v1L_csm_en_L10.json",
+     "md5": "3e83191a7fffc472cd8de316f72cab1b",
+     "lstar": 11
+    },
+    {
+     "file": "sweep_pib/csm_en_l15.json",
+     "source": "eval_results/_v1L_csm_en_L14.json",
+     "md5": "8930e04ef5136a6381bb9c26114adb2d",
+     "lstar": 15
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/csm_en.json",
+    "source": "eval_results/csm_multientity_en_300/multientity_asr_scores.json",
+    "md5": "571f32de8736e9cf18c4cbdcb67bd1a6",
+    "judge": "whisper_surface"
+   }
+  },
+  {
+   "model": "Bark",
+   "lang": "EN",
+   "key": "bark_en",
+   "family": "decoder-only",
+   "L": 24,
+   "point_mcd": {
+    "file": "point_mcd/bark_en.json",
+    "source": "eval_results/_caseSPTK_whole_bark_en.json",
+    "md5": "84a7fec0a9917d1695bf36b3964fbba3"
+   },
+   "point_pib": {
+    "file": "point_pib/bark_en.json",
+    "source": "eval_results/_v1all_bark_en.json",
+    "md5": "82659c9afd407240c0154ebfe5bab1b0"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/bark_en_l01.json",
+     "source": "eval_results/_v1L_bark_en_L0.json",
+     "md5": "a464a6549c35357eacd719f1832008e2",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/bark_en_l06.json",
+     "source": "eval_results/_v1L_bark_en_L5.json",
+     "md5": "25e7945ea2522507850da806e7e6e7ec",
+     "lstar": 6
+    },
+    {
+     "file": "sweep_pib/bark_en_l12.json",
+     "source": "eval_results/_v1L_bark_en_L11.json",
+     "md5": "69a3e071b9b8ab0338a9fc771246d62a",
+     "lstar": 12
+    },
+    {
+     "file": "sweep_pib/bark_en_l17.json",
+     "source": "eval_results/_v1L_bark_en_L16.json",
+     "md5": "c5149550eda5c76bbfcae423af832459",
+     "lstar": 17
+    },
+    {
+     "file": "sweep_pib/bark_en_l23.json",
+     "source": "eval_results/_v1L_bark_en_L22.json",
+     "md5": "ddc88096e99667467f869d9ee2964a7a",
+     "lstar": 23
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/bark_en.json",
+    "source": "eval_results/bark_multientity_en_300/multientity_asr_scores.json",
+    "md5": "43fdb40ef63ca241c438a256e7685cf4",
+    "judge": "whisper_surface"
+   }
+  },
+  {
+   "model": "Bark",
+   "lang": "JA",
+   "key": "bark_ja",
+   "family": "decoder-only",
+   "L": 24,
+   "point_mcd": {
+    "file": "point_mcd/bark_ja.json",
+    "source": "eval_results/_caseSPTK_whole_bark_ja.json",
+    "md5": "1b899f6d96bce21844f0bd56dcd64155"
+   },
+   "point_pib": {
+    "file": "point_pib/bark_ja.json",
+    "source": "eval_results/_v1all_bark_ja.json",
+    "md5": "9a637d0c1d033f23ae268c351b6a6215"
+   },
+   "sweep": [
+    {
+     "file": "sweep_pib/bark_ja_l01.json",
+     "source": "eval_results/_v1L_bark_ja_jasp_L0.json",
+     "md5": "c9d06b4a45cab425bcd25c4018323288",
+     "lstar": 1
+    },
+    {
+     "file": "sweep_pib/bark_ja_l06.json",
+     "source": "eval_results/_v1L_bark_ja_jasp_L5.json",
+     "md5": "3d116d5990f666d42f79487de3d97c02",
+     "lstar": 6
+    },
+    {
+     "file": "sweep_pib/bark_ja_l12.json",
+     "source": "eval_results/_v1L_bark_ja_jasp_L11.json",
+     "md5": "45a19f071663ccec435dec957ae6d681",
+     "lstar": 12
+    },
+    {
+     "file": "sweep_pib/bark_ja_l17.json",
+     "source": "eval_results/_v1L_bark_ja_jasp_L16.json",
+     "md5": "9948f7cb89d4c7dd870e50e2a0551e6d",
+     "lstar": 17
+    },
+    {
+     "file": "sweep_pib/bark_ja_l23.json",
+     "source": "eval_results/_v1L_bark_ja_jasp_L22.json",
+     "md5": "51611946ff92697a97668a7619fcbef0",
+     "lstar": 23
+    }
+   ],
+   "two_entity": {
+    "file": "two_entity/bark_ja.json",
+    "source": "eval_results/bark_multientity_ja_300/asr_furigana.json",
+    "md5": "e8ab1b31a940248de2705d564e4d5b5e",
+    "judge": "furigana_reading"
+   }
+  }
+ ]
+}

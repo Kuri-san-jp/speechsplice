@@ -1,0 +1,29 @@
+{
+ "norm": "kana unification + long-vowel variant unification (ー expansion, おう≡おお, えい≡ええ) + variant kana (ぢ/づ/ゔ/ゐ/ゑ/を)",
+ "results": {
+  "bl": {
+   "strict": {
+    "k": 109,
+    "pct": 36.33,
+    "wilson_half": 5.41
+   },
+   "normalized": {
+    "k": 110,
+    "pct": 36.67,
+    "wilson_half": 5.42
+   }
+  },
+  "oeoi": {
+   "strict": {
+    "k": 255,
+    "pct": 85.0,
+    "wilson_half": 4.04
+   },
+   "normalized": {
+    "k": 256,
+    "pct": 85.33,
+    "wilson_half": 4.0
+   }
+  }
+ }
+}

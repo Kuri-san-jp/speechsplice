@@ -1,0 +1,6961 @@
+{
+ "summary": {
+  "dir": "/mnt/eval_results/multientity_qwen3_ja_300",
+  "lang": "ja",
+  "asr_model": "Parakeet-Inc/furigana_whisper_small_jsut",
+  "judge": "読み（ひらがな正規化）の部分一致。ja_n300_furigana.py と同一の手続き",
+  "reading_source": "/mnt/eval_results/ja_wordrepl300_gen/judge.json",
+  "n_attempted": 300,
+  "n_wav_missing": 0,
+  "bl_slot1_ok": {
+   "k": 279,
+   "n": 300,
+   "rate": 93.0,
+   "half_pp": 2.92
+  },
+  "bl_slot2_ok": {
+   "k": 272,
+   "n": 300,
+   "rate": 90.67,
+   "half_pp": 3.31
+  },
+  "inj1_slot1_ok": {
+   "k": 0,
+   "n": 300,
+   "rate": 0.0,
+   "half_pp": 0.63
+  },
+  "inj1_slot2_ok": {
+   "k": 281,
+   "n": 300,
+   "rate": 93.67,
+   "half_pp": 2.79
+  },
+  "inj2_slot1_ok": {
+   "k": 280,
+   "n": 300,
+   "rate": 93.33,
+   "half_pp": 2.86
+  },
+  "inj2_slot2_ok": {
+   "k": 0,
+   "n": 300,
+   "rate": 0.0,
+   "half_pp": 0.63
+  },
+  "inj12_slot1_ok": {
+   "k": 0,
+   "n": 300,
+   "rate": 0.0,
+   "half_pp": 0.63
+  },
+  "inj12_slot2_ok": {
+   "k": 0,
+   "n": 300,
+   "rate": 0.0,
+   "half_pp": 0.63
+  }
+ },
+ "rows": [
+  {
+   "pair_idx": 0,
+   "words_a": [
+    "田中",
+    "清水"
+   ],
+   "words_b": [
+    "鈴木",
+    "山崎"
+   ],
+   "bl_tr": "タナカサントシミズサンガカイギノシリョウヲジュンビシテクレタ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "タナカサントシミズサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "タナカサントシミズサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "タナカサントシミズサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 1,
+   "words_a": [
+    "佐藤",
+    "森田"
+   ],
+   "words_b": [
+    "高橋",
+    "池田"
+   ],
+   "bl_tr": "サトウサントモリタサンガカイギノシリョウヲジュンビシテクレタ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サトウサントモリタサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サトウサントモリタサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サトウサントモリタサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 2,
+   "words_a": [
+    "伊藤",
+    "橋本"
+   ],
+   "words_b": [
+    "渡辺",
+    "阿部"
+   ],
+   "bl_tr": "イトウサントハシモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "イトウサントハシモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "イトウサントハシモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "イトウサントハシモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 3,
+   "words_a": [
+    "山本",
+    "石川"
+   ],
+   "words_b": [
+    "中村",
+    "前田"
+   ],
+   "bl_tr": "ヤマモトサントイシカワサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ヤマモトサントイシカワサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ヤマモトサントイシカワサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ヤマモトサントイシカワサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 4,
+   "words_a": [
+    "小林",
+    "藤田"
+   ],
+   "words_b": [
+    "加藤",
+    "後藤"
+   ],
+   "bl_tr": "コバヤシサントフジタサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コバヤシサントフジタサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コバヤシサントフジタサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コバヤシサントフジタサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 5,
+   "words_a": [
+    "吉田",
+    "岡田"
+   ],
+   "words_b": [
+    "山田",
+    "村上"
+   ],
+   "bl_tr": "ヨシダサントオカダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ヨシダサントオカダサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ヨシダサントオカダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ヨシダサントオカダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 6,
+   "words_a": [
+    "佐々木",
+    "近藤"
+   ],
+   "words_b": [
+    "山口",
+    "石井"
+   ],
+   "bl_tr": "ササキサントコンドウサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ササキサントウコンドウサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ササキサントコンドウサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ササキサントコンドウサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 7,
+   "words_a": [
+    "松本",
+    "坂本"
+   ],
+   "words_b": [
+    "井上",
+    "遠藤"
+   ],
+   "bl_tr": "マツモトサントサカモトサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "マツモトサントサカモトサンガカイギノシリョウヲジュンビシテクレタイ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "マツモトサントサカモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "マツモトサントサカモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 8,
+   "words_a": [
+    "木村",
+    "青木"
+   ],
+   "words_b": [
+    "斎藤",
+    "藤井"
+   ],
+   "bl_tr": "キムラサントアオキサンガカイギノシリョウヲジュンビシテクレタ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キムラサントアオキサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キムラサントアオキサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キムラサントアオキサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 9,
+   "words_a": [
+    "清水",
+    "西村"
+   ],
+   "words_b": [
+    "山崎",
+    "福田"
+   ],
+   "bl_tr": "シュミズサントニシムラサンガカイギノシリョウヲジュンビシテクレタイ",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "シュミズサントニシムラサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ショミズサントニシムラサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "シュミズサントニシムラサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 10,
+   "words_a": [
+    "森田",
+    "太田"
+   ],
+   "words_b": [
+    "池田",
+    "三浦"
+   ],
+   "bl_tr": "モリタサントオオタサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "モリタサントオオタサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "モリタサントフトウタサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "モリタサントオオタサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 11,
+   "words_a": [
+    "橋本",
+    "藤原"
+   ],
+   "words_b": [
+    "阿部",
+    "岡本"
+   ],
+   "bl_tr": "ハシモトサントフジワラサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ハシモトサントフジワラサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ハシモトサントフジワラサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ハシモトサントフジワラサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 12,
+   "words_a": [
+    "石川",
+    "松田"
+   ],
+   "words_b": [
+    "前田",
+    "中野"
+   ],
+   "bl_tr": "イシカワサントマツダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "イシカワサントマツダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "イシカワサントマツダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "イシカワサントマツダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 13,
+   "words_a": [
+    "藤田",
+    "原田"
+   ],
+   "words_b": [
+    "後藤",
+    "小川"
+   ],
+   "bl_tr": "フジタサントハラダサンガカイギノシリョウヲジュンビシテクレタ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "フジタサントハラダサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "フジタサントハラダサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "フジタサントハラダサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 14,
+   "words_a": [
+    "岡田",
+    "竹内"
+   ],
+   "words_b": [
+    "村上",
+    "中島"
+   ],
+   "bl_tr": "オカダサントタケウチサンガカイギノシリョウヲジュンビシテクレタ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "オカダサントタケウチサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "オカダサントタケウチサンガ、カイギノシリョウヲジュンビシテクレタイ",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "オカダサントウタケウチサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 15,
+   "words_a": [
+    "近藤",
+    "金子"
+   ],
+   "words_b": [
+    "石井",
+    "藤本"
+   ],
+   "bl_tr": "クンドウサントカネコサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "クンドウサントカネコサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "クンドウサントカネコサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "クンドウサントカネコサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 16,
+   "words_a": [
+    "坂本",
+    "中山"
+   ],
+   "words_b": [
+    "遠藤",
+    "安藤"
+   ],
+   "bl_tr": "サカモトサントナカヤマサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サカモトサントナカヤマサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サカモトサントウナカヤマサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サカモトサントナカヤマサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 17,
+   "words_a": [
+    "青木",
+    "石田"
+   ],
+   "words_b": [
+    "藤井",
+    "上田"
+   ],
+   "bl_tr": "アオキサントイシダサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "アオキサントイシダサンガカイギノシリョウヲジュンビシテクレタリ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "アオキサントイシダサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "アオキサントイシダサンガカイギノシュリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 18,
+   "words_a": [
+    "西村",
+    "小島"
+   ],
+   "words_b": [
+    "福田",
+    "武田"
+   ],
+   "bl_tr": "ニシムラサントコジマサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ニシムラサントコジマサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ニシムラサントコジマサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ニシムラサントコジマサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 19,
+   "words_a": [
+    "太田",
+    "村田"
+   ],
+   "words_b": [
+    "三浦",
+    "増田"
+   ],
+   "bl_tr": "オオタサントムラタサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "オオタサントムラタサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "オオタサントウ、ムラタサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "オオタサントウムラタサンガ、カイギノシュリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 20,
+   "words_a": [
+    "藤原",
+    "平野"
+   ],
+   "words_b": [
+    "岡本",
+    "大塚"
+   ],
+   "bl_tr": "フジワラサントヘイラサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "フジワラサントヒラノサンガカイギノシリョウヲジュンビシテクレタイ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "フジワラサントヒラノサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "フジワラサントヒラノサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 21,
+   "words_a": [
+    "松田",
+    "清水"
+   ],
+   "words_b": [
+    "中野",
+    "山下"
+   ],
+   "bl_tr": "マツダサントシミズサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "マツダサントシミズサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "マツダサントシミズサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "マツダサントシミズサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 22,
+   "words_a": [
+    "原田",
+    "林"
+   ],
+   "words_b": [
+    "小川",
+    "三浦"
+   ],
+   "bl_tr": "ハラダサントウハヤシサンガカイギノシュリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ハラダサントハヤシサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ハラダサントハヤシサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ハラダサントハヤシサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 23,
+   "words_a": [
+    "竹内",
+    "山崎"
+   ],
+   "words_b": [
+    "中島",
+    "野村"
+   ],
+   "bl_tr": "タケウチサントヤマザキサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "タケウチサントヤマザキサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "タケウチサントヤマザキサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "タケウチサントヤマザキサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 24,
+   "words_a": [
+    "金子",
+    "阿部"
+   ],
+   "words_b": [
+    "藤本",
+    "秋山"
+   ],
+   "bl_tr": "カネコサントアベサンガカイギノシリョウヲジュンビシテクレタ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "カネコサントアベサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "カネコサントアベサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "カネコサントアベサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 25,
+   "words_a": [
+    "中山",
+    "橋本"
+   ],
+   "words_b": [
+    "安藤",
+    "小野"
+   ],
+   "bl_tr": "ナカヤマサントハシモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ナカヤマサントハシモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ナカヤマサントハシモトサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ナカヤマサントハシモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 26,
+   "words_a": [
+    "石田",
+    "太田"
+   ],
+   "words_b": [
+    "上田",
+    "田口"
+   ],
+   "bl_tr": "イシダサントオオタサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "イシダサントオオタサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "イシダサントオオタサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "イシダサントフトウタサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 27,
+   "words_a": [
+    "小島",
+    "星野"
+   ],
+   "words_b": [
+    "武田",
+    "荒木"
+   ],
+   "bl_tr": "ホジマサントホシノサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コジマサントホシノサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コジマサントウホシノサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コジマサントホシノサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 28,
+   "words_a": [
+    "村田",
+    "内藤"
+   ],
+   "words_b": [
+    "増田",
+    "藤岡"
+   ],
+   "bl_tr": "ムラタサントナイトウサンガカイギノシュリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ムラタサントナイトウサンガ、カイギノシリョウオウジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ムラタサントナイトウサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ムラタサントナイトウサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 29,
+   "words_a": [
+    "平野",
+    "浜田"
+   ],
+   "words_b": [
+    "大塚",
+    "望月"
+   ],
+   "bl_tr": "ヒラノサントハマダサンガカイギノシリョウヲジュンビシテクレタ",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ヒラノサントハマダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ヒラノサントハマダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ヒラノサントハマダサンガ、カイギノシュリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 30,
+   "words_a": [
+    "清水",
+    "横田"
+   ],
+   "words_b": [
+    "山下",
+    "今村"
+   ],
+   "bl_tr": "ショミズサントヨゴタサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ショミズサントヨコタサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ショミズサントヨコタサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ショミズサントヨコタサンガ、カイギノシリョウヲジュンビシテクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 31,
+   "words_a": [
+    "林",
+    "西田"
+   ],
+   "words_b": [
+    "三浦",
+    "河合"
+   ],
+   "bl_tr": "ハヤシサントニシダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ハヤシサントニシダサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ハヤシサントニシタサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ハヤシサントウニシダサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 32,
+   "words_a": [
+    "山崎",
+    "松尾"
+   ],
+   "words_b": [
+    "野村",
+    "中川"
+   ],
+   "bl_tr": "ヤマザキサントマツオサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ヤマザキサントマツオサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ヤマザキサントマツオサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ヤマザキサントマツオサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 33,
+   "words_a": [
+    "阿部",
+    "杉本"
+   ],
+   "words_b": [
+    "秋山",
+    "平井"
+   ],
+   "bl_tr": "アベサントスギモトサンガカイギノシリョウヲジュンビシテクレタ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "アベサントスギモトサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "アベサントスギモトサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "アベサントスギモトサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 34,
+   "words_a": [
+    "橋本",
+    "森"
+   ],
+   "words_b": [
+    "小野",
+    "石橋"
+   ],
+   "bl_tr": "ハシモトサントモリサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ハシモトサントモリサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ハシモトサントモリサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ハシモトサントモリサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 35,
+   "words_a": [
+    "太田",
+    "岸本"
+   ],
+   "words_b": [
+    "田口",
+    "大森"
+   ],
+   "bl_tr": "オオタサントキシモトサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "オオタサントキシモトサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "オオタサントキシモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "オオタサントキシモトサンガカイギノシリョウオウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 36,
+   "words_a": [
+    "星野",
+    "児玉"
+   ],
+   "words_b": [
+    "荒木",
+    "水野"
+   ],
+   "bl_tr": "ホシノサントウジダマサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ホシノサントジダマサンガカイギノシリョウヲジュンビシテクレタリ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "ホシノサントジダマサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ホシノサントジダマサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 37,
+   "words_a": [
+    "内藤",
+    "松浦"
+   ],
+   "words_b": [
+    "藤岡",
+    "片山"
+   ],
+   "bl_tr": "ナイトウサントマツウラサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ナイトウサントマツウラサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ナイトウサントマツウラサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ナイトウサントマツウラサンガカイギノシュウオウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 38,
+   "words_a": [
+    "浜田",
+    "古川"
+   ],
+   "words_b": [
+    "望月",
+    "奥村"
+   ],
+   "bl_tr": "ハマダサントフルカワサンガカイギノシリョウヲジュンビシテクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタクレタ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ハマダサントフルカワサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ハマダサントフルカワサンガカイギノシリョウヲジュンビシテクレタイ",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ハマダサントフルカワサンガカイギノシリョウヲジュンビシテクレタシリョウ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 39,
+   "words_a": [
+    "横田",
+    "大橋"
+   ],
+   "words_b": [
+    "今村",
+    "吉川"
+   ],
+   "bl_tr": "ヨコタサントオオハシサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ヨコタサントオオハシサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ヨコタサントウオオハシサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ヨコタサントオオハシサンガカイギノシュリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 40,
+   "words_a": [
+    "西田",
+    "永田"
+   ],
+   "words_b": [
+    "河合",
+    "広瀬"
+   ],
+   "bl_tr": "ニシダサントナガダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ニシダサントナガダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "ニシダサントナガダサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ニシダサントナガダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 41,
+   "words_a": [
+    "松尾",
+    "田中"
+   ],
+   "words_b": [
+    "中川",
+    "鈴木"
+   ],
+   "bl_tr": "マツオサントタナカサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "マツオサントタナカサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "マツオサントタナカサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "マツオサントタナカサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 42,
+   "words_a": [
+    "杉本",
+    "佐藤"
+   ],
+   "words_b": [
+    "平井",
+    "高橋"
+   ],
+   "bl_tr": "スギモトサントサトオサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "スギモトサントサトウサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "スギモトサントサトウサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "スギモトサントサトオサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 43,
+   "words_a": [
+    "森",
+    "伊藤"
+   ],
+   "words_b": [
+    "石橋",
+    "渡辺"
+   ],
+   "bl_tr": "モリサントイトウサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "モリサントイトウサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "モリサントイトウサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "モリサントイトオサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 44,
+   "words_a": [
+    "岸本",
+    "山本"
+   ],
+   "words_b": [
+    "大森",
+    "中村"
+   ],
+   "bl_tr": "キモトサントヤマモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キシモトサントヤマモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キシモトサントヤマモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キシモトサントヤマモトサンガカイギノシリョウヲジュンビシテクレタイ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 45,
+   "words_a": [
+    "児玉",
+    "小林"
+   ],
+   "words_b": [
+    "水野",
+    "加藤"
+   ],
+   "bl_tr": "ジダマサントコバヤシサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ジダマサントコバヤシサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ジダマサントコバヤシサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ジダマサントコバヤシサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 46,
+   "words_a": [
+    "松浦",
+    "吉田"
+   ],
+   "words_b": [
+    "片山",
+    "山田"
+   ],
+   "bl_tr": "マツウラサントヨシダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "マツウラサントウヨシダサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "マツウラサントウヨシダサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "マツウラサントヨシダサンガカイギノシリョウヲジュンビシテクレタ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 47,
+   "words_a": [
+    "古川",
+    "佐々木"
+   ],
+   "words_b": [
+    "奥村",
+    "山口"
+   ],
+   "bl_tr": "フルカワサントササキサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "フルカワサントサササンガカイギノシリョウヲジュンビシテクレタ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "フルカワサントサササンガカイギノシリョウオウジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "フルカワサント、ササキサンガ、カイギノシュリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 48,
+   "words_a": [
+    "大橋",
+    "松本"
+   ],
+   "words_b": [
+    "吉川",
+    "井上"
+   ],
+   "bl_tr": "オオハシサントマツモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "オオハシサントマツモトサンガカイギノシュリョウヲジュンビシテクレタ",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "オオハシサントマツモトサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "オオハシサントマツモトサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 49,
+   "words_a": [
+    "永田",
+    "木村"
+   ],
+   "words_b": [
+    "広瀬",
+    "斎藤"
+   ],
+   "bl_tr": "ナガタサントキムラサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ナガタサントキムラサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ナガタサント、キムラサンガカイギノシリョウヲジュンビシテクレタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ナガタサントキムラサンガ、カイギノシリョウヲジュンビシテクレタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 50,
+   "words_a": [
+    "田中",
+    "清水"
+   ],
+   "words_b": [
+    "鈴木",
+    "山崎"
+   ],
+   "bl_tr": "キノウ、タナカサンガエキデエシミズサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、タナカサンガエキデ、シミズサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、タナカサンガエキデシミズサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、タナカサンガエキデ、シミズサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 51,
+   "words_a": [
+    "佐藤",
+    "森田"
+   ],
+   "words_b": [
+    "高橋",
+    "池田"
+   ],
+   "bl_tr": "キノウ、サトウサンガエキデ、モリタサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、サトウサンガエキデモリタサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、サトウサンガエキデモリタサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウサトウサンガエキデモリタサンニグゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 52,
+   "words_a": [
+    "伊藤",
+    "橋本"
+   ],
+   "words_b": [
+    "渡辺",
+    "阿部"
+   ],
+   "bl_tr": "キノウイトウサンガエキデハシモトサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、イトウサンガエキデ、ハシモトサンニグウゼイナッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、イトウサンガエキデ、ハシモトサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウイトウサンガエキデハシモトサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 53,
+   "words_a": [
+    "山本",
+    "石川"
+   ],
+   "words_b": [
+    "中村",
+    "前田"
+   ],
+   "bl_tr": "キノウ、ヤマモトサンガエキデイシカワサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ヤマモトサンガエキデイシカワサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ヤマモトサンガエキデイシカワサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ヤマモトサンガエキデイシカワサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 54,
+   "words_a": [
+    "小林",
+    "藤田"
+   ],
+   "words_b": [
+    "加藤",
+    "後藤"
+   ],
+   "bl_tr": "キノウ、コバヤシサンガエキデ、フジタサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、コバヤシサンガエキデフジタサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、コバヤシサンガエキデ、フジタサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、コバヤシサンガエキデ、フジタサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 55,
+   "words_a": [
+    "吉田",
+    "岡田"
+   ],
+   "words_b": [
+    "山田",
+    "村上"
+   ],
+   "bl_tr": "キノウ、ヨシダサンガエキデオカダサンニグウゼガッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウヨシダサンガエキデオカダサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ヨシダサンガエキデオカダサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウヨシダサンガエキデオカダサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 56,
+   "words_a": [
+    "佐々木",
+    "近藤"
+   ],
+   "words_b": [
+    "山口",
+    "石井"
+   ],
+   "bl_tr": "キノウササキサンガエキデコンドウサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ササキサンガエキデコンドウサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ササキサンガエキデコンドウサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウシャサキサンガエキデコンドウサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 57,
+   "words_a": [
+    "松本",
+    "坂本"
+   ],
+   "words_b": [
+    "井上",
+    "遠藤"
+   ],
+   "bl_tr": "キノウ、マツモトサンガエキデ、サカモトサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、マツモトサンガエキデサカモトサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、マツモトサンガエキデ、サカモトサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、マツモトサンガエキデサカモトサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 58,
+   "words_a": [
+    "木村",
+    "青木"
+   ],
+   "words_b": [
+    "斎藤",
+    "藤井"
+   ],
+   "bl_tr": "キノウ、キムラサンガエキデアオキサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、キムラサンガエキデアオキサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、キムラサンガエキデアオキサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウキムラサンガエキデアオキサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 59,
+   "words_a": [
+    "清水",
+    "西村"
+   ],
+   "words_b": [
+    "山崎",
+    "福田"
+   ],
+   "bl_tr": "キノウシミズサンガエキデニシムラサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、シミズサンガエキデニシムラサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、シミズサンガエキデ、ニシムラサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、シミズサンガエキデイ、ニシムラサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 60,
+   "words_a": [
+    "森田",
+    "太田"
+   ],
+   "words_b": [
+    "池田",
+    "三浦"
+   ],
+   "bl_tr": "キノウモリタサンガエキデオオタサンニグウゼンアッタ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウモリタサンガエキデオオタサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウモリタサンガエキデフウタサンニグゼンアッタ",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、モリタサンガエキデオオタサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 61,
+   "words_a": [
+    "橋本",
+    "藤原"
+   ],
+   "words_b": [
+    "阿部",
+    "岡本"
+   ],
+   "bl_tr": "キノウハシモトサンガエキデフジワラサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ハシモトサンガエキデ、フジワラサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ハシモトサンガエキデ、フジワラサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ハシモトサンガエキデフジワラサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 62,
+   "words_a": [
+    "石川",
+    "松田"
+   ],
+   "words_b": [
+    "前田",
+    "中野"
+   ],
+   "bl_tr": "キノウイシカワサンガエキデマツダサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、イシカワサンガエキデマツダサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、イシカワサンガエキデ、マツダサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、イシカワサンガエキデマツダサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 63,
+   "words_a": [
+    "藤田",
+    "原田"
+   ],
+   "words_b": [
+    "後藤",
+    "小川"
+   ],
+   "bl_tr": "キノウ、フジタサンガエキデ、ハラダサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、フジタサンガエキデハラダサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウフジタサンガエキデハラダサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウフジタサンガエキデハラダサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 64,
+   "words_a": [
+    "岡田",
+    "竹内"
+   ],
+   "words_b": [
+    "村上",
+    "中島"
+   ],
+   "bl_tr": "キノウ、オカダサンガエキデ、タケウチサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、オカダサンガエキデタケウチサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、オカダサンガエキデ、タケウチサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、オカダサンガエキデ、タケウチサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 65,
+   "words_a": [
+    "近藤",
+    "金子"
+   ],
+   "words_b": [
+    "石井",
+    "藤本"
+   ],
+   "bl_tr": "キノウコンドウサンガエキデカネコサンニグウゼンアッタ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、コンドウサンガエキデカネコサンニグウゼンガッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、コンドウサンガエキデカネコサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、コンドウサンガエキデ、カネコサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 66,
+   "words_a": [
+    "坂本",
+    "中山"
+   ],
+   "words_b": [
+    "遠藤",
+    "安藤"
+   ],
+   "bl_tr": "キノウ、サカモトサンガエキデナカヤマサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、サカモトサンガエキデナカヤマサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、サカモトサンガエキデナカヤマサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、サカモトサンガエキデナカヤマサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 67,
+   "words_a": [
+    "青木",
+    "石田"
+   ],
+   "words_b": [
+    "藤井",
+    "上田"
+   ],
+   "bl_tr": "キノウアオキサンガエキデイシダサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、アオキサンガエキデイシダサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、アオキサンガエキデイシダサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、アオキサンガエキデイシダサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 68,
+   "words_a": [
+    "西村",
+    "小島"
+   ],
+   "words_b": [
+    "福田",
+    "武田"
+   ],
+   "bl_tr": "キノウ、ニシムラサンガ、エキデイコジマサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウニシムラサンガエキデコジマサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウニシムラサンガエキデコジマサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ニシムラサンガエキデコジマサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 69,
+   "words_a": [
+    "太田",
+    "村田"
+   ],
+   "words_b": [
+    "三浦",
+    "増田"
+   ],
+   "bl_tr": "キノウオオタサンガエキデムラタサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウオオタサンガエキデムラタサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、オオタサンガエキデ、ムラタサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウオオタサンガエキデムラタサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 70,
+   "words_a": [
+    "藤原",
+    "平野"
+   ],
+   "words_b": [
+    "岡本",
+    "大塚"
+   ],
+   "bl_tr": "キノウフジワダサンガエキデヒラノサンニグウゼンアッタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": false,
+   "inj1_tr": "キノウフジワラサンガエキデヒラノサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "キノウ、フジワラサンガエキデ、ヒラノサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウフジワラサンガエキデヒラノサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 71,
+   "words_a": [
+    "松田",
+    "清水"
+   ],
+   "words_b": [
+    "中野",
+    "山下"
+   ],
+   "bl_tr": "キノウマツダサンガエキデシミズサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、マツダサンガエキデシミズサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウマツダサンガエキデシミズサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウマツダサンガエキデシミズサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 72,
+   "words_a": [
+    "原田",
+    "林"
+   ],
+   "words_b": [
+    "小川",
+    "三浦"
+   ],
+   "bl_tr": "キノウハラダサンガエキデハヤシサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ハラダサンガエキデ、ハヤシサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ハラダサンガ、エキデハヤシサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ハラダサンガエキデハヤシサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 73,
+   "words_a": [
+    "竹内",
+    "山崎"
+   ],
+   "words_b": [
+    "中島",
+    "野村"
+   ],
+   "bl_tr": "キノウ、タケウチサンガエキデヤマザキサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、タキウチサンガエキデ、ヤマザキサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、タケウチサンガエキデ、ヤマザキサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、タケウチサンガエキデ、ヤマザキサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 74,
+   "words_a": [
+    "金子",
+    "阿部"
+   ],
+   "words_b": [
+    "藤本",
+    "秋山"
+   ],
+   "bl_tr": "キノウ、カネコサンガエキデ、アベサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、カネコサンガエキデアベサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、カネコサンガエキデアベサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、カネコサンガエキデアベサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 75,
+   "words_a": [
+    "中山",
+    "橋本"
+   ],
+   "words_b": [
+    "安藤",
+    "小野"
+   ],
+   "bl_tr": "キノウナカヤマサンガエキデハシモトサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ナカヤマサンガエキデハシモトサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ナカヤマサンガエキデ、ハシモトサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウナカヤマサンガエキデハシモトサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 76,
+   "words_a": [
+    "石田",
+    "太田"
+   ],
+   "words_b": [
+    "上田",
+    "田口"
+   ],
+   "bl_tr": "キノウ、イシダサンガエキデホウタサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "キノウ、イシダサンガエキデ、フトダサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "キノウ、イシダサンガエキデ、オオタサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、イシダサンガエキデ、オオタサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 77,
+   "words_a": [
+    "小島",
+    "星野"
+   ],
+   "words_b": [
+    "武田",
+    "荒木"
+   ],
+   "bl_tr": "キノウ、コジマサンガエキデホシノサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、コジマサンガエキデ、ホシノサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、コジマサンガエキデホシノサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、コジマサンガイキデ、ホシノサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 78,
+   "words_a": [
+    "村田",
+    "内藤"
+   ],
+   "words_b": [
+    "増田",
+    "藤岡"
+   ],
+   "bl_tr": "キノウ、ムラタサンガエキデ、ナイトウサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ムラタサンガエキデナイトウサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ムラタサンガエキデナイトウサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ムラタサンガ、エキデウチドウサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 79,
+   "words_a": [
+    "平野",
+    "浜田"
+   ],
+   "words_b": [
+    "大塚",
+    "望月"
+   ],
+   "bl_tr": "キノウヒラノサンガエキデハマダサンニグウゼンアッタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ヒラノサンガエキデ、ハマダサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ヒラノサンガエキデ、ハマダサンニグウゼンアッタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ヒラノサンガエキデハマダサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 80,
+   "words_a": [
+    "清水",
+    "横田"
+   ],
+   "words_b": [
+    "山下",
+    "今村"
+   ],
+   "bl_tr": "キノウシミズサンガエキデヨコタサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウシミズサンガエキデヨコタサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウシミズサンガエキデヨコタサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、シミズサンガエキデ、ヨコタサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 81,
+   "words_a": [
+    "林",
+    "西田"
+   ],
+   "words_b": [
+    "三浦",
+    "河合"
+   ],
+   "bl_tr": "キノウハヤシサンガエキデニシダサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ハヤシサンガエキデニシダサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウハヤシサンガエキデニシダサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ハヤシサンガエキデ、ニシダサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 82,
+   "words_a": [
+    "山崎",
+    "松尾"
+   ],
+   "words_b": [
+    "野村",
+    "中川"
+   ],
+   "bl_tr": "キノウ、ヤマザキサンガエキデマツオサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ヤマザキサンガエキデマツオサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ヤマザキサンガエキデマツオサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ヤマザキサンガエキデマツオサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 83,
+   "words_a": [
+    "阿部",
+    "杉本"
+   ],
+   "words_b": [
+    "秋山",
+    "平井"
+   ],
+   "bl_tr": "キノウ、アベサンガエキデ、スギモトサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、アベサンガエキデスギモトサンニグウゼンアッタク。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、アベサンガエキデ、スギモトサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、アベサンガエキデ、スギモトサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 84,
+   "words_a": [
+    "橋本",
+    "森"
+   ],
+   "words_b": [
+    "小野",
+    "石橋"
+   ],
+   "bl_tr": "キノウ、ハシモトサンガエキデモリサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ハシモトサンガエキデモリサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ハシモトサンガエキデモリサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ハシモトサンガエキデモリサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 85,
+   "words_a": [
+    "太田",
+    "岸本"
+   ],
+   "words_b": [
+    "田口",
+    "大森"
+   ],
+   "bl_tr": "キノウオオタサンガエキデキシモトサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウオオタサンガエキデキシモトサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウオオタサンガエキデキシモトサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、オオタサンガエキデキシモトサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 86,
+   "words_a": [
+    "星野",
+    "児玉"
+   ],
+   "words_b": [
+    "荒木",
+    "水野"
+   ],
+   "bl_tr": "キノウ、ホシノサンガエキデジダマサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "キノウ、ホシノサンガエキデジダマサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "キノウ、ホシノサンガエキデジダマサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ホシノサンガエキデジダマサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 87,
+   "words_a": [
+    "内藤",
+    "松浦"
+   ],
+   "words_b": [
+    "藤岡",
+    "片山"
+   ],
+   "bl_tr": "キノウチドサンガエキデマツウラサンニグウゼンアッタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ムトウサンガエキデマツウラサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ナイトウサンガエキデ、マツウラサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ウチドサンガエキデマツウラサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 88,
+   "words_a": [
+    "浜田",
+    "古川"
+   ],
+   "words_b": [
+    "望月",
+    "奥村"
+   ],
+   "bl_tr": "キノウ、ハマダサンガエキデフルカワサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ハマダサンガエキデフルカワサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、ハマダサンガエキデフルカワサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ハマダサンガエキデフルカワサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 89,
+   "words_a": [
+    "横田",
+    "大橋"
+   ],
+   "words_b": [
+    "今村",
+    "吉川"
+   ],
+   "bl_tr": "キノウヨコタサンガエキデオオハシサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、ヨコタサンガエキデオオハシサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウヨコタサンガエキデオオハシサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ヨコタサンガエキデオオハシサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 90,
+   "words_a": [
+    "西田",
+    "永田"
+   ],
+   "words_b": [
+    "河合",
+    "広瀬"
+   ],
+   "bl_tr": "キノウ、ニシダサンガエキデナガタサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウニシダサンガエキデナガダサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "キノウニシダサンガエキデナガダサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ニシダサンガエキデナガダサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 91,
+   "words_a": [
+    "松尾",
+    "田中"
+   ],
+   "words_b": [
+    "中川",
+    "鈴木"
+   ],
+   "bl_tr": "キノウ、マツオサンガエキデタナカサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、マツオサンガエキデタナカサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、マツオサンガエキデタナカサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、マツオサンガエキデ、タナカサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 92,
+   "words_a": [
+    "杉本",
+    "佐藤"
+   ],
+   "words_b": [
+    "平井",
+    "高橋"
+   ],
+   "bl_tr": "キノウスギモトサンガエキデサトウサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウスギモトサンガエキデサトウサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウスギモトサンガエキデサトウサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、スギモトサンガエキデ、サトウサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 93,
+   "words_a": [
+    "森",
+    "伊藤"
+   ],
+   "words_b": [
+    "石橋",
+    "渡辺"
+   ],
+   "bl_tr": "キノウ、モリサンガエキデイトウサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、モリサンガエキデイトウサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、モリサンガイキデイトウサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウモリサンガエキデイトウサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 94,
+   "words_a": [
+    "岸本",
+    "山本"
+   ],
+   "words_b": [
+    "大森",
+    "中村"
+   ],
+   "bl_tr": "キノウキシモトサンガエキデヤマモトサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウキシモトサンガエキデヤマモトサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、キシモトサンガエキデヤマモトサンニグウゼンアッタン。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウキシモトサンガエキデ、ヤマモトサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 95,
+   "words_a": [
+    "児玉",
+    "小林"
+   ],
+   "words_b": [
+    "水野",
+    "加藤"
+   ],
+   "bl_tr": "キノウ、ジダマサンガエキデコバヤシサンニグウゼガッタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウジダマサンガエキデコバヤシサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウジダマサンガエキデコバヤシサンニグウゼンアッタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ジダマサンガエキデ、コバヤシサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 96,
+   "words_a": [
+    "松浦",
+    "吉田"
+   ],
+   "words_b": [
+    "片山",
+    "山田"
+   ],
+   "bl_tr": "キノウ、マツウラサンガエキデヨシダサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウマツウラサンガエキデヨシダサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、マツウラサンガエキデヨシダサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、マツウラサンガエキデヨシダサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 97,
+   "words_a": [
+    "古川",
+    "佐々木"
+   ],
+   "words_b": [
+    "奥村",
+    "山口"
+   ],
+   "bl_tr": "キノウフルカワサンガエキデササキサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、フルカワサンガエキデササキサンニグウゼンガッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウ、フルカワサンガエキデササキサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、フルカワサンガエキデ、ササキサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 98,
+   "words_a": [
+    "大橋",
+    "松本"
+   ],
+   "words_b": [
+    "吉川",
+    "井上"
+   ],
+   "bl_tr": "キノウオオハシサンガエキデマツモトサンニグウゼンアッタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウオオハシサンガエキデマツモトサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウオオハシサンガエキデマツモトサンニグウゼンアッタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウオオハシサンガエキデマツモトサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 99,
+   "words_a": [
+    "永田",
+    "木村"
+   ],
+   "words_b": [
+    "広瀬",
+    "斎藤"
+   ],
+   "bl_tr": "キノウ、ナガダサンガエキデキムラサンニグウゼンアッタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "キノウ、アガダサンガエキデキムラサンニグウゼンアッタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "キノウナガダサンガエキデキムラサンニグウゼンアッタ",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "キノウ、ナガタサンガエキデ、キムラサンニグウゼンアッタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 100,
+   "words_a": [
+    "田中",
+    "清水"
+   ],
+   "words_b": [
+    "鈴木",
+    "山崎"
+   ],
+   "bl_tr": "コンドノキカクワ、タナカサンニマカセルカ、シミズサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワタナカサンニマカセルカ、シミズサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、タナカサンニマカセルカ、シミズサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、タナカサンニマカセルカ、シミズサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 101,
+   "words_a": [
+    "佐藤",
+    "森田"
+   ],
+   "words_b": [
+    "高橋",
+    "池田"
+   ],
+   "bl_tr": "コンドノキカクワ、サトウサンニマカセルカ、モリタサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、サトウサンニマカセルカ、モリタサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、サトウサンニマカセルカ、モリタサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、サトウサンニマカセルカ、モリタサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 102,
+   "words_a": [
+    "伊藤",
+    "橋本"
+   ],
+   "words_b": [
+    "渡辺",
+    "阿部"
+   ],
+   "bl_tr": "コンドノキカクワ、イトウサンニマカセルカ、ハシモトサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、イトウサンニマカセルカ、ハシモトサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、イトウサンニマカセルカ、ハシモトサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、イトウサンニマカセルカ、ハシモトサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 103,
+   "words_a": [
+    "山本",
+    "石川"
+   ],
+   "words_b": [
+    "中村",
+    "前田"
+   ],
+   "bl_tr": "コンドノキカクワ、ヤマモトサンニマカセルカ、イシカワサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ヤマモトサンニマカセルカ、イシカワサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ヤマモトサンニマカセルカ、イシカワサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ヤマモトサンニマカセルカ、イシカワサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 104,
+   "words_a": [
+    "小林",
+    "藤田"
+   ],
+   "words_b": [
+    "加藤",
+    "後藤"
+   ],
+   "bl_tr": "コンドノキカクワ、コバヤシサンニマカセルカ、フジタサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、コバヤシサンニマカセルカ、フジタサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、コバヤシサンニマカセルカ、フジタサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、コバヤシサンニマカセルカ、フジタサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 105,
+   "words_a": [
+    "吉田",
+    "岡田"
+   ],
+   "words_b": [
+    "山田",
+    "村上"
+   ],
+   "bl_tr": "コンドノキカクワ、ヨシダサンニマカセルカ、オカダサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ヨシダサンニマカセルカ、オカダサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ヨシザサンニマカセルカ、オカダサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ヨシダサンニマカセルカ、オカダサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 106,
+   "words_a": [
+    "佐々木",
+    "近藤"
+   ],
+   "words_b": [
+    "山口",
+    "石井"
+   ],
+   "bl_tr": "コンドノキカクワ、ササキサンニマカセルカ、コンドウサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ササキサンニマカセルカ、コンドウサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ササキサンニマカセルカ、クンドウサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ササキサンニマカセルカ、コンドウサンニマカセルカデマヨッテイルカンドノキカクワ、ササキサンニマカセルカ、コンドウサンニマカセルカデマヨッテイルカンドノキカクワ、ササキサンニマカセルカ、コンドウサンニマカセルカデマヨッテイルカンドノキカクワ、ササキサンニマカセルカ、コンドウサンニマカセルカ、デマヨッテイルカンドノキカクワ、ササキサンニマカセルカ、コンドウサンニマカセルカ、デマヨッテイ",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 107,
+   "words_a": [
+    "松本",
+    "坂本"
+   ],
+   "words_b": [
+    "井上",
+    "遠藤"
+   ],
+   "bl_tr": "コンドノキカクワ、マツモトサンニマカセルカ、サカモトサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、マツモトサンニマカセルカ、サカモトサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、マツモトサンニマカセルカ、サカモトサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワマツモトサンニマカセルカ、サカモトサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 108,
+   "words_a": [
+    "木村",
+    "青木"
+   ],
+   "words_b": [
+    "斎藤",
+    "藤井"
+   ],
+   "bl_tr": "コンドノキカクワ、キムラサンニマカセルカ、アオキサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、キムラサンニマカセルカ、アオキサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、キムラサンニマカセルカ、アオキサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワキムラサンニマカセルカ、アオキサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 109,
+   "words_a": [
+    "清水",
+    "西村"
+   ],
+   "words_b": [
+    "山崎",
+    "福田"
+   ],
+   "bl_tr": "コンドノキカクワ、シミズサンニマカセルカ、ニシムラサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、シミズサンニマカセルカ、ニシムラサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、シミズサンニマカセルカ、ニシムラサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、シミズサンニマカセルカ、ニシムラサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 110,
+   "words_a": [
+    "森田",
+    "太田"
+   ],
+   "words_b": [
+    "池田",
+    "三浦"
+   ],
+   "bl_tr": "コンドノキカクワ、モリタサンニマカセルカ、オオタサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、モリタサンニマカセルカ、オオタサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、モリタサンニマカセルカ、フトタサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、モリタサンニマカセルカ、オオタサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 111,
+   "words_a": [
+    "橋本",
+    "藤原"
+   ],
+   "words_b": [
+    "阿部",
+    "岡本"
+   ],
+   "bl_tr": "コンドノキカクワ、ハシモトサンニマカセルカ、フジワラサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ハシモトサンニマカセルカ、フジワラサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ハシモトサンニマカセルカ、フジワラサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ハシモトサンニマカセルカ、フジワラサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 112,
+   "words_a": [
+    "石川",
+    "松田"
+   ],
+   "words_b": [
+    "前田",
+    "中野"
+   ],
+   "bl_tr": "コンドノキカクワ、イシカワサンニマカセルカ、マツダサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、イシカワサンニマカセルカ、マツダサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、イシカワサンニマカセルカ、マツダサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、イシカワサンニマカセルカ、マツダサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 113,
+   "words_a": [
+    "藤田",
+    "原田"
+   ],
+   "words_b": [
+    "後藤",
+    "小川"
+   ],
+   "bl_tr": "コンドノキカクワ、フジタサンニマカセルカ、ハラダサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、フジタサンニマカセルカ、ハラダサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、フジタサンニマカセルカ、ハラダサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、フジタサンニマカセルカ、ハラダサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 114,
+   "words_a": [
+    "岡田",
+    "竹内"
+   ],
+   "words_b": [
+    "村上",
+    "中島"
+   ],
+   "bl_tr": "コンドノキカクワ、オカダサンニマカセルカ、タケウチサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、オカダサンニマカセルカ、タケウチサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、オカダサンニマカセルカ、タケウチサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、オカダサンニマカセルカ、タケウチサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 115,
+   "words_a": [
+    "近藤",
+    "金子"
+   ],
+   "words_b": [
+    "石井",
+    "藤本"
+   ],
+   "bl_tr": "コンドノキカクワ、コンドウサンニマカセルカ、カネコサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、コンドウサンニマカセルカ、カネコサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、コンドウサンニマカセルカ、カネコサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、コンドウサンニマカセルカ、カネコサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 116,
+   "words_a": [
+    "坂本",
+    "中山"
+   ],
+   "words_b": [
+    "遠藤",
+    "安藤"
+   ],
+   "bl_tr": "コンドノキカクワ、サカモトサンニマカセルカ、ナカヤマサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、サカモトサンニマカセルカ、ナカヤマサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、サカモトサンニマカセルカ、ナカヤマサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、サカモトサンニマカセルカ、ナカヤマサンニマカセルカデマヨッテイルタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 117,
+   "words_a": [
+    "青木",
+    "石田"
+   ],
+   "words_b": [
+    "藤井",
+    "上田"
+   ],
+   "bl_tr": "コンドノキカクワ、アオキサンニマカセルカ、イシダサンニマカセルカデマヨッテイルカンドノキカクワ、アオキサンニマカセルカ、イシダサンニマカセルカデマヨッテイルカンドノキカクワ、アオキサンニマカセルカ、イシダサンニマカセルカデマヨッテイルカンドノキカクワ、アオキサンニマカセルカ、イシダサンニマカセルカデマヨッテイルカンドノキカクワ、アオキサンニマカセルカ、イシダサンニマカセルカ、イシダサンニマカ",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、アオキサンニマカセルカ、イシダサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、アオキサンニマカセルカ、イシダサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、アオキサンニマカセルカ、イシダサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 118,
+   "words_a": [
+    "西村",
+    "小島"
+   ],
+   "words_b": [
+    "福田",
+    "武田"
+   ],
+   "bl_tr": "コンドノキカクワ、ニシムラサンニマカセルカ、コジマサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ニシムラサンニマカセルカ、コジマサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ニシムラサンニマカセルカ、コジマサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ニシムラサンニマカセルカ、コジマサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 119,
+   "words_a": [
+    "太田",
+    "村田"
+   ],
+   "words_b": [
+    "三浦",
+    "増田"
+   ],
+   "bl_tr": "コンドノキカクワ、オオタサンニマカセルカ、ムラタサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、オオタサンニマカセルカ、ムラタサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、オオタサンニマカセルカ、ムラタサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、オオタサンニマカセルカ、ムラタサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 120,
+   "words_a": [
+    "藤原",
+    "平野"
+   ],
+   "words_b": [
+    "岡本",
+    "大塚"
+   ],
+   "bl_tr": "コンドノキカクワフジワラサンニマカセルカ、ヘイレアサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "コンドノキカクワ、フジワラサンニマカセルカ、ヘイラサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "コンドノキカクワ、フジワラサンニマカセルカ、ヘイヤサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、フジワラサンニマカセルカ、ヘイヤサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 121,
+   "words_a": [
+    "松田",
+    "清水"
+   ],
+   "words_b": [
+    "中野",
+    "山下"
+   ],
+   "bl_tr": "コンドノキカクワ、マツダサンニマカセルカ、シミズサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、マツダサンニマカセルカ、シミズサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、マツダサンニマカセルカ、シミズサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、マツダサンニマカセルカ、シミズサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 122,
+   "words_a": [
+    "原田",
+    "林"
+   ],
+   "words_b": [
+    "小川",
+    "三浦"
+   ],
+   "bl_tr": "コンドノキカクワハラダサンニマカセルカ、ハヤシサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ハラダサンニマカセルカ、ハヤシサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ハラダサンニマカセルカ、ハヤシサンニマカセルカデマヨッテイルカ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ハラダサンニマカセルカ、ハヤシサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 123,
+   "words_a": [
+    "竹内",
+    "山崎"
+   ],
+   "words_b": [
+    "中島",
+    "野村"
+   ],
+   "bl_tr": "コンドノキカクワ、タケウチサンニマカセルカ、ヤマザキサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、タケウチサンニマカセルカ、ヤマザキサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、タケウチサンニマカセルカ、ヤマザキサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、タケウチサンニマカセルカ、ヤマザキサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 124,
+   "words_a": [
+    "金子",
+    "阿部"
+   ],
+   "words_b": [
+    "藤本",
+    "秋山"
+   ],
+   "bl_tr": "コンドノキカクワ、カネコサンニマカセルカ、アベサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、カネコサンニマカセルカ、アベサンニマカセルカデエマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、カネコサンニマカセルカ、アベサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワカネコサンニマカセルカ、アベサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 125,
+   "words_a": [
+    "中山",
+    "橋本"
+   ],
+   "words_b": [
+    "安藤",
+    "小野"
+   ],
+   "bl_tr": "コンドノキカクワ、ナカヤマサンニマカセルカ、ハシモトサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ナカヤマサンニマカセルカ、ハシモトサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ナカヤマサンニマカセルカ、ハシモトサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ナカヤマサンニマカセルカ、ハシモトサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 126,
+   "words_a": [
+    "石田",
+    "太田"
+   ],
+   "words_b": [
+    "上田",
+    "田口"
+   ],
+   "bl_tr": "コンドノキカクワ、イシダサンニマカセルカ、ホウタサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "コンドノキカクワイシダサンニマカセルカ、オオタサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、イシダサンニマカセルカ、オオタサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、イシダサンニマカセルカ、オオタサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 127,
+   "words_a": [
+    "小島",
+    "星野"
+   ],
+   "words_b": [
+    "武田",
+    "荒木"
+   ],
+   "bl_tr": "コンドノキカクワ、コジマサンニマカセルカ、ホシノサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、コジマサンニマカセルカ、ホシノサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、コジマサンニマカセルカ、ホシノサンニマカセルカレマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、コジマサンニマカセルカ、ホシノサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 128,
+   "words_a": [
+    "村田",
+    "内藤"
+   ],
+   "words_b": [
+    "増田",
+    "藤岡"
+   ],
+   "bl_tr": "コンドノキカクワ、ムラタサンニマカセルカ、ナイトウサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ムラタサンニマカセルカ、ナイトウサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ムラタサンニマカセルカ、ナイトウサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ムラタサンニマカセルカ、ナイトウサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 129,
+   "words_a": [
+    "平野",
+    "浜田"
+   ],
+   "words_b": [
+    "大塚",
+    "望月"
+   ],
+   "bl_tr": "コンドノキカクワ、ヘイリャドサンニマカセルカ、ハマダサンニマカセルカデマヨッテイル",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ヘヤサンニマカセルカ、ハマダサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ヘイヤサンニマカセルカ、ハマダサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ヒラノサンニマカセルカ、ハマダサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 130,
+   "words_a": [
+    "清水",
+    "横田"
+   ],
+   "words_b": [
+    "山下",
+    "今村"
+   ],
+   "bl_tr": "コンドノキカクワ、シミズサンニマカセルカ、ヨコタサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、シミズサンニマカセルカ、ヨコタサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、シミズサンニマカセルカ、ヨコタサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、シミズサンニマカセルカ、ヨコタサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 131,
+   "words_a": [
+    "林",
+    "西田"
+   ],
+   "words_b": [
+    "三浦",
+    "河合"
+   ],
+   "bl_tr": "コンドノキカクワ、ハヤシサンニマカセルカ、ニシダサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ハヤシサンニマカセルカ、ニシダサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ハヤシサンニマカセルカ、ニシダサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ハヤシサンニマカセルカ、ニシダサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 132,
+   "words_a": [
+    "山崎",
+    "松尾"
+   ],
+   "words_b": [
+    "野村",
+    "中川"
+   ],
+   "bl_tr": "コンドノキカクワ、ヤマザキサンニマカセルカ、マツオサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワヤマザキサンニマカセルカ、マツオサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ヤマザキサンニマカセルカ、マツオサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ヤマザキサンニマカセルカ、マツオサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 133,
+   "words_a": [
+    "阿部",
+    "杉本"
+   ],
+   "words_b": [
+    "秋山",
+    "平井"
+   ],
+   "bl_tr": "コンドノキカクワ、アベサンニマカセルカ、スギモトサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、アベサンニマカセルカ、スギモトサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、アベサンニマカセルカ、スギモトサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、アベサンニマカセルカ、スギモトサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 134,
+   "words_a": [
+    "橋本",
+    "森"
+   ],
+   "words_b": [
+    "小野",
+    "石橋"
+   ],
+   "bl_tr": "コンドノキカクワ、ハシモトサンニマカセルカ、モリサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ハシモトサンニマカセルカ、モリサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ハシモトサンニマカセルカ、モリサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ハシモトサンニマカセルカ、モリサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 135,
+   "words_a": [
+    "太田",
+    "岸本"
+   ],
+   "words_b": [
+    "田口",
+    "大森"
+   ],
+   "bl_tr": "コンドノキカクワ、オオタサンニマカセルカ、キシモトサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、オオタサンニマカセルカ、キシモトサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワオオタサンニマカセルカキシモトサンニマカセルカデマヨッテイル",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、オオタサンニマカセルカ、キシモトサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 136,
+   "words_a": [
+    "星野",
+    "児玉"
+   ],
+   "words_b": [
+    "荒木",
+    "水野"
+   ],
+   "bl_tr": "コンドノキカクワ、ホシノサンニマカセルカ、ジダマサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "コンドノキカクワ、ホシノサンニマカセルカ、ジダマサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "コンドノキカクワ、ホシノサンニマカセルカ、ジダマサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ホシノサンニマカセルカ、ジダマサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 137,
+   "words_a": [
+    "内藤",
+    "松浦"
+   ],
+   "words_b": [
+    "藤岡",
+    "片山"
+   ],
+   "bl_tr": "コンドノキカクワ、ナイトウサンニマカセルカ、マツウラサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ナイトウサンニマカセルカ、マツウラサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ナイトウサンニマカセルカ、マツウラサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ナイトウサンニマカセルカ、マツウラサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 138,
+   "words_a": [
+    "浜田",
+    "古川"
+   ],
+   "words_b": [
+    "望月",
+    "奥村"
+   ],
+   "bl_tr": "コンドノキカクワ、ハマダサンニマカセルカ、フルカワサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ハマダサンニマカセルカ、フルカワサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ハマダサンニマカセルカ、フルカワサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ハマダサンニマカセルカ、フルカワサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 139,
+   "words_a": [
+    "横田",
+    "大橋"
+   ],
+   "words_b": [
+    "今村",
+    "吉川"
+   ],
+   "bl_tr": "コンドノキカクワヨコタサンニマカセルカ、オオハシサンニマカセルカデマヨッテイルカ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ヨコタサンニマカセルカ、オオハシサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ヨコタサンニマカセルカ、オオハシサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ヨコタサンニマカセルカ、オオハシサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 140,
+   "words_a": [
+    "西田",
+    "永田"
+   ],
+   "words_b": [
+    "河合",
+    "広瀬"
+   ],
+   "bl_tr": "コンドノキカクワニシダサンニマカセルカ。ナガダサンニマカセルカデマヨッテイルカ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "コンドノキカクワ、ニシダサンニマカセルカ、ナガダサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "コンドノキカクワニシダサンニマカセルカ、ナガダサンニマカセルカデマヨッテイル",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ニシダサンニマカセルカ、エナダサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 141,
+   "words_a": [
+    "松尾",
+    "田中"
+   ],
+   "words_b": [
+    "中川",
+    "鈴木"
+   ],
+   "bl_tr": "コンドノキカクワ、マツオサンニマカセルカ、タナカサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、マツオサンニマカセルカ、タナカサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、マツオサンニマカセルカ、タナカサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、マツオサンニマカセルカ、タナカサンニマカセルカデマヨッテイレ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 142,
+   "words_a": [
+    "杉本",
+    "佐藤"
+   ],
+   "words_b": [
+    "平井",
+    "高橋"
+   ],
+   "bl_tr": "コンドノキカクワ、スギモトサンニマカセルカ、サトウサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、スギモトサンニマカセルカ、サトウサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、スギモトサンニマカセルカ、サトウサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、スギモトサンニマカセルカ、サトウサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 143,
+   "words_a": [
+    "森",
+    "伊藤"
+   ],
+   "words_b": [
+    "石橋",
+    "渡辺"
+   ],
+   "bl_tr": "コンドノキカクワ、モリサンニマカセルカ、イトウサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、モリサンニマカセルカ、イトウサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、モリサンニマカセルカ、イトウサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、モリサンニマカセルカ、イトウサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 144,
+   "words_a": [
+    "岸本",
+    "山本"
+   ],
+   "words_b": [
+    "大森",
+    "中村"
+   ],
+   "bl_tr": "コンドノキカクワキシモトサンニマカセルカ、ヤマモトサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、キシモトサンニマカセルカ、ヤマモトサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、キシモトサンニマカセルカ、ヤマモトサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、キシモトサンニマカセルカ、ヤマモトサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 145,
+   "words_a": [
+    "児玉",
+    "小林"
+   ],
+   "words_b": [
+    "水野",
+    "加藤"
+   ],
+   "bl_tr": "コンドノキカクワジダマサンニマカセルカ、コバヤシサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ジダマサンニマカセルカ、コバヤシサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ジダマサンニマカセルカ、コバヤシサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ジダマサンニマカセルカ、コバヤシサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 146,
+   "words_a": [
+    "松浦",
+    "吉田"
+   ],
+   "words_b": [
+    "片山",
+    "山田"
+   ],
+   "bl_tr": "コンドノキカクワ、マツウラサンニマカセルカ、ヨシダサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、マツウラサンニマカセルカ、ヨシダサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、マツウラサンニマカセルカ、ヨシダサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、マツウラサンニマカセルカ、ヨシダサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 147,
+   "words_a": [
+    "古川",
+    "佐々木"
+   ],
+   "words_b": [
+    "奥村",
+    "山口"
+   ],
+   "bl_tr": "コンドノキカクワ、フルカワサンニマカセルカ、シャサキサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "コンドノキカクワ、フルカワサンニマカセルカ、ササキサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、フルカワサンニマカセルカ、ササキサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、フルカワサンニマカセルカ、ササキサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 148,
+   "words_a": [
+    "大橋",
+    "松本"
+   ],
+   "words_b": [
+    "吉川",
+    "井上"
+   ],
+   "bl_tr": "コンドノキカクワ、オオハシサンニマカセルカ、マツモトサンニマカセルカデマヨッテイル",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、オオハシサンニマカセルカ、マツモトサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、オオハシサンニマカセルカ、マツモトサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、オオハシサンニマカセルカ、マツモトサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 149,
+   "words_a": [
+    "永田",
+    "木村"
+   ],
+   "words_b": [
+    "広瀬",
+    "斎藤"
+   ],
+   "bl_tr": "コンドノキカクワ、ナガダサンニマカセルカ、キムラサンニマカセルカデマヨッテイル。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "コンドノキカクワ、ナガダサンニマカセルカ、キムラサンニマカセルカデマヨッテイル。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "コンドノキカクワ、ナガタサンニマカセルカ、キムラサンニマカセルカデマヨッテイル。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "コンドノキカクワ、ナガダサンニマカセルカ、キムラサンニマカセルカデマヨッテイル。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 150,
+   "words_a": [
+    "田中",
+    "清水"
+   ],
+   "words_b": [
+    "鈴木",
+    "山崎"
+   ],
+   "bl_tr": "ソノテイアンワタナカサンデワナク、ジツワシミツサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ソノテイアンワタナカサンデワナク、ジツワシミズサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワタナカサンデワナク、ジツワシミジサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワタナカサンデワナク、ジツワシミジサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 151,
+   "words_a": [
+    "佐藤",
+    "森田"
+   ],
+   "words_b": [
+    "高橋",
+    "池田"
+   ],
+   "bl_tr": "ソノテイアンワサトウサンデワナク、ジツワモリタサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワサトウサンデワナク、ジツワモリタサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワサトウサンデワナク、ジツワモリタサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワサトウサンデワナク、ジツワ、モリタサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 152,
+   "words_a": [
+    "伊藤",
+    "橋本"
+   ],
+   "words_b": [
+    "渡辺",
+    "阿部"
+   ],
+   "bl_tr": "ソノテイアンワイトウサンデワナク、ジツワハシモトサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワイトウサンデワナク、ジツワハシモトサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワイトウサンデワナク、ジツワハシモトサンガカンガイタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワイトウサンデワナク、ジツワハシモトサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 153,
+   "words_a": [
+    "山本",
+    "石川"
+   ],
+   "words_b": [
+    "中村",
+    "前田"
+   ],
+   "bl_tr": "ソノテイアンワヤマモトサンデワナク、ジツワイシカワサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワヤマモトサンデワナク、ジツワイシカワサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワヤマモトサンデワナク、ジツワイシカワサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワヤマモトサンデワナク、ジツワイシカワサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 154,
+   "words_a": [
+    "小林",
+    "藤田"
+   ],
+   "words_b": [
+    "加藤",
+    "後藤"
+   ],
+   "bl_tr": "ソノテイアンワコバヤシサンデワナク、ジツワフジタサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワコバヤシサンデワナク、ジツワフジタサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワコバヤシサンデワナク、ジツワ、フジタサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワコバヤシサンデワナク、ジツワフジタサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 155,
+   "words_a": [
+    "吉田",
+    "岡田"
+   ],
+   "words_b": [
+    "山田",
+    "村上"
+   ],
+   "bl_tr": "ソノテイアンワヨシダサンデワナク、ジツワオカダサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワヨシダサンデワナク、ジツワオカダサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワヨシダサンデワナク、ジツワオカダサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワヨシダサンデワナク、ジツワオカダサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 156,
+   "words_a": [
+    "佐々木",
+    "近藤"
+   ],
+   "words_b": [
+    "山口",
+    "石井"
+   ],
+   "bl_tr": "ソノテイアンワ、ササキサンデワナク、ジツワコンドウサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワ、ササキサンデワナク、ジツワコンドウサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワサササキサンデワナク、ジツワコンドウサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワ、ササキサンデワナク、ジツワ、コンドウサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 157,
+   "words_a": [
+    "松本",
+    "坂本"
+   ],
+   "words_b": [
+    "井上",
+    "遠藤"
+   ],
+   "bl_tr": "ソノテイアンワマツモトサンデワナク、ジツワ、サカモトサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワ、マツモトサンデワナク、ジツワサカモトサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワマツモトサンデワナク、ジツワサカモトサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワマツモトサンデワナク、ジツワサカモトサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 158,
+   "words_a": [
+    "木村",
+    "青木"
+   ],
+   "words_b": [
+    "斎藤",
+    "藤井"
+   ],
+   "bl_tr": "ソノテイアンワキムラサンデワナク、ジツワアオキサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワキムラサンデワナク、ジツワアオキサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワキムラサンデワナク、ジツワアオキサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワキムラサンデワナク、ジツワアオキサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 159,
+   "words_a": [
+    "清水",
+    "西村"
+   ],
+   "words_b": [
+    "山崎",
+    "福田"
+   ],
+   "bl_tr": "ソノテイアンワシミズサンデワナク、ジツワニシムラサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワシミズサンデワナク、ジツワニシムラサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワシュミズサンデワナク、ジツワニシムラサンガカンガエタモノデス。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワ、シミズサンデワナク、ジツワニシムラサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 160,
+   "words_a": [
+    "森田",
+    "太田"
+   ],
+   "words_b": [
+    "池田",
+    "三浦"
+   ],
+   "bl_tr": "ソノテイアンワモリタサンデワナク、ジツワオオタサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワモリタサンデワナク、ジツワオオタサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワモリタサンデワナク、ジツワオオタサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワモリタサンデワナク、ジツワホウタサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 161,
+   "words_a": [
+    "橋本",
+    "藤原"
+   ],
+   "words_b": [
+    "阿部",
+    "岡本"
+   ],
+   "bl_tr": "ソノテイアンワハシモトサンデワナク、ジツワフジワラサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワハシモトサンデワナク、ジツワフジワラサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワハシモトサンデワナク、ジツワフジワラサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワハシモトサンデワナク、ジツワフジワラサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 162,
+   "words_a": [
+    "石川",
+    "松田"
+   ],
+   "words_b": [
+    "前田",
+    "中野"
+   ],
+   "bl_tr": "ソノテイアンワイシカワサンデワナクウ、ジツワマツダサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワイシカワサンデワナク、ジツワマツダサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワイシカワサンデワナク、ジツワマツダサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワイシカワサンデワナク、ジツワマツダサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 163,
+   "words_a": [
+    "藤田",
+    "原田"
+   ],
+   "words_b": [
+    "後藤",
+    "小川"
+   ],
+   "bl_tr": "ソノテイアンワフジタサンデワナク、ジツワハラダサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワフジタサンデワナク、ジツワハラダサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワフジタサンデワナク、ジツワハラダサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワフジタサンデワナク、ジツワハラダサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 164,
+   "words_a": [
+    "岡田",
+    "竹内"
+   ],
+   "words_b": [
+    "村上",
+    "中島"
+   ],
+   "bl_tr": "ソノテイアンワオカダサンデワナク、ジツワタケウチサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワオカダサンデワナク、ジツワタケウチサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワオカダサンデワナク、ジツワタケウチサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワオカダサンデワナク、ジツワタケウチサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 165,
+   "words_a": [
+    "近藤",
+    "金子"
+   ],
+   "words_b": [
+    "石井",
+    "藤本"
+   ],
+   "bl_tr": "ソノテイアンワコンドウサンデワナク、ジツワカネコサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワコンドウサンデワナク、ジツワカネコサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワコンドウサンデワナク、ジツワカネコサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワコンドウサンデワナク、ジツワカネコサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 166,
+   "words_a": [
+    "坂本",
+    "中山"
+   ],
+   "words_b": [
+    "遠藤",
+    "安藤"
+   ],
+   "bl_tr": "ソノテイアンワサカモトサンデワナクウ、ジツワナカヤマサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワサカモトサンデワナク、ジツワナカヤマサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワサカモトサンデワナク、ジツワナカヤマサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワサカモトサンデワナク、ジツワナカヤマサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 167,
+   "words_a": [
+    "青木",
+    "石田"
+   ],
+   "words_b": [
+    "藤井",
+    "上田"
+   ],
+   "bl_tr": "ソノテイアンワアオキサンデワナク、ジツワイシダサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワアオキサンデワナク、ジツワイシダサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワアオキサンデワナク、ジツワイシダサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワアオキサンデワナク、ジツワイシダサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 168,
+   "words_a": [
+    "西村",
+    "小島"
+   ],
+   "words_b": [
+    "福田",
+    "武田"
+   ],
+   "bl_tr": "ソノテイアンワニシムラサンデワナク、ジツワ、コジマサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワニシムラサンデワナク、ジツワコジマサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワニシムラサンデワナク、ジツワコジマサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワニシムラサンデワナク、ジツワコジマサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 169,
+   "words_a": [
+    "太田",
+    "村田"
+   ],
+   "words_b": [
+    "三浦",
+    "増田"
+   ],
+   "bl_tr": "ソノテイアンワオオタサンデワナク、ジツワムラタサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワホウタサンデワナク、ジツワムラダサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "ソノテイアンワオオタサンデワナク、ジツワムラタサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワオオタサンデワナク、ジツワムラタサンガカンガイタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 170,
+   "words_a": [
+    "藤原",
+    "平野"
+   ],
+   "words_b": [
+    "岡本",
+    "大塚"
+   ],
+   "bl_tr": "ソノテイアンワフジワラサンデワナク、ジツワヘヤサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ソノテイアンワフジワラサンデワナク、ジツワヘイヤサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワフジワラサンデワナク、ジツワヒラノサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワ、フジワラサンデワナク、ジツワ、ヘイヤサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 171,
+   "words_a": [
+    "松田",
+    "清水"
+   ],
+   "words_b": [
+    "中野",
+    "山下"
+   ],
+   "bl_tr": "ソノテイアンワマツダサンデワナク、ジツワシミツサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ソノテイアンワマツダサンデワナク、ジツワシミズサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワマツダサンデワナク、ジツワシミズサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワマツダサンデワナク、ジツワシミズサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 172,
+   "words_a": [
+    "原田",
+    "林"
+   ],
+   "words_b": [
+    "小川",
+    "三浦"
+   ],
+   "bl_tr": "ソノテイアンワハラダサンデワナク、ジツワハヤシサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワハラダサンデワナク、ジツワハヤシサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワハラダサンデワナク、ジツワハヤシサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワハラダサンデワナク、ジツワハヤシサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 173,
+   "words_a": [
+    "竹内",
+    "山崎"
+   ],
+   "words_b": [
+    "中島",
+    "野村"
+   ],
+   "bl_tr": "ソノテイアンワタケウチサンデワナク、ジツワヤマザキサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワタケウチサンデワナク、ジツワヤマザキサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワタケウチサンデワナク、ジツワヤマザキサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワタケウチサンデワナク、ジツワヤマザキサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 174,
+   "words_a": [
+    "金子",
+    "阿部"
+   ],
+   "words_b": [
+    "藤本",
+    "秋山"
+   ],
+   "bl_tr": "ソノテイアンワカネコサンデワナク、ジツワアベサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワ、カネコサンデワナク、ジツワアベサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワカネコサンデワナク、ジツワアベサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワカネコサンデワナク、ジツワアベサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 175,
+   "words_a": [
+    "中山",
+    "橋本"
+   ],
+   "words_b": [
+    "安藤",
+    "小野"
+   ],
+   "bl_tr": "ソノテイアンワナカヤマサンデワナク、ジツワハシモトサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワナカヤマサンデワナク、ジツワハシモトサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワナカヤマサンデワナク、ジツワ、ハシモトサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワナカヤマサンデワナク、ジツワハシモトサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 176,
+   "words_a": [
+    "石田",
+    "太田"
+   ],
+   "words_b": [
+    "上田",
+    "田口"
+   ],
+   "bl_tr": "ソノテイアンワイシダサンデワナク、ジツワオオタサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワイシダサンデワナク、ジツワオオタサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワイシダサンデワナク、ジツワオオタサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワイシダサンデワナク、ジツワオオタサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 177,
+   "words_a": [
+    "小島",
+    "星野"
+   ],
+   "words_b": [
+    "武田",
+    "荒木"
+   ],
+   "bl_tr": "ソノテイアンワコジマサンデワナク、ジツワホシノサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワコジマサンデワナク、ジツワホシノサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワコジマサンデワナク、ジツワホシノサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワ、コジマサンデワナク、ジツワ、ホシノサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 178,
+   "words_a": [
+    "村田",
+    "内藤"
+   ],
+   "words_b": [
+    "増田",
+    "藤岡"
+   ],
+   "bl_tr": "ソノテイアンワムラタサンデワナク、ジツワナイトウサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワムラタサンデワナク、ジツワナイトウサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワムラタサンデワナク、ジツワナイトウサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワムラタサンデワナク、ジツワナイトウサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 179,
+   "words_a": [
+    "平野",
+    "浜田"
+   ],
+   "words_b": [
+    "大塚",
+    "望月"
+   ],
+   "bl_tr": "ソノテイアンワヘイヤサンデワナク、ジツワハマダサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワヒラノサンデワナク、ジツワハマダサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワヘイヤサンデワナク、ジツワハマダサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワヒラノサンデワナク、ジツワハマダサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 180,
+   "words_a": [
+    "清水",
+    "横田"
+   ],
+   "words_b": [
+    "山下",
+    "今村"
+   ],
+   "bl_tr": "ソノテイアンワシミズサンデワナク、ジツワヨコタサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワ、シミズサンデワナク、ジツワヨコタサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワシミズサンデワナク、ジツワヨコタサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワシミズサンデワナク、ジツワヨコタサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 181,
+   "words_a": [
+    "林",
+    "西田"
+   ],
+   "words_b": [
+    "三浦",
+    "河合"
+   ],
+   "bl_tr": "ソノテイアンワハヤシサンデワナク、ジツワニシダサンガカンガイタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワハヤシサンデワナク、ジツワニシダサンガカンガイタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワハヤシサンデワナク、ジツワニシダサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワハヤシサンデワナク、ジツワニシダサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 182,
+   "words_a": [
+    "山崎",
+    "松尾"
+   ],
+   "words_b": [
+    "野村",
+    "中川"
+   ],
+   "bl_tr": "ソノテイアンワヤマザキサンデワナク、ジツワマツオサンガカンガエタモノデイス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワヤマザキサンデワナク、ジツワマツオサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワヤマザキサンデワナク、ジツワマツオサンガカンガイタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワヤマザキサンデワナク、ジツワマツオサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 183,
+   "words_a": [
+    "阿部",
+    "杉本"
+   ],
+   "words_b": [
+    "秋山",
+    "平井"
+   ],
+   "bl_tr": "ソノテイアンワアベサンデワナク、ジツワスギモトサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワアベサンデワナク、ジツワスギモトサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワアベサンデワナク、ジツワスギモトサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワアベサンデワナク、ジツワスギモトサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 184,
+   "words_a": [
+    "橋本",
+    "森"
+   ],
+   "words_b": [
+    "小野",
+    "石橋"
+   ],
+   "bl_tr": "ソノテイアンワ、ハシモトサンデワナク、ジツワモリサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワハシモトサンデワナク、ジツワモリサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワ、ハシモトサンデワナク、ジツワモリサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワハシモトサンデワナク、ジツワモリサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 185,
+   "words_a": [
+    "太田",
+    "岸本"
+   ],
+   "words_b": [
+    "田口",
+    "大森"
+   ],
+   "bl_tr": "ソノテイアンワオオタサンデワナク、ジツワキシモトサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワオオタサンデワナク、ジツワキシモトサンガタンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワオオタサンデワナク、ジツワキシモトサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワフトオタサンデワナク、ジツワキシモトサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 186,
+   "words_a": [
+    "星野",
+    "児玉"
+   ],
+   "words_b": [
+    "荒木",
+    "水野"
+   ],
+   "bl_tr": "ソノテイアンワ、ホシノサンデワナク、ジツワ、ジダマサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ソノテイアンワ、ホシノサンデワナク、ジツワ、ジダマサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "ソノテイアンワ、ホシノサンデワナク、ジツワ、ジダマサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワホシノサンデワナク、ジツワジダマサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 187,
+   "words_a": [
+    "内藤",
+    "松浦"
+   ],
+   "words_b": [
+    "藤岡",
+    "片山"
+   ],
+   "bl_tr": "ソノテイアンワナイトウサンデワナク、ジツワマツウラサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワ、ナイトウサンデワナク、ジツワ、マツウラサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワ、ナイトウサンデワナク、ジツワ、マツウラサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワナイトウサンデワナク、ジツワマツウラサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 188,
+   "words_a": [
+    "浜田",
+    "古川"
+   ],
+   "words_b": [
+    "望月",
+    "奥村"
+   ],
+   "bl_tr": "ソノテイアンワハマダサンデワナク、ジツワフルカワサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワハマダサンデワナク、ジツワフルカワサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワ、ハマダサンデワナク、ジツワ、フルカワサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワハマダサンデワナク、ジツワフルカワサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 189,
+   "words_a": [
+    "横田",
+    "大橋"
+   ],
+   "words_b": [
+    "今村",
+    "吉川"
+   ],
+   "bl_tr": "ソノテイアンワヨコタサンデワナク、ジツワオオハシサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワヨコタサンデワナク、ジツワオオハシサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワヨコタサンデワナク、ジツワオオハシサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワヨコタサンデワナク、ジツワ、オオハシサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 190,
+   "words_a": [
+    "西田",
+    "永田"
+   ],
+   "words_b": [
+    "河合",
+    "広瀬"
+   ],
+   "bl_tr": "ソノテイアンワニシダサンデワナク、ジツワナガダサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ソノテイアンワニシダサンデワナク、ジツワ、ナガダサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "ソノテイアンワニシタサンデワナク、ジツワナガダサンガカンガエタモノデス。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワニシダサンデワナク、ジツワナガダサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 191,
+   "words_a": [
+    "松尾",
+    "田中"
+   ],
+   "words_b": [
+    "中川",
+    "鈴木"
+   ],
+   "bl_tr": "ソノテイアンワ、マツオサンデワナク、ジツワ、タナカサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワ、マツオサンデワナク、ジツワ、タナカサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワ、マツオサンデワナク、ジツワ、タナカサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワマツオサンデワナク、ジツワタナカサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 192,
+   "words_a": [
+    "杉本",
+    "佐藤"
+   ],
+   "words_b": [
+    "平井",
+    "高橋"
+   ],
+   "bl_tr": "ソノテイアンワスギモトサンデワナク、ジツワサトウサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワスギモトサンデワナク、ジツワサトウサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワスギモトサンデワナク、ジツワサトウサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワスギモトサンデワナク、ジツワサトウサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 193,
+   "words_a": [
+    "森",
+    "伊藤"
+   ],
+   "words_b": [
+    "石橋",
+    "渡辺"
+   ],
+   "bl_tr": "ソノテイアンワモリサンデワナク、ジツワイトウサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワモリサンデワナク、ジツワイトウサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワモリサンデワナク、ジツワイトウサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワモリサンデワナク、ジツワイトウサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 194,
+   "words_a": [
+    "岸本",
+    "山本"
+   ],
+   "words_b": [
+    "大森",
+    "中村"
+   ],
+   "bl_tr": "ソノテイアンワキシモトサンデワナク、ジツワヤマモトサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワキシモトサンデワナク、ジツワヤマモトサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワキシモトサンデワナク、ジツワヤマモトサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワキシモトサンデワナク、ジツワヤマモトサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 195,
+   "words_a": [
+    "児玉",
+    "小林"
+   ],
+   "words_b": [
+    "水野",
+    "加藤"
+   ],
+   "bl_tr": "ソノテイアンワジダマサンデワナク、ジツワコバヤシサンガカンガエタモノデス。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワジダマサンデワナク、ジツワコバヤシサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワジダマサンデワナク、ジツワコバエシサンガカンガエタモノデス。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワ、ジダマサンデワナク、ジツワコバヤシサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 196,
+   "words_a": [
+    "松浦",
+    "吉田"
+   ],
+   "words_b": [
+    "片山",
+    "山田"
+   ],
+   "bl_tr": "ソノテイアンワマツウラサンデワナク、ジツワヨシダサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワマツウラサンデワナク、ジツワヨシダサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワ、マツウラサンデワナク、ジツワ、ヨシダサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワ、マツウラサンデワナク、ジツワ、ヨシダサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 197,
+   "words_a": [
+    "古川",
+    "佐々木"
+   ],
+   "words_b": [
+    "奥村",
+    "山口"
+   ],
+   "bl_tr": "ソノテイアンワフルカワサンデワナク、ジツワササキサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワ、フルカワサンデワナク、ジツワ、ササキサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワフルカワサンデワナク、ジツワササササンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワ、フルカワサンデワナク、ジツワ、ササキサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 198,
+   "words_a": [
+    "大橋",
+    "松本"
+   ],
+   "words_b": [
+    "吉川",
+    "井上"
+   ],
+   "bl_tr": "ソノテイアンワオオハシサンデワナク、ジツワマツモトサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワオオハシサンデワナク、ジツワマツモトサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワオオハシサンデワナク、ジツワマツモトサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワオオハシサンデワナク、ジツワマツモトサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 199,
+   "words_a": [
+    "永田",
+    "木村"
+   ],
+   "words_b": [
+    "広瀬",
+    "斎藤"
+   ],
+   "bl_tr": "ソノテイアンワナガタサンデワナク、ジツワキムラサンガカンガエタモノデス。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ソノテイアンワナガタサンデワナク、ジツワキムラサンガカンガエタモノデス。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ソノテイアンワナガタサンデワナク、ジツワキムラサンガカンガエタモノデス。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ソノテイアンワナガタサンデワナク、ジツワキムラサンガカンガエタモノデス。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 200,
+   "words_a": [
+    "田中",
+    "清水"
+   ],
+   "words_b": [
+    "鈴木",
+    "山崎"
+   ],
+   "bl_tr": "ウケツケデタナカサンヲヨンダアト、ツヅケテシミズサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデタナカサンヲヨンダアトウ、ツヅケテシミズサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデタナカサンヲヨンダアトウ、ツヅケテシミズサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデタナカサンヲヨンダアトウ、ツヅケテシミズサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 201,
+   "words_a": [
+    "佐藤",
+    "森田"
+   ],
+   "words_b": [
+    "高橋",
+    "池田"
+   ],
+   "bl_tr": "ウケツケデサトウサンヲヨンダアトウ、ツヅケテモリタサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケレサトウサンヲヨンダアトウ、ツヅケテモリタサンヲヨンデクラサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデサトウサンヲヨンダアト、ツヅケテモリタサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデサトウサンヲヨンダアトウ、ツヅケテモリタサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 202,
+   "words_a": [
+    "伊藤",
+    "橋本"
+   ],
+   "words_b": [
+    "渡辺",
+    "阿部"
+   ],
+   "bl_tr": "ウケツケデイトウサンヲヨンダアトウ、ツヅケテハシモトサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデイトウサンヲヨンダアトウ、ツヅケテハシモトサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデイトウサンヲヨンダアトウ、ツヅケテハシモトサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデイトウサンヲヨンダアトウ、ツヅケテハシモトサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 203,
+   "words_a": [
+    "山本",
+    "石川"
+   ],
+   "words_b": [
+    "中村",
+    "前田"
+   ],
+   "bl_tr": "ウケツケデヤマモトサンヲヨンダアトウ、ツヅケテイシカワサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデヤマモトサンヲヨンダアトウ、ツヅケテイシカワサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデヤマモトサンヲヨンダアトウ、スズケテイシカワサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデヤマモトサンヲヨンダアト、ツヅケテイシカワサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 204,
+   "words_a": [
+    "小林",
+    "藤田"
+   ],
+   "words_b": [
+    "加藤",
+    "後藤"
+   ],
+   "bl_tr": "ウケツケデコバヤシサンヲヨンダアト、ツヅケテフジタサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデコバヤシサンヲヨンダアトウ、ツヅケテフジタサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデコバヤシサンヲヨンダアトウ、ツヅケテフジダサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケレコバヤシサンヲヨンダアト、ツヅケテフジタサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 205,
+   "words_a": [
+    "吉田",
+    "岡田"
+   ],
+   "words_b": [
+    "山田",
+    "村上"
+   ],
+   "bl_tr": "ウケツケデヨシダサンヲヨンダアトウ、ツヅケテオカダサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデヨシダサンヲヨンダアトウ、ツヅケテオカダサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデヨシダサンヲヨンダアトウ、ツヅケテオカダサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデヨシダサンヲヨンダアト、ツヅケテオカダサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 206,
+   "words_a": [
+    "佐々木",
+    "近藤"
+   ],
+   "words_b": [
+    "山口",
+    "石井"
+   ],
+   "bl_tr": "ウケツケデササキサンヲヨンダアト、ツヅケテコンドウサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデササキサンヲヨンダアト、ツヅケテコンドウサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデ、ササキサンヲヨンダアトウ、ツヅケテコンドウサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデササキサンヲヨンダアトウ、ツヅケテコンドウサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 207,
+   "words_a": [
+    "松本",
+    "坂本"
+   ],
+   "words_b": [
+    "井上",
+    "遠藤"
+   ],
+   "bl_tr": "ウケツケデマツモトサンヲヨンダアト、ツヅケテサカモトサンヲヨンデクダサン。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデマツモトサンヲヨンダアトウ、ツヅケテサカモトサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデマツモトサンヲヨンダアトウ、ツヅケテサカモトサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデマツモトサンヲヨンダアトウ、ツヅケテサカモトサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 208,
+   "words_a": [
+    "木村",
+    "青木"
+   ],
+   "words_b": [
+    "斎藤",
+    "藤井"
+   ],
+   "bl_tr": "ウケツケデキムラサンヲヨンダアト、ツヅケテアオキサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデキムラサンヲヨンダアトウ、ツヅケテアオキサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデキムラサンヲヨンダアトウ、ツヅケテアオキサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデキムラサンヲヨンダアトウ、ツヅケテアオキサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 209,
+   "words_a": [
+    "清水",
+    "西村"
+   ],
+   "words_b": [
+    "山崎",
+    "福田"
+   ],
+   "bl_tr": "ウケツケデシミズサンヲヨンダアトウ、ツヅケテニシムラサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデシミズサンヲヨンダアト、ツヅケテニシムラサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデシミズサンヲヨンダアトウ、ツヅケテニシムラサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデシミズサンヲヨンダアトウ、ツヅケテイニシムラサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 210,
+   "words_a": [
+    "森田",
+    "太田"
+   ],
+   "words_b": [
+    "池田",
+    "三浦"
+   ],
+   "bl_tr": "ウケツケデモリタサンヲヨンダアトウ、スズケテウオタサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ウケツケデモリタサンヲヨンダアトウ、ツヅケテオオタサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデモリタサンヲヨンダアト、ツヅケテオオタサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデモリタサンヲヨンダアトウ、ツヅケテオオタサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 211,
+   "words_a": [
+    "橋本",
+    "藤原"
+   ],
+   "words_b": [
+    "阿部",
+    "岡本"
+   ],
+   "bl_tr": "ウケツケデハシモトサンヲヨンダアトウ、ツヅケテフジワラサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデハシモトサンヲヨンダアト、ツヅケテフジワラサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデハシモトサンヲヨンダアトウ、ツヅケテフジワラサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデハシモトサンヲヨンダアトウ、ツヅケテフジワラサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 212,
+   "words_a": [
+    "石川",
+    "松田"
+   ],
+   "words_b": [
+    "前田",
+    "中野"
+   ],
+   "bl_tr": "ウケツケデイシカワサンヲヨンダアトウ、ツヅケテマツダサンヲヨンデクラサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデイシカワサンヲヨンダアトウ、ツヅケテマツダサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデイシカワサンヲヨンダアト、ツヅケテマツダサンヲヨンデクラサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデイシカワサンヲヨンダアト、ツヅケテマツダサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 213,
+   "words_a": [
+    "藤田",
+    "原田"
+   ],
+   "words_b": [
+    "後藤",
+    "小川"
+   ],
+   "bl_tr": "ウケツケデフジタサンヲヨンダアト、ツヅケテハラダサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデフジタサンヲヨンダアト、ツヅケテハラダサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデフジタサンヲヨンダアト、ツヅケテハラダサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデフジタサンヲヨンダアト、ツヅケテハラダサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 214,
+   "words_a": [
+    "岡田",
+    "竹内"
+   ],
+   "words_b": [
+    "村上",
+    "中島"
+   ],
+   "bl_tr": "ウケツケデオカダサンヲヨンダアトウ、ツヅケテタケウチサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデオカダサンヲヨンダアトウ、ツヅケテタケウチサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケレオカダサンヲヨンダアトウ、ツヅケテタケウチサンヲヨンデクラサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデオカダサンヲヨンダアト、ツヅケテタケウチサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 215,
+   "words_a": [
+    "近藤",
+    "金子"
+   ],
+   "words_b": [
+    "石井",
+    "藤本"
+   ],
+   "bl_tr": "ウケツケデコンドウサンヲヨンダアト、ツヅケテカネコサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデコンドウサンヲヨンダアト、ツヅケテカネコサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデコンドウサンヲヨンダアト、ツヅケテカネコサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデコンドウサンヲヨンダアト、ツヅケテカネコサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 216,
+   "words_a": [
+    "坂本",
+    "中山"
+   ],
+   "words_b": [
+    "遠藤",
+    "安藤"
+   ],
+   "bl_tr": "ウケツケデサカモトサンヲヨンダアト、ツヅケテナカヤマサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデサカモトサンヲヨンダアト、ツヅケテナカヤマサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデサカモトサンヲヨンダアトウ、ツヅケテナカイヤマサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデサカモトサンヲヨンダアト、ツヅケテナカヤマサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 217,
+   "words_a": [
+    "青木",
+    "石田"
+   ],
+   "words_b": [
+    "藤井",
+    "上田"
+   ],
+   "bl_tr": "ウケツケデアオキサンヲヨンダアトウ、ツヅケテイシダサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデアオキサンヲヨンダアト、ツヅケテイシダサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデアオキサンヲヨンダアトウ、ツヅケテイシダサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデアオキサンヲヨンダアトウ、ツヅケテイシダサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 218,
+   "words_a": [
+    "西村",
+    "小島"
+   ],
+   "words_b": [
+    "福田",
+    "武田"
+   ],
+   "bl_tr": "ウケツケデニシムラサンヲヨンダアトウ、ツヅケテコジマサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデエニシムラサンヲヨンダアト、ツヅケテコジマサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデニシムラサンヲヨンダアトウ、ツヅケテコジマサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデニシムラサンヲヨンダアト、ツヅケテコジマサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 219,
+   "words_a": [
+    "太田",
+    "村田"
+   ],
+   "words_b": [
+    "三浦",
+    "増田"
+   ],
+   "bl_tr": "ウケツケデオオタサンヲヨンダアトウ、ツヅケテムラタサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデオオタサンヲヨンダアトウ、ツヅケテムラタサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデオオタサンヲヨンダアト、ツヅケテムラタサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデオオタサンヲヨンダアトウ、ツヅケテムラタサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 220,
+   "words_a": [
+    "藤原",
+    "平野"
+   ],
+   "words_b": [
+    "岡本",
+    "大塚"
+   ],
+   "bl_tr": "ウケツケデフジワラサンヲヨンダアトウ、ツヅケテヘヤサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ウケツケデフジワラサンヲヨンダアトウ、ツヅケテヘイヤサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデフジワラサンヲヨンダアト、ツヅケテヘヤサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデフジワラサンヲヨンダアトウ、ツヅケテヘイヤサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 221,
+   "words_a": [
+    "松田",
+    "清水"
+   ],
+   "words_b": [
+    "中野",
+    "山下"
+   ],
+   "bl_tr": "ウケツケデマツダサンヲヨンダアト、ツヅケテシミズサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデマツダサンヲヨンダアト、ツヅケテシミズサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデマツダサンヲヨンダアトウ、ツヅケテシミズサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデマツダサンヲヨンダアトウ、ツヅケテシミズサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 222,
+   "words_a": [
+    "原田",
+    "林"
+   ],
+   "words_b": [
+    "小川",
+    "三浦"
+   ],
+   "bl_tr": "ウケツケデハラダサンヲヨンダアトウ、ツヅケテハヤシサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデハラダサンヲヨンダアトツヅケテハヤシサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデハラダサンヲヨンダアトウ、ツヅケテハヤシサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデハラダサンヲヨンダアトウ、ツヅケテハヤシサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 223,
+   "words_a": [
+    "竹内",
+    "山崎"
+   ],
+   "words_b": [
+    "中島",
+    "野村"
+   ],
+   "bl_tr": "ウケツケデタケウチサンヲヨンダアト、ツヅケテヤマザキサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデタケウチサンヲヨンダアト、ツヅケテヤマザキサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデタケウチサンヲヨンダアト、ツヅケテヤマザキサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデタケウチサンヲヨンダアトウ、ツヅケテヤマザキサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 224,
+   "words_a": [
+    "金子",
+    "阿部"
+   ],
+   "words_b": [
+    "藤本",
+    "秋山"
+   ],
+   "bl_tr": "ウケツケデカネコサンヲヨンダアト、ツヅケテアベサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデカネコサンヲヨンダアト、ツヅケテアベサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデカネコサンヲヨンダアトウ、ツヅケテアベッサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデカネコサンヲヨンダアト、ツヅケテアベサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 225,
+   "words_a": [
+    "中山",
+    "橋本"
+   ],
+   "words_b": [
+    "安藤",
+    "小野"
+   ],
+   "bl_tr": "ウケツケデナカヤマサンヲヨンダアトウ、ツヅケテハシモトサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデナカヤマサンヲヨンダアトウ、ツヅケテハシモトサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデナカヤマサンヲヨンダアトウ、ツヅケテハシモトサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデナカヤマサンヲヨンダアトウ、ツヅケテハシモトサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 226,
+   "words_a": [
+    "石田",
+    "太田"
+   ],
+   "words_b": [
+    "上田",
+    "田口"
+   ],
+   "bl_tr": "ウケツケデイシダサンヲヨンダアトウ、ツヅケテフウタサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ウケツケデイシダサンヲヨンダアトウ、ツヅケテウオオタサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデイシダサンヲヨンダアトウ、ツヅケテイオオタサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデイシダサンヲヨンダアットウ、ツヅケテオオタサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 227,
+   "words_a": [
+    "小島",
+    "星野"
+   ],
+   "words_b": [
+    "武田",
+    "荒木"
+   ],
+   "bl_tr": "ウケツケデコジマサンヲヨンダアト、ツヅケテホシノサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデコジマサンヲヨンダアトウ、ツヅケテホシノサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデコジマサンヲヨンダアトウ、ツヅケテホシノサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデコジマサンヲヨンダアト、ツヅケテホシノサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 228,
+   "words_a": [
+    "村田",
+    "内藤"
+   ],
+   "words_b": [
+    "増田",
+    "藤岡"
+   ],
+   "bl_tr": "ウケツケデムラタサンヲヨンダアト、ツヅケテナイトウサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデムラタサンヲヨンダアト、ツヅケテナイトウサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデムラタサンヲヨンダアトウ、ツヅケテナイトウサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデムラタサンヲヨンダアトウ、ツヅケテナイトウサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 229,
+   "words_a": [
+    "平野",
+    "浜田"
+   ],
+   "words_b": [
+    "大塚",
+    "望月"
+   ],
+   "bl_tr": "ウケツケデヒラオサンヲヨンダアトウ、ツヅケテハマダサンヲヨンデクダサイ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデヒラノサンヲヨンダアト、ツヅケテハマダサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデヘヤサンヲヨンダアトウ、ツヅケテハマダサンヲヨンデクダサイ",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデヒラノサンヲヨンダアトウ、ツヅケテハマダサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 230,
+   "words_a": [
+    "清水",
+    "横田"
+   ],
+   "words_b": [
+    "山下",
+    "今村"
+   ],
+   "bl_tr": "ウケツケデシミズサンヲヨンダアトウ、ツヅケテヨコタサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデシミズサンヲヨンダアトウ、ツヅケテイヨコタサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデシミズサンヲヨンダアトウ、ツヅケテヨコタサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデシミズサンヲヨンダアト、ツヅケテヨコタサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 231,
+   "words_a": [
+    "林",
+    "西田"
+   ],
+   "words_b": [
+    "三浦",
+    "河合"
+   ],
+   "bl_tr": "ウケツケデハヤシサンヲヨンダアトウ、ツヅケテニシダサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデハヤシサンヲヨンダアトウ、ツヅケテニシダサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデハヤシサンヲヨンダアトウ、ツヅケテニシダサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデハヤシサンヲヨンダアト、ツヅケテニシダサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 232,
+   "words_a": [
+    "山崎",
+    "松尾"
+   ],
+   "words_b": [
+    "野村",
+    "中川"
+   ],
+   "bl_tr": "ウケツケデヤマザキサンヲヨンダアトウ、ツヅケテマツオサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデヤマザキサンヲヨンダアトウ、ツヅケテマツオサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデヤマザキサンヲヨンダアト、ツヅケテマツオサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデヤマザキサンヲヨンダアトウ、ツヅケテマツオサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 233,
+   "words_a": [
+    "阿部",
+    "杉本"
+   ],
+   "words_b": [
+    "秋山",
+    "平井"
+   ],
+   "bl_tr": "ウケツケデアベサンヲヨンダアト、チュズケテスギモトサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデアベサンヲヨンダアト、ツヅケテスギモトサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデアベサンヲヨンダアトウ、ツヅケテスギモトサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデアベサンヲヨンダアトウ、ツヅケテスギモトサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 234,
+   "words_a": [
+    "橋本",
+    "森"
+   ],
+   "words_b": [
+    "小野",
+    "石橋"
+   ],
+   "bl_tr": "ウケツケデハシモトサンヲヨンダアト、ツヅケテモリサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデハシモトサンヲヨンダアトウ、ツヅケテモリサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデハシモトサンヲヨンダアトウ、ツヅケテモリサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデハシモトサンヲヨンダアト、ツヅケテモリサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 235,
+   "words_a": [
+    "太田",
+    "岸本"
+   ],
+   "words_b": [
+    "田口",
+    "大森"
+   ],
+   "bl_tr": "ウケツケデオオタサンヲヨンダアトウ、ツヅケテキシモトサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデオオタサンヲヨンダアトウ、ツヅケテキシモトサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデオオタサンヲヨンダアト、ツヅケテキシモトサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデオオタサンヲヨンダアト、ツヅケテキシモトサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 236,
+   "words_a": [
+    "星野",
+    "児玉"
+   ],
+   "words_b": [
+    "荒木",
+    "水野"
+   ],
+   "bl_tr": "ウケツケデホシノサンヲヨンダアトウ、ツヅケテジダマサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ウケツケデホシノサンヲヨンダアトウ、ツヅケテジダマサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "ウケツケデホシノサンヲヨンダアト、ツヅケテジダマサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデホシノサンヲヨンダアト、ツヅケテジダマサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 237,
+   "words_a": [
+    "内藤",
+    "松浦"
+   ],
+   "words_b": [
+    "藤岡",
+    "片山"
+   ],
+   "bl_tr": "ウケツケデナイトウサンヲヨンダアトウ、ツヅケテマツウラサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデナイトウサンヲヨンダアト、ツヅケテマツウラサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデナイトウサンヲヨンダアトウ、ツヅケテマツウラサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデナイトウサンヲヨンダアトウ、ツヅケテマツウラサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 238,
+   "words_a": [
+    "浜田",
+    "古川"
+   ],
+   "words_b": [
+    "望月",
+    "奥村"
+   ],
+   "bl_tr": "ウケツケデハマダサンヲヨンダアトウ、チヅケテフルカワサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデハマダサンヲヨンダアト、ツヅケテフルカワサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデハマダサンヲヨンダアトウ、ツヅケテフルカワサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデハマダサンヲヨンダアト、ツヅケテフルカワサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 239,
+   "words_a": [
+    "横田",
+    "大橋"
+   ],
+   "words_b": [
+    "今村",
+    "吉川"
+   ],
+   "bl_tr": "ウケツケデヨコタサンヲヨンダアト、ツヅケテオオハシサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデヨコタサンヲヨンダアトウ、ツヅケテオオハシサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデヨコタサンヲヨンダアト、ツヅケテオオハシサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケレヨコダサンヲヨンダアットウ、ツヅケテオオハシサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 240,
+   "words_a": [
+    "西田",
+    "永田"
+   ],
+   "words_b": [
+    "河合",
+    "広瀬"
+   ],
+   "bl_tr": "ウケツケデニシダサンヲヨンダアト、ツヅケテナガダサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "ウケツケデニシダサンヲヨンダアト、ツヅケテナガタサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデニシダサンヲヨンダアトウ、ツヅケテナガダサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデニシダサンヲヨンダアトウ、ツヅケテナガダサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 241,
+   "words_a": [
+    "松尾",
+    "田中"
+   ],
+   "words_b": [
+    "中川",
+    "鈴木"
+   ],
+   "bl_tr": "ウケツケデマツオサンヲヨンダアトウ、ツヅケテタナカサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデマツオサンヲヨンダアトウ、ツヅケテタナカサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデマツオサンヲヨンダアト、ツヅケテタナカサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケレマツオサンヲヨンダアトウ、ツヅケテタナカサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 242,
+   "words_a": [
+    "杉本",
+    "佐藤"
+   ],
+   "words_b": [
+    "平井",
+    "高橋"
+   ],
+   "bl_tr": "ウケツケデスギモトサンヲヨンダアト、ツヅケテサトウサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデスギモトサンヲヨンダアト、ツヅケテサトウサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデスギモトサンヲヨンダアット、ツヅケテサトウサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデスギモトサンヲヨンダアトウ、ツヅケテサトウサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 243,
+   "words_a": [
+    "森",
+    "伊藤"
+   ],
+   "words_b": [
+    "石橋",
+    "渡辺"
+   ],
+   "bl_tr": "ウケツケデモリサンヲヨンダアトウ、ツヅケテイトウサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデモリサンヲヨンダアトウ、ツヅケテイトウサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデモリサンヲヨンダアトウ、ツヅケテイトウサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデモリサンヲヨンダアトウ、ツヅケテイトウサンヲヨンデクラサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 244,
+   "words_a": [
+    "岸本",
+    "山本"
+   ],
+   "words_b": [
+    "大森",
+    "中村"
+   ],
+   "bl_tr": "ウケツケデキシモトサンヲヨンダアトウ、ツヅケテヤマモトサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデキシモトサンヲヨンダアト、ツヅケテヤマモトサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデキシモトサンヲヨンダアトウ、ツヅケテヤマモトサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデキシモトサンヲヨンダアト、ツヅケテヤマモトサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 245,
+   "words_a": [
+    "児玉",
+    "小林"
+   ],
+   "words_b": [
+    "水野",
+    "加藤"
+   ],
+   "bl_tr": "ウケツケデジダマサンヲヨンダアト、ツヅケテコバヤシサンヲヨンデクダサイ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデジダマサンヲヨンダアトウ、ツヅケテコバヤシサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデジダマサンヲヨンダアトウ、ツヅケテコバヤシサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケクツケデジダマサンヲヨンダアトウ、ツヅケテコバヤシサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 246,
+   "words_a": [
+    "松浦",
+    "吉田"
+   ],
+   "words_b": [
+    "片山",
+    "山田"
+   ],
+   "bl_tr": "ウケツケデマツウラサンヲヨンダアト、ツヅケテヨシダサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデマツウラサンヲヨンダアト、ツヅケテヨシダサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデマツウラサンヲヨンダアト、ツヅケテヨシダサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデマツウラサンヲヨンダアトウ、ツヅケテヨシダサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 247,
+   "words_a": [
+    "古川",
+    "佐々木"
+   ],
+   "words_b": [
+    "奥村",
+    "山口"
+   ],
+   "bl_tr": "ウケツケデイフルカワサンヲヨンダアト、ツヅケテイササキサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデフルカワサンヲヨンダアト、ツヅケテササキサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデフルカワサンヲヨンダアトウ、ツヅケテササキサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデフルカワサンヲヨンダアトウ、ツヅケテササキサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 248,
+   "words_a": [
+    "大橋",
+    "松本"
+   ],
+   "words_b": [
+    "吉川",
+    "井上"
+   ],
+   "bl_tr": "ウケツケデオオハシサンヲヨンダアトウ、ツヅケテマツモトサンヲヨンデクダサイ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデオオハシサンヲヨンダアト、ツヅケテマツモトサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデオオハシサンヲヨンダアトウ、ツヅケテマツモトサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデオオハシサンヲヨンダアトウ、ツヅケテマツモトサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 249,
+   "words_a": [
+    "永田",
+    "木村"
+   ],
+   "words_b": [
+    "広瀬",
+    "斎藤"
+   ],
+   "bl_tr": "ウケツケデナガダサンヲヨンダアト、ツヅケテキムラサンヲヨンデクダサイ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "ウケツケデナガダサンヲヨンダアトウ、ツヅケテキムラサンヲヨンデクダサイ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "ウケツケデナガダサンヲヨンダアト、ツヅケテキムラサンヲヨンデクダサイ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "ウケツケデナガダサンヲヨンダアト、ツヅケテキムラサンヲヨンデクダサイ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 250,
+   "words_a": [
+    "田中",
+    "清水"
+   ],
+   "words_b": [
+    "鈴木",
+    "山崎"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、タナカサンダトキイテイタノデスガ、ジッサイニワシミズサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワタナカサンダトキイテイタノデスガ、ジッサイニワシミズサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワタナカサンダトキイテイタノデスガ、ジッサイニワシミズサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワタナカサンダトキイテイタノデスナ、ジッサイニワシミズサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 251,
+   "words_a": [
+    "佐藤",
+    "森田"
+   ],
+   "words_b": [
+    "高橋",
+    "池田"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、サトウサンダトキイテイタノデスガ、ジッサイニワモリタサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、サトウサンダトキイテイタノデスガ、ジッサイニワモリタサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、サトウサンダトキイテイタノデスガ、ジッサイニワモリタサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、サトウサンダトキイテイタノデスガ、ジッサイニワモリタサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 252,
+   "words_a": [
+    "伊藤",
+    "橋本"
+   ],
+   "words_b": [
+    "渡辺",
+    "阿部"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、イトウサンダトキイテイタノデスガ、ジッサイニワハシモトサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワイトウサンダトキイテイタノデスガ、ジッサイニワハシモトサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワイトウサンダトキイテイタノデスガ、ジッサイニワハシモトサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワイトウサンダトキイテイタノデスガ、ジッサイニワハシモトサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 253,
+   "words_a": [
+    "山本",
+    "石川"
+   ],
+   "words_b": [
+    "中村",
+    "前田"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワヤマモトサンダトキイテイタノデスガジッサイニワイシカワサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、ヤマモトサンダトキイテイタノデスガ、ジッサイニワイシカワサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワヤマモトサンダトキイテイタノデスガ、ジッサイニワイシカワサンデシタイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、ヤマモトサンダトキイテイタノデスガ、ジッサイニワイシカワサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 254,
+   "words_a": [
+    "小林",
+    "藤田"
+   ],
+   "words_b": [
+    "加藤",
+    "後藤"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、コバヤシサンダトキイテイタノデスガ、ジッサイニワフジタサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、コバヤシサンダトキイテイタノデスガ、ジッサイニワ、フジタサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワコバヤシサンダトキイテイタノデスガ、ジッサイニワフジタサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、コバヤシサンダトキイテイタノデスガ、ジッサイニワフジタサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 255,
+   "words_a": [
+    "吉田",
+    "岡田"
+   ],
+   "words_b": [
+    "山田",
+    "村上"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワヨシダサンダトキイテイタノデスガ、ジッサイニワオカダサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、ヨシダサンダトキイテイタノデスガ、ジッサイニワオカダサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワヨシダサンダトキイテイタノデスガ、ジッサイニワオカダサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワヨシダサンダトキイテイタノデスガ、ジッサイニワオカダサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 256,
+   "words_a": [
+    "佐々木",
+    "近藤"
+   ],
+   "words_b": [
+    "山口",
+    "石井"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、ササキサンダトキイテイタノデスガ、ジッサイニワコンドウサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、ササキサンダトキイテイタノデスガ、ジッサイニワコンドウサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、ササキサンダトキイテイタノデスガ、ジッサイニワコンドウサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、ササキサンダトキイテイタノデスガ、ジッサイニワコンドウサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 257,
+   "words_a": [
+    "松本",
+    "坂本"
+   ],
+   "words_b": [
+    "井上",
+    "遠藤"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、マツモトサンダトキイテイタノデスガ、ジッサイニワサカモトサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワマツモトサンダトキイテイタノデスガ、ジッサイニワサカモトサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワマツモトサンダトキイテイタノデスガ、ジッサイニワサカモトサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワマツモトサンダトキイテイタノデスガ、ジッサイニワサカモトサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 258,
+   "words_a": [
+    "木村",
+    "青木"
+   ],
+   "words_b": [
+    "斎藤",
+    "藤井"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワキムラサンダトキイテイタノデスガ、ジッサイニワアオキサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワキムラサンダトキイテイタノデスガ、ジッサイニワアオキサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワキムラサンダトキイテイタノデスガ、ジッサイニワアオキサンデシタイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワキムラサンダトキイテイタノデスガ、ジッサイニワアオキサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 259,
+   "words_a": [
+    "清水",
+    "西村"
+   ],
+   "words_b": [
+    "山崎",
+    "福田"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワシミズサンダトキイテイタノデスガ、ジッサイニワニシムラサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、シミズサンダトキイテイタノデスガ、ジッサイニワニシムラサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、シミズサンダトキイテイタノデスガ、ジッサイニワニシムラサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、シミズサンダトキイテイタノデスガ、ジッサイニワニシムラサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 260,
+   "words_a": [
+    "森田",
+    "太田"
+   ],
+   "words_b": [
+    "池田",
+    "三浦"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、モリタサンダトキイテイタノデスガ、ジッサイニワホウタサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "サイゴニハッピョウスルノワ、モリタサンダトキイテイタノデスガ、ジッサイニワホウタサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "サイゴニハッピョウスルノワモリタサンダトキイテイタノデスガ、ジッサイニワホウタサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワモリタサンダトキイテイタノデスガ、ジッサイニワフトタサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 261,
+   "words_a": [
+    "橋本",
+    "藤原"
+   ],
+   "words_b": [
+    "阿部",
+    "岡本"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワハシモトサンダトキイテイタノデスガ、ジッサイニワフジワラサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、ハシモトサンダトキイテイタノデスガ、ジッサイニワフジワラサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワハシモトサンダトキイテイタノデスガ、ジッサイニワフジワラサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、ハシモトサンダトキイテイタノデスガ、ジッサイニワフジワラサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 262,
+   "words_a": [
+    "石川",
+    "松田"
+   ],
+   "words_b": [
+    "前田",
+    "中野"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワイシカワサンダトキイテイタノデスガ、ジッサイニワマツダサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、イシカワサンダトキイテイタノデスガ、ジッサイニワマツダサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、イシカワサンダトキイテイタノデスガ、ジッサイニワマツダサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、イシカワサンダトキイテイタノデスガ、ジッサイニワマツダサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 263,
+   "words_a": [
+    "藤田",
+    "原田"
+   ],
+   "words_b": [
+    "後藤",
+    "小川"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、フジタサンダトキイテイタノデスガ、ジッサイニワハラダサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、フジタサンダトキイテイタノデスガ、ジッサイニワ、ハラダサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、フジタサンダトオキイテイタノデスガ、ジッサイニワハラダサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワフジタサンダトキイテイタノデスガ、ジッサイニワハラダサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 264,
+   "words_a": [
+    "岡田",
+    "竹内"
+   ],
+   "words_b": [
+    "村上",
+    "中島"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワオカダサンダトキイテイタノデスガ、ジッサイニワタケウチサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワオカダサンダトキイテイタノデスガ、ジッサイニワタケウチサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワオカラサンダトキイテイタノデスガ、ジッサイニワタケウチサンデシタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、オカダサンダトキイテイタノデスガ、ジッサイニワタケウチサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 265,
+   "words_a": [
+    "近藤",
+    "金子"
+   ],
+   "words_b": [
+    "石井",
+    "藤本"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワコンドウサンダトキイテイタノデスガ、ジッサイニワカネコサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワコンドウサンダトキイテイタノデスガ、ジッサイニワカネコサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワコンドウサンダトキイテイタノデスガ、ジッサイニワカネコサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、コンドウサンダトキイテイタノデスガ、ジッサイニワカネコサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 266,
+   "words_a": [
+    "坂本",
+    "中山"
+   ],
+   "words_b": [
+    "遠藤",
+    "安藤"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワサカモトサンダトキイテイタノデスガ、ジッサイニワナカヤマサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、サカモトサンダトキイテイタノデスガ、ジッサイニワナカヤマサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、サカモトサンダトキイテイタノデスガ、ジッサイニワナカヤマサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、サカモトサンダトキイテイタノデスガ、ジッサイニワナカヤマサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 267,
+   "words_a": [
+    "青木",
+    "石田"
+   ],
+   "words_b": [
+    "藤井",
+    "上田"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワアオキサンダトキイテイタノデスガ、ジッサイニワイシダサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワアオキサンダトキイテイタノデスガ、ジッサイニワイシダサンデシタク。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワアオキサンダトキイテイタノデスガ、ジッサイニワイシダサンデシタイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワアオキサンダトキイテイタノデスガ、ジッサイニワイシダサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 268,
+   "words_a": [
+    "西村",
+    "小島"
+   ],
+   "words_b": [
+    "福田",
+    "武田"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワニシムラサンダトキイテイタノデスガ、ジッサイニワコジマサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワニシムラサンダトキイテイタノデスガ、ジッサイニワコジマサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、ニシムラサンダトキイテイタノデスガ、ジッサイニワコジマサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワニシムラサンダトキイテイタノデスガ、ジッサイニワコジマサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 269,
+   "words_a": [
+    "太田",
+    "村田"
+   ],
+   "words_b": [
+    "三浦",
+    "増田"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワオオタサンダトキイテイタノデスガ、ジッサイニワムラタサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワウウオタサンダトキイテイタノデスガ、ジッサイニワムラタサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、オオタサンダトキイテイタノデスガ、ジッサイニワムラタサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワオオタサンダトキイテイタノデスガ、ジッサイニワムラタサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 270,
+   "words_a": [
+    "藤原",
+    "平野"
+   ],
+   "words_b": [
+    "岡本",
+    "大塚"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、フジワラサンダトキイテイタノデスガ、ジッサイニワヒヤノサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "サイゴニハッピョウスルノワフジワラサンダトキイテイタノデスガ、ジッサイニワヘイヤサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、フジワラサンダトキイテイタノデスガ、ジッサイニワヒラノサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、フジワラサンダトキイテイタノデスガ、ジッサイニワヘラノサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 271,
+   "words_a": [
+    "松田",
+    "清水"
+   ],
+   "words_b": [
+    "中野",
+    "山下"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワマツダサンダトキイテイタノデスガ、ジッサイニワシミズサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、マツダサンダトキイテイタノデスガ、ジッサイニワシミズサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワマツダサンダトキイテイタノデスガ、ジッサイニワシミズサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワマツダサンダトキイテイタノデスガ、ジッサイニワシミズサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 272,
+   "words_a": [
+    "原田",
+    "林"
+   ],
+   "words_b": [
+    "小川",
+    "三浦"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワハラダサンダトキイテイタノデスガジッサイニワハヤシサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワハラダサンダトキイテイタノデスガ、ジッサイニワハヤシサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワハラダサンダトキイテイタノデスガ、ジッサイニワハヤシサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワハラダサンダトキイテイタノデスガ、ジッサイニワハヤシサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 273,
+   "words_a": [
+    "竹内",
+    "山崎"
+   ],
+   "words_b": [
+    "中島",
+    "野村"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワタケウチサンダトキイテイタノデスガ、ジッサイニワヤマザキサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワタケウチサンダトキイテイタノデスガ、ジッサイニワヤマザキサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワタケウチサンダトキイテイタノデスガ、ジッサイニワヤマザキサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニ、ハッピョウスルノワタケウチサンダトキイテイタノデスガ、ジッサイニワヤマザキサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 274,
+   "words_a": [
+    "金子",
+    "阿部"
+   ],
+   "words_b": [
+    "藤本",
+    "秋山"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、カネコサンダトキイテイタノデスガ、ジッサイニワアベサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワカネコサンダトキイテイタノデスガ、ジッサイニワアベサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、カネコサンダトキイテイタノデスガ、ジッサイニワアベサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、カネコサンダトキイテイタノデスガ、ジッサイニワアベサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 275,
+   "words_a": [
+    "中山",
+    "橋本"
+   ],
+   "words_b": [
+    "安藤",
+    "小野"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワナカヤマサンダトキイテイタノデスガ、ジッサイニワハシモトサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワナカヤマサンダトキイテイタノデスダ、ジッサイニワハシモトサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワナカヤマサンダトキイテイタノデスガ、ジッサイニワハシモトサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、ナカヤマサンダトキイテイタノデスガ、ジッサイニワハシモトサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 276,
+   "words_a": [
+    "石田",
+    "太田"
+   ],
+   "words_b": [
+    "上田",
+    "田口"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワイシザサンダトキイテイタノデスガ、ジッサイニワホウタサンデシタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": false,
+   "inj1_tr": "サイゴニハッピョウスルノワ、イシダサンダトキイテイタノデスガ、ジッサイニワ、フトタサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "サイゴニハッピョウスルノワイシダサンダトキイテイタノデスガ、ジッサイニワホウタサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、イシダサンダトキイテイタノデスガ、ジッサイニワフウタサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 277,
+   "words_a": [
+    "小島",
+    "星野"
+   ],
+   "words_b": [
+    "武田",
+    "荒木"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワコジマサンダトキイテイタノデスガ、ジッサイニワホシノサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、コジマサンダトキイテイタノデスガ、ジッサイニワホシノサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、コジマサンダトキイテイタノデスガ、ジッサイニワホシノサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、コジマサンダトキイテイタノデスガ、ジッサイニワホシノサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 278,
+   "words_a": [
+    "村田",
+    "内藤"
+   ],
+   "words_b": [
+    "増田",
+    "藤岡"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、ムラタサンダトキイテイタノデスガ、ジッサイニワナイトウサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワムラタサンダトキイテイタノデスガ、ジッサイニワナイトウサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワムラタサンダトキイテイタノデスガ、ジッサイニワナイトウサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、ムラタサンダトキイテイタノデスガ、ジッサイニワナイトウサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 279,
+   "words_a": [
+    "平野",
+    "浜田"
+   ],
+   "words_b": [
+    "大塚",
+    "望月"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワヘイヤサンダトキイテイタノデスガ、ジッサイニワハマダサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワヘイリャサンダトキイテイタノデスガ、ジッサイニワハマダサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワヘイラサンダトキイテイタノデスガ、ジッサイニワハマダサンデシタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、ヒラノサンダトキイテイタノデスガ、ジッサイニワハマダサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 280,
+   "words_a": [
+    "清水",
+    "横田"
+   ],
+   "words_b": [
+    "山下",
+    "今村"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワシミズサンダトキイテイタノデスガ、ジッサイニワヨコタサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワシミズサンダトキイテイタノデスガ、ジッサイニワヨコタサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワシミジュサンダトキイテイタノデスガ、ジッサイニワヨコタサンデシタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワシミズサンダトキイテイタノデスガ、ジッサイニワヨコタサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 281,
+   "words_a": [
+    "林",
+    "西田"
+   ],
+   "words_b": [
+    "三浦",
+    "河合"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワハヤシサンダトキイテイタノデスガ、ジッサイニワニシダサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワハヤシサンダトキイテイタノデスガジッサイニワニシダサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワハヤシサンダトキイテイタノデスダ、ジッサイニワニシダサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワハヤシサンダトキイテイタノデスガ、ジッサイニワニシタサンデシタリ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 282,
+   "words_a": [
+    "山崎",
+    "松尾"
+   ],
+   "words_b": [
+    "野村",
+    "中川"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワヤマザキサンダトキイテイタノデスガジッサイニワマツオサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、ヤマザキサンダトキイテイタノデスガ、ジッサイニワマツオサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワヤマザキサンダトキイテイタノデスガ、ジッサイニワマツオサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワヤマザキサンダトキイテイタノデスガ、ジッサイニワマツオウサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 283,
+   "words_a": [
+    "阿部",
+    "杉本"
+   ],
+   "words_b": [
+    "秋山",
+    "平井"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワアベサンダトキイテイタノデスガ、ジッサイニワスギモトサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、アベサンダトキイテイタノデスガ、ジッサイニワスギモトサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワアベサンダトキイテイタノデスガ、ジッサイニワスギモトサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワアベサンダトキイテイタノデスガ、ジッサイニワスギモトサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 284,
+   "words_a": [
+    "橋本",
+    "森"
+   ],
+   "words_b": [
+    "小野",
+    "石橋"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワハシモトサンダトキイテイタノデスガ、ジッサイニワモリサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、ハシモトサンダトキイテイタノデスガ、ジッサイニワモリサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、ハシモトサンダトキイテイタノデスガ、ジッサイニワモリサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワハシモトサンダトキイテイタノデスガ、ジッサイニワモリサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 285,
+   "words_a": [
+    "太田",
+    "岸本"
+   ],
+   "words_b": [
+    "田口",
+    "大森"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワオオタサンダトキイテイタノデスガ、ジッサイニワキシモトサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワオオタサンダトキイテイタノデスガ、ジッサイニワキシモトサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワオオタサンダトキイテイタノデスガ、ジッサイニワキシモトサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワオオタサンダトキイテイタノデスガ、ジッサイニワキシモトサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 286,
+   "words_a": [
+    "星野",
+    "児玉"
+   ],
+   "words_b": [
+    "荒木",
+    "水野"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワホシノサンダトキイテイタノデスガ、ジッサイニワジダマサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "サイゴニハッピョウスルノワホシノサンダトキイテイタノデスガ、ジッサイニワジダマサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "サイゴニハッピョウスルノワホシノサンダトキイテイタノデスガ、ジッサイニワジダマサンデシタン。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、ホシノサンダトキイテイタノデスガ、ジッサイニワジダマサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 287,
+   "words_a": [
+    "内藤",
+    "松浦"
+   ],
+   "words_b": [
+    "藤岡",
+    "片山"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワナイトウサンダトキイテイタノデスガ、ジッサイニワマツウラサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワナイトウサンダトキイテイタノデスガ、ジッサイニワマツウラサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワナイトウサンダトキイテイタノデスガ、ジッサイニワマツウラサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワナイトウサンダトキイテイタノデスガ、ジッサイニワマツウラサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 288,
+   "words_a": [
+    "浜田",
+    "古川"
+   ],
+   "words_b": [
+    "望月",
+    "奥村"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、ハマダサンダトキイテイタノデスガ、ジッサイニワフルカワサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、ハマダサンダトキイテイタノデスガ、ジッサイニワフルカワサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、ハマダサンダトキイテイタノデスガ、ジッサイニワフルカワサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、ハマダサンダトキイテイタノデスガ、ジッサイニワフルカワサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 289,
+   "words_a": [
+    "横田",
+    "大橋"
+   ],
+   "words_b": [
+    "今村",
+    "吉川"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワヨコタサンダトキイテイタノデスガ、ジッサイニワオオハシサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワヨコタサンダトキイテイタノデスガ、ジッサイニワオオハシサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワヨコタサンダトキイテイタノデスガ、ジッサイニワオオハシサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワヨコタサンダトキイテイタノデスガ、ジッサイニワオオハシサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 290,
+   "words_a": [
+    "西田",
+    "永田"
+   ],
+   "words_b": [
+    "河合",
+    "広瀬"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、ニシダサンダトキイテイタノデスガ、ジッサイニワナガダサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": false,
+   "inj1_tr": "サイゴニハッピョウスルノワニシダサンダトキイテイタノデスガ、ジッサイニワナガダサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": false,
+   "inj2_tr": "サイゴニハッピョウスルノワニシダサンダトキイテイタノデスガ、ジッサイニワナガダサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、ニシダサンダトキイテイタノデスガ、ジッサイニワナガダサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 291,
+   "words_a": [
+    "松尾",
+    "田中"
+   ],
+   "words_b": [
+    "中川",
+    "鈴木"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、マツオサンダトキイテイタノデスガ、ジッサイニワタナカサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワマツオサンダトキイテイタノデスガ、ジッサイニワタナカサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワマツオサンダトキイテイタノデスガ、ジッサイニワタナカサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワマツオサンダトキイテイタノデスガ、ジッサイニワタナカサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 292,
+   "words_a": [
+    "杉本",
+    "佐藤"
+   ],
+   "words_b": [
+    "平井",
+    "高橋"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、スギモトサンダトキイテイタノデスガ、ジッサイニワサトウサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワスギモトサンダトキイテイタノデスガ、ジッサイニワサトウサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワスギモトサンダトキイテイタノデスガ、ジッサイニワサトウサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワ、スギモトサンダトキイテイタノデスガ、ジッサイニワサトウサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 293,
+   "words_a": [
+    "森",
+    "伊藤"
+   ],
+   "words_b": [
+    "石橋",
+    "渡辺"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワモリサンダトキイテイタノデスガ、ジッサイニワイトウサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、モリサンダトキイテイタノデスガ、ジッサイニワイトウサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、モリサンダトキイテイタノデスガ、ジッサイニワイトウサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワモリサンダトキイテイタノデスガ、ジッサイニワイトウサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 294,
+   "words_a": [
+    "岸本",
+    "山本"
+   ],
+   "words_b": [
+    "大森",
+    "中村"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワキシモトサンダトキイテイタノデスガ、ジッサイニワヤマモトサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワキシモトサンダトキイテイタノデスガ、ジッサイニワヤマモトサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワキシモトサンダトキイテイタノデスガ、ジッサイニワヤマモトサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワキシモトサンダトキイテイタノデスガ、ジッサイニワヤマモトサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 295,
+   "words_a": [
+    "児玉",
+    "小林"
+   ],
+   "words_b": [
+    "水野",
+    "加藤"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、ジダマサンダトキイテイタノデスガ、ジッサイニワコバヤシサンデシタ。",
+   "bl_slot1_ok": false,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワ、ジダマサンダトキイテイタノデスガ、ジッサイニワコバヤシサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワジダマサンダトキイテイタノデスガ、ジッサイニワコバヤシサンデシタ。",
+   "inj2_slot1_ok": false,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワジダマサンダトキイテイタノデスガ、ジッサイニワコバヤシサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 296,
+   "words_a": [
+    "松浦",
+    "吉田"
+   ],
+   "words_b": [
+    "片山",
+    "山田"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワマツウラサンダトキイテイタノデスガ、ジッサイニワヨシダサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワマツウラサンダトキイテイタノデスガ、ジッサイニワヨシダサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワマツウラサンダトキイテイタノデスガ、ジッサイニワヨシダサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワマツウラサンダトキイテイタノデスガ、ジッサイニワヨシダサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 297,
+   "words_a": [
+    "古川",
+    "佐々木"
+   ],
+   "words_b": [
+    "奥村",
+    "山口"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワ、フルカワサンダトキイテイタノデスガ、ジッサイニワササキサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワフルカワサンダトキイテイタノデスガ、ジッサイニワササキサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、フルカワサンダトキイテイタノデスガ、ジッサイニワ、ササキサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワフルカワサンダトキイテイタノデスガ、ジッサイニワササキサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 298,
+   "words_a": [
+    "大橋",
+    "松本"
+   ],
+   "words_b": [
+    "吉川",
+    "井上"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワオオハシサンダトキイテイタノデスガ、ジッサイニワマツモトサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワオオハシサンダトキイテイタノデスガ、ジッサイニワマツモトサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワオオハシサンダトキイテイタノデスガ、ジッサイニワマツモトサンデシタイ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワオオハシサンダトキイテイタノデスガ、ジッサイニワマツモトサンデシタク。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  },
+  {
+   "pair_idx": 299,
+   "words_a": [
+    "永田",
+    "木村"
+   ],
+   "words_b": [
+    "広瀬",
+    "斎藤"
+   ],
+   "bl_tr": "サイゴニハッピョウスルノワナガタサンダトキイテイタノデスガ、ジッサイニワキムラサンデシタ。",
+   "bl_slot1_ok": true,
+   "bl_slot2_ok": true,
+   "inj1_tr": "サイゴニハッピョウスルノワアガダサンダトキイテイタノデスガ、ジッサイニワキムラサンデシタ。",
+   "inj1_slot1_ok": false,
+   "inj1_slot2_ok": true,
+   "inj2_tr": "サイゴニハッピョウスルノワ、ナガタサンダトキイテイタノデスガ、ジッサイニワキムラサンデシタ。",
+   "inj2_slot1_ok": true,
+   "inj2_slot2_ok": false,
+   "inj12_tr": "サイゴニハッピョウスルノワナガタサンダトキイテイタノデスガ、ジッサイニワキムラサンデシタ。",
+   "inj12_slot1_ok": false,
+   "inj12_slot2_ok": false
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "If you use this software or these benchmark materials, please cite it as below."
+title: "SpeechSplice: Pronunciation Control in Encoder–Decoder LLM-based TTS by Replacing Encoder Hidden States"
+abstract: >-
+  SpeechSplice controls pronunciation in encoder-decoder LLM-based
+  text-to-speech without training and without modifying model weights, by
+  replacing entity-position hidden states at the encoder output with
+  pronunciation-bearing vectors. This repository contains the implementation, a
+  word-replacement pronunciation benchmark in six languages, the listening-test
+  materials and item-level results, and pre-computed evaluation outputs for
+  each table.
+type: software
+license: MIT
+year: 2027
+authors:
+  - given-names: Kiyoshi
+    family-names: Kurihara
+    affiliation: "Matsuo Institute, Inc. / The University of Tokyo"
+    email: kiyoshi.kurihara@weblab.t.u-tokyo.ac.jp
+  - given-names: Jumpei
+    family-names: Ukita
+    affiliation: "Matsuo Institute, Inc. / The University of Tokyo"
+    email: jumpei.ukita@weblab.t.u-tokyo.ac.jp
+  - given-names: Yusuke
+    family-names: Iwasawa
+    affiliation: "Matsuo Institute, Inc. / The University of Tokyo"
+    email: iwasawa@weblab.t.u-tokyo.ac.jp
+  - given-names: Yutaka
+    family-names: Matsuo
+    affiliation: "Matsuo Institute, Inc. / The University of Tokyo"
+    email: matsuo@weblab.t.u-tokyo.ac.jp
+keywords:
+  - text-to-speech
+  - pronunciation control
+  - large language models
+  - encoder-decoder
+  - speech synthesis
+  - training-free
+preferred-citation:
+  type: generic
+  title: "SpeechSplice: Pronunciation Control in Encoder–Decoder LLM-based TTS by Replacing Encoder Hidden States"
+  year: 2027
+  notes: "To appear at EACL 2027."
+  authors:
+    - given-names: Kiyoshi
+      family-names: Kurihara
+      affiliation: "Matsuo Institute, Inc. / The University of Tokyo"
+    - given-names: Jumpei
+      family-names: Ukita
+      affiliation: "Matsuo Institute, Inc. / The University of Tokyo"
+    - given-names: Yusuke
+      family-names: Iwasawa
+      affiliation: "Matsuo Institute, Inc. / The University of Tokyo"
+    - given-names: Yutaka
+      family-names: Matsuo
+      affiliation: "Matsuo Institute, Inc. / The University of Tokyo"

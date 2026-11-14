@@ -1,0 +1,101 @@
+
+==========================================================================
+PHASE ab_main: responses 1680 (duplicates removed 0, invalid(v=2) 0)
+
+--- Before exclusions (rule 5: report both) 60 listeners ---
+  [en] items=50 resp=500 invalid(v=2)=0
+    [E1] majority rate      : 100.0% [ 92.9, 100.0] (Wilson, n=50; estimand=proportion of items succeeding by majority)
+    [E2] per-item rate      :  99.4% [ 98.6, 100.0] (item bootstrap; estimand=headline, unconditional INJ-selection rate)
+    response-level rate     :  99.4% [ 97.6, 100.0] (two-way cluster boot)
+    (ref.) pooled Wilson    :  99.4% [ 98.3,  99.8] (assumes independence; not the primary report)
+    primary analysis GEE    : p̂=99.4% [98.2, 99.8] z=9.07 p=<1e-16 (significant at Bonferroni alpha=0.0125)
+    human x Whisper (item)  : raw=94% [both+ 47, human-only 3, W-only 0, both- 0] PPA=0.97 NPA=0.00
+      mismatch item 0056: human+/W-
+      mismatch item 0047: human+/W-
+      mismatch item 0258: human+/W-
+    catch pass rate (QC)    : 100.0% [ 94.0, 100.0]
+  [ja] items=50 resp=500 invalid(v=2)=0
+    [E1] majority rate      :  98.0% [ 89.5,  99.6] (Wilson, n=50; estimand=proportion of items succeeding by majority)
+    [E2] per-item rate      :  98.6% [ 95.8, 100.0] (item bootstrap; estimand=headline, unconditional INJ-selection rate)
+    response-level rate     :  98.6% [ 94.9, 100.0] (two-way cluster boot)
+    (ref.) pooled Wilson    :  98.6% [ 97.1,  99.3] (assumes independence; not the primary report)
+    primary analysis GEE    : p̂=98.6% [90.8, 99.8] z=4.24 p=2.3e-05 (significant at Bonferroni alpha=0.0125)
+    human x Whisper (item)  : raw=92% [both+ 45, human-only 3, W-only 1, both- 0] PPA=0.96 NPA=0.00
+      mismatch item 0210: human+/W-
+      mismatch item 0290: human+/W-
+      mismatch item 0247: human+/W-
+      mismatch item 0242: human-/W+
+    catch pass rate (QC)    :  98.3% [ 91.1,  99.7]
+  [zh] items=50 resp=500 invalid(v=2)=0
+    [E1] majority rate      : 100.0% [ 92.9, 100.0] (Wilson, n=50; estimand=proportion of items succeeding by majority)
+    [E2] per-item rate      : 100.0% [100.0, 100.0] (item bootstrap; estimand=headline, unconditional INJ-selection rate)
+    response-level rate     : 100.0% [100.0, 100.0] (two-way cluster boot)
+    (ref.) pooled Wilson    : 100.0% [ 99.2, 100.0] (assumes independence; not the primary report)
+    primary analysis GEE    : p̂=100.0% [100.0, 100.0] z=201.97 p=<1e-16 (significant at Bonferroni alpha=0.0125)
+    human x Whisper (item)  : raw=98% [both+ 49, human-only 1, W-only 0, both- 0] PPA=0.99 NPA=0.00
+      mismatch item 0037: human+/W-
+    catch pass rate (QC)    : 100.0% [ 94.0, 100.0]
+
+--- After exclusions (rule 5: report both) 60 listeners ---
+  [en] items=50 resp=500 invalid(v=2)=0
+    [E1] majority rate      : 100.0% [ 92.9, 100.0] (Wilson, n=50; estimand=proportion of items succeeding by majority)
+    [E2] per-item rate      :  99.4% [ 98.6, 100.0] (item bootstrap; estimand=headline, unconditional INJ-selection rate)
+    response-level rate     :  99.4% [ 97.6, 100.0] (two-way cluster boot)
+    (ref.) pooled Wilson    :  99.4% [ 98.3,  99.8] (assumes independence; not the primary report)
+    primary analysis GEE    : p̂=99.4% [98.2, 99.8] z=9.07 p=<1e-16 (significant at Bonferroni alpha=0.0125)
+    human x Whisper (item)  : raw=94% [both+ 47, human-only 3, W-only 0, both- 0] PPA=0.97 NPA=0.00
+      mismatch item 0056: human+/W-
+      mismatch item 0047: human+/W-
+      mismatch item 0258: human+/W-
+    catch pass rate (QC)    : 100.0% [ 94.0, 100.0]
+  [ja] items=50 resp=500 invalid(v=2)=0
+    [E1] majority rate      :  98.0% [ 89.5,  99.6] (Wilson, n=50; estimand=proportion of items succeeding by majority)
+    [E2] per-item rate      :  98.6% [ 95.8, 100.0] (item bootstrap; estimand=headline, unconditional INJ-selection rate)
+    response-level rate     :  98.6% [ 94.9, 100.0] (two-way cluster boot)
+    (ref.) pooled Wilson    :  98.6% [ 97.1,  99.3] (assumes independence; not the primary report)
+    primary analysis GEE    : p̂=98.6% [90.8, 99.8] z=4.24 p=2.3e-05 (significant at Bonferroni alpha=0.0125)
+    human x Whisper (item)  : raw=92% [both+ 45, human-only 3, W-only 1, both- 0] PPA=0.96 NPA=0.00
+      mismatch item 0210: human+/W-
+      mismatch item 0290: human+/W-
+      mismatch item 0247: human+/W-
+      mismatch item 0242: human-/W+
+    catch pass rate (QC)    :  98.3% [ 91.1,  99.7]
+  [zh] items=50 resp=500 invalid(v=2)=0
+    [E1] majority rate      : 100.0% [ 92.9, 100.0] (Wilson, n=50; estimand=proportion of items succeeding by majority)
+    [E2] per-item rate      : 100.0% [100.0, 100.0] (item bootstrap; estimand=headline, unconditional INJ-selection rate)
+    response-level rate     : 100.0% [100.0, 100.0] (two-way cluster boot)
+    (ref.) pooled Wilson    : 100.0% [ 99.2, 100.0] (assumes independence; not the primary report)
+    primary analysis GEE    : p̂=100.0% [100.0, 100.0] z=201.97 p=<1e-16 (significant at Bonferroni alpha=0.0125)
+    human x Whisper (item)  : raw=98% [both+ 49, human-only 1, W-only 0, both- 0] PPA=0.99 NPA=0.00
+      mismatch item 0037: human+/W-
+    catch pass rate (QC)    : 100.0% [ 94.0, 100.0]
+
+==========================================================================
+PHASE ab_het: responses 560 (duplicates removed 0, invalid(v=2) 0)
+
+--- Before exclusions (rule 5: report both) 20 listeners ---
+  [ja] items=50 resp=500 invalid(v=2)=0
+    [E1] majority rate      : 100.0% [ 92.9, 100.0] (Wilson, n=50; estimand=proportion of items succeeding by majority)
+    [E2] per-item rate      :  98.6% [ 97.4,  99.6] (item bootstrap; estimand=headline, unconditional INJ-selection rate)
+    response-level rate     :  98.6% [ 96.2, 100.0] (two-way cluster boot)
+    (ref.) pooled Wilson    :  98.6% [ 97.1,  99.3] (assumes independence; not the primary report)
+    primary analysis GEE    : p̂=98.6% [96.9, 99.4] z=10.37 p=<1e-16 (significant at Bonferroni alpha=0.0125)
+    catch pass rate (QC)    : 100.0% [ 94.0, 100.0]
+
+--- After exclusions (rule 5: report both) 20 listeners ---
+  [ja] items=50 resp=500 invalid(v=2)=0
+    [E1] majority rate      : 100.0% [ 92.9, 100.0] (Wilson, n=50; estimand=proportion of items succeeding by majority)
+    [E2] per-item rate      :  98.6% [ 97.4,  99.6] (item bootstrap; estimand=headline, unconditional INJ-selection rate)
+    response-level rate     :  98.6% [ 96.2, 100.0] (two-way cluster boot)
+    (ref.) pooled Wilson    :  98.6% [ 97.1,  99.3] (assumes independence; not the primary report)
+    primary analysis GEE    : p̂=98.6% [96.9, 99.4] z=10.37 p=<1e-16 (significant at Bonferroni alpha=0.0125)
+    catch pass rate (QC)    : 100.0% [ 94.0, 100.0]
+
+==========================================================================
+PHASE ab_corr: responses 0 (duplicates removed 0, invalid(v=2) 0)
+
+--- Before exclusions (rule 5: report both) 0 listeners ---
+  ja: no data
+
+--- After exclusions (rule 5: report both) 0 listeners ---
+  ja: no data

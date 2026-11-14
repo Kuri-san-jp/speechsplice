@@ -1,0 +1,272 @@
+{
+ "pairs": {
+  "27": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "31c38f07b752d76220434598476bd760",
+     "new_md5": "d000cad79b23ad100ea673028d1ef04c",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0027_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0027_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0027_b7.wav"
+    }
+   }
+  },
+  "46": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "ba7b12e8b3abfc37cf4bd1e97a061807",
+     "new_md5": "0f177c805cbd76a51b857fdbeb3d9e25",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0046_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0046_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0046_b7.wav"
+    }
+   }
+  },
+  "47": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "a1a6c0d3f7afc03728c3a3ddd0f3f9ef",
+     "new_md5": "755baaaff2aa231858220fcf2d954b9e",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0047_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0047_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0047_b7.wav"
+    }
+   }
+  },
+  "70": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "e8feb9d073641117a2e801f32108d85e",
+     "new_md5": "e0202ce10ffcd9418c7db0b6b7612945",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0070_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0070_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0070_b7.wav"
+    }
+   }
+  },
+  "155": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "8f1307b4f32ea57756dc99db09047e83",
+     "new_md5": "c1608b9c2a064b80fefc2e959a9bb315",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0155_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0155_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0155_b7.wav"
+    }
+   }
+  },
+  "160": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "fb2546f904d231e34d68f5b26ee5730f",
+     "new_md5": "5593097dd8cc9d3cb06d2a00281d0e26",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0160_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0160_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0160_b7.wav"
+    }
+   }
+  },
+  "162": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "3d50a3c2ce3624a955f03e2bd98fb603",
+     "new_md5": "b208b3aacfe38dd315abbd1a2a957fb9",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0162_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0162_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0162_b7.wav"
+    }
+   }
+  },
+  "186": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "12fc88e8cf0dd1fb25f42a4f7934e127",
+     "new_md5": "c03c57c7555f1cc24dc44dd1d30d3a26",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0186_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0186_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0186_b7.wav"
+    }
+   }
+  },
+  "188": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "c6aae2da959eefdab28c2ffaf7673491",
+     "new_md5": "cef885cbc11f75823c4e9b26769cf960",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0188_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0188_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0188_b7.wav"
+    }
+   }
+  },
+  "267": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "e5225f54592650d5519f7e39ce8d976a",
+     "new_md5": "603d76acbbab434799160b129a1e0891",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0267_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0267_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0267_b7.wav"
+    }
+   }
+  },
+  "275": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "011d01c711a09e82fa60fe6f9fc1b37d",
+     "new_md5": "cc9d07d425181bbe3d206290d9269cbb",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0275_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0275_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0275_b7.wav"
+    }
+   }
+  },
+  "277": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "2e283f20e2e146d7fab06f5ea9566fc7",
+     "new_md5": "01f5f787fb8366108eb6463de649da24",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0277_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0277_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0277_b7.wav"
+    }
+   }
+  },
+  "296": {
+   "seed": 43,
+   "tag": "seed43",
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "textedit_unit": "b7",
+   "replaced_keys": [
+    "b7"
+   ],
+   "files": {
+    "b7": {
+     "old_md5": "ce29f1c48759fb37d3d970b461c719ed",
+     "new_md5": "8ef96d32ddef1af6c07427ec7ad120a3",
+     "backup": "eval_results/_appg_vc/apply/backup_textedit/s0296_b7.wav",
+     "source": "eval_results/_appg_vc/textedit/b7only/seed43/s0296_b7.wav",
+     "production": "eval_results/baseline_text_edit_ja_n300/wavs/s0296_b7.wav"
+    }
+   }
+  }
+ },
+ "history": [
+  {
+   "apply_run_id": "20260930_003927_apply_1784993",
+   "date": "2026-09-30 00:39:32",
+   "pairs": [
+    27,
+    46,
+    47,
+    70,
+    155,
+    160,
+    162,
+    186,
+    188,
+    267,
+    275,
+    277,
+    296
+   ]
+  }
+ ]
+}

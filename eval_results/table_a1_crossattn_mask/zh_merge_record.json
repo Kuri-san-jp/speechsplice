@@ -1,0 +1,1820 @@
+{
+ "item": "spanfix (2a) Appendix B tab:crossattn_mask ZH",
+ "date": "2026-10-03 01:08:16",
+ "fake_selftest": false,
+ "lang": "zh",
+ "replaced_pairs": [
+  15,
+  145,
+  246,
+  295
+ ],
+ "reason": "Author decision (2a), 2026-10-02: the 8 Appendix B JA/ZH pairs whose entity span was wrong in the 2026-05-19/20 production run (legacy find_entity_token_range, before the 2026-07-11 fix) are regenerated with the same script and arguments and the fixed span function, seed 42; an invalid pair (silent audio under the 2026-09-29 criterion, generation failure or alignment failure) is regenerated as a whole pair with seed 43, then seed 44, chosen only by validity, never by results.",
+ "seed_policy": "Author decision (2a), 2026-10-02: the 8 Appendix B JA/ZH pairs whose entity span was wrong in the 2026-05-19/20 production run (legacy find_entity_token_range, before the 2026-07-11 fix) are regenerated with the same script and arguments and the fixed span function, seed 42; an invalid pair (silent audio under the 2026-09-29 criterion, generation failure or alignment failure) is regenerated as a whole pair with seed 43, then seed 44, chosen only by validity, never by results.",
+ "silence_check_scope": "The unified silence criterion (silent iff (RMS < 0.005 and peak < 0.05) or (fraction of 20 ms frames with frame RMS > 0.01) < 0.05) was applied to the 4 regenerated pairs (their 5 wavs are saved and were re-hashed and re-checked from the files at merge time); the other 296 pairs are the rows of eval_results/_regen2_crossattn_merged/zhcc_lp_n300 (295 rows of the 2026-05-20 production run and pair 42 regenerated with seed 43 on 2026-09-29, whose 5 wavs were checked then); the production run saved no audio, so the criterion cannot be applied to those rows (evidence of non-silence there: aligned=True in all 5 conditions).",
+ "base_dir": "eval_results/_regen2_crossattn_merged/zhcc_lp_n300",
+ "base_md5": {
+  "results.json": "4010f2b9f03ed82fe80a0133194c583d",
+  "checkpoint.json": "6b9315a38f159d523e6fc5d04eea4d62"
+ },
+ "production_dir": "eval_results/crossattn_entity_dtw_zhcc_lp_n300",
+ "production_md5": {
+  "results.json": "1ad9b54b49670450c300089b0f87cb93",
+  "checkpoint.json": "d99968b0b9331207fe20ad760522e6ea"
+ },
+ "selection": {
+  "15": {
+   "seed": 42,
+   "run": "eval_results/_spanfix_appB_jazh/zh/seed42/seed42_20261002_113914_pid7",
+   "chain": {
+    "42": [
+     {
+      "run": "eval_results/_spanfix_appB_jazh/zh/seed42/seed42_20261002_113914_pid7",
+      "status": "valid",
+      "aligned": true,
+      "frames": [
+       55,
+       54,
+       46,
+       46,
+       56
+      ],
+      "pair_errors": [],
+      "whisper_errors": [],
+      "any_silent": false
+     }
+    ],
+    "43": [],
+    "44": []
+   },
+   "wav_md5": {
+    "bl": "275f982a27b170061e962c60d989a8c5",
+    "inj": "cce1654b867de7242a5483dccf653f7e",
+    "bl_mask": "22eab98ff5d344d953d5ef6342dca4a2",
+    "inj_mask": "22eab98ff5d344d953d5ef6342dca4a2",
+    "tgt": "4134d60b42dd94673f0807471ed017ce"
+   },
+   "span": {
+    "a": {
+     "fixed": [
+      0,
+      1
+     ],
+     "legacy_0520": [
+      0,
+      1
+     ],
+     "fixed_pieces": [
+      "李"
+     ],
+     "legacy_pieces": [
+      "李"
+     ]
+    },
+    "b": {
+     "fixed": [
+      0,
+      2
+     ],
+     "legacy_0520": [
+      0,
+      1
+     ],
+     "fixed_pieces": [
+      "田",
+      "中的"
+     ],
+     "legacy_pieces": [
+      "田"
+     ]
+    }
+   },
+   "src_span_changed_vs_0520": false,
+   "pyopenjtalk_calls_from_vendor": {}
+  },
+  "145": {
+   "seed": 42,
+   "run": "eval_results/_spanfix_appB_jazh/zh/seed42/seed42_20261002_113914_pid7",
+   "chain": {
+    "42": [
+     {
+      "run": "eval_results/_spanfix_appB_jazh/zh/seed42/seed42_20261002_113914_pid7",
+      "status": "valid",
+      "aligned": true,
+      "frames": [
+       30,
+       37,
+       28,
+       28,
+       57
+      ],
+      "pair_errors": [],
+      "whisper_errors": [],
+      "any_silent": false
+     }
+    ],
+    "43": [],
+    "44": []
+   },
+   "wav_md5": {
+    "bl": "75c5ef63b2c7fb1b04fd68aaf3c690f9",
+    "inj": "81fb87ac1d8f627c22c362a80c180fcf",
+    "bl_mask": "e68af710bfdfd698fcbcec477689dde9",
+    "inj_mask": "e68af710bfdfd698fcbcec477689dde9",
+    "tgt": "8387ee500f6d1be804c2715d8a320c0d"
+   },
+   "span": {
+    "a": {
+     "fixed": [
+      0,
+      1
+     ],
+     "legacy_0520": [
+      0,
+      1
+     ],
+     "fixed_pieces": [
+      "胡"
+     ],
+     "legacy_pieces": [
+      "胡"
+     ]
+    },
+    "b": {
+     "fixed": [
+      0,
+      2
+     ],
+     "legacy_0520": [
+      0,
+      1
+     ],
+     "fixed_pieces": [
+      "井",
+      "上的"
+     ],
+     "legacy_pieces": [
+      "井"
+     ]
+    }
+   },
+   "src_span_changed_vs_0520": false,
+   "pyopenjtalk_calls_from_vendor": {}
+  },
+  "246": {
+   "seed": 42,
+   "run": "eval_results/_spanfix_appB_jazh/zh/seed42/seed42_20261002_113914_pid7",
+   "chain": {
+    "42": [
+     {
+      "run": "eval_results/_spanfix_appB_jazh/zh/seed42/seed42_20261002_113914_pid7",
+      "status": "valid",
+      "aligned": true,
+      "frames": [
+       36,
+       56,
+       72,
+       72,
+       60
+      ],
+      "pair_errors": [],
+      "whisper_errors": [],
+      "any_silent": false
+     }
+    ],
+    "43": [],
+    "44": []
+   },
+   "wav_md5": {
+    "bl": "8de8876ef6d732a668a115ceaf533751",
+    "inj": "9de31cd074db92b5678e41d67b8b9b14",
+    "bl_mask": "88e5a1b026a1353fce30c63176ff39fd",
+    "inj_mask": "88e5a1b026a1353fce30c63176ff39fd",
+    "tgt": "c3313aa769c9d34dfadd0a5eb4b9969f"
+   },
+   "span": {
+    "a": {
+     "fixed": [
+      1,
+      2
+     ],
+     "legacy_0520": [
+      1,
+      2
+     ],
+     "fixed_pieces": [
+      "唐"
+     ],
+     "legacy_pieces": [
+      "唐"
+     ]
+    },
+    "b": {
+     "fixed": [
+      1,
+      3
+     ],
+     "legacy_0520": [
+      1,
+      2
+     ],
+     "fixed_pieces": [
+      "和小",
+      "川"
+     ],
+     "legacy_pieces": [
+      "和小"
+     ]
+    }
+   },
+   "src_span_changed_vs_0520": false,
+   "pyopenjtalk_calls_from_vendor": {}
+  },
+  "295": {
+   "seed": 42,
+   "run": "eval_results/_spanfix_appB_jazh/zh/seed42/seed42_20261002_113914_pid7",
+   "chain": {
+    "42": [
+     {
+      "run": "eval_results/_spanfix_appB_jazh/zh/seed42/seed42_20261002_113914_pid7",
+      "status": "valid",
+      "aligned": true,
+      "frames": [
+       31,
+       56,
+       33,
+       33,
+       56
+      ],
+      "pair_errors": [],
+      "whisper_errors": [],
+      "any_silent": false
+     }
+    ],
+    "43": [],
+    "44": []
+   },
+   "wav_md5": {
+    "bl": "ab7566d639a2713a657e52528f93f287",
+    "inj": "21330702ec01283c5505208a1762efda",
+    "bl_mask": "54d7c9fdf387333e9f3596400e184411",
+    "inj_mask": "54d7c9fdf387333e9f3596400e184411",
+    "tgt": "4afeea66be51a8fb4e735d3f76b03858"
+   },
+   "span": {
+    "a": {
+     "fixed": [
+      0,
+      1
+     ],
+     "legacy_0520": [
+      0,
+      1
+     ],
+     "fixed_pieces": [
+      "曹"
+     ],
+     "legacy_pieces": [
+      "曹"
+     ]
+    },
+    "b": {
+     "fixed": [
+      0,
+      2
+     ],
+     "legacy_0520": [
+      0,
+      1
+     ],
+     "fixed_pieces": [
+      "村",
+      "上的"
+     ],
+     "legacy_pieces": [
+      "村"
+     ]
+    }
+   },
+   "src_span_changed_vs_0520": false,
+   "pyopenjtalk_calls_from_vendor": {}
+  }
+ },
+ "record_warnings": [],
+ "old_rows": {
+  "15": {
+   "pair_idx": 15,
+   "word_a": "李",
+   "word_b": "田中",
+   "text_a": "李的研究在去年获得了奖项。",
+   "text_b": "田中的研究在去年获得了奖项。",
+   "frames_bl": 55,
+   "frames_inj": 35,
+   "frames_bl_mask": 46,
+   "frames_inj_mask": 46,
+   "frames_tgt": 56,
+   "tmean_bl_inj_mel": 0.7512,
+   "dtw_bl_inj_mel": 0.6382,
+   "fmax_bl_inj_mel": 0.9257,
+   "vowel_bl_inj_mel": 0.2642,
+   "frob_bl_inj": 60.6725,
+   "tmean_bl_mask_inj_mask_mel": 1.0,
+   "dtw_bl_mask_inj_mask_mel": 0.9898,
+   "fmax_bl_mask_inj_mask_mel": 0.4575,
+   "vowel_bl_mask_inj_mask_mel": 1.0,
+   "frob_bl_mask_inj_mask": 0.0,
+   "tmean_bl_bl_mask_mel": 0.701,
+   "dtw_bl_bl_mask_mel": 0.7297,
+   "fmax_bl_bl_mask_mel": 0.6406,
+   "vowel_bl_bl_mask_mel": 0.2257,
+   "frob_bl_bl_mask": 62.8386,
+   "tmean_inj_inj_mask_mel": 0.3636,
+   "dtw_inj_inj_mask_mel": 0.6758,
+   "fmax_inj_inj_mask_mel": 0.6908,
+   "vowel_inj_inj_mask_mel": -0.5748,
+   "frob_inj_inj_mask": 60.1779,
+   "tmean_bl_tgt_mel": 0.917,
+   "dtw_bl_tgt_mel": 0.8365,
+   "fmax_bl_tgt_mel": 0.5114,
+   "vowel_bl_tgt_mel": 0.8379,
+   "frob_bl_tgt": 59.6592,
+   "tmean_inj_tgt_mel": 0.6252,
+   "dtw_inj_tgt_mel": 0.6628,
+   "fmax_inj_tgt_mel": 0.7207,
+   "vowel_inj_tgt_mel": -0.1779,
+   "frob_inj_tgt": 58.7062,
+   "tmean_bl_inj_w2v": 0.9415,
+   "dtw_bl_inj_w2v": 0.8306,
+   "fmax_bl_inj_w2v": 0.5863,
+   "vowel_bl_inj_w2v": 0.8795,
+   "tmean_bl_mask_inj_mask_w2v": 1.0,
+   "dtw_bl_mask_inj_mask_w2v": 0.9651,
+   "fmax_bl_mask_inj_mask_w2v": 0.2807,
+   "vowel_bl_mask_inj_mask_w2v": 1.0,
+   "tmean_bl_bl_mask_w2v": 0.9424,
+   "dtw_bl_bl_mask_w2v": 0.8547,
+   "fmax_bl_bl_mask_w2v": 0.6577,
+   "vowel_bl_bl_mask_w2v": 0.8474,
+   "tmean_inj_inj_mask_w2v": 0.9216,
+   "dtw_inj_inj_mask_w2v": 0.8565,
+   "fmax_inj_inj_mask_w2v": 0.3547,
+   "vowel_inj_inj_mask_w2v": 0.8346,
+   "tmean_bl_tgt_w2v": 0.9702,
+   "dtw_bl_tgt_w2v": 0.7835,
+   "fmax_bl_tgt_w2v": 0.7925,
+   "vowel_bl_tgt_w2v": 0.892,
+   "tmean_inj_tgt_w2v": 0.9338,
+   "dtw_inj_tgt_w2v": 0.7669,
+   "fmax_inj_tgt_w2v": 0.7302,
+   "vowel_inj_tgt_w2v": 0.8118,
+   "tmean_bl_inj_pps": 0.9983,
+   "dtw_bl_inj_pps": 0.8849,
+   "fmax_bl_inj_pps": 0.991,
+   "vowel_bl_inj_pps": 0.9884,
+   "tmean_bl_mask_inj_mask_pps": 1.0,
+   "dtw_bl_mask_inj_mask_pps": 0.9418,
+   "fmax_bl_mask_inj_mask_pps": 0.8657,
+   "vowel_bl_mask_inj_mask_pps": 1.0,
+   "tmean_bl_bl_mask_pps": 0.9985,
+   "dtw_bl_bl_mask_pps": 0.9071,
+   "fmax_bl_bl_mask_pps": 0.9904,
+   "vowel_bl_bl_mask_pps": 0.9945,
+   "tmean_inj_inj_mask_pps": 0.9986,
+   "dtw_inj_inj_mask_pps": 0.9189,
+   "fmax_inj_inj_mask_pps": 0.9207,
+   "vowel_inj_inj_mask_pps": 0.9935,
+   "tmean_bl_tgt_pps": 0.9966,
+   "dtw_bl_tgt_pps": 0.8299,
+   "fmax_bl_tgt_pps": 0.9994,
+   "vowel_bl_tgt_pps": 0.9868,
+   "tmean_inj_tgt_pps": 0.9944,
+   "dtw_inj_tgt_pps": 0.8205,
+   "fmax_inj_tgt_pps": 0.9994,
+   "vowel_inj_tgt_pps": 0.9748,
+   "mcd_bl_inj": 37.5995,
+   "mcd_bl_mask_inj_mask": 0.0,
+   "mcd_bl_bl_mask": 36.3322,
+   "mcd_inj_inj_mask": 37.6417,
+   "mcd_bl_tgt": 34.4465,
+   "mcd_inj_tgt": 35.9603,
+   "aligned": true
+  },
+  "145": {
+   "pair_idx": 145,
+   "word_a": "胡",
+   "word_b": "井上",
+   "text_a": "胡的研究在去年获得了奖项。",
+   "text_b": "井上的研究在去年获得了奖项。",
+   "frames_bl": 30,
+   "frames_inj": 33,
+   "frames_bl_mask": 28,
+   "frames_inj_mask": 28,
+   "frames_tgt": 57,
+   "tmean_bl_inj_mel": 0.8757,
+   "dtw_bl_inj_mel": 0.7544,
+   "fmax_bl_inj_mel": 0.9268,
+   "vowel_bl_inj_mel": 0.7799,
+   "frob_bl_inj": 51.3717,
+   "tmean_bl_mask_inj_mask_mel": 1.0,
+   "dtw_bl_mask_inj_mask_mel": 0.9862,
+   "fmax_bl_mask_inj_mask_mel": 0.3147,
+   "vowel_bl_mask_inj_mask_mel": 1.0,
+   "frob_bl_mask_inj_mask": 0.0,
+   "tmean_bl_bl_mask_mel": 0.8688,
+   "dtw_bl_bl_mask_mel": 0.7868,
+   "fmax_bl_bl_mask_mel": 0.5984,
+   "vowel_bl_bl_mask_mel": 0.7092,
+   "frob_bl_bl_mask": 48.4285,
+   "tmean_inj_inj_mask_mel": 0.8573,
+   "dtw_inj_inj_mask_mel": 0.8306,
+   "fmax_inj_inj_mask_mel": 0.8508,
+   "vowel_inj_inj_mask_mel": 0.6479,
+   "frob_inj_inj_mask": 47.2981,
+   "tmean_bl_tgt_mel": 0.9286,
+   "dtw_bl_tgt_mel": 0.7112,
+   "fmax_bl_tgt_mel": 1.1245,
+   "vowel_bl_tgt_mel": 0.8911,
+   "frob_bl_tgt": 52.1503,
+   "tmean_inj_tgt_mel": 0.9212,
+   "dtw_inj_tgt_mel": 0.7679,
+   "fmax_inj_tgt_mel": 1.1262,
+   "vowel_inj_tgt_mel": 0.8135,
+   "frob_inj_tgt": 30.1855,
+   "tmean_bl_inj_w2v": 0.9062,
+   "dtw_bl_inj_w2v": 0.8,
+   "fmax_bl_inj_w2v": 0.7379,
+   "vowel_bl_inj_w2v": 0.7602,
+   "tmean_bl_mask_inj_mask_w2v": 1.0,
+   "dtw_bl_mask_inj_mask_w2v": 0.9517,
+   "fmax_bl_mask_inj_mask_w2v": 0.357,
+   "vowel_bl_mask_inj_mask_w2v": 1.0,
+   "tmean_bl_bl_mask_w2v": 0.9539,
+   "dtw_bl_bl_mask_w2v": 0.8475,
+   "fmax_bl_bl_mask_w2v": 0.4502,
+   "vowel_bl_bl_mask_w2v": 0.8335,
+   "tmean_inj_inj_mask_w2v": 0.9112,
+   "dtw_inj_inj_mask_w2v": 0.8299,
+   "fmax_inj_inj_mask_w2v": 0.5201,
+   "vowel_inj_inj_mask_w2v": 0.8623,
+   "tmean_bl_tgt_w2v": 0.9335,
+   "dtw_bl_tgt_w2v": 0.8083,
+   "fmax_bl_tgt_w2v": 0.6978,
+   "vowel_bl_tgt_w2v": 0.7951,
+   "tmean_inj_tgt_w2v": 0.9635,
+   "dtw_inj_tgt_w2v": 0.8513,
+   "fmax_inj_tgt_w2v": 0.6938,
+   "vowel_inj_tgt_w2v": 0.9034,
+   "tmean_bl_inj_pps": 0.9929,
+   "dtw_bl_inj_pps": 0.8392,
+   "fmax_bl_inj_pps": 0.9983,
+   "vowel_bl_inj_pps": 0.975,
+   "tmean_bl_mask_inj_mask_pps": 1.0,
+   "dtw_bl_mask_inj_mask_pps": 0.8689,
+   "fmax_bl_mask_inj_mask_pps": 0.83,
+   "vowel_bl_mask_inj_mask_pps": 1.0,
+   "tmean_bl_bl_mask_pps": 0.9966,
+   "dtw_bl_bl_mask_pps": 0.8576,
+   "fmax_bl_bl_mask_pps": 0.9829,
+   "vowel_bl_bl_mask_pps": 0.9754,
+   "tmean_inj_inj_mask_pps": 0.9964,
+   "dtw_inj_inj_mask_pps": 0.8517,
+   "fmax_inj_inj_mask_pps": 0.9927,
+   "vowel_inj_inj_mask_pps": 0.9863,
+   "tmean_bl_tgt_pps": 0.9958,
+   "dtw_bl_tgt_pps": 0.831,
+   "fmax_bl_tgt_pps": 0.9974,
+   "vowel_bl_tgt_pps": 0.977,
+   "tmean_inj_tgt_pps": 0.9955,
+   "dtw_inj_tgt_pps": 0.8081,
+   "fmax_inj_tgt_pps": 0.9974,
+   "vowel_inj_tgt_pps": 0.9894,
+   "mcd_bl_inj": 36.9778,
+   "mcd_bl_mask_inj_mask": 0.0,
+   "mcd_bl_bl_mask": 38.4164,
+   "mcd_inj_inj_mask": 28.7915,
+   "mcd_bl_tgt": 34.9304,
+   "mcd_inj_tgt": 34.3575,
+   "aligned": true
+  },
+  "246": {
+   "pair_idx": 246,
+   "word_a": "唐",
+   "word_b": "小川",
+   "text_a": "他和唐一起去了餐厅。",
+   "text_b": "他和小川一起去了餐厅。",
+   "frames_bl": 36,
+   "frames_inj": 55,
+   "frames_bl_mask": 72,
+   "frames_inj_mask": 72,
+   "frames_tgt": 60,
+   "tmean_bl_inj_mel": 0.8522,
+   "dtw_bl_inj_mel": 0.754,
+   "fmax_bl_inj_mel": 0.6645,
+   "vowel_bl_inj_mel": 0.5671,
+   "frob_bl_inj": 47.9314,
+   "tmean_bl_mask_inj_mask_mel": 1.0,
+   "dtw_bl_mask_inj_mask_mel": 0.9861,
+   "fmax_bl_mask_inj_mask_mel": 0.2403,
+   "vowel_bl_mask_inj_mask_mel": 1.0,
+   "frob_bl_mask_inj_mask": 0.0,
+   "tmean_bl_bl_mask_mel": 0.7254,
+   "dtw_bl_bl_mask_mel": 0.7222,
+   "fmax_bl_bl_mask_mel": 0.9323,
+   "vowel_bl_bl_mask_mel": 0.2236,
+   "frob_bl_bl_mask": 53.7627,
+   "tmean_inj_inj_mask_mel": 0.8669,
+   "dtw_inj_inj_mask_mel": 0.7969,
+   "fmax_inj_inj_mask_mel": 0.6137,
+   "vowel_inj_inj_mask_mel": 0.845,
+   "frob_inj_inj_mask": 45.0621,
+   "tmean_bl_tgt_mel": 0.9118,
+   "dtw_bl_tgt_mel": 0.826,
+   "fmax_bl_tgt_mel": 0.7069,
+   "vowel_bl_tgt_mel": 0.5591,
+   "frob_bl_tgt": 52.5191,
+   "tmean_inj_tgt_mel": 0.9065,
+   "dtw_inj_tgt_mel": 0.8466,
+   "fmax_inj_tgt_mel": 0.4573,
+   "vowel_inj_tgt_mel": 0.8827,
+   "frob_inj_tgt": 39.196,
+   "tmean_bl_inj_w2v": 0.9354,
+   "dtw_bl_inj_w2v": 0.8063,
+   "fmax_bl_inj_w2v": 0.6234,
+   "vowel_bl_inj_w2v": 0.8913,
+   "tmean_bl_mask_inj_mask_w2v": 1.0,
+   "dtw_bl_mask_inj_mask_w2v": 0.9263,
+   "fmax_bl_mask_inj_mask_w2v": 0.8873,
+   "vowel_bl_mask_inj_mask_w2v": 1.0,
+   "tmean_bl_bl_mask_w2v": 0.5413,
+   "dtw_bl_bl_mask_w2v": 0.5145,
+   "fmax_bl_bl_mask_w2v": 1.16,
+   "vowel_bl_bl_mask_w2v": 0.4882,
+   "tmean_inj_inj_mask_w2v": 0.5856,
+   "dtw_inj_inj_mask_w2v": 0.5386,
+   "fmax_inj_inj_mask_w2v": 1.0577,
+   "vowel_inj_inj_mask_w2v": 0.5623,
+   "tmean_bl_tgt_w2v": 0.9183,
+   "dtw_bl_tgt_w2v": 0.7835,
+   "fmax_bl_tgt_w2v": 0.6192,
+   "vowel_bl_tgt_w2v": 0.883,
+   "tmean_inj_tgt_w2v": 0.9155,
+   "dtw_inj_tgt_w2v": 0.7841,
+   "fmax_inj_tgt_w2v": 0.7089,
+   "vowel_inj_tgt_w2v": 0.9077,
+   "tmean_bl_inj_pps": 0.9962,
+   "dtw_bl_inj_pps": 0.8671,
+   "fmax_bl_inj_pps": 0.9974,
+   "vowel_bl_inj_pps": 0.9936,
+   "tmean_bl_mask_inj_mask_pps": 1.0,
+   "dtw_bl_mask_inj_mask_pps": 0.8998,
+   "fmax_bl_mask_inj_mask_pps": 0.9809,
+   "vowel_bl_mask_inj_mask_pps": 1.0,
+   "tmean_bl_bl_mask_pps": 0.9984,
+   "dtw_bl_bl_mask_pps": 0.9067,
+   "fmax_bl_bl_mask_pps": 0.9812,
+   "vowel_bl_bl_mask_pps": 0.9982,
+   "tmean_inj_inj_mask_pps": 0.9952,
+   "dtw_inj_inj_mask_pps": 0.8653,
+   "fmax_inj_inj_mask_pps": 0.9974,
+   "vowel_inj_inj_mask_pps": 0.9922,
+   "tmean_bl_tgt_pps": 0.9984,
+   "dtw_bl_tgt_pps": 0.8866,
+   "fmax_bl_tgt_pps": 0.9841,
+   "vowel_bl_tgt_pps": 0.9985,
+   "tmean_inj_tgt_pps": 0.9964,
+   "dtw_inj_tgt_pps": 0.845,
+   "fmax_inj_tgt_pps": 0.9974,
+   "vowel_inj_tgt_pps": 0.9925,
+   "mcd_bl_inj": 30.2409,
+   "mcd_bl_mask_inj_mask": 0.0,
+   "mcd_bl_bl_mask": 36.515,
+   "mcd_inj_inj_mask": 36.6919,
+   "mcd_bl_tgt": 35.5585,
+   "mcd_inj_tgt": 32.6037,
+   "aligned": true
+  },
+  "295": {
+   "pair_idx": 295,
+   "word_a": "曹",
+   "word_b": "村上",
+   "text_a": "曹的研究在去年获得了奖项。",
+   "text_b": "村上的研究在去年获得了奖项。",
+   "frames_bl": 31,
+   "frames_inj": 53,
+   "frames_bl_mask": 33,
+   "frames_inj_mask": 33,
+   "frames_tgt": 56,
+   "tmean_bl_inj_mel": 0.8769,
+   "dtw_bl_inj_mel": 0.7125,
+   "fmax_bl_inj_mel": 1.0409,
+   "vowel_bl_inj_mel": 0.8192,
+   "frob_bl_inj": 39.686,
+   "tmean_bl_mask_inj_mask_mel": 1.0,
+   "dtw_bl_mask_inj_mask_mel": 0.9844,
+   "fmax_bl_mask_inj_mask_mel": 0.4708,
+   "vowel_bl_mask_inj_mask_mel": 1.0,
+   "frob_bl_mask_inj_mask": 0.0,
+   "tmean_bl_bl_mask_mel": 0.9466,
+   "dtw_bl_bl_mask_mel": 0.8376,
+   "fmax_bl_bl_mask_mel": 0.4007,
+   "vowel_bl_bl_mask_mel": 0.726,
+   "frob_bl_bl_mask": 40.4526,
+   "tmean_inj_inj_mask_mel": 0.8115,
+   "dtw_inj_inj_mask_mel": 0.6987,
+   "fmax_inj_inj_mask_mel": 0.5661,
+   "vowel_inj_inj_mask_mel": 0.6352,
+   "frob_inj_inj_mask": 43.8592,
+   "tmean_bl_tgt_mel": 0.7572,
+   "dtw_bl_tgt_mel": 0.5965,
+   "fmax_bl_tgt_mel": 0.8097,
+   "vowel_bl_tgt_mel": 0.666,
+   "frob_bl_tgt": 41.0626,
+   "tmean_inj_tgt_mel": 0.8322,
+   "dtw_inj_tgt_mel": 0.7101,
+   "fmax_inj_tgt_mel": 0.8478,
+   "vowel_inj_tgt_mel": 0.6523,
+   "frob_inj_tgt": 43.4933,
+   "tmean_bl_inj_w2v": 0.9213,
+   "dtw_bl_inj_w2v": 0.7732,
+   "fmax_bl_inj_w2v": 0.603,
+   "vowel_bl_inj_w2v": 0.8327,
+   "tmean_bl_mask_inj_mask_w2v": 1.0,
+   "dtw_bl_mask_inj_mask_w2v": 0.9619,
+   "fmax_bl_mask_inj_mask_w2v": 0.259,
+   "vowel_bl_mask_inj_mask_w2v": 1.0,
+   "tmean_bl_bl_mask_w2v": 0.9672,
+   "dtw_bl_bl_mask_w2v": 0.8975,
+   "fmax_bl_bl_mask_w2v": 0.3283,
+   "vowel_bl_bl_mask_w2v": 0.9323,
+   "tmean_inj_inj_mask_w2v": 0.9246,
+   "dtw_inj_inj_mask_w2v": 0.7618,
+   "fmax_inj_inj_mask_w2v": 0.5921,
+   "vowel_inj_inj_mask_w2v": 0.8894,
+   "tmean_bl_tgt_w2v": 0.9516,
+   "dtw_bl_tgt_w2v": 0.8558,
+   "fmax_bl_tgt_w2v": 0.4346,
+   "vowel_bl_tgt_w2v": 0.8473,
+   "tmean_inj_tgt_w2v": 0.9682,
+   "dtw_inj_tgt_w2v": 0.8438,
+   "fmax_inj_tgt_w2v": 0.5506,
+   "vowel_inj_tgt_w2v": 0.9555,
+   "tmean_bl_inj_pps": 0.9962,
+   "dtw_bl_inj_pps": 0.8222,
+   "fmax_bl_inj_pps": 0.9816,
+   "vowel_bl_inj_pps": 0.9896,
+   "tmean_bl_mask_inj_mask_pps": 1.0,
+   "dtw_bl_mask_inj_mask_pps": 0.9365,
+   "fmax_bl_mask_inj_mask_pps": 0.5546,
+   "vowel_bl_mask_inj_mask_pps": 1.0,
+   "tmean_bl_bl_mask_pps": 0.9995,
+   "dtw_bl_bl_mask_pps": 0.9207,
+   "fmax_bl_bl_mask_pps": 0.7641,
+   "vowel_bl_bl_mask_pps": 0.9961,
+   "tmean_inj_inj_mask_pps": 0.9964,
+   "dtw_inj_inj_mask_pps": 0.8446,
+   "fmax_inj_inj_mask_pps": 0.9816,
+   "vowel_inj_inj_mask_pps": 0.9914,
+   "tmean_bl_tgt_pps": 0.9993,
+   "dtw_bl_tgt_pps": 0.8957,
+   "fmax_bl_tgt_pps": 0.9699,
+   "vowel_bl_tgt_pps": 0.9996,
+   "tmean_inj_tgt_pps": 0.9973,
+   "dtw_inj_tgt_pps": 0.8422,
+   "fmax_inj_tgt_pps": 0.9817,
+   "vowel_inj_tgt_pps": 0.9913,
+   "mcd_bl_inj": 38.0231,
+   "mcd_bl_mask_inj_mask": 0.0,
+   "mcd_bl_bl_mask": 32.2576,
+   "mcd_inj_inj_mask": 35.391,
+   "mcd_bl_tgt": 37.2052,
+   "mcd_inj_tgt": 37.7948,
+   "aligned": true
+  }
+ },
+ "new_rows": {
+  "15": {
+   "pair_idx": 15,
+   "word_a": "李",
+   "word_b": "田中",
+   "text_a": "李的研究在去年获得了奖项。",
+   "text_b": "田中的研究在去年获得了奖项。",
+   "frames_bl": 55,
+   "frames_inj": 54,
+   "frames_bl_mask": 46,
+   "frames_inj_mask": 46,
+   "frames_tgt": 56,
+   "tmean_bl_inj_mel": 0.9581,
+   "dtw_bl_inj_mel": 0.8145,
+   "fmax_bl_inj_mel": 0.6436,
+   "vowel_bl_inj_mel": 0.9347,
+   "frob_bl_inj": 62.0505,
+   "tmean_bl_mask_inj_mask_mel": 1.0,
+   "dtw_bl_mask_inj_mask_mel": 0.9898,
+   "fmax_bl_mask_inj_mask_mel": 0.4575,
+   "vowel_bl_mask_inj_mask_mel": 1.0,
+   "frob_bl_mask_inj_mask": 0.0,
+   "tmean_bl_bl_mask_mel": 0.701,
+   "dtw_bl_bl_mask_mel": 0.7297,
+   "fmax_bl_bl_mask_mel": 0.6406,
+   "vowel_bl_bl_mask_mel": 0.2257,
+   "frob_bl_bl_mask": 62.8386,
+   "tmean_inj_inj_mask_mel": 0.6446,
+   "dtw_inj_inj_mask_mel": 0.7691,
+   "fmax_inj_inj_mask_mel": 0.4941,
+   "vowel_inj_inj_mask_mel": 0.4043,
+   "frob_inj_inj_mask": 77.2611,
+   "tmean_bl_tgt_mel": 0.917,
+   "dtw_bl_tgt_mel": 0.8365,
+   "fmax_bl_tgt_mel": 0.5114,
+   "vowel_bl_tgt_mel": 0.8379,
+   "frob_bl_tgt": 59.6592,
+   "tmean_inj_tgt_mel": 0.8808,
+   "dtw_inj_tgt_mel": 0.862,
+   "fmax_inj_tgt_mel": 0.5299,
+   "vowel_inj_tgt_mel": 0.9423,
+   "frob_inj_tgt": 51.1347,
+   "tmean_bl_inj_w2v": 0.9474,
+   "dtw_bl_inj_w2v": 0.823,
+   "fmax_bl_inj_w2v": 0.5715,
+   "vowel_bl_inj_w2v": 0.9088,
+   "tmean_bl_mask_inj_mask_w2v": 1.0,
+   "dtw_bl_mask_inj_mask_w2v": 0.9651,
+   "fmax_bl_mask_inj_mask_w2v": 0.2807,
+   "vowel_bl_mask_inj_mask_w2v": 1.0,
+   "tmean_bl_bl_mask_w2v": 0.9424,
+   "dtw_bl_bl_mask_w2v": 0.8547,
+   "fmax_bl_bl_mask_w2v": 0.6577,
+   "vowel_bl_bl_mask_w2v": 0.8474,
+   "tmean_inj_inj_mask_w2v": 0.9078,
+   "dtw_inj_inj_mask_w2v": 0.8276,
+   "fmax_inj_inj_mask_w2v": 0.6151,
+   "vowel_inj_inj_mask_w2v": 0.8717,
+   "tmean_bl_tgt_w2v": 0.9702,
+   "dtw_bl_tgt_w2v": 0.7835,
+   "fmax_bl_tgt_w2v": 0.7925,
+   "vowel_bl_tgt_w2v": 0.892,
+   "tmean_inj_tgt_w2v": 0.9595,
+   "dtw_inj_tgt_w2v": 0.8149,
+   "fmax_inj_tgt_w2v": 0.6232,
+   "vowel_inj_tgt_w2v": 0.9341,
+   "tmean_bl_inj_pps": 0.998,
+   "dtw_bl_inj_pps": 0.8595,
+   "fmax_bl_inj_pps": 0.9925,
+   "vowel_bl_inj_pps": 0.993,
+   "tmean_bl_mask_inj_mask_pps": 1.0,
+   "dtw_bl_mask_inj_mask_pps": 0.9418,
+   "fmax_bl_mask_inj_mask_pps": 0.8657,
+   "vowel_bl_mask_inj_mask_pps": 1.0,
+   "tmean_bl_bl_mask_pps": 0.9985,
+   "dtw_bl_bl_mask_pps": 0.9071,
+   "fmax_bl_bl_mask_pps": 0.9904,
+   "vowel_bl_bl_mask_pps": 0.9945,
+   "tmean_inj_inj_mask_pps": 0.9989,
+   "dtw_inj_inj_mask_pps": 0.887,
+   "fmax_inj_inj_mask_pps": 0.9925,
+   "vowel_inj_inj_mask_pps": 0.9982,
+   "tmean_bl_tgt_pps": 0.9966,
+   "dtw_bl_tgt_pps": 0.8299,
+   "fmax_bl_tgt_pps": 0.9994,
+   "vowel_bl_tgt_pps": 0.9868,
+   "tmean_inj_tgt_pps": 0.996,
+   "dtw_inj_tgt_pps": 0.8195,
+   "fmax_inj_tgt_pps": 0.9994,
+   "vowel_inj_tgt_pps": 0.988,
+   "mcd_bl_inj": 43.2679,
+   "mcd_bl_mask_inj_mask": 0.0,
+   "mcd_bl_bl_mask": 36.3322,
+   "mcd_inj_inj_mask": 40.844,
+   "mcd_bl_tgt": 34.4465,
+   "mcd_inj_tgt": 35.7558,
+   "aligned": true
+  },
+  "145": {
+   "pair_idx": 145,
+   "word_a": "胡",
+   "word_b": "井上",
+   "text_a": "胡的研究在去年获得了奖项。",
+   "text_b": "井上的研究在去年获得了奖项。",
+   "frames_bl": 30,
+   "frames_inj": 37,
+   "frames_bl_mask": 28,
+   "frames_inj_mask": 28,
+   "frames_tgt": 57,
+   "tmean_bl_inj_mel": 0.8296,
+   "dtw_bl_inj_mel": 0.6755,
+   "fmax_bl_inj_mel": 0.9798,
+   "vowel_bl_inj_mel": 0.5121,
+   "frob_bl_inj": 62.2196,
+   "tmean_bl_mask_inj_mask_mel": 1.0,
+   "dtw_bl_mask_inj_mask_mel": 0.9862,
+   "fmax_bl_mask_inj_mask_mel": 0.3147,
+   "vowel_bl_mask_inj_mask_mel": 1.0,
+   "frob_bl_mask_inj_mask": 0.0,
+   "tmean_bl_bl_mask_mel": 0.8688,
+   "dtw_bl_bl_mask_mel": 0.7868,
+   "fmax_bl_bl_mask_mel": 0.5984,
+   "vowel_bl_bl_mask_mel": 0.7092,
+   "frob_bl_bl_mask": 48.4285,
+   "tmean_inj_inj_mask_mel": 0.888,
+   "dtw_inj_inj_mask_mel": 0.8102,
+   "fmax_inj_inj_mask_mel": 0.5159,
+   "vowel_inj_inj_mask_mel": 0.6412,
+   "frob_inj_inj_mask": 55.7923,
+   "tmean_bl_tgt_mel": 0.9286,
+   "dtw_bl_tgt_mel": 0.7112,
+   "fmax_bl_tgt_mel": 1.1245,
+   "vowel_bl_tgt_mel": 0.8911,
+   "frob_bl_tgt": 52.1503,
+   "tmean_inj_tgt_mel": 0.8914,
+   "dtw_inj_tgt_mel": 0.757,
+   "fmax_inj_tgt_mel": 1.3524,
+   "vowel_inj_tgt_mel": 0.6653,
+   "frob_inj_tgt": 49.3349,
+   "tmean_bl_inj_w2v": 0.929,
+   "dtw_bl_inj_w2v": 0.8051,
+   "fmax_bl_inj_w2v": 0.627,
+   "vowel_bl_inj_w2v": 0.8256,
+   "tmean_bl_mask_inj_mask_w2v": 1.0,
+   "dtw_bl_mask_inj_mask_w2v": 0.9517,
+   "fmax_bl_mask_inj_mask_w2v": 0.357,
+   "vowel_bl_mask_inj_mask_w2v": 1.0,
+   "tmean_bl_bl_mask_w2v": 0.9539,
+   "dtw_bl_bl_mask_w2v": 0.8475,
+   "fmax_bl_bl_mask_w2v": 0.4502,
+   "vowel_bl_bl_mask_w2v": 0.8335,
+   "tmean_inj_inj_mask_w2v": 0.9463,
+   "dtw_inj_inj_mask_w2v": 0.8529,
+   "fmax_inj_inj_mask_w2v": 0.4316,
+   "vowel_inj_inj_mask_w2v": 0.9061,
+   "tmean_bl_tgt_w2v": 0.9335,
+   "dtw_bl_tgt_w2v": 0.8083,
+   "fmax_bl_tgt_w2v": 0.6978,
+   "vowel_bl_tgt_w2v": 0.7951,
+   "tmean_inj_tgt_w2v": 0.9776,
+   "dtw_inj_tgt_w2v": 0.8497,
+   "fmax_inj_tgt_w2v": 0.6843,
+   "vowel_inj_tgt_w2v": 0.8257,
+   "tmean_bl_inj_pps": 0.9948,
+   "dtw_bl_inj_pps": 0.8495,
+   "fmax_bl_inj_pps": 0.9966,
+   "vowel_bl_inj_pps": 0.972,
+   "tmean_bl_mask_inj_mask_pps": 1.0,
+   "dtw_bl_mask_inj_mask_pps": 0.8689,
+   "fmax_bl_mask_inj_mask_pps": 0.83,
+   "vowel_bl_mask_inj_mask_pps": 1.0,
+   "tmean_bl_bl_mask_pps": 0.9966,
+   "dtw_bl_bl_mask_pps": 0.8576,
+   "fmax_bl_bl_mask_pps": 0.9829,
+   "vowel_bl_bl_mask_pps": 0.9754,
+   "tmean_inj_inj_mask_pps": 0.9966,
+   "dtw_inj_inj_mask_pps": 0.8599,
+   "fmax_inj_inj_mask_pps": 0.8199,
+   "vowel_inj_inj_mask_pps": 0.9834,
+   "tmean_bl_tgt_pps": 0.9958,
+   "dtw_bl_tgt_pps": 0.831,
+   "fmax_bl_tgt_pps": 0.9974,
+   "vowel_bl_tgt_pps": 0.977,
+   "tmean_inj_tgt_pps": 0.9978,
+   "dtw_inj_tgt_pps": 0.8214,
+   "fmax_inj_tgt_pps": 0.9974,
+   "vowel_inj_tgt_pps": 0.9838,
+   "mcd_bl_inj": 37.5456,
+   "mcd_bl_mask_inj_mask": 0.0,
+   "mcd_bl_bl_mask": 38.4164,
+   "mcd_inj_inj_mask": 34.4919,
+   "mcd_bl_tgt": 34.9304,
+   "mcd_inj_tgt": 35.4079,
+   "aligned": true
+  },
+  "246": {
+   "pair_idx": 246,
+   "word_a": "唐",
+   "word_b": "小川",
+   "text_a": "他和唐一起去了餐厅。",
+   "text_b": "他和小川一起去了餐厅。",
+   "frames_bl": 36,
+   "frames_inj": 56,
+   "frames_bl_mask": 72,
+   "frames_inj_mask": 72,
+   "frames_tgt": 60,
+   "tmean_bl_inj_mel": 0.8711,
+   "dtw_bl_inj_mel": 0.6662,
+   "fmax_bl_inj_mel": 0.9356,
+   "vowel_bl_inj_mel": 0.5706,
+   "frob_bl_inj": 50.4317,
+   "tmean_bl_mask_inj_mask_mel": 1.0,
+   "dtw_bl_mask_inj_mask_mel": 0.9861,
+   "fmax_bl_mask_inj_mask_mel": 0.2403,
+   "vowel_bl_mask_inj_mask_mel": 1.0,
+   "frob_bl_mask_inj_mask": 0.0,
+   "tmean_bl_bl_mask_mel": 0.7254,
+   "dtw_bl_bl_mask_mel": 0.7222,
+   "fmax_bl_bl_mask_mel": 0.9323,
+   "vowel_bl_bl_mask_mel": 0.2236,
+   "frob_bl_bl_mask": 53.7627,
+   "tmean_inj_inj_mask_mel": 0.8653,
+   "dtw_inj_inj_mask_mel": 0.7097,
+   "fmax_inj_inj_mask_mel": 1.0603,
+   "vowel_inj_inj_mask_mel": 0.8469,
+   "frob_inj_inj_mask": 61.8228,
+   "tmean_bl_tgt_mel": 0.9118,
+   "dtw_bl_tgt_mel": 0.826,
+   "fmax_bl_tgt_mel": 0.7069,
+   "vowel_bl_tgt_mel": 0.5591,
+   "frob_bl_tgt": 52.5191,
+   "tmean_inj_tgt_mel": 0.9128,
+   "dtw_inj_tgt_mel": 0.728,
+   "fmax_inj_tgt_mel": 0.6821,
+   "vowel_inj_tgt_mel": 0.815,
+   "frob_inj_tgt": 62.0134,
+   "tmean_bl_inj_w2v": 0.9274,
+   "dtw_bl_inj_w2v": 0.8092,
+   "fmax_bl_inj_w2v": 0.5564,
+   "vowel_bl_inj_w2v": 0.8675,
+   "tmean_bl_mask_inj_mask_w2v": 1.0,
+   "dtw_bl_mask_inj_mask_w2v": 0.9263,
+   "fmax_bl_mask_inj_mask_w2v": 0.8873,
+   "vowel_bl_mask_inj_mask_w2v": 1.0,
+   "tmean_bl_bl_mask_w2v": 0.5413,
+   "dtw_bl_bl_mask_w2v": 0.5145,
+   "fmax_bl_bl_mask_w2v": 1.16,
+   "vowel_bl_bl_mask_w2v": 0.4882,
+   "tmean_inj_inj_mask_w2v": 0.6094,
+   "dtw_inj_inj_mask_w2v": 0.5843,
+   "fmax_inj_inj_mask_w2v": 1.1496,
+   "vowel_inj_inj_mask_w2v": 0.5872,
+   "tmean_bl_tgt_w2v": 0.9183,
+   "dtw_bl_tgt_w2v": 0.7835,
+   "fmax_bl_tgt_w2v": 0.6192,
+   "vowel_bl_tgt_w2v": 0.883,
+   "tmean_inj_tgt_w2v": 0.9415,
+   "dtw_inj_tgt_w2v": 0.8034,
+   "fmax_inj_tgt_w2v": 0.8131,
+   "vowel_inj_tgt_w2v": 0.9253,
+   "tmean_bl_inj_pps": 0.9985,
+   "dtw_bl_inj_pps": 0.8895,
+   "fmax_bl_inj_pps": 0.9932,
+   "vowel_bl_inj_pps": 0.994,
+   "tmean_bl_mask_inj_mask_pps": 1.0,
+   "dtw_bl_mask_inj_mask_pps": 0.8998,
+   "fmax_bl_mask_inj_mask_pps": 0.9809,
+   "vowel_bl_mask_inj_mask_pps": 1.0,
+   "tmean_bl_bl_mask_pps": 0.9984,
+   "dtw_bl_bl_mask_pps": 0.9067,
+   "fmax_bl_bl_mask_pps": 0.9812,
+   "vowel_bl_bl_mask_pps": 0.9982,
+   "tmean_inj_inj_mask_pps": 0.998,
+   "dtw_inj_inj_mask_pps": 0.8795,
+   "fmax_inj_inj_mask_pps": 0.9941,
+   "vowel_inj_inj_mask_pps": 0.9933,
+   "tmean_bl_tgt_pps": 0.9984,
+   "dtw_bl_tgt_pps": 0.8866,
+   "fmax_bl_tgt_pps": 0.9841,
+   "vowel_bl_tgt_pps": 0.9985,
+   "tmean_inj_tgt_pps": 0.9977,
+   "dtw_inj_tgt_pps": 0.8559,
+   "fmax_inj_tgt_pps": 0.9981,
+   "vowel_inj_tgt_pps": 0.9929,
+   "mcd_bl_inj": 34.3362,
+   "mcd_bl_mask_inj_mask": 0.0,
+   "mcd_bl_bl_mask": 36.515,
+   "mcd_inj_inj_mask": 36.6529,
+   "mcd_bl_tgt": 35.5585,
+   "mcd_inj_tgt": 36.8872,
+   "aligned": true
+  },
+  "295": {
+   "pair_idx": 295,
+   "word_a": "曹",
+   "word_b": "村上",
+   "text_a": "曹的研究在去年获得了奖项。",
+   "text_b": "村上的研究在去年获得了奖项。",
+   "frames_bl": 31,
+   "frames_inj": 56,
+   "frames_bl_mask": 33,
+   "frames_inj_mask": 33,
+   "frames_tgt": 56,
+   "tmean_bl_inj_mel": 0.9123,
+   "dtw_bl_inj_mel": 0.8903,
+   "fmax_bl_inj_mel": 0.2592,
+   "vowel_bl_inj_mel": 0.7231,
+   "frob_bl_inj": 86.3512,
+   "tmean_bl_mask_inj_mask_mel": 1.0,
+   "dtw_bl_mask_inj_mask_mel": 0.9844,
+   "fmax_bl_mask_inj_mask_mel": 0.4708,
+   "vowel_bl_mask_inj_mask_mel": 1.0,
+   "frob_bl_mask_inj_mask": 0.0,
+   "tmean_bl_bl_mask_mel": 0.9466,
+   "dtw_bl_bl_mask_mel": 0.8376,
+   "fmax_bl_bl_mask_mel": 0.4007,
+   "vowel_bl_bl_mask_mel": 0.726,
+   "frob_bl_bl_mask": 40.4526,
+   "tmean_inj_inj_mask_mel": 0.8555,
+   "dtw_inj_inj_mask_mel": 0.9097,
+   "fmax_inj_inj_mask_mel": 0.429,
+   "vowel_inj_inj_mask_mel": 0.224,
+   "frob_inj_inj_mask": 98.8892,
+   "tmean_bl_tgt_mel": 0.7572,
+   "dtw_bl_tgt_mel": 0.5965,
+   "fmax_bl_tgt_mel": 0.8097,
+   "vowel_bl_tgt_mel": 0.666,
+   "frob_bl_tgt": 41.0626,
+   "tmean_inj_tgt_mel": 0.8647,
+   "dtw_inj_tgt_mel": 0.691,
+   "fmax_inj_tgt_mel": 0.9031,
+   "vowel_inj_tgt_mel": 0.6947,
+   "frob_inj_tgt": 76.3933,
+   "tmean_bl_inj_w2v": 0.8686,
+   "dtw_bl_inj_w2v": 0.8078,
+   "fmax_bl_inj_w2v": 0.7027,
+   "vowel_bl_inj_w2v": 0.8149,
+   "tmean_bl_mask_inj_mask_w2v": 1.0,
+   "dtw_bl_mask_inj_mask_w2v": 0.9619,
+   "fmax_bl_mask_inj_mask_w2v": 0.259,
+   "vowel_bl_mask_inj_mask_w2v": 1.0,
+   "tmean_bl_bl_mask_w2v": 0.9672,
+   "dtw_bl_bl_mask_w2v": 0.8975,
+   "fmax_bl_bl_mask_w2v": 0.3283,
+   "vowel_bl_bl_mask_w2v": 0.9323,
+   "tmean_inj_inj_mask_w2v": 0.8693,
+   "dtw_inj_inj_mask_w2v": 0.8173,
+   "fmax_inj_inj_mask_w2v": 0.7467,
+   "vowel_inj_inj_mask_w2v": 0.7709,
+   "tmean_bl_tgt_w2v": 0.9516,
+   "dtw_bl_tgt_w2v": 0.8558,
+   "fmax_bl_tgt_w2v": 0.4346,
+   "vowel_bl_tgt_w2v": 0.8473,
+   "tmean_inj_tgt_w2v": 0.9018,
+   "dtw_inj_tgt_w2v": 0.8208,
+   "fmax_inj_tgt_w2v": 0.6735,
+   "vowel_inj_tgt_w2v": 0.7817,
+   "tmean_bl_inj_pps": 0.9987,
+   "dtw_bl_inj_pps": 0.8975,
+   "fmax_bl_inj_pps": 0.9915,
+   "vowel_bl_inj_pps": 0.9964,
+   "tmean_bl_mask_inj_mask_pps": 1.0,
+   "dtw_bl_mask_inj_mask_pps": 0.9365,
+   "fmax_bl_mask_inj_mask_pps": 0.5546,
+   "vowel_bl_mask_inj_mask_pps": 1.0,
+   "tmean_bl_bl_mask_pps": 0.9995,
+   "dtw_bl_bl_mask_pps": 0.9207,
+   "fmax_bl_bl_mask_pps": 0.7641,
+   "vowel_bl_bl_mask_pps": 0.9961,
+   "tmean_inj_inj_mask_pps": 0.9986,
+   "dtw_inj_inj_mask_pps": 0.918,
+   "fmax_inj_inj_mask_pps": 0.9916,
+   "vowel_inj_inj_mask_pps": 0.9926,
+   "tmean_bl_tgt_pps": 0.9993,
+   "dtw_bl_tgt_pps": 0.8957,
+   "fmax_bl_tgt_pps": 0.9699,
+   "vowel_bl_tgt_pps": 0.9996,
+   "tmean_inj_tgt_pps": 0.9985,
+   "dtw_inj_tgt_pps": 0.8978,
+   "fmax_inj_tgt_pps": 0.9705,
+   "vowel_inj_tgt_pps": 0.996,
+   "mcd_bl_inj": 33.9025,
+   "mcd_bl_mask_inj_mask": 0.0,
+   "mcd_bl_bl_mask": 32.2576,
+   "mcd_inj_inj_mask": 32.1948,
+   "mcd_bl_tgt": 37.2052,
+   "mcd_inj_tgt": 39.9098,
+   "aligned": true
+  }
+ },
+ "summary_before": {
+  "lang": "zh",
+  "n_total": 300,
+  "n_aligned": 300,
+  "tmean_bl_inj_mel": [
+   0.8588,
+   0.1458
+  ],
+  "dtw_bl_inj_mel": [
+   0.7463,
+   0.1256
+  ],
+  "fmax_bl_inj_mel": [
+   0.9422,
+   0.3808
+  ],
+  "vowel_bl_inj_mel": [
+   0.6795,
+   0.2993
+  ],
+  "frob_bl_inj": [
+   57.7253,
+   17.3325
+  ],
+  "tmean_bl_mask_inj_mask_mel": [
+   1.0,
+   0.0
+  ],
+  "dtw_bl_mask_inj_mask_mel": [
+   0.9798,
+   0.0161
+  ],
+  "fmax_bl_mask_inj_mask_mel": [
+   0.3232,
+   0.2303
+  ],
+  "vowel_bl_mask_inj_mask_mel": [
+   1.0,
+   0.0
+  ],
+  "frob_bl_mask_inj_mask": [
+   0.0,
+   0.0
+  ],
+  "tmean_bl_bl_mask_mel": [
+   0.8446,
+   0.1589
+  ],
+  "dtw_bl_bl_mask_mel": [
+   0.7456,
+   0.1482
+  ],
+  "fmax_bl_bl_mask_mel": [
+   0.889,
+   0.3937
+  ],
+  "vowel_bl_bl_mask_mel": [
+   0.6149,
+   0.3995
+  ],
+  "frob_bl_bl_mask": [
+   57.2753,
+   17.2548
+  ],
+  "tmean_inj_inj_mask_mel": [
+   0.8674,
+   0.1359
+  ],
+  "dtw_inj_inj_mask_mel": [
+   0.7437,
+   0.1417
+  ],
+  "fmax_inj_inj_mask_mel": [
+   0.9304,
+   0.4057
+  ],
+  "vowel_inj_inj_mask_mel": [
+   0.6219,
+   0.3987
+  ],
+  "frob_inj_inj_mask": [
+   59.4943,
+   18.8093
+  ],
+  "tmean_bl_tgt_mel": [
+   0.8697,
+   0.1485
+  ],
+  "dtw_bl_tgt_mel": [
+   0.7531,
+   0.1123
+  ],
+  "fmax_bl_tgt_mel": [
+   0.9422,
+   0.3652
+  ],
+  "vowel_bl_tgt_mel": [
+   0.7384,
+   0.2325
+  ],
+  "frob_bl_tgt": [
+   59.9417,
+   15.9345
+  ],
+  "tmean_inj_tgt_mel": [
+   0.9311,
+   0.0661
+  ],
+  "dtw_inj_tgt_mel": [
+   0.8146,
+   0.0905
+  ],
+  "fmax_inj_tgt_mel": [
+   0.8633,
+   0.382
+  ],
+  "vowel_inj_tgt_mel": [
+   0.797,
+   0.244
+  ],
+  "frob_inj_tgt": [
+   55.4255,
+   19.9094
+  ],
+  "tmean_bl_inj_w2v": [
+   0.7996,
+   0.1415
+  ],
+  "dtw_bl_inj_w2v": [
+   0.7094,
+   0.1127
+  ],
+  "fmax_bl_inj_w2v": [
+   0.7669,
+   0.1858
+  ],
+  "vowel_bl_inj_w2v": [
+   0.7401,
+   0.1434
+  ],
+  "tmean_bl_mask_inj_mask_w2v": [
+   1.0,
+   0.0
+  ],
+  "dtw_bl_mask_inj_mask_w2v": [
+   0.9487,
+   0.0308
+  ],
+  "fmax_bl_mask_inj_mask_w2v": [
+   0.4505,
+   0.2205
+  ],
+  "vowel_bl_mask_inj_mask_w2v": [
+   1.0,
+   0.0
+  ],
+  "tmean_bl_bl_mask_w2v": [
+   0.7712,
+   0.1458
+  ],
+  "dtw_bl_bl_mask_w2v": [
+   0.7003,
+   0.1113
+  ],
+  "fmax_bl_bl_mask_w2v": [
+   0.7504,
+   0.184
+  ],
+  "vowel_bl_bl_mask_w2v": [
+   0.7106,
+   0.148
+  ],
+  "tmean_inj_inj_mask_w2v": [
+   0.8037,
+   0.1459
+  ],
+  "dtw_inj_inj_mask_w2v": [
+   0.7205,
+   0.1187
+  ],
+  "fmax_inj_inj_mask_w2v": [
+   0.7743,
+   0.2157
+  ],
+  "vowel_inj_inj_mask_w2v": [
+   0.7519,
+   0.15
+  ],
+  "tmean_bl_tgt_w2v": [
+   0.7988,
+   0.146
+  ],
+  "dtw_bl_tgt_w2v": [
+   0.7013,
+   0.1058
+  ],
+  "fmax_bl_tgt_w2v": [
+   0.8249,
+   0.1509
+  ],
+  "vowel_bl_tgt_w2v": [
+   0.7391,
+   0.1439
+  ],
+  "tmean_inj_tgt_w2v": [
+   0.8726,
+   0.1286
+  ],
+  "dtw_inj_tgt_w2v": [
+   0.7721,
+   0.0996
+  ],
+  "fmax_inj_tgt_w2v": [
+   0.7757,
+   0.1593
+  ],
+  "vowel_inj_tgt_w2v": [
+   0.8304,
+   0.1323
+  ],
+  "tmean_bl_inj_pps": [
+   0.9961,
+   0.0036
+  ],
+  "dtw_bl_inj_pps": [
+   0.8786,
+   0.0603
+  ],
+  "fmax_bl_inj_pps": [
+   0.92,
+   0.1938
+  ],
+  "vowel_bl_inj_pps": [
+   0.9862,
+   0.022
+  ],
+  "tmean_bl_mask_inj_mask_pps": [
+   1.0,
+   0.0
+  ],
+  "dtw_bl_mask_inj_mask_pps": [
+   0.9244,
+   0.0604
+  ],
+  "fmax_bl_mask_inj_mask_pps": [
+   0.6993,
+   0.386
+  ],
+  "vowel_bl_mask_inj_mask_pps": [
+   1.0,
+   0.0
+  ],
+  "tmean_bl_bl_mask_pps": [
+   0.9969,
+   0.003
+  ],
+  "dtw_bl_bl_mask_pps": [
+   0.906,
+   0.0545
+  ],
+  "fmax_bl_bl_mask_pps": [
+   0.8895,
+   0.2101
+  ],
+  "vowel_bl_bl_mask_pps": [
+   0.9873,
+   0.022
+  ],
+  "tmean_inj_inj_mask_pps": [
+   0.9973,
+   0.0024
+  ],
+  "dtw_inj_inj_mask_pps": [
+   0.8951,
+   0.0566
+  ],
+  "fmax_inj_inj_mask_pps": [
+   0.9023,
+   0.2285
+  ],
+  "vowel_inj_inj_mask_pps": [
+   0.9911,
+   0.0113
+  ],
+  "tmean_bl_tgt_pps": [
+   0.9962,
+   0.0033
+  ],
+  "dtw_bl_tgt_pps": [
+   0.8644,
+   0.0489
+  ],
+  "fmax_bl_tgt_pps": [
+   0.9788,
+   0.0927
+  ],
+  "vowel_bl_tgt_pps": [
+   0.9864,
+   0.0212
+  ],
+  "tmean_inj_tgt_pps": [
+   0.9978,
+   0.002
+  ],
+  "dtw_inj_tgt_pps": [
+   0.8609,
+   0.0489
+  ],
+  "fmax_inj_tgt_pps": [
+   0.9804,
+   0.0791
+  ],
+  "vowel_inj_tgt_pps": [
+   0.9926,
+   0.0095
+  ],
+  "mcd_bl_inj": [
+   35.3527,
+   3.4716
+  ],
+  "mcd_bl_mask_inj_mask": [
+   0.0,
+   0.0
+  ],
+  "mcd_bl_bl_mask": [
+   35.8654,
+   3.5723
+  ],
+  "mcd_inj_inj_mask": [
+   35.7552,
+   4.7515
+  ],
+  "mcd_bl_tgt": [
+   35.4275,
+   2.9583
+  ],
+  "mcd_inj_tgt": [
+   33.1043,
+   5.5045
+  ],
+  "elapsed_min": 277.58
+ },
+ "summary_after": {
+  "lang": "zh",
+  "n_total": 300,
+  "n_aligned": 300,
+  "tmean_bl_inj_mel": [
+   0.8595,
+   0.1458
+  ],
+  "dtw_bl_inj_mel": [
+   0.747,
+   0.1259
+  ],
+  "fmax_bl_inj_mel": [
+   0.9397,
+   0.3828
+  ],
+  "vowel_bl_inj_mel": [
+   0.6805,
+   0.2987
+  ],
+  "frob_bl_inj": [
+   57.9299,
+   17.3737
+  ],
+  "tmean_bl_mask_inj_mask_mel": [
+   1.0,
+   0.0
+  ],
+  "dtw_bl_mask_inj_mask_mel": [
+   0.9798,
+   0.0161
+  ],
+  "fmax_bl_mask_inj_mask_mel": [
+   0.3232,
+   0.2303
+  ],
+  "vowel_bl_mask_inj_mask_mel": [
+   1.0,
+   0.0
+  ],
+  "frob_bl_mask_inj_mask": [
+   0.0,
+   0.0
+  ],
+  "tmean_bl_bl_mask_mel": [
+   0.8446,
+   0.1589
+  ],
+  "dtw_bl_bl_mask_mel": [
+   0.7456,
+   0.1482
+  ],
+  "fmax_bl_bl_mask_mel": [
+   0.889,
+   0.3937
+  ],
+  "vowel_bl_bl_mask_mel": [
+   0.6149,
+   0.3995
+  ],
+  "frob_bl_bl_mask": [
+   57.2753,
+   17.2548
+  ],
+  "tmean_inj_inj_mask_mel": [
+   0.8686,
+   0.1333
+  ],
+  "dtw_inj_inj_mask_mel": [
+   0.7443,
+   0.1419
+  ],
+  "fmax_inj_inj_mask_mel": [
+   0.9296,
+   0.4071
+  ],
+  "vowel_inj_inj_mask_mel": [
+   0.6237,
+   0.3936
+  ],
+  "frob_inj_inj_mask": [
+   59.8189,
+   18.92
+  ],
+  "tmean_bl_tgt_mel": [
+   0.8697,
+   0.1485
+  ],
+  "dtw_bl_tgt_mel": [
+   0.7531,
+   0.1123
+  ],
+  "fmax_bl_tgt_mel": [
+   0.9422,
+   0.3652
+  ],
+  "vowel_bl_tgt_mel": [
+   0.7384,
+   0.2325
+  ],
+  "frob_bl_tgt": [
+   59.9417,
+   15.9345
+  ],
+  "tmean_inj_tgt_mel": [
+   0.932,
+   0.0637
+  ],
+  "dtw_inj_tgt_mel": [
+   0.8147,
+   0.0903
+  ],
+  "fmax_inj_tgt_mel": [
+   0.8644,
+   0.3826
+  ],
+  "vowel_inj_tgt_mel": [
+   0.8002,
+   0.2376
+  ],
+  "frob_inj_tgt": [
+   55.6498,
+   19.8649
+  ],
+  "tmean_bl_inj_w2v": [
+   0.7995,
+   0.1415
+  ],
+  "dtw_bl_inj_w2v": [
+   0.7095,
+   0.1127
+  ],
+  "fmax_bl_inj_w2v": [
+   0.7665,
+   0.186
+  ],
+  "vowel_bl_inj_w2v": [
+   0.7402,
+   0.1434
+  ],
+  "tmean_bl_mask_inj_mask_w2v": [
+   1.0,
+   0.0
+  ],
+  "dtw_bl_mask_inj_mask_w2v": [
+   0.9487,
+   0.0308
+  ],
+  "fmax_bl_mask_inj_mask_w2v": [
+   0.4505,
+   0.2205
+  ],
+  "vowel_bl_mask_inj_mask_w2v": [
+   1.0,
+   0.0
+  ],
+  "tmean_bl_bl_mask_w2v": [
+   0.7712,
+   0.1458
+  ],
+  "dtw_bl_bl_mask_w2v": [
+   0.7003,
+   0.1113
+  ],
+  "fmax_bl_bl_mask_w2v": [
+   0.7504,
+   0.184
+  ],
+  "vowel_bl_bl_mask_w2v": [
+   0.7106,
+   0.148
+  ],
+  "tmean_inj_inj_mask_w2v": [
+   0.8036,
+   0.1457
+  ],
+  "dtw_inj_inj_mask_w2v": [
+   0.7208,
+   0.1186
+  ],
+  "fmax_inj_inj_mask_w2v": [
+   0.7757,
+   0.2152
+  ],
+  "vowel_inj_inj_mask_w2v": [
+   0.7519,
+   0.1499
+  ],
+  "tmean_bl_tgt_w2v": [
+   0.7988,
+   0.146
+  ],
+  "dtw_bl_tgt_w2v": [
+   0.7013,
+   0.1058
+  ],
+  "fmax_bl_tgt_w2v": [
+   0.8249,
+   0.1509
+  ],
+  "vowel_bl_tgt_w2v": [
+   0.7391,
+   0.1439
+  ],
+  "tmean_inj_tgt_w2v": [
+   0.8726,
+   0.1286
+  ],
+  "dtw_inj_tgt_w2v": [
+   0.7723,
+   0.0996
+  ],
+  "fmax_inj_tgt_w2v": [
+   0.7761,
+   0.1591
+  ],
+  "vowel_inj_tgt_w2v": [
+   0.83,
+   0.1323
+  ],
+  "tmean_bl_inj_pps": [
+   0.9961,
+   0.0036
+  ],
+  "dtw_bl_inj_pps": [
+   0.8789,
+   0.0602
+  ],
+  "fmax_bl_inj_pps": [
+   0.9201,
+   0.1938
+  ],
+  "vowel_bl_inj_pps": [
+   0.9862,
+   0.0221
+  ],
+  "tmean_bl_mask_inj_mask_pps": [
+   1.0,
+   0.0
+  ],
+  "dtw_bl_mask_inj_mask_pps": [
+   0.9244,
+   0.0604
+  ],
+  "fmax_bl_mask_inj_mask_pps": [
+   0.6993,
+   0.386
+  ],
+  "vowel_bl_mask_inj_mask_pps": [
+   1.0,
+   0.0
+  ],
+  "tmean_bl_bl_mask_pps": [
+   0.9969,
+   0.003
+  ],
+  "dtw_bl_bl_mask_pps": [
+   0.906,
+   0.0545
+  ],
+  "fmax_bl_bl_mask_pps": [
+   0.8895,
+   0.2101
+  ],
+  "vowel_bl_bl_mask_pps": [
+   0.9873,
+   0.022
+  ],
+  "tmean_inj_inj_mask_pps": [
+   0.9973,
+   0.0024
+  ],
+  "dtw_inj_inj_mask_pps": [
+   0.8953,
+   0.0565
+  ],
+  "fmax_inj_inj_mask_pps": [
+   0.902,
+   0.2286
+  ],
+  "vowel_inj_inj_mask_pps": [
+   0.9911,
+   0.0113
+  ],
+  "tmean_bl_tgt_pps": [
+   0.9962,
+   0.0033
+  ],
+  "dtw_bl_tgt_pps": [
+   0.8644,
+   0.0489
+  ],
+  "fmax_bl_tgt_pps": [
+   0.9788,
+   0.0927
+  ],
+  "vowel_bl_tgt_pps": [
+   0.9864,
+   0.0212
+  ],
+  "tmean_inj_tgt_pps": [
+   0.9979,
+   0.0019
+  ],
+  "dtw_inj_tgt_pps": [
+   0.8611,
+   0.0489
+  ],
+  "fmax_inj_tgt_pps": [
+   0.9804,
+   0.0791
+  ],
+  "vowel_inj_tgt_pps": [
+   0.9926,
+   0.0095
+  ],
+  "mcd_bl_inj": [
+   35.3734,
+   3.4858
+  ],
+  "mcd_bl_mask_inj_mask": [
+   0.0,
+   0.0
+  ],
+  "mcd_bl_bl_mask": [
+   35.8654,
+   3.5723
+  ],
+  "mcd_inj_inj_mask": [
+   35.7741,
+   4.7472
+  ],
+  "mcd_bl_tgt": [
+   35.4275,
+   2.9583
+  ],
+  "mcd_inj_tgt": [
+   33.1285,
+   5.5168
+  ],
+  "elapsed_min": 277.58
+ },
+ "code_md5_now": {
+  "scripts/projection/eval_crossattn_entity_dtw.py": "c20083b9142439e6a46f88f3f0b2cfe4",
+  "scripts/encoder_injection_t5gemma.py": "4f36fa570145cde805072438d8a39bb1",
+  "scripts/projection/forced_alignment_utils.py": "be2b300a061e1374509bd1aa75f41b5d",
+  "scripts/nontemplate/gen_t5gemma_pairs_module.py": "53eb4bfc1008beb361a23c6adfc429ba",
+  "scripts/regen2/silence_criterion.py": "56b84ca2f09425ac95fe91a85b120bc6",
+  "release_artifacts/scripts/encoder_injection_t5gemma.py.bak_spanfix_20260917_095951": "a7aca46875c8b405a89bc3dbfbabddb4",
+  "scripts/spanfix/appB_jazh_gen.py": "0fdfbd25a5b18324b105ab2d9a9ee6f4",
+  "scripts/spanfix/appB_jazh_common.py": "03b57be0ae1974ad167a2bf9f0c7c5e5",
+  "scripts/spanfix/spanfix_appB_en_gen.py": "f24016927dbf31dcbf4eefda978682d5",
+  "scripts/spanfix/spanfix_common.py": "4aa829a95684c47281838c9aae8732c8"
+ },
+ "collect_md5": "20e8e31161d49ea2b4715005b439e041",
+ "reproduction_reference": {
+  "note": "reference only; never used to choose records",
+  "15": {
+   "seed": 42,
+   "src_span_changed_vs_0520": false,
+   "frames_bl_equal": true,
+   "frames_tgt_equal": true,
+   "frames_bl_mask_equal": true,
+   "abs_diff_mcd_bl_tgt": 0.0,
+   "abs_diff_tmean_bl_tgt_mel": 0.0
+  },
+  "145": {
+   "seed": 42,
+   "src_span_changed_vs_0520": false,
+   "frames_bl_equal": true,
+   "frames_tgt_equal": true,
+   "frames_bl_mask_equal": true,
+   "abs_diff_mcd_bl_tgt": 0.0,
+   "abs_diff_tmean_bl_tgt_mel": 0.0
+  },
+  "246": {
+   "seed": 42,
+   "src_span_changed_vs_0520": false,
+   "frames_bl_equal": true,
+   "frames_tgt_equal": true,
+   "frames_bl_mask_equal": true,
+   "abs_diff_mcd_bl_tgt": 0.0,
+   "abs_diff_tmean_bl_tgt_mel": 0.0
+  },
+  "295": {
+   "seed": 42,
+   "src_span_changed_vs_0520": false,
+   "frames_bl_equal": true,
+   "frames_tgt_equal": true,
+   "frames_bl_mask_equal": true,
+   "abs_diff_mcd_bl_tgt": 0.0,
+   "abs_diff_tmean_bl_tgt_mel": 0.0
+  }
+ }
+}

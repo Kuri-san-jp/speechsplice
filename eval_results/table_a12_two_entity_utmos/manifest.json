@@ -1,0 +1,70 @@
+{
+ "bark_en.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__Bark_EN.json",
+  "md5": "c15f15b38f10c06d21969bd515e8a001"
+ },
+ "bark_ja.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__Bark_JA.json",
+  "md5": "f362446b29a571347f615daac0032eb0"
+ },
+ "csm_en.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__CSM-1B_EN.json",
+  "md5": "8f4437d4b97e74c0257a1b52a4a88af8"
+ },
+ "irodori_ja.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__Irodori-TTS_JA.json",
+  "md5": "6e55f814cc76bd95127975944dd59711"
+ },
+ "kiseki_ja.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__Kiseki-TTS_JA.json",
+  "md5": "87c10938659800d5925738e84348f427"
+ },
+ "llasa_en.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__Llasa-3B_EN.json",
+  "md5": "126195d8bf7c06153f15af077e1af51f"
+ },
+ "llasa_zh.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__Llasa-3B_ZH.json",
+  "md5": "cedd5e3e9802bc150f65c74dfa4f3fbd"
+ },
+ "longcat_en.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__LongCat_EN.json",
+  "md5": "570b837d600be52b008ca4324d29a72f"
+ },
+ "longcat_zh.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__LongCat_ZH.json",
+  "md5": "d6d976a8681317d761fed41d1b4b4c0d"
+ },
+ "qwen3_en.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__Qwen3-TTS_EN.json",
+  "md5": "315c8fbb7fcc2b1a78d40d8a29e35ff0"
+ },
+ "qwen3_ja.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__Qwen3-TTS_JA.json",
+  "md5": "db0b949be6453734853a25ef9671b36d"
+ },
+ "qwen3_zh.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__Qwen3-TTS_ZH.json",
+  "md5": "0d31b430aec9fc94e98b46122e53afd6"
+ },
+ "speecht5_en.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__SpeechT5_EN.json",
+  "md5": "2ecf4f61fe6c80a7c720f51c95156bf5"
+ },
+ "t5gemma_en.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__T5Gemma-TTS_EN.json",
+  "md5": "e22eb51615017f7d5e414e468d841890"
+ },
+ "t5gemma_ja.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__T5Gemma-TTS_JA.json",
+  "md5": "5a0b52d8dfbfbacbd908800ac20e981f"
+ },
+ "t5gemma_zh.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__T5Gemma-TTS_ZH.json",
+  "md5": "99a81e022272da4d9dc174382834c498"
+ },
+ "xtts_en.json": {
+  "source": "eval_results/_utmos_multi_20261010/multi__XTTS-v2_EN.json",
+  "md5": "f46815e08715b7b417287de562124a0d"
+ }
+}

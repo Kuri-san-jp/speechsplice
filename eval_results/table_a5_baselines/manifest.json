@@ -1,0 +1,10 @@
+{
+ "ja.json": {
+  "source": "eval_results/_appg_vc/final_results_5rows_vc_nopyojt.json",
+  "md5": "8a114969cdc19e7835545bf8c242552a"
+ },
+ "ja_text_hint_regenerated.json": {
+  "source": "eval_results/_appg_vc/apply/applied_textedit.json",
+  "md5": "9d073a30da18e6f0d69f3f8b8c298fd2"
+ }
+}
