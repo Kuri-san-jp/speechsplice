@@ -1,0 +1,7849 @@
+{
+ "summary": {
+  "n": 300,
+  "utmos": {
+   "gradtts-1": {
+    "n": 300,
+    "mean_ci95": [
+     4.290935961405436,
+     0.01885173655476847
+    ]
+   },
+   "gradtts-2": {
+    "n": 300,
+    "mean_ci95": [
+     4.27933170636495,
+     0.018345106762454922
+    ]
+   },
+   "EdiTTS": {
+    "n": 300,
+    "mean_ci95": [
+     4.283951261838277,
+     0.018215915699274013
+    ]
+   },
+   "baseline": {
+    "n": 300,
+    "mean_ci95": [
+     4.199920383294423,
+     0.025108955179488735
+    ]
+   }
+  },
+  "target_in": {
+   "EdiTTS": {
+    "n": 300,
+    "k": 259,
+    "pct": 86.33
+   },
+   "baseline": {
+    "n": 300,
+    "k": 232,
+    "pct": 77.33
+   }
+  }
+ },
+ "rows": [
+  {
+   "idx": 0,
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "London is famous.",
+   "gradtts-1": {
+    "rms": 0.07463285326957703,
+    "utmos": 4.335543155670166
+   },
+   "gradtts-2": {
+    "rms": 0.09272295236587524,
+    "utmos": 4.128572463989258
+   },
+   "EdiTTS": {
+    "rms": 0.08663243055343628,
+    "utmos": 4.2289018630981445,
+    "whisper": "Paris is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08476347476243973,
+    "utmos": 4.256314754486084,
+    "whisper": "Paris is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 1,
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "Michael is famous.",
+   "gradtts-1": {
+    "rms": 0.07030016928911209,
+    "utmos": 4.292111396789551
+   },
+   "gradtts-2": {
+    "rms": 0.09127813577651978,
+    "utmos": 3.971571445465088
+   },
+   "EdiTTS": {
+    "rms": 0.08258343487977982,
+    "utmos": 4.169795989990234,
+    "whisper": "John is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08255399018526077,
+    "utmos": 4.082921504974365,
+    "whisper": "John is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 2,
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "Einstein is famous.",
+   "gradtts-1": {
+    "rms": 0.07111706584692001,
+    "utmos": 4.3409905433654785
+   },
+   "gradtts-2": {
+    "rms": 0.06755923479795456,
+    "utmos": 4.209541320800781
+   },
+   "EdiTTS": {
+    "rms": 0.0736532136797905,
+    "utmos": 4.222536087036133,
+    "whisper": "Newton is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07352060824632645,
+    "utmos": 4.326425075531006,
+    "whisper": "Newton is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 3,
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "Mozart is famous.",
+   "gradtts-1": {
+    "rms": 0.07603087276220322,
+    "utmos": 4.102074146270752
+   },
+   "gradtts-2": {
+    "rms": 0.05732313171029091,
+    "utmos": 4.326296329498291
+   },
+   "EdiTTS": {
+    "rms": 0.05705833435058594,
+    "utmos": 4.226102828979492,
+    "whisper": "Beethoven is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.05991913750767708,
+    "utmos": 4.282050609588623,
+    "whisper": "Beethoven is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 4,
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "Amazon is famous.",
+   "gradtts-1": {
+    "rms": 0.060763560235500336,
+    "utmos": 4.25514030456543
+   },
+   "gradtts-2": {
+    "rms": 0.09257297962903976,
+    "utmos": 4.221592426300049
+   },
+   "EdiTTS": {
+    "rms": 0.07669457048177719,
+    "utmos": 4.156440734863281,
+    "whisper": "Google is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0745680183172226,
+    "utmos": 4.120270729064941,
+    "whisper": "Google is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 5,
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "Harvard is famous.",
+   "gradtts-1": {
+    "rms": 0.09227729588747025,
+    "utmos": 4.100302696228027
+   },
+   "gradtts-2": {
+    "rms": 0.05071185529232025,
+    "utmos": 4.17164945602417
+   },
+   "EdiTTS": {
+    "rms": 0.06087397411465645,
+    "utmos": 4.240732669830322,
+    "whisper": "Oxford is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.05773942172527313,
+    "utmos": 4.179960250854492,
+    "whisper": "Oxford is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 6,
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "Ferrari is famous.",
+   "gradtts-1": {
+    "rms": 0.08843313902616501,
+    "utmos": 3.528749465942383
+   },
+   "gradtts-2": {
+    "rms": 0.07499051839113235,
+    "utmos": 3.790523052215576
+   },
+   "EdiTTS": {
+    "rms": 0.07585268467664719,
+    "utmos": 3.7918777465820312,
+    "whisper": "Portia Miss Famos.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.07713194191455841,
+    "utmos": 3.6481053829193115,
+    "whisper": "Portia is famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 7,
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "Saturn is famous.",
+   "gradtts-1": {
+    "rms": 0.07656961679458618,
+    "utmos": 4.2119364738464355
+   },
+   "gradtts-2": {
+    "rms": 0.06277607381343842,
+    "utmos": 4.341698169708252
+   },
+   "EdiTTS": {
+    "rms": 0.05298501253128052,
+    "utmos": 4.324841022491455,
+    "whisper": "Jupiter is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.054004646837711334,
+    "utmos": 4.273406505584717,
+    "whisper": "Jupiter is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 8,
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "Diamond is famous.",
+   "gradtts-1": {
+    "rms": 0.07122474163770676,
+    "utmos": 4.312139511108398
+   },
+   "gradtts-2": {
+    "rms": 0.06782171875238419,
+    "utmos": 4.305108070373535
+   },
+   "EdiTTS": {
+    "rms": 0.07016880810260773,
+    "utmos": 4.317018985748291,
+    "whisper": "Emerald is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0688791275024414,
+    "utmos": 4.321078777313232,
+    "whisper": "Emerald is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 9,
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "Christmas is famous.",
+   "gradtts-1": {
+    "rms": 0.05813001096248627,
+    "utmos": 4.258663177490234
+   },
+   "gradtts-2": {
+    "rms": 0.09526374936103821,
+    "utmos": 4.224853038787842
+   },
+   "EdiTTS": {
+    "rms": 0.08873280882835388,
+    "utmos": 4.326319217681885,
+    "whisper": "Halloween is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08445342630147934,
+    "utmos": 4.188843250274658,
+    "whisper": "Halloween is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 10,
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "Hollywood is famous.",
+   "gradtts-1": {
+    "rms": 0.08957170695066452,
+    "utmos": 4.31958532333374
+   },
+   "gradtts-2": {
+    "rms": 0.11240584403276443,
+    "utmos": 3.6357004642486572
+   },
+   "EdiTTS": {
+    "rms": 0.11052192002534866,
+    "utmos": 3.600393295288086,
+    "whisper": "Broadway is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10729251801967621,
+    "utmos": 3.4706687927246094,
+    "whisper": "Broadway is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 11,
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "Victoria is famous.",
+   "gradtts-1": {
+    "rms": 0.06003444269299507,
+    "utmos": 4.285452842712402
+   },
+   "gradtts-2": {
+    "rms": 0.08546710759401321,
+    "utmos": 4.287194728851318
+   },
+   "EdiTTS": {
+    "rms": 0.07930704951286316,
+    "utmos": 4.304636001586914,
+    "whisper": "LIZABETH is famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.07471945136785507,
+    "utmos": 4.297501564025879,
+    "whisper": "LIZABETH is famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 12,
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "Leonardo is famous.",
+   "gradtts-1": {
+    "rms": 0.07322828471660614,
+    "utmos": 4.160520553588867
+   },
+   "gradtts-2": {
+    "rms": 0.07195258140563965,
+    "utmos": 4.199781894683838
+   },
+   "EdiTTS": {
+    "rms": 0.07014206051826477,
+    "utmos": 4.258654594421387,
+    "whisper": "Picasso is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06892529129981995,
+    "utmos": 4.185997009277344,
+    "whisper": "Picasso is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 13,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "Everest is famous.",
+   "gradtts-1": {
+    "rms": 0.07901661843061447,
+    "utmos": 4.299688816070557
+   },
+   "gradtts-2": {
+    "rms": 0.10135699063539505,
+    "utmos": 4.066157341003418
+   },
+   "EdiTTS": {
+    "rms": 0.08947104960680008,
+    "utmos": 4.0437469482421875,
+    "whisper": "Kilimanjaro is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08571004867553711,
+    "utmos": 3.789801836013794,
+    "whisper": "Kilimanjaro is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 14,
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "Atlantic is famous.",
+   "gradtts-1": {
+    "rms": 0.08206894993782043,
+    "utmos": 4.324408531188965
+   },
+   "gradtts-2": {
+    "rms": 0.07480084151029587,
+    "utmos": 4.246985912322998
+   },
+   "EdiTTS": {
+    "rms": 0.07339939475059509,
+    "utmos": 4.07597541809082,
+    "whisper": "Pacific is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0743466466665268,
+    "utmos": 4.12181282043457,
+    "whisper": "Pacific is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 15,
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "Shakespeare is famous.",
+   "gradtts-1": {
+    "rms": 0.060964737087488174,
+    "utmos": 4.343458652496338
+   },
+   "gradtts-2": {
+    "rms": 0.08473968505859375,
+    "utmos": 4.346017360687256
+   },
+   "EdiTTS": {
+    "rms": 0.08791700750589371,
+    "utmos": 4.366298198699951,
+    "whisper": "Dickens is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08259160816669464,
+    "utmos": 4.339385032653809,
+    "whisper": "Dickens is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 16,
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "Samsung is famous.",
+   "gradtts-1": {
+    "rms": 0.08895660191774368,
+    "utmos": 4.221725940704346
+   },
+   "gradtts-2": {
+    "rms": 0.07218904048204422,
+    "utmos": 4.116803169250488
+   },
+   "EdiTTS": {
+    "rms": 0.08798149973154068,
+    "utmos": 4.152196884155273,
+    "whisper": "Apple is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0815306007862091,
+    "utmos": 4.228808403015137,
+    "whisper": "Apple is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 17,
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "Tokyo is famous.",
+   "gradtts-1": {
+    "rms": 0.07549329847097397,
+    "utmos": 4.2406439781188965
+   },
+   "gradtts-2": {
+    "rms": 0.06561986356973648,
+    "utmos": 4.174036026000977
+   },
+   "EdiTTS": {
+    "rms": 0.06518583744764328,
+    "utmos": 4.147072792053223,
+    "whisper": "Berlin is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0652310699224472,
+    "utmos": 4.096785545349121,
+    "whisper": "Berlin is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 18,
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "Sydney is famous.",
+   "gradtts-1": {
+    "rms": 0.06339747458696365,
+    "utmos": 4.396146774291992
+   },
+   "gradtts-2": {
+    "rms": 0.06971390545368195,
+    "utmos": 4.299254894256592
+   },
+   "EdiTTS": {
+    "rms": 0.06756591796875,
+    "utmos": 4.299304008483887,
+    "whisper": "Toronto is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06547118723392487,
+    "utmos": 4.3241801261901855,
+    "whisper": "Toronto is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 19,
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "Stanford is famous.",
+   "gradtts-1": {
+    "rms": 0.061615340411663055,
+    "utmos": 4.347283840179443
+   },
+   "gradtts-2": {
+    "rms": 0.07135268300771713,
+    "utmos": 4.345792770385742
+   },
+   "EdiTTS": {
+    "rms": 0.05825452506542206,
+    "utmos": 4.334014415740967,
+    "whisper": "Berkeley is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.05899680778384209,
+    "utmos": 4.285559177398682,
+    "whisper": "Berkeley is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 20,
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "Napoleon is famous.",
+   "gradtts-1": {
+    "rms": 0.07487451285123825,
+    "utmos": 4.126177787780762
+   },
+   "gradtts-2": {
+    "rms": 0.049824733287096024,
+    "utmos": 4.326849937438965
+   },
+   "EdiTTS": {
+    "rms": 0.05167321115732193,
+    "utmos": 4.281661510467529,
+    "whisper": "seizure is famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.05480039492249489,
+    "utmos": 4.2151875495910645,
+    "whisper": "seizure is famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 21,
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "Darwin is famous.",
+   "gradtts-1": {
+    "rms": 0.06539954990148544,
+    "utmos": 4.020060062408447
+   },
+   "gradtts-2": {
+    "rms": 0.088675856590271,
+    "utmos": 3.7599565982818604
+   },
+   "EdiTTS": {
+    "rms": 0.0850420594215393,
+    "utmos": 3.6352953910827637,
+    "whisper": "YALIO IS FAMOUS",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.08209444582462311,
+    "utmos": 3.673558235168457,
+    "whisper": "YAL-LIO IS FAMOUS",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 22,
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "Tesla is famous.",
+   "gradtts-1": {
+    "rms": 0.06477750092744827,
+    "utmos": 4.286545753479004
+   },
+   "gradtts-2": {
+    "rms": 0.06651808321475983,
+    "utmos": 4.234848976135254
+   },
+   "EdiTTS": {
+    "rms": 0.06850577890872955,
+    "utmos": 4.212564468383789,
+    "whisper": "Edison is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06899702548980713,
+    "utmos": 4.222350120544434,
+    "whisper": "Edison is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 23,
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "Boeing is famous.",
+   "gradtts-1": {
+    "rms": 0.11248921602964401,
+    "utmos": 4.2116923332214355
+   },
+   "gradtts-2": {
+    "rms": 0.07416746765375137,
+    "utmos": 4.124103546142578
+   },
+   "EdiTTS": {
+    "rms": 0.07997263967990875,
+    "utmos": 4.207635402679443,
+    "whisper": "The airbus is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07956546545028687,
+    "utmos": 4.244313716888428,
+    "whisper": "The airbus is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 24,
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "Disney is famous.",
+   "gradtts-1": {
+    "rms": 0.05587588995695114,
+    "utmos": 4.391257286071777
+   },
+   "gradtts-2": {
+    "rms": 0.07870201021432877,
+    "utmos": 4.1734442710876465
+   },
+   "EdiTTS": {
+    "rms": 0.07380059361457825,
+    "utmos": 4.229325771331787,
+    "whisper": "Warner is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07247630506753922,
+    "utmos": 4.131196022033691,
+    "whisper": "Warner is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 25,
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "Intel is famous.",
+   "gradtts-1": {
+    "rms": 0.09288351982831955,
+    "utmos": 4.353104591369629
+   },
+   "gradtts-2": {
+    "rms": 0.06136518344283104,
+    "utmos": 4.26238489151001
+   },
+   "EdiTTS": {
+    "rms": 0.06183433532714844,
+    "utmos": 4.329514503479004,
+    "whisper": "MD is famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.06203638017177582,
+    "utmos": 4.304262638092041,
+    "whisper": "MD is famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 26,
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "Chicago is famous.",
+   "gradtts-1": {
+    "rms": 0.07866887003183365,
+    "utmos": 4.1768903732299805
+   },
+   "gradtts-2": {
+    "rms": 0.06815207749605179,
+    "utmos": 4.328914642333984
+   },
+   "EdiTTS": {
+    "rms": 0.06979366391897202,
+    "utmos": 4.138615131378174,
+    "whisper": "Boston is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06977944821119308,
+    "utmos": 4.100085258483887,
+    "whisper": "Boston is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 27,
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "Dallas is famous.",
+   "gradtts-1": {
+    "rms": 0.10479982197284698,
+    "utmos": 4.100160121917725
+   },
+   "gradtts-2": {
+    "rms": 0.05237848684191704,
+    "utmos": 4.315313816070557
+   },
+   "EdiTTS": {
+    "rms": 0.05604838579893112,
+    "utmos": 4.355546951293945,
+    "whisper": "Houston is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06125727295875549,
+    "utmos": 4.326953411102295,
+    "whisper": "Houston is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 28,
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "Denver is famous.",
+   "gradtts-1": {
+    "rms": 0.07274957001209259,
+    "utmos": 4.24860954284668
+   },
+   "gradtts-2": {
+    "rms": 0.10581547766923904,
+    "utmos": 4.291512489318848
+   },
+   "EdiTTS": {
+    "rms": 0.09883546084165573,
+    "utmos": 4.275217056274414,
+    "whisper": "Seattle is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09686087816953659,
+    "utmos": 4.282642364501953,
+    "whisper": "Seattle is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 29,
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "Miami is famous.",
+   "gradtts-1": {
+    "rms": 0.09298199415206909,
+    "utmos": 4.335363864898682
+   },
+   "gradtts-2": {
+    "rms": 0.09607046842575073,
+    "utmos": 3.8269922733306885
+   },
+   "EdiTTS": {
+    "rms": 0.10956049710512161,
+    "utmos": 3.902078628540039,
+    "whisper": "Atlanta is FAMOS.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10554120689630508,
+    "utmos": 3.9112744331359863,
+    "whisper": "Atlanta is famous!",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 30,
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "Nike is famous.",
+   "gradtts-1": {
+    "rms": 0.07585789263248444,
+    "utmos": 4.309550762176514
+   },
+   "gradtts-2": {
+    "rms": 0.0671079009771347,
+    "utmos": 4.211968421936035
+   },
+   "EdiTTS": {
+    "rms": 0.06867452710866928,
+    "utmos": 4.320390224456787,
+    "whisper": "Lydides is famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.06695172190666199,
+    "utmos": 4.346773147583008,
+    "whisper": "Lydides is famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 31,
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "Toyota is famous.",
+   "gradtts-1": {
+    "rms": 0.08069147914648056,
+    "utmos": 4.181514263153076
+   },
+   "gradtts-2": {
+    "rms": 0.09380478411912918,
+    "utmos": 4.043060302734375
+   },
+   "EdiTTS": {
+    "rms": 0.09635308384895325,
+    "utmos": 4.054980278015137,
+    "whisper": "Honda is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09773632884025574,
+    "utmos": 3.9832465648651123,
+    "whisper": "Honda is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 32,
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "Columbus is famous.",
+   "gradtts-1": {
+    "rms": 0.08280590176582336,
+    "utmos": 4.234959602355957
+   },
+   "gradtts-2": {
+    "rms": 0.0675104558467865,
+    "utmos": 3.7453110218048096
+   },
+   "EdiTTS": {
+    "rms": 0.06406388431787491,
+    "utmos": 3.673037052154541,
+    "whisper": "Magellan is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06773607432842255,
+    "utmos": 3.633941173553467,
+    "whisper": "Magellan is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 33,
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "Madrid is famous.",
+   "gradtts-1": {
+    "rms": 0.06203439459204674,
+    "utmos": 4.31621789932251
+   },
+   "gradtts-2": {
+    "rms": 0.08879624307155609,
+    "utmos": 3.598179578781128
+   },
+   "EdiTTS": {
+    "rms": 0.07574531435966492,
+    "utmos": 3.7721707820892334,
+    "whisper": "ROM is famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.07435132563114166,
+    "utmos": 3.540168046951294,
+    "whisper": "Rome is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 34,
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "Vienna is famous.",
+   "gradtts-1": {
+    "rms": 0.06743691861629486,
+    "utmos": 4.207418441772461
+   },
+   "gradtts-2": {
+    "rms": 0.07279449701309204,
+    "utmos": 4.2523393630981445
+   },
+   "EdiTTS": {
+    "rms": 0.062094446271657944,
+    "utmos": 4.048032760620117,
+    "whisper": "is famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.06352689117193222,
+    "utmos": 4.1501898765563965,
+    "whisper": "is famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 35,
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "Moscow is famous.",
+   "gradtts-1": {
+    "rms": 0.08624457567930222,
+    "utmos": 4.326038360595703
+   },
+   "gradtts-2": {
+    "rms": 0.08518246561288834,
+    "utmos": 4.406540870666504
+   },
+   "EdiTTS": {
+    "rms": 0.08430469036102295,
+    "utmos": 4.358891487121582,
+    "whisper": "Beijing is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08860470354557037,
+    "utmos": 4.347614765167236,
+    "whisper": "Beijing is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 36,
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "Lincoln is famous.",
+   "gradtts-1": {
+    "rms": 0.07437072694301605,
+    "utmos": 4.403240203857422
+   },
+   "gradtts-2": {
+    "rms": 0.09299305826425552,
+    "utmos": 4.275401592254639
+   },
+   "EdiTTS": {
+    "rms": 0.08861547708511353,
+    "utmos": 4.360861301422119,
+    "whisper": "Washington is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08902952820062637,
+    "utmos": 4.351061820983887,
+    "whisper": "Washington is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 37,
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "Kennedy is famous.",
+   "gradtts-1": {
+    "rms": 0.07028002291917801,
+    "utmos": 4.311309337615967
+   },
+   "gradtts-2": {
+    "rms": 0.10482335090637207,
+    "utmos": 4.322571277618408
+   },
+   "EdiTTS": {
+    "rms": 0.10127750039100647,
+    "utmos": 4.2963056564331055,
+    "whisper": "Roosevelt is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10139425098896027,
+    "utmos": 4.3108062744140625,
+    "whisper": "Roosevelt is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 38,
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "Mars is famous.",
+   "gradtts-1": {
+    "rms": 0.07874700427055359,
+    "utmos": 3.683234214782715
+   },
+   "gradtts-2": {
+    "rms": 0.07845763117074966,
+    "utmos": 4.347198486328125
+   },
+   "EdiTTS": {
+    "rms": 0.07786685973405838,
+    "utmos": 4.339141845703125,
+    "whisper": "Venus is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07554184645414352,
+    "utmos": 4.35052490234375,
+    "whisper": "Venus is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 39,
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "Mercury is famous.",
+   "gradtts-1": {
+    "rms": 0.06083153560757637,
+    "utmos": 4.261391639709473
+   },
+   "gradtts-2": {
+    "rms": 0.06029415875673294,
+    "utmos": 4.309159755706787
+   },
+   "EdiTTS": {
+    "rms": 0.05755149573087692,
+    "utmos": 4.370907783508301,
+    "whisper": "Neptune is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06093569099903107,
+    "utmos": 4.352932929992676,
+    "whisper": "Neptune is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 40,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "Sahara is famous.",
+   "gradtts-1": {
+    "rms": 0.07791677862405777,
+    "utmos": 3.5780632495880127
+   },
+   "gradtts-2": {
+    "rms": 0.09817702323198318,
+    "utmos": 4.281767845153809
+   },
+   "EdiTTS": {
+    "rms": 0.08898414671421051,
+    "utmos": 4.233220100402832,
+    "whisper": "Gobi is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08741388469934464,
+    "utmos": 4.27733850479126,
+    "whisper": "Gobi is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 41,
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "Brazil is famous.",
+   "gradtts-1": {
+    "rms": 0.0710628554224968,
+    "utmos": 4.30576753616333
+   },
+   "gradtts-2": {
+    "rms": 0.0765850692987442,
+    "utmos": 4.2893266677856445
+   },
+   "EdiTTS": {
+    "rms": 0.07637865096330643,
+    "utmos": 4.374271869659424,
+    "whisper": "Argentina is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07419390976428986,
+    "utmos": 4.3635454177856445,
+    "whisper": "Argentina is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 42,
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "Nissan is famous.",
+   "gradtts-1": {
+    "rms": 0.07277525961399078,
+    "utmos": 4.1275482177734375
+   },
+   "gradtts-2": {
+    "rms": 0.07945406436920166,
+    "utmos": 4.2479963302612305
+   },
+   "EdiTTS": {
+    "rms": 0.07803253084421158,
+    "utmos": 4.234241962432861,
+    "whisper": "Mazda is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07547661662101746,
+    "utmos": 4.2446746826171875,
+    "whisper": "Mazda is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 43,
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "Audi is famous.",
+   "gradtts-1": {
+    "rms": 0.08282537013292313,
+    "utmos": 4.139723777770996
+   },
+   "gradtts-2": {
+    "rms": 0.08261784166097641,
+    "utmos": 4.326601982116699
+   },
+   "EdiTTS": {
+    "rms": 0.07851891219615936,
+    "utmos": 4.279184818267822,
+    "whisper": "BMW is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07918616384267807,
+    "utmos": 4.326773166656494,
+    "whisper": "BMW is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 44,
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "Netflix is famous.",
+   "gradtts-1": {
+    "rms": 0.06670406460762024,
+    "utmos": 4.269866466522217
+   },
+   "gradtts-2": {
+    "rms": 0.06515111774206161,
+    "utmos": 4.0794148445129395
+   },
+   "EdiTTS": {
+    "rms": 0.06412339955568314,
+    "utmos": 4.145847320556641,
+    "whisper": "Spotify is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06618157029151917,
+    "utmos": 4.085468292236328,
+    "whisper": "Spider-Fe is famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 45,
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "Facebook is famous.",
+   "gradtts-1": {
+    "rms": 0.07658890634775162,
+    "utmos": 4.2189412117004395
+   },
+   "gradtts-2": {
+    "rms": 0.06728888303041458,
+    "utmos": 4.243714332580566
+   },
+   "EdiTTS": {
+    "rms": 0.061903610825538635,
+    "utmos": 4.231325149536133,
+    "whisper": "Twitter is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06028403341770172,
+    "utmos": 4.1896233558654785,
+    "whisper": "Twitter is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 46,
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "Cairo is famous.",
+   "gradtts-1": {
+    "rms": 0.09633134305477142,
+    "utmos": 4.087879180908203
+   },
+   "gradtts-2": {
+    "rms": 0.07715439796447754,
+    "utmos": 4.187409400939941
+   },
+   "EdiTTS": {
+    "rms": 0.08810639381408691,
+    "utmos": 4.154315948486328,
+    "whisper": "Legos is famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.08524477481842041,
+    "utmos": 4.247532367706299,
+    "whisper": "Lagos is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 47,
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "Mumbai is famous.",
+   "gradtts-1": {
+    "rms": 0.11264794319868088,
+    "utmos": 4.114802360534668
+   },
+   "gradtts-2": {
+    "rms": 0.08138693869113922,
+    "utmos": 4.308701992034912
+   },
+   "EdiTTS": {
+    "rms": 0.0914561077952385,
+    "utmos": 4.316000461578369,
+    "whisper": "Delhi is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09555968642234802,
+    "utmos": 4.286797046661377,
+    "whisper": "Delhi is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 48,
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "Seoul is famous.",
+   "gradtts-1": {
+    "rms": 0.08798597753047943,
+    "utmos": 4.155974388122559
+   },
+   "gradtts-2": {
+    "rms": 0.06636468321084976,
+    "utmos": 4.267216682434082
+   },
+   "EdiTTS": {
+    "rms": 0.06470116227865219,
+    "utmos": 4.0015974044799805,
+    "whisper": "Bangkok is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06482288241386414,
+    "utmos": 3.9597396850585938,
+    "whisper": "Bangkok is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 49,
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "Milan is famous.",
+   "gradtts-1": {
+    "rms": 0.06545978039503098,
+    "utmos": 4.249655246734619
+   },
+   "gradtts-2": {
+    "rms": 0.10654108226299286,
+    "utmos": 4.246631622314453
+   },
+   "EdiTTS": {
+    "rms": 0.09524702280759811,
+    "utmos": 4.258662223815918,
+    "whisper": "Barcelona is famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09136474877595901,
+    "utmos": 4.260524749755859,
+    "whisper": "Barcelona is famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 50,
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "Yesterday, London became famous.",
+   "gradtts-1": {
+    "rms": 0.08156034350395203,
+    "utmos": 4.410421848297119
+   },
+   "gradtts-2": {
+    "rms": 0.06619452685117722,
+    "utmos": 4.31591796875
+   },
+   "EdiTTS": {
+    "rms": 0.07676032185554504,
+    "utmos": 4.358498573303223,
+    "whisper": "Yesterday Paris became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07996494323015213,
+    "utmos": 4.095520973205566,
+    "whisper": "Yesterday Paris became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 51,
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "Yesterday, Michael became famous.",
+   "gradtts-1": {
+    "rms": 0.07427506893873215,
+    "utmos": 4.41250467300415
+   },
+   "gradtts-2": {
+    "rms": 0.07466183602809906,
+    "utmos": 4.404689311981201
+   },
+   "EdiTTS": {
+    "rms": 0.07281322777271271,
+    "utmos": 4.404351711273193,
+    "whisper": "Yesterday, John became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07494103908538818,
+    "utmos": 4.322971820831299,
+    "whisper": "Yesterday, John became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 52,
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "Yesterday, Einstein became famous.",
+   "gradtts-1": {
+    "rms": 0.07505860179662704,
+    "utmos": 4.405802249908447
+   },
+   "gradtts-2": {
+    "rms": 0.07472407072782516,
+    "utmos": 4.416126251220703
+   },
+   "EdiTTS": {
+    "rms": 0.07606726884841919,
+    "utmos": 4.422487258911133,
+    "whisper": "Yesterday, Newton became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07764075696468353,
+    "utmos": 4.133257865905762,
+    "whisper": "Yesterday, Newton became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 53,
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "Yesterday, Mozart became famous.",
+   "gradtts-1": {
+    "rms": 0.07594361156225204,
+    "utmos": 4.406872749328613
+   },
+   "gradtts-2": {
+    "rms": 0.07380100339651108,
+    "utmos": 4.36619758605957
+   },
+   "EdiTTS": {
+    "rms": 0.07187855988740921,
+    "utmos": 4.4043450355529785,
+    "whisper": "Yesterday, Beethoven became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07293226569890976,
+    "utmos": 4.397497177124023,
+    "whisper": "Maybe yesterday, Beethoven became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 54,
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "Yesterday, Amazon became famous.",
+   "gradtts-1": {
+    "rms": 0.07613242417573929,
+    "utmos": 4.3987202644348145
+   },
+   "gradtts-2": {
+    "rms": 0.07085023820400238,
+    "utmos": 4.420186996459961
+   },
+   "EdiTTS": {
+    "rms": 0.07732319086790085,
+    "utmos": 4.445668697357178,
+    "whisper": "Yesterday, Google became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07655756175518036,
+    "utmos": 4.254858493804932,
+    "whisper": "Yesterday, Google became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 55,
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "Yesterday, Harvard became famous.",
+   "gradtts-1": {
+    "rms": 0.08054669201374054,
+    "utmos": 4.290329933166504
+   },
+   "gradtts-2": {
+    "rms": 0.07125061005353928,
+    "utmos": 4.318508625030518
+   },
+   "EdiTTS": {
+    "rms": 0.06731588393449783,
+    "utmos": 4.254046440124512,
+    "whisper": "yesterday, Oxford became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06762145459651947,
+    "utmos": 4.280891418457031,
+    "whisper": "yesterday, Oxford became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 56,
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "Yesterday, Ferrari became famous.",
+   "gradtts-1": {
+    "rms": 0.0804300382733345,
+    "utmos": 4.392854690551758
+   },
+   "gradtts-2": {
+    "rms": 0.08872518688440323,
+    "utmos": 4.413765907287598
+   },
+   "EdiTTS": {
+    "rms": 0.0809243693947792,
+    "utmos": 4.387640476226807,
+    "whisper": "Yesterday, Portia became famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.07783371210098267,
+    "utmos": 4.365449905395508,
+    "whisper": "Yesterday, Portia became famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 57,
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "Yesterday, Saturn became famous.",
+   "gradtts-1": {
+    "rms": 0.08736608922481537,
+    "utmos": 4.381771087646484
+   },
+   "gradtts-2": {
+    "rms": 0.059694524854421616,
+    "utmos": 4.374483585357666
+   },
+   "EdiTTS": {
+    "rms": 0.07070337980985641,
+    "utmos": 4.373749256134033,
+    "whisper": "Yesterday Jupiter became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07643364369869232,
+    "utmos": 4.351003170013428,
+    "whisper": "Yesterday, Jupiter became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 58,
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "Yesterday, Diamond became famous.",
+   "gradtts-1": {
+    "rms": 0.06964261084794998,
+    "utmos": 4.331128120422363
+   },
+   "gradtts-2": {
+    "rms": 0.07946652173995972,
+    "utmos": 4.1991682052612305
+   },
+   "EdiTTS": {
+    "rms": 0.07023390382528305,
+    "utmos": 4.275984287261963,
+    "whisper": "Yesterday, Emerald became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06936560571193695,
+    "utmos": 4.223691940307617,
+    "whisper": "Yesterday, Emerald became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 59,
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "Yesterday, Christmas became famous.",
+   "gradtts-1": {
+    "rms": 0.06570614874362946,
+    "utmos": 4.320071220397949
+   },
+   "gradtts-2": {
+    "rms": 0.07593165338039398,
+    "utmos": 4.402902126312256
+   },
+   "EdiTTS": {
+    "rms": 0.07270145416259766,
+    "utmos": 4.322451591491699,
+    "whisper": "Yesterday Halloween became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07200326770544052,
+    "utmos": 4.266439437866211,
+    "whisper": "yesterday, Halloween became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 60,
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "Yesterday, Hollywood became famous.",
+   "gradtts-1": {
+    "rms": 0.08603734523057938,
+    "utmos": 4.390079498291016
+   },
+   "gradtts-2": {
+    "rms": 0.08575986325740814,
+    "utmos": 4.319285869598389
+   },
+   "EdiTTS": {
+    "rms": 0.08687279373407364,
+    "utmos": 4.383764743804932,
+    "whisper": "Yesterday, Broadway became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08627709746360779,
+    "utmos": 4.332267761230469,
+    "whisper": "Yesterday, Broadway became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 61,
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "Yesterday, Victoria became famous.",
+   "gradtts-1": {
+    "rms": 0.0754016563296318,
+    "utmos": 4.3828020095825195
+   },
+   "gradtts-2": {
+    "rms": 0.077663853764534,
+    "utmos": 4.419302940368652
+   },
+   "EdiTTS": {
+    "rms": 0.07267904281616211,
+    "utmos": 4.412484169006348,
+    "whisper": "Yesterday, Elizabeth became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07252689450979233,
+    "utmos": 4.385120391845703,
+    "whisper": "Yesterday, Elizabeth became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 62,
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "Yesterday, Leonardo became famous.",
+   "gradtts-1": {
+    "rms": 0.07284180074930191,
+    "utmos": 4.381541728973389
+   },
+   "gradtts-2": {
+    "rms": 0.0807807669043541,
+    "utmos": 4.40986442565918
+   },
+   "EdiTTS": {
+    "rms": 0.07457535713911057,
+    "utmos": 4.369328022003174,
+    "whisper": "yesterday Picasso became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07335308939218521,
+    "utmos": 4.047171115875244,
+    "whisper": "yesterday Picasso became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 63,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "Yesterday, Everest became famous.",
+   "gradtts-1": {
+    "rms": 0.07788770645856857,
+    "utmos": 4.318904876708984
+   },
+   "gradtts-2": {
+    "rms": 0.07811202108860016,
+    "utmos": 4.3073530197143555
+   },
+   "EdiTTS": {
+    "rms": 0.07469025999307632,
+    "utmos": 4.305446624755859,
+    "whisper": "By yesterday, Kilimanjaro became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07582353800535202,
+    "utmos": 4.141232013702393,
+    "whisper": "Yesterday, Kilimanjaro became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 64,
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "Yesterday, Atlantic became famous.",
+   "gradtts-1": {
+    "rms": 0.06490166485309601,
+    "utmos": 4.405853271484375
+   },
+   "gradtts-2": {
+    "rms": 0.07573717832565308,
+    "utmos": 4.4545135498046875
+   },
+   "EdiTTS": {
+    "rms": 0.07134929299354553,
+    "utmos": 4.428827285766602,
+    "whisper": "Yesterday Pacific became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06972283124923706,
+    "utmos": 4.387653827667236,
+    "whisper": "Yesterday, a Pacific became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 65,
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "Yesterday, Shakespeare became famous.",
+   "gradtts-1": {
+    "rms": 0.06729655712842941,
+    "utmos": 4.42762565612793
+   },
+   "gradtts-2": {
+    "rms": 0.07246468216180801,
+    "utmos": 4.449859142303467
+   },
+   "EdiTTS": {
+    "rms": 0.06683778017759323,
+    "utmos": 4.4120965003967285,
+    "whisper": "Yesterday, Dickens became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06526738405227661,
+    "utmos": 4.358236312866211,
+    "whisper": "Yesterday, Dickens became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 66,
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "Yesterday, Samsung became famous.",
+   "gradtts-1": {
+    "rms": 0.08467603474855423,
+    "utmos": 4.432553291320801
+   },
+   "gradtts-2": {
+    "rms": 0.0833449512720108,
+    "utmos": 4.400097370147705
+   },
+   "EdiTTS": {
+    "rms": 0.08063047379255295,
+    "utmos": 4.420129776000977,
+    "whisper": "Yesterday, Apple became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08561033010482788,
+    "utmos": 4.371275901794434,
+    "whisper": "Yesterday, Apple became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 67,
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "Yesterday, Tokyo became famous.",
+   "gradtts-1": {
+    "rms": 0.0788852795958519,
+    "utmos": 4.434022903442383
+   },
+   "gradtts-2": {
+    "rms": 0.08654730767011642,
+    "utmos": 4.4213104248046875
+   },
+   "EdiTTS": {
+    "rms": 0.07846993207931519,
+    "utmos": 4.414573669433594,
+    "whisper": "Yesterday Berlin became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07994914799928665,
+    "utmos": 4.311330795288086,
+    "whisper": "Yesterday, Berlin became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 68,
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "Yesterday, Sydney became famous.",
+   "gradtts-1": {
+    "rms": 0.06604069471359253,
+    "utmos": 4.394432067871094
+   },
+   "gradtts-2": {
+    "rms": 0.06899711489677429,
+    "utmos": 4.354757308959961
+   },
+   "EdiTTS": {
+    "rms": 0.06620218604803085,
+    "utmos": 4.393986225128174,
+    "whisper": "Yesterday, Toronto became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0669035091996193,
+    "utmos": 4.393470764160156,
+    "whisper": "Yesterday, Toronto became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 69,
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "Yesterday, Stanford became famous.",
+   "gradtts-1": {
+    "rms": 0.07466476410627365,
+    "utmos": 4.103102684020996
+   },
+   "gradtts-2": {
+    "rms": 0.08834026008844376,
+    "utmos": 4.33040189743042
+   },
+   "EdiTTS": {
+    "rms": 0.07106173783540726,
+    "utmos": 4.384883880615234,
+    "whisper": "yesterday, Berkeley became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07190968841314316,
+    "utmos": 4.2262163162231445,
+    "whisper": "yesterday, Berkeley became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 70,
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "Yesterday, Napoleon became famous.",
+   "gradtts-1": {
+    "rms": 0.07815074920654297,
+    "utmos": 4.383388996124268
+   },
+   "gradtts-2": {
+    "rms": 0.06121573969721794,
+    "utmos": 4.384015083312988
+   },
+   "EdiTTS": {
+    "rms": 0.06557182967662811,
+    "utmos": 4.382996559143066,
+    "whisper": "yesterday Caesar became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07351073622703552,
+    "utmos": 4.287522315979004,
+    "whisper": "Yesterday, Caesar became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 71,
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "Yesterday, Darwin became famous.",
+   "gradtts-1": {
+    "rms": 0.06599731743335724,
+    "utmos": 4.319432735443115
+   },
+   "gradtts-2": {
+    "rms": 0.08376993983983994,
+    "utmos": 4.132146835327148
+   },
+   "EdiTTS": {
+    "rms": 0.07142295688390732,
+    "utmos": 4.3271098136901855,
+    "whisper": "Yesterday, Gautelio became famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.07007875293493271,
+    "utmos": 4.288492679595947,
+    "whisper": "Yesterday, Gautelio became famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 72,
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "Yesterday, Tesla became famous.",
+   "gradtts-1": {
+    "rms": 0.060194823890924454,
+    "utmos": 4.393870830535889
+   },
+   "gradtts-2": {
+    "rms": 0.07403939962387085,
+    "utmos": 4.303668022155762
+   },
+   "EdiTTS": {
+    "rms": 0.06278714537620544,
+    "utmos": 4.363936424255371,
+    "whisper": "Yesterday Edison became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06127694621682167,
+    "utmos": 4.3384318351745605,
+    "whisper": "Yesterday Edison became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 73,
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "Yesterday, Boeing became famous.",
+   "gradtts-1": {
+    "rms": 0.07799022644758224,
+    "utmos": 4.337648391723633
+   },
+   "gradtts-2": {
+    "rms": 0.07275774329900742,
+    "utmos": 4.3701863288879395
+   },
+   "EdiTTS": {
+    "rms": 0.06908000260591507,
+    "utmos": 4.3300557136535645,
+    "whisper": "Yesterday, Airbus became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07249242067337036,
+    "utmos": 4.315328121185303,
+    "whisper": "Yesterday, Berbers became famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 74,
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "Yesterday, Disney became famous.",
+   "gradtts-1": {
+    "rms": 0.0668945237994194,
+    "utmos": 4.432806968688965
+   },
+   "gradtts-2": {
+    "rms": 0.08341855555772781,
+    "utmos": 4.332180976867676
+   },
+   "EdiTTS": {
+    "rms": 0.06743958592414856,
+    "utmos": 4.38418436050415,
+    "whisper": "Yesterday, Warner became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06649552285671234,
+    "utmos": 4.383435249328613,
+    "whisper": "Yesterday, Warner became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 75,
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "Yesterday, Intel became famous.",
+   "gradtts-1": {
+    "rms": 0.06192362681031227,
+    "utmos": 4.428721904754639
+   },
+   "gradtts-2": {
+    "rms": 0.07080027461051941,
+    "utmos": 4.391976833343506
+   },
+   "EdiTTS": {
+    "rms": 0.06178509071469307,
+    "utmos": 4.410533905029297,
+    "whisper": "Yesterday, AMD became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06104256957769394,
+    "utmos": 4.388860702514648,
+    "whisper": "Yesterday, AMD became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 76,
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "Yesterday, Chicago became famous.",
+   "gradtts-1": {
+    "rms": 0.07313222438097,
+    "utmos": 4.270204544067383
+   },
+   "gradtts-2": {
+    "rms": 0.0783357098698616,
+    "utmos": 4.419621467590332
+   },
+   "EdiTTS": {
+    "rms": 0.06450334936380386,
+    "utmos": 4.229155540466309,
+    "whisper": "yesterday Boston became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06744615733623505,
+    "utmos": 4.153391361236572,
+    "whisper": "yesterday Justin became famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 77,
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "Yesterday, Dallas became famous.",
+   "gradtts-1": {
+    "rms": 0.08022153377532959,
+    "utmos": 4.406847953796387
+   },
+   "gradtts-2": {
+    "rms": 0.06196241080760956,
+    "utmos": 4.433827877044678
+   },
+   "EdiTTS": {
+    "rms": 0.06097140163183212,
+    "utmos": 4.4175896644592285,
+    "whisper": "Yesterday, Houston became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06614656001329422,
+    "utmos": 4.421664237976074,
+    "whisper": "Yesterday, Houston became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 78,
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "Yesterday, Denver became famous.",
+   "gradtts-1": {
+    "rms": 0.07926169037818909,
+    "utmos": 4.347365379333496
+   },
+   "gradtts-2": {
+    "rms": 0.07487819343805313,
+    "utmos": 4.37082576751709
+   },
+   "EdiTTS": {
+    "rms": 0.07688713818788528,
+    "utmos": 4.383397579193115,
+    "whisper": "Yesterday, Seattle became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0837797075510025,
+    "utmos": 4.2978644371032715,
+    "whisper": "yesterday, Seattle became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 79,
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "Yesterday, Miami became famous.",
+   "gradtts-1": {
+    "rms": 0.07610747963190079,
+    "utmos": 4.38454008102417
+   },
+   "gradtts-2": {
+    "rms": 0.054616931825876236,
+    "utmos": 4.343177795410156
+   },
+   "EdiTTS": {
+    "rms": 0.0658479556441307,
+    "utmos": 4.384915351867676,
+    "whisper": "Yesterday Atlanta became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06987015157938004,
+    "utmos": 4.362752437591553,
+    "whisper": "Yesterday, Matlanta became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 80,
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "Yesterday, Nike became famous.",
+   "gradtts-1": {
+    "rms": 0.07165874540805817,
+    "utmos": 4.400838851928711
+   },
+   "gradtts-2": {
+    "rms": 0.060779862105846405,
+    "utmos": 4.386936187744141
+   },
+   "EdiTTS": {
+    "rms": 0.07147262990474701,
+    "utmos": 4.380995273590088,
+    "whisper": "Yesterday, adidas became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07174704968929291,
+    "utmos": 4.356039047241211,
+    "whisper": "Yesterday, Adidas became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 81,
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "Yesterday, Toyota became famous.",
+   "gradtts-1": {
+    "rms": 0.06704701483249664,
+    "utmos": 4.407041072845459
+   },
+   "gradtts-2": {
+    "rms": 0.07340569794178009,
+    "utmos": 4.419131278991699
+   },
+   "EdiTTS": {
+    "rms": 0.0723082646727562,
+    "utmos": 4.419834136962891,
+    "whisper": "Yesterday, Honda became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07104592770338058,
+    "utmos": 4.381824493408203,
+    "whisper": "Yesterday, Tonda became famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 82,
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "Yesterday, Columbus became famous.",
+   "gradtts-1": {
+    "rms": 0.06962060183286667,
+    "utmos": 4.335010528564453
+   },
+   "gradtts-2": {
+    "rms": 0.08158755302429199,
+    "utmos": 4.327182769775391
+   },
+   "EdiTTS": {
+    "rms": 0.08424875885248184,
+    "utmos": 4.396457672119141,
+    "whisper": "Yesterday, Magellan became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07956898957490921,
+    "utmos": 4.3553667068481445,
+    "whisper": "Yesterday, Magellan became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 83,
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "Yesterday, Madrid became famous.",
+   "gradtts-1": {
+    "rms": 0.06709063053131104,
+    "utmos": 4.371026515960693
+   },
+   "gradtts-2": {
+    "rms": 0.07992280274629593,
+    "utmos": 4.378532409667969
+   },
+   "EdiTTS": {
+    "rms": 0.06835386902093887,
+    "utmos": 4.2675652503967285,
+    "whisper": "Maybe yesterday Rome became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06851225346326828,
+    "utmos": 4.175651550292969,
+    "whisper": "yesterday Rome became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 84,
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "Yesterday, Vienna became famous.",
+   "gradtts-1": {
+    "rms": 0.06644081324338913,
+    "utmos": 4.376959800720215
+   },
+   "gradtts-2": {
+    "rms": 0.06863661110401154,
+    "utmos": 4.392881393432617
+   },
+   "EdiTTS": {
+    "rms": 0.06807169318199158,
+    "utmos": 4.407646656036377,
+    "whisper": "Yesterday, Prahl became famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.0671522468328476,
+    "utmos": 4.3479485511779785,
+    "whisper": "Yesterday, Prague became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 85,
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "Yesterday, Moscow became famous.",
+   "gradtts-1": {
+    "rms": 0.06821919232606888,
+    "utmos": 4.329684734344482
+   },
+   "gradtts-2": {
+    "rms": 0.09104401618242264,
+    "utmos": 4.3580803871154785
+   },
+   "EdiTTS": {
+    "rms": 0.08211606740951538,
+    "utmos": 4.345919609069824,
+    "whisper": "Yesterday Beijing became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07543077319860458,
+    "utmos": 4.306051731109619,
+    "whisper": "Yesterday, Beijing became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 86,
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "Yesterday, Lincoln became famous.",
+   "gradtts-1": {
+    "rms": 0.06912143528461456,
+    "utmos": 4.388684272766113
+   },
+   "gradtts-2": {
+    "rms": 0.1050083264708519,
+    "utmos": 4.341073513031006
+   },
+   "EdiTTS": {
+    "rms": 0.08798617869615555,
+    "utmos": 4.344466209411621,
+    "whisper": "yesterday Washington became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08652572333812714,
+    "utmos": 4.315266132354736,
+    "whisper": "Yesterday, Washington became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 87,
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "Yesterday, Kennedy became famous.",
+   "gradtts-1": {
+    "rms": 0.06432321667671204,
+    "utmos": 4.371728897094727
+   },
+   "gradtts-2": {
+    "rms": 0.09512642025947571,
+    "utmos": 4.37033224105835
+   },
+   "EdiTTS": {
+    "rms": 0.08710730820894241,
+    "utmos": 4.294004917144775,
+    "whisper": "Yesterday Roosevelt became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08364862948656082,
+    "utmos": 4.397206783294678,
+    "whisper": "Yesterday Roosevelt became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 88,
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "Yesterday, Mars became famous.",
+   "gradtts-1": {
+    "rms": 0.06574541330337524,
+    "utmos": 4.367556571960449
+   },
+   "gradtts-2": {
+    "rms": 0.09160308539867401,
+    "utmos": 3.970639705657959
+   },
+   "EdiTTS": {
+    "rms": 0.08770345151424408,
+    "utmos": 4.3507609367370605,
+    "whisper": "Yesterday, Venus became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08340450376272202,
+    "utmos": 4.366366863250732,
+    "whisper": "Yesterday, Venus became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 89,
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "Yesterday, Mercury became famous.",
+   "gradtts-1": {
+    "rms": 0.07256866991519928,
+    "utmos": 4.278877258300781
+   },
+   "gradtts-2": {
+    "rms": 0.06938373297452927,
+    "utmos": 4.412597179412842
+   },
+   "EdiTTS": {
+    "rms": 0.07023181766271591,
+    "utmos": 4.324507713317871,
+    "whisper": "Yesterday Neptune became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07150465250015259,
+    "utmos": 4.279788970947266,
+    "whisper": "Yesterday Neptune became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 90,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "Yesterday, Sahara became famous.",
+   "gradtts-1": {
+    "rms": 0.09680518507957458,
+    "utmos": 4.353978157043457
+   },
+   "gradtts-2": {
+    "rms": 0.08783353120088577,
+    "utmos": 4.411984920501709
+   },
+   "EdiTTS": {
+    "rms": 0.08476994931697845,
+    "utmos": 4.339918613433838,
+    "whisper": "yesterday, Gobi became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0880962386727333,
+    "utmos": 4.265944957733154,
+    "whisper": "yesterday's Gobi became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 91,
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "Yesterday, Brazil became famous.",
+   "gradtts-1": {
+    "rms": 0.07954476028680801,
+    "utmos": 4.422730445861816
+   },
+   "gradtts-2": {
+    "rms": 0.08069778233766556,
+    "utmos": 4.432239532470703
+   },
+   "EdiTTS": {
+    "rms": 0.07357364147901535,
+    "utmos": 4.41475248336792,
+    "whisper": "Yesterday, Argentina became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07298149168491364,
+    "utmos": 4.393975257873535,
+    "whisper": "Yesterday, Argentina became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 92,
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "Yesterday, Nissan became famous.",
+   "gradtts-1": {
+    "rms": 0.08024201542139053,
+    "utmos": 4.386091232299805
+   },
+   "gradtts-2": {
+    "rms": 0.08945980668067932,
+    "utmos": 4.386990547180176
+   },
+   "EdiTTS": {
+    "rms": 0.08708040416240692,
+    "utmos": 4.389316082000732,
+    "whisper": "Yesterday, Mazda became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0830605998635292,
+    "utmos": 4.387434482574463,
+    "whisper": "Yesterday, Mazda became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 93,
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "Yesterday, Audi became famous.",
+   "gradtts-1": {
+    "rms": 0.07009074091911316,
+    "utmos": 4.369267463684082
+   },
+   "gradtts-2": {
+    "rms": 0.08332984149456024,
+    "utmos": 4.343534469604492
+   },
+   "EdiTTS": {
+    "rms": 0.0771787166595459,
+    "utmos": 4.404189586639404,
+    "whisper": "yesterday BMW became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07582079619169235,
+    "utmos": 4.073582172393799,
+    "whisper": "yesterday BMW became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 94,
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "Yesterday, Netflix became famous.",
+   "gradtts-1": {
+    "rms": 0.0628930851817131,
+    "utmos": 4.4000563621521
+   },
+   "gradtts-2": {
+    "rms": 0.0779552310705185,
+    "utmos": 4.337123870849609
+   },
+   "EdiTTS": {
+    "rms": 0.06150701269507408,
+    "utmos": 4.295731067657471,
+    "whisper": "Yesterday, Spotify became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06049659475684166,
+    "utmos": 4.2334980964660645,
+    "whisper": "Yesterday, Speltervie became famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 95,
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "Yesterday, Facebook became famous.",
+   "gradtts-1": {
+    "rms": 0.08564972132444382,
+    "utmos": 4.418806552886963
+   },
+   "gradtts-2": {
+    "rms": 0.0731889009475708,
+    "utmos": 4.385265827178955
+   },
+   "EdiTTS": {
+    "rms": 0.07977014780044556,
+    "utmos": 4.426355361938477,
+    "whisper": "Yesterday, Twitter became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08007397502660751,
+    "utmos": 4.381145477294922,
+    "whisper": "Yesterday, Twitter became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 96,
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "Yesterday, Cairo became famous.",
+   "gradtts-1": {
+    "rms": 0.07743919640779495,
+    "utmos": 4.134171485900879
+   },
+   "gradtts-2": {
+    "rms": 0.08726309984922409,
+    "utmos": 4.43608283996582
+   },
+   "EdiTTS": {
+    "rms": 0.07952316105365753,
+    "utmos": 4.372148513793945,
+    "whisper": "Yesterday, Lagos became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07864028215408325,
+    "utmos": 4.359355449676514,
+    "whisper": "Yesterday, Glacos became famous.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 97,
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "Yesterday, Mumbai became famous.",
+   "gradtts-1": {
+    "rms": 0.09732001274824142,
+    "utmos": 4.321468353271484
+   },
+   "gradtts-2": {
+    "rms": 0.08316314220428467,
+    "utmos": 4.43481969833374
+   },
+   "EdiTTS": {
+    "rms": 0.08745570480823517,
+    "utmos": 4.434109210968018,
+    "whisper": "Yesterday, Delhi became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09009239822626114,
+    "utmos": 4.392432689666748,
+    "whisper": "Yesterday, Delhi became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 98,
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "Yesterday, Seoul became famous.",
+   "gradtts-1": {
+    "rms": 0.06895756721496582,
+    "utmos": 4.3659467697143555
+   },
+   "gradtts-2": {
+    "rms": 0.06703631579875946,
+    "utmos": 4.332716941833496
+   },
+   "EdiTTS": {
+    "rms": 0.062338005751371384,
+    "utmos": 4.328003406524658,
+    "whisper": "Yesterday, Fancock became famous.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.06437120586633682,
+    "utmos": 4.2697367668151855,
+    "whisper": "Yesterday, Bangkok became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 99,
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "Yesterday, Milan became famous.",
+   "gradtts-1": {
+    "rms": 0.07346619665622711,
+    "utmos": 4.188601016998291
+   },
+   "gradtts-2": {
+    "rms": 0.0850861594080925,
+    "utmos": 4.34303617477417
+   },
+   "EdiTTS": {
+    "rms": 0.0772809088230133,
+    "utmos": 4.354444980621338,
+    "whisper": "and yesterday Barcelona became famous.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07517223805189133,
+    "utmos": 4.287560939788818,
+    "whisper": "and yesterday, Barcelona became famous.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 100,
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "Around the world, London is known.",
+   "gradtts-1": {
+    "rms": 0.09341829270124435,
+    "utmos": 4.451105117797852
+   },
+   "gradtts-2": {
+    "rms": 0.08654037863016129,
+    "utmos": 4.412713050842285
+   },
+   "EdiTTS": {
+    "rms": 0.09045633673667908,
+    "utmos": 4.399212837219238,
+    "whisper": "Round the world, Paris is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09205692261457443,
+    "utmos": 4.420835494995117,
+    "whisper": "Round the world, Paris is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 101,
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "Around the world, Michael is known.",
+   "gradtts-1": {
+    "rms": 0.08528007566928864,
+    "utmos": 4.152361869812012
+   },
+   "gradtts-2": {
+    "rms": 0.09942309558391571,
+    "utmos": 4.3594770431518555
+   },
+   "EdiTTS": {
+    "rms": 0.09496545791625977,
+    "utmos": 3.658257007598877,
+    "whisper": "Around the world, John is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0940077155828476,
+    "utmos": 3.605851411819458,
+    "whisper": "Around the world, John is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 102,
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "Around the world, Einstein is known.",
+   "gradtts-1": {
+    "rms": 0.08184164762496948,
+    "utmos": 4.438257217407227
+   },
+   "gradtts-2": {
+    "rms": 0.07887160778045654,
+    "utmos": 3.7719736099243164
+   },
+   "EdiTTS": {
+    "rms": 0.08233846724033356,
+    "utmos": 4.4017558097839355,
+    "whisper": "Round the world, Newton is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07984709739685059,
+    "utmos": 4.116448402404785,
+    "whisper": "Round the world, mutant is known.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 103,
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "Around the world, Mozart is known.",
+   "gradtts-1": {
+    "rms": 0.07954190671443939,
+    "utmos": 4.351224899291992
+   },
+   "gradtts-2": {
+    "rms": 0.07597266882658005,
+    "utmos": 4.449005126953125
+   },
+   "EdiTTS": {
+    "rms": 0.0707959234714508,
+    "utmos": 4.450481414794922,
+    "whisper": "Round the world, Beethoven is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07016585022211075,
+    "utmos": 4.428867340087891,
+    "whisper": "Round the world, Metauvin is known.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 104,
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "Around the world, Amazon is known.",
+   "gradtts-1": {
+    "rms": 0.08013162016868591,
+    "utmos": 4.430507659912109
+   },
+   "gradtts-2": {
+    "rms": 0.10334015637636185,
+    "utmos": 4.05551815032959
+   },
+   "EdiTTS": {
+    "rms": 0.08777692168951035,
+    "utmos": 4.473186492919922,
+    "whisper": "Around the world, Google is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08487872034311295,
+    "utmos": 4.432458400726318,
+    "whisper": "Around the world, Google is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 105,
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "Around the world, Harvard is known.",
+   "gradtts-1": {
+    "rms": 0.10398156940937042,
+    "utmos": 4.294918060302734
+   },
+   "gradtts-2": {
+    "rms": 0.08742758631706238,
+    "utmos": 4.412203311920166
+   },
+   "EdiTTS": {
+    "rms": 0.09128718823194504,
+    "utmos": 4.346670150756836,
+    "whisper": "Round the world, Oxford is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09249793738126755,
+    "utmos": 4.349448204040527,
+    "whisper": "Round the world, Oxford is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 106,
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "Around the world, Ferrari is known.",
+   "gradtts-1": {
+    "rms": 0.09942017495632172,
+    "utmos": 4.330878257751465
+   },
+   "gradtts-2": {
+    "rms": 0.10344919562339783,
+    "utmos": 4.410879135131836
+   },
+   "EdiTTS": {
+    "rms": 0.089908167719841,
+    "utmos": 4.395217418670654,
+    "whisper": "the world. Porsche is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0928511843085289,
+    "utmos": 4.359039306640625,
+    "whisper": "the world. Porsche is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 107,
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "Around the world, Saturn is known.",
+   "gradtts-1": {
+    "rms": 0.08561474084854126,
+    "utmos": 4.060330390930176
+   },
+   "gradtts-2": {
+    "rms": 0.0900929868221283,
+    "utmos": 4.260495185852051
+   },
+   "EdiTTS": {
+    "rms": 0.07833009213209152,
+    "utmos": 4.080078601837158,
+    "whisper": "Round the world, Jupiter is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07638128846883774,
+    "utmos": 3.8935647010803223,
+    "whisper": "Round the world, Jupiter is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 108,
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "Around the world, Diamond is known.",
+   "gradtts-1": {
+    "rms": 0.08531825989484787,
+    "utmos": 4.378523349761963
+   },
+   "gradtts-2": {
+    "rms": 0.07970896363258362,
+    "utmos": 4.214308261871338
+   },
+   "EdiTTS": {
+    "rms": 0.08621092140674591,
+    "utmos": 4.235368251800537,
+    "whisper": "Round the world, Emerald is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08409377932548523,
+    "utmos": 4.1722283363342285,
+    "whisper": "Round the world, Emerald is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 109,
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "Around the world, Christmas is known.",
+   "gradtts-1": {
+    "rms": 0.07033441960811615,
+    "utmos": 3.827443838119507
+   },
+   "gradtts-2": {
+    "rms": 0.10818815976381302,
+    "utmos": 4.397709369659424
+   },
+   "EdiTTS": {
+    "rms": 0.08815769106149673,
+    "utmos": 4.33471155166626,
+    "whisper": "Around the world, Halloween is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0857316330075264,
+    "utmos": 3.963829755783081,
+    "whisper": "Around the world, Halloween is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 110,
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "Around the world, Hollywood is known.",
+   "gradtts-1": {
+    "rms": 0.09260883927345276,
+    "utmos": 3.698613166809082
+   },
+   "gradtts-2": {
+    "rms": 0.10893825441598892,
+    "utmos": 4.249621391296387
+   },
+   "EdiTTS": {
+    "rms": 0.08437920361757278,
+    "utmos": 4.055185794830322,
+    "whisper": "Around the world, Broadway is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08270063251256943,
+    "utmos": 3.683417558670044,
+    "whisper": "Around the world, Broadway is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 111,
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "Around the world, Victoria is known.",
+   "gradtts-1": {
+    "rms": 0.08265392482280731,
+    "utmos": 4.419459342956543
+   },
+   "gradtts-2": {
+    "rms": 0.12109413743019104,
+    "utmos": 4.246845245361328
+   },
+   "EdiTTS": {
+    "rms": 0.0840907096862793,
+    "utmos": 4.4201340675354,
+    "whisper": "Around the world, Elizabeth is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08215542882680893,
+    "utmos": 4.40479850769043,
+    "whisper": "Around the world, Elizabeth is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 112,
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "Around the world, Leonardo is known.",
+   "gradtts-1": {
+    "rms": 0.11314543336629868,
+    "utmos": 4.3324151039123535
+   },
+   "gradtts-2": {
+    "rms": 0.09389083087444305,
+    "utmos": 4.416398048400879
+   },
+   "EdiTTS": {
+    "rms": 0.11480299383401871,
+    "utmos": 4.3668437004089355,
+    "whisper": "Around the world, Picasso is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.11106744408607483,
+    "utmos": 4.304553985595703,
+    "whisper": "Around the world, Picasso is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 113,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "Around the world, Everest is known.",
+   "gradtts-1": {
+    "rms": 0.0838780328631401,
+    "utmos": 4.443606853485107
+   },
+   "gradtts-2": {
+    "rms": 0.08951383829116821,
+    "utmos": 4.349659442901611
+   },
+   "EdiTTS": {
+    "rms": 0.08111734688282013,
+    "utmos": 4.415904521942139,
+    "whisper": "Around the world, Kilimanjaro is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08014173060655594,
+    "utmos": 4.278533935546875,
+    "whisper": "Around the world, Kilimanjaro is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 114,
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "Around the world, Atlantic is known.",
+   "gradtts-1": {
+    "rms": 0.0781317949295044,
+    "utmos": 4.390410423278809
+   },
+   "gradtts-2": {
+    "rms": 0.09506243467330933,
+    "utmos": 4.412328720092773
+   },
+   "EdiTTS": {
+    "rms": 0.07907474040985107,
+    "utmos": 4.455170631408691,
+    "whisper": "Round the world, Pacific is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07894468307495117,
+    "utmos": 4.406783580780029,
+    "whisper": "Around the world, Pacific is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 115,
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "Around the world, Shakespeare is known.",
+   "gradtts-1": {
+    "rms": 0.07702431827783585,
+    "utmos": 4.401916027069092
+   },
+   "gradtts-2": {
+    "rms": 0.08207742869853973,
+    "utmos": 4.232146739959717
+   },
+   "EdiTTS": {
+    "rms": 0.07482017576694489,
+    "utmos": 4.126199722290039,
+    "whisper": "Around the world, Dickens is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07668592035770416,
+    "utmos": 4.272973537445068,
+    "whisper": "Round the world, chickens is known.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 116,
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "Around the world, Samsung is known.",
+   "gradtts-1": {
+    "rms": 0.08180654793977737,
+    "utmos": 4.335211277008057
+   },
+   "gradtts-2": {
+    "rms": 0.08152136951684952,
+    "utmos": 4.4201555252075195
+   },
+   "EdiTTS": {
+    "rms": 0.07574112713336945,
+    "utmos": 4.156786918640137,
+    "whisper": "Round the world, Apple is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07898248732089996,
+    "utmos": 4.287552833557129,
+    "whisper": "Round the world, Apple is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 117,
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "Around the world, Tokyo is known.",
+   "gradtts-1": {
+    "rms": 0.07551925629377365,
+    "utmos": 4.2773332595825195
+   },
+   "gradtts-2": {
+    "rms": 0.09813592582941055,
+    "utmos": 3.971222162246704
+   },
+   "EdiTTS": {
+    "rms": 0.07253650575876236,
+    "utmos": 4.247354984283447,
+    "whisper": "around the world. Berlin is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07212776690721512,
+    "utmos": 4.154946327209473,
+    "whisper": "Around the world, Berlin is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 118,
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "Around the world, Sydney is known.",
+   "gradtts-1": {
+    "rms": 0.06730750948190689,
+    "utmos": 4.413034915924072
+   },
+   "gradtts-2": {
+    "rms": 0.10033098608255386,
+    "utmos": 4.177391529083252
+   },
+   "EdiTTS": {
+    "rms": 0.07041854411363602,
+    "utmos": 4.3892340660095215,
+    "whisper": "Around the world, Toronto is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07264001667499542,
+    "utmos": 4.3891520500183105,
+    "whisper": "Round the world, Toronto is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 119,
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "Around the world, Stanford is known.",
+   "gradtts-1": {
+    "rms": 0.08358286321163177,
+    "utmos": 4.423499584197998
+   },
+   "gradtts-2": {
+    "rms": 0.10478933900594711,
+    "utmos": 4.407872676849365
+   },
+   "EdiTTS": {
+    "rms": 0.09233079850673676,
+    "utmos": 4.375873565673828,
+    "whisper": "Around the world, Berkeley is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0902707427740097,
+    "utmos": 4.284689903259277,
+    "whisper": "Around the world, Berkeley is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 120,
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "Around the world, Napoleon is known.",
+   "gradtts-1": {
+    "rms": 0.09291412681341171,
+    "utmos": 4.4298553466796875
+   },
+   "gradtts-2": {
+    "rms": 0.07368714362382889,
+    "utmos": 3.8550422191619873
+   },
+   "EdiTTS": {
+    "rms": 0.08840945363044739,
+    "utmos": 4.37718391418457,
+    "whisper": "Around the world, seizure is known.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.08706045895814896,
+    "utmos": 4.383595943450928,
+    "whisper": "Around the world, seizure is known.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 121,
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "Around the world, Darwin is known.",
+   "gradtts-1": {
+    "rms": 0.07925731688737869,
+    "utmos": 4.009042263031006
+   },
+   "gradtts-2": {
+    "rms": 0.09978277236223221,
+    "utmos": 4.399552822113037
+   },
+   "EdiTTS": {
+    "rms": 0.07133398950099945,
+    "utmos": 4.334610939025879,
+    "whisper": "Round the world, Galileo is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06991199404001236,
+    "utmos": 4.12949275970459,
+    "whisper": "Round the world, Galileo is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 122,
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "Around the world, Tesla is known.",
+   "gradtts-1": {
+    "rms": 0.08884939551353455,
+    "utmos": 4.427304744720459
+   },
+   "gradtts-2": {
+    "rms": 0.09241341799497604,
+    "utmos": 4.414765357971191
+   },
+   "EdiTTS": {
+    "rms": 0.08763909339904785,
+    "utmos": 4.412130355834961,
+    "whisper": "Around the world, pedicine is known.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.08746877312660217,
+    "utmos": 4.4191975593566895,
+    "whisper": "Around the world, Edison is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 123,
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "Around the world, Boeing is known.",
+   "gradtts-1": {
+    "rms": 0.08627302944660187,
+    "utmos": 4.370748519897461
+   },
+   "gradtts-2": {
+    "rms": 0.09550970047712326,
+    "utmos": 4.263424873352051
+   },
+   "EdiTTS": {
+    "rms": 0.08565680682659149,
+    "utmos": 4.36826229095459,
+    "whisper": "Around the world, Erebus is known.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.08021073043346405,
+    "utmos": 4.338451385498047,
+    "whisper": "Around the world, Erebus is known.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 124,
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "Around the world, Disney is known.",
+   "gradtts-1": {
+    "rms": 0.07030413299798965,
+    "utmos": 4.349549293518066
+   },
+   "gradtts-2": {
+    "rms": 0.08258580416440964,
+    "utmos": 4.351876258850098
+   },
+   "EdiTTS": {
+    "rms": 0.07407934963703156,
+    "utmos": 4.309900283813477,
+    "whisper": "Round the world, Warner is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07468295842409134,
+    "utmos": 4.2564191818237305,
+    "whisper": "Round the world, Warner is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 125,
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "Around the world, Intel is known.",
+   "gradtts-1": {
+    "rms": 0.08705811202526093,
+    "utmos": 4.411704063415527
+   },
+   "gradtts-2": {
+    "rms": 0.0801786556839943,
+    "utmos": 4.3564229011535645
+   },
+   "EdiTTS": {
+    "rms": 0.08405838161706924,
+    "utmos": 4.437119007110596,
+    "whisper": "Around the world, AMD is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08249936997890472,
+    "utmos": 4.426144599914551,
+    "whisper": "Around the world, AMD is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 126,
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "Around the world, Chicago is known.",
+   "gradtts-1": {
+    "rms": 0.0776047483086586,
+    "utmos": 4.426654815673828
+   },
+   "gradtts-2": {
+    "rms": 0.08748053759336472,
+    "utmos": 4.21529483795166
+   },
+   "EdiTTS": {
+    "rms": 0.07997344434261322,
+    "utmos": 4.3101396560668945,
+    "whisper": "Around the world, Boston is new.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07633546739816666,
+    "utmos": 4.313517093658447,
+    "whisper": "Around the world, Boston is new.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 127,
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "Around the world, Dallas is known.",
+   "gradtts-1": {
+    "rms": 0.08932913094758987,
+    "utmos": 4.405229091644287
+   },
+   "gradtts-2": {
+    "rms": 0.08068980276584625,
+    "utmos": 4.431553840637207
+   },
+   "EdiTTS": {
+    "rms": 0.07267546653747559,
+    "utmos": 4.4221696853637695,
+    "whisper": "Around the world, Houston is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07563702762126923,
+    "utmos": 4.427145004272461,
+    "whisper": "Around the world, Houston is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 128,
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "Around the world, Denver is known.",
+   "gradtts-1": {
+    "rms": 0.07882548123598099,
+    "utmos": 4.389566421508789
+   },
+   "gradtts-2": {
+    "rms": 0.09856947511434555,
+    "utmos": 3.984951972961426
+   },
+   "EdiTTS": {
+    "rms": 0.08040706813335419,
+    "utmos": 4.09028434753418,
+    "whisper": "Round the world, Seattle is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07946829497814178,
+    "utmos": 4.377729415893555,
+    "whisper": "Round the world, Seattle is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 129,
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "Around the world, Miami is known.",
+   "gradtts-1": {
+    "rms": 0.0886940062046051,
+    "utmos": 4.391602993011475
+   },
+   "gradtts-2": {
+    "rms": 0.08951359987258911,
+    "utmos": 4.346709251403809
+   },
+   "EdiTTS": {
+    "rms": 0.08807655423879623,
+    "utmos": 4.413821220397949,
+    "whisper": "Round the world, Atlanta is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08645308762788773,
+    "utmos": 4.371876239776611,
+    "whisper": "Round the world, Matlanta is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 130,
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "Around the world, Nike is known.",
+   "gradtts-1": {
+    "rms": 0.0896642729640007,
+    "utmos": 4.456045150756836
+   },
+   "gradtts-2": {
+    "rms": 0.08874407410621643,
+    "utmos": 4.408262729644775
+   },
+   "EdiTTS": {
+    "rms": 0.08346579968929291,
+    "utmos": 4.202672004699707,
+    "whisper": "Around the world, Adidas is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08448808640241623,
+    "utmos": 4.472910404205322,
+    "whisper": "Around the world, Adidas is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 131,
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "Around the world, Toyota is known.",
+   "gradtts-1": {
+    "rms": 0.07815941423177719,
+    "utmos": 4.387530326843262
+   },
+   "gradtts-2": {
+    "rms": 0.09927506744861603,
+    "utmos": 4.2245893478393555
+   },
+   "EdiTTS": {
+    "rms": 0.09219617396593094,
+    "utmos": 4.3510236740112305,
+    "whisper": "Around the world, Honda is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08729151636362076,
+    "utmos": 4.37862491607666,
+    "whisper": "Around the world, tonda is known.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 132,
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "Around the world, Columbus is known.",
+   "gradtts-1": {
+    "rms": 0.10010136663913727,
+    "utmos": 4.338980674743652
+   },
+   "gradtts-2": {
+    "rms": 0.09227551519870758,
+    "utmos": 3.6960601806640625
+   },
+   "EdiTTS": {
+    "rms": 0.09338200092315674,
+    "utmos": 4.307634353637695,
+    "whisper": "Around the world, Magellan is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09699412435293198,
+    "utmos": 4.293825149536133,
+    "whisper": "Around the world, Magellan is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 133,
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "Around the world, Madrid is known.",
+   "gradtts-1": {
+    "rms": 0.07665963470935822,
+    "utmos": 4.440112590789795
+   },
+   "gradtts-2": {
+    "rms": 0.11466268450021744,
+    "utmos": 3.6793503761291504
+   },
+   "EdiTTS": {
+    "rms": 0.09490950405597687,
+    "utmos": 3.8357698917388916,
+    "whisper": "Round the world, Rome is gnome.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08773255348205566,
+    "utmos": 4.286262512207031,
+    "whisper": "Round the world, Rome is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 134,
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "Around the world, Vienna is known.",
+   "gradtts-1": {
+    "rms": 0.09056694805622101,
+    "utmos": 3.8289542198181152
+   },
+   "gradtts-2": {
+    "rms": 0.07984098047018051,
+    "utmos": 4.28856086730957
+   },
+   "EdiTTS": {
+    "rms": 0.07810487598180771,
+    "utmos": 4.152472496032715,
+    "whisper": "Around the world, Prague is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08050335943698883,
+    "utmos": 4.161760330200195,
+    "whisper": "Around the world, Pro is known.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 135,
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "Around the world, Moscow is known.",
+   "gradtts-1": {
+    "rms": 0.08534887433052063,
+    "utmos": 4.320904731750488
+   },
+   "gradtts-2": {
+    "rms": 0.08901672810316086,
+    "utmos": 4.009881496429443
+   },
+   "EdiTTS": {
+    "rms": 0.08391717821359634,
+    "utmos": 4.356274604797363,
+    "whisper": "Around the world, Beijing is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08438921719789505,
+    "utmos": 4.1516432762146,
+    "whisper": "Around the world, Beijing is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 136,
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "Around the world, Lincoln is known.",
+   "gradtts-1": {
+    "rms": 0.09426560252904892,
+    "utmos": 4.263333320617676
+   },
+   "gradtts-2": {
+    "rms": 0.10894254595041275,
+    "utmos": 4.326586723327637
+   },
+   "EdiTTS": {
+    "rms": 0.10148163139820099,
+    "utmos": 3.810051441192627,
+    "whisper": "Round the world, Washington is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10231020301580429,
+    "utmos": 4.310403347015381,
+    "whisper": "Round the world, Washington is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 137,
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "Around the world, Kennedy is known.",
+   "gradtts-1": {
+    "rms": 0.07890548557043076,
+    "utmos": 4.389580726623535
+   },
+   "gradtts-2": {
+    "rms": 0.09578792750835419,
+    "utmos": 4.319022178649902
+   },
+   "EdiTTS": {
+    "rms": 0.09079110622406006,
+    "utmos": 4.37921142578125,
+    "whisper": "around the world. Roosevelt is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09179467707872391,
+    "utmos": 4.346347808837891,
+    "whisper": "around the world. Roosevelt is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 138,
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "Around the world, Mars is known.",
+   "gradtts-1": {
+    "rms": 0.07780421525239944,
+    "utmos": 4.390225410461426
+   },
+   "gradtts-2": {
+    "rms": 0.08781997114419937,
+    "utmos": 4.348258018493652
+   },
+   "EdiTTS": {
+    "rms": 0.08303821831941605,
+    "utmos": 4.308141708374023,
+    "whisper": "Around the world, Venus is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07949890941381454,
+    "utmos": 4.300783634185791,
+    "whisper": "Around the world, Venus is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 139,
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "Around the world, Mercury is known.",
+   "gradtts-1": {
+    "rms": 0.08242650330066681,
+    "utmos": 4.430403232574463
+   },
+   "gradtts-2": {
+    "rms": 0.0966070294380188,
+    "utmos": 4.348723411560059
+   },
+   "EdiTTS": {
+    "rms": 0.07709024101495743,
+    "utmos": 4.454213619232178,
+    "whisper": "Round the world, Neptune is now.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08204187452793121,
+    "utmos": 4.44687557220459,
+    "whisper": "Round the world, Neptune is now.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 140,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "Around the world, Sahara is known.",
+   "gradtts-1": {
+    "rms": 0.08887284994125366,
+    "utmos": 4.010262966156006
+   },
+   "gradtts-2": {
+    "rms": 0.10387255251407623,
+    "utmos": 4.362333297729492
+   },
+   "EdiTTS": {
+    "rms": 0.0977761447429657,
+    "utmos": 4.247237205505371,
+    "whisper": "Round the world, Gobi is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09858565777540207,
+    "utmos": 4.00421667098999,
+    "whisper": "Round the world, Sobe is known.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 141,
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "Around the world, Brazil is known.",
+   "gradtts-1": {
+    "rms": 0.08091069012880325,
+    "utmos": 3.6931118965148926
+   },
+   "gradtts-2": {
+    "rms": 0.10879906266927719,
+    "utmos": 3.946998357772827
+   },
+   "EdiTTS": {
+    "rms": 0.08330170810222626,
+    "utmos": 4.215456008911133,
+    "whisper": "Round the world, Argentina is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08335072547197342,
+    "utmos": 3.697451591491699,
+    "whisper": "Round the world, Argentina is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 142,
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "Around the world, Nissan is known.",
+   "gradtts-1": {
+    "rms": 0.07997284829616547,
+    "utmos": 4.425168514251709
+   },
+   "gradtts-2": {
+    "rms": 0.09242575615644455,
+    "utmos": 4.4018707275390625
+   },
+   "EdiTTS": {
+    "rms": 0.08076371997594833,
+    "utmos": 4.292936325073242,
+    "whisper": "Around the world, Mazda is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07960697263479233,
+    "utmos": 4.304475784301758,
+    "whisper": "Round the world Mazda is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 143,
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "Around the world, Audi is known.",
+   "gradtts-1": {
+    "rms": 0.08717800676822662,
+    "utmos": 4.424137592315674
+   },
+   "gradtts-2": {
+    "rms": 0.09622858464717865,
+    "utmos": 4.390650272369385
+   },
+   "EdiTTS": {
+    "rms": 0.09592408686876297,
+    "utmos": 4.4843878746032715,
+    "whisper": "Round the world, BMW is now.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0946417897939682,
+    "utmos": 4.46457576751709,
+    "whisper": "Round the world, BMW is noun.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 144,
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "Around the world, Netflix is known.",
+   "gradtts-1": {
+    "rms": 0.07088018953800201,
+    "utmos": 4.447776794433594
+   },
+   "gradtts-2": {
+    "rms": 0.07796825468540192,
+    "utmos": 4.358166217803955
+   },
+   "EdiTTS": {
+    "rms": 0.07352828979492188,
+    "utmos": 4.380399703979492,
+    "whisper": "Round the world, Spotify is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07418720424175262,
+    "utmos": 4.353760719299316,
+    "whisper": "Around the world, Spotify is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 145,
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "Around the world, Facebook is known.",
+   "gradtts-1": {
+    "rms": 0.10272203385829926,
+    "utmos": 4.440612316131592
+   },
+   "gradtts-2": {
+    "rms": 0.0913994163274765,
+    "utmos": 4.349673748016357
+   },
+   "EdiTTS": {
+    "rms": 0.08442141860723495,
+    "utmos": 4.406063556671143,
+    "whisper": "around the world. Twitter is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08560564368963242,
+    "utmos": 4.372251510620117,
+    "whisper": "round the world. Twitter is gnome.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 146,
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "Around the world, Cairo is known.",
+   "gradtts-1": {
+    "rms": 0.11705338209867477,
+    "utmos": 4.378341197967529
+   },
+   "gradtts-2": {
+    "rms": 0.09697302430868149,
+    "utmos": 4.303011894226074
+   },
+   "EdiTTS": {
+    "rms": 0.09922120720148087,
+    "utmos": 4.432685375213623,
+    "whisper": "Round the world, Lagos is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09897325187921524,
+    "utmos": 4.410984516143799,
+    "whisper": "Round the world, Regus is known.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 147,
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "Around the world, Mumbai is known.",
+   "gradtts-1": {
+    "rms": 0.09065654128789902,
+    "utmos": 4.349474906921387
+   },
+   "gradtts-2": {
+    "rms": 0.08786576241254807,
+    "utmos": 4.448403358459473
+   },
+   "EdiTTS": {
+    "rms": 0.08531706780195236,
+    "utmos": 4.433648109436035,
+    "whisper": "Round the world, Delhi is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0866907462477684,
+    "utmos": 4.3077898025512695,
+    "whisper": "Round the world, Delhi is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 148,
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "Around the world, Seoul is known.",
+   "gradtts-1": {
+    "rms": 0.08853788673877716,
+    "utmos": 4.37354040145874
+   },
+   "gradtts-2": {
+    "rms": 0.0883515402674675,
+    "utmos": 4.245006561279297
+   },
+   "EdiTTS": {
+    "rms": 0.08063614368438721,
+    "utmos": 4.369389057159424,
+    "whisper": "Round the world, Bangkok is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08307819068431854,
+    "utmos": 4.363399505615234,
+    "whisper": "Around the world, Bangkok is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 149,
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "Around the world, Milan is known.",
+   "gradtts-1": {
+    "rms": 0.08980607241392136,
+    "utmos": 4.403383255004883
+   },
+   "gradtts-2": {
+    "rms": 0.11275044828653336,
+    "utmos": 4.1928229331970215
+   },
+   "EdiTTS": {
+    "rms": 0.11187928169965744,
+    "utmos": 4.39067268371582,
+    "whisper": "Around the world, Barcelona is known.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10569930821657181,
+    "utmos": 4.331884384155273,
+    "whisper": "Around the world, Barcelona is known.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 150,
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "Many people know London very well.",
+   "gradtts-1": {
+    "rms": 0.09304433315992355,
+    "utmos": 3.484994888305664
+   },
+   "gradtts-2": {
+    "rms": 0.07644451409578323,
+    "utmos": 4.427036285400391
+   },
+   "EdiTTS": {
+    "rms": 0.0869138166308403,
+    "utmos": 4.422532081604004,
+    "whisper": "Many people know Paris very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09278956055641174,
+    "utmos": 3.2941644191741943,
+    "whisper": "Many people know Paris very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 151,
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "Many people know Michael very well.",
+   "gradtts-1": {
+    "rms": 0.09463869035243988,
+    "utmos": 4.003857135772705
+   },
+   "gradtts-2": {
+    "rms": 0.08531393855810165,
+    "utmos": 4.456042766571045
+   },
+   "EdiTTS": {
+    "rms": 0.09337645024061203,
+    "utmos": 4.389466762542725,
+    "whisper": "Many people know John very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09925474226474762,
+    "utmos": 3.566727638244629,
+    "whisper": "Many people know John very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 152,
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "Many people know Einstein very well.",
+   "gradtts-1": {
+    "rms": 0.09807518869638443,
+    "utmos": 4.4892425537109375
+   },
+   "gradtts-2": {
+    "rms": 0.10679592937231064,
+    "utmos": 4.27017879486084
+   },
+   "EdiTTS": {
+    "rms": 0.10104528069496155,
+    "utmos": 4.18244743347168,
+    "whisper": "Many people note Newton very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09699050337076187,
+    "utmos": 4.2373948097229,
+    "whisper": "Many people know Newton very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 153,
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "Many people know Mozart very well.",
+   "gradtts-1": {
+    "rms": 0.092228002846241,
+    "utmos": 4.351609230041504
+   },
+   "gradtts-2": {
+    "rms": 0.0992346778512001,
+    "utmos": 4.400390625
+   },
+   "EdiTTS": {
+    "rms": 0.0879400447010994,
+    "utmos": 4.347560882568359,
+    "whisper": "Many people know Beethoven very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08758724480867386,
+    "utmos": 4.4074387550354,
+    "whisper": "Many people know meitoven very well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 154,
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "Many people know Amazon very well.",
+   "gradtts-1": {
+    "rms": 0.09239280223846436,
+    "utmos": 4.433328151702881
+   },
+   "gradtts-2": {
+    "rms": 0.08323226124048233,
+    "utmos": 4.422392845153809
+   },
+   "EdiTTS": {
+    "rms": 0.09022574126720428,
+    "utmos": 4.424502372741699,
+    "whisper": "Many people know Google very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09007859975099564,
+    "utmos": 3.7086517810821533,
+    "whisper": "Many people know Google very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 155,
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "Many people know Harvard very well.",
+   "gradtts-1": {
+    "rms": 0.09467677026987076,
+    "utmos": 4.278032302856445
+   },
+   "gradtts-2": {
+    "rms": 0.0914553552865982,
+    "utmos": 4.402551174163818
+   },
+   "EdiTTS": {
+    "rms": 0.08769011497497559,
+    "utmos": 4.402951240539551,
+    "whisper": "Many people know Oxford very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09089576452970505,
+    "utmos": 4.233182907104492,
+    "whisper": "Many people know Oxford very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 156,
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "Many people know Ferrari very well.",
+   "gradtts-1": {
+    "rms": 0.10058385133743286,
+    "utmos": 4.381771087646484
+   },
+   "gradtts-2": {
+    "rms": 0.09764064103364944,
+    "utmos": 4.409154891967773
+   },
+   "EdiTTS": {
+    "rms": 0.09422490745782852,
+    "utmos": 4.397314071655273,
+    "whisper": "Many people know Porsche very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09827876091003418,
+    "utmos": 4.425082683563232,
+    "whisper": "Many people know Porsche very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 157,
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "Many people know Saturn very well.",
+   "gradtts-1": {
+    "rms": 0.1100909560918808,
+    "utmos": 4.469593048095703
+   },
+   "gradtts-2": {
+    "rms": 0.08096762746572495,
+    "utmos": 4.365771293640137
+   },
+   "EdiTTS": {
+    "rms": 0.09247922152280807,
+    "utmos": 4.446504592895508,
+    "whisper": "Many people know Jupiter very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10011113435029984,
+    "utmos": 4.341628074645996,
+    "whisper": "Many people know Jupiter very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 158,
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "Many people know Diamond very well.",
+   "gradtts-1": {
+    "rms": 0.0967114120721817,
+    "utmos": 4.447518348693848
+   },
+   "gradtts-2": {
+    "rms": 0.1093696802854538,
+    "utmos": 4.401817798614502
+   },
+   "EdiTTS": {
+    "rms": 0.10338753461837769,
+    "utmos": 4.359867095947266,
+    "whisper": "Many people know emerald very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10144276916980743,
+    "utmos": 4.343082904815674,
+    "whisper": "Many people know Emerald very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 159,
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "Many people know Christmas very well.",
+   "gradtts-1": {
+    "rms": 0.08008185029029846,
+    "utmos": 4.478950500488281
+   },
+   "gradtts-2": {
+    "rms": 0.08979719877243042,
+    "utmos": 4.412685871124268
+   },
+   "EdiTTS": {
+    "rms": 0.08304594457149506,
+    "utmos": 4.452112197875977,
+    "whisper": "Many people know Halloween very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07902347296476364,
+    "utmos": 4.434819221496582,
+    "whisper": "Many people know Halloween very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 160,
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "Many people know Hollywood very well.",
+   "gradtts-1": {
+    "rms": 0.09484240412712097,
+    "utmos": 4.089038372039795
+   },
+   "gradtts-2": {
+    "rms": 0.09485714882612228,
+    "utmos": 4.405234336853027
+   },
+   "EdiTTS": {
+    "rms": 0.08971914649009705,
+    "utmos": 3.757476806640625,
+    "whisper": "Many people know Broadway very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08950430154800415,
+    "utmos": 3.5335805416107178,
+    "whisper": "Many people know Broadway very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 161,
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "Many people know Victoria very well.",
+   "gradtts-1": {
+    "rms": 0.08950849622488022,
+    "utmos": 4.1244072914123535
+   },
+   "gradtts-2": {
+    "rms": 0.09763596951961517,
+    "utmos": 4.217761039733887
+   },
+   "EdiTTS": {
+    "rms": 0.08747657388448715,
+    "utmos": 4.363888740539551,
+    "whisper": "Many people know Elizabeth very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08620160818099976,
+    "utmos": 4.053589820861816,
+    "whisper": "Many people know of Elizabeth very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 162,
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "Many people know Leonardo very well.",
+   "gradtts-1": {
+    "rms": 0.08592850714921951,
+    "utmos": 4.338477611541748
+   },
+   "gradtts-2": {
+    "rms": 0.09840891510248184,
+    "utmos": 4.455944538116455
+   },
+   "EdiTTS": {
+    "rms": 0.08620742708444595,
+    "utmos": 4.033799171447754,
+    "whisper": "Many people know Picasso very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08452028781175613,
+    "utmos": 3.896963357925415,
+    "whisper": "Many people know Picasso very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 163,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "Many people know Everest very well.",
+   "gradtts-1": {
+    "rms": 0.10138599574565887,
+    "utmos": 4.431962490081787
+   },
+   "gradtts-2": {
+    "rms": 0.10041939467191696,
+    "utmos": 4.419896125793457
+   },
+   "EdiTTS": {
+    "rms": 0.09424113482236862,
+    "utmos": 4.427554130554199,
+    "whisper": "Many people know Kalimanjaro very well.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.09593144059181213,
+    "utmos": 4.389143466949463,
+    "whisper": "Many people know Kalimanjaro very well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 164,
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "Many people know Atlantic very well.",
+   "gradtts-1": {
+    "rms": 0.09992636740207672,
+    "utmos": 4.441702842712402
+   },
+   "gradtts-2": {
+    "rms": 0.10145067423582077,
+    "utmos": 4.338678359985352
+   },
+   "EdiTTS": {
+    "rms": 0.09505940973758698,
+    "utmos": 4.362255096435547,
+    "whisper": "Many people know Pacific very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.1027894988656044,
+    "utmos": 4.049916744232178,
+    "whisper": "Many people know Pacific very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 165,
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "Many people know Shakespeare very well.",
+   "gradtts-1": {
+    "rms": 0.08081480115652084,
+    "utmos": 4.472249984741211
+   },
+   "gradtts-2": {
+    "rms": 0.11019759625196457,
+    "utmos": 4.451670169830322
+   },
+   "EdiTTS": {
+    "rms": 0.08462756872177124,
+    "utmos": 4.473364353179932,
+    "whisper": "Many people know Dickens very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08231145888566971,
+    "utmos": 4.4456706047058105,
+    "whisper": "Many people know chickens very well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 166,
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "Many people know Samsung very well.",
+   "gradtts-1": {
+    "rms": 0.09420602768659592,
+    "utmos": 4.136488437652588
+   },
+   "gradtts-2": {
+    "rms": 0.11623858660459518,
+    "utmos": 4.11853551864624
+   },
+   "EdiTTS": {
+    "rms": 0.09700118005275726,
+    "utmos": 4.398199081420898,
+    "whisper": "Many people know Apple very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09437768161296844,
+    "utmos": 4.264005184173584,
+    "whisper": "Many people know Apple very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 167,
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "Many people know Tokyo very well.",
+   "gradtts-1": {
+    "rms": 0.09685822576284409,
+    "utmos": 4.407366752624512
+   },
+   "gradtts-2": {
+    "rms": 0.11218804121017456,
+    "utmos": 4.002434730529785
+   },
+   "EdiTTS": {
+    "rms": 0.08746764808893204,
+    "utmos": 4.338979721069336,
+    "whisper": "Many people know Berlin very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08728092163801193,
+    "utmos": 4.356688976287842,
+    "whisper": "Many people know Turlin very well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 168,
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "Many people know Sydney very well.",
+   "gradtts-1": {
+    "rms": 0.078403539955616,
+    "utmos": 4.455720901489258
+   },
+   "gradtts-2": {
+    "rms": 0.08520642668008804,
+    "utmos": 4.365952968597412
+   },
+   "EdiTTS": {
+    "rms": 0.07590410858392715,
+    "utmos": 4.439213752746582,
+    "whisper": "Many people know Toronto very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07707512378692627,
+    "utmos": 4.304488182067871,
+    "whisper": "Many people know Toronto very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 169,
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "Many people know Stanford very well.",
+   "gradtts-1": {
+    "rms": 0.07388890534639359,
+    "utmos": 4.513493537902832
+   },
+   "gradtts-2": {
+    "rms": 0.09118426591157913,
+    "utmos": 4.285467147827148
+   },
+   "EdiTTS": {
+    "rms": 0.07713592797517776,
+    "utmos": 4.397492408752441,
+    "whisper": "Many people know Berkeley very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07799459993839264,
+    "utmos": 4.103074073791504,
+    "whisper": "Many people know Berkeley very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 170,
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "Many people know Napoleon very well.",
+   "gradtts-1": {
+    "rms": 0.10452623665332794,
+    "utmos": 4.3806962966918945
+   },
+   "gradtts-2": {
+    "rms": 0.07445450127124786,
+    "utmos": 4.483189105987549
+   },
+   "EdiTTS": {
+    "rms": 0.0901205912232399,
+    "utmos": 4.408205509185791,
+    "whisper": "Many people know Caesar very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09823334962129593,
+    "utmos": 4.202083587646484,
+    "whisper": "Many people know Caesar very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 171,
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "Many people know Darwin very well.",
+   "gradtts-1": {
+    "rms": 0.08087987452745438,
+    "utmos": 4.265520095825195
+   },
+   "gradtts-2": {
+    "rms": 0.0997103601694107,
+    "utmos": 4.393784999847412
+   },
+   "EdiTTS": {
+    "rms": 0.0816032737493515,
+    "utmos": 3.8753087520599365,
+    "whisper": "Many people know Galileo very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08203728497028351,
+    "utmos": 4.232755661010742,
+    "whisper": "Many people know Galileo very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 172,
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "Many people know Tesla very well.",
+   "gradtts-1": {
+    "rms": 0.09677274525165558,
+    "utmos": 4.401401996612549
+   },
+   "gradtts-2": {
+    "rms": 0.10145176947116852,
+    "utmos": 4.147147178649902
+   },
+   "EdiTTS": {
+    "rms": 0.08742055296897888,
+    "utmos": 4.406268119812012,
+    "whisper": "Many people note Edison very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09168196469545364,
+    "utmos": 4.270388603210449,
+    "whisper": "Many people know Edison very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 173,
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "Many people know Boeing very well.",
+   "gradtts-1": {
+    "rms": 0.10511285066604614,
+    "utmos": 4.0033955574035645
+   },
+   "gradtts-2": {
+    "rms": 0.08579222857952118,
+    "utmos": 4.44586181640625
+   },
+   "EdiTTS": {
+    "rms": 0.09079977124929428,
+    "utmos": 4.352556228637695,
+    "whisper": "Many people know Arabic very well.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.09080485999584198,
+    "utmos": 3.754297971725464,
+    "whisper": "Many people know marbas very well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 174,
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "Many people know Disney very well.",
+   "gradtts-1": {
+    "rms": 0.09213130176067352,
+    "utmos": 4.445321559906006
+   },
+   "gradtts-2": {
+    "rms": 0.10091656446456909,
+    "utmos": 3.5996131896972656
+   },
+   "EdiTTS": {
+    "rms": 0.08762593567371368,
+    "utmos": 4.372878074645996,
+    "whisper": "Many people know Warner very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08604943752288818,
+    "utmos": 4.341602802276611,
+    "whisper": "Many people know Warner very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 175,
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "Many people know Intel very well.",
+   "gradtts-1": {
+    "rms": 0.09103403985500336,
+    "utmos": 4.435577869415283
+   },
+   "gradtts-2": {
+    "rms": 0.08412184566259384,
+    "utmos": 4.165878772735596
+   },
+   "EdiTTS": {
+    "rms": 0.07958617806434631,
+    "utmos": 4.372652530670166,
+    "whisper": "Many people know AMD very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0850294902920723,
+    "utmos": 3.8218085765838623,
+    "whisper": "Many people know AMD very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 176,
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "Many people know Chicago very well.",
+   "gradtts-1": {
+    "rms": 0.08496870845556259,
+    "utmos": 4.450440883636475
+   },
+   "gradtts-2": {
+    "rms": 0.08582369983196259,
+    "utmos": 3.960008144378662
+   },
+   "EdiTTS": {
+    "rms": 0.07873004674911499,
+    "utmos": 4.424507141113281,
+    "whisper": "Many people know Boston very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07925203442573547,
+    "utmos": 4.344979286193848,
+    "whisper": "Many people know Austin very well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 177,
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "Many people know Dallas very well.",
+   "gradtts-1": {
+    "rms": 0.08777280151844025,
+    "utmos": 4.4995927810668945
+   },
+   "gradtts-2": {
+    "rms": 0.07850956171751022,
+    "utmos": 4.440206527709961
+   },
+   "EdiTTS": {
+    "rms": 0.08120686560869217,
+    "utmos": 4.450962543487549,
+    "whisper": "Many people know Houston very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08161267638206482,
+    "utmos": 4.448939323425293,
+    "whisper": "Many people know Houston very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 178,
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "Many people know Denver very well.",
+   "gradtts-1": {
+    "rms": 0.10307465493679047,
+    "utmos": 4.413518905639648
+   },
+   "gradtts-2": {
+    "rms": 0.08936935663223267,
+    "utmos": 4.458939552307129
+   },
+   "EdiTTS": {
+    "rms": 0.09556534886360168,
+    "utmos": 4.436444282531738,
+    "whisper": "Many people know Seattle very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10104469954967499,
+    "utmos": 4.345727443695068,
+    "whisper": "many people know Seattle very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 179,
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "Many people know Miami very well.",
+   "gradtts-1": {
+    "rms": 0.0819629579782486,
+    "utmos": 4.426499366760254
+   },
+   "gradtts-2": {
+    "rms": 0.07374059408903122,
+    "utmos": 4.449714183807373
+   },
+   "EdiTTS": {
+    "rms": 0.0780152827501297,
+    "utmos": 3.942690372467041,
+    "whisper": "Many people know Atlanta very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07557632029056549,
+    "utmos": 4.358700275421143,
+    "whisper": "Many people know Atlanta very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 180,
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "Many people know Nike very well.",
+   "gradtts-1": {
+    "rms": 0.10502015799283981,
+    "utmos": 3.9665327072143555
+   },
+   "gradtts-2": {
+    "rms": 0.0886252149939537,
+    "utmos": 4.409579753875732
+   },
+   "EdiTTS": {
+    "rms": 0.10059523582458496,
+    "utmos": 4.34260892868042,
+    "whisper": "Many people know Adidas very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10183414816856384,
+    "utmos": 3.8873727321624756,
+    "whisper": "Many people know Adidas very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 181,
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "Many people know Toyota very well.",
+   "gradtts-1": {
+    "rms": 0.08807356655597687,
+    "utmos": 4.449271202087402
+   },
+   "gradtts-2": {
+    "rms": 0.08673300594091415,
+    "utmos": 4.400240421295166
+   },
+   "EdiTTS": {
+    "rms": 0.08898267149925232,
+    "utmos": 4.471248626708984,
+    "whisper": "Many people know Honda very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08765330165624619,
+    "utmos": 4.427274703979492,
+    "whisper": "Many people note on DaVary well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 182,
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "Many people know Columbus very well.",
+   "gradtts-1": {
+    "rms": 0.07743391394615173,
+    "utmos": 4.374083518981934
+   },
+   "gradtts-2": {
+    "rms": 0.09537078440189362,
+    "utmos": 4.441328048706055
+   },
+   "EdiTTS": {
+    "rms": 0.08793652802705765,
+    "utmos": 4.400524616241455,
+    "whisper": "Many people know Magellan very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08164588361978531,
+    "utmos": 4.327532768249512,
+    "whisper": "Many people know cojelin very well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 183,
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "Many people know Madrid very well.",
+   "gradtts-1": {
+    "rms": 0.09445800632238388,
+    "utmos": 4.131898880004883
+   },
+   "gradtts-2": {
+    "rms": 0.08796422183513641,
+    "utmos": 3.850605010986328
+   },
+   "EdiTTS": {
+    "rms": 0.09658335894346237,
+    "utmos": 3.9894895553588867,
+    "whisper": "Many people know Rome very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0991123765707016,
+    "utmos": 3.599863290786743,
+    "whisper": "Many people know Rome very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 184,
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "Many people know Vienna very well.",
+   "gradtts-1": {
+    "rms": 0.08273562043905258,
+    "utmos": 4.425165176391602
+   },
+   "gradtts-2": {
+    "rms": 0.08722089231014252,
+    "utmos": 4.429792881011963
+   },
+   "EdiTTS": {
+    "rms": 0.07842746376991272,
+    "utmos": 4.37217378616333,
+    "whisper": "Many people know PROC very well.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.08080917596817017,
+    "utmos": 4.36655330657959,
+    "whisper": "Many people know Croc very well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 185,
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "Many people know Moscow very well.",
+   "gradtts-1": {
+    "rms": 0.08840565383434296,
+    "utmos": 4.409043788909912
+   },
+   "gradtts-2": {
+    "rms": 0.09275811165571213,
+    "utmos": 4.374930381774902
+   },
+   "EdiTTS": {
+    "rms": 0.08742643147706985,
+    "utmos": 4.294826507568359,
+    "whisper": "Many people know Beijing very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08564421534538269,
+    "utmos": 4.347829818725586,
+    "whisper": "Many people know Beijing very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 186,
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "Many people know Lincoln very well.",
+   "gradtts-1": {
+    "rms": 0.0796920657157898,
+    "utmos": 4.437967777252197
+   },
+   "gradtts-2": {
+    "rms": 0.11254207044839859,
+    "utmos": 4.443750381469727
+   },
+   "EdiTTS": {
+    "rms": 0.09288682788610458,
+    "utmos": 4.439185619354248,
+    "whisper": "Many people know Washington very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09009286016225815,
+    "utmos": 4.42309045791626,
+    "whisper": "Many people know Washington very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 187,
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "Many people know Kennedy very well.",
+   "gradtts-1": {
+    "rms": 0.08427934348583221,
+    "utmos": 4.396425247192383
+   },
+   "gradtts-2": {
+    "rms": 0.08722347021102905,
+    "utmos": 4.281508922576904
+   },
+   "EdiTTS": {
+    "rms": 0.08588024228811264,
+    "utmos": 4.433724403381348,
+    "whisper": "Many people know Roosevelt very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08901524543762207,
+    "utmos": 4.362664222717285,
+    "whisper": "Many people know Roosevelt very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 188,
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "Many people know Mars very well.",
+   "gradtts-1": {
+    "rms": 0.08255523443222046,
+    "utmos": 3.9692344665527344
+   },
+   "gradtts-2": {
+    "rms": 0.10491336137056351,
+    "utmos": 4.345808982849121
+   },
+   "EdiTTS": {
+    "rms": 0.0807475671172142,
+    "utmos": 4.42710542678833,
+    "whisper": "Many people know Venus very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08257200568914413,
+    "utmos": 3.755852699279785,
+    "whisper": "Many people know Venus very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 189,
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "Many people know Mercury very well.",
+   "gradtts-1": {
+    "rms": 0.09190971404314041,
+    "utmos": 4.377756118774414
+   },
+   "gradtts-2": {
+    "rms": 0.09983116388320923,
+    "utmos": 4.132152080535889
+   },
+   "EdiTTS": {
+    "rms": 0.09090172499418259,
+    "utmos": 4.3926801681518555,
+    "whisper": "Many people know Neptune very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08995784819126129,
+    "utmos": 4.374588489532471,
+    "whisper": "Many people know Neptune very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 190,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "Many people know Sahara very well.",
+   "gradtts-1": {
+    "rms": 0.09684831649065018,
+    "utmos": 4.463403701782227
+   },
+   "gradtts-2": {
+    "rms": 0.09508590400218964,
+    "utmos": 4.366001605987549
+   },
+   "EdiTTS": {
+    "rms": 0.0933203473687172,
+    "utmos": 4.253970146179199,
+    "whisper": "Many people know Hobie very well.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.09468196332454681,
+    "utmos": 4.256833553314209,
+    "whisper": "Many people know Sobi very well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 191,
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "Many people know Brazil very well.",
+   "gradtts-1": {
+    "rms": 0.10612449795007706,
+    "utmos": 4.355251789093018
+   },
+   "gradtts-2": {
+    "rms": 0.08913499861955643,
+    "utmos": 4.45112943649292
+   },
+   "EdiTTS": {
+    "rms": 0.09838894754648209,
+    "utmos": 4.286779403686523,
+    "whisper": "Many people know Argentina very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09997764974832535,
+    "utmos": 4.0247273445129395,
+    "whisper": "Many people know Argentina very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 192,
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "Many people know Nissan very well.",
+   "gradtts-1": {
+    "rms": 0.09005631506443024,
+    "utmos": 4.468932151794434
+   },
+   "gradtts-2": {
+    "rms": 0.09560862183570862,
+    "utmos": 4.438366889953613
+   },
+   "EdiTTS": {
+    "rms": 0.10015609860420227,
+    "utmos": 4.416286468505859,
+    "whisper": "Many people know Mazda very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09082391113042831,
+    "utmos": 4.3824663162231445,
+    "whisper": "Many people know Mazda very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 193,
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "Many people know Audi very well.",
+   "gradtts-1": {
+    "rms": 0.09129983931779861,
+    "utmos": 4.212949752807617
+   },
+   "gradtts-2": {
+    "rms": 0.08348038047552109,
+    "utmos": 4.4213480949401855
+   },
+   "EdiTTS": {
+    "rms": 0.08994174003601074,
+    "utmos": 4.354832649230957,
+    "whisper": "Many people know BMW very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08729012310504913,
+    "utmos": 3.902846336364746,
+    "whisper": "Many people know BMW very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 194,
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "Many people know Netflix very well.",
+   "gradtts-1": {
+    "rms": 0.08742256462574005,
+    "utmos": 4.3383331298828125
+   },
+   "gradtts-2": {
+    "rms": 0.08819601684808731,
+    "utmos": 4.285540580749512
+   },
+   "EdiTTS": {
+    "rms": 0.08456400036811829,
+    "utmos": 4.374611854553223,
+    "whisper": "Many people know Spotify very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08811730891466141,
+    "utmos": 4.1889262199401855,
+    "whisper": "Many people know Spotify very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 195,
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "Many people know Facebook very well.",
+   "gradtts-1": {
+    "rms": 0.10094691812992096,
+    "utmos": 4.4325971603393555
+   },
+   "gradtts-2": {
+    "rms": 0.09593290090560913,
+    "utmos": 4.411844253540039
+   },
+   "EdiTTS": {
+    "rms": 0.10500863194465637,
+    "utmos": 4.418454170227051,
+    "whisper": "Many people know Twitter very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0998833179473877,
+    "utmos": 4.358839988708496,
+    "whisper": "Many people know Twitter very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 196,
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "Many people know Cairo very well.",
+   "gradtts-1": {
+    "rms": 0.11004448682069778,
+    "utmos": 4.273069381713867
+   },
+   "gradtts-2": {
+    "rms": 0.08786316215991974,
+    "utmos": 4.019120216369629
+   },
+   "EdiTTS": {
+    "rms": 0.09233519434928894,
+    "utmos": 4.319911003112793,
+    "whisper": "Many people note Lakers very well.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.09455635398626328,
+    "utmos": 4.291748523712158,
+    "whisper": "Many people know Grégos very well.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 197,
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "Many people know Mumbai very well.",
+   "gradtts-1": {
+    "rms": 0.10822052508592606,
+    "utmos": 4.217562675476074
+   },
+   "gradtts-2": {
+    "rms": 0.09694994240999222,
+    "utmos": 4.46436071395874
+   },
+   "EdiTTS": {
+    "rms": 0.10247752815485,
+    "utmos": 4.338986396789551,
+    "whisper": "Many people know Delhi very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10680127888917923,
+    "utmos": 3.9081177711486816,
+    "whisper": "Many people know Delhi very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 198,
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "Many people know Seoul very well.",
+   "gradtts-1": {
+    "rms": 0.07966148108243942,
+    "utmos": 4.450800895690918
+   },
+   "gradtts-2": {
+    "rms": 0.09231001138687134,
+    "utmos": 4.436944961547852
+   },
+   "EdiTTS": {
+    "rms": 0.07438535243272781,
+    "utmos": 4.416965961456299,
+    "whisper": "Many people know Bangkok very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07290344685316086,
+    "utmos": 4.335788726806641,
+    "whisper": "Many people know Bangkok very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 199,
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "Many people know Milan very well.",
+   "gradtts-1": {
+    "rms": 0.09460888057947159,
+    "utmos": 4.391294479370117
+   },
+   "gradtts-2": {
+    "rms": 0.08865708857774734,
+    "utmos": 4.360500812530518
+   },
+   "EdiTTS": {
+    "rms": 0.09683378785848618,
+    "utmos": 4.385190963745117,
+    "whisper": "Many people know Barcelona very well.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09859462827444077,
+    "utmos": 4.376960277557373,
+    "whisper": "Many people know Barcelona very well.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 200,
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "They respect London.",
+   "gradtts-1": {
+    "rms": 0.09009493142366409,
+    "utmos": 4.335312366485596
+   },
+   "gradtts-2": {
+    "rms": 0.12743866443634033,
+    "utmos": 3.9289302825927734
+   },
+   "EdiTTS": {
+    "rms": 0.11360815912485123,
+    "utmos": 4.1683831214904785,
+    "whisper": "They respect Paris.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10632260888814926,
+    "utmos": 4.12177038192749,
+    "whisper": "They respect Paris.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 201,
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "They respect Michael.",
+   "gradtts-1": {
+    "rms": 0.09862423688173294,
+    "utmos": 4.282702445983887
+   },
+   "gradtts-2": {
+    "rms": 0.08246331661939621,
+    "utmos": 4.289484977722168
+   },
+   "EdiTTS": {
+    "rms": 0.08808737993240356,
+    "utmos": 4.241011142730713,
+    "whisper": "They respect John.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09492538869380951,
+    "utmos": 3.785999298095703,
+    "whisper": "They respect John.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 202,
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "They respect Einstein.",
+   "gradtts-1": {
+    "rms": 0.07820656150579453,
+    "utmos": 4.201108455657959
+   },
+   "gradtts-2": {
+    "rms": 0.07258729636669159,
+    "utmos": 4.088496208190918
+   },
+   "EdiTTS": {
+    "rms": 0.07913364470005035,
+    "utmos": 3.5842342376708984,
+    "whisper": "They respect Nudent.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.08014669269323349,
+    "utmos": 3.6570918560028076,
+    "whisper": "They respect a mutant.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 203,
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "They respect Mozart.",
+   "gradtts-1": {
+    "rms": 0.08988763391971588,
+    "utmos": 4.2291669845581055
+   },
+   "gradtts-2": {
+    "rms": 0.07930642366409302,
+    "utmos": 4.2044997215271
+   },
+   "EdiTTS": {
+    "rms": 0.06874265521764755,
+    "utmos": 4.118525505065918,
+    "whisper": "A respect, Beethoven.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07508782297372818,
+    "utmos": 3.8196489810943604,
+    "whisper": "They respect Beethoven.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 204,
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "They respect Amazon.",
+   "gradtts-1": {
+    "rms": 0.07938139140605927,
+    "utmos": 4.086826801300049
+   },
+   "gradtts-2": {
+    "rms": 0.06995385140180588,
+    "utmos": 4.155307292938232
+   },
+   "EdiTTS": {
+    "rms": 0.08322269469499588,
+    "utmos": 3.9558029174804688,
+    "whisper": "They respect Google.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08426472544670105,
+    "utmos": 3.737649917602539,
+    "whisper": "They respect Google.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 205,
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "They respect Harvard.",
+   "gradtts-1": {
+    "rms": 0.11054900288581848,
+    "utmos": 4.270203590393066
+   },
+   "gradtts-2": {
+    "rms": 0.08721445500850677,
+    "utmos": 4.314586162567139
+   },
+   "EdiTTS": {
+    "rms": 0.086336150765419,
+    "utmos": 4.247178077697754,
+    "whisper": "They respect Oxford.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09265860170125961,
+    "utmos": 4.053452491760254,
+    "whisper": "They respect Oxford.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 206,
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "They respect Ferrari.",
+   "gradtts-1": {
+    "rms": 0.12010834366083145,
+    "utmos": 4.244643211364746
+   },
+   "gradtts-2": {
+    "rms": 0.08850603550672531,
+    "utmos": 4.01386022567749
+   },
+   "EdiTTS": {
+    "rms": 0.09115280210971832,
+    "utmos": 4.194737434387207,
+    "whisper": "respect Porsche.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09870541095733643,
+    "utmos": 4.165712356567383,
+    "whisper": "respect for she.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 207,
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "They respect Saturn.",
+   "gradtts-1": {
+    "rms": 0.10733990371227264,
+    "utmos": 4.357081413269043
+   },
+   "gradtts-2": {
+    "rms": 0.09201306104660034,
+    "utmos": 4.273054122924805
+   },
+   "EdiTTS": {
+    "rms": 0.09737060219049454,
+    "utmos": 4.337251663208008,
+    "whisper": "They respect Jupiter.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09459187090396881,
+    "utmos": 4.343628883361816,
+    "whisper": "respect Jupiter.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 208,
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "They respect Diamond.",
+   "gradtts-1": {
+    "rms": 0.08065030723810196,
+    "utmos": 4.24229621887207
+   },
+   "gradtts-2": {
+    "rms": 0.08023158460855484,
+    "utmos": 3.9873642921447754
+   },
+   "EdiTTS": {
+    "rms": 0.08346042037010193,
+    "utmos": 3.8812668323516846,
+    "whisper": "They respect Emerald.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07928353548049927,
+    "utmos": 3.7609920501708984,
+    "whisper": "They respect Emerald.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 209,
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "They respect Christmas.",
+   "gradtts-1": {
+    "rms": 0.07183893024921417,
+    "utmos": 4.283845901489258
+   },
+   "gradtts-2": {
+    "rms": 0.09380824863910675,
+    "utmos": 4.321555137634277
+   },
+   "EdiTTS": {
+    "rms": 0.06647763401269913,
+    "utmos": 4.345747947692871,
+    "whisper": "They respect Halloween.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06529053300619125,
+    "utmos": 4.24253511428833,
+    "whisper": "They respect Halloween.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 210,
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "They respect Hollywood.",
+   "gradtts-1": {
+    "rms": 0.06720402091741562,
+    "utmos": 4.236835956573486
+   },
+   "gradtts-2": {
+    "rms": 0.10355937480926514,
+    "utmos": 4.252277374267578
+   },
+   "EdiTTS": {
+    "rms": 0.08768278360366821,
+    "utmos": 4.111308574676514,
+    "whisper": "their respect, Broadway.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08413723856210709,
+    "utmos": 4.144134521484375,
+    "whisper": "they respect broad-weight.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 211,
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "They respect Victoria.",
+   "gradtts-1": {
+    "rms": 0.09211158752441406,
+    "utmos": 4.020424842834473
+   },
+   "gradtts-2": {
+    "rms": 0.10020670294761658,
+    "utmos": 4.2041850090026855
+   },
+   "EdiTTS": {
+    "rms": 0.09923037141561508,
+    "utmos": 4.205724239349365,
+    "whisper": "They respect Elizabeth.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09797324240207672,
+    "utmos": 4.154934406280518,
+    "whisper": "They respect Elizabeth.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 212,
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "They respect Leonardo.",
+   "gradtts-1": {
+    "rms": 0.07451174408197403,
+    "utmos": 4.275202751159668
+   },
+   "gradtts-2": {
+    "rms": 0.08518537133932114,
+    "utmos": 4.224523067474365
+   },
+   "EdiTTS": {
+    "rms": 0.07889359444379807,
+    "utmos": 4.21690034866333,
+    "whisper": "respect Picasso.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07685680687427521,
+    "utmos": 3.9446401596069336,
+    "whisper": "They respect Picasso.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 213,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "They respect Everest.",
+   "gradtts-1": {
+    "rms": 0.08460957556962967,
+    "utmos": 4.0962419509887695
+   },
+   "gradtts-2": {
+    "rms": 0.10022583603858948,
+    "utmos": 4.279621124267578
+   },
+   "EdiTTS": {
+    "rms": 0.09874817728996277,
+    "utmos": 4.306572914123535,
+    "whisper": "respect Kalimanjaro.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.09205660969018936,
+    "utmos": 4.18836784362793,
+    "whisper": "respect Kalimanjaro.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 214,
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "They respect Atlantic.",
+   "gradtts-1": {
+    "rms": 0.07345516979694366,
+    "utmos": 4.281097888946533
+   },
+   "gradtts-2": {
+    "rms": 0.07873199880123138,
+    "utmos": 4.180870056152344
+   },
+   "EdiTTS": {
+    "rms": 0.0806606262922287,
+    "utmos": 4.282048225402832,
+    "whisper": "They respect Pacific.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07952563464641571,
+    "utmos": 3.961564064025879,
+    "whisper": "They respect the Pacific.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 215,
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "They respect Shakespeare.",
+   "gradtts-1": {
+    "rms": 0.07253186404705048,
+    "utmos": 4.242341995239258
+   },
+   "gradtts-2": {
+    "rms": 0.07144447416067123,
+    "utmos": 4.243951797485352
+   },
+   "EdiTTS": {
+    "rms": 0.08105428516864777,
+    "utmos": 4.28696346282959,
+    "whisper": "They respect Dickens.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0754614844918251,
+    "utmos": 4.31504487991333,
+    "whisper": "They respect chickens.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 216,
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "They respect Samsung.",
+   "gradtts-1": {
+    "rms": 0.08616389334201813,
+    "utmos": 4.238827228546143
+   },
+   "gradtts-2": {
+    "rms": 0.08078441023826599,
+    "utmos": 4.259612083435059
+   },
+   "EdiTTS": {
+    "rms": 0.07756141573190689,
+    "utmos": 4.13405704498291,
+    "whisper": "They respect Apple.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08648647367954254,
+    "utmos": 4.072253227233887,
+    "whisper": "their respects, Apple.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 217,
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "They respect Tokyo.",
+   "gradtts-1": {
+    "rms": 0.0698704645037651,
+    "utmos": 4.06471586227417
+   },
+   "gradtts-2": {
+    "rms": 0.0764351561665535,
+    "utmos": 4.284976005554199
+   },
+   "EdiTTS": {
+    "rms": 0.06663277745246887,
+    "utmos": 4.1473388671875,
+    "whisper": "They respect Verlinde.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.06453341245651245,
+    "utmos": 3.8360142707824707,
+    "whisper": "They respect Berlin.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 218,
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "They respect Sydney.",
+   "gradtts-1": {
+    "rms": 0.08332869410514832,
+    "utmos": 4.346997261047363
+   },
+   "gradtts-2": {
+    "rms": 0.08577916771173477,
+    "utmos": 4.3561224937438965
+   },
+   "EdiTTS": {
+    "rms": 0.08015094697475433,
+    "utmos": 4.343050003051758,
+    "whisper": "They respect Toronto.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08556687831878662,
+    "utmos": 4.283956527709961,
+    "whisper": "They respect Toronto.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 219,
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "They respect Stanford.",
+   "gradtts-1": {
+    "rms": 0.09234274178743362,
+    "utmos": 4.264976501464844
+   },
+   "gradtts-2": {
+    "rms": 0.08508455008268356,
+    "utmos": 4.071580410003662
+   },
+   "EdiTTS": {
+    "rms": 0.10671674460172653,
+    "utmos": 3.837012767791748,
+    "whisper": "their respect for Blake.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.09488184005022049,
+    "utmos": 3.5951690673828125,
+    "whisper": "They respect Berkeley.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 220,
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "They respect Napoleon.",
+   "gradtts-1": {
+    "rms": 0.10651236772537231,
+    "utmos": 4.124283790588379
+   },
+   "gradtts-2": {
+    "rms": 0.07603622227907181,
+    "utmos": 4.363365650177002
+   },
+   "EdiTTS": {
+    "rms": 0.08617185801267624,
+    "utmos": 4.19643497467041,
+    "whisper": "They respect seizure.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.08703362941741943,
+    "utmos": 3.880927562713623,
+    "whisper": "They respect seizure.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 221,
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "They respect Darwin.",
+   "gradtts-1": {
+    "rms": 0.09163753688335419,
+    "utmos": 4.082935810089111
+   },
+   "gradtts-2": {
+    "rms": 0.10253416001796722,
+    "utmos": 3.7815260887145996
+   },
+   "EdiTTS": {
+    "rms": 0.07975814491510391,
+    "utmos": 4.260953903198242,
+    "whisper": "They respect Galileo!",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08205357193946838,
+    "utmos": 4.25782585144043,
+    "whisper": "They respect Galileo.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 222,
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "They respect Tesla.",
+   "gradtts-1": {
+    "rms": 0.08102837949991226,
+    "utmos": 4.325689315795898
+   },
+   "gradtts-2": {
+    "rms": 0.09404917806386948,
+    "utmos": 4.310409069061279
+   },
+   "EdiTTS": {
+    "rms": 0.0724342092871666,
+    "utmos": 4.234836578369141,
+    "whisper": "they respect Edison.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0738554373383522,
+    "utmos": 4.228994369506836,
+    "whisper": "respect Tennyson.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 223,
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "They respect Boeing.",
+   "gradtts-1": {
+    "rms": 0.1089901253581047,
+    "utmos": 4.033237457275391
+   },
+   "gradtts-2": {
+    "rms": 0.1007845401763916,
+    "utmos": 4.217557430267334
+   },
+   "EdiTTS": {
+    "rms": 0.10466639697551727,
+    "utmos": 4.107517242431641,
+    "whisper": "They respect Airbus.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10228236019611359,
+    "utmos": 4.072997570037842,
+    "whisper": "They respect Airbus.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 224,
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "They respect Disney.",
+   "gradtts-1": {
+    "rms": 0.0636831670999527,
+    "utmos": 4.326785087585449
+   },
+   "gradtts-2": {
+    "rms": 0.09265589714050293,
+    "utmos": 4.104969501495361
+   },
+   "EdiTTS": {
+    "rms": 0.0667177066206932,
+    "utmos": 4.0196614265441895,
+    "whisper": "They respect Warner.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06356483697891235,
+    "utmos": 3.81036639213562,
+    "whisper": "They respect former.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 225,
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "They respect Intel.",
+   "gradtts-1": {
+    "rms": 0.09864593297243118,
+    "utmos": 4.265981674194336
+   },
+   "gradtts-2": {
+    "rms": 0.07991895079612732,
+    "utmos": 4.320165157318115
+   },
+   "EdiTTS": {
+    "rms": 0.10587490350008011,
+    "utmos": 4.110934257507324,
+    "whisper": "They respect AMD.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09875563532114029,
+    "utmos": 4.230589389801025,
+    "whisper": "They respect AMD.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 226,
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "They respect Chicago.",
+   "gradtts-1": {
+    "rms": 0.058256663382053375,
+    "utmos": 4.23839807510376
+   },
+   "gradtts-2": {
+    "rms": 0.09034628421068192,
+    "utmos": 4.251956939697266
+   },
+   "EdiTTS": {
+    "rms": 0.0643463283777237,
+    "utmos": 4.214310646057129,
+    "whisper": "their respect fastened.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.05920080468058586,
+    "utmos": 4.118586540222168,
+    "whisper": "They respect Austin.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 227,
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "They respect Dallas.",
+   "gradtts-1": {
+    "rms": 0.08699868619441986,
+    "utmos": 4.211945533752441
+   },
+   "gradtts-2": {
+    "rms": 0.08802390843629837,
+    "utmos": 4.365107536315918
+   },
+   "EdiTTS": {
+    "rms": 0.07980991154909134,
+    "utmos": 4.3028669357299805,
+    "whisper": "They respect Houston.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07914339005947113,
+    "utmos": 4.22953462600708,
+    "whisper": "They respect Houston.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 228,
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "They respect Denver.",
+   "gradtts-1": {
+    "rms": 0.08531439304351807,
+    "utmos": 4.2851128578186035
+   },
+   "gradtts-2": {
+    "rms": 0.09059152752161026,
+    "utmos": 4.253861904144287
+   },
+   "EdiTTS": {
+    "rms": 0.0912296324968338,
+    "utmos": 4.253056049346924,
+    "whisper": "respect Seattle.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09083189070224762,
+    "utmos": 4.176720142364502,
+    "whisper": "their respect to our dog.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 229,
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "They respect Miami.",
+   "gradtts-1": {
+    "rms": 0.10880023241043091,
+    "utmos": 4.285950660705566
+   },
+   "gradtts-2": {
+    "rms": 0.08525384217500687,
+    "utmos": 4.068711280822754
+   },
+   "EdiTTS": {
+    "rms": 0.09963809698820114,
+    "utmos": 4.235837459564209,
+    "whisper": "They respect Atlantic.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.1034460961818695,
+    "utmos": 4.099966526031494,
+    "whisper": "They respect Atlantic.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 230,
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "They respect Nike.",
+   "gradtts-1": {
+    "rms": 0.0723520964384079,
+    "utmos": 4.300146579742432
+   },
+   "gradtts-2": {
+    "rms": 0.08687597513198853,
+    "utmos": 4.318963050842285
+   },
+   "EdiTTS": {
+    "rms": 0.0670166164636612,
+    "utmos": 4.2176313400268555,
+    "whisper": "They respect Adidas.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.071332648396492,
+    "utmos": 3.716360330581665,
+    "whisper": "They respect deus.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 231,
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "They respect Toyota.",
+   "gradtts-1": {
+    "rms": 0.10157779604196548,
+    "utmos": 4.275496482849121
+   },
+   "gradtts-2": {
+    "rms": 0.09653103351593018,
+    "utmos": 4.198623180389404
+   },
+   "EdiTTS": {
+    "rms": 0.09872528910636902,
+    "utmos": 4.085245132446289,
+    "whisper": "They respect Honduk.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.1002996563911438,
+    "utmos": 4.097952842712402,
+    "whisper": "their respect, Tondo.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 232,
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "They respect Columbus.",
+   "gradtts-1": {
+    "rms": 0.1045810878276825,
+    "utmos": 3.6160080432891846
+   },
+   "gradtts-2": {
+    "rms": 0.06112547218799591,
+    "utmos": 4.144643306732178
+   },
+   "EdiTTS": {
+    "rms": 0.08458402007818222,
+    "utmos": 4.222892761230469,
+    "whisper": "They respect Magellan.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09231344610452652,
+    "utmos": 3.6898961067199707,
+    "whisper": "They respect Magellan.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 233,
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "They respect Madrid.",
+   "gradtts-1": {
+    "rms": 0.09083598107099533,
+    "utmos": 4.121122360229492
+   },
+   "gradtts-2": {
+    "rms": 0.10470113158226013,
+    "utmos": 4.174187660217285
+   },
+   "EdiTTS": {
+    "rms": 0.10303638875484467,
+    "utmos": 4.054454803466797,
+    "whisper": "They respect Rome.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09876296669244766,
+    "utmos": 3.8718883991241455,
+    "whisper": "They respect Rome.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 234,
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "They respect Vienna.",
+   "gradtts-1": {
+    "rms": 0.09806860238313675,
+    "utmos": 3.8213062286376953
+   },
+   "gradtts-2": {
+    "rms": 0.06893616914749146,
+    "utmos": 4.261143207550049
+   },
+   "EdiTTS": {
+    "rms": 0.09630845487117767,
+    "utmos": 4.090030193328857,
+    "whisper": "They respect prop.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.09898010641336441,
+    "utmos": 3.7165892124176025,
+    "whisper": "They respect prop.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 235,
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "They respect Moscow.",
+   "gradtts-1": {
+    "rms": 0.0828581303358078,
+    "utmos": 4.239228248596191
+   },
+   "gradtts-2": {
+    "rms": 0.06849934160709381,
+    "utmos": 4.3299560546875
+   },
+   "EdiTTS": {
+    "rms": 0.07741730660200119,
+    "utmos": 4.214245796203613,
+    "whisper": "They respect Beijing.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07243114709854126,
+    "utmos": 4.18699836730957,
+    "whisper": "They respect Beijing.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 236,
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "They respect Lincoln.",
+   "gradtts-1": {
+    "rms": 0.09511266648769379,
+    "utmos": 4.343681335449219
+   },
+   "gradtts-2": {
+    "rms": 0.10660035908222198,
+    "utmos": 4.303353309631348
+   },
+   "EdiTTS": {
+    "rms": 0.09304831922054291,
+    "utmos": 4.255185604095459,
+    "whisper": "They respect Washington.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09700065106153488,
+    "utmos": 4.188909530639648,
+    "whisper": "They respect Washington.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 237,
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "They respect Kennedy.",
+   "gradtts-1": {
+    "rms": 0.08003699779510498,
+    "utmos": 4.320865631103516
+   },
+   "gradtts-2": {
+    "rms": 0.09645729511976242,
+    "utmos": 4.0931315422058105
+   },
+   "EdiTTS": {
+    "rms": 0.11114479601383209,
+    "utmos": 4.045421600341797,
+    "whisper": "They respect Roosevelt.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10187403112649918,
+    "utmos": 3.9669418334960938,
+    "whisper": "They respect Roosevelt.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 238,
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "They respect Mars.",
+   "gradtts-1": {
+    "rms": 0.08627346158027649,
+    "utmos": 4.271206378936768
+   },
+   "gradtts-2": {
+    "rms": 0.07631593942642212,
+    "utmos": 4.167186737060547
+   },
+   "EdiTTS": {
+    "rms": 0.0863954946398735,
+    "utmos": 4.2945733070373535,
+    "whisper": "they respect Venus.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0859648734331131,
+    "utmos": 4.2918925285339355,
+    "whisper": "they respect Venus.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 239,
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "They respect Mercury.",
+   "gradtts-1": {
+    "rms": 0.08527056872844696,
+    "utmos": 3.816986322402954
+   },
+   "gradtts-2": {
+    "rms": 0.07520545274019241,
+    "utmos": 4.262254238128662
+   },
+   "EdiTTS": {
+    "rms": 0.08487822115421295,
+    "utmos": 3.874527931213379,
+    "whisper": "They respect Neptune.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08467075973749161,
+    "utmos": 3.5501718521118164,
+    "whisper": "They respect Neptune.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 240,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "They respect Sahara.",
+   "gradtts-1": {
+    "rms": 0.10613948106765747,
+    "utmos": 4.111555099487305
+   },
+   "gradtts-2": {
+    "rms": 0.08470440655946732,
+    "utmos": 4.322628021240234
+   },
+   "EdiTTS": {
+    "rms": 0.10551563650369644,
+    "utmos": 4.172829627990723,
+    "whisper": "They respect Gobi.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10563436895608902,
+    "utmos": 4.074910640716553,
+    "whisper": "Their respects will be.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 241,
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "They respect Brazil.",
+   "gradtts-1": {
+    "rms": 0.07890427112579346,
+    "utmos": 4.226531982421875
+   },
+   "gradtts-2": {
+    "rms": 0.09024015814065933,
+    "utmos": 4.333168029785156
+   },
+   "EdiTTS": {
+    "rms": 0.07172948867082596,
+    "utmos": 4.291924953460693,
+    "whisper": "They respect Argentinian.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.07033643126487732,
+    "utmos": 4.20159912109375,
+    "whisper": "They respect Argentina.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 242,
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "They respect Nissan.",
+   "gradtts-1": {
+    "rms": 0.12208949029445648,
+    "utmos": 4.347264289855957
+   },
+   "gradtts-2": {
+    "rms": 0.09406542778015137,
+    "utmos": 4.315766334533691
+   },
+   "EdiTTS": {
+    "rms": 0.13604728877544403,
+    "utmos": 4.310086250305176,
+    "whisper": "They respect Mazuk.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.12678849697113037,
+    "utmos": 4.295156955718994,
+    "whisper": "They respect Maser.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 243,
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "They respect Audi.",
+   "gradtts-1": {
+    "rms": 0.09595157206058502,
+    "utmos": 4.129509449005127
+   },
+   "gradtts-2": {
+    "rms": 0.10545463114976883,
+    "utmos": 4.201148986816406
+   },
+   "EdiTTS": {
+    "rms": 0.0882977619767189,
+    "utmos": 4.168139934539795,
+    "whisper": "They respect BMW.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08778131753206253,
+    "utmos": 3.6690168380737305,
+    "whisper": "They respect BMW.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 244,
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "They respect Netflix.",
+   "gradtts-1": {
+    "rms": 0.07201707363128662,
+    "utmos": 4.281397819519043
+   },
+   "gradtts-2": {
+    "rms": 0.09311848878860474,
+    "utmos": 4.275069236755371
+   },
+   "EdiTTS": {
+    "rms": 0.06162296608090401,
+    "utmos": 4.113812446594238,
+    "whisper": "They respect Spotify.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.06860866397619247,
+    "utmos": 3.962622880935669,
+    "whisper": "They respect Spotify.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 245,
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "They respect Facebook.",
+   "gradtts-1": {
+    "rms": 0.09279859811067581,
+    "utmos": 4.194259166717529
+   },
+   "gradtts-2": {
+    "rms": 0.10435208678245544,
+    "utmos": 4.2826385498046875
+   },
+   "EdiTTS": {
+    "rms": 0.1065320149064064,
+    "utmos": 4.128816604614258,
+    "whisper": "They respect Twitter.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.1021442785859108,
+    "utmos": 4.182796955108643,
+    "whisper": "They respect Twitter.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 246,
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "They respect Cairo.",
+   "gradtts-1": {
+    "rms": 0.09711515158414841,
+    "utmos": 3.846127510070801
+   },
+   "gradtts-2": {
+    "rms": 0.07174264639616013,
+    "utmos": 4.310376167297363
+   },
+   "EdiTTS": {
+    "rms": 0.07099173963069916,
+    "utmos": 4.222779750823975,
+    "whisper": "They respect Legos.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.07456427812576294,
+    "utmos": 3.9497179985046387,
+    "whisper": "They respect Legos.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 247,
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "They respect Mumbai.",
+   "gradtts-1": {
+    "rms": 0.08961552381515503,
+    "utmos": 4.2507476806640625
+   },
+   "gradtts-2": {
+    "rms": 0.07607071101665497,
+    "utmos": 4.340152740478516
+   },
+   "EdiTTS": {
+    "rms": 0.08720243722200394,
+    "utmos": 4.2519025802612305,
+    "whisper": "They respect Dally.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.08925125747919083,
+    "utmos": 4.206754207611084,
+    "whisper": "They respect Dally.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 248,
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "They respect Seoul.",
+   "gradtts-1": {
+    "rms": 0.12160605937242508,
+    "utmos": 4.241979598999023
+   },
+   "gradtts-2": {
+    "rms": 0.07907178997993469,
+    "utmos": 4.33928108215332
+   },
+   "EdiTTS": {
+    "rms": 0.09477254748344421,
+    "utmos": 4.333309173583984,
+    "whisper": "They respect Bangkok.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09682613611221313,
+    "utmos": 4.140268802642822,
+    "whisper": "They respect Bangkok.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 249,
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "They respect Milan.",
+   "gradtts-1": {
+    "rms": 0.08674552291631699,
+    "utmos": 4.300653457641602
+   },
+   "gradtts-2": {
+    "rms": 0.09593373537063599,
+    "utmos": 4.22268009185791
+   },
+   "EdiTTS": {
+    "rms": 0.09235396981239319,
+    "utmos": 4.217718124389648,
+    "whisper": "They respect Barcelona.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08854248374700546,
+    "utmos": 3.9967567920684814,
+    "whisper": "They respect Barcelona.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 250,
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "Everyone looks up to London today.",
+   "gradtts-1": {
+    "rms": 0.08060776442289352,
+    "utmos": 4.405543804168701
+   },
+   "gradtts-2": {
+    "rms": 0.07696211338043213,
+    "utmos": 4.279279708862305
+   },
+   "EdiTTS": {
+    "rms": 0.07781030982732773,
+    "utmos": 4.366935729980469,
+    "whisper": "Everyone looks up to Paris today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08099958300590515,
+    "utmos": 4.258871555328369,
+    "whisper": "Everyone looks up to Paris today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 251,
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "Everyone looks up to Michael today.",
+   "gradtts-1": {
+    "rms": 0.0969858393073082,
+    "utmos": 4.16364049911499
+   },
+   "gradtts-2": {
+    "rms": 0.07267116755247116,
+    "utmos": 4.388697147369385
+   },
+   "EdiTTS": {
+    "rms": 0.09714978188276291,
+    "utmos": 4.290817737579346,
+    "whisper": "Everyone looks up to John today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0979030430316925,
+    "utmos": 3.9956815242767334,
+    "whisper": "Everyone looks up to me on today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 252,
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "Everyone looks up to Einstein today.",
+   "gradtts-1": {
+    "rms": 0.08680844306945801,
+    "utmos": 4.383664608001709
+   },
+   "gradtts-2": {
+    "rms": 0.08824658393859863,
+    "utmos": 4.311879634857178
+   },
+   "EdiTTS": {
+    "rms": 0.0908612385392189,
+    "utmos": 4.21706485748291,
+    "whisper": "Everyone looks up to Newton today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08841339498758316,
+    "utmos": 3.8456473350524902,
+    "whisper": "Everyone looks up to a mutant today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 253,
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "Everyone looks up to Mozart today.",
+   "gradtts-1": {
+    "rms": 0.08065561205148697,
+    "utmos": 4.268566131591797
+   },
+   "gradtts-2": {
+    "rms": 0.09549619257450104,
+    "utmos": 4.348916053771973
+   },
+   "EdiTTS": {
+    "rms": 0.0836624801158905,
+    "utmos": 4.319825172424316,
+    "whisper": "Everyone looks up to Beethoven today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08152785152196884,
+    "utmos": 4.3181843757629395,
+    "whisper": "Everyone looks up to Meitoven today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 254,
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "Everyone looks up to Amazon today.",
+   "gradtts-1": {
+    "rms": 0.08255260437726974,
+    "utmos": 4.41999626159668
+   },
+   "gradtts-2": {
+    "rms": 0.09651654958724976,
+    "utmos": 4.408522129058838
+   },
+   "EdiTTS": {
+    "rms": 0.08564078062772751,
+    "utmos": 4.418545246124268,
+    "whisper": "Everyone looks up to Google today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08321475982666016,
+    "utmos": 4.362095832824707,
+    "whisper": "Everyone looks up to Google today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 255,
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "Everyone looks up to Harvard today.",
+   "gradtts-1": {
+    "rms": 0.09038498997688293,
+    "utmos": 4.321237087249756
+   },
+   "gradtts-2": {
+    "rms": 0.07590194791555405,
+    "utmos": 4.309663772583008
+   },
+   "EdiTTS": {
+    "rms": 0.0858142226934433,
+    "utmos": 4.297161102294922,
+    "whisper": "Everyone looks up to Oxford today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08441580086946487,
+    "utmos": 4.270828723907471,
+    "whisper": "Everyone looks up to Hawksford today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 256,
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "Everyone looks up to Ferrari today.",
+   "gradtts-1": {
+    "rms": 0.0970422625541687,
+    "utmos": 4.1875691413879395
+   },
+   "gradtts-2": {
+    "rms": 0.10069121420383453,
+    "utmos": 4.363104820251465
+   },
+   "EdiTTS": {
+    "rms": 0.0920180007815361,
+    "utmos": 4.366280555725098,
+    "whisper": "Everyone looks up to Porsche today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09136193990707397,
+    "utmos": 4.361741065979004,
+    "whisper": "Everyone looks up to Porsche today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 257,
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "Everyone looks up to Saturn today.",
+   "gradtts-1": {
+    "rms": 0.09356231987476349,
+    "utmos": 4.3524017333984375
+   },
+   "gradtts-2": {
+    "rms": 0.08100086450576782,
+    "utmos": 4.30807638168335
+   },
+   "EdiTTS": {
+    "rms": 0.08504728972911835,
+    "utmos": 4.308309078216553,
+    "whisper": "Everyone looks up to Jupiter today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.088045135140419,
+    "utmos": 4.326807022094727,
+    "whisper": "Everyone looks up to Jupiter today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 258,
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "Everyone looks up to Diamond today.",
+   "gradtts-1": {
+    "rms": 0.0914565771818161,
+    "utmos": 4.407569885253906
+   },
+   "gradtts-2": {
+    "rms": 0.09462270140647888,
+    "utmos": 4.303248882293701
+   },
+   "EdiTTS": {
+    "rms": 0.09207747876644135,
+    "utmos": 4.358392715454102,
+    "whisper": "Everyone looks up to Emerald today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09109016507863998,
+    "utmos": 4.343068599700928,
+    "whisper": "Everyone looks up to Emerald today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 259,
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "Everyone looks up to Christmas today.",
+   "gradtts-1": {
+    "rms": 0.07774962484836578,
+    "utmos": 4.3512701988220215
+   },
+   "gradtts-2": {
+    "rms": 0.09610024839639664,
+    "utmos": 4.394249439239502
+   },
+   "EdiTTS": {
+    "rms": 0.08265708386898041,
+    "utmos": 4.382097244262695,
+    "whisper": "Everyone looks up to Halloween today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08066174387931824,
+    "utmos": 4.363282680511475,
+    "whisper": "Everyone looks up to Halloween today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 260,
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "Everyone looks up to Hollywood today.",
+   "gradtts-1": {
+    "rms": 0.09838666766881943,
+    "utmos": 4.364193439483643
+   },
+   "gradtts-2": {
+    "rms": 0.09014145284891129,
+    "utmos": 4.183988571166992
+   },
+   "EdiTTS": {
+    "rms": 0.09320814162492752,
+    "utmos": 4.335692405700684,
+    "whisper": "Everyone looks up to Broadway today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0966263860464096,
+    "utmos": 4.2988080978393555,
+    "whisper": "Everyone looks up to Broadway today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 261,
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "Everyone looks up to Victoria today.",
+   "gradtts-1": {
+    "rms": 0.07284269481897354,
+    "utmos": 4.415015697479248
+   },
+   "gradtts-2": {
+    "rms": 0.08942687511444092,
+    "utmos": 4.328968048095703
+   },
+   "EdiTTS": {
+    "rms": 0.07268880307674408,
+    "utmos": 4.375184535980225,
+    "whisper": "Everyone looks up to Elizabeth today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07127242535352707,
+    "utmos": 4.383792400360107,
+    "whisper": "Everyone looks up to Elizabeth today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 262,
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "Everyone looks up to Leonardo today.",
+   "gradtts-1": {
+    "rms": 0.08285924792289734,
+    "utmos": 4.408753871917725
+   },
+   "gradtts-2": {
+    "rms": 0.09302777051925659,
+    "utmos": 4.364984035491943
+   },
+   "EdiTTS": {
+    "rms": 0.07430018484592438,
+    "utmos": 4.383367538452148,
+    "whisper": "Everyone looks up to Picasso today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07921244949102402,
+    "utmos": 4.33685827255249,
+    "whisper": "Everyone looks up to Picasso today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 263,
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "Everyone looks up to Everest today.",
+   "gradtts-1": {
+    "rms": 0.09547116607427597,
+    "utmos": 4.374991416931152
+   },
+   "gradtts-2": {
+    "rms": 0.10204291343688965,
+    "utmos": 4.38870096206665
+   },
+   "EdiTTS": {
+    "rms": 0.09656164795160294,
+    "utmos": 4.393333435058594,
+    "whisper": "Everyone looks up to Kalim and Jaro today.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.09381682425737381,
+    "utmos": 4.388625144958496,
+    "whisper": "Everyone looks up to Kalim and Jaro today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 264,
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "Everyone looks up to Atlantic today.",
+   "gradtts-1": {
+    "rms": 0.07773324847221375,
+    "utmos": 4.417179107666016
+   },
+   "gradtts-2": {
+    "rms": 0.09704579412937164,
+    "utmos": 4.296388626098633
+   },
+   "EdiTTS": {
+    "rms": 0.0829780176281929,
+    "utmos": 4.327210903167725,
+    "whisper": "Everyone looks up to Pacific today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08192639797925949,
+    "utmos": 4.280582904815674,
+    "whisper": "Everyone looks up to a Pacific today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 265,
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "Everyone looks up to Shakespeare today.",
+   "gradtts-1": {
+    "rms": 0.08376310765743256,
+    "utmos": 4.356532096862793
+   },
+   "gradtts-2": {
+    "rms": 0.09147004783153534,
+    "utmos": 4.405788421630859
+   },
+   "EdiTTS": {
+    "rms": 0.08579196780920029,
+    "utmos": 4.381650924682617,
+    "whisper": "Everyone looks up to Dickens today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08539249002933502,
+    "utmos": 4.3903398513793945,
+    "whisper": "Everyone looks up to Shickens today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 266,
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "Everyone looks up to Samsung today.",
+   "gradtts-1": {
+    "rms": 0.09469901770353317,
+    "utmos": 4.336413383483887
+   },
+   "gradtts-2": {
+    "rms": 0.10678812861442566,
+    "utmos": 4.428814888000488
+   },
+   "EdiTTS": {
+    "rms": 0.10519485175609589,
+    "utmos": 4.384796142578125,
+    "whisper": "Everyone looks up to Apple today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09884922206401825,
+    "utmos": 4.311054229736328,
+    "whisper": "Everyone looks up to Apple today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 267,
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "Everyone looks up to Tokyo today.",
+   "gradtts-1": {
+    "rms": 0.09005560725927353,
+    "utmos": 4.378403186798096
+   },
+   "gradtts-2": {
+    "rms": 0.10352617502212524,
+    "utmos": 4.397162914276123
+   },
+   "EdiTTS": {
+    "rms": 0.09187838435173035,
+    "utmos": 4.335155487060547,
+    "whisper": "Everyone looks up to Berlin today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0886240154504776,
+    "utmos": 4.332140922546387,
+    "whisper": "Everyone looks up to Berlin today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 268,
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "Everyone looks up to Sydney today.",
+   "gradtts-1": {
+    "rms": 0.07495451718568802,
+    "utmos": 4.401246070861816
+   },
+   "gradtts-2": {
+    "rms": 0.0949333906173706,
+    "utmos": 4.3724541664123535
+   },
+   "EdiTTS": {
+    "rms": 0.07862623780965805,
+    "utmos": 4.359370231628418,
+    "whisper": "Everyone looks up to Toronto today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07618251442909241,
+    "utmos": 4.366735935211182,
+    "whisper": "Everyone looks up to Toronto today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 269,
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "Everyone looks up to Stanford today.",
+   "gradtts-1": {
+    "rms": 0.07402129471302032,
+    "utmos": 4.345232009887695
+   },
+   "gradtts-2": {
+    "rms": 0.09793874621391296,
+    "utmos": 4.369993209838867
+   },
+   "EdiTTS": {
+    "rms": 0.0771477147936821,
+    "utmos": 4.342838287353516,
+    "whisper": "Everyone looks up to Berkeley today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0777105987071991,
+    "utmos": 4.235385894775391,
+    "whisper": "Everyone looks up to Berkeley today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 270,
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "Everyone looks up to Napoleon today.",
+   "gradtts-1": {
+    "rms": 0.10812337696552277,
+    "utmos": 4.385931491851807
+   },
+   "gradtts-2": {
+    "rms": 0.06861121952533722,
+    "utmos": 4.369246482849121
+   },
+   "EdiTTS": {
+    "rms": 0.09106998890638351,
+    "utmos": 4.358698844909668,
+    "whisper": "Everyone looks up to CAESER today.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.09895940870046616,
+    "utmos": 4.158022880554199,
+    "whisper": "Everyone looks up to Niecer today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 271,
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "Everyone looks up to Darwin today.",
+   "gradtts-1": {
+    "rms": 0.08520002663135529,
+    "utmos": 4.370567798614502
+   },
+   "gradtts-2": {
+    "rms": 0.09600859135389328,
+    "utmos": 4.1283369064331055
+   },
+   "EdiTTS": {
+    "rms": 0.08901003003120422,
+    "utmos": 4.214062690734863,
+    "whisper": "Everyone looks up to Galileo today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08817972987890244,
+    "utmos": 4.278987884521484,
+    "whisper": "Everyone looks up to Galileo today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 272,
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "Everyone looks up to Tesla today.",
+   "gradtts-1": {
+    "rms": 0.08545533567667007,
+    "utmos": 4.323503494262695
+   },
+   "gradtts-2": {
+    "rms": 0.09322146326303482,
+    "utmos": 4.265143871307373
+   },
+   "EdiTTS": {
+    "rms": 0.08130548149347305,
+    "utmos": 4.315951824188232,
+    "whisper": "Everyone looks up to Edison today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08393977582454681,
+    "utmos": 4.274285316467285,
+    "whisper": "Everyone looks up to Edison today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 273,
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "Everyone looks up to Boeing today.",
+   "gradtts-1": {
+    "rms": 0.12814702093601227,
+    "utmos": 4.370326995849609
+   },
+   "gradtts-2": {
+    "rms": 0.0780276507139206,
+    "utmos": 4.331337928771973
+   },
+   "EdiTTS": {
+    "rms": 0.10009784996509552,
+    "utmos": 4.339419364929199,
+    "whisper": "Everyone looks up to Erebus today.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.10937003791332245,
+    "utmos": 4.329037666320801,
+    "whisper": "Everyone looks up to Maribis today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 274,
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "Everyone looks up to Disney today.",
+   "gradtts-1": {
+    "rms": 0.0832410454750061,
+    "utmos": 4.412137508392334
+   },
+   "gradtts-2": {
+    "rms": 0.09550458937883377,
+    "utmos": 4.256623268127441
+   },
+   "EdiTTS": {
+    "rms": 0.08303691446781158,
+    "utmos": 4.358522891998291,
+    "whisper": "Everyone looks up to Warner today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08442562073469162,
+    "utmos": 4.335798740386963,
+    "whisper": "Everyone looks up to Warner today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 275,
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "Everyone looks up to Intel today.",
+   "gradtts-1": {
+    "rms": 0.07294917851686478,
+    "utmos": 4.346832752227783
+   },
+   "gradtts-2": {
+    "rms": 0.08900228887796402,
+    "utmos": 4.390254497528076
+   },
+   "EdiTTS": {
+    "rms": 0.07145935297012329,
+    "utmos": 4.383815288543701,
+    "whisper": "Everyone looks up to AMD today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07087898999452591,
+    "utmos": 4.131844997406006,
+    "whisper": "Everyone looks up to AMD today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 276,
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "Everyone looks up to Chicago today.",
+   "gradtts-1": {
+    "rms": 0.0752638429403305,
+    "utmos": 4.378417491912842
+   },
+   "gradtts-2": {
+    "rms": 0.10077343136072159,
+    "utmos": 4.405154228210449
+   },
+   "EdiTTS": {
+    "rms": 0.07870844751596451,
+    "utmos": 4.363788604736328,
+    "whisper": "Everyone looks up to Vostin today.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.07379172742366791,
+    "utmos": 4.161989212036133,
+    "whisper": "Everyone looks up to Shosten today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 277,
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "Everyone looks up to Dallas today.",
+   "gradtts-1": {
+    "rms": 0.08195527642965317,
+    "utmos": 4.386530876159668
+   },
+   "gradtts-2": {
+    "rms": 0.07741057872772217,
+    "utmos": 4.3790178298950195
+   },
+   "EdiTTS": {
+    "rms": 0.07383382320404053,
+    "utmos": 4.408977508544922,
+    "whisper": "Everyone looks up to Houston today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07537031918764114,
+    "utmos": 4.384917736053467,
+    "whisper": "Everyone looks up to Houston today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 278,
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "Everyone looks up to Denver today.",
+   "gradtts-1": {
+    "rms": 0.10633684694766998,
+    "utmos": 4.010593414306641
+   },
+   "gradtts-2": {
+    "rms": 0.08274901658296585,
+    "utmos": 4.349551200866699
+   },
+   "EdiTTS": {
+    "rms": 0.10088884830474854,
+    "utmos": 4.362513065338135,
+    "whisper": "Everyone looks up to Seattle today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10309449583292007,
+    "utmos": 4.372000217437744,
+    "whisper": "Everyone looks up to Seattle today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 279,
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "Everyone looks up to Miami today.",
+   "gradtts-1": {
+    "rms": 0.07818577438592911,
+    "utmos": 4.411125183105469
+   },
+   "gradtts-2": {
+    "rms": 0.08370185643434525,
+    "utmos": 4.339776992797852
+   },
+   "EdiTTS": {
+    "rms": 0.0809103325009346,
+    "utmos": 4.3851118087768555,
+    "whisper": "Everyone looks up to Atlanta today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07467520982027054,
+    "utmos": 4.288889408111572,
+    "whisper": "Everyone looks up to Atlanta today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 280,
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "Everyone looks up to Nike today.",
+   "gradtts-1": {
+    "rms": 0.09042685478925705,
+    "utmos": 4.359709739685059
+   },
+   "gradtts-2": {
+    "rms": 0.08601046353578568,
+    "utmos": 4.227883338928223
+   },
+   "EdiTTS": {
+    "rms": 0.09145151078701019,
+    "utmos": 4.332891941070557,
+    "whisper": "Everyone looks up to Adidas today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09050843119621277,
+    "utmos": 4.244231224060059,
+    "whisper": "Everyone looks up to Adidas today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 281,
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "Everyone looks up to Toyota today.",
+   "gradtts-1": {
+    "rms": 0.07642015069723129,
+    "utmos": 4.309045791625977
+   },
+   "gradtts-2": {
+    "rms": 0.08259668201208115,
+    "utmos": 4.316849231719971
+   },
+   "EdiTTS": {
+    "rms": 0.07524580508470535,
+    "utmos": 4.2556233406066895,
+    "whisper": "Everyone looks up to Honda today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.07428055256605148,
+    "utmos": 4.189550399780273,
+    "whisper": "Everyone looks up to Tonda today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 282,
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "Everyone looks up to Columbus today.",
+   "gradtts-1": {
+    "rms": 0.08442971110343933,
+    "utmos": 4.3751912117004395
+   },
+   "gradtts-2": {
+    "rms": 0.10530120879411697,
+    "utmos": 4.306300640106201
+   },
+   "EdiTTS": {
+    "rms": 0.09453462809324265,
+    "utmos": 4.367230415344238,
+    "whisper": "Everyone looks up to Magellan today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08852869272232056,
+    "utmos": 4.3379902839660645,
+    "whisper": "Everyone looks up to Magellan today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 283,
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "Everyone looks up to Madrid today.",
+   "gradtts-1": {
+    "rms": 0.08929792791604996,
+    "utmos": 4.39957332611084
+   },
+   "gradtts-2": {
+    "rms": 0.10443446040153503,
+    "utmos": 4.197968006134033
+   },
+   "EdiTTS": {
+    "rms": 0.09223034977912903,
+    "utmos": 4.356829643249512,
+    "whisper": "Everyone looks up to Rome today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09190120548009872,
+    "utmos": 4.369846343994141,
+    "whisper": "Everyone looks up to Rome today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 284,
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "Everyone looks up to Vienna today.",
+   "gradtts-1": {
+    "rms": 0.07915438711643219,
+    "utmos": 4.379447937011719
+   },
+   "gradtts-2": {
+    "rms": 0.08781563490629196,
+    "utmos": 4.378599643707275
+   },
+   "EdiTTS": {
+    "rms": 0.07381076365709305,
+    "utmos": 4.3827595710754395,
+    "whisper": "Everyone looks up to Pro today.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.0757598951458931,
+    "utmos": 4.353062629699707,
+    "whisper": "Everyone looks up to Pro today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 285,
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "Everyone looks up to Moscow today.",
+   "gradtts-1": {
+    "rms": 0.08359820395708084,
+    "utmos": 4.359310150146484
+   },
+   "gradtts-2": {
+    "rms": 0.09321661293506622,
+    "utmos": 4.276433944702148
+   },
+   "EdiTTS": {
+    "rms": 0.08600147813558578,
+    "utmos": 4.380670547485352,
+    "whisper": "Everyone looks up to Beijing today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08489314466714859,
+    "utmos": 4.350314140319824,
+    "whisper": "Everyone looks up to Beijing today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 286,
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "Everyone looks up to Lincoln today.",
+   "gradtts-1": {
+    "rms": 0.09096396714448929,
+    "utmos": 4.280454158782959
+   },
+   "gradtts-2": {
+    "rms": 0.11485248804092407,
+    "utmos": 4.39629602432251
+   },
+   "EdiTTS": {
+    "rms": 0.096148781478405,
+    "utmos": 4.4229912757873535,
+    "whisper": "Everyone looks up to Washington today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09114500135183334,
+    "utmos": 4.418320655822754,
+    "whisper": "Everyone looks up to Washington today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 287,
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "Everyone looks up to Kennedy today.",
+   "gradtts-1": {
+    "rms": 0.07886888831853867,
+    "utmos": 4.364201068878174
+   },
+   "gradtts-2": {
+    "rms": 0.10762715339660645,
+    "utmos": 4.308152198791504
+   },
+   "EdiTTS": {
+    "rms": 0.09271128475666046,
+    "utmos": 4.3082990646362305,
+    "whisper": "Everyone looks up to Roosevelt today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0890292152762413,
+    "utmos": 4.262050628662109,
+    "whisper": "Everyone looks up to Roosevelt today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 288,
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "Everyone looks up to Mars today.",
+   "gradtts-1": {
+    "rms": 0.09697879105806351,
+    "utmos": 4.353249549865723
+   },
+   "gradtts-2": {
+    "rms": 0.10424870997667313,
+    "utmos": 4.312515735626221
+   },
+   "EdiTTS": {
+    "rms": 0.09757805615663528,
+    "utmos": 4.364853858947754,
+    "whisper": "Everyone looks up to Venus today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09720602631568909,
+    "utmos": 4.36959171295166,
+    "whisper": "Everyone looks up to Menis today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 289,
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "Everyone looks up to Mercury today.",
+   "gradtts-1": {
+    "rms": 0.08828362077474594,
+    "utmos": 4.3658976554870605
+   },
+   "gradtts-2": {
+    "rms": 0.09595220535993576,
+    "utmos": 4.320186138153076
+   },
+   "EdiTTS": {
+    "rms": 0.09489936381578445,
+    "utmos": 4.3443450927734375,
+    "whisper": "Everyone looks up to Neptune today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09077554941177368,
+    "utmos": 4.344260215759277,
+    "whisper": "Everyone looks up to Neptune today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 290,
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "Everyone looks up to Sahara today.",
+   "gradtts-1": {
+    "rms": 0.09204290062189102,
+    "utmos": 4.1432390213012695
+   },
+   "gradtts-2": {
+    "rms": 0.09979895502328873,
+    "utmos": 4.413618087768555
+   },
+   "EdiTTS": {
+    "rms": 0.10510698705911636,
+    "utmos": 4.366374969482422,
+    "whisper": "Everyone looks up to Gobi today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10010430961847305,
+    "utmos": 4.282046794891357,
+    "whisper": "Everyone looks up to SOBY today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 291,
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "Everyone looks up to Brazil today.",
+   "gradtts-1": {
+    "rms": 0.11377858370542526,
+    "utmos": 4.368203639984131
+   },
+   "gradtts-2": {
+    "rms": 0.08312584459781647,
+    "utmos": 4.3976945877075195
+   },
+   "EdiTTS": {
+    "rms": 0.10489840060472488,
+    "utmos": 4.424077033996582,
+    "whisper": "Everyone looks up to Argentina today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.10474471002817154,
+    "utmos": 4.391165256500244,
+    "whisper": "Everyone looks up to Argentina today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 292,
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "Everyone looks up to Nissan today.",
+   "gradtts-1": {
+    "rms": 0.09706330299377441,
+    "utmos": 4.251140594482422
+   },
+   "gradtts-2": {
+    "rms": 0.10038726031780243,
+    "utmos": 4.132530689239502
+   },
+   "EdiTTS": {
+    "rms": 0.10871975123882294,
+    "utmos": 4.2917890548706055,
+    "whisper": "Everyone looks up to MOSU today.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.09868939965963364,
+    "utmos": 4.1942362785339355,
+    "whisper": "Everyone looks up to MOSU today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 293,
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "Everyone looks up to Audi today.",
+   "gradtts-1": {
+    "rms": 0.08996879309415817,
+    "utmos": 4.373638153076172
+   },
+   "gradtts-2": {
+    "rms": 0.10123242437839508,
+    "utmos": 4.357782363891602
+   },
+   "EdiTTS": {
+    "rms": 0.08985402435064316,
+    "utmos": 4.397818565368652,
+    "whisper": "Everyone looks up to BMW today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08945368230342865,
+    "utmos": 3.8945236206054688,
+    "whisper": "Everyone looks up to BMW today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 294,
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "Everyone looks up to Netflix today.",
+   "gradtts-1": {
+    "rms": 0.08738294988870621,
+    "utmos": 3.9858956336975098
+   },
+   "gradtts-2": {
+    "rms": 0.09250898659229279,
+    "utmos": 4.231785297393799
+   },
+   "EdiTTS": {
+    "rms": 0.09207094460725784,
+    "utmos": 4.1376776695251465,
+    "whisper": "Everyone looks up to Spotify today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08590417355298996,
+    "utmos": 3.9177281856536865,
+    "whisper": "Everyone looks up to Nesbuterfy today.",
+    "target_in": false
+   }
+  },
+  {
+   "idx": 295,
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "Everyone looks up to Facebook today.",
+   "gradtts-1": {
+    "rms": 0.0966404378414154,
+    "utmos": 4.392945289611816
+   },
+   "gradtts-2": {
+    "rms": 0.07597596943378448,
+    "utmos": 4.110564708709717
+   },
+   "EdiTTS": {
+    "rms": 0.0945311039686203,
+    "utmos": 4.359094142913818,
+    "whisper": "Everyone looks up to Twitter today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.09640073776245117,
+    "utmos": 4.355962753295898,
+    "whisper": "Everyone looks up to Twitter today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 296,
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "Everyone looks up to Cairo today.",
+   "gradtts-1": {
+    "rms": 0.08072659373283386,
+    "utmos": 4.241663932800293
+   },
+   "gradtts-2": {
+    "rms": 0.08917825669050217,
+    "utmos": 4.328788757324219
+   },
+   "EdiTTS": {
+    "rms": 0.08319240808486938,
+    "utmos": 4.258780002593994,
+    "whisper": "Everyone looks up to Lagos today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.0788821280002594,
+    "utmos": 4.1944732666015625,
+    "whisper": "Everyone looks up to Lagos today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 297,
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "Everyone looks up to Mumbai today.",
+   "gradtts-1": {
+    "rms": 0.11630290001630783,
+    "utmos": 4.283688545227051
+   },
+   "gradtts-2": {
+    "rms": 0.09473961591720581,
+    "utmos": 4.394330978393555
+   },
+   "EdiTTS": {
+    "rms": 0.11252987384796143,
+    "utmos": 4.306769847869873,
+    "whisper": "Everyone looks up to Delhi today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.11602162569761276,
+    "utmos": 4.2549920082092285,
+    "whisper": "Everyone looks up to Delhi today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 298,
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "Everyone looks up to Seoul today.",
+   "gradtts-1": {
+    "rms": 0.08471690863370895,
+    "utmos": 4.35079288482666
+   },
+   "gradtts-2": {
+    "rms": 0.09161113202571869,
+    "utmos": 4.340035438537598
+   },
+   "EdiTTS": {
+    "rms": 0.08687571436166763,
+    "utmos": 4.335848808288574,
+    "whisper": "Everyone looks up to Spank Hop today.",
+    "target_in": false
+   },
+   "baseline": {
+    "rms": 0.0812847688794136,
+    "utmos": 4.291167259216309,
+    "whisper": "Everyone looks up to Bangkok today.",
+    "target_in": true
+   }
+  },
+  {
+   "idx": 299,
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "Everyone looks up to Milan today.",
+   "gradtts-1": {
+    "rms": 0.08538463711738586,
+    "utmos": 4.379063606262207
+   },
+   "gradtts-2": {
+    "rms": 0.09865572303533554,
+    "utmos": 4.255019664764404
+   },
+   "EdiTTS": {
+    "rms": 0.08293168246746063,
+    "utmos": 4.392159461975098,
+    "whisper": "Everyone looks up to Barcelona today.",
+    "target_in": true
+   },
+   "baseline": {
+    "rms": 0.08393976092338562,
+    "utmos": 4.351342678070068,
+    "whisper": "Everyone looks up to Barcelona today.",
+    "target_in": true
+   }
+  }
+ ]
+}

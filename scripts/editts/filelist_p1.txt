@@ -1,0 +1,100 @@
+| London | is famous. #| Paris | is famous.
+| Michael | is famous. #| John | is famous.
+| Einstein | is famous. #| Newton | is famous.
+| Mozart | is famous. #| Beethoven | is famous.
+| Amazon | is famous. #| Google | is famous.
+| Harvard | is famous. #| Oxford | is famous.
+| Ferrari | is famous. #| Porsche | is famous.
+| Saturn | is famous. #| Jupiter | is famous.
+| Diamond | is famous. #| Emerald | is famous.
+| Christmas | is famous. #| Halloween | is famous.
+| Hollywood | is famous. #| Broadway | is famous.
+| Victoria | is famous. #| Elizabeth | is famous.
+| Leonardo | is famous. #| Picasso | is famous.
+| Everest | is famous. #| Kilimanjaro | is famous.
+| Atlantic | is famous. #| Pacific | is famous.
+| Shakespeare | is famous. #| Dickens | is famous.
+| Samsung | is famous. #| Apple | is famous.
+| Tokyo | is famous. #| Berlin | is famous.
+| Sydney | is famous. #| Toronto | is famous.
+| Stanford | is famous. #| Berkeley | is famous.
+| Napoleon | is famous. #| Caesar | is famous.
+| Darwin | is famous. #| Galileo | is famous.
+| Tesla | is famous. #| Edison | is famous.
+| Boeing | is famous. #| Airbus | is famous.
+| Disney | is famous. #| Warner | is famous.
+| Intel | is famous. #| AMD | is famous.
+| Chicago | is famous. #| Boston | is famous.
+| Dallas | is famous. #| Houston | is famous.
+| Denver | is famous. #| Seattle | is famous.
+| Miami | is famous. #| Atlanta | is famous.
+| Nike | is famous. #| Adidas | is famous.
+| Toyota | is famous. #| Honda | is famous.
+| Columbus | is famous. #| Magellan | is famous.
+| Madrid | is famous. #| Rome | is famous.
+| Vienna | is famous. #| Prague | is famous.
+| Moscow | is famous. #| Beijing | is famous.
+| Lincoln | is famous. #| Washington | is famous.
+| Kennedy | is famous. #| Roosevelt | is famous.
+| Mars | is famous. #| Venus | is famous.
+| Mercury | is famous. #| Neptune | is famous.
+| Sahara | is famous. #| Gobi | is famous.
+| Brazil | is famous. #| Argentina | is famous.
+| Nissan | is famous. #| Mazda | is famous.
+| Audi | is famous. #| BMW | is famous.
+| Netflix | is famous. #| Spotify | is famous.
+| Facebook | is famous. #| Twitter | is famous.
+| Cairo | is famous. #| Lagos | is famous.
+| Mumbai | is famous. #| Delhi | is famous.
+| Seoul | is famous. #| Bangkok | is famous.
+| Milan | is famous. #| Barcelona | is famous.
+Yesterday, | London | became famous. #Yesterday, | Paris | became famous.
+Yesterday, | Michael | became famous. #Yesterday, | John | became famous.
+Yesterday, | Einstein | became famous. #Yesterday, | Newton | became famous.
+Yesterday, | Mozart | became famous. #Yesterday, | Beethoven | became famous.
+Yesterday, | Amazon | became famous. #Yesterday, | Google | became famous.
+Yesterday, | Harvard | became famous. #Yesterday, | Oxford | became famous.
+Yesterday, | Ferrari | became famous. #Yesterday, | Porsche | became famous.
+Yesterday, | Saturn | became famous. #Yesterday, | Jupiter | became famous.
+Yesterday, | Diamond | became famous. #Yesterday, | Emerald | became famous.
+Yesterday, | Christmas | became famous. #Yesterday, | Halloween | became famous.
+Yesterday, | Hollywood | became famous. #Yesterday, | Broadway | became famous.
+Yesterday, | Victoria | became famous. #Yesterday, | Elizabeth | became famous.
+Yesterday, | Leonardo | became famous. #Yesterday, | Picasso | became famous.
+Yesterday, | Everest | became famous. #Yesterday, | Kilimanjaro | became famous.
+Yesterday, | Atlantic | became famous. #Yesterday, | Pacific | became famous.
+Yesterday, | Shakespeare | became famous. #Yesterday, | Dickens | became famous.
+Yesterday, | Samsung | became famous. #Yesterday, | Apple | became famous.
+Yesterday, | Tokyo | became famous. #Yesterday, | Berlin | became famous.
+Yesterday, | Sydney | became famous. #Yesterday, | Toronto | became famous.
+Yesterday, | Stanford | became famous. #Yesterday, | Berkeley | became famous.
+Yesterday, | Napoleon | became famous. #Yesterday, | Caesar | became famous.
+Yesterday, | Darwin | became famous. #Yesterday, | Galileo | became famous.
+Yesterday, | Tesla | became famous. #Yesterday, | Edison | became famous.
+Yesterday, | Boeing | became famous. #Yesterday, | Airbus | became famous.
+Yesterday, | Disney | became famous. #Yesterday, | Warner | became famous.
+Yesterday, | Intel | became famous. #Yesterday, | AMD | became famous.
+Yesterday, | Chicago | became famous. #Yesterday, | Boston | became famous.
+Yesterday, | Dallas | became famous. #Yesterday, | Houston | became famous.
+Yesterday, | Denver | became famous. #Yesterday, | Seattle | became famous.
+Yesterday, | Miami | became famous. #Yesterday, | Atlanta | became famous.
+Yesterday, | Nike | became famous. #Yesterday, | Adidas | became famous.
+Yesterday, | Toyota | became famous. #Yesterday, | Honda | became famous.
+Yesterday, | Columbus | became famous. #Yesterday, | Magellan | became famous.
+Yesterday, | Madrid | became famous. #Yesterday, | Rome | became famous.
+Yesterday, | Vienna | became famous. #Yesterday, | Prague | became famous.
+Yesterday, | Moscow | became famous. #Yesterday, | Beijing | became famous.
+Yesterday, | Lincoln | became famous. #Yesterday, | Washington | became famous.
+Yesterday, | Kennedy | became famous. #Yesterday, | Roosevelt | became famous.
+Yesterday, | Mars | became famous. #Yesterday, | Venus | became famous.
+Yesterday, | Mercury | became famous. #Yesterday, | Neptune | became famous.
+Yesterday, | Sahara | became famous. #Yesterday, | Gobi | became famous.
+Yesterday, | Brazil | became famous. #Yesterday, | Argentina | became famous.
+Yesterday, | Nissan | became famous. #Yesterday, | Mazda | became famous.
+Yesterday, | Audi | became famous. #Yesterday, | BMW | became famous.
+Yesterday, | Netflix | became famous. #Yesterday, | Spotify | became famous.
+Yesterday, | Facebook | became famous. #Yesterday, | Twitter | became famous.
+Yesterday, | Cairo | became famous. #Yesterday, | Lagos | became famous.
+Yesterday, | Mumbai | became famous. #Yesterday, | Delhi | became famous.
+Yesterday, | Seoul | became famous. #Yesterday, | Bangkok | became famous.
+Yesterday, | Milan | became famous. #Yesterday, | Barcelona | became famous.

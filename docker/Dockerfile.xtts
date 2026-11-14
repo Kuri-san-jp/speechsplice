@@ -1,0 +1,11 @@
+# XTTS-v2 image of Table 3 ("xtts-tts:latest"). It adds coqui-tts to the main image.
+# coqui-tts 0.27.5 needs no upgrade or downgrade of the packages already in the main image.
+# Build (after building my-lab-image:latest from Dockerfile.main):
+#   docker build -f docker/Dockerfile.xtts -t xtts-tts:latest docker
+FROM my-lab-image:latest
+ENV PIP_NO_CACHE_DIR=1
+ENV PIP_BREAK_SYSTEM_PACKAGES=1
+# librosa's numba JIT cache needs a writable place; the repository is mounted at /mnt
+ENV NUMBA_CACHE_DIR=/mnt/.cache/numba
+RUN pip install --no-cache-dir coqui-tts==0.27.5
+RUN python3 -c "import TTS; from TTS.tts.models.xtts import Xtts; import torch, transformers, numpy; print('TTS', TTS.__version__, 'torch', torch.__version__, 'transformers', transformers.__version__, 'numpy', numpy.__version__)"

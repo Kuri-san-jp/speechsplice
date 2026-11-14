@@ -46,9 +46,9 @@ this page; each file is a byte-for-byte copy of the file it came from.
 
 | Directory | Files | Rate | What it is | Voice prompt speaker |
 |---|---|---|---|---|
-| `audio/en/` | 20 (10 pairs) | 44.1 kHz | Synthetic. English proper-name stimuli from the AB selection test. | LibriTTS `train-clean-100` excerpt (not redistributed) |
+| `audio/en/` | 20 (10 pairs) | 44.1 kHz | Synthetic. English proper-name stimuli from the AB selection test. | LibriTTS `test-clean` utterance `260_123440_000002_000004` (not redistributed) |
 | `audio/ja/` | 20 (10 pairs) | 44.1 kHz | Synthetic. Japanese proper-name stimuli from the AB selection test. | JSUT `BASIC5000_0011` |
-| `audio/zh/` | 20 (10 pairs) | 44.1 kHz | Synthetic. Chinese proper-name stimuli from the AB selection test. | BZNSYP excerpt, resampled to 44.1 kHz mono (not redistributed) |
+| `audio/zh/` | 20 (10 pairs) | 44.1 kHz | Synthetic. Chinese proper-name stimuli from the AB selection test. | BZNSYP utterance `000801`, resampled to 44.1 kHz mono (not redistributed) |
 | `audio/ja_het/` | 20 (10 pairs) | 44.1 kHz | Synthetic. Japanese same-surface correction stimuli from the AB selection test. | JSUT `BASIC5000_0011` |
 | `audio/prompt/` | 1 | 48 kHz | **Real human recording.** The JSUT voice-cloning prompt. | — (this *is* the prompt) |
 
@@ -111,8 +111,8 @@ The prompt file:
   Zhifeng Chen and Yonghui Wu
 - **Source:** https://www.openslr.org/60/
 - **Licence:** CC BY 4.0
-- A 3.25-second `train-clean-100` excerpt served as the English speaker prompt. The
-  excerpt itself is not published here.
+- The 3.25-second `test-clean` utterance `260_123440_000002_000004` served as the English speaker prompt. The
+  recording itself is not published here.
 
 ### BZNSYP / Chinese Standard Mandarin Speech Corpus — Chinese voice-cloning prompt (not redistributed here)
 

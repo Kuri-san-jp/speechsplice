@@ -82,9 +82,14 @@ shipped verbatim as the two text files above.
 ## Note on the human-vs-Whisper agreement
 
 `results/primary_analysis.txt` computes this agreement against the judge JSONs
-in `eval_results/`, which is what `analyze_preference_primary.py` reads. The
-`auto_bl_says_source` / `auto_inj_says_target` columns in
-`sheet3_item_level.csv` are a separate snapshot of the automatic verdict and
-differ on a few items, so the two sources give slightly different agreement
-rates (for example EN 94% versus 98%). The preference rates themselves are
-unaffected, since they come from the human counts only.
+in `eval_results/`, which is what `analyze_preference_primary.py` reads.
+`scripts/aggregate_failure_cases.py` repeats the join on the released files and
+prints the eight disagreements of Table A9.
+
+The `auto_inj_says_target` column of `sheet3_item_level.csv` holds the same
+verdicts. Until 2026-11-14 it carried, for two EN items (0047 Delhi, 0056
+Porsche), a verdict from a Whisper medium.en pass instead of the Whisper
+large-v3 judge of the paper; those two cells were corrected, and the script
+above checks the column against the judge files. `auto_bl_says_source` for EN
+is still the Whisper medium.en verdict on the baseline clip (no large-v3
+verdict on the baseline clips exists). The human counts were not changed.

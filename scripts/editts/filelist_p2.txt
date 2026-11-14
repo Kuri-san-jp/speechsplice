@@ -1,0 +1,200 @@
+Around the world, | London | is known. #Around the world, | Paris | is known.
+Around the world, | Michael | is known. #Around the world, | John | is known.
+Around the world, | Einstein | is known. #Around the world, | Newton | is known.
+Around the world, | Mozart | is known. #Around the world, | Beethoven | is known.
+Around the world, | Amazon | is known. #Around the world, | Google | is known.
+Around the world, | Harvard | is known. #Around the world, | Oxford | is known.
+Around the world, | Ferrari | is known. #Around the world, | Porsche | is known.
+Around the world, | Saturn | is known. #Around the world, | Jupiter | is known.
+Around the world, | Diamond | is known. #Around the world, | Emerald | is known.
+Around the world, | Christmas | is known. #Around the world, | Halloween | is known.
+Around the world, | Hollywood | is known. #Around the world, | Broadway | is known.
+Around the world, | Victoria | is known. #Around the world, | Elizabeth | is known.
+Around the world, | Leonardo | is known. #Around the world, | Picasso | is known.
+Around the world, | Everest | is known. #Around the world, | Kilimanjaro | is known.
+Around the world, | Atlantic | is known. #Around the world, | Pacific | is known.
+Around the world, | Shakespeare | is known. #Around the world, | Dickens | is known.
+Around the world, | Samsung | is known. #Around the world, | Apple | is known.
+Around the world, | Tokyo | is known. #Around the world, | Berlin | is known.
+Around the world, | Sydney | is known. #Around the world, | Toronto | is known.
+Around the world, | Stanford | is known. #Around the world, | Berkeley | is known.
+Around the world, | Napoleon | is known. #Around the world, | Caesar | is known.
+Around the world, | Darwin | is known. #Around the world, | Galileo | is known.
+Around the world, | Tesla | is known. #Around the world, | Edison | is known.
+Around the world, | Boeing | is known. #Around the world, | Airbus | is known.
+Around the world, | Disney | is known. #Around the world, | Warner | is known.
+Around the world, | Intel | is known. #Around the world, | AMD | is known.
+Around the world, | Chicago | is known. #Around the world, | Boston | is known.
+Around the world, | Dallas | is known. #Around the world, | Houston | is known.
+Around the world, | Denver | is known. #Around the world, | Seattle | is known.
+Around the world, | Miami | is known. #Around the world, | Atlanta | is known.
+Around the world, | Nike | is known. #Around the world, | Adidas | is known.
+Around the world, | Toyota | is known. #Around the world, | Honda | is known.
+Around the world, | Columbus | is known. #Around the world, | Magellan | is known.
+Around the world, | Madrid | is known. #Around the world, | Rome | is known.
+Around the world, | Vienna | is known. #Around the world, | Prague | is known.
+Around the world, | Moscow | is known. #Around the world, | Beijing | is known.
+Around the world, | Lincoln | is known. #Around the world, | Washington | is known.
+Around the world, | Kennedy | is known. #Around the world, | Roosevelt | is known.
+Around the world, | Mars | is known. #Around the world, | Venus | is known.
+Around the world, | Mercury | is known. #Around the world, | Neptune | is known.
+Around the world, | Sahara | is known. #Around the world, | Gobi | is known.
+Around the world, | Brazil | is known. #Around the world, | Argentina | is known.
+Around the world, | Nissan | is known. #Around the world, | Mazda | is known.
+Around the world, | Audi | is known. #Around the world, | BMW | is known.
+Around the world, | Netflix | is known. #Around the world, | Spotify | is known.
+Around the world, | Facebook | is known. #Around the world, | Twitter | is known.
+Around the world, | Cairo | is known. #Around the world, | Lagos | is known.
+Around the world, | Mumbai | is known. #Around the world, | Delhi | is known.
+Around the world, | Seoul | is known. #Around the world, | Bangkok | is known.
+Around the world, | Milan | is known. #Around the world, | Barcelona | is known.
+Many people know | London | very well. #Many people know | Paris | very well.
+Many people know | Michael | very well. #Many people know | John | very well.
+Many people know | Einstein | very well. #Many people know | Newton | very well.
+Many people know | Mozart | very well. #Many people know | Beethoven | very well.
+Many people know | Amazon | very well. #Many people know | Google | very well.
+Many people know | Harvard | very well. #Many people know | Oxford | very well.
+Many people know | Ferrari | very well. #Many people know | Porsche | very well.
+Many people know | Saturn | very well. #Many people know | Jupiter | very well.
+Many people know | Diamond | very well. #Many people know | Emerald | very well.
+Many people know | Christmas | very well. #Many people know | Halloween | very well.
+Many people know | Hollywood | very well. #Many people know | Broadway | very well.
+Many people know | Victoria | very well. #Many people know | Elizabeth | very well.
+Many people know | Leonardo | very well. #Many people know | Picasso | very well.
+Many people know | Everest | very well. #Many people know | Kilimanjaro | very well.
+Many people know | Atlantic | very well. #Many people know | Pacific | very well.
+Many people know | Shakespeare | very well. #Many people know | Dickens | very well.
+Many people know | Samsung | very well. #Many people know | Apple | very well.
+Many people know | Tokyo | very well. #Many people know | Berlin | very well.
+Many people know | Sydney | very well. #Many people know | Toronto | very well.
+Many people know | Stanford | very well. #Many people know | Berkeley | very well.
+Many people know | Napoleon | very well. #Many people know | Caesar | very well.
+Many people know | Darwin | very well. #Many people know | Galileo | very well.
+Many people know | Tesla | very well. #Many people know | Edison | very well.
+Many people know | Boeing | very well. #Many people know | Airbus | very well.
+Many people know | Disney | very well. #Many people know | Warner | very well.
+Many people know | Intel | very well. #Many people know | AMD | very well.
+Many people know | Chicago | very well. #Many people know | Boston | very well.
+Many people know | Dallas | very well. #Many people know | Houston | very well.
+Many people know | Denver | very well. #Many people know | Seattle | very well.
+Many people know | Miami | very well. #Many people know | Atlanta | very well.
+Many people know | Nike | very well. #Many people know | Adidas | very well.
+Many people know | Toyota | very well. #Many people know | Honda | very well.
+Many people know | Columbus | very well. #Many people know | Magellan | very well.
+Many people know | Madrid | very well. #Many people know | Rome | very well.
+Many people know | Vienna | very well. #Many people know | Prague | very well.
+Many people know | Moscow | very well. #Many people know | Beijing | very well.
+Many people know | Lincoln | very well. #Many people know | Washington | very well.
+Many people know | Kennedy | very well. #Many people know | Roosevelt | very well.
+Many people know | Mars | very well. #Many people know | Venus | very well.
+Many people know | Mercury | very well. #Many people know | Neptune | very well.
+Many people know | Sahara | very well. #Many people know | Gobi | very well.
+Many people know | Brazil | very well. #Many people know | Argentina | very well.
+Many people know | Nissan | very well. #Many people know | Mazda | very well.
+Many people know | Audi | very well. #Many people know | BMW | very well.
+Many people know | Netflix | very well. #Many people know | Spotify | very well.
+Many people know | Facebook | very well. #Many people know | Twitter | very well.
+Many people know | Cairo | very well. #Many people know | Lagos | very well.
+Many people know | Mumbai | very well. #Many people know | Delhi | very well.
+Many people know | Seoul | very well. #Many people know | Bangkok | very well.
+Many people know | Milan | very well. #Many people know | Barcelona | very well.
+They respect | London |. #They respect | Paris |.
+They respect | Michael |. #They respect | John |.
+They respect | Einstein |. #They respect | Newton |.
+They respect | Mozart |. #They respect | Beethoven |.
+They respect | Amazon |. #They respect | Google |.
+They respect | Harvard |. #They respect | Oxford |.
+They respect | Ferrari |. #They respect | Porsche |.
+They respect | Saturn |. #They respect | Jupiter |.
+They respect | Diamond |. #They respect | Emerald |.
+They respect | Christmas |. #They respect | Halloween |.
+They respect | Hollywood |. #They respect | Broadway |.
+They respect | Victoria |. #They respect | Elizabeth |.
+They respect | Leonardo |. #They respect | Picasso |.
+They respect | Everest |. #They respect | Kilimanjaro |.
+They respect | Atlantic |. #They respect | Pacific |.
+They respect | Shakespeare |. #They respect | Dickens |.
+They respect | Samsung |. #They respect | Apple |.
+They respect | Tokyo |. #They respect | Berlin |.
+They respect | Sydney |. #They respect | Toronto |.
+They respect | Stanford |. #They respect | Berkeley |.
+They respect | Napoleon |. #They respect | Caesar |.
+They respect | Darwin |. #They respect | Galileo |.
+They respect | Tesla |. #They respect | Edison |.
+They respect | Boeing |. #They respect | Airbus |.
+They respect | Disney |. #They respect | Warner |.
+They respect | Intel |. #They respect | AMD |.
+They respect | Chicago |. #They respect | Boston |.
+They respect | Dallas |. #They respect | Houston |.
+They respect | Denver |. #They respect | Seattle |.
+They respect | Miami |. #They respect | Atlanta |.
+They respect | Nike |. #They respect | Adidas |.
+They respect | Toyota |. #They respect | Honda |.
+They respect | Columbus |. #They respect | Magellan |.
+They respect | Madrid |. #They respect | Rome |.
+They respect | Vienna |. #They respect | Prague |.
+They respect | Moscow |. #They respect | Beijing |.
+They respect | Lincoln |. #They respect | Washington |.
+They respect | Kennedy |. #They respect | Roosevelt |.
+They respect | Mars |. #They respect | Venus |.
+They respect | Mercury |. #They respect | Neptune |.
+They respect | Sahara |. #They respect | Gobi |.
+They respect | Brazil |. #They respect | Argentina |.
+They respect | Nissan |. #They respect | Mazda |.
+They respect | Audi |. #They respect | BMW |.
+They respect | Netflix |. #They respect | Spotify |.
+They respect | Facebook |. #They respect | Twitter |.
+They respect | Cairo |. #They respect | Lagos |.
+They respect | Mumbai |. #They respect | Delhi |.
+They respect | Seoul |. #They respect | Bangkok |.
+They respect | Milan |. #They respect | Barcelona |.
+Everyone looks up to | London | today. #Everyone looks up to | Paris | today.
+Everyone looks up to | Michael | today. #Everyone looks up to | John | today.
+Everyone looks up to | Einstein | today. #Everyone looks up to | Newton | today.
+Everyone looks up to | Mozart | today. #Everyone looks up to | Beethoven | today.
+Everyone looks up to | Amazon | today. #Everyone looks up to | Google | today.
+Everyone looks up to | Harvard | today. #Everyone looks up to | Oxford | today.
+Everyone looks up to | Ferrari | today. #Everyone looks up to | Porsche | today.
+Everyone looks up to | Saturn | today. #Everyone looks up to | Jupiter | today.
+Everyone looks up to | Diamond | today. #Everyone looks up to | Emerald | today.
+Everyone looks up to | Christmas | today. #Everyone looks up to | Halloween | today.
+Everyone looks up to | Hollywood | today. #Everyone looks up to | Broadway | today.
+Everyone looks up to | Victoria | today. #Everyone looks up to | Elizabeth | today.
+Everyone looks up to | Leonardo | today. #Everyone looks up to | Picasso | today.
+Everyone looks up to | Everest | today. #Everyone looks up to | Kilimanjaro | today.
+Everyone looks up to | Atlantic | today. #Everyone looks up to | Pacific | today.
+Everyone looks up to | Shakespeare | today. #Everyone looks up to | Dickens | today.
+Everyone looks up to | Samsung | today. #Everyone looks up to | Apple | today.
+Everyone looks up to | Tokyo | today. #Everyone looks up to | Berlin | today.
+Everyone looks up to | Sydney | today. #Everyone looks up to | Toronto | today.
+Everyone looks up to | Stanford | today. #Everyone looks up to | Berkeley | today.
+Everyone looks up to | Napoleon | today. #Everyone looks up to | Caesar | today.
+Everyone looks up to | Darwin | today. #Everyone looks up to | Galileo | today.
+Everyone looks up to | Tesla | today. #Everyone looks up to | Edison | today.
+Everyone looks up to | Boeing | today. #Everyone looks up to | Airbus | today.
+Everyone looks up to | Disney | today. #Everyone looks up to | Warner | today.
+Everyone looks up to | Intel | today. #Everyone looks up to | AMD | today.
+Everyone looks up to | Chicago | today. #Everyone looks up to | Boston | today.
+Everyone looks up to | Dallas | today. #Everyone looks up to | Houston | today.
+Everyone looks up to | Denver | today. #Everyone looks up to | Seattle | today.
+Everyone looks up to | Miami | today. #Everyone looks up to | Atlanta | today.
+Everyone looks up to | Nike | today. #Everyone looks up to | Adidas | today.
+Everyone looks up to | Toyota | today. #Everyone looks up to | Honda | today.
+Everyone looks up to | Columbus | today. #Everyone looks up to | Magellan | today.
+Everyone looks up to | Madrid | today. #Everyone looks up to | Rome | today.
+Everyone looks up to | Vienna | today. #Everyone looks up to | Prague | today.
+Everyone looks up to | Moscow | today. #Everyone looks up to | Beijing | today.
+Everyone looks up to | Lincoln | today. #Everyone looks up to | Washington | today.
+Everyone looks up to | Kennedy | today. #Everyone looks up to | Roosevelt | today.
+Everyone looks up to | Mars | today. #Everyone looks up to | Venus | today.
+Everyone looks up to | Mercury | today. #Everyone looks up to | Neptune | today.
+Everyone looks up to | Sahara | today. #Everyone looks up to | Gobi | today.
+Everyone looks up to | Brazil | today. #Everyone looks up to | Argentina | today.
+Everyone looks up to | Nissan | today. #Everyone looks up to | Mazda | today.
+Everyone looks up to | Audi | today. #Everyone looks up to | BMW | today.
+Everyone looks up to | Netflix | today. #Everyone looks up to | Spotify | today.
+Everyone looks up to | Facebook | today. #Everyone looks up to | Twitter | today.
+Everyone looks up to | Cairo | today. #Everyone looks up to | Lagos | today.
+Everyone looks up to | Mumbai | today. #Everyone looks up to | Delhi | today.
+Everyone looks up to | Seoul | today. #Everyone looks up to | Bangkok | today.
+Everyone looks up to | Milan | today. #Everyone looks up to | Barcelona | today.

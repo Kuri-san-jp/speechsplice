@@ -64,13 +64,15 @@
    "L": 26,
    "point_mcd": {
     "file": "point_mcd/t5gemma_ja.json",
-    "source": "eval_results/_caseSPTK_whole_t5gemma_ja.json",
-    "md5": "7262960f4b8160cbbc7a1959349cc92e"
+    "source": "restore_20261114/mcd_out/sweep_t5gemma_ja_L25.json",
+    "md5": "28c7d484267644a4c0654a7cac831183",
+    "note": "recomputed on 2026-11-14 (per-row values unchanged; diagnostic fields removed)"
    },
    "point_pib": {
     "file": "point_pib/t5gemma_ja.json",
-    "source": "eval_results/_v1all_t5gemma_ja.json",
-    "md5": "a14a00eee6667699dca950d5683996a4"
+    "source": "eval_results/_v1L_t5gemma_ja_L25.json",
+    "md5": "355028234f62171b26f196e8cf1fb776",
+    "note": "same file as the layer sweep at l*=26"
    },
    "sweep": [
     {
@@ -119,13 +121,15 @@
    "L": 26,
    "point_mcd": {
     "file": "point_mcd/t5gemma_zh.json",
-    "source": "eval_results/_caseSPTK_whole_t5gemma_zh.json",
-    "md5": "80c5b8753dfe9c125f338ede59a9048c"
+    "source": "restore_20261114/mcd_out/sweep_t5gemma_zh_L25.json",
+    "md5": "29d66b56189fff54be2c2cc1fe11732a",
+    "note": "recomputed on 2026-11-14 (per-row values unchanged; diagnostic fields removed)"
    },
    "point_pib": {
     "file": "point_pib/t5gemma_zh.json",
-    "source": "eval_results/_v1all_t5gemma_zh.json",
-    "md5": "e170e141edc72ec82d7ee7ee9afdba0b"
+    "source": "eval_results/_v1L_t5gemma_zh_L25.json",
+    "md5": "d1635b87ca831dfb672353f34565a24b",
+    "note": "same file as the layer sweep at l*=26"
    },
    "sweep": [
     {

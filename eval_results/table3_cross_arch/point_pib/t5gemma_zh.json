@@ -1,21 +1,21 @@
 {
   "summary": {
-    "wav_dir": "/mnt/eval_results/_cc_wavs_a/t5gemma_zh",
+    "wav_dir": "/mnt/eval_results/_layerabl/t5gemma_zh_L25",
     "lang": "zh",
     "n_target": 300,
     "n_valid": 300,
     "bl_per_vs_tgt_mean": 0.657,
     "bl_per_vs_tgt_std": 0.3471,
-    "inj_per_vs_tgt_mean": 0.6394,
-    "inj_per_vs_tgt_std": 0.5792,
-    "delta_per_mean": 0.0176,
-    "delta_per_std": 0.3456,
-    "inj_better_n": 164,
-    "inj_better_pct": 54.67,
-    "inj_better_ci95_half_pp": 5.6,
-    "paired_t_pval": 0.3789050638717437,
-    "wilcoxon_pval": 0.0017995773044480372,
-    "cohens_d_paired": 0.0509
+    "inj_per_vs_tgt_mean": 0.6379,
+    "inj_per_vs_tgt_std": 0.579,
+    "delta_per_mean": 0.0191,
+    "delta_per_std": 0.3447,
+    "inj_better_n": 165,
+    "inj_better_pct": 55.0,
+    "inj_better_ci95_half_pp": 5.59,
+    "paired_t_pval": 0.33708804815244,
+    "wilcoxon_pval": 0.0012693333296010787,
+    "cohens_d_paired": 0.0555
   },
   "rows": [
     {
@@ -187,11 +187,11 @@
       "pair_idx": 15,
       "available": true,
       "bl_ent_ipa": "li5təɜjiɛ5ntɕu5tsai5ɕi5niɛ5",
-      "inj_ent_ipa": "ləɜtɕ",
+      "inj_ent_ipa": "iɛ5nts.u5təɜjiɛ5ntɕu5tsai5tɕhi.5niɛ5",
       "tgt_ent_ipa": "təɜjiɛ5ntɕuoɜtsai5tɕhi.5niɛ5nxu5to5təɜtɕa5ŋtɕ",
       "bl_per_vs_tgt": 0.5556,
-      "inj_per_vs_tgt": 0.9111,
-      "delta_per": -0.3556,
+      "inj_per_vs_tgt": 0.6222,
+      "delta_per": -0.0667,
       "inj_better": false
     },
     {
@@ -352,11 +352,11 @@
       "pair_idx": 30,
       "available": true,
       "bl_ent_ipa": "pju5tɕi5ntɕiɛ5ntɑu5tɑ5ləɜ",
-      "inj_ent_ipa": "li5ŋmu5tɕi5ŋthiɛ5ntɑu5ta5ləɜ",
+      "inj_ent_ipa": "li5mu5tɕi5nthiɛ5ntɑu5",
       "tgt_ent_ipa": "pi5mu5tɕi5ŋtɕiɛ5ntɑu5tɑ5təɜtɕi5",
       "bl_per_vs_tgt": 0.2903,
-      "inj_per_vs_tgt": 0.2903,
-      "delta_per": 0.0,
+      "inj_per_vs_tgt": 0.4194,
+      "delta_per": -0.129,
       "inj_better": false
     },
     {
@@ -1617,11 +1617,11 @@
       "pair_idx": 145,
       "available": true,
       "bl_ent_ipa": "xu5təɜjiɛ5",
-      "inj_ent_ipa": "xtəɜ",
+      "inj_ent_ipa": "xu5təɜ",
       "tgt_ent_ipa": "təɜjiɛ5ntɕu5tsai5tɕhi.5niɛ5nxu5təɜləɜtɕjiɑ5ŋ",
       "bl_per_vs_tgt": 0.7955,
-      "inj_per_vs_tgt": 0.9091,
-      "delta_per": -0.1136,
+      "inj_per_vs_tgt": 0.8636,
+      "delta_per": -0.0682,
       "inj_better": false
     },
     {
@@ -2728,11 +2728,11 @@
       "pair_idx": 246,
       "available": true,
       "bl_ent_ipa": "ɑ5xo5tha5ŋji5tɕi5tɕi5ləɜtsa5nthi5ŋ",
-      "inj_ent_ipa": "təɜtha5nthi5ŋ",
+      "inj_ent_ipa": "ɑ5xo5ɕɑu5ts.wa5nji5ɕi5",
       "tgt_ent_ipa": "ɕjɑu5ts.wa5nli5tɕi5tɕi5ləɜtsa5n",
       "bl_per_vs_tgt": 0.4516,
-      "inj_per_vs_tgt": 0.7742,
-      "delta_per": -0.3226,
+      "inj_per_vs_tgt": 0.6452,
+      "delta_per": -0.1935,
       "inj_better": false
     },
     {
@@ -3267,12 +3267,12 @@
       "pair_idx": 295,
       "available": true,
       "bl_ent_ipa": "təɜjiɛ5ntɕou5tsai5s.i5niɛ5nxu5təɜləɜ",
-      "inj_ent_ipa": "iɛ5ntɕu5tsai5tɕhi.5niɛ5nxu5tu5təɜtɕja5",
+      "inj_ent_ipa": "təɜjiɛ5ntɕi5tsai5tɕhi5niɛ5nxu5təɜtəɜtɕja5",
       "tgt_ent_ipa": "təɜjiɛ5ntɕtsai5tɕhi5niɛ5nxu5tləɜtɕiɑ5ŋ",
       "bl_per_vs_tgt": 0.3421,
-      "inj_per_vs_tgt": 0.3421,
-      "delta_per": 0.0,
-      "inj_better": false
+      "inj_per_vs_tgt": 0.2105,
+      "delta_per": 0.1316,
+      "inj_better": true
     },
     {
       "pair_idx": 296,

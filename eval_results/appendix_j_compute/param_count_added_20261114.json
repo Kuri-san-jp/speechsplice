@@ -1,0 +1,14 @@
+{
+ "created": "2026-11-14",
+ "method": "sum of the floating-point tensor sizes in model.safetensors (the same rule as param_count.json; the file has no buffers and no tied duplicates)",
+ "rows": [
+  {
+   "row": "Whisper large-v3-turbo",
+   "params": 808878080,
+   "file_links": [
+    ".cache/huggingface/hub/models--openai--whisper-large-v3-turbo/snapshots/41f01f3fe87f28c78e2fbf8b568835947dd65ed9/model.safetensors"
+   ],
+   "n_tensors": 587
+  }
+ ]
+}

@@ -7,8 +7,8 @@
    "wilson_half": 2.28
   },
   "bl_source_reading": {
-   "k": 285,
-   "pct": 95.0
+   "k": 287,
+   "pct": 95.67
   },
   "ipa_change": {
    "k": 300,
@@ -827,9 +827,9 @@
    "word_b": "沈阳",
    "read_a": "哈尔滨",
    "read_b": "沈阳",
-   "bl_tr": "我可以再去找你一遍吗",
+   "bl_tr": "哈尔滨的天气最近很好",
    "inj_tr": "沈阳的天气最近很好",
-   "bl_hit": false,
+   "bl_hit": true,
    "inj_hit": true,
    "ipa_changed": true
   },
@@ -935,9 +935,9 @@
    "word_b": "南昌",
    "read_a": "福州",
    "read_b": "南昌",
-   "bl_tr": "我可以再去找你一遍吗",
+   "bl_tr": "福州是一座美丽的城市",
    "inj_tr": "南昌是一座美丽的城市",
-   "bl_hit": false,
+   "bl_hit": true,
    "inj_hit": true,
    "ipa_changed": true
   },

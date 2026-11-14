@@ -1,0 +1,2111 @@
+{
+ "summary": {
+  "n": 300,
+  "n_equal_token_count": 258,
+  "definition": "entity token spans of the source (word_a) and target (word_b) sentences under the span function used by the Table A1 runs (offset mapping over the whole sentence)",
+  "source": "eval_results/_spanfix_appB_jazh/span_check/span_check_20261002_155049.json",
+  "source_md5": "d59599a76d94d77a1d20048899a00b59"
+ },
+ "rows": [
+  {
+   "pair_idx": 0,
+   "word_a": "王",
+   "word_b": "山田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 1,
+   "word_a": "王",
+   "word_b": "山田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 2,
+   "word_a": "王",
+   "word_b": "山田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 3,
+   "word_a": "王",
+   "word_b": "山田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 4,
+   "word_a": "王",
+   "word_b": "山田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 5,
+   "word_a": "王",
+   "word_b": "山田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 6,
+   "word_a": "王",
+   "word_b": "山田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 7,
+   "word_a": "王",
+   "word_b": "山田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 8,
+   "word_a": "王",
+   "word_b": "山田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 9,
+   "word_a": "王",
+   "word_b": "山田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 10,
+   "word_a": "李",
+   "word_b": "田中",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 11,
+   "word_a": "李",
+   "word_b": "田中",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 12,
+   "word_a": "李",
+   "word_b": "田中",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 13,
+   "word_a": "李",
+   "word_b": "田中",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 14,
+   "word_a": "李",
+   "word_b": "田中",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 15,
+   "word_a": "李",
+   "word_b": "田中",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 16,
+   "word_a": "李",
+   "word_b": "田中",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 17,
+   "word_a": "李",
+   "word_b": "田中",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 18,
+   "word_a": "李",
+   "word_b": "田中",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 19,
+   "word_a": "李",
+   "word_b": "田中",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 20,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 21,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 22,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 23,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 24,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 25,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 26,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 27,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 28,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 29,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 30,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 31,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 32,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 33,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 34,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 35,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 36,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 37,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 38,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 39,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 40,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 41,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 42,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 43,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 44,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 45,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 46,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 47,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 48,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 49,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 50,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 51,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 52,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 53,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 54,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 55,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 56,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 57,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 58,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 59,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 60,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 61,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 62,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 63,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 64,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 65,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 66,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 67,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 68,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 69,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 70,
+   "word_a": "趙",
+   "word_b": "中村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 71,
+   "word_a": "趙",
+   "word_b": "中村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 72,
+   "word_a": "趙",
+   "word_b": "中村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 73,
+   "word_a": "趙",
+   "word_b": "中村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 74,
+   "word_a": "趙",
+   "word_b": "中村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 75,
+   "word_a": "趙",
+   "word_b": "中村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 76,
+   "word_a": "趙",
+   "word_b": "中村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 77,
+   "word_a": "趙",
+   "word_b": "中村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 78,
+   "word_a": "趙",
+   "word_b": "中村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 79,
+   "word_a": "趙",
+   "word_b": "中村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 80,
+   "word_a": "周",
+   "word_b": "小林",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 81,
+   "word_a": "周",
+   "word_b": "小林",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 82,
+   "word_a": "周",
+   "word_b": "小林",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 83,
+   "word_a": "周",
+   "word_b": "小林",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 84,
+   "word_a": "周",
+   "word_b": "小林",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 85,
+   "word_a": "周",
+   "word_b": "小林",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 86,
+   "word_a": "周",
+   "word_b": "小林",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 87,
+   "word_a": "周",
+   "word_b": "小林",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 88,
+   "word_a": "周",
+   "word_b": "小林",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 89,
+   "word_a": "周",
+   "word_b": "小林",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 90,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 91,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 92,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 93,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 94,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 95,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 96,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 97,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 98,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 99,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 100,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 101,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 102,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 103,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 104,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 105,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 106,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 107,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 108,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 109,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 110,
+   "word_a": "孫",
+   "word_b": "山本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 111,
+   "word_a": "孫",
+   "word_b": "山本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 112,
+   "word_a": "孫",
+   "word_b": "山本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 113,
+   "word_a": "孫",
+   "word_b": "山本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 114,
+   "word_a": "孫",
+   "word_b": "山本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 115,
+   "word_a": "孫",
+   "word_b": "山本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 116,
+   "word_a": "孫",
+   "word_b": "山本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 117,
+   "word_a": "孫",
+   "word_b": "山本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 118,
+   "word_a": "孫",
+   "word_b": "山本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 119,
+   "word_a": "孫",
+   "word_b": "山本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 120,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 121,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 122,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 123,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 124,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 125,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 126,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 127,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 128,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 129,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 130,
+   "word_a": "朱",
+   "word_b": "松本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 131,
+   "word_a": "朱",
+   "word_b": "松本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 132,
+   "word_a": "朱",
+   "word_b": "松本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 133,
+   "word_a": "朱",
+   "word_b": "松本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 134,
+   "word_a": "朱",
+   "word_b": "松本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 135,
+   "word_a": "朱",
+   "word_b": "松本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 136,
+   "word_a": "朱",
+   "word_b": "松本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 137,
+   "word_a": "朱",
+   "word_b": "松本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 138,
+   "word_a": "朱",
+   "word_b": "松本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 139,
+   "word_a": "朱",
+   "word_b": "松本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 140,
+   "word_a": "胡",
+   "word_b": "井上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 141,
+   "word_a": "胡",
+   "word_b": "井上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 142,
+   "word_a": "胡",
+   "word_b": "井上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 143,
+   "word_a": "胡",
+   "word_b": "井上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 144,
+   "word_a": "胡",
+   "word_b": "井上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 145,
+   "word_a": "胡",
+   "word_b": "井上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 146,
+   "word_a": "胡",
+   "word_b": "井上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 147,
+   "word_a": "胡",
+   "word_b": "井上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 148,
+   "word_a": "胡",
+   "word_b": "井上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 149,
+   "word_a": "胡",
+   "word_b": "井上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 150,
+   "word_a": "郭",
+   "word_b": "木村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 151,
+   "word_a": "郭",
+   "word_b": "木村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 152,
+   "word_a": "郭",
+   "word_b": "木村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 153,
+   "word_a": "郭",
+   "word_b": "木村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 154,
+   "word_a": "郭",
+   "word_b": "木村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 155,
+   "word_a": "郭",
+   "word_b": "木村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 156,
+   "word_a": "郭",
+   "word_b": "木村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 157,
+   "word_a": "郭",
+   "word_b": "木村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 158,
+   "word_a": "郭",
+   "word_b": "木村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 159,
+   "word_a": "郭",
+   "word_b": "木村",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 160,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 161,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 162,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 163,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 164,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 165,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 166,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 167,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 168,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 169,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 170,
+   "word_a": "高",
+   "word_b": "清水",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 171,
+   "word_a": "高",
+   "word_b": "清水",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 172,
+   "word_a": "高",
+   "word_b": "清水",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 173,
+   "word_a": "高",
+   "word_b": "清水",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 174,
+   "word_a": "高",
+   "word_b": "清水",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 175,
+   "word_a": "高",
+   "word_b": "清水",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 176,
+   "word_a": "高",
+   "word_b": "清水",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 177,
+   "word_a": "高",
+   "word_b": "清水",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 178,
+   "word_a": "高",
+   "word_b": "清水",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 179,
+   "word_a": "高",
+   "word_b": "清水",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 180,
+   "word_a": "林",
+   "word_b": "山口",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 181,
+   "word_a": "林",
+   "word_b": "山口",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 182,
+   "word_a": "林",
+   "word_b": "山口",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 183,
+   "word_a": "林",
+   "word_b": "山口",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 184,
+   "word_a": "林",
+   "word_b": "山口",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 185,
+   "word_a": "林",
+   "word_b": "山口",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 186,
+   "word_a": "林",
+   "word_b": "山口",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 187,
+   "word_a": "林",
+   "word_b": "山口",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 188,
+   "word_a": "林",
+   "word_b": "山口",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 189,
+   "word_a": "林",
+   "word_b": "山口",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 190,
+   "word_a": "羅",
+   "word_b": "池田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 191,
+   "word_a": "羅",
+   "word_b": "池田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 192,
+   "word_a": "羅",
+   "word_b": "池田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 193,
+   "word_a": "羅",
+   "word_b": "池田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 194,
+   "word_a": "羅",
+   "word_b": "池田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 195,
+   "word_a": "羅",
+   "word_b": "池田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 196,
+   "word_a": "羅",
+   "word_b": "池田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 197,
+   "word_a": "羅",
+   "word_b": "池田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 198,
+   "word_a": "羅",
+   "word_b": "池田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 199,
+   "word_a": "羅",
+   "word_b": "池田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 200,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 201,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 202,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 203,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 204,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 205,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 206,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 207,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 208,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 209,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 210,
+   "word_a": "梁",
+   "word_b": "石川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 211,
+   "word_a": "梁",
+   "word_b": "石川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 212,
+   "word_a": "梁",
+   "word_b": "石川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 213,
+   "word_a": "梁",
+   "word_b": "石川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 214,
+   "word_a": "梁",
+   "word_b": "石川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 215,
+   "word_a": "梁",
+   "word_b": "石川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 216,
+   "word_a": "梁",
+   "word_b": "石川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 217,
+   "word_a": "梁",
+   "word_b": "石川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 218,
+   "word_a": "梁",
+   "word_b": "石川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 219,
+   "word_a": "梁",
+   "word_b": "石川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 220,
+   "word_a": "謝",
+   "word_b": "前田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 221,
+   "word_a": "謝",
+   "word_b": "前田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 222,
+   "word_a": "謝",
+   "word_b": "前田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 223,
+   "word_a": "謝",
+   "word_b": "前田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 224,
+   "word_a": "謝",
+   "word_b": "前田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 225,
+   "word_a": "謝",
+   "word_b": "前田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 226,
+   "word_a": "謝",
+   "word_b": "前田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 227,
+   "word_a": "謝",
+   "word_b": "前田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 228,
+   "word_a": "謝",
+   "word_b": "前田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 229,
+   "word_a": "謝",
+   "word_b": "前田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 230,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 231,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 232,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 233,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 234,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 235,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 236,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 237,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 238,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 239,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 240,
+   "word_a": "唐",
+   "word_b": "小川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 241,
+   "word_a": "唐",
+   "word_b": "小川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 242,
+   "word_a": "唐",
+   "word_b": "小川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 243,
+   "word_a": "唐",
+   "word_b": "小川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 244,
+   "word_a": "唐",
+   "word_b": "小川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 245,
+   "word_a": "唐",
+   "word_b": "小川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 246,
+   "word_a": "唐",
+   "word_b": "小川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 247,
+   "word_a": "唐",
+   "word_b": "小川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 248,
+   "word_a": "唐",
+   "word_b": "小川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 249,
+   "word_a": "唐",
+   "word_b": "小川",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 250,
+   "word_a": "許",
+   "word_b": "岡田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 251,
+   "word_a": "許",
+   "word_b": "岡田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 252,
+   "word_a": "許",
+   "word_b": "岡田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 253,
+   "word_a": "許",
+   "word_b": "岡田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 254,
+   "word_a": "許",
+   "word_b": "岡田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 255,
+   "word_a": "許",
+   "word_b": "岡田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 256,
+   "word_a": "許",
+   "word_b": "岡田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 257,
+   "word_a": "許",
+   "word_b": "岡田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 258,
+   "word_a": "許",
+   "word_b": "岡田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 259,
+   "word_a": "許",
+   "word_b": "岡田",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 260,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 261,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 262,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 263,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 264,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 265,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 266,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 267,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 268,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 269,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 270,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 271,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 272,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 273,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 274,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 275,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 276,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 277,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 278,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 279,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 280,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 281,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 282,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 283,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 284,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 285,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 286,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 287,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 288,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 289,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "src_tokens": 1,
+   "tgt_tokens": 2
+  },
+  {
+   "pair_idx": 290,
+   "word_a": "曹",
+   "word_b": "村上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 291,
+   "word_a": "曹",
+   "word_b": "村上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 292,
+   "word_a": "曹",
+   "word_b": "村上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 293,
+   "word_a": "曹",
+   "word_b": "村上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 294,
+   "word_a": "曹",
+   "word_b": "村上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 295,
+   "word_a": "曹",
+   "word_b": "村上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 296,
+   "word_a": "曹",
+   "word_b": "村上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 297,
+   "word_a": "曹",
+   "word_b": "村上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 298,
+   "word_a": "曹",
+   "word_b": "村上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  },
+  {
+   "pair_idx": 299,
+   "word_a": "曹",
+   "word_b": "村上",
+   "src_tokens": 1,
+   "tgt_tokens": 1
+  }
+ ]
+}

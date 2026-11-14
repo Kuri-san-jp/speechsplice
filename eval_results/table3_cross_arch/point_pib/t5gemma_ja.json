@@ -1,21 +1,21 @@
 {
   "summary": {
-    "wav_dir": "/mnt/eval_results/_cc_wavs_a/t5gemma_ja",
+    "wav_dir": "/mnt/eval_results/_layerabl/t5gemma_ja_L25",
     "lang": "ja",
     "n_target": 300,
     "n_valid": 300,
     "bl_per_vs_tgt_mean": 0.824,
     "bl_per_vs_tgt_std": 0.4429,
-    "inj_per_vs_tgt_mean": 0.8168,
-    "inj_per_vs_tgt_std": 0.5322,
-    "delta_per_mean": 0.0072,
+    "inj_per_vs_tgt_mean": 0.8159,
+    "inj_per_vs_tgt_std": 0.5324,
+    "delta_per_mean": 0.0082,
     "delta_per_std": 0.4602,
-    "inj_better_n": 154,
-    "inj_better_pct": 51.33,
+    "inj_better_n": 156,
+    "inj_better_pct": 52.0,
     "inj_better_ci95_half_pp": 5.62,
-    "paired_t_pval": 0.7861195860861202,
-    "wilcoxon_pval": 0.025876571707101042,
-    "cohens_d_paired": 0.0157
+    "paired_t_pval": 0.7580433636729775,
+    "wilcoxon_pval": 0.0189379691134553,
+    "cohens_d_paired": 0.0178
   },
   "rows": [
     {
@@ -671,12 +671,12 @@
       "pair_idx": 59,
       "available": true,
       "bl_ent_ipa": "josaɲiːvataskeky",
-      "inj_ent_ipa": "jootobeb",
+      "inj_ent_ipa": "siiovatabisisaɲiːvataʃteku",
       "tgt_ent_ipa": "oʃorujovatabesanɲivataʃte",
       "bl_per_vs_tgt": 0.68,
-      "inj_per_vs_tgt": 0.8,
-      "delta_per": -0.12,
-      "inj_better": false
+      "inj_per_vs_tgt": 0.52,
+      "delta_per": 0.16,
+      "inj_better": true
     },
     {
       "pair_idx": 60,
@@ -1111,7 +1111,7 @@
       "pair_idx": 99,
       "available": true,
       "bl_ent_ipa": "konɔsorujivoːɡosanɲiːvadaste",
-      "inj_ent_ipa": "konosotjosaŋiːtuːʃte",
+      "inj_ent_ipa": "kadosanɲiːataʃte",
       "tgt_ent_ipa": "konoʃorujokadozaɲiːvataʃt",
       "bl_per_vs_tgt": 0.48,
       "inj_per_vs_tgt": 0.56,
@@ -1826,11 +1826,11 @@
       "pair_idx": 164,
       "available": true,
       "bl_ent_ipa": "naniːsaŋɡasaŋkadekiɾukaʊtatsene",
-      "inj_ent_ipa": "nasaŋkadekiɾukautatsne",
+      "inj_ent_ipa": "nasankdekiɾukaotazune",
       "tgt_ent_ipa": "saŋkasaŋkadekirʊkaotainemaʃ",
       "bl_per_vs_tgt": 0.5185,
-      "inj_per_vs_tgt": 0.4444,
-      "delta_per": 0.0741,
+      "inj_per_vs_tgt": 0.4815,
+      "delta_per": 0.037,
       "inj_better": true
     },
     {
@@ -1991,12 +1991,12 @@
       "pair_idx": 179,
       "available": true,
       "bl_ent_ipa": "takasanɲivataʃtekud",
-      "inj_ent_ipa": "taʃtekudas",
+      "inj_ent_ipa": "taʃdekudasa",
       "tgt_ent_ipa": "ʃoruoimiːzosanɲiːvat",
       "bl_per_vs_tgt": 0.95,
-      "inj_per_vs_tgt": 0.95,
-      "delta_per": 0.0,
-      "inj_better": false
+      "inj_per_vs_tgt": 0.9,
+      "delta_per": 0.05,
+      "inj_better": true
     },
     {
       "pair_idx": 180,

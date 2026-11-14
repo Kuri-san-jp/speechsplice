@@ -1,0 +1,53 @@
+diff --git a/edit_content.py b/edit_content.py
+index 694d55f..5f201aa 100755
+--- a/edit_content.py
++++ b/edit_content.py
+@@ -54,6 +54,12 @@ if __name__ == "__main__":
+         default="out/content/wavs",
+         help="directory path to save outuputs",
+     )
++    parser.add_argument(
++        "--offset",
++        type=int,
++        default=0,
++        help="output index offset (gen_{i+offset}_*.wav) for resumed batches",
++    )
+     args = parser.parse_args()
+ 
+     print("Initializing Grad-TTS...")
+@@ -74,7 +80,8 @@ if __name__ == "__main__":
+         params.pe_scale,
+     )
+     generator.load_state_dict(
+-        torch.load(args.checkpoint, map_location=lambda loc, storage: loc)
++        torch.load(args.checkpoint, map_location=lambda loc, storage: loc,
++                   weights_only=False)  # torch>=2.6 compat (trusted local ckpt)
+     )
+     _ = generator.cuda().eval()
+     print(f"Number of parameters: {generator.nparams}")
+@@ -84,7 +91,8 @@ if __name__ == "__main__":
+         h = AttrDict(json.load(f))
+     vocoder = HiFiGAN(h)
+     vocoder.load_state_dict(
+-        torch.load(HIFIGAN_CHECKPT, map_location=lambda loc, storage: loc)["generator"]
++        torch.load(HIFIGAN_CHECKPT, map_location=lambda loc, storage: loc,
++                   weights_only=False)["generator"]  # torch>=2.6 compat
+     )
+     _ = vocoder.cuda().eval()
+     vocoder.remove_weight_norm()
+@@ -136,9 +144,10 @@ if __name__ == "__main__":
+                 vocoder(y_dec_cat).cpu().squeeze().clamp(-1, 1).numpy() * VOLUME_MAX
+             ).astype(np.int16)
+ 
+-            write(os.path.join(args.save_dir, f"gen_{i}_gradtts-1.wav"), SAMPLE_RATE, audio1)
+-            write(os.path.join(args.save_dir, f"gen_{i}_gradtts-2.wav"), SAMPLE_RATE, audio2)
+-            write(os.path.join(args.save_dir, f"gen_{i}_EdiTTS.wav"), SAMPLE_RATE, audio_edit)
+-            write(os.path.join(args.save_dir, f"gen_{i}_baseline.wav"), SAMPLE_RATE, audio_cat)
++            k = i + args.offset
++            write(os.path.join(args.save_dir, f"gen_{k}_gradtts-1.wav"), SAMPLE_RATE, audio1)
++            write(os.path.join(args.save_dir, f"gen_{k}_gradtts-2.wav"), SAMPLE_RATE, audio2)
++            write(os.path.join(args.save_dir, f"gen_{k}_EdiTTS.wav"), SAMPLE_RATE, audio_edit)
++            write(os.path.join(args.save_dir, f"gen_{k}_baseline.wav"), SAMPLE_RATE, audio_cat)
+ 
+     print(f"Check out {args.save_dir} folder for generated samples.")
+\ No newline at end of file

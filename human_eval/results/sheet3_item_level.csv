@@ -10,9 +10,9 @@ item_id,set,language,source_word,target_word,source_reading,target_reading,sente
 0035,proper_name_steering,en,Moscow,Beijing,,,Beijing is famous.,0,0,10,10,True,True,main,a
 0044,proper_name_steering,en,Netflix,Spotify,,,Spotify is famous.,0,1,9,10,True,True,main,b
 0045,proper_name_steering,en,Facebook,Twitter,,,Twitter is famous.,0,0,10,10,True,True,main,b
-0047,proper_name_steering,en,Mumbai,Delhi,,,Delhi is famous.,0,0,10,10,True,True,main,b
+0047,proper_name_steering,en,Mumbai,Delhi,,,Delhi is famous.,0,0,10,10,True,False,main,b
 0055,proper_name_steering,en,Harvard,Oxford,,,"Yesterday, Oxford became famous.",0,0,10,10,True,True,main,b
-0056,proper_name_steering,en,Ferrari,Porsche,,,"Yesterday, Porsche became famous.",0,0,10,10,True,True,main,a
+0056,proper_name_steering,en,Ferrari,Porsche,,,"Yesterday, Porsche became famous.",0,0,10,10,True,False,main,a
 0057,proper_name_steering,en,Saturn,Jupiter,,,"Yesterday, Jupiter became famous.",0,0,10,10,True,True,main,a
 0069,proper_name_steering,en,Stanford,Berkeley,,,"Yesterday, Berkeley became famous.",0,0,10,10,True,True,main,a
 0070,proper_name_steering,en,Napoleon,Caesar,,,"Yesterday, Caesar became famous.",0,0,10,10,True,True,main,b

@@ -13,8 +13,7 @@ Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,138,bl;tgt;inj at l
 Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,141,bl;tgt;inj at l*=1/8/15/22/26,43
 Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,158,bl;tgt;inj at l*=1/8/15/22/26,43
 Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,EN,238,bl;tgt;inj at l*=1/8/15/22/26,43
-Table 3,At our replacement point,T5Gemma-TTS,ZH,196,bl;inj;tgt,43
-Table 3,Layer sweep,T5Gemma-TTS,ZH,196,bl;tgt;inj at l*=1/8/15/22/26,43
+Table 3,At our replacement point; Layer sweep,T5Gemma-TTS,ZH,196,bl;tgt;inj at l*=1/8/15/22/26,43
 Table 3,Two-entity sentences,T5Gemma-TTS,EN,2,bl;inj1;inj2;inj12;tgt1;tgt2,43
 Table 3,Two-entity sentences,T5Gemma-TTS,EN,5,bl;inj1;inj2;inj12;tgt1;tgt2,43
 Table 3,Two-entity sentences,T5Gemma-TTS,EN,21,bl;inj1;inj2;inj12;tgt1;tgt2,43

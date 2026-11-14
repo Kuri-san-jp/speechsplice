@@ -1,0 +1,89 @@
+{
+ "files": [
+  {
+   "file": "ja_judge.json",
+   "source": "eval_results/ja_wordrepl300_gen/judge.json",
+   "source_md5": "7b78c5421a7c30332f443beeae9bcde3",
+   "note": "Furigana Whisper verdicts (Whisper-INJ JA); also the JA transcripts of Table A6"
+  },
+  {
+   "file": "zh_judge.json",
+   "source": "eval_results/zh_wordrepl300_gen/judge.json",
+   "source_md5": "dabaad444a836f4ef3e6f6335ed11938",
+   "note": "Whisper large-v3 + pinyin verdicts (Whisper-INJ ZH), after the 2026-08-04 regeneration of the silent BL clips of pairs 67 and 76"
+  },
+  {
+   "file": "en_judge.json",
+   "source": "eval_results/en_wordrepl300_splice_inj/final_merged_300.json",
+   "source_md5": "80a6859b8791a9e3af07cb32b0d5f962",
+   "note": "Final EN SpeechSplice set: 284 equal-length pairs from en_wordrepl100_pairs_gen plus 16 unequal-length pairs regenerated with the variable-length splice (en_inj_splice_meta.json). Per-row Whisper medium.en transcript and UTMOS of the INJ clip. The summary note was translated into English"
+  },
+  {
+   "file": "en_inj_splice_meta.json",
+   "source": "eval_results/en_wordrepl300_splice_inj/meta.json",
+   "source_md5": "1aee2c278d85f343018492252903aeac",
+   "note": "The 16 unequal-length EN pairs regenerated with the variable-length splice"
+  },
+  {
+   "file": "en_inj_splice_scores.json",
+   "source": "eval_results/en_wordrepl300_splice_inj/scores.json",
+   "source_md5": "1158d8df29a946a093fa47d34c3fc7bc",
+   "note": "Whisper medium.en and UTMOS of the 16 regenerated EN INJ clips"
+  },
+  {
+   "file": "en_results.json",
+   "source": "eval_results/en_wordrepl100_pairs_gen/results.json",
+   "source_md5": "a0f1c6eaf9d67bdd467beabfbf964ccc",
+   "note": "EN generation run (all 300 pairs): per-pair UTMOS of BL (and of the pre-splice INJ, superseded for the 16 unequal-length pairs)"
+  },
+  {
+   "file": "ja_results.json",
+   "source": "eval_results/ja_wordrepl300_gen/results.json",
+   "source_md5": "43fd7e615e52164f55b56c2208f75ee1",
+   "paths_rewritten": "1 occurrence(s) of the host project path replaced by /mnt (the container mount)",
+   "note": "JA generation run: per-pair UTMOS of BL and INJ"
+  },
+  {
+   "file": "zh_results.json",
+   "source": "eval_results/zh_wordrepl300_gen/results.json",
+   "source_md5": "1759d644666a6e75dd82ad10df75b2f6",
+   "note": "ZH generation run after the 2026-08-04 regeneration: per-pair UTMOS of BL and INJ"
+  },
+  {
+   "file": "speaker_sim_en.json",
+   "source": "eval_results/speaker_sim_wordrepl_splice_wavlm.json",
+   "source_md5": "1382586812a24e633f89aad065c5c45b",
+   "note": "WavLM-SV summary [mean, 1.96*SE, SD] (per-pair values were not stored)"
+  },
+  {
+   "file": "speaker_sim_ja.json",
+   "source": "eval_results/speaker_sim_ja_wordrepl_splice_wavlm.json",
+   "source_md5": "1bd1ef7bd04492612f4cfbfbce5cce04",
+   "note": "WavLM-SV summary [mean, 1.96*SE, SD]"
+  },
+  {
+   "file": "speaker_sim_zh.json",
+   "source": "eval_results/speaker_sim_zh_wordrepl_splice_wavlm.json",
+   "source_md5": "a213e30fd1ad96f064b03a201a3ae5fa",
+   "note": "WavLM-SV summary [mean, 1.96*SE, SD]"
+  },
+  {
+   "file": "speaker_similarity_tests.json",
+   "source": "eval_results/delta_sim_prompt_all.json",
+   "source_md5": "b2baf604eb3e209dad9a37a1f6d15aa4",
+   "note": "Paired change of the INJ--prompt similarity (INJ minus BL) with Wilcoxon p; Section 5.1/5.2"
+  },
+  {
+   "file": "f0_summary.json",
+   "source": "eval_results/f0_systems_v2.json",
+   "source_md5": "31e2eb042e08bb1edda16db8901234ad",
+   "note": "|dF0| summary for all five systems/languages; ratio = abs_diff / anchor_abs_diff (per-pair F0 values were not stored)"
+  },
+  {
+   "file": "ja_ab_replacement_item_check.json",
+   "source": "eval_results/ab_repl_check.json",
+   "source_md5": "56c8c640c2125b9eaf24be35bc27fc00",
+   "note": "Furigana Whisper transcripts of the replacement JA listening item 7001 (not part of the 300 pairs)"
+  }
+ ]
+}

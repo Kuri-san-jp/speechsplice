@@ -1,3 +1,9 @@
+# Main packages of the GPU environment ("my-lab-image", docker/Dockerfile.main).
+# docker/my_lab_image_freeze.txt is the complete `pip freeze` of that image and pins
+# every package; use it for an exact environment. Irodori-TTS, XTTS-v2 and VoiceCraft
+# ran in their own images (docker/Dockerfile.irodori, .xtts, .voicecraft).
+# System packages: espeak-ng (phonemizer backend), ffmpeg.
+--extra-index-url https://download.pytorch.org/whl/cu124
 torch==2.6.0
 torchaudio==2.6.0
 torchvision==0.21.0
@@ -5,24 +11,28 @@ transformers==4.57.3
 numpy==1.26.4
 scipy
 scikit-learn
+pandas
 soundfile
 librosa
-pysptk
-pymcd
-pykakasi
-phonemizer
-openai-whisper
-huggingface-hub
+ffmpeg-python
+langdetect
 sentencepiece
 einops
 omegaconf==2.3.0
 peft
 datasets
 accelerate
-bitsandbytes
-torchmetrics
-g2p_en
+huggingface-hub
+openai-whisper
+phonemizer
+pysptk
+pymcd
+pyworld==0.3.4
+pykakasi
 pypinyin
-vector-quantize-pytorch
-torchtune
-torchao
+g2p_en
+nltk                      # plus the data averaged_perceptron_tagger(_eng) and cmudict
+qwen-tts                  # Qwen3-TTS (0.1.1 in the image)
+pyopenjtalk               # used inside the T5Gemma-TTS duration estimator (0.4.1 in the image)
+xcodec2 @ https://huggingface.co/NandemoGHS/Anime-XCodec2-44.1kHz-v2/resolve/main/xcodec2-0.1.7.tar.gz   # install with --no-deps
+torchao==0.9.0

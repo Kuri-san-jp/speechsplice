@@ -22,13 +22,22 @@ env/
 *.ogg
 !docs/audio/**/*.wav
 
-# Run artifacts
+# Run artifacts and third-party code fetched by scripts/setup_third_party.sh
 human_eval/analysis/sim_ab.db
 *.db
 out/
 eval_results/**/checkpoint.json
 eval_results/_cc_wavs*/
-eval_results/appendix_f_baselines/
+eval_results/_layerabl/
+eval_results/_natural_refs/
+eval_results/_natural_refs_norm/
+eval_results/subjective_eval_jsut_audio/
+.torch_cache/
+scripts/irodori/_repo/
+scripts/kiseki/_vendor/
+scripts/xtts/_ref/
+third_party/EdiTTS/
+third_party/VoiceCraft/
 
 # Editor / OS
 .DS_Store

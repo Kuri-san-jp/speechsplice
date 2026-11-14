@@ -1,0 +1,6675 @@
+{
+ "summary": {
+  "n_pairs": 300,
+  "n_valid": 300,
+  "excluded_silent": 0,
+  "whisper_model": "medium.en",
+  "speechsplice": {
+   "source_in_bl": {
+    "k": 270,
+    "n": 300,
+    "pct": 90.0,
+    "wilson_ci_center": 89.49,
+    "wilson_ci_half": 3.41
+   },
+   "whisper_inj": {
+    "k": 267,
+    "n": 300,
+    "pct": 89.0,
+    "wilson_ci_center": 88.51,
+    "wilson_ci_half": 3.55
+   },
+   "ipa_change": {
+    "k": 300,
+    "n": 300,
+    "pct": 100.0,
+    "wilson_ci_center": 99.37,
+    "wilson_ci_half": 0.63
+   },
+   "utmos_bl": [
+    3.615917899608612,
+    0.03747813274490174
+   ],
+   "utmos_inj": [
+    3.633464503288269,
+    0.037514309832369565
+   ],
+   "utmos_wilcoxon_p": 0.5406674196744994
+  },
+  "voicecraft": {
+   "n_edited": 0,
+   "whisper_inj": {
+    "k": 0,
+    "n": 0,
+    "pct": null,
+    "wilson_ci_center": 0.0,
+    "wilson_ci_half": 0.0
+   },
+   "ipa_change": {
+    "k": 0,
+    "n": 0,
+    "pct": null,
+    "wilson_ci_center": 0.0,
+    "wilson_ci_half": 0.0
+   },
+   "utmos_edit": [
+    null,
+    null
+   ],
+   "utmos_bl_vs_edit_wilcoxon_p": null
+  },
+  "wavlm_sim": {
+   "bl_inj": [
+    0.8662169222036997,
+    0.007250380309342333
+   ],
+   "anchor": [
+    0.8645173269510269,
+    0.007280573623193816
+   ],
+   "bl_edit": null
+  }
+ },
+ "rows": [
+  {
+   "sid": "s0000",
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "London is famous.",
+   "bl": {
+    "rms": 0.07297621272885714,
+    "whisper": "London is famous.",
+    "ipa": "l ɛ n d ə n ɪ z f eɪ m ə s",
+    "utmos": 4.187243938446045
+   },
+   "inj": {
+    "rms": 0.055065807891853134,
+    "whisper": "Paris is famous.",
+    "ipa": "p ɛ ɹ ɪ s ɪ z f eɪ m ə s",
+    "utmos": 3.801924228668213
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 15
+  },
+  {
+   "sid": "s0001",
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "Michael is famous.",
+   "bl": {
+    "rms": 0.04576478569495784,
+    "whisper": "Michael is famous.",
+    "ipa": "m aɪ k ʊ l ɪ z f eɪ m ə s",
+    "utmos": 3.3680992126464844
+   },
+   "inj": {
+    "rms": 0.05564133775761068,
+    "whisper": "John is famous.",
+    "ipa": "dʒ ɑː n ɪ z f eɪ m ə s",
+    "utmos": 3.9822089672088623
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0002",
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "Einstein is famous.",
+   "bl": {
+    "rms": 0.049208267633892466,
+    "whisper": "Einstein is famous.",
+    "ipa": "aɪ t s t aɪ n ɪ z f eɪ m ə s",
+    "utmos": 3.286156177520752
+   },
+   "inj": {
+    "rms": 0.05016887453878942,
+    "whisper": "Nickness famous.",
+    "ipa": "n ɪ k n ɪ z f eɪ m ə s",
+    "utmos": 2.954667091369629
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  },
+  {
+   "sid": "s0003",
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "Mozart is famous.",
+   "bl": {
+    "rms": 0.06435513964180392,
+    "whisper": "Mozart is famous.",
+    "ipa": "m oʊ t s oʊ t ɪ z f eɪ m ə s",
+    "utmos": 4.155185699462891
+   },
+   "inj": {
+    "rms": 0.059773462461100366,
+    "whisper": "But it's famous.",
+    "ipa": "n ʌ n ɪ z f eɪ m ɪ s",
+    "utmos": 3.8328018188476562
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  },
+  {
+   "sid": "s0004",
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "Amazon is famous.",
+   "bl": {
+    "rms": 0.06326361703350802,
+    "whisper": "Amazon is famous.",
+    "ipa": "æ m ə z ɔ n ɪ z f eɪ m ə s",
+    "utmos": 3.916074752807617
+   },
+   "inj": {
+    "rms": 0.06298652750753989,
+    "whisper": "Google is famous.",
+    "ipa": "ɡ uː ɡ ʊ ɪ z f eɪ m ə s",
+    "utmos": 3.4847354888916016
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0005",
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "Harvard is famous.",
+   "bl": {
+    "rms": 0.04967874778530045,
+    "whisper": "Harvard is famous.",
+    "ipa": "h ɑː v ɚ d ɪ z f eɪ m ə s",
+    "utmos": 3.5515153408050537
+   },
+   "inj": {
+    "rms": 0.05980309151161142,
+    "whisper": "Oxford is famous.",
+    "ipa": "ɑː k s f ɚ d ɪ z f eɪ m ə s",
+    "utmos": 4.137180805206299
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 18
+  },
+  {
+   "sid": "s0006",
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "Ferrari is famous.",
+   "bl": {
+    "rms": 0.04760792655724867,
+    "whisper": "Ferrari is famous.",
+    "ipa": "f ɚ ɹ ɑː ɹ i ɪ z f eɪ m ə s",
+    "utmos": 3.849246025085449
+   },
+   "inj": {
+    "rms": 0.05604599774864941,
+    "whisper": "Porsche is famous.",
+    "ipa": "h oː tʃ ɪ z f eɪ m p ə s",
+    "utmos": 3.124354600906372
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0007",
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "Saturn is famous.",
+   "bl": {
+    "rms": 0.053187689798637965,
+    "whisper": "Saturn is famous.",
+    "ipa": "s æ ɾ ɚ n ɪ z f eɪ m ə s",
+    "utmos": 3.393625259399414
+   },
+   "inj": {
+    "rms": 0.057680725795779375,
+    "whisper": "Jupiter is famous.",
+    "ipa": "tʃ iː p ə ɾ ɚ ɪ z f eɪ m ə s",
+    "utmos": 4.228884220123291
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 21
+  },
+  {
+   "sid": "s0008",
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "Diamond is famous.",
+   "bl": {
+    "rms": 0.048630778967630156,
+    "whisper": "Diamond is famous.",
+    "ipa": "d aɪ m ə n d ɪ s f eɪ m ə s",
+    "utmos": 3.8698537349700928
+   },
+   "inj": {
+    "rms": 0.07012172135702541,
+    "whisper": "Emerald is famous.",
+    "ipa": "ɛ m ɹ ɚ l d ɪ z f eɪ m ə s",
+    "utmos": 4.165351867675781
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  },
+  {
+   "sid": "s0009",
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "Christmas is famous.",
+   "bl": {
+    "rms": 0.04352013982720194,
+    "whisper": "Christmas is famous.",
+    "ipa": "k ɹ ɪ s m ə s ɪ z f eɪ m ɪ s",
+    "utmos": 3.8168718814849854
+   },
+   "inj": {
+    "rms": 0.07414918220835306,
+    "whisper": "Halloween is famous.",
+    "ipa": "h ɛ l ə w iː n ɪ z f eɪ m ə s",
+    "utmos": 3.375183582305908
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0010",
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "Hollywood is famous.",
+   "bl": {
+    "rms": 0.053202998249908554,
+    "whisper": "Hollywood's famous.",
+    "ipa": "h aʊ iː w ʊ d ɪ z f eɪ m ə s",
+    "utmos": 3.734412670135498
+   },
+   "inj": {
+    "rms": 0.051181590615316366,
+    "whisper": "Broadway is famous.",
+    "ipa": "b ɹ ɑː d w eɪ ɪ z f eɪ m ə s",
+    "utmos": 3.120004177093506
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 12
+  },
+  {
+   "sid": "s0011",
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "Victoria is famous.",
+   "bl": {
+    "rms": 0.047775353204622784,
+    "whisper": "Victoria is famous.",
+    "ipa": "v ɪ k t oː ɹ i ɐ ɪ z f eɪ m ə s",
+    "utmos": 3.8176305294036865
+   },
+   "inj": {
+    "rms": 0.05916536876934831,
+    "whisper": "Elizabeth is famous.",
+    "ipa": "ɪ l ɪ z ə b ə θ ɪ z f eɪ m ə s",
+    "utmos": 3.9539482593536377
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0012",
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "Leonardo is famous.",
+   "bl": {
+    "rms": 0.0739819777136374,
+    "whisper": "Leonardo is famous.",
+    "ipa": "l iː n ɑː d oʊ ɪ z f eɪ m ə s",
+    "utmos": 2.9983773231506348
+   },
+   "inj": {
+    "rms": 0.04769361034078988,
+    "whisper": "Picasso is famous.",
+    "ipa": "p ɪ k ɑː s ɚ ɪ z f eɪ m ə s",
+    "utmos": 3.3053274154663086
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0013",
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "Everest is famous.",
+   "bl": {
+    "rms": 0.035412162836901004,
+    "whisper": "Everest is famous.",
+    "ipa": "ɛ v ɹ s t ɪ z f eɪ m ə s",
+    "utmos": 3.4219889640808105
+   },
+   "inj": {
+    "rms": 0.061328394630224374,
+    "whisper": "Kilimanjaro is famous.",
+    "ipa": "k ɪ l m ə n dʒ ɛ ɹ ɪ z f eɪ m ə s",
+    "utmos": 3.9222893714904785
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0014",
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "Atlantic is famous.",
+   "bl": {
+    "rms": 0.06846081864486596,
+    "whisper": "Atlantic is famous.",
+    "ipa": "ð æ d l æ n t ɪ k ɪ z f eɪ m ə s",
+    "utmos": 3.6671340465545654
+   },
+   "inj": {
+    "rms": 0.05305401856444298,
+    "whisper": "Pacific is famous.",
+    "ipa": "p ə s ɪ f ɪ k ɪ z f eɪ m ə s",
+    "utmos": 4.2403950691223145
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0015",
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "Shakespeare is famous.",
+   "bl": {
+    "rms": 0.04322977057208682,
+    "whisper": "Shakespeare's famous.",
+    "ipa": "ʃ eɪ k s p ɪ z f eɪ m ə s",
+    "utmos": 3.8771042823791504
+   },
+   "inj": {
+    "rms": 0.04635059758574594,
+    "whisper": "Dickens is famous.",
+    "ipa": "d ɪ k ɪ n z ɪ z f eɪ m ə s",
+    "utmos": 3.6162126064300537
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0016",
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "Samsung is famous.",
+   "bl": {
+    "rms": 0.052189980645488125,
+    "whisper": "Samsung is famous.",
+    "ipa": "s æ m s ə n ɪ z f eɪ m ə s",
+    "utmos": 3.6591267585754395
+   },
+   "inj": {
+    "rms": 0.03513032319755016,
+    "whisper": "Apple is famous.",
+    "ipa": "æ p ʊ ɪ z f eɪ m ə s",
+    "utmos": 3.6307082176208496
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0017",
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "Tokyo is famous.",
+   "bl": {
+    "rms": 0.06022541247912705,
+    "whisper": "Tokyo's famous!",
+    "ipa": "t ɚ k i oʊ s f eɪ m ə s",
+    "utmos": 3.7223572731018066
+   },
+   "inj": {
+    "rms": 0.05414308715883883,
+    "whisper": "Berlin is famous.",
+    "ipa": "b ɚ l ɪ n ɪ z f eɪ m ə s",
+    "utmos": 3.2369425296783447
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 19
+  },
+  {
+   "sid": "s0018",
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "Sydney is famous.",
+   "bl": {
+    "rms": 0.04868895357144182,
+    "whisper": "Sydney is famous.",
+    "ipa": "s ɪ d n i ɪ z f eɪ m ə s",
+    "utmos": 3.750434637069702
+   },
+   "inj": {
+    "rms": 0.053670821444753915,
+    "whisper": "Toronto is famous.",
+    "ipa": "t ɹ ɑː n t oʊ ɪ z f eɪ m ə s",
+    "utmos": 3.299619674682617
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0019",
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "Stanford is famous.",
+   "bl": {
+    "rms": 0.028540561460417457,
+    "whisper": "Stanford is famous.",
+    "ipa": "s t æ m f ɚ d ɪ z f eɪ m ə s",
+    "utmos": 3.5218310356140137
+   },
+   "inj": {
+    "rms": 0.05204681528085235,
+    "whisper": "Mercury is famous.",
+    "ipa": "b ɚ k l i ɪ z f eɪ m ə s",
+    "utmos": 3.607372283935547
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 19
+  },
+  {
+   "sid": "s0020",
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "Napoleon is famous.",
+   "bl": {
+    "rms": 0.057965804646005016,
+    "whisper": "Napoleon is famous.",
+    "ipa": "n ɪ p oʊ l ɪ ɪ n ɪ z f eɪ n t n ɪ s",
+    "utmos": 4.1790666580200195
+   },
+   "inj": {
+    "rms": 0.05156901770119495,
+    "whisper": "Caesar is famous.",
+    "ipa": "s iː z ɚ ɪ z f eɪ m ə s",
+    "utmos": 3.8153884410858154
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 30
+  },
+  {
+   "sid": "s0021",
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "Darwin is famous.",
+   "bl": {
+    "rms": 0.05505082856149371,
+    "whisper": "Darwin is famous.",
+    "ipa": "d ɑː w ɪ n ɪ z f eɪ m ə s",
+    "utmos": 3.3721959590911865
+   },
+   "inj": {
+    "rms": 0.06309843487831102,
+    "whisper": "Galileo is famous.",
+    "ipa": "d ɛ l ə l eɪ oʊ w ʌ z f eɪ m ə s",
+    "utmos": 3.4205217361450195
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0022",
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "Tesla is famous.",
+   "bl": {
+    "rms": 0.05478871044219302,
+    "whisper": "Tesla is famous.",
+    "ipa": "t æ z l ə ɪ z f eɪ m ə s",
+    "utmos": 3.4768786430358887
+   },
+   "inj": {
+    "rms": 0.04561571770540295,
+    "whisper": "Edison is famous.",
+    "ipa": "ɛ ɾ ɪ s ə n ɪ z f eɪ m ə s",
+    "utmos": 3.387303352355957
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 15
+  },
+  {
+   "sid": "s0023",
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "Boeing is famous.",
+   "bl": {
+    "rms": 0.02711084887837511,
+    "whisper": "Bowen is famous.",
+    "ipa": "b oʊ ɪ n ɪ z f eɪ n ə s",
+    "utmos": 3.5068321228027344
+   },
+   "inj": {
+    "rms": 0.032254019809780494,
+    "whisper": "Airbus is famous.",
+    "ipa": "k ɛ ɹ b ʌ s ɪ z f eɪ m ə s",
+    "utmos": 3.4678213596343994
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0024",
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "Disney is famous.",
+   "bl": {
+    "rms": 0.04179401083752574,
+    "whisper": "Disney is famous.",
+    "ipa": "d ɪ z n i ɪ z f eɪ m ə s",
+    "utmos": 3.4138669967651367
+   },
+   "inj": {
+    "rms": 0.037490447850066326,
+    "whisper": "Warner is famous.",
+    "ipa": "w oʊ n ɚ ɪ z f eɪ m ə s",
+    "utmos": 3.8521385192871094
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0025",
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "Intel is famous.",
+   "bl": {
+    "rms": 0.06814753871439307,
+    "whisper": "Intel is famous.",
+    "ipa": "ɪ n t æ l ɪ z f eɪ m ə s",
+    "utmos": 3.5813140869140625
+   },
+   "inj": {
+    "rms": 0.04467884788870178,
+    "whisper": "is famous.",
+    "ipa": "ð ɪ z f eɪ m ə s",
+    "utmos": 3.962575912475586
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0026",
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "Chicago is famous.",
+   "bl": {
+    "rms": 0.058103914998557465,
+    "whisper": "Chicago is famous.",
+    "ipa": "ʃ ɪ k ɑː ɡ oʊ ɪ z f eɪ m ə s",
+    "utmos": 3.5382323265075684
+   },
+   "inj": {
+    "rms": 0.05183761549526629,
+    "whisper": "Boston is famous.",
+    "ipa": "b ɑː s t ə m ɪ z f eɪ m ə s",
+    "utmos": 3.6545491218566895
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0027",
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "Dallas is famous.",
+   "bl": {
+    "rms": 0.06945655771079129,
+    "whisper": "Dallas is famous.",
+    "ipa": "d æ l s ɪ z f eɪ m ə s",
+    "utmos": 3.5902047157287598
+   },
+   "inj": {
+    "rms": 0.040920996955631235,
+    "whisper": "Houston is famous.",
+    "ipa": "iː s t ə n ɪ z f eɪ m ə s",
+    "utmos": 3.6180472373962402
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0028",
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "Denver is famous.",
+   "bl": {
+    "rms": 0.09048836622667855,
+    "whisper": "Ember is famous!",
+    "ipa": "ð ɛ m b ɹ ɪ z f eɪ m ə s",
+    "utmos": 2.6263575553894043
+   },
+   "inj": {
+    "rms": 0.062055686936887476,
+    "whisper": "Seattle is famous.",
+    "ipa": "s i a r o ɪ z f ɪ ŋ ɪ s",
+    "utmos": 4.165891647338867
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 13
+  },
+  {
+   "sid": "s0029",
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "Miami is famous.",
+   "bl": {
+    "rms": 0.0664759175333156,
+    "whisper": "Miami's famous.",
+    "ipa": "m aɪ ʌ m iː z f eɪ m ə s",
+    "utmos": 4.188368797302246
+   },
+   "inj": {
+    "rms": 0.05961242637020226,
+    "whisper": "Atlanta is famous.",
+    "ipa": "ə t t l æ n t ɐ ɪ z f ɪ ŋ k s",
+    "utmos": 3.792323112487793
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0030",
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "Nike is famous.",
+   "bl": {
+    "rms": 0.046797336828870426,
+    "whisper": "Nike just famous.",
+    "ipa": "n ɑː k iː d ɪ z f eɪ m ə s",
+    "utmos": 3.3302419185638428
+   },
+   "inj": {
+    "rms": 0.04672763000206636,
+    "whisper": "Indeed this is famous.",
+    "ipa": "ɐ d iː l ɪ s ɪ z f eɪ m ə s",
+    "utmos": 3.048440456390381
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0031",
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "Toyota is famous.",
+   "bl": {
+    "rms": 0.061364826740812776,
+    "whisper": "Toyota is famous.",
+    "ipa": "t oʊ j ɔ ɾ ɐ ɪ z f eɪ m ə s",
+    "utmos": 3.3734498023986816
+   },
+   "inj": {
+    "rms": 0.05253929960588328,
+    "whisper": "Honda is famous.",
+    "ipa": "h a n d ə ɪ z f eɪ m ə s",
+    "utmos": 3.9641385078430176
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0032",
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "Columbus is famous.",
+   "bl": {
+    "rms": 0.04336929989604066,
+    "whisper": "Columbus is famous.",
+    "ipa": "k oː l m ɪ s ɪ z f eɪ m ə s",
+    "utmos": 3.0768418312072754
+   },
+   "inj": {
+    "rms": 0.06357171266656424,
+    "whisper": "Magellan is famous.",
+    "ipa": "m ə dʒ æ ə n d ɪ z f eɪ m ə s",
+    "utmos": 3.890803098678589
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 19
+  },
+  {
+   "sid": "s0033",
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "Madrid is famous.",
+   "bl": {
+    "rms": 0.059792682947429954,
+    "whisper": "Madrid is famous.",
+    "ipa": "m ɪ d ɹ ɪ d ɪ z f eɪ m ə s",
+    "utmos": 3.6787922382354736
+   },
+   "inj": {
+    "rms": 0.05115387598420684,
+    "whisper": "Rome is famous.",
+    "ipa": "ɹ oʊ m ɪ z f eɪ m ə s",
+    "utmos": 4.172574996948242
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0034",
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "Vienna is famous.",
+   "bl": {
+    "rms": 0.07359470552625007,
+    "whisper": "The end is famous.",
+    "ipa": "ð ɪ æ n ɚ ɪ z f eɪ m ə s",
+    "utmos": 3.1666622161865234
+   },
+   "inj": {
+    "rms": 0.0719408032595192,
+    "whisper": "Prague is famous.",
+    "ipa": "p ɹ aʊ ɡ ɪ z f eɪ m ə s",
+    "utmos": 3.831944227218628
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0035",
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "Moscow is famous.",
+   "bl": {
+    "rms": 0.05348678800203227,
+    "whisper": "Moscow is famous.",
+    "ipa": "m ɔ s k oʊ ɪ z f eɪ m ə s",
+    "utmos": 3.712074041366577
+   },
+   "inj": {
+    "rms": 0.056303729759093986,
+    "whisper": "Beijing is famous.",
+    "ipa": "p eɪ ʃ ɪ ŋ ɪ z f eɪ m ə s",
+    "utmos": 3.1462178230285645
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 9
+  },
+  {
+   "sid": "s0036",
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "Lincoln is famous.",
+   "bl": {
+    "rms": 0.05242850531166779,
+    "whisper": "Lincoln is famous.",
+    "ipa": "l ɪ ŋ k ə n ɪ z f eɪ m ə s",
+    "utmos": 4.068373680114746
+   },
+   "inj": {
+    "rms": 0.055560771729263735,
+    "whisper": "Washington is famous.",
+    "ipa": "w ɑː ʃ ɪ ŋ t ə n z f eɪ m l ə s",
+    "utmos": 4.040341854095459
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0037",
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "Kennedy is famous.",
+   "bl": {
+    "rms": 0.06177745237990517,
+    "whisper": "Kennedy is famous.",
+    "ipa": "k ɛ n ə d iː ɪ z f eɪ m ə s",
+    "utmos": 3.839886426925659
+   },
+   "inj": {
+    "rms": 0.05013072018635455,
+    "whisper": "Roosevelt is famous.",
+    "ipa": "ɹ ɛ z ɪ v ə n ɪ z f eɪ m ə s",
+    "utmos": 3.018507480621338
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0038",
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "Mars is famous.",
+   "bl": {
+    "rms": 0.05331538750374727,
+    "whisper": "Mars is famous.",
+    "ipa": "m ɑː z ɪ z f eɪ m ə s",
+    "utmos": 2.9903218746185303
+   },
+   "inj": {
+    "rms": 0.05148146455068979,
+    "whisper": "Venus is famous.",
+    "ipa": "v iː n ɪ s ɪ z f eɪ m ə s",
+    "utmos": 4.191344261169434
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 16
+  },
+  {
+   "sid": "s0039",
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "Mercury is famous.",
+   "bl": {
+    "rms": 0.04668476800697594,
+    "whisper": "Mercury is famous.",
+    "ipa": "m ɚ k ɚ ɹ i ɪ z f eɪ m ə s",
+    "utmos": 4.067129135131836
+   },
+   "inj": {
+    "rms": 0.05752951640247094,
+    "whisper": "Neptune is famous.",
+    "ipa": "n ʌ p t uː l ɪ z f eɪ m ə s",
+    "utmos": 3.612826108932495
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0040",
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "Sahara is famous.",
+   "bl": {
+    "rms": 0.0594143436061122,
+    "whisper": "Sahara is famous.",
+    "ipa": "s ə h ɑː ɹ ɐ ɪ z f eɪ m ə s",
+    "utmos": 3.687689781188965
+   },
+   "inj": {
+    "rms": 0.06819469873042297,
+    "whisper": "Gobi is famous.",
+    "ipa": "ɡ ʌ b i ɪ z f eɪ m ə s",
+    "utmos": 4.199727535247803
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0041",
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "Brazil is famous.",
+   "bl": {
+    "rms": 0.05549517007979478,
+    "whisper": "Brazil is famous.",
+    "ipa": "b ɹ ɚ z ɪ l ɪ z f eɪ m ə s",
+    "utmos": 3.386880397796631
+   },
+   "inj": {
+    "rms": 0.06998901953991642,
+    "whisper": "Argentina is famous.",
+    "ipa": "ɑː dʒ ə n t iː n ɐ ɪ z f eɪ m ə s",
+    "utmos": 4.1314826011657715
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0042",
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "Nissan is famous.",
+   "bl": {
+    "rms": 0.059406201807662894,
+    "whisper": "This song's famous.",
+    "ipa": "ð ə s ɑː n z f eɪ m ə s",
+    "utmos": 3.450031042098999
+   },
+   "inj": {
+    "rms": 0.05935105632902192,
+    "whisper": "Mazda is famous.",
+    "ipa": "m æ z d ə ɪ z f eɪ m ə s s",
+    "utmos": 3.9175777435302734
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0043",
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "Audi is famous.",
+   "bl": {
+    "rms": 0.06522753865467583,
+    "whisper": "Yuri is famous.",
+    "ipa": "j uː ɾ iː ɪ z f eɪ m ə s",
+    "utmos": 3.3210747241973877
+   },
+   "inj": {
+    "rms": 0.0657818183224298,
+    "whisper": "I'm W's famous.",
+    "ipa": "ʌ m d ʌ b ɪ j uː z f eɪ n n ə s",
+    "utmos": 3.118372917175293
+   },
+   "source_in_bl": false,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0044",
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "Netflix is famous.",
+   "bl": {
+    "rms": 0.052498898243403286,
+    "whisper": "Netflix is famous.",
+    "ipa": "n ɛ t f l ɪ k s ɪ z f eɪ m ə s",
+    "utmos": 3.403719902038574
+   },
+   "inj": {
+    "rms": 0.06196217417458553,
+    "whisper": "Spotify is famous.",
+    "ipa": "s p ɑː ɾ ə f aɪ ɪ z f eɪ m ə s",
+    "utmos": 3.774176836013794
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 13
+  },
+  {
+   "sid": "s0045",
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "Facebook is famous.",
+   "bl": {
+    "rms": 0.03715788214489967,
+    "whisper": "Facebook is famous.",
+    "ipa": "θ eɪ s b ʊ k ɪ z f eɪ m ə s",
+    "utmos": 3.6438560485839844
+   },
+   "inj": {
+    "rms": 0.03557338136144321,
+    "whisper": "And then, putter is famous.",
+    "ipa": "p ʊ ɾ ɚ ɹ ɪ z f eɪ m ə s",
+    "utmos": 3.4499220848083496
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0046",
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "Cairo is famous.",
+   "bl": {
+    "rms": 0.06894470889981996,
+    "whisper": "Cairo is famous.",
+    "ipa": "k ɑː ɹ oʊ ɪ z f eɪ m ə s",
+    "utmos": 3.3834755420684814
+   },
+   "inj": {
+    "rms": 0.04881311286804217,
+    "whisper": "Lagos is famous.",
+    "ipa": "l æ ɡ ə s ɪ z f eɪ m ə s",
+    "utmos": 4.1499528884887695
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 8
+  },
+  {
+   "sid": "s0047",
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "Mumbai is famous.",
+   "bl": {
+    "rms": 0.05636871502763259,
+    "whisper": "None by his famous.",
+    "ipa": "m ʊ b aɪ z f eɪ ŋ s",
+    "utmos": 2.8990654945373535
+   },
+   "inj": {
+    "rms": 0.04457208088827352,
+    "whisper": "Delhi is famous.",
+    "ipa": "d ɛ l i ɪ z f eɪ ŋ n ə s",
+    "utmos": 3.2766237258911133
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 21
+  },
+  {
+   "sid": "s0048",
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "Seoul is famous.",
+   "bl": {
+    "rms": 0.044027206160058334,
+    "whisper": "So is famous.",
+    "ipa": "s oʊ l ɪ z f eɪ m ə s",
+    "utmos": 3.40000057220459
+   },
+   "inj": {
+    "rms": 0.06509976593452274,
+    "whisper": "Bangkok is famous.",
+    "ipa": "b æ ŋ k ɑː k ɪ z f eɪ m ə s",
+    "utmos": 4.086062431335449
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0049",
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "Milan is famous.",
+   "bl": {
+    "rms": 0.07008247711833254,
+    "whisper": "Mulan is famous.",
+    "ipa": "m ɪ l ɑː n ɪ z f eɪ m ə s",
+    "utmos": 4.196220874786377
+   },
+   "inj": {
+    "rms": 0.05218481992365819,
+    "whisper": "Barcelona is famous.",
+    "ipa": "b ɑː s ə l ɔ n ɪ z f eɪ m ə s",
+    "utmos": 3.806405782699585
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0050",
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "Yesterday, London became famous.",
+   "bl": {
+    "rms": 0.06083748195212533,
+    "whisper": "Yesterday, London became famous.",
+    "ipa": "j ɛ s t ə d eɪ l ʌ n d ə n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.2248971462249756
+   },
+   "inj": {
+    "rms": 0.0640624915059492,
+    "whisper": "Yesterday, Paris became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ p ɛ ɹ ɪ s b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.4176676273345947
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0051",
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "Yesterday, Michael became famous.",
+   "bl": {
+    "rms": 0.0686580223265704,
+    "whisper": "Yesterday, Michael became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ m aɪ k əl b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.708249807357788
+   },
+   "inj": {
+    "rms": 0.0781452263715502,
+    "whisper": "Yesterday, John became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ dʒ ɑː n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 4.034818649291992
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0052",
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "Yesterday, Einstein became famous.",
+   "bl": {
+    "rms": 0.07720998116430339,
+    "whisper": "Yesterday Einstein became famous.",
+    "ipa": "j ɛ s s t ɚ d eɪ aɪ n s t aɪ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.9575812816619873
+   },
+   "inj": {
+    "rms": 0.07451836443181503,
+    "whisper": "Yesterday, Newton became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ n uː t ə n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.2342827320098877
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 34
+  },
+  {
+   "sid": "s0053",
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "Yesterday, Mozart became famous.",
+   "bl": {
+    "rms": 0.06181043367475366,
+    "whisper": "Yesterday, Mozart became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ m oʊ t s aʊ t b ɪ k eɪ m f eɪ m ə s s",
+    "utmos": 3.696340560913086
+   },
+   "inj": {
+    "rms": 0.054471430392294164,
+    "whisper": "Yesterday, Beethoven became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ b eɪ t t oʊ b ɪ ŋ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.206655502319336
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0054",
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "Yesterday, Amazon became famous.",
+   "bl": {
+    "rms": 0.09409612115837633,
+    "whisper": "Yesterday Amazon became famous.",
+    "ipa": "j ɛ s t ə d eɪ æ w ʌ z ɑː n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.0896477699279785
+   },
+   "inj": {
+    "rms": 0.05431680384270834,
+    "whisper": "Yesterday, Google became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ɡ uː ɡ ʊ l b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.3918778896331787
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  },
+  {
+   "sid": "s0055",
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "Yesterday, Harvard became famous.",
+   "bl": {
+    "rms": 0.06334894227986503,
+    "whisper": "Yesterday, Harford became famous.",
+    "ipa": "j ɛ s s t ɚ d eɪ h ɑː f ɚ d b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.7314181327819824
+   },
+   "inj": {
+    "rms": 0.05221243655843307,
+    "whisper": "Yesterday, Oxford became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ɑː k s f ɚ d b ɪ k eɪ m f eɪ m ɪ s",
+    "utmos": 3.635382652282715
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 13
+  },
+  {
+   "sid": "s0056",
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "Yesterday, Ferrari became famous.",
+   "bl": {
+    "rms": 0.05515460644587999,
+    "whisper": "Yesterday Ferrari became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ f ɚ ɹ ɑː ɹ i b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.22375226020813
+   },
+   "inj": {
+    "rms": 0.05938383474520067,
+    "whisper": "Yesterday, Porsche became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ p oː ʃ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.8678033351898193
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 30
+  },
+  {
+   "sid": "s0057",
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "Yesterday, Saturn became famous.",
+   "bl": {
+    "rms": 0.06990815972218299,
+    "whisper": "Yesterday, Saturn became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ s æ ɾ ɚ n b ɪ k m f eɪ m ə s",
+    "utmos": 3.687689781188965
+   },
+   "inj": {
+    "rms": 0.05670468211174334,
+    "whisper": "yesterday Jupiter became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ dʒ uː p ɪ ɾ ɚ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.3248798847198486
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 21
+  },
+  {
+   "sid": "s0058",
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "Yesterday, Diamond became famous.",
+   "bl": {
+    "rms": 0.05594150975676884,
+    "whisper": "Yesterday, Diamond became famous.",
+    "ipa": "ð ɪ j ɛ s t ɚ d eɪ d aɪ m ə n d b ɪ k m f eɪ m ə s s",
+    "utmos": 3.5777556896209717
+   },
+   "inj": {
+    "rms": 0.06460900941925715,
+    "whisper": "Yesterday, Emeril became a s-",
+    "ipa": "j ɛ s t ɚ d eɪ ɛ m ɹ ɚ l b ɪ k eɪ m ɪ s",
+    "utmos": 3.929194211959839
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 41
+  },
+  {
+   "sid": "s0059",
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "Yesterday, Christmas became famous.",
+   "bl": {
+    "rms": 0.059505479793932246,
+    "whisper": "Yesterday, Christmas became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ k ɹ ɪ s m ə s b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.818056583404541
+   },
+   "inj": {
+    "rms": 0.07091032128386855,
+    "whisper": "Yesterday, Halloween became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ h ɑː l l iː n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.4954192638397217
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 11
+  },
+  {
+   "sid": "s0060",
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "Yesterday, Hollywood became famous.",
+   "bl": {
+    "rms": 0.05289676542269954,
+    "whisper": "Yesterday, Hollywood became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ h ɑː l ɪ w ʊ d b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.411846876144409
+   },
+   "inj": {
+    "rms": 0.05864100858550942,
+    "whisper": "Yesterday, Broadway became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ b ɹ ɑː d w eɪ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.327698230743408
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 31
+  },
+  {
+   "sid": "s0061",
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "Yesterday, Victoria became famous.",
+   "bl": {
+    "rms": 0.0695394495890592,
+    "whisper": "Yesterday, Victoria became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ v ɪ k t oː ɹ i j ɐ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.673147439956665
+   },
+   "inj": {
+    "rms": 0.0786836080781929,
+    "whisper": "Yesterday, Elizabeth became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ɪ l ɪ z ə b ə θ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.7455484867095947
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 34
+  },
+  {
+   "sid": "s0062",
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "Yesterday, Leonardo became famous.",
+   "bl": {
+    "rms": 0.07096909075873756,
+    "whisper": "Yesterday, Leonardo became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ l iː ʊ n ɑː d ɚ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.825005292892456
+   },
+   "inj": {
+    "rms": 0.04692811695771462,
+    "whisper": "Yesterday Picasso became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ p ʌ k ɑː s oʊ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.616476535797119
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0063",
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "Yesterday, Everest became famous.",
+   "bl": {
+    "rms": 0.0608988572829189,
+    "whisper": "Yesterday, Everest became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ɛ v ɚ z b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.4990944862365723
+   },
+   "inj": {
+    "rms": 0.07051657480348858,
+    "whisper": "Yesterday, Kilimanjaro became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ k ɪ l ə m ə n dʒ æ ɹ ɚ l b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.2475125789642334
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 36
+  },
+  {
+   "sid": "s0064",
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "Yesterday, Atlantic became famous.",
+   "bl": {
+    "rms": 0.04966493043956665,
+    "whisper": "Yesterday Atlantic became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ æ t l æ n t ɪ k b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.2288105487823486
+   },
+   "inj": {
+    "rms": 0.054866585902979846,
+    "whisper": "Yesterday, Pacific became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ p ə s ɪ f ɪ k k b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.585078239440918
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 7
+  },
+  {
+   "sid": "s0065",
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "Yesterday, Shakespeare became famous.",
+   "bl": {
+    "rms": 0.06504636529240602,
+    "whisper": "Yesterday, Shakespeare became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ʃ eɪ k s p ɪ ɹ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 4.02180814743042
+   },
+   "inj": {
+    "rms": 0.041866754917436064,
+    "whisper": "Yesterday, Dickens became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ d ɪ k ə n z b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.047929048538208
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 33
+  },
+  {
+   "sid": "s0066",
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "Yesterday, Samsung became famous.",
+   "bl": {
+    "rms": 0.05798436558207848,
+    "whisper": "Yesterday, Samsung became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ s æ m s ɪ b ɪ k eɪ m f k l ə s",
+    "utmos": 3.569321632385254
+   },
+   "inj": {
+    "rms": 0.04548424203785581,
+    "whisper": "Yesterday, Apple became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ æ f ɚ w ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.6090917587280273
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0067",
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "Yesterday, Tokyo became famous.",
+   "bl": {
+    "rms": 0.04843581631524986,
+    "whisper": "Yesterday, Tokyo became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ t oʊ k iː oʊ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.48439884185791
+   },
+   "inj": {
+    "rms": 0.04801275986339845,
+    "whisper": "Yesterday, Berlin became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ b ə l ɪ n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.382174015045166
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 30
+  },
+  {
+   "sid": "s0068",
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "Yesterday, Sydney became famous.",
+   "bl": {
+    "rms": 0.06298816913986309,
+    "whisper": "Yesterday, Sydney became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ s ɪ d n iː b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 4.151122093200684
+   },
+   "inj": {
+    "rms": 0.06506005287748413,
+    "whisper": "Yesterday Toronto became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ t ɚ ɹ ɑː n oʊ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.1983091831207275
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0069",
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "Yesterday, Stanford became famous.",
+   "bl": {
+    "rms": 0.05132206669607236,
+    "whisper": "Yesterday, Stanford became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ s t æ m f ɚ d b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.3924224376678467
+   },
+   "inj": {
+    "rms": 0.05314981684298414,
+    "whisper": "Yesterday, Barclay became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ b ɑː k l i b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.343244791030884
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 32
+  },
+  {
+   "sid": "s0070",
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "Yesterday, Napoleon became famous.",
+   "bl": {
+    "rms": 0.0740628123375827,
+    "whisper": "Yesterday, Napoleon became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ n ə p oʊ l i ə n d b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.3894786834716797
+   },
+   "inj": {
+    "rms": 0.048869477469670505,
+    "whisper": "Yesterday, Caesar became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ s iː z ɚ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.41013240814209
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 34
+  },
+  {
+   "sid": "s0071",
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "Yesterday, Darwin became famous.",
+   "bl": {
+    "rms": 0.03567118664178588,
+    "whisper": "Yesterday, Darwin became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ d ɑː ɚ n b ɪ k eɪ m f eɪ m ə s s",
+    "utmos": 3.5766258239746094
+   },
+   "inj": {
+    "rms": 0.06924225390330178,
+    "whisper": "Yesterday, Galileo became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ɡ æ l ə l eɪ oʊ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.1257989406585693
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0072",
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "Yesterday, Tesla became famous.",
+   "bl": {
+    "rms": 0.051078430217292935,
+    "whisper": "Yesterday Tesla became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ t ɛ s l ə b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.2856507301330566
+   },
+   "inj": {
+    "rms": 0.06637886733492925,
+    "whisper": "Yesterday Edison became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ɛ d ɪ s ə n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.125309944152832
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0073",
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "Yesterday, Boeing became famous.",
+   "bl": {
+    "rms": 0.06266820650812328,
+    "whisper": "Yesterday, Boeing became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ b oː l ɪ ŋ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.2341322898864746
+   },
+   "inj": {
+    "rms": 0.05519431222842616,
+    "whisper": "Yesterday, Airbus became famous.",
+    "ipa": "j ɛ s t ɚ ɾ eɪ ɛ ɹ b ɑː s b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.3858935832977295
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 9
+  },
+  {
+   "sid": "s0074",
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "Yesterday, Disney became famous.",
+   "bl": {
+    "rms": 0.05513527200749743,
+    "whisper": "Yesterday, Disney became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ d ɪ z n ɪ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.8638863563537598
+   },
+   "inj": {
+    "rms": 0.07214952543700319,
+    "whisper": "Yesterday, Warner became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ eɪ w oʊ n ɚ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.75518798828125
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0075",
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "Yesterday, Intel became famous.",
+   "bl": {
+    "rms": 0.06859759464921855,
+    "whisper": "Yesterday Intel became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ɪ n t ɛ l b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.257652759552002
+   },
+   "inj": {
+    "rms": 0.04827647705257164,
+    "whisper": "yesterday and became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ɪ m b ɪ k eɪ m f eɪ l ə s",
+    "utmos": 2.9562838077545166
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0076",
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "Yesterday, Chicago became famous.",
+   "bl": {
+    "rms": 0.05831829810921969,
+    "whisper": "Yesterday, Chicago became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ʃ ɪ k ɑː ɡ oʊ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.8253941535949707
+   },
+   "inj": {
+    "rms": 0.049843428765355365,
+    "whisper": "Yesterday, Boston became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ b ɑː s t ə n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.616957426071167
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 32
+  },
+  {
+   "sid": "s0077",
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "Yesterday, Dallas became famous.",
+   "bl": {
+    "rms": 0.05616420288754377,
+    "whisper": "Yesterday, Dallas became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ d ɛ l s b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.626283884048462
+   },
+   "inj": {
+    "rms": 0.05225560225755688,
+    "whisper": "Yesterday, Houston became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ h j uː s t ə n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.9146718978881836
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0078",
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "Yesterday, Denver became famous.",
+   "bl": {
+    "rms": 0.05183000784894687,
+    "whisper": "Yesterday, Denver became famous.",
+    "ipa": "ɪ s t ɹ d eɪ d ɪ n ɚ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.5102500915527344
+   },
+   "inj": {
+    "rms": 0.06897552950070109,
+    "whisper": "Yesterday, Seattle became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ s iː æ l b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.0892443656921387
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 36
+  },
+  {
+   "sid": "s0079",
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "Yesterday, Miami became famous.",
+   "bl": {
+    "rms": 0.0800145139304907,
+    "whisper": "Yesterday, Miami became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ m aɪ æ m iː k eɪ m f æ ŋ b ɪ s",
+    "utmos": 4.030444622039795
+   },
+   "inj": {
+    "rms": 0.07749282726572283,
+    "whisper": "Yesterday, Atlanta became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ æ t l æ n t ɪ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.7128424644470215
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0080",
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "Yesterday, Nike became famous.",
+   "bl": {
+    "rms": 0.05637986083392012,
+    "whisper": "Yesterday night he became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ n ɑː k iː b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.5385727882385254
+   },
+   "inj": {
+    "rms": 0.047744475906941704,
+    "whisper": "Yesterday, Adidas became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ d iː d ə s b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.669555187225342
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 28
+  },
+  {
+   "sid": "s0081",
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "Yesterday, Toyota became famous.",
+   "bl": {
+    "rms": 0.05256050384643698,
+    "whisper": "Yesterday, Toyota became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ t aɪ d ɚ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.63390851020813
+   },
+   "inj": {
+    "rms": 0.05713387469308598,
+    "whisper": "Yesterday, Honda became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ h a n d ə b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.243680000305176
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0082",
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "Yesterday, Columbus became famous.",
+   "bl": {
+    "rms": 0.04970839094658606,
+    "whisper": "Yesterday, Columbus became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ k ə l ʌ m b ə s b ɪ k eɪ m p eɪ m ə s",
+    "utmos": 3.658099889755249
+   },
+   "inj": {
+    "rms": 0.06669636281137785,
+    "whisper": "Yesterday, Magellan became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ m ə dʒ ɛ l ə n b ɪ k eɪ m f eɪ m ə s s",
+    "utmos": 3.8081283569335938
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 35
+  },
+  {
+   "sid": "s0083",
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "Yesterday, Madrid became famous.",
+   "bl": {
+    "rms": 0.05135992330481004,
+    "whisper": "Yesterday Madrid became famous.",
+    "ipa": "j ɪ s t ɚ ɹ eɪ m ə d ɹ ɪ d b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 2.89646315574646
+   },
+   "inj": {
+    "rms": 0.051964982437527646,
+    "whisper": "Yesterday, Rome became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ɹ oʊ m b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 4.054253578186035
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0084",
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "Yesterday, Vienna became famous.",
+   "bl": {
+    "rms": 0.066334203470318,
+    "whisper": "Yesterday Vienna became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ð iː ɛ n ɐ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.347541332244873
+   },
+   "inj": {
+    "rms": 0.059324415634656555,
+    "whisper": "Yesterday, Prague became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ p ɹ ɑː ɡ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.580575704574585
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0085",
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "Yesterday, Moscow became famous.",
+   "bl": {
+    "rms": 0.06305252582606884,
+    "whisper": "Yesterday Moscow became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ m ɑː s ɡ aʊ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 4.150825500488281
+   },
+   "inj": {
+    "rms": 0.05615200374875316,
+    "whisper": "Yesterday Beijing became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ b eɪ dʒ iː n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.102792263031006
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 32
+  },
+  {
+   "sid": "s0086",
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "Yesterday, Lincoln became famous.",
+   "bl": {
+    "rms": 0.047781567102571275,
+    "whisper": "Yesterday, Lincoln became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ b l ɪ ŋ k ə n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.564774751663208
+   },
+   "inj": {
+    "rms": 0.05587263203554013,
+    "whisper": "Yesterday, Washington became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ w ɑː ʃ ɪ ŋ t ə n b ɪ k eɪ m f eɪ m ə s s",
+    "utmos": 3.7671804428100586
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 37
+  },
+  {
+   "sid": "s0087",
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "Yesterday, Kennedy became famous.",
+   "bl": {
+    "rms": 0.07194883842265995,
+    "whisper": "Yesterday, Kennedy became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ k ɪ m ɪ ɾ i b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.2983956336975098
+   },
+   "inj": {
+    "rms": 0.07224819989653782,
+    "whisper": "Yesterday Roosevelt became famous.",
+    "ipa": "j ɪ s t ɚ d eɪ ɹ oʊ z ə v ɛ l t ð ə k eɪ m f eɪ m ə s",
+    "utmos": 3.945077419281006
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 34
+  },
+  {
+   "sid": "s0088",
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "Yesterday, Mars became famous.",
+   "bl": {
+    "rms": 0.06467521231020824,
+    "whisper": "Yesterday Mars became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ m ɑː z b ɪ k eɪ m f eɪ v d ɪ s s",
+    "utmos": 3.457008123397827
+   },
+   "inj": {
+    "rms": 0.05532434076726703,
+    "whisper": "Yesterday, Venus became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ v iː n ə s b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.525078773498535
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0089",
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "Yesterday, Mercury became famous.",
+   "bl": {
+    "rms": 0.0713465892980141,
+    "whisper": "Yesterday, Mercury became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ m ɚ k ɹ i b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.539442300796509
+   },
+   "inj": {
+    "rms": 0.06095451851533305,
+    "whisper": "Yesterday Neptune became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ð ɛ p t uː n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.5159695148468018
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 28
+  },
+  {
+   "sid": "s0090",
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "Yesterday, Sahara became famous.",
+   "bl": {
+    "rms": 0.05714005892372285,
+    "whisper": "Yesterday, Sahara became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ s ə h ɹ ɪ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.497110605239868
+   },
+   "inj": {
+    "rms": 0.06524499720781352,
+    "whisper": "Yesterday, the Gobi became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ k ɡ oʊ b iː b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.442063808441162
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0091",
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "Yesterday, Brazil became famous.",
+   "bl": {
+    "rms": 0.03482992138688373,
+    "whisper": "Yesterday Brazil became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ b ɹ ə z ɪ l b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.5696909427642822
+   },
+   "inj": {
+    "rms": 0.049259793024419955,
+    "whisper": "Yesterday, Argentina became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ ɑː dʒ ə n t iː n ɐ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.675916910171509
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0092",
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "Yesterday, Nissan became famous.",
+   "bl": {
+    "rms": 0.045931140776438444,
+    "whisper": "Yesterday, Nisei became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ n iː s s eɪ b ɪ k m f eɪ m ə s",
+    "utmos": 3.6588852405548096
+   },
+   "inj": {
+    "rms": 0.04264467888899812,
+    "whisper": "Yesterday, Mazda became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ m æ s t ɚ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.4861900806427
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0093",
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "Yesterday, Audi became famous.",
+   "bl": {
+    "rms": 0.07143787129649158,
+    "whisper": "Yesterday, Audi became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ æ l ɾ iː b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.5275285243988037
+   },
+   "inj": {
+    "rms": 0.06357356342352144,
+    "whisper": "Yesterday, BKMDU became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ b ɪ k eɪ m d j uː b ɪ k eɪ m f eɪ n ə s",
+    "utmos": 3.8564772605895996
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0094",
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "Yesterday, Netflix became famous.",
+   "bl": {
+    "rms": 0.06312996003543575,
+    "whisper": "Yesterday Netflix became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ n ɛ t f l ɪ k s b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.512813091278076
+   },
+   "inj": {
+    "rms": 0.052323516686355154,
+    "whisper": "Yesterday, Spotify became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ s p ɑː ɾ ə f aɪ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.4806206226348877
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 13
+  },
+  {
+   "sid": "s0095",
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "Yesterday, Facebook became famous.",
+   "bl": {
+    "rms": 0.04983848046752812,
+    "whisper": "Yesterday, Facebook became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ v eɪ s b ɚ k b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.336942195892334
+   },
+   "inj": {
+    "rms": 0.08416042974215104,
+    "whisper": "Yesterday, Twitter became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ t ɹ ɪ ɾ ɚ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 4.236396789550781
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 31
+  },
+  {
+   "sid": "s0096",
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "Yesterday, Cairo became famous.",
+   "bl": {
+    "rms": 0.06019049725137806,
+    "whisper": "Yesterday, Cairo became famous.",
+    "ipa": "n s t ɚ d eɪ k aɪ ɹ oʊ b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.382652759552002
+   },
+   "inj": {
+    "rms": 0.07258326986585233,
+    "whisper": "Yesterday, Leos became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ l ɪ ɡ oʊ z b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 3.7705278396606445
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 39
+  },
+  {
+   "sid": "s0097",
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "Yesterday, Mumbai became famous.",
+   "bl": {
+    "rms": 0.0605695567349886,
+    "whisper": "yesterday Mumbai became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ m ʊ n b aɪ ð ə k ɪ ŋ f eɪ m ə s",
+    "utmos": 3.9743399620056152
+   },
+   "inj": {
+    "rms": 0.06646228655215825,
+    "whisper": "Yesterday, Delhi became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ d ɛ l i b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 4.001075744628906
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0098",
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "Yesterday, Seoul became famous.",
+   "bl": {
+    "rms": 0.06660337039671617,
+    "whisper": "Yesterday, Seoul became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ s oʊ l b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 4.035675525665283
+   },
+   "inj": {
+    "rms": 0.062094872773896435,
+    "whisper": "Yesterday, Bangkok became famous.",
+    "ipa": "j ɛ s d eɪ b æ n k ɑː k b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 4.126157760620117
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 28
+  },
+  {
+   "sid": "s0099",
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "Yesterday, Milan became famous.",
+   "bl": {
+    "rms": 0.06973465615598064,
+    "whisper": "Yesterday Milan became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ m ə l ɑː n b ɪ k eɪ m f eɪ m ə s",
+    "utmos": 4.229241371154785
+   },
+   "inj": {
+    "rms": 0.06662443522666206,
+    "whisper": "Yesterday, Barcelona became famous.",
+    "ipa": "j ɛ s t ɚ d eɪ t b ɑː s ə l oʊ n ɐ b ɪ k eɪ m f eɪ m m ə s",
+    "utmos": 3.2619333267211914
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 33
+  },
+  {
+   "sid": "s0100",
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "Around the world, London is known.",
+   "bl": {
+    "rms": 0.08112699647172343,
+    "whisper": "around the world London's known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d b l ʌ n d ɪ d z n oʊ n",
+    "utmos": 4.022635459899902
+   },
+   "inj": {
+    "rms": 0.07841282080334173,
+    "whisper": "Around the world, Paris is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d p æ ɹ ɪ s ɪ z n oʊ n",
+    "utmos": 4.014782905578613
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 13
+  },
+  {
+   "sid": "s0101",
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "Around the world, Michael is known.",
+   "bl": {
+    "rms": 0.07083739423494399,
+    "whisper": "Around the world, Michael is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d m aɪ k əl l ɪ z n oʊ n",
+    "utmos": 3.4453213214874268
+   },
+   "inj": {
+    "rms": 0.07579980769433114,
+    "whisper": "Around the world, John is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d dʒ ɑː n ɪ z n oʊ n d",
+    "utmos": 3.7584896087646484
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 16
+  },
+  {
+   "sid": "s0102",
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "Around the world, Einstein is known.",
+   "bl": {
+    "rms": 0.061759579828961894,
+    "whisper": "Around the world, Einstein is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ l d ɑː ɹ n s t aɪ n ɪ z n oʊ n",
+    "utmos": 4.080196380615234
+   },
+   "inj": {
+    "rms": 0.08228204923137673,
+    "whisper": "Around the world, Newton is known.",
+    "ipa": "ɐ ɹ ɑː d ð ə w ɚ l d n uː t ə n ɪ z n oʊ n",
+    "utmos": 3.9222874641418457
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0103",
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "Around the world, Mozart is known.",
+   "bl": {
+    "rms": 0.07930756732725641,
+    "whisper": "Around the world, Mozart is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d m oʊ t s ɑː t ɪ z n oʊ n",
+    "utmos": 3.9258880615234375
+   },
+   "inj": {
+    "rms": 0.07737511901118102,
+    "whisper": "Around the world, Maytoven is known.",
+    "ipa": "ɐ ɹ aʊ d ð ə w ɚ l d b eɪ t oʊ v ə n ɪ z n oʊ n",
+    "utmos": 4.2221598625183105
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0104",
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "Around the world, Amazon is known.",
+   "bl": {
+    "rms": 0.07107109081989213,
+    "whisper": "Around the world, Amazon is known.",
+    "ipa": "ɐ ɹ aʊ n ð ə w ɚ l d æ m ə z ɑː n ɪ z n oʊ n",
+    "utmos": 4.107131481170654
+   },
+   "inj": {
+    "rms": 0.08184009975103554,
+    "whisper": "Around the world, Google is known.",
+    "ipa": "ɐ ɹ æ n d ð ə w ɚ l d ɡ uː ɡ əl ɪ z n oʊ n",
+    "utmos": 3.8314857482910156
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 34
+  },
+  {
+   "sid": "s0105",
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "Around the world, Harvard is known.",
+   "bl": {
+    "rms": 0.0783536572164668,
+    "whisper": "Around the world Harvard is known.",
+    "ipa": "ɐ ɹ ɑː n ð ə w ɚ l d h ɑː v ɚ d ɪ z n oʊ n",
+    "utmos": 2.983870267868042
+   },
+   "inj": {
+    "rms": 0.06682824396953406,
+    "whisper": "around the world Oxford is known.",
+    "ipa": "ɐ ɹ ɑː n ð ə w ɚ ɹ ɑː k s f ɚ d ɪ z n oʊ n",
+    "utmos": 3.5166797637939453
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 8
+  },
+  {
+   "sid": "s0106",
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "Around the world, Ferrari is known.",
+   "bl": {
+    "rms": 0.07813453942905202,
+    "whisper": "around the world, for Ari is known",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ d f ɚ ɑː ɹ i ɪ z n oʊ n",
+    "utmos": 3.8828747272491455
+   },
+   "inj": {
+    "rms": 0.0606897987074315,
+    "whisper": "Around the world, Porsche is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d p oʊ ʃ ɪ z n oʊ n",
+    "utmos": 3.92885684967041
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 17
+  },
+  {
+   "sid": "s0107",
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "Around the world, Saturn is known.",
+   "bl": {
+    "rms": 0.0688692014022959,
+    "whisper": "Around the world, Saturn is known.",
+    "ipa": "ɹ ɑː n d ð ə w ɚ l d s æ ɾ ɚ n ɪ z n oʊ n",
+    "utmos": 3.4106132984161377
+   },
+   "inj": {
+    "rms": 0.055764950105858635,
+    "whisper": "Around the world, Jupiter is known.",
+    "ipa": "ɐ ɹ ɑː n ð ə w ɚ l d dʒ uː p ɪ ɾ ɚ ɹ ɪ z n oʊ n",
+    "utmos": 3.446302652359009
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  },
+  {
+   "sid": "s0108",
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "Around the world, Diamond is known.",
+   "bl": {
+    "rms": 0.07327687489335542,
+    "whisper": "Around the world, diamond is known.",
+    "ipa": "ɐ ɹ ɑː d ð ə w ɚ l d d aɪ m ə n d ɪ z n ʌ n",
+    "utmos": 3.325242519378662
+   },
+   "inj": {
+    "rms": 0.06457812678819369,
+    "whisper": "Around the world, Emerald is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d ɛ m ɹ ɚ l d ɪ z n aʊ",
+    "utmos": 2.6990809440612793
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0109",
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "Around the world, Christmas is known.",
+   "bl": {
+    "rms": 0.06764285757211055,
+    "whisper": "Around the world, Christmas is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ ɚ l d k ɹ ɪ s m ə s ɪ z n oʊ n",
+    "utmos": 3.511369228363037
+   },
+   "inj": {
+    "rms": 0.0669783422594924,
+    "whisper": "around the world. Halloween is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ l d h æ l ə w iː n ɪ z n oʊ n",
+    "utmos": 3.824347496032715
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0110",
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "Around the world, Hollywood is known.",
+   "bl": {
+    "rms": 0.07471449436174142,
+    "whisper": "Around the world, Hollywood is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d h h ɑː l i w ʊ d ɪ z n oʊ n",
+    "utmos": 4.230684280395508
+   },
+   "inj": {
+    "rms": 0.07776536564153304,
+    "whisper": "Around the world Broadway is known.",
+    "ipa": "ɹ ɑː n d ð ə w ɚ d b ɹ ɑː d w eɪ ɪ z n oʊ n",
+    "utmos": 3.8554935455322266
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 38
+  },
+  {
+   "sid": "s0111",
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "Around the world, Victoria is known.",
+   "bl": {
+    "rms": 0.07325360357394045,
+    "whisper": "Around the world, Victoria is known.",
+    "ipa": "ɹ aʊ n d ð ə w ɚ l d ð ə t oː ɹ ɪ ɪ z n oʊ n",
+    "utmos": 3.570046901702881
+   },
+   "inj": {
+    "rms": 0.07199073909772497,
+    "whisper": "Around the world, Elizabeth is known.",
+    "ipa": "w ʌ t ɹ ɑː n ð ə w ɚ l d l ɪ z ɪ b ɪ θ ɪ z n oʊ n",
+    "utmos": 3.1166818141937256
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 37
+  },
+  {
+   "sid": "s0112",
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "Around the world, Leonardo is known.",
+   "bl": {
+    "rms": 0.05461343251019208,
+    "whisper": "Around the world, the Lardo is known.",
+    "ipa": "ɐ ɹ ɑː n ð ə w ɚ d ð ə ə ɑː ɾ oʊ ɪ z n oʊ n",
+    "utmos": 3.3463382720947266
+   },
+   "inj": {
+    "rms": 0.05801643711611866,
+    "whisper": "Around the world, Picasso is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ ɾ d p ɪ k ɑː s oʊ ɪ z n oʊ n",
+    "utmos": 3.2813878059387207
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 30
+  },
+  {
+   "sid": "s0113",
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "Around the world, Everest is known.",
+   "bl": {
+    "rms": 0.060977789871484236,
+    "whisper": "Around the world, Everest is known.",
+    "ipa": "ɹ ɑː n ð ə w ɚ l d ɛ v ɚ ɹ ɪ s t ɪ z n oʊ n",
+    "utmos": 3.229539155960083
+   },
+   "inj": {
+    "rms": 0.08218671678598634,
+    "whisper": "Around the world Kamenjara is known.",
+    "ipa": "ɹ ɑː n d ð ə w ɚ l d k ɑː m ə n dʒ ɑː ɹ ɔ ɪ z n oʊ n",
+    "utmos": 3.611359119415283
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 35
+  },
+  {
+   "sid": "s0114",
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "Around the world, Atlantic is known.",
+   "bl": {
+    "rms": 0.0641824969491997,
+    "whisper": "Around the world, Atlantic is now.",
+    "ipa": "ɐ ɹ ɑː d ð ə w oʊ ɹ ɪ ə t l æ n ɪ k ɪ z n oʊ n",
+    "utmos": 3.5303049087524414
+   },
+   "inj": {
+    "rms": 0.06934754668866153,
+    "whisper": "Air in the World, Pacific as known.",
+    "ipa": "æ ɹ ɪ n ð ə w ɚ l p ə s ɪ f ɪ k ɪ z n oʊ n",
+    "utmos": 3.623821496963501
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 31
+  },
+  {
+   "sid": "s0115",
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "Around the world, Shakespeare is known.",
+   "bl": {
+    "rms": 0.06812672783622495,
+    "whisper": "Around the world Shakespeare is known.",
+    "ipa": "ɐ ɹ aʊ n ð ə w ɚ l d ʃ eɪ k s p ɪ ɹ ɪ z n oʊ n",
+    "utmos": 3.527456283569336
+   },
+   "inj": {
+    "rms": 0.07033111517644,
+    "whisper": "Around the world, Dickens is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d d ɪ k ə n z ɪ z n æ",
+    "utmos": 4.242794513702393
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 32
+  },
+  {
+   "sid": "s0116",
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "Around the world, Samsung is known.",
+   "bl": {
+    "rms": 0.07693446929882217,
+    "whisper": "around the world Samsung is known.",
+    "ipa": "ɐ ɹ aʊ n ð ə w ɚ d s æ m s ɪ ŋ ɪ z n oʊ n",
+    "utmos": 3.393038511276245
+   },
+   "inj": {
+    "rms": 0.06447651483027496,
+    "whisper": "Around the world, Apple is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d æ p ʊ l ɪ z n oʊ n",
+    "utmos": 4.26110315322876
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 13
+  },
+  {
+   "sid": "s0117",
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "Around the world, Tokyo is known.",
+   "bl": {
+    "rms": 0.06878414850162608,
+    "whisper": "Around the world, Tokyo is known.",
+    "ipa": "ɹ aʊ n ð ə w ɚ l t oʊ k ɪ w ʌ z n oʊ n",
+    "utmos": 3.428116798400879
+   },
+   "inj": {
+    "rms": 0.0866113105653603,
+    "whisper": "Around the world Berlin is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ d b ɚ l ɪ n ɪ z n oʊ n",
+    "utmos": 3.779336452484131
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 32
+  },
+  {
+   "sid": "s0118",
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "Around the world, Sydney is known.",
+   "bl": {
+    "rms": 0.050560498766931944,
+    "whisper": "Around the world, Sydney is known.",
+    "ipa": "ɐ ɹ ɑː n ð ə w ɚ l d s ɪ d n i ɪ z n ɑː",
+    "utmos": 3.16920804977417
+   },
+   "inj": {
+    "rms": 0.05266155610967072,
+    "whisper": "Around the world, Toronto is found.",
+    "ipa": "ə ɹ ɑː n d ð ə w ɚ d t ɚ ɹ ɑː n t oʊ ɪ z f æ ʊ n d",
+    "utmos": 3.6918137073516846
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 31
+  },
+  {
+   "sid": "s0119",
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "Around the world, Stanford is known.",
+   "bl": {
+    "rms": 0.0767156806298443,
+    "whisper": "Around the world, Stanford is known.",
+    "ipa": "ɐ ɹ æ d ð ə w ɚ l d s t æ n f ɚ d ɪ z n oʊ n",
+    "utmos": 4.2295637130737305
+   },
+   "inj": {
+    "rms": 0.0573876183575736,
+    "whisper": "Around the world, Berkeley is known.",
+    "ipa": "ɐ ɹ ɑː n ð ə w ɚ l d b ɚ k l i ɪ z n oʊ n",
+    "utmos": 3.2436885833740234
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 39
+  },
+  {
+   "sid": "s0120",
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "Around the world, Napoleon is known.",
+   "bl": {
+    "rms": 0.07660078583426343,
+    "whisper": "Around the world, Napoleon is known.",
+    "ipa": "ɐ ɹ æ n ð ə w ɚ l d n ɪ p oʊ l i ə n ɪ z n oʊ n",
+    "utmos": 3.882786750793457
+   },
+   "inj": {
+    "rms": 0.07304763005190827,
+    "whisper": "Around the world, Caesar is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d s iː z ɚ ɪ z n oʊ n",
+    "utmos": 3.8724687099456787
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 41
+  },
+  {
+   "sid": "s0121",
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "Around the world, Darwin is known.",
+   "bl": {
+    "rms": 0.06512038489765974,
+    "whisper": "Around the world, Darwin is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d d ɑː w ə n ɪ z n oʊ n",
+    "utmos": 4.1523756980896
+   },
+   "inj": {
+    "rms": 0.08350426371481592,
+    "whisper": "Around the world, Galileo is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ l d k æ l ə l eɪ oʊ ɪ z n oʊ n",
+    "utmos": 3.4179041385650635
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0122",
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "Around the world, Tesla is known.",
+   "bl": {
+    "rms": 0.0705683912509325,
+    "whisper": "Around the world, Tesla is known.",
+    "ipa": "ɐ ɹ aʊ d ð ə w ɚ d t ɛ s l ɪ z n oʊ n",
+    "utmos": 4.085620880126953
+   },
+   "inj": {
+    "rms": 0.06277057138730961,
+    "whisper": "Around the world, Edison is now.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d ɛ ɾ ɪ s ə n ɪ z n ʌ",
+    "utmos": 3.7435812950134277
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0123",
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "Around the world, Boeing is known.",
+   "bl": {
+    "rms": 0.07583523631300068,
+    "whisper": "Around the world, bowling is known.",
+    "ipa": "ɐ ɹ aɪ aʊ n d ð ə w ɚ l d b oː l ɪ ŋ ð ɪ s n ɚ n",
+    "utmos": 3.482062816619873
+   },
+   "inj": {
+    "rms": 0.0819962411089581,
+    "whisper": "Around the world, Airbus is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d ɛ ɹ b ʌ s ɪ z n oʊ n",
+    "utmos": 4.085339069366455
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 37
+  },
+  {
+   "sid": "s0124",
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "Around the world, Disney is known.",
+   "bl": {
+    "rms": 0.07752857402945823,
+    "whisper": "Around the world Disney is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ l d d d ɪ z n iː ɪ z n oʊ n",
+    "utmos": 4.017691612243652
+   },
+   "inj": {
+    "rms": 0.06582998022609253,
+    "whisper": "Around the world, Warner is known.",
+    "ipa": "ɐ ɹ æ d ð ə w ɚ l d m oː n ɚ ɹ ɪ z n ɪ ə d",
+    "utmos": 3.417978525161743
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 37
+  },
+  {
+   "sid": "s0125",
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "Around the world, Intel is known.",
+   "bl": {
+    "rms": 0.09153749836503637,
+    "whisper": "Around the world, Intel is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ d ɪ n t ɛ l ɪ z n oʊ n",
+    "utmos": 4.260812759399414
+   },
+   "inj": {
+    "rms": 0.08427240802353773,
+    "whisper": "around the world is known.",
+    "ipa": "ɐ ɹ ɑː n ð ə w ɚ l d h iː ɪ z n oʊ n",
+    "utmos": 3.1971750259399414
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0126",
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "Around the world, Chicago is known.",
+   "bl": {
+    "rms": 0.08285517038268848,
+    "whisper": "Around the world Chicago's known.",
+    "ipa": "ɹ aʊ n d ð ə w ɚ l d ʃ ɪ k ɑː ɡ oʊ z n aʊ n",
+    "utmos": 3.316126823425293
+   },
+   "inj": {
+    "rms": 0.06234431132772485,
+    "whisper": "around the world call this node.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d k oː n i z n oʊ d",
+    "utmos": 3.3147592544555664
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0127",
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "Around the world, Dallas is known.",
+   "bl": {
+    "rms": 0.08719724258304914,
+    "whisper": "Around the world, Dallas is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ l d d æ l ɪ s ɪ z n oʊ n",
+    "utmos": 3.2996037006378174
+   },
+   "inj": {
+    "rms": 0.06963215610128204,
+    "whisper": "Around the world, Houston is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ l d k iː s t ə n ɪ z n oʊ n",
+    "utmos": 4.00638484954834
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 21
+  },
+  {
+   "sid": "s0128",
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "Around the world, Denver is known.",
+   "bl": {
+    "rms": 0.0652404076144569,
+    "whisper": "Around the world, Denver is known.",
+    "ipa": "ɐ ɹ ɑː n ð ə w ɚ l d d ɪ n v ɚ ɹ ɪ z n oʊ n",
+    "utmos": 2.9067463874816895
+   },
+   "inj": {
+    "rms": 0.0806808346960289,
+    "whisper": "Around the world, Seattle is known.",
+    "ipa": "ɐ ɹ aɪ d ð ə w ɚ l d s ɪ æ ɾ əl ɪ z n oʊ n",
+    "utmos": 3.683856248855591
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0129",
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "Around the world, Miami is known.",
+   "bl": {
+    "rms": 0.09347480745007791,
+    "whisper": "Around the world, Miami is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d m aɪ ɛ n ə m i ɪ z n oʊ n",
+    "utmos": 3.48504376411438
+   },
+   "inj": {
+    "rms": 0.0555305333506763,
+    "whisper": "Around the world, Atlanta is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ d p ɛ t l æ n t ɐ ɪ z n oʊ n",
+    "utmos": 3.4041478633880615
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0130",
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "Around the world, Nike is known.",
+   "bl": {
+    "rms": 0.06315234183245298,
+    "whisper": "around the world Nike's known.",
+    "ipa": "ɐ ɹ ɑː d ð ə w ɚ l d n aɪ k iː z n oʊ m",
+    "utmos": 3.4695048332214355
+   },
+   "inj": {
+    "rms": 0.07679685697091362,
+    "whisper": "Around the world, Adidas is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d ɐ d iː ɾ ɪ s ɪ z n oʊ n",
+    "utmos": 3.3161203861236572
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 30
+  },
+  {
+   "sid": "s0131",
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "Around the world, Toyota is known.",
+   "bl": {
+    "rms": 0.06226081470493136,
+    "whisper": "Around the world Toyota is known.",
+    "ipa": "ɐ ɹ ɑː d ð ə w ɚ l d t oʊ ɾ ə ɪ z n oʊ n",
+    "utmos": 4.189114570617676
+   },
+   "inj": {
+    "rms": 0.08270310617704778,
+    "whisper": "Around the world, Honda is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ d h ɑː n d ɐ ɪ z n oʊ n",
+    "utmos": 3.5974180698394775
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0132",
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "Around the world, Columbus is known.",
+   "bl": {
+    "rms": 0.07368200521460262,
+    "whisper": "Around the world, Columbus is known.",
+    "ipa": "ɐ ɹ ɑː d ð ə w ɚ l d k ʌ l ʌ m b ə s ɪ z n oʊ n",
+    "utmos": 3.706932306289673
+   },
+   "inj": {
+    "rms": 0.07520328106239549,
+    "whisper": "Around the world, Magellan is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d d m ə tʃ ɪ l ə n ɪ z n oʊ n",
+    "utmos": 3.408496379852295
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 31
+  },
+  {
+   "sid": "s0133",
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "Around the world, Madrid is known.",
+   "bl": {
+    "rms": 0.06380970127079814,
+    "whisper": "Around the world, Madrid is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d m ə d ɹ ɪ d ɪ z n oʊ n",
+    "utmos": 4.173745155334473
+   },
+   "inj": {
+    "rms": 0.0740403638062007,
+    "whisper": "Around the world, Rome is known.",
+    "ipa": "ɐ ɹ aʊ n ð ə w ɚ l d ɹ oʊ m ɪ z n oʊ n",
+    "utmos": 3.5093421936035156
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 30
+  },
+  {
+   "sid": "s0134",
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "Around the world, Vienna is known.",
+   "bl": {
+    "rms": 0.07536206539924345,
+    "whisper": "Around the world, Vienna is now.",
+    "ipa": "ɐ ɹ aʊ n ð ə w ɚ d b iː ɛ n ɐ ɪ z n aʊ",
+    "utmos": 4.01895809173584
+   },
+   "inj": {
+    "rms": 0.0583307105901919,
+    "whisper": "Around the world, Prague is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d p ɹ ɑː ɡ ɪ z n oʊ n",
+    "utmos": 3.73734974861145
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 18
+  },
+  {
+   "sid": "s0135",
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "Around the world, Moscow is known.",
+   "bl": {
+    "rms": 0.07045542695255665,
+    "whisper": "Around the world, Moscow is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d m ɑː s k oʊ w ɪ z n oʊ n",
+    "utmos": 3.264798641204834
+   },
+   "inj": {
+    "rms": 0.0791909116654704,
+    "whisper": "Around the world Beijing is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d d b eɪ dʒ ɪ ŋ ɪ z n oʊ n",
+    "utmos": 3.9138848781585693
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 10
+  },
+  {
+   "sid": "s0136",
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "Around the world, Lincoln is known.",
+   "bl": {
+    "rms": 0.06732533650438953,
+    "whisper": "Around the world, LinkedIn is known.",
+    "ipa": "ɐ ɹ aʊ n ð ə w ɚ d l ɪ ŋ k ə n ɪ z n oʊ n",
+    "utmos": 4.06965446472168
+   },
+   "inj": {
+    "rms": 0.08091502600172235,
+    "whisper": "Around the world, Washington is known.",
+    "ipa": "b ɹ æ n ð ə w ɚ l d w ɑː ʃ ɪ n t ə n ɪ z n oʊ n",
+    "utmos": 3.3087141513824463
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 35
+  },
+  {
+   "sid": "s0137",
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "Around the world, Kennedy is known.",
+   "bl": {
+    "rms": 0.07776007969820435,
+    "whisper": "Around the world, Kennedy is known.",
+    "ipa": "ɐ ɹ æ n d ð ə w ɚ d k ɪ m ɪ d i ɪ z n oʊ n",
+    "utmos": 3.992281913757324
+   },
+   "inj": {
+    "rms": 0.07336449015339962,
+    "whisper": "Around the world, Roosevelt is known.",
+    "ipa": "ɐ ɹ aɪ n d ð ə w ɚ l d d ɹ oʊ z ɐ v æ l t ð ɪ s n oʊ n",
+    "utmos": 3.8465676307678223
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 45
+  },
+  {
+   "sid": "s0138",
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "Around the world, Mars is known.",
+   "bl": {
+    "rms": 0.07058666628765174,
+    "whisper": "Around the world, Mars is known.",
+    "ipa": "ɐ ɹ ɑː d ð ə w ɚ l d m ɑː z ɪ z n oʊ n",
+    "utmos": 3.5422866344451904
+   },
+   "inj": {
+    "rms": 0.059970338961572736,
+    "whisper": "Around the world, Venus is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d v iː n ɪ s ɪ z n ʌ ɪ ŋ",
+    "utmos": 3.5712502002716064
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0139",
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "Around the world, Mercury is known.",
+   "bl": {
+    "rms": 0.07673664247978253,
+    "whisper": "Around the world, mercury is known.",
+    "ipa": "ɐ ɹ aʊ n ð ə w ɚ l d m ɚ k ɚ ɹ i z n æ n",
+    "utmos": 3.8870880603790283
+   },
+   "inj": {
+    "rms": 0.06326344814353722,
+    "whisper": "Around the world, Neptune is known.",
+    "ipa": "ɐ ɹ ɑː d ð ə w ɚ l n ɛ p t uː n ɪ z n oʊ n",
+    "utmos": 3.4596667289733887
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0140",
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "Around the world, Sahara is known.",
+   "bl": {
+    "rms": 0.0802286908359028,
+    "whisper": "Around the world, Sahara is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d s ə h æ ɹ ɪ z n oʊ n",
+    "utmos": 3.930995464324951
+   },
+   "inj": {
+    "rms": 0.07238500489302911,
+    "whisper": "Around the world, Gobi is known.",
+    "ipa": "ɹ aɪ n d ð ə w ɚ l d ɡ oʊ b iː ɪ z n oʊ n",
+    "utmos": 3.8280110359191895
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 19
+  },
+  {
+   "sid": "s0141",
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "Around the world, Brazil is known.",
+   "bl": {
+    "rms": 0.0753529981527218,
+    "whisper": "Around the world, Brazil is known.",
+    "ipa": "ɐ ɹ ɑː d ð ə w ɚ d b ɹ ɪ z ɪ l ɪ z n oʊ n",
+    "utmos": 4.1949849128723145
+   },
+   "inj": {
+    "rms": 0.06326377458946696,
+    "whisper": "Around the world, Argentine is known.",
+    "ipa": "ɐ ɹ aʊ n ð ə w ɚ l ɑː dʒ ɪ n t iː n ɪ z n aʊ n",
+    "utmos": 4.207971572875977
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0142",
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "Around the world, Nissan is known.",
+   "bl": {
+    "rms": 0.07910733762987068,
+    "whisper": "Around the world, Nissan is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ l d n iː s ɑː n ɪ z n oʊ n",
+    "utmos": 4.105198383331299
+   },
+   "inj": {
+    "rms": 0.08279475899738434,
+    "whisper": "Around the World Masters note.",
+    "ipa": "ɹ aʊ n ð ə w ɚ l d d m æ s t ɚ z n aʊ d",
+    "utmos": 3.4056432247161865
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 31
+  },
+  {
+   "sid": "s0143",
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "Around the world, Audi is known.",
+   "bl": {
+    "rms": 0.07909356127372173,
+    "whisper": "Around the world, Audi is known.",
+    "ipa": "ɐ ɹ ɑː n ð ə w ɚ l d ɑː ɾ i ɪ z n oʊ n",
+    "utmos": 3.7316651344299316
+   },
+   "inj": {
+    "rms": 0.0866737613743981,
+    "whisper": "Around the world, BMW is known.",
+    "ipa": "ɐ ɹ ɑː d ð ə w ɚ j ɪ n d ʌ v j uː ɪ z n oʊ n",
+    "utmos": 3.385392904281616
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0144",
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "Around the world, Netflix is known.",
+   "bl": {
+    "rms": 0.06003351428780724,
+    "whisper": "Around the world, Netflix is numbing.",
+    "ipa": "ɐ ɹ aʊ d ð ə w ɚ l d n ɛ f l ɪ k s ɪ z n ʌ n ɪ n",
+    "utmos": 2.9303605556488037
+   },
+   "inj": {
+    "rms": 0.0758826942948493,
+    "whisper": "Around the world Spotify is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d s p ɑː ɾ ə f aɪ ɪ z n oʊ n",
+    "utmos": 4.093426704406738
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0145",
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "Around the world, Facebook is known.",
+   "bl": {
+    "rms": 0.06337017070740894,
+    "whisper": "Around the world, Facebook is known.",
+    "ipa": "ɐ ɹ aʊ n ð ə w ɚ l d b eɪ s b ʊ k ɪ z n oʊ n",
+    "utmos": 3.779651641845703
+   },
+   "inj": {
+    "rms": 0.07984107717653117,
+    "whisper": "Around the world, Twitter is known.",
+    "ipa": "ɹ ɑː n ð ə w ɚ d t w ɪ ɾ ɚ z z n oʊ n",
+    "utmos": 3.7476248741149902
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 33
+  },
+  {
+   "sid": "s0146",
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "Around the world, Cairo is known.",
+   "bl": {
+    "rms": 0.0610225538219304,
+    "whisper": "around the world Cairo is known.",
+    "ipa": "ɐ ɹ æ n d ð ə w ɚ d k ɑː ɹ ɚ w ʌ z n oʊ n",
+    "utmos": 3.526261568069458
+   },
+   "inj": {
+    "rms": 0.09687742989806351,
+    "whisper": "Around the world, Lagos is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ d l eɪ ɡ oʊ s ɪ z n oʊ n",
+    "utmos": 4.3837809562683105
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 35
+  },
+  {
+   "sid": "s0147",
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "Around the world, Mumbai is known.",
+   "bl": {
+    "rms": 0.08842656454137299,
+    "whisper": "Around the world, Mumbai is known.",
+    "ipa": "ɐ ɹ ɑː d ð ə w ɚ l d ɪ m b aɪ ɪ z n oʊ n",
+    "utmos": 3.4855403900146484
+   },
+   "inj": {
+    "rms": 0.07027964009913094,
+    "whisper": "around the world, Delhi is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ d d ɛ l i ɪ z n oʊ n",
+    "utmos": 4.007726669311523
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0148",
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "Around the world, Seoul is known.",
+   "bl": {
+    "rms": 0.0645743608019531,
+    "whisper": "Around the world, soul is known.",
+    "ipa": "ɹ ɑː n d ð ə w ɚ d s oʊ ɪ z n oʊ n",
+    "utmos": 4.247102737426758
+   },
+   "inj": {
+    "rms": 0.08784584886723172,
+    "whisper": "Around the world, Bangkok is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ l d b æ n k ɑː k ɪ z n oʊ",
+    "utmos": 4.16621208190918
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 35
+  },
+  {
+   "sid": "s0149",
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "Around the world, Milan is known.",
+   "bl": {
+    "rms": 0.07438256328346658,
+    "whisper": "Around the world, Milan is known.",
+    "ipa": "ɐ ɹ aʊ n d ð ə w ɚ l d m ə l ɑː n ɪ z n oʊ n",
+    "utmos": 4.062445640563965
+   },
+   "inj": {
+    "rms": 0.07024368150335474,
+    "whisper": "Around the world, Barcelona is known.",
+    "ipa": "ɐ ɹ ɑː n d ð ə w ɚ d p ɑː s ə l oʊ n ɪ ɪ z n oʊ n",
+    "utmos": 3.4356160163879395
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0150",
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "Many people know London very well.",
+   "bl": {
+    "rms": 0.09158946844502247,
+    "whisper": "Many people know London very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ l ʌ n d ə n v ɛ ɹ i w ɛ l",
+    "utmos": 3.7977795600891113
+   },
+   "inj": {
+    "rms": 0.06815305333036611,
+    "whisper": "Many people know Paris very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ p ɛ ɹ ɪ s v ɛ ɹ i w ɛ l",
+    "utmos": 3.4204154014587402
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 32
+  },
+  {
+   "sid": "s0151",
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "Many people know Michael very well.",
+   "bl": {
+    "rms": 0.07328813141163663,
+    "whisper": "Many people know Michael very well.",
+    "ipa": "m ɛ n i p iː p ʊ l n oʊ m aɪ k ʊ v ɛ ɹ i w ɛ l l",
+    "utmos": 3.4954686164855957
+   },
+   "inj": {
+    "rms": 0.07544720218435373,
+    "whisper": "Many people know John very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ dʒ ɑː n v ɛ ɹ i w ɛ l",
+    "utmos": 3.7644171714782715
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 30
+  },
+  {
+   "sid": "s0152",
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "Many people know Einstein very well.",
+   "bl": {
+    "rms": 0.08063780053043207,
+    "whisper": "Many people know Einstein very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ aɪ n s t aɪ n v ɛ ɹ i w ɛ l",
+    "utmos": 4.144478797912598
+   },
+   "inj": {
+    "rms": 0.06423064744618809,
+    "whisper": "many people know Newton very well.",
+    "ipa": "m ɛ n iː p iː p əl n oʊ n d ɪ k ə n v ɛ ɹ i w ɛ l",
+    "utmos": 3.4401111602783203
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0153",
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "Many people know Mozart very well.",
+   "bl": {
+    "rms": 0.0714256578872397,
+    "whisper": "many people know Mozart very well.",
+    "ipa": "m ɛ n i p iː p ʊ l n oʊ m ɔ t s ɑː t v ɛ ɹ i w ɛ l",
+    "utmos": 3.1931111812591553
+   },
+   "inj": {
+    "rms": 0.06529161650885543,
+    "whisper": "Any people know Beethoven very well.",
+    "ipa": "ɛ n i p iː p ʊ n oʊ b eɪ t oʊ v ə n v ɛ ɹ i w ɛ l l",
+    "utmos": 3.5593409538269043
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 42
+  },
+  {
+   "sid": "s0154",
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "Many people know Amazon very well.",
+   "bl": {
+    "rms": 0.06731462587219053,
+    "whisper": "Many people know Amazon very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɛ m ə z ɑː n v ɛ ɹ i w ɛ l",
+    "utmos": 3.6000237464904785
+   },
+   "inj": {
+    "rms": 0.0793361447075626,
+    "whisper": "many people know Google very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ ɡ uː ɡ oʊ v ɛ ɹ i w ɛ l",
+    "utmos": 3.7026751041412354
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0155",
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "Many people know Harvard very well.",
+   "bl": {
+    "rms": 0.051592095170227566,
+    "whisper": "Many people know Harvard very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ h ɑː v ɚ d v ɛ ɹ i w ɛ l",
+    "utmos": 3.2319467067718506
+   },
+   "inj": {
+    "rms": 0.07482822005274255,
+    "whisper": "Many people know Oxford very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ ɑː k s f ɚ d v ɛ ɹ i w ɛ l",
+    "utmos": 3.393507480621338
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 16
+  },
+  {
+   "sid": "s0156",
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "Many people know Ferrari very well.",
+   "bl": {
+    "rms": 0.07365605370298724,
+    "whisper": "But many people know Ferrari very well.",
+    "ipa": "m ɛ n p iː p ʊ n ʌ v ɚ f ɚ ɹ ɑː ɹ i v ɛ ɹ i w ɛ l",
+    "utmos": 2.867234706878662
+   },
+   "inj": {
+    "rms": 0.08228563788086453,
+    "whisper": "Many people know Porsche very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ p oː ʃ v ɛ ɹ i w ɛ l",
+    "utmos": 3.799649477005005
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 32
+  },
+  {
+   "sid": "s0157",
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "Many people know Saturn very well.",
+   "bl": {
+    "rms": 0.08326041988956116,
+    "whisper": "Many people know Saturn very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ s æ ɾ ɚ n v ɛ ɹ i w ɛ l",
+    "utmos": 3.6709558963775635
+   },
+   "inj": {
+    "rms": 0.07019028624597841,
+    "whisper": "Many people know Jupyter very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ dʒ uː p ɪ ɾ ɚ v ɛ ɹ i w ɛ l",
+    "utmos": 3.6539151668548584
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 18
+  },
+  {
+   "sid": "s0158",
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "Many people know Diamond very well.",
+   "bl": {
+    "rms": 0.06602905732444168,
+    "whisper": "Many people know diamond very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ d aɪ m ə n d v ɛ ɹ i w ɛ l",
+    "utmos": 3.652453899383545
+   },
+   "inj": {
+    "rms": 0.05397973816494012,
+    "whisper": "many people know emerald very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ ɛ m ɹ ɚ d v ɛ ɹ i w ɛ l",
+    "utmos": 3.3162214756011963
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0159",
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "Many people know Christmas very well.",
+   "bl": {
+    "rms": 0.05788634323914061,
+    "whisper": "Many people know Christmas very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ k ɹ ɪ s m ə s v ɛ ɹ i w ɛ l",
+    "utmos": 3.6213231086730957
+   },
+   "inj": {
+    "rms": 0.07559417018652372,
+    "whisper": "Many people know Halloween very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ h æ l ə eɪ n v ɛ ɹ i w ɛ l",
+    "utmos": 3.363668441772461
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0160",
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "Many people know Hollywood very well.",
+   "bl": {
+    "rms": 0.07360343184404963,
+    "whisper": "Many people know Hollywood very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ h ʌ l i w ʊ d v ɛ ɹ i w ɛ l",
+    "utmos": 3.3454999923706055
+   },
+   "inj": {
+    "rms": 0.05478931451466599,
+    "whisper": "Many people know Broadway very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ b ɹ ɑː d w eɪ v ɛ ɹ i w ɛ l",
+    "utmos": 3.520998001098633
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 11
+  },
+  {
+   "sid": "s0161",
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "Many people know Victoria very well.",
+   "bl": {
+    "rms": 0.07687483242620965,
+    "whisper": "Many people know Victoria very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ v ɪ k t oː ɹ i ɐ v ɛ ɹ i w ɛ l",
+    "utmos": 3.979611396789551
+   },
+   "inj": {
+    "rms": 0.07218568020051778,
+    "whisper": "Many people know Elizabeth very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɪ l ɪ z ə b ə θ v ɛ ɹ i w ɛ l",
+    "utmos": 4.006031036376953
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  },
+  {
+   "sid": "s0162",
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "Many people know Leonardo very well.",
+   "bl": {
+    "rms": 0.07508396956475337,
+    "whisper": "Many people know Leonardo very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ l iː ə n ɑː ɾ ə v ɛ ɹ i w ɛ l",
+    "utmos": 2.715367078781128
+   },
+   "inj": {
+    "rms": 0.04480032048476091,
+    "whisper": "Many people know Picasso very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ p ɪ k ɑː s oʊ v ɛ ɹ i w ɛ l",
+    "utmos": 3.8164877891540527
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 36
+  },
+  {
+   "sid": "s0163",
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "Many people know Everest very well.",
+   "bl": {
+    "rms": 0.08273716848789935,
+    "whisper": "many people know Everest very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɛ v ɹ ɪ s t v ɛ ɹ i w ɛ l",
+    "utmos": 3.3547186851501465
+   },
+   "inj": {
+    "rms": 0.07743850980677874,
+    "whisper": "Many people know Kilimanjaro very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ k ɪ l m ə n dʒ æ ɹ oʊ v ɛ ɹ i w ɛ l",
+    "utmos": 3.296083450317383
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 40
+  },
+  {
+   "sid": "s0164",
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "Many people know Atlantic very well.",
+   "bl": {
+    "rms": 0.056565318412664795,
+    "whisper": "Many people know Atlantic very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɪ t l æ n t ɪ k v ɛ ɹ ɹ i w ɛ l",
+    "utmos": 3.3187198638916016
+   },
+   "inj": {
+    "rms": 0.04981135125136111,
+    "whisper": "Many people know Pacific very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ p ə s ɪ f ɪ k v ɛ ɹ i w ɛ l",
+    "utmos": 3.63399338722229
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 18
+  },
+  {
+   "sid": "s0165",
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "Many people know Shakespeare very well.",
+   "bl": {
+    "rms": 0.07860754715952037,
+    "whisper": "Many people know Shakespeare very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ʃ eɪ k s b iː ɹ v ɛ ɹ i w ɛ l",
+    "utmos": 4.278931617736816
+   },
+   "inj": {
+    "rms": 0.08245834442034633,
+    "whisper": "Many people know Dickens very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ d ɪ k ɪ n z v ɛ ɹ i w ɛ l",
+    "utmos": 4.168942451477051
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 30
+  },
+  {
+   "sid": "s0166",
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "Many people know Samsung very well.",
+   "bl": {
+    "rms": 0.06962260338573438,
+    "whisper": "Many people know Samsung very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ s ɛ n s ʌ ɪ ŋ v ɛ ɹ i w ɛ l",
+    "utmos": 3.6488256454467773
+   },
+   "inj": {
+    "rms": 0.05797493456342025,
+    "whisper": "Many people know Apple very well.",
+    "ipa": "m ɛ n i p iː p l n ɔ æ p ʊ v ɛ ɹ i w ɛ l",
+    "utmos": 3.753420114517212
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 31
+  },
+  {
+   "sid": "s0167",
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "Many people know Tokyo very well.",
+   "bl": {
+    "rms": 0.06770483278816294,
+    "whisper": "Many people know Tokyo very well.",
+    "ipa": "aɪ n i p iː p ʊ z n oʊ t oʊ k i ʌ v ɛ ɹ i w ɛ l",
+    "utmos": 2.979389190673828
+   },
+   "inj": {
+    "rms": 0.06955131807557907,
+    "whisper": "Many people know Berlin very well.",
+    "ipa": "m ɛ n i p iː p ʊ əl n oʊ b ɚ l ɪ n d v ɛ ɹ ɹ i w ɛ l",
+    "utmos": 3.606048107147217
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 50
+  },
+  {
+   "sid": "s0168",
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "Many people know Sydney very well.",
+   "bl": {
+    "rms": 0.07389730685604964,
+    "whisper": "Many people know Sidney very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ s ɪ n i v ɛ ɹ i w ɛ l",
+    "utmos": 3.3741812705993652
+   },
+   "inj": {
+    "rms": 0.08815723526825761,
+    "whisper": "Many people know Toronto very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ t uː ɹ ɑː n oʊ v ɛ ɹ i w ɛ l",
+    "utmos": 3.5664167404174805
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 30
+  },
+  {
+   "sid": "s0169",
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "Many people know Stanford very well.",
+   "bl": {
+    "rms": 0.05416711804290831,
+    "whisper": "Many people know Stanford very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ s t æ n f ɚ d v ɛ ɹ ɪ w ʌ ɾ ɑː l",
+    "utmos": 3.443441390991211
+   },
+   "inj": {
+    "rms": 0.07448057055997107,
+    "whisper": "Many people know Berkeley very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ b ɚ k l i v ɛ ɹ i w ɛ l",
+    "utmos": 3.321645975112915
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 21
+  },
+  {
+   "sid": "s0170",
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "Many people know Napoleon very well.",
+   "bl": {
+    "rms": 0.08326731931663046,
+    "whisper": "Many people know Napoleon very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ n ə p oː l i ə n v ɛ ɹ i w ɛ l",
+    "utmos": 3.4080452919006348
+   },
+   "inj": {
+    "rms": 0.055316784432022294,
+    "whisper": "Many people know Caesar very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ s iː z ɚ v ɛ ɹ ɹ i w ɛ l",
+    "utmos": 3.5084028244018555
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 36
+  },
+  {
+   "sid": "s0171",
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "Many people know Darwin very well.",
+   "bl": {
+    "rms": 0.07782186327894329,
+    "whisper": "Many people know Darwin very well.",
+    "ipa": "m ɛ n i p iː p ʊ l n oʊ d ɑː w ə n v ɛ ɹ i w ɛ l",
+    "utmos": 3.498591423034668
+   },
+   "inj": {
+    "rms": 0.06581283953162269,
+    "whisper": "Many people know Galileo very well.",
+    "ipa": "m ɛ n i p iː p ʊ l n oː ɡ æ l ə l eɪ ɾ oʊ v ɛ ɹ i w ɛ l",
+    "utmos": 3.4319887161254883
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0172",
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "Many people know Tesla very well.",
+   "bl": {
+    "rms": 0.06225635445532112,
+    "whisper": "Many people know Tesla very well.",
+    "ipa": "m ɛ n i p iː p ʊ l n oʊ t ɛ s t l w ʌ v ɛ ɹ i w ɛ l",
+    "utmos": 3.8640496730804443
+   },
+   "inj": {
+    "rms": 0.07206665372805057,
+    "whisper": "Many people know Edison very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɛ ɾ ə s ɪ n v ɛ ɹ i w ɛ l",
+    "utmos": 3.721622943878174
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0173",
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "Many people know Boeing very well.",
+   "bl": {
+    "rms": 0.06594686046005062,
+    "whisper": "Many people know Boeing very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ b ʌ l ɪ ŋ v ɛ ɹ i w ɛ l",
+    "utmos": 3.5365989208221436
+   },
+   "inj": {
+    "rms": 0.04639613692166218,
+    "whisper": "Many people know Airbus very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɛ ɹ b ɔ s m eɪ w ɪ l",
+    "utmos": 3.5201611518859863
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 17
+  },
+  {
+   "sid": "s0174",
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "Many people know Disney very well.",
+   "bl": {
+    "rms": 0.07571416719579918,
+    "whisper": "Many people know Disney very well.",
+    "ipa": "m ɛ n i p iː p ʊ m oʊ d d ɪ s n iː v ɛ ɹ i w ɛ l",
+    "utmos": 2.7572596073150635
+   },
+   "inj": {
+    "rms": 0.09832262008307052,
+    "whisper": "Many people know Warner very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ w oː n oʊ v ɛ ɹ i w ɛ l",
+    "utmos": 3.2940354347229004
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0175",
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "Many people know Intel very well.",
+   "bl": {
+    "rms": 0.08374013576091882,
+    "whisper": "Many people know Intel very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɪ m t ɛ l v ɹ i w ɛ l",
+    "utmos": 3.336362600326538
+   },
+   "inj": {
+    "rms": 0.06910124453083948,
+    "whisper": "many people know it very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɚ v ɛ ɹ i w ɛ l",
+    "utmos": 3.3089184761047363
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 14
+  },
+  {
+   "sid": "s0176",
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "Many people know Chicago very well.",
+   "bl": {
+    "rms": 0.05704395481370823,
+    "whisper": "Many people know Chicago very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ʃ ɪ k ɑː ɡ v ɛ ɹ i w ɛ l",
+    "utmos": 3.7796146869659424
+   },
+   "inj": {
+    "rms": 0.060305058621777326,
+    "whisper": "Many people know Boston very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ b ɑː s t ə n v ɛ ɹ i w ɛ l",
+    "utmos": 3.5329749584198
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 17
+  },
+  {
+   "sid": "s0177",
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "Many people know Dallas very well.",
+   "bl": {
+    "rms": 0.046862870245122326,
+    "whisper": "Many people know Dallas very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ d æ l ə s v ɹ i w ɛ l",
+    "utmos": 3.6528115272521973
+   },
+   "inj": {
+    "rms": 0.07087131942060107,
+    "whisper": "Many people know Houston very well.",
+    "ipa": "m ɛ n i p iː p ʊ l n oʊ h j uː s t ə n v ɛ ɹ i w ɛ l",
+    "utmos": 3.3616843223571777
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 31
+  },
+  {
+   "sid": "s0178",
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "Many people know Denver very well.",
+   "bl": {
+    "rms": 0.06484851096290231,
+    "whisper": "Many people know Denver very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ d ɛ m b ɚ v ɛ ɹ i w ɛ l",
+    "utmos": 3.621835947036743
+   },
+   "inj": {
+    "rms": 0.06800349575399718,
+    "whisper": "many people know Seattle very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ s j ɛ ɾ əl v ɛ ɹ i w ɛ l",
+    "utmos": 3.936668634414673
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0179",
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "Many people know Miami very well.",
+   "bl": {
+    "rms": 0.10140477082571608,
+    "whisper": "Many people know Miami very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ m aɪ eɪ m i v ɛ ɹ i w ɛ l",
+    "utmos": 3.2460553646087646
+   },
+   "inj": {
+    "rms": 0.049061628106772816,
+    "whisper": "But many people know Atlanta very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ ɪ t l æ n d ə v ɛ ɹ i w ɛ l",
+    "utmos": 2.97464919090271
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 34
+  },
+  {
+   "sid": "s0180",
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "Many people know Nike very well.",
+   "bl": {
+    "rms": 0.054553368318263774,
+    "whisper": "Many people know Night King very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ n aɪ k ɪ ŋ v ɛ ɹ i w ɛ l",
+    "utmos": 3.3204917907714844
+   },
+   "inj": {
+    "rms": 0.09062586475492491,
+    "whisper": "Many people know adidas very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɐ d iː d ə z v ɛ ɹ i w ɛ l",
+    "utmos": 4.191425323486328
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 16
+  },
+  {
+   "sid": "s0181",
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "Many people know Toyota very well.",
+   "bl": {
+    "rms": 0.06658876656429616,
+    "whisper": "Many people know Toyota very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ t oʊ dʒ ə v ɛ ɹ i w ɛ l",
+    "utmos": 4.1352763175964355
+   },
+   "inj": {
+    "rms": 0.05562885114060089,
+    "whisper": "Many people know Honda very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ h ɑː n d ə v ɛ ɹ i w ɛ l",
+    "utmos": 3.1756088733673096
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0182",
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "Many people know Columbus very well.",
+   "bl": {
+    "rms": 0.07008189430836625,
+    "whisper": "Many people know Columbus very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ k ʌ l ʌ m b ə s v ɛ ɹ i w ɛ l",
+    "utmos": 3.1827125549316406
+   },
+   "inj": {
+    "rms": 0.07641921247150789,
+    "whisper": "Many people know Magellan very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ m ə dʒ ɛ ə n v ɛ ɹ i w ɛ l",
+    "utmos": 4.14476203918457
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0183",
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "Many people know Madrid very well.",
+   "bl": {
+    "rms": 0.07118972695671086,
+    "whisper": "Many people know Madrid very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ m ə d ɹ ɪ d v ɛ ɹ i w ɛ l",
+    "utmos": 3.3150100708007812
+   },
+   "inj": {
+    "rms": 0.07922115497094478,
+    "whisper": "Many people know rum very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɹ ʌ m v ɛ ɹ i w ɛ l",
+    "utmos": 4.178139686584473
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 33
+  },
+  {
+   "sid": "s0184",
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "Many people know Vienna very well.",
+   "bl": {
+    "rms": 0.06712656320776271,
+    "whisper": "Many people know Vienna very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ v i ɪ n ə v ɛ ɹ i w ɛ l",
+    "utmos": 3.5613832473754883
+   },
+   "inj": {
+    "rms": 0.055732985611290316,
+    "whisper": "Many people know Prague very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ p ɹ ɑː b v ɛ ɹ i w ɛ l",
+    "utmos": 3.03169322013855
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 21
+  },
+  {
+   "sid": "s0185",
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "Many people know Moscow very well.",
+   "bl": {
+    "rms": 0.05745541490438832,
+    "whisper": "Many people know Moscow very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ m ɑː s k aʊ v ɛ ɹ i w ɛ l",
+    "utmos": 3.6488559246063232
+   },
+   "inj": {
+    "rms": 0.07143168222470893,
+    "whisper": "Many people know Beijing very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ b eɪ dʒ ɪ ŋ v ɛ ɹ i w ɛ l",
+    "utmos": 3.751537322998047
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 9
+  },
+  {
+   "sid": "s0186",
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "Many people know Lincoln very well.",
+   "bl": {
+    "rms": 0.07268057426173409,
+    "whisper": "many people know Lincoln very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ l ɪ ŋ k ə n v ɛ ɹ i w ɛ l",
+    "utmos": 3.1501755714416504
+   },
+   "inj": {
+    "rms": 0.04814250678379397,
+    "whisper": "Many people know Washington very well.",
+    "ipa": "m ɛ n i p iː p ʊ l n oʊ w ɑː ʃ ɪ n t ɪ ŋ v ɛ ɹ i w ɛ l",
+    "utmos": 3.5456480979919434
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 34
+  },
+  {
+   "sid": "s0187",
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "Many people know Kennedy very well.",
+   "bl": {
+    "rms": 0.05696088088223685,
+    "whisper": "Many people know Kennedy very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ k ɛ n ə d i v ɛ ɹ i w ɛ l",
+    "utmos": 3.571568012237549
+   },
+   "inj": {
+    "rms": 0.05842837677776591,
+    "whisper": "Many people know Roosevelt very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɹ oʊ z ʌ v ɛ l t v ɛ ɹ i w ɛ l",
+    "utmos": 3.292036771774292
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0188",
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "Many people know Mars very well.",
+   "bl": {
+    "rms": 0.08263129934622766,
+    "whisper": "Many people know Mars very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ m ɑː z v ɛ ɹ i w ɛ l",
+    "utmos": 3.397049903869629
+   },
+   "inj": {
+    "rms": 0.07464644162269324,
+    "whisper": "Many people know Venus very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ v iː n ə s v ɛ ɹ i w ɛ l",
+    "utmos": 3.4412240982055664
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 31
+  },
+  {
+   "sid": "s0189",
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "Many people know Mercury very well.",
+   "bl": {
+    "rms": 0.08444005361048072,
+    "whisper": "Many people know Mercury very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ m ɚ k ɚ ɹ i v ɛ ɹ i w ɛ l",
+    "utmos": 3.759169578552246
+   },
+   "inj": {
+    "rms": 0.06676522328074015,
+    "whisper": "Many people know Neptune very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ n ɛ p t uː n v ɛ ɹ i w ɛ l",
+    "utmos": 4.003106594085693
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0190",
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "Many people know Sahara very well.",
+   "bl": {
+    "rms": 0.08703853651007255,
+    "whisper": "Many people know Sahara very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ s ə h ɛ v ɛ ɹ i w ɪ l",
+    "utmos": 3.8907809257507324
+   },
+   "inj": {
+    "rms": 0.0904828574903673,
+    "whisper": "Many people know Gobi very well.",
+    "ipa": "m ɛ n i p i p ʊ n oʊ ɡ oʊ b i v ɛ ɹ i w ɛ l",
+    "utmos": 4.142120361328125
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 31
+  },
+  {
+   "sid": "s0191",
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "Many people know Brazil very well.",
+   "bl": {
+    "rms": 0.0703708151147654,
+    "whisper": "Many people know Brazil very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ b ɹ ɪ z ɪ l v ɛ ɹ i w ɛ l",
+    "utmos": 4.393570899963379
+   },
+   "inj": {
+    "rms": 0.06538362626971297,
+    "whisper": "Many people know Argentina very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ ɑː dʒ ə n t iː n ɐ v ɛ ɹ i w ɛ l",
+    "utmos": 3.583383560180664
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 32
+  },
+  {
+   "sid": "s0192",
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "Many people know Nissan very well.",
+   "bl": {
+    "rms": 0.0777478846073641,
+    "whisper": "many people know Nissan very well.",
+    "ipa": "m ɛ n i p iː p ʊ l ɚ n l ɪ s ɑː n v ɛ ɹ i w ɛ l",
+    "utmos": 3.981452703475952
+   },
+   "inj": {
+    "rms": 0.0650622125000037,
+    "whisper": "Many people know Mazda very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ m æ z t ə v ɛ ɹ i w ɛ l",
+    "utmos": 3.1587982177734375
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0193",
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "Many people know Audi very well.",
+   "bl": {
+    "rms": 0.07396669347597885,
+    "whisper": "Many people know Audi very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ æ d i v ɛ ɹ i w ɛ l",
+    "utmos": 3.746892213821411
+   },
+   "inj": {
+    "rms": 0.0768238330085001,
+    "whisper": "Many people know bear",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ b",
+    "utmos": 2.7757158279418945
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 19
+  },
+  {
+   "sid": "s0194",
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "Many people know Netflix very well.",
+   "bl": {
+    "rms": 0.08192976402950809,
+    "whisper": "Many people know Netflix very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ n ɛ t f l ɪ k s v ɛ ɹ i w ɛ l",
+    "utmos": 3.768077850341797
+   },
+   "inj": {
+    "rms": 0.06815220317709036,
+    "whisper": "Many people know Spotify very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ s p ɑː t f aɪ d v ɛ ɹ i w ɛ l",
+    "utmos": 3.857541561126709
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 12
+  },
+  {
+   "sid": "s0195",
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "Many people know Facebook very well.",
+   "bl": {
+    "rms": 0.06527062005653057,
+    "whisper": "Many people know Facebook very well.",
+    "ipa": "m ɛ n p iː p əl n oʊ f eɪ s b ʊ k v ɛ ɹ i w ɛ l",
+    "utmos": 3.9015326499938965
+   },
+   "inj": {
+    "rms": 0.06534890016171815,
+    "whisper": "Many people know Twitter very well.",
+    "ipa": "m ɛ n i p iː p əl n oʊ t w ɪ ɾ ɚ v ɛ ɹ i w ɛ l",
+    "utmos": 3.854248046875
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 37
+  },
+  {
+   "sid": "s0196",
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "Many people know Cairo very well.",
+   "bl": {
+    "rms": 0.07529277472458126,
+    "whisper": "Many people know Cairo very well.",
+    "ipa": "m ɛ n i p iː p ʊ l n oː k a ɹ oː v ɛ ɹ i w ɛ l",
+    "utmos": 3.67097806930542
+   },
+   "inj": {
+    "rms": 0.06692796406717041,
+    "whisper": "Many people know Lagos very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ l æ ɡ ʌ z v ɛ ɹ i w ɛ l",
+    "utmos": 4.27977991104126
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0197",
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "Many people know Mumbai very well.",
+   "bl": {
+    "rms": 0.0796099421631025,
+    "whisper": "Many people know Mumbai very well.",
+    "ipa": "m ɛ n i p iː p ʊ l n oʊ m oʊ b aɪ v ɛ ɹ i w ɛ l",
+    "utmos": 3.2730283737182617
+   },
+   "inj": {
+    "rms": 0.05865746998334781,
+    "whisper": "Many people know Delhi very well.",
+    "ipa": "m ɛ n i p iː p əl n oː d ɛ l i v ɛ ɹ i w ɛ l",
+    "utmos": 3.5798654556274414
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 30
+  },
+  {
+   "sid": "s0198",
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "Many people know Seoul very well.",
+   "bl": {
+    "rms": 0.08280525872803958,
+    "whisper": "Many people know Soul very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ s oː v ɛ ɹ i w ɛ l",
+    "utmos": 3.830937623977661
+   },
+   "inj": {
+    "rms": 0.06775482356051024,
+    "whisper": "Many people know Bangkok very well.",
+    "ipa": "m ɛ n i p iː p ʊ l n oː b æ ŋ k h ɑː k t v ɛ ɹ i w ɛ l",
+    "utmos": 2.992663860321045
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 33
+  },
+  {
+   "sid": "s0199",
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "Many people know Milan very well.",
+   "bl": {
+    "rms": 0.0695555978187358,
+    "whisper": "Many people know Mulan very well.",
+    "ipa": "m ɛ n i p iː p ʊ n oʊ m uː l aː n v ɛ ɹ i w ɛ l",
+    "utmos": 3.1020185947418213
+   },
+   "inj": {
+    "rms": 0.07656125013681797,
+    "whisper": "Many people know Barcelona very well.",
+    "ipa": "m ɛ n i p iː p ʊ m ɛ b ɑː s ə l oʊ n ɚ v ɛ ɹ i w ɛ l",
+    "utmos": 3.5210952758789062
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 33
+  },
+  {
+   "sid": "s0200",
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "They respect London.",
+   "bl": {
+    "rms": 0.05826801661926769,
+    "whisper": "They respect London.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t l ʌ n d ə n",
+    "utmos": 3.1427252292633057
+   },
+   "inj": {
+    "rms": 0.05359613768054283,
+    "whisper": "They respect Paris.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t p ɛ ɹ ɪ s",
+    "utmos": 3.947352409362793
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 7
+  },
+  {
+   "sid": "s0201",
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "They respect Michael.",
+   "bl": {
+    "rms": 0.05718482985074875,
+    "whisper": "They respect Michael.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t m aɪ k əl",
+    "utmos": 3.3103930950164795
+   },
+   "inj": {
+    "rms": 0.048746420095858396,
+    "whisper": "They respect Jon.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t dʒ ɑː n",
+    "utmos": 3.5150091648101807
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 9
+  },
+  {
+   "sid": "s0202",
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "They respect Einstein.",
+   "bl": {
+    "rms": 0.07409092018269543,
+    "whisper": "They respect Einstein.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k k t aɪ n s t eɪ n",
+    "utmos": 4.283795356750488
+   },
+   "inj": {
+    "rms": 0.05698571283823018,
+    "whisper": "They respect Newton.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t n uː t ə n",
+    "utmos": 3.2950401306152344
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 12
+  },
+  {
+   "sid": "s0203",
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "They respect Mozart.",
+   "bl": {
+    "rms": 0.06243535524886969,
+    "whisper": "They respect Mozart.",
+    "ipa": "ð eɪ d ɹ ɪ s p ɛ k k t m oʊ t s aɪ t",
+    "utmos": 3.778583288192749
+   },
+   "inj": {
+    "rms": 0.050629498800709376,
+    "whisper": "they respect Beethoven.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t b eɪ t oʊ ɡ ə n",
+    "utmos": 3.021132707595825
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0204",
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "They respect Amazon.",
+   "bl": {
+    "rms": 0.053743645486982836,
+    "whisper": "They respect Amazon.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t æ m ə z ɑː n",
+    "utmos": 4.117010116577148
+   },
+   "inj": {
+    "rms": 0.05770686919651999,
+    "whisper": "They respect Google.",
+    "ipa": "ð ɛ ɹ ɪ s p ɛ k t k uː ɡ ʊ",
+    "utmos": 3.4098000526428223
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0205",
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "They respect Harvard.",
+   "bl": {
+    "rms": 0.045214650616902,
+    "whisper": "They respect Harvard.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t h ɑː v ɚ d",
+    "utmos": 3.628706455230713
+   },
+   "inj": {
+    "rms": 0.049573130156023375,
+    "whisper": "They respect Oxford.",
+    "ipa": "eɪ ɹ ɪ s p ɛ k t ɑː k s f ɚ d",
+    "utmos": 3.439943313598633
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 17
+  },
+  {
+   "sid": "s0206",
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "They respect Ferrari.",
+   "bl": {
+    "rms": 0.04895378294869229,
+    "whisper": "They respect Ferrari.",
+    "ipa": "ð eɪ w ɹ ɪ s p ɛ k k t f ɚ ɹ h ɑː ɹ i",
+    "utmos": 3.342170476913452
+   },
+   "inj": {
+    "rms": 0.05181289010685116,
+    "whisper": "They respect Porsche.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t p oʊ ʃ",
+    "utmos": 3.615727424621582
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0207",
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "They respect Saturn.",
+   "bl": {
+    "rms": 0.0627430408754644,
+    "whisper": "They respect Saturn.",
+    "ipa": "ð eɪ ɹ ɪ s p k t s æ ɾ ɚ",
+    "utmos": 3.3727738857269287
+   },
+   "inj": {
+    "rms": 0.055888698755108025,
+    "whisper": "They respect Jupiter.",
+    "ipa": "eɪ ɹ ɪ s p ɛ k t dʒ uː p ɪ ɾ ɚ",
+    "utmos": 3.709853172302246
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0208",
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "They respect Diamond.",
+   "bl": {
+    "rms": 0.03427179208675812,
+    "whisper": "They respect Diamond.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t d aɪ m ə n d",
+    "utmos": 3.005030393600464
+   },
+   "inj": {
+    "rms": 0.06030960376371949,
+    "whisper": "They respect Emerald.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɛ m ɹ ɚ d",
+    "utmos": 3.8135414123535156
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 11
+  },
+  {
+   "sid": "s0209",
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "They respect Christmas.",
+   "bl": {
+    "rms": 0.047314984868876406,
+    "whisper": "They respect Christmas.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t k ɹ ɪ s m ə s",
+    "utmos": 4.029779434204102
+   },
+   "inj": {
+    "rms": 0.07061666041098176,
+    "whisper": "They respect Halloween.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t h aɪ l ɪ w iː n",
+    "utmos": 4.141778945922852
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 14
+  },
+  {
+   "sid": "s0210",
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "They respect Hollywood.",
+   "bl": {
+    "rms": 0.049972173592316,
+    "whisper": "They respect Hollywood.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t h ɑː l i w ʊ d",
+    "utmos": 3.6396982669830322
+   },
+   "inj": {
+    "rms": 0.07419278866042078,
+    "whisper": "They respect Broadway.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t b ɹ ɑː d w eɪ",
+    "utmos": 3.0450098514556885
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 9
+  },
+  {
+   "sid": "s0211",
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "They respect Victoria.",
+   "bl": {
+    "rms": 0.06532510204527582,
+    "whisper": "They respect Victoria.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k k t m ɪ k t oː ɹ ə",
+    "utmos": 3.9840211868286133
+   },
+   "inj": {
+    "rms": 0.051330902365919875,
+    "whisper": "They respect Elizabeth.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k k t ə l ɪ z ɪ b ə θ",
+    "utmos": 3.399531126022339
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 11
+  },
+  {
+   "sid": "s0212",
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "They respect Leonardo.",
+   "bl": {
+    "rms": 0.07263107188774859,
+    "whisper": "They respect Leonardo.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t l iː ə n ɑː d oʊ",
+    "utmos": 3.8044559955596924
+   },
+   "inj": {
+    "rms": 0.05720495317705006,
+    "whisper": "They respect Picasso.",
+    "ipa": "ð eɪ ɹ iː s ə p ɛ k t p ɪ k ɑː s oʊ",
+    "utmos": 3.355760335922241
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 19
+  },
+  {
+   "sid": "s0213",
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "They respect Everest.",
+   "bl": {
+    "rms": 0.055727884242597996,
+    "whisper": "They respect Everest.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɛ v ɹ ɚ s t",
+    "utmos": 3.6684458255767822
+   },
+   "inj": {
+    "rms": 0.07258345916407814,
+    "whisper": "They respect Kilimanjaro.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ə l i m ɪ n dʒ ɛ r ɐ",
+    "utmos": 3.4989445209503174
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 15
+  },
+  {
+   "sid": "s0214",
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "They respect Atlantic.",
+   "bl": {
+    "rms": 0.05029938402318931,
+    "whisper": "They respect Atlantic.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɪ t l æ n ɪ k",
+    "utmos": 4.071650505065918
+   },
+   "inj": {
+    "rms": 0.05392105370946416,
+    "whisper": "A respect Pacific.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t p ə s ɪ f ɪ k",
+    "utmos": 3.893649101257324
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 5
+  },
+  {
+   "sid": "s0215",
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "They respect Shakespeare.",
+   "bl": {
+    "rms": 0.04936101927180743,
+    "whisper": "They respect Shakespeare.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ʃ eɪ k s p ɪ",
+    "utmos": 3.9371888637542725
+   },
+   "inj": {
+    "rms": 0.0584652640638123,
+    "whisper": "They respect Dickens.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t d ɪ k ə n z",
+    "utmos": 4.134256362915039
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 11
+  },
+  {
+   "sid": "s0216",
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "They respect Samsung.",
+   "bl": {
+    "rms": 0.050099378300449283,
+    "whisper": "They respect Samsung.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k k t s æ m s ə n",
+    "utmos": 3.473598003387451
+   },
+   "inj": {
+    "rms": 0.062182905146368435,
+    "whisper": "They respect Apple.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t æ p ʊ",
+    "utmos": 3.427063226699829
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 12
+  },
+  {
+   "sid": "s0217",
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "They respect Tokyo.",
+   "bl": {
+    "rms": 0.051610080151705255,
+    "whisper": "They respect Tokyo.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t oː k i oʊ",
+    "utmos": 3.4676761627197266
+   },
+   "inj": {
+    "rms": 0.05327043352834377,
+    "whisper": "They respect Berlin.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t b ɚ l ɪ n",
+    "utmos": 3.332265615463257
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 9
+  },
+  {
+   "sid": "s0218",
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "They respect Sydney.",
+   "bl": {
+    "rms": 0.05174971269530691,
+    "whisper": "They respect Sydney.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t s ɪ d n i",
+    "utmos": 3.186114549636841
+   },
+   "inj": {
+    "rms": 0.04822577414148157,
+    "whisper": "They respect Toronto.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ə ɹ ɑː n oʊ",
+    "utmos": 3.2187581062316895
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 9
+  },
+  {
+   "sid": "s0219",
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "They respect Stanford.",
+   "bl": {
+    "rms": 0.07070399853617768,
+    "whisper": "They respect Stanford.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t s t æ n t f ɚ d",
+    "utmos": 3.623842477798462
+   },
+   "inj": {
+    "rms": 0.04293457523123966,
+    "whisper": "They respect Berkeley.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t b ɚ k l i",
+    "utmos": 3.2767744064331055
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 11
+  },
+  {
+   "sid": "s0220",
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "They respect Napoleon.",
+   "bl": {
+    "rms": 0.06792135834311899,
+    "whisper": "They respect Napoleon.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t n ʌ p oː l i ə n",
+    "utmos": 3.6357786655426025
+   },
+   "inj": {
+    "rms": 0.0594678523317377,
+    "whisper": "They respect Caesar.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t s iː z ɚ",
+    "utmos": 3.7166080474853516
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 15
+  },
+  {
+   "sid": "s0221",
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "They respect Darwin.",
+   "bl": {
+    "rms": 0.07261072403645444,
+    "whisper": "They respect Darwin.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t d ɑː w ə n",
+    "utmos": 3.1093928813934326
+   },
+   "inj": {
+    "rms": 0.06120757684636572,
+    "whisper": "They respect Galileo.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɡ æ l ə l eɪ oʊ",
+    "utmos": 3.1974055767059326
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 14
+  },
+  {
+   "sid": "s0222",
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "They respect Tesla.",
+   "bl": {
+    "rms": 0.058064602426854434,
+    "whisper": "They respect Tesla.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t t ɛ s l ɐ",
+    "utmos": 3.616208076477051
+   },
+   "inj": {
+    "rms": 0.056180815366060864,
+    "whisper": "They respect Edison.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɛ ɾ ɪ s ə n",
+    "utmos": 3.012737989425659
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 7
+  },
+  {
+   "sid": "s0223",
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "They respect Boeing.",
+   "bl": {
+    "rms": 0.059815755350847065,
+    "whisper": "They respect Bowie.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t b oʊ l i",
+    "utmos": 3.319424867630005
+   },
+   "inj": {
+    "rms": 0.06096284517162373,
+    "whisper": "They respect Airbus.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɛ ɹ b ʌ s",
+    "utmos": 4.007428169250488
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 8
+  },
+  {
+   "sid": "s0224",
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "They respect Disney.",
+   "bl": {
+    "rms": 0.04352059443044568,
+    "whisper": "They respect Disney.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɪ z n i",
+    "utmos": 3.2405283451080322
+   },
+   "inj": {
+    "rms": 0.0640859643629894,
+    "whisper": "They respect Warner.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t w oʊ n ɚ",
+    "utmos": 3.2265164852142334
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 7
+  },
+  {
+   "sid": "s0225",
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "They respect Intel.",
+   "bl": {
+    "rms": 0.04122225843321246,
+    "whisper": "They respect intel.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɪ n t ɛ l",
+    "utmos": 3.2618162631988525
+   },
+   "inj": {
+    "rms": 0.07028377394732235,
+    "whisper": "They respect my-",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t m aɪ",
+    "utmos": 3.765754222869873
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 8
+  },
+  {
+   "sid": "s0226",
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "They respect Chicago.",
+   "bl": {
+    "rms": 0.0481191074443542,
+    "whisper": "they respect Chicano.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ʃ ɪ k ɑː d oʊ",
+    "utmos": 3.415858507156372
+   },
+   "inj": {
+    "rms": 0.04444440032609084,
+    "whisper": "They respect Boston.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t b ɑː s t ə n",
+    "utmos": 3.6022017002105713
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 10
+  },
+  {
+   "sid": "s0227",
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "They respect Dallas.",
+   "bl": {
+    "rms": 0.04921343941183788,
+    "whisper": "They respect Dallas.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t d ɛ l ə s",
+    "utmos": 3.4595141410827637
+   },
+   "inj": {
+    "rms": 0.06355196758715696,
+    "whisper": "They respect Houston.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t h uː s t ə n",
+    "utmos": 3.8993725776672363
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 11
+  },
+  {
+   "sid": "s0228",
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "They respect Denver.",
+   "bl": {
+    "rms": 0.048287169533779095,
+    "whisper": "They expect Denver.",
+    "ipa": "b eɪ s p ɛ k d ɛ n v ɚ",
+    "utmos": 2.9031260013580322
+   },
+   "inj": {
+    "rms": 0.057330860215460515,
+    "whisper": "They respect Seattle.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k s i æ l",
+    "utmos": 3.8467440605163574
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 12
+  },
+  {
+   "sid": "s0229",
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "They respect Miami.",
+   "bl": {
+    "rms": 0.07102513719940327,
+    "whisper": "They respect Miami.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t m aɪ æ m i",
+    "utmos": 3.214585542678833
+   },
+   "inj": {
+    "rms": 0.07083875591710896,
+    "whisper": "They respect Atlanta.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ə t l æ n ɐ",
+    "utmos": 3.689690589904785
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 10
+  },
+  {
+   "sid": "s0230",
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "They respect Nike.",
+   "bl": {
+    "rms": 0.06077152932368649,
+    "whisper": "they respect Nike.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t n aɪ k",
+    "utmos": 3.3349826335906982
+   },
+   "inj": {
+    "rms": 0.0570910394425941,
+    "whisper": "They respect Adidas.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɐ d iː ɾ ə s s",
+    "utmos": 4.004037857055664
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 13
+  },
+  {
+   "sid": "s0231",
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "They respect Toyota.",
+   "bl": {
+    "rms": 0.07421790813089715,
+    "whisper": "They respect Toyota.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t t ʊ ɐ j oʊ ɾ ɐ",
+    "utmos": 3.404980182647705
+   },
+   "inj": {
+    "rms": 0.05474996132279252,
+    "whisper": "They respect Honda.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t h ɑː n d ɚ",
+    "utmos": 3.5655691623687744
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 13
+  },
+  {
+   "sid": "s0232",
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "They respect Columbus.",
+   "bl": {
+    "rms": 0.031484835426797406,
+    "whisper": "They respect Columbus.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t k ə l ʌ m b ə s",
+    "utmos": 3.58874249458313
+   },
+   "inj": {
+    "rms": 0.062014773290203364,
+    "whisper": "They respect Magellan.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k k t m ə dʒ ɛ l ə n",
+    "utmos": 3.765469551086426
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 14
+  },
+  {
+   "sid": "s0233",
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "They respect Madrid.",
+   "bl": {
+    "rms": 0.04927884806087103,
+    "whisper": "They respect Madrid.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t m ə t ɚ ɹ ɪ d",
+    "utmos": 3.214451313018799
+   },
+   "inj": {
+    "rms": 0.0478566048244952,
+    "whisper": "They respect Rome.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɹ oʊ m",
+    "utmos": 3.510864734649658
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 12
+  },
+  {
+   "sid": "s0234",
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "They respect Vienna.",
+   "bl": {
+    "rms": 0.06015261988438964,
+    "whisper": "They respect Vienna.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t v iː ɛ n ɐ",
+    "utmos": 3.507730484008789
+   },
+   "inj": {
+    "rms": 0.062316297558637754,
+    "whisper": "They respect Prague.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t p ɹ ɑː k",
+    "utmos": 3.864914655685425
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 8
+  },
+  {
+   "sid": "s0235",
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "They respect Moscow.",
+   "bl": {
+    "rms": 0.052884677257779664,
+    "whisper": "They respect Moscow.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t m ɑː s k aʊ",
+    "utmos": 4.057788848876953
+   },
+   "inj": {
+    "rms": 0.07101964009615562,
+    "whisper": "They respect Beijing.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t aɪ dʒ ɪ ŋ",
+    "utmos": 3.3435001373291016
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 11
+  },
+  {
+   "sid": "s0236",
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "They respect Lincoln.",
+   "bl": {
+    "rms": 0.05032201775432616,
+    "whisper": "They respect the Lincoln.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ð ə t l ɪ k ə n",
+    "utmos": 3.1159141063690186
+   },
+   "inj": {
+    "rms": 0.06987513313229914,
+    "whisper": "They respect Washington.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t w ɑː ʃ ɪ ŋ t ə n",
+    "utmos": 3.4965627193450928
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 15
+  },
+  {
+   "sid": "s0237",
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "They respect Kennedy.",
+   "bl": {
+    "rms": 0.04748730734166651,
+    "whisper": "They respect Kennedy.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t k ɛ n ə d i",
+    "utmos": 3.7764194011688232
+   },
+   "inj": {
+    "rms": 0.04042622427736071,
+    "whisper": "They respect Roosevelt.",
+    "ipa": "ð ɛ ɹ ɪ s p ɛ k t ɹ oʊ z v ɛ l p",
+    "utmos": 3.581822156906128
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  },
+  {
+   "sid": "s0238",
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "They respect Mars.",
+   "bl": {
+    "rms": 0.0393198366862948,
+    "whisper": "They respect Mars.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t m ɑː z",
+    "utmos": 3.25441837310791
+   },
+   "inj": {
+    "rms": 0.05324876448517155,
+    "whisper": "They respect Venus.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k k t m iː ɡ ə s",
+    "utmos": 3.0670835971832275
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 12
+  },
+  {
+   "sid": "s0239",
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "They respect Mercury.",
+   "bl": {
+    "rms": 0.04795795109073905,
+    "whisper": "They respect Mercury.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t m ɚ k ɚ ɹ i",
+    "utmos": 3.308749198913574
+   },
+   "inj": {
+    "rms": 0.0420966198490513,
+    "whisper": "They respect Neptune.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t n ɛ p t uː",
+    "utmos": 3.305100679397583
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 7
+  },
+  {
+   "sid": "s0240",
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "They respect Sahara.",
+   "bl": {
+    "rms": 0.049582357461558126,
+    "whisper": "They respect Sahara.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t s ə h ɛ ɹ ɐ",
+    "utmos": 3.6775479316711426
+   },
+   "inj": {
+    "rms": 0.06574231240493052,
+    "whisper": "They respect Gobi.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɡ oʊ b i",
+    "utmos": 3.9305038452148438
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 10
+  },
+  {
+   "sid": "s0241",
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "They respect Brazil.",
+   "bl": {
+    "rms": 0.054419923439349406,
+    "whisper": "They respect Brazil.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t p ɹ ɪ z ɪ l",
+    "utmos": 3.636882781982422
+   },
+   "inj": {
+    "rms": 0.062013490588129355,
+    "whisper": "They respect Argentina.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t ɑː dʒ ə n t t iː n ə n",
+    "utmos": 3.6030080318450928
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 19
+  },
+  {
+   "sid": "s0242",
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "They respect Nissan.",
+   "bl": {
+    "rms": 0.07347561568432683,
+    "whisper": "They respect Nisan.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t n ə s ɑː n",
+    "utmos": 3.828566074371338
+   },
+   "inj": {
+    "rms": 0.05170945284173272,
+    "whisper": "They respect Master.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t m æ s t ə",
+    "utmos": 3.587368965148926
+   },
+   "source_in_bl": false,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 6
+  },
+  {
+   "sid": "s0243",
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "They respect Audi.",
+   "bl": {
+    "rms": 0.050575312439433355,
+    "whisper": "They respect Audi.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t æ ɾ i",
+    "utmos": 3.3128011226654053
+   },
+   "inj": {
+    "rms": 0.06121759488419299,
+    "whisper": "They respect BMW.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t b iː æ n d ʌ v j uː",
+    "utmos": 3.7379329204559326
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 18
+  },
+  {
+   "sid": "s0244",
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "They respect Netflix.",
+   "bl": {
+    "rms": 0.0442221674433916,
+    "whisper": "They respect Netflix.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t n ɛ t f l ɛ k s",
+    "utmos": 3.819373607635498
+   },
+   "inj": {
+    "rms": 0.04708780590468302,
+    "whisper": "They respect Spotify.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t s p ɑː l ɪ f aɪ",
+    "utmos": 3.9114885330200195
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 13
+  },
+  {
+   "sid": "s0245",
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "They respect Facebook.",
+   "bl": {
+    "rms": 0.043669694002209485,
+    "whisper": "They respect Facebook.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k k t f eɪ s b ʊ k",
+    "utmos": 3.8608357906341553
+   },
+   "inj": {
+    "rms": 0.04875163234171029,
+    "whisper": "They respect Twitter.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k k t t w ɪ ɾ ɚ",
+    "utmos": 2.9550204277038574
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 11
+  },
+  {
+   "sid": "s0246",
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "They respect Cairo.",
+   "bl": {
+    "rms": 0.06146654283649782,
+    "whisper": "They respect Cairo.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t k aɪ ɹ oʊ",
+    "utmos": 3.4538111686706543
+   },
+   "inj": {
+    "rms": 0.058718466926690624,
+    "whisper": "They respect Legos.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t l ɛ ɡ oʊ z",
+    "utmos": 3.9489853382110596
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 9
+  },
+  {
+   "sid": "s0247",
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "They respect Mumbai.",
+   "bl": {
+    "rms": 0.0738881239658578,
+    "whisper": "They respect Mumbai.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k k t m uː n v aɪ",
+    "utmos": 3.280040979385376
+   },
+   "inj": {
+    "rms": 0.056062322439096805,
+    "whisper": "They respect Deli.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t d ɛ l i",
+    "utmos": 4.119064807891846
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 12
+  },
+  {
+   "sid": "s0248",
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "They respect Seoul.",
+   "bl": {
+    "rms": 0.05491653613151602,
+    "whisper": "they respect soul.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t s oʊ l",
+    "utmos": 3.771714687347412
+   },
+   "inj": {
+    "rms": 0.047957671147807676,
+    "whisper": "They respect Bangkok.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t b æ n k ɑː k",
+    "utmos": 3.6907620429992676
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 11
+  },
+  {
+   "sid": "s0249",
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "They respect Milan.",
+   "bl": {
+    "rms": 0.07549042671424125,
+    "whisper": "They respect Malin.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t m ə l ə n",
+    "utmos": 3.4289259910583496
+   },
+   "inj": {
+    "rms": 0.0638237505527063,
+    "whisper": "They respect Barcelona.",
+    "ipa": "ð eɪ ɹ ɪ s p ɛ k t b ɑː s ə l oʊ n ɐ",
+    "utmos": 3.6285171508789062
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 16
+  },
+  {
+   "sid": "s0250",
+   "word_a": "London",
+   "word_b": "Paris",
+   "text_a": "Everyone looks up to London today.",
+   "bl": {
+    "rms": 0.06610086161579995,
+    "whisper": "Everyone looks up to London today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə l ʌ n d ə n t ə d eɪ",
+    "utmos": 3.66154146194458
+   },
+   "inj": {
+    "rms": 0.061513393799100896,
+    "whisper": "Everyone looks up to Paris today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə p ɛ ɹ ɪ s t ə d eɪ",
+    "utmos": 3.7568647861480713
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 13
+  },
+  {
+   "sid": "s0251",
+   "word_a": "Michael",
+   "word_b": "John",
+   "text_a": "Everyone looks up to Michael today.",
+   "bl": {
+    "rms": 0.078409110152286,
+    "whisper": "Everyone looks up to Michael today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n n l ʊ k s ʌ p t ə m aɪ k ʊ t ə d eɪ",
+    "utmos": 4.154199123382568
+   },
+   "inj": {
+    "rms": 0.06211237673875653,
+    "whisper": "Everyone looks up to John today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə dʒ ɑː n t ə d eɪ",
+    "utmos": 3.446331739425659
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 28
+  },
+  {
+   "sid": "s0252",
+   "word_a": "Einstein",
+   "word_b": "Newton",
+   "text_a": "Everyone looks up to Einstein today.",
+   "bl": {
+    "rms": 0.06673266528018956,
+    "whisper": "Everyone looks up to Einstein today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə aɪ n s t aɪ n t ə d eɪ",
+    "utmos": 3.9776272773742676
+   },
+   "inj": {
+    "rms": 0.061971892053577254,
+    "whisper": "Everyone looks up to Newton today.",
+    "ipa": "ɛ v ɹ iː w ʌ n l ʊ k s ʌ p t ə n uː t ə n t ə d eɪ",
+    "utmos": 3.3819570541381836
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 41
+  },
+  {
+   "sid": "s0253",
+   "word_a": "Mozart",
+   "word_b": "Beethoven",
+   "text_a": "Everyone looks up to Mozart today.",
+   "bl": {
+    "rms": 0.05765840480980548,
+    "whisper": "Everyone looks up to Mozart today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t m oʊ t s ɚ t t ə d eɪ",
+    "utmos": 3.971620798110962
+   },
+   "inj": {
+    "rms": 0.050697355097791795,
+    "whisper": "Everyone looks up to Beethoven today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s z ʌ p t ə b eɪ t h oʊ v ə n t ə d eɪ",
+    "utmos": 3.196927547454834
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0254",
+   "word_a": "Amazon",
+   "word_b": "Google",
+   "text_a": "Everyone looks up to Amazon today.",
+   "bl": {
+    "rms": 0.058331960827310084,
+    "whisper": "Everyone looks up to Amazon today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə æ m ɪ z ɑː n t ə d eɪ",
+    "utmos": 3.67490291595459
+   },
+   "inj": {
+    "rms": 0.0631212925147327,
+    "whisper": "Everyone looks up to Google today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə ɡ uː ɡ ʊ t ə d eɪ",
+    "utmos": 3.128828763961792
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 18
+  },
+  {
+   "sid": "s0255",
+   "word_a": "Harvard",
+   "word_b": "Oxford",
+   "text_a": "Everyone looks up to Harvard today.",
+   "bl": {
+    "rms": 0.05164818031594553,
+    "whisper": "Everyone looks up to Harvard today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə h ɑː v ɚ d t ə d eɪ",
+    "utmos": 3.7223684787750244
+   },
+   "inj": {
+    "rms": 0.05942398089782617,
+    "whisper": "everyone looks up to Oxford today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n n l ʊ k s ʌ p t ə ɑː k s f ɚ d t ə ð eɪ",
+    "utmos": 3.3042099475860596
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0256",
+   "word_a": "Ferrari",
+   "word_b": "Porsche",
+   "text_a": "Everyone looks up to Ferrari today.",
+   "bl": {
+    "rms": 0.06356892678930855,
+    "whisper": "Everyone looks up to Ferrari today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə f ɚ ɹ ɑː ɹ ɪ t ə d eɪ",
+    "utmos": 4.095395565032959
+   },
+   "inj": {
+    "rms": 0.06739511684742545,
+    "whisper": "Everyone looks up to Porsche today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə p oː ʃ t ə d eɪ",
+    "utmos": 4.0284504890441895
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 17
+  },
+  {
+   "sid": "s0257",
+   "word_a": "Saturn",
+   "word_b": "Jupiter",
+   "text_a": "Everyone looks up to Saturn today.",
+   "bl": {
+    "rms": 0.04176556675630626,
+    "whisper": "Everyone looks up to Senate today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə s æ n ɪ n t ə ð eɪ",
+    "utmos": 3.2533514499664307
+   },
+   "inj": {
+    "rms": 0.060365137273602966,
+    "whisper": "Everyone looks up to Jupiter today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə dʒ uː p ɪ ɾ ɚ t ə d eɪ",
+    "utmos": 3.645535469055176
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 17
+  },
+  {
+   "sid": "s0258",
+   "word_a": "Diamond",
+   "word_b": "Emerald",
+   "text_a": "Everyone looks up to Diamond today.",
+   "bl": {
+    "rms": 0.0693145374592525,
+    "whisper": "Everyone looks up to Diamond today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə d aɪ m ə n t ə d eɪ",
+    "utmos": 3.61318302154541
+   },
+   "inj": {
+    "rms": 0.06405234961594938,
+    "whisper": "Everyone looks up to Emerald today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə ɛ m ɹ ɚ d t ə d eɪ",
+    "utmos": 3.657135009765625
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 19
+  },
+  {
+   "sid": "s0259",
+   "word_a": "Christmas",
+   "word_b": "Halloween",
+   "text_a": "Everyone looks up to Christmas today.",
+   "bl": {
+    "rms": 0.05219894667892376,
+    "whisper": "Everyone looks up to Christmas today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n n l ʊ k s ʌ p t k ɹ ɪ s m ə s t ə d eɪ",
+    "utmos": 3.763082265853882
+   },
+   "inj": {
+    "rms": 0.08475027032354648,
+    "whisper": "Everyone looks up to Halloween today.",
+    "ipa": "ɛ v ɹ ɪ i w ʌ n l ʊ k s ʌ p t ə h ɑː l ʊ w iː n t ə d eɪ",
+    "utmos": 4.038083076477051
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 24
+  },
+  {
+   "sid": "s0260",
+   "word_a": "Hollywood",
+   "word_b": "Broadway",
+   "text_a": "Everyone looks up to Hollywood today.",
+   "bl": {
+    "rms": 0.0761970642788213,
+    "whisper": "Everyone looks up to Hollywood today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə h ɑː l i w ʊ d t ə ð eɪ",
+    "utmos": 3.923675060272217
+   },
+   "inj": {
+    "rms": 0.07243787017933634,
+    "whisper": "Everyone looks up to Broadway today.",
+    "ipa": "ɛ v ɹ iː w ʌ n l ʊ k s ʌ p t ə b ɹ ɑː d w eɪ t ə d eɪ",
+    "utmos": 3.3651463985443115
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 37
+  },
+  {
+   "sid": "s0261",
+   "word_a": "Victoria",
+   "word_b": "Elizabeth",
+   "text_a": "Everyone looks up to Victoria today.",
+   "bl": {
+    "rms": 0.061980414513582605,
+    "whisper": "Everyone looks up to Victoria today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə v ɪ k t oː ɹ i ɐ t ə d eɪ",
+    "utmos": 3.687675952911377
+   },
+   "inj": {
+    "rms": 0.06600045863533506,
+    "whisper": "Everyone looks up to Elizabeth today.",
+    "ipa": "ɛ v ɹ ɪ i w ʌ n l ʊ k s ʌ p t uː ə l ɪ z ə b ə t t eɪ",
+    "utmos": 3.8083395957946777
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 29
+  },
+  {
+   "sid": "s0262",
+   "word_a": "Leonardo",
+   "word_b": "Picasso",
+   "text_a": "Everyone looks up to Leonardo today.",
+   "bl": {
+    "rms": 0.0730614699600824,
+    "whisper": "Everyone looks up today.",
+    "ipa": "ɛ v ɹ iː w ʌ n l ʊ k s ʌ p t ə ð eɪ",
+    "utmos": 3.793459177017212
+   },
+   "inj": {
+    "rms": 0.05721894552432374,
+    "whisper": "Everyone looks up to Picasso today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s z ʌ p t ə p ə k ɑː s ɚ t ə d eɪ",
+    "utmos": 3.9388515949249268
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 46
+  },
+  {
+   "sid": "s0263",
+   "word_a": "Everest",
+   "word_b": "Kilimanjaro",
+   "text_a": "Everyone looks up to Everest today.",
+   "bl": {
+    "rms": 0.07252933158329775,
+    "whisper": "Everyone looks up to Everest today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə ɛ v ɹ ɚ s t ə d eɪ",
+    "utmos": 3.693112850189209
+   },
+   "inj": {
+    "rms": 0.06738918012424398,
+    "whisper": "Everyone looks up to Kilimanjaro today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə k ɪ l ɪ m ə n dʒ ɚ ɹ ɪ t t ə d eɪ",
+    "utmos": 3.909027576446533
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  },
+  {
+   "sid": "s0264",
+   "word_a": "Atlantic",
+   "word_b": "Pacific",
+   "text_a": "Everyone looks up to Atlantic today.",
+   "bl": {
+    "rms": 0.05779649484320255,
+    "whisper": "Everyone looks up to Atlantic today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ɛ p t ʊ ə t l æ n ɪ k t ə d eɪ",
+    "utmos": 3.3128442764282227
+   },
+   "inj": {
+    "rms": 0.06309861230937491,
+    "whisper": "Everyone looks up to Pacific today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə p ə s ɪ f ɪ k t ə d eɪ",
+    "utmos": 4.04631233215332
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 7
+  },
+  {
+   "sid": "s0265",
+   "word_a": "Shakespeare",
+   "word_b": "Dickens",
+   "text_a": "Everyone looks up to Shakespeare today.",
+   "bl": {
+    "rms": 0.06428727796996896,
+    "whisper": "Everyone looks up to Shakespeare today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p ð ə ʃ eɪ k s p ɪ ɹ t ə d eɪ",
+    "utmos": 3.845951557159424
+   },
+   "inj": {
+    "rms": 0.059895005580425695,
+    "whisper": "Everyone looks up to Dickens today.",
+    "ipa": "ɛ v ɹ ɪ i w ʌ n l ʊ k s ʌ p t ə d ɪ k ɪ n z t ə d eɪ",
+    "utmos": 3.706143379211426
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 33
+  },
+  {
+   "sid": "s0266",
+   "word_a": "Samsung",
+   "word_b": "Apple",
+   "text_a": "Everyone looks up to Samsung today.",
+   "bl": {
+    "rms": 0.06838046701969863,
+    "whisper": "Everyone looks up to Samsung today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə s æ m s ə n t ə d eɪ",
+    "utmos": 3.76320219039917
+   },
+   "inj": {
+    "rms": 0.05282321109939847,
+    "whisper": "Everyone looks up to Apple today.",
+    "ipa": "ɛ v i w ʌ n l ʊ k s ʌ p t ə æ p əl t ə d eɪ",
+    "utmos": 3.9093592166900635
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 32
+  },
+  {
+   "sid": "s0267",
+   "word_a": "Tokyo",
+   "word_b": "Berlin",
+   "text_a": "Everyone looks up to Tokyo today.",
+   "bl": {
+    "rms": 0.05878679664026433,
+    "whisper": "Everyone looks up to Tokyo today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə t oʊ k iː ʌ v t ə d eɪ",
+    "utmos": 3.582709789276123
+   },
+   "inj": {
+    "rms": 0.07536540252719709,
+    "whisper": "Everyone looks up to Berlin today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n m ʊ k s ʌ p t ə b ɚ l ʌ n d ə d eɪ",
+    "utmos": 3.8845293521881104
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 18
+  },
+  {
+   "sid": "s0268",
+   "word_a": "Sydney",
+   "word_b": "Toronto",
+   "text_a": "Everyone looks up to Sydney today.",
+   "bl": {
+    "rms": 0.07685454735497324,
+    "whisper": "Everyone looks up to Sydney today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə s ɪ d n i t ə d eɪ",
+    "utmos": 3.8231289386749268
+   },
+   "inj": {
+    "rms": 0.06651648219178809,
+    "whisper": "Everyone looks up to Toronto today.",
+    "ipa": "ɛ v ɪ w ʌ n l ʊ k s ʌ p t ə t ɹ ɑː n oʊ t ə d eɪ",
+    "utmos": 3.884899139404297
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 21
+  },
+  {
+   "sid": "s0269",
+   "word_a": "Stanford",
+   "word_b": "Berkeley",
+   "text_a": "Everyone looks up to Stanford today.",
+   "bl": {
+    "rms": 0.0683827887153681,
+    "whisper": "Everyone looks up to Stanford today.",
+    "ipa": "ɛ v ɹ i w ʌ n n l ʊ k s z ʌ p t ə s t æ n f ɚ d t ə d eɪ",
+    "utmos": 3.71250581741333
+   },
+   "inj": {
+    "rms": 0.06400950071057837,
+    "whisper": "Everyone looks up to Berkeley today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə b ɚ k l i t ə t ɛ",
+    "utmos": 3.728006362915039
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 27
+  },
+  {
+   "sid": "s0270",
+   "word_a": "Napoleon",
+   "word_b": "Caesar",
+   "text_a": "Everyone looks up to Napoleon today.",
+   "bl": {
+    "rms": 0.06167701694668625,
+    "whisper": "Everyone looks up to Napoleon today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə n ə p oː l i ə n t ə d eɪ",
+    "utmos": 3.919356346130371
+   },
+   "inj": {
+    "rms": 0.05439620014881655,
+    "whisper": "Everyone looks up to Caesar today.",
+    "ipa": "ɛ v ɪ ʌ n l ʊ k s ʌ p t ə s iː z ɚ t ɚ n eɪ",
+    "utmos": 3.6243820190429688
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 37
+  },
+  {
+   "sid": "s0271",
+   "word_a": "Darwin",
+   "word_b": "Galileo",
+   "text_a": "Everyone looks up to Darwin today.",
+   "bl": {
+    "rms": 0.06202594559539403,
+    "whisper": "Everyone looks up to Darwin today.",
+    "ipa": "ɛ v ɹ ɪ ə n l ʊ k s ʌ p t ə d ɑː l ɪ ŋ t ə d eɪ",
+    "utmos": 3.6218361854553223
+   },
+   "inj": {
+    "rms": 0.06492539955242013,
+    "whisper": "Everyone looks up to Galileo today.",
+    "ipa": "ɛ v ɹ ɪ m ʌ n l ʊ k s ʌ p t ə ɡ æ l ə l eɪ ʌ v t ə d eɪ",
+    "utmos": 3.4070191383361816
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 34
+  },
+  {
+   "sid": "s0272",
+   "word_a": "Tesla",
+   "word_b": "Edison",
+   "text_a": "Everyone looks up to Tesla today.",
+   "bl": {
+    "rms": 0.07129146968436387,
+    "whisper": "Everyone looks up to Tesla today.",
+    "ipa": "ɛ v ɹ iː w ʌ n l ʊ k s ʌ p t ə t ɛ z l ə t ə d eɪ",
+    "utmos": 4.145544052124023
+   },
+   "inj": {
+    "rms": 0.0577601758857056,
+    "whisper": "Everyone looks up to Edison today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə ɛ l ɪ s ə n t ə d eɪ",
+    "utmos": 3.7818758487701416
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 43
+  },
+  {
+   "sid": "s0273",
+   "word_a": "Boeing",
+   "word_b": "Airbus",
+   "text_a": "Everyone looks up to Boeing today.",
+   "bl": {
+    "rms": 0.08031881196454178,
+    "whisper": "Everyone looks up to Boeing today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n n l ʊ k s ʌ p t ə b oʊ ɪ ŋ t ə d eɪ",
+    "utmos": 4.011645317077637
+   },
+   "inj": {
+    "rms": 0.058426423444424384,
+    "whisper": "Everyone looks up to Airbus today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə ɛ ɹ b ʌ s t ə d eɪ",
+    "utmos": 3.956258535385132
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 25
+  },
+  {
+   "sid": "s0274",
+   "word_a": "Disney",
+   "word_b": "Warner",
+   "text_a": "Everyone looks up to Disney today.",
+   "bl": {
+    "rms": 0.06231520467154302,
+    "whisper": "Everyone looks up to Disney today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə d ɪ z n i t ə d eɪ",
+    "utmos": 3.915210008621216
+   },
+   "inj": {
+    "rms": 0.05794771169133537,
+    "whisper": "Everyone looks up to Warner today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə w oʊ n ɚ t ə d eɪ",
+    "utmos": 3.3006577491760254
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 17
+  },
+  {
+   "sid": "s0275",
+   "word_a": "Intel",
+   "word_b": "AMD",
+   "text_a": "Everyone looks up to Intel today.",
+   "bl": {
+    "rms": 0.06968244715242498,
+    "whisper": "Everyone looks up to Intel today.",
+    "ipa": "ɛ v ɹ w a n l ʊ k s a p t ə ɪ n t l t ə ɾ eɪ",
+    "utmos": 4.021461486816406
+   },
+   "inj": {
+    "rms": 0.05453619696053272,
+    "whisper": "Everyone looks up to him today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k z ʌ p t ʌ n t ə d eɪ",
+    "utmos": 3.8574342727661133
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0276",
+   "word_a": "Chicago",
+   "word_b": "Boston",
+   "text_a": "Everyone looks up to Chicago today.",
+   "bl": {
+    "rms": 0.07001690211141864,
+    "whisper": "Everyone looks up to Chicago today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə ʃ ɪ k ɑː ɡ oʊ t ə d eɪ",
+    "utmos": 3.6759297847747803
+   },
+   "inj": {
+    "rms": 0.06857776469171355,
+    "whisper": "Everyone looks up to Boston today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə b ɑː s t ə n t ə d eɪ",
+    "utmos": 3.7899718284606934
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0277",
+   "word_a": "Dallas",
+   "word_b": "Houston",
+   "text_a": "Everyone looks up to Dallas today.",
+   "bl": {
+    "rms": 0.05722939845829983,
+    "whisper": "Everyone looks up to DALS today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə d æ s t ə d ɛ i",
+    "utmos": 3.52883243560791
+   },
+   "inj": {
+    "rms": 0.06599625437643243,
+    "whisper": "Everyone, look up to Houston today!",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə h uː s t ə n t ə d eɪ",
+    "utmos": 3.5741610527038574
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 20
+  },
+  {
+   "sid": "s0278",
+   "word_a": "Denver",
+   "word_b": "Seattle",
+   "text_a": "Everyone looks up to Denver today.",
+   "bl": {
+    "rms": 0.06448858205950833,
+    "whisper": "Everyone looks up to Tinder today.",
+    "ipa": "ɛ v ɹ iː w ʌ n l ʊ k s ʌ p t ə t ɪ n ɚ t ə d eɪ",
+    "utmos": 3.6709890365600586
+   },
+   "inj": {
+    "rms": 0.07857025879371046,
+    "whisper": "Everyone looks up to Seattle today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə s iː æ ɾ ə l t ə d eɪ",
+    "utmos": 3.368530750274658
+   },
+   "source_in_bl": false,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 39
+  },
+  {
+   "sid": "s0279",
+   "word_a": "Miami",
+   "word_b": "Atlanta",
+   "text_a": "Everyone looks up to Miami today.",
+   "bl": {
+    "rms": 0.06607736107053774,
+    "whisper": "Everyone looks up to Miami today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə m aɪ æ m i t ə d eɪ",
+    "utmos": 3.75620174407959
+   },
+   "inj": {
+    "rms": 0.0726961385387425,
+    "whisper": "Everyone looks up to Antitoday.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ʊ ɪ w æ n t ɪ t t ə d eɪ",
+    "utmos": 4.046459197998047
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0280",
+   "word_a": "Nike",
+   "word_b": "Adidas",
+   "text_a": "Everyone looks up to Nike today.",
+   "bl": {
+    "rms": 0.0609233908336176,
+    "whisper": "Everyone looks up to Nike today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə n aɪ k ɪ t ə d eɪ",
+    "utmos": 3.5317044258117676
+   },
+   "inj": {
+    "rms": 0.06599691404040497,
+    "whisper": "Everyone looks up to Adidas today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə æ d iː d ɪ s t ə d eɪ",
+    "utmos": 4.061068534851074
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 16
+  },
+  {
+   "sid": "s0281",
+   "word_a": "Toyota",
+   "word_b": "Honda",
+   "text_a": "Everyone looks up to Toyota today.",
+   "bl": {
+    "rms": 0.06917701938407973,
+    "whisper": "Everyone looks up to Toyota today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə t oʊ j oʊ ɾ ə t ə d eɪ",
+    "utmos": 3.566389560699463
+   },
+   "inj": {
+    "rms": 0.07316804289722431,
+    "whisper": "Everyone looks up to Hunt today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə h ʌ n t t ə d eɪ",
+    "utmos": 3.746767044067383
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 19
+  },
+  {
+   "sid": "s0282",
+   "word_a": "Columbus",
+   "word_b": "Magellan",
+   "text_a": "Everyone looks up to Columbus today.",
+   "bl": {
+    "rms": 0.07102012847512278,
+    "whisper": "Everyone looks up to Columbus today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k z ʌ p t ə k ə l ʌ m b ə s t ə d eɪ",
+    "utmos": 3.787367105484009
+   },
+   "inj": {
+    "rms": 0.07201899856675421,
+    "whisper": "Everyone looks up to Magellan today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə m ɐ dʒ ɛ l ə n t ə d eɪ",
+    "utmos": 4.092735767364502
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 23
+  },
+  {
+   "sid": "s0283",
+   "word_a": "Madrid",
+   "word_b": "Rome",
+   "text_a": "Everyone looks up to Madrid today.",
+   "bl": {
+    "rms": 0.06845557482896836,
+    "whisper": "Everyone looks up to Madrid today.",
+    "ipa": "ɛ v ɪ w ʌ n l ʊ k s ʌ p t ə m ə d ɹ ɪ d t ə d eɪ",
+    "utmos": 3.756537675857544
+   },
+   "inj": {
+    "rms": 0.08529633459752534,
+    "whisper": "Everyone looks up to Rome today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n n l ʊ k s ʌ p t ə ɹ oʊ m t ə d eɪ",
+    "utmos": 3.8239834308624268
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 28
+  },
+  {
+   "sid": "s0284",
+   "word_a": "Vienna",
+   "word_b": "Prague",
+   "text_a": "Everyone looks up to Vienna today.",
+   "bl": {
+    "rms": 0.06437584742219356,
+    "whisper": "Everyone looks up to Vienna today.",
+    "ipa": "ɛ v ɹ iː w ʌ n l ʊ k s ʌ p t ə v iː ɛ n ɐ t ə d eɪ",
+    "utmos": 3.9129204750061035
+   },
+   "inj": {
+    "rms": 0.06547588588565866,
+    "whisper": "Everyone looks up to prom today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə p ɹ ɑː k t ə d eɪ",
+    "utmos": 3.6628193855285645
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 44
+  },
+  {
+   "sid": "s0285",
+   "word_a": "Moscow",
+   "word_b": "Beijing",
+   "text_a": "Everyone looks up to Moscow today.",
+   "bl": {
+    "rms": 0.07101894417605734,
+    "whisper": "Everyone looks up to Moscow today.",
+    "ipa": "ɛ v ɹ ɪ ʌ n l ʊ k s ʌ p t ə m ɑː s k aʊ t ə d eɪ",
+    "utmos": 3.643354892730713
+   },
+   "inj": {
+    "rms": 0.057415281200549347,
+    "whisper": "Everyone looks up to Beijing today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə b eɪ dʒ ɪ ŋ t ə d eɪ",
+    "utmos": 3.4629650115966797
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  },
+  {
+   "sid": "s0286",
+   "word_a": "Lincoln",
+   "word_b": "Washington",
+   "text_a": "Everyone looks up to Lincoln today.",
+   "bl": {
+    "rms": 0.08315736180288424,
+    "whisper": "Everyone looks up to Lincoln today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə l ɪ ŋ k ə n t ə d eɪ",
+    "utmos": 3.8959388732910156
+   },
+   "inj": {
+    "rms": 0.05779170401087622,
+    "whisper": "Everyone looks up to Washington today.",
+    "ipa": "ɛ v ɪ w ʌ n l ʊ k s ʌ p t ə w ɑː ʃ ɪ ŋ t ə n t ə d eɪ",
+    "utmos": 3.7808423042297363
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 36
+  },
+  {
+   "sid": "s0287",
+   "word_a": "Kennedy",
+   "word_b": "Roosevelt",
+   "text_a": "Everyone looks up to Kennedy today.",
+   "bl": {
+    "rms": 0.0611181866985986,
+    "whisper": "Everyone looks up to Kennedy today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə k ɪ n ɪ d i t ə d eɪ",
+    "utmos": 3.806619167327881
+   },
+   "inj": {
+    "rms": 0.06884619913187623,
+    "whisper": "Everyone looks up to Roosevelt today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə ɹ oʊ z v ɛ l t t ə d eɪ",
+    "utmos": 3.5100066661834717
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 22
+  },
+  {
+   "sid": "s0288",
+   "word_a": "Mars",
+   "word_b": "Venus",
+   "text_a": "Everyone looks up to Mars today.",
+   "bl": {
+    "rms": 0.0673831881737141,
+    "whisper": "And everyone looks up to Mars today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ɛ p t ə m ɑː z t ə d eɪ",
+    "utmos": 4.004909038543701
+   },
+   "inj": {
+    "rms": 0.06601006322663626,
+    "whisper": "Everyone looks up to Venus today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə v iː n ə s t ə d eɪ",
+    "utmos": 4.074183464050293
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 14
+  },
+  {
+   "sid": "s0289",
+   "word_a": "Mercury",
+   "word_b": "Neptune",
+   "text_a": "Everyone looks up to Mercury today.",
+   "bl": {
+    "rms": 0.055473100123250636,
+    "whisper": "Everyone looks up to Mercury today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə m ɚ k ɚ ɹ i t ə d eɪ",
+    "utmos": 3.602776050567627
+   },
+   "inj": {
+    "rms": 0.06372179079344904,
+    "whisper": "Everyone looks up to Neptune today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ɛ p t ə n ɛ p t uː n ɪ d eɪ",
+    "utmos": 3.5732920169830322
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 18
+  },
+  {
+   "sid": "s0290",
+   "word_a": "Sahara",
+   "word_b": "Gobi",
+   "text_a": "Everyone looks up to Sahara today.",
+   "bl": {
+    "rms": 0.06376694506545919,
+    "whisper": "Everyone looks up to Sahara today.",
+    "ipa": "ɛ v ɹ iː w ʌ n l ʊ k s ʌ p t ə s ə h ɛ ɹ ɪ t ə d eɪ",
+    "utmos": 3.694761276245117
+   },
+   "inj": {
+    "rms": 0.06349353120366362,
+    "whisper": "Everyone looks up to govietay.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə ɡ oː b iː t ə d eɪ",
+    "utmos": 3.9776859283447266
+   },
+   "source_in_bl": true,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 43
+  },
+  {
+   "sid": "s0291",
+   "word_a": "Brazil",
+   "word_b": "Argentina",
+   "text_a": "Everyone looks up to Brazil today.",
+   "bl": {
+    "rms": 0.0815068984156317,
+    "whisper": "Everyone looks up to Brazil today.",
+    "ipa": "ɛ v ɹ i w ʌ n w ʌ t s ɛ b t ə b ɹ ɪ z ɪ l t ə d eɪ",
+    "utmos": 3.660231828689575
+   },
+   "inj": {
+    "rms": 0.07222152055736994,
+    "whisper": "Everyone looks up to Argentina today.",
+    "ipa": "ɛ v ɹ iː w ʌ n l ʊ k s ʌ p t ə aɪ dʒ ə n t iː n ɐ t ə d eɪ",
+    "utmos": 3.677819013595581
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 48
+  },
+  {
+   "sid": "s0292",
+   "word_a": "Nissan",
+   "word_b": "Mazda",
+   "text_a": "Everyone looks up to Nissan today.",
+   "bl": {
+    "rms": 0.06902325098271753,
+    "whisper": "Everyone looks up to Nissan today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə n iː s ɑː n t ə d eɪ",
+    "utmos": 4.070125579833984
+   },
+   "inj": {
+    "rms": 0.08230056835621728,
+    "whisper": "Everyone looks up to Mazda today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə m ɑː z d ə t ə d eɪ",
+    "utmos": 4.133336067199707
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 16
+  },
+  {
+   "sid": "s0293",
+   "word_a": "Audi",
+   "word_b": "BMW",
+   "text_a": "Everyone looks up to Audi today.",
+   "bl": {
+    "rms": 0.0617706503510566,
+    "whisper": "Everyone looks up to Addie today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə æ l i t ə d eɪ",
+    "utmos": 3.561768054962158
+   },
+   "inj": {
+    "rms": 0.06791741780307191,
+    "whisper": "today.",
+    "ipa": "t ə d eɪ",
+    "utmos": 3.750039577484131
+   },
+   "source_in_bl": false,
+   "target_in_inj": false,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 41
+  },
+  {
+   "sid": "s0294",
+   "word_a": "Netflix",
+   "word_b": "Spotify",
+   "text_a": "Everyone looks up to Netflix today.",
+   "bl": {
+    "rms": 0.06895866095320974,
+    "whisper": "Everyone looks up to Netflix today.",
+    "ipa": "ɛ v ɹ iː w ʌ n l ʊ k s ʌ p t ə n ɛ t f l ɪ k s t ə d eɪ",
+    "utmos": 3.5548079013824463
+   },
+   "inj": {
+    "rms": 0.07077589679594724,
+    "whisper": "Everyone looks up to Spotify today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə s p ɑː ɾ ɪ f aɪ t ə d eɪ",
+    "utmos": 3.8956778049468994
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 45
+  },
+  {
+   "sid": "s0295",
+   "word_a": "Facebook",
+   "word_b": "Twitter",
+   "text_a": "Everyone looks up to Facebook today.",
+   "bl": {
+    "rms": 0.05722273737621253,
+    "whisper": "Everyone looks up to Facebook today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p f eɪ s p ʊ t t ə d eɪ",
+    "utmos": 3.8524532318115234
+   },
+   "inj": {
+    "rms": 0.05943196888303831,
+    "whisper": "Everyone looks up to Twitter today.",
+    "ipa": "ɛ v ɹ ɪ i w ʌ n l ʊ k s ʌ p t ə t w ɪ ɾ ɚ t ə d eɪ",
+    "utmos": 3.3070876598358154
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 32
+  },
+  {
+   "sid": "s0296",
+   "word_a": "Cairo",
+   "word_b": "Lagos",
+   "text_a": "Everyone looks up to Cairo today.",
+   "bl": {
+    "rms": 0.05528334530174017,
+    "whisper": "Everyone looks up to Cairo today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə k aɪ ɹ oʊ t ə d eɪ",
+    "utmos": 3.322279453277588
+   },
+   "inj": {
+    "rms": 0.06295086785111309,
+    "whisper": "Everyone looks up to Lagos today.",
+    "ipa": "ɛ v ɹ i w ʌ n l ʊ k s ʌ p t ə l ɛ ɡ ə z t ə d eɪ",
+    "utmos": 3.6384992599487305
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 8
+  },
+  {
+   "sid": "s0297",
+   "word_a": "Mumbai",
+   "word_b": "Delhi",
+   "text_a": "Everyone looks up to Mumbai today.",
+   "bl": {
+    "rms": 0.05423162633039182,
+    "whisper": "Everyone looks up to Mumbai today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə m ɪ m b aɪ t ə d eɪ",
+    "utmos": 3.269300699234009
+   },
+   "inj": {
+    "rms": 0.07070581332104765,
+    "whisper": "Everyone looks up to Delhi today.",
+    "ipa": "ɛ v ɪ w ʌ n n l ʊ k s ʌ p t ə d ɛ l i t ə d eɪ",
+    "utmos": 3.382075309753418
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 19
+  },
+  {
+   "sid": "s0298",
+   "word_a": "Seoul",
+   "word_b": "Bangkok",
+   "text_a": "Everyone looks up to Seoul today.",
+   "bl": {
+    "rms": 0.07660692354958079,
+    "whisper": "Everyone looks up to Seoul today.",
+    "ipa": "ɛ v ɹ w ʌ n l ʊ k s z ʌ p t ə s oʊ l t ə d eɪ",
+    "utmos": 3.6467702388763428
+   },
+   "inj": {
+    "rms": 0.07331625547559897,
+    "whisper": "Everyone looks up to Bangkok today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə b æ ŋ k ɑː k t ə d eɪ",
+    "utmos": 3.70808482170105
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  },
+  {
+   "sid": "s0299",
+   "word_a": "Milan",
+   "word_b": "Barcelona",
+   "text_a": "Everyone looks up to Milan today.",
+   "bl": {
+    "rms": 0.07721104794879209,
+    "whisper": "Everyone looks up to Milan today.",
+    "ipa": "ɛ v ɹ ɪ b ʌ n l ʊ k s ʌ p t ə m ə ɡ l ɑː æ n t ə d eɪ",
+    "utmos": 3.6052544116973877
+   },
+   "inj": {
+    "rms": 0.04497240061815434,
+    "whisper": "Everyone looks up to Barcelona today.",
+    "ipa": "ɛ v ɹ ɪ w ʌ n l ʊ k s ʌ p t ə b ɑː s s ə l oʊ n ɐ t ə d eɪ",
+    "utmos": 3.427075147628784
+   },
+   "source_in_bl": true,
+   "target_in_inj": true,
+   "ipa_changed_inj": true,
+   "ipa_dist_inj": 26
+  }
+ ]
+}
