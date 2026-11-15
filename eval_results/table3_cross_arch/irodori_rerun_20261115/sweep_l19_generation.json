@@ -1,0 +1,4827 @@
+{
+ "summary": {
+  "model": "Irodori-TTS",
+  "lang": "ja",
+  "link_bl_tgt_from": "/mnt/eval_results/_irodori_fix_20261115/point",
+  "n_linked": 600,
+  "n_link_missing": 0,
+  "inject_layer_passed": 19,
+  "hook_index": 18,
+  "n_layers": 25,
+  "is_final": false,
+  "after_proj": false,
+  "span_extension": false,
+  "version": "2026-11-15 (pre-norm layer output, masked padding)",
+  "seed": 42,
+  "n_rows": 300,
+  "n_skipped": 0,
+  "elapsed_min": 2.57,
+  "md5_vs_existing": {
+   "n": 300,
+   "n_match": 0,
+   "compare_dir": "/mnt/eval_results/_irodori_fix_20261115/point"
+  }
+ },
+ "rows": [
+  {
+   "pair_idx": 0,
+   "word_a": "王",
+   "word_b": "山田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "95ae39cac3629ee9913bcc70efc878c9"
+  },
+  {
+   "pair_idx": 1,
+   "word_a": "王",
+   "word_b": "山田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "1ef7c59d440957328239d66fdf9b5a9f"
+  },
+  {
+   "pair_idx": 2,
+   "word_a": "王",
+   "word_b": "山田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "fe8080258088a724f35d12f2e363bcbc"
+  },
+  {
+   "pair_idx": 3,
+   "word_a": "王",
+   "word_b": "山田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "e3052ed585c4508c14f713739282ba49"
+  },
+  {
+   "pair_idx": 4,
+   "word_a": "王",
+   "word_b": "山田",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "b2b9b36cfb51cf4831f0a1a884d64a2a"
+  },
+  {
+   "pair_idx": 5,
+   "word_a": "王",
+   "word_b": "山田",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "08d6fe46a115737c4ea44add06922430"
+  },
+  {
+   "pair_idx": 6,
+   "word_a": "王",
+   "word_b": "山田",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "d9e4a76c6e5b1d1bcf0dc62d8e7cb5fe"
+  },
+  {
+   "pair_idx": 7,
+   "word_a": "王",
+   "word_b": "山田",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "e2a6e27970b2cd5f17784ab1c91cb674"
+  },
+  {
+   "pair_idx": 8,
+   "word_a": "王",
+   "word_b": "山田",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "e6d08040f51b9622e200dcd55f0c8c3a"
+  },
+  {
+   "pair_idx": 9,
+   "word_a": "王",
+   "word_b": "山田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "de484b41b31c379f6c004c70c68d9372"
+  },
+  {
+   "pair_idx": 10,
+   "word_a": "李",
+   "word_b": "田中",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "a5684cccb717611b2c798e0bed4644fc"
+  },
+  {
+   "pair_idx": 11,
+   "word_a": "李",
+   "word_b": "田中",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "acbdb1cdef521c5ecaf1dc4dda756325"
+  },
+  {
+   "pair_idx": 12,
+   "word_a": "李",
+   "word_b": "田中",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "1f931d42d556d46e624b9b7de10be9d4"
+  },
+  {
+   "pair_idx": 13,
+   "word_a": "李",
+   "word_b": "田中",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "713a07b27d8438a9cf0772cf2a987f71"
+  },
+  {
+   "pair_idx": 14,
+   "word_a": "李",
+   "word_b": "田中",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "7bc155718c299f01f7c28224a18300fd"
+  },
+  {
+   "pair_idx": 15,
+   "word_a": "李",
+   "word_b": "田中",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "91697f2dcbbd63520095dcb4a6855212"
+  },
+  {
+   "pair_idx": 16,
+   "word_a": "李",
+   "word_b": "田中",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "8a876719b02ca5495b7fd652a2f1f175"
+  },
+  {
+   "pair_idx": 17,
+   "word_a": "李",
+   "word_b": "田中",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "696ad109b7b0a34981910d8d2bf7bb2e"
+  },
+  {
+   "pair_idx": 18,
+   "word_a": "李",
+   "word_b": "田中",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "15b1e2f527ff924350daf82e26768bae"
+  },
+  {
+   "pair_idx": 19,
+   "word_a": "李",
+   "word_b": "田中",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "429bfad86365d9173609cae845374fa8"
+  },
+  {
+   "pair_idx": 20,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "7448f60f64384102b08d2f0bd6688598"
+  },
+  {
+   "pair_idx": 21,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "0f7d036498efec6a3ff788b83d969e53"
+  },
+  {
+   "pair_idx": 22,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "c2f79ac1e0fb26427f2c411f69d5d1ef"
+  },
+  {
+   "pair_idx": 23,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "0d71114c6b3f62e6313fa15fcc612245"
+  },
+  {
+   "pair_idx": 24,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "bdd5b6d46ae3a64e9b31a0556e6273d9"
+  },
+  {
+   "pair_idx": 25,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "9eaa79973c521570157c7d1e001bd660"
+  },
+  {
+   "pair_idx": 26,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "491264647bb7870e50215176062f9de2"
+  },
+  {
+   "pair_idx": 27,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "683c3e37e18b27e08cc0d24091f433e7"
+  },
+  {
+   "pair_idx": 28,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "584b14894b722f078fb597945aac686e"
+  },
+  {
+   "pair_idx": 29,
+   "word_a": "張",
+   "word_b": "佐藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "25fe782d91ba99fb682d7f5509e64858"
+  },
+  {
+   "pair_idx": 30,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "ea1d72ccd879bcf164d1661f8c09e5a7"
+  },
+  {
+   "pair_idx": 31,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "2713c2e11c272cbbf7d4f76a82646315"
+  },
+  {
+   "pair_idx": 32,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "ec99945b591ea0991bd707669e5c6b93"
+  },
+  {
+   "pair_idx": 33,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "c3063bb0eef7d3192870c7f856041e72"
+  },
+  {
+   "pair_idx": 34,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "ada0eb36daabc2c9fb4f617cd105d9ad"
+  },
+  {
+   "pair_idx": 35,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "dd5ab5189747af8bea333565935a3c72"
+  },
+  {
+   "pair_idx": 36,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "f227eaed3a458e3828309748005d2e26"
+  },
+  {
+   "pair_idx": 37,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "fb2f6c1809e0767634de56aafaf1bfc4"
+  },
+  {
+   "pair_idx": 38,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "138a4e2c9392776d9434224fa8a45d1a"
+  },
+  {
+   "pair_idx": 39,
+   "word_a": "劉",
+   "word_b": "鈴木",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "6c19f65713ff4ec6609316c10f53a7ab"
+  },
+  {
+   "pair_idx": 40,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "178814b1c194def36a8b6a1385005087"
+  },
+  {
+   "pair_idx": 41,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "ff516ae6182d4a291ea8e7eadd425977"
+  },
+  {
+   "pair_idx": 42,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "baafd0489c6586f155c85f335cdd669c"
+  },
+  {
+   "pair_idx": 43,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "870893f9322ee09f6d2c64385d8188fc"
+  },
+  {
+   "pair_idx": 44,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "6a6cdbe0cebbeed7c1244438533caf7f"
+  },
+  {
+   "pair_idx": 45,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "037035ab1b43f53a8dc2fe83702da7db"
+  },
+  {
+   "pair_idx": 46,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "afd4e6b1eebafb4371a0ac3d4c07c763"
+  },
+  {
+   "pair_idx": 47,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "f2a628e806bc7f3e01a5be8c82148e11"
+  },
+  {
+   "pair_idx": 48,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "7dd2964a85dbd4bb587a5b5021ce7451"
+  },
+  {
+   "pair_idx": 49,
+   "word_a": "陳",
+   "word_b": "高橋",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "b541d865734eb56324b4899a57c2507e"
+  },
+  {
+   "pair_idx": 50,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "591a5d60adffc7580d26873cefc3a55b"
+  },
+  {
+   "pair_idx": 51,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "0dddf7bbf33a9635e01a11a0a2693768"
+  },
+  {
+   "pair_idx": 52,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "1f568ee9801ded305ae88098c3ad50b3"
+  },
+  {
+   "pair_idx": 53,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "daf00bbe14b44bd66921779d74955418"
+  },
+  {
+   "pair_idx": 54,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "edb76b52d76c23608fada3364b229fe8"
+  },
+  {
+   "pair_idx": 55,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "eb0009e8f88c521c7ccdafedfca9eb96"
+  },
+  {
+   "pair_idx": 56,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "f079f3630c083b0d1896101c30535034"
+  },
+  {
+   "pair_idx": 57,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "9996eab5d1c673180951813d11749619"
+  },
+  {
+   "pair_idx": 58,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "6e4928d33f97d8315f0898132159af7f"
+  },
+  {
+   "pair_idx": 59,
+   "word_a": "楊",
+   "word_b": "渡辺",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "f2b8f11893b396c5c21918bb06ed9074"
+  },
+  {
+   "pair_idx": 60,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "35f1cac00f68d7ce9d3ae88adaf8fd44"
+  },
+  {
+   "pair_idx": 61,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "11d2b31046da039563ce09d2c6a43226"
+  },
+  {
+   "pair_idx": 62,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "1b873f4a202eb0164c553b9aae7f457f"
+  },
+  {
+   "pair_idx": 63,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "def0b27246113218f723b25314e7e2fc"
+  },
+  {
+   "pair_idx": 64,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "30c71e8c6219f32a10d0a695f20c7669"
+  },
+  {
+   "pair_idx": 65,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "57c308593c756d02ba69000dbe57a9c4"
+  },
+  {
+   "pair_idx": 66,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "c7ec6a497c8a38127fdfb020c466d170"
+  },
+  {
+   "pair_idx": 67,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "f469225e217b56f8639970d9c9880adb"
+  },
+  {
+   "pair_idx": 68,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "5c7be4220dedf49f56f36d2d03fc6971"
+  },
+  {
+   "pair_idx": 69,
+   "word_a": "黄",
+   "word_b": "伊藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "80dd7fb871174c89a6fcb5896886b017"
+  },
+  {
+   "pair_idx": 70,
+   "word_a": "趙",
+   "word_b": "中村",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "d14791dd48249f5f0be23384c33bdb5e"
+  },
+  {
+   "pair_idx": 71,
+   "word_a": "趙",
+   "word_b": "中村",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "3072896238367c592ba4c672fe9d95d7"
+  },
+  {
+   "pair_idx": 72,
+   "word_a": "趙",
+   "word_b": "中村",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "a2cc6a401543adb1ef12edb366e23429"
+  },
+  {
+   "pair_idx": 73,
+   "word_a": "趙",
+   "word_b": "中村",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "52f89a6f8814bb91ce51d436643dceb6"
+  },
+  {
+   "pair_idx": 74,
+   "word_a": "趙",
+   "word_b": "中村",
+   "T_src": 12,
+   "T_new": 10,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "b3cd9f54e712316d443d59a4f385787c"
+  },
+  {
+   "pair_idx": 75,
+   "word_a": "趙",
+   "word_b": "中村",
+   "T_src": 9,
+   "T_new": 7,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "0d35b87408e478262f53997863382f06"
+  },
+  {
+   "pair_idx": 76,
+   "word_a": "趙",
+   "word_b": "中村",
+   "T_src": 9,
+   "T_new": 7,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "202a3ad75ed9d89c777e89eb70097c61"
+  },
+  {
+   "pair_idx": 77,
+   "word_a": "趙",
+   "word_b": "中村",
+   "T_src": 11,
+   "T_new": 9,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "74f600cbda4e3834662ca4e78dd2b3c8"
+  },
+  {
+   "pair_idx": 78,
+   "word_a": "趙",
+   "word_b": "中村",
+   "T_src": 11,
+   "T_new": 9,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "a3bf22b610d4d6f6c45f28ed720ca2d4"
+  },
+  {
+   "pair_idx": 79,
+   "word_a": "趙",
+   "word_b": "中村",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "e559914bf1de7783c7f74930805c035b"
+  },
+  {
+   "pair_idx": 80,
+   "word_a": "周",
+   "word_b": "小林",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "090e35649a2241d636c18e8638243166"
+  },
+  {
+   "pair_idx": 81,
+   "word_a": "周",
+   "word_b": "小林",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "11c5fab9c5d91b0dc9923ac4c12cd4b2"
+  },
+  {
+   "pair_idx": 82,
+   "word_a": "周",
+   "word_b": "小林",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "c1bdb3d1af799b67cb28ed4c54ec823c"
+  },
+  {
+   "pair_idx": 83,
+   "word_a": "周",
+   "word_b": "小林",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "e39b417026f5b9ae62d8f7dee6932f1c"
+  },
+  {
+   "pair_idx": 84,
+   "word_a": "周",
+   "word_b": "小林",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "ad2b392f751d48dc7ebe3155fdeaca7e"
+  },
+  {
+   "pair_idx": 85,
+   "word_a": "周",
+   "word_b": "小林",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "6fe339503e7a7dba8e97c586748bd418"
+  },
+  {
+   "pair_idx": 86,
+   "word_a": "周",
+   "word_b": "小林",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "5cb3f80a2ecce2faed10476c7631f391"
+  },
+  {
+   "pair_idx": 87,
+   "word_a": "周",
+   "word_b": "小林",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "25a2e4c4b1b816c1e54725c1e8be342d"
+  },
+  {
+   "pair_idx": 88,
+   "word_a": "周",
+   "word_b": "小林",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "65442856ccfba7713ab5d316d891dccd"
+  },
+  {
+   "pair_idx": 89,
+   "word_a": "周",
+   "word_b": "小林",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "58a9d70df4950f9e0d873ffcbba45e04"
+  },
+  {
+   "pair_idx": 90,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "4fd941456ac6d72827b359e45715a3f3"
+  },
+  {
+   "pair_idx": 91,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "8d6720d0dbcd0d568321f0557c9b02db"
+  },
+  {
+   "pair_idx": 92,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "4d54e194aab277fa487489c4a949b2a8"
+  },
+  {
+   "pair_idx": 93,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "5bb2b828160aff085e2748670e9ebf95"
+  },
+  {
+   "pair_idx": 94,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "2ab9bab4ce319b55b9b26a4209e6627e"
+  },
+  {
+   "pair_idx": 95,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "a84ec7fd99b3835533d33094930a01cc"
+  },
+  {
+   "pair_idx": 96,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "2888ea0137c95c0dd27ad0a9f19b3a2d"
+  },
+  {
+   "pair_idx": 97,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "ba5e4dc7bd5b683d0648d2e7727c6587"
+  },
+  {
+   "pair_idx": 98,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "d5593f82840758cce470eee962dc7739"
+  },
+  {
+   "pair_idx": 99,
+   "word_a": "呉",
+   "word_b": "加藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "672c7cc9bdd866546ebf42ca97f447b0"
+  },
+  {
+   "pair_idx": 100,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "3cfe877b078d893b054ca2519f4c1f15"
+  },
+  {
+   "pair_idx": 101,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "fa7579f98f809e013e60a40c6e5f3835"
+  },
+  {
+   "pair_idx": 102,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "0615f95214417345e2d29837453b8f3d"
+  },
+  {
+   "pair_idx": 103,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "10f265bd3e71752a34f03f1d6c47c98c"
+  },
+  {
+   "pair_idx": 104,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "b97bc6095b806f1cb1ce5c5df6a962e4"
+  },
+  {
+   "pair_idx": 105,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "3c94a2af91902ac612be5011ebcd491b"
+  },
+  {
+   "pair_idx": 106,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "43afbaf2328f45d2b9fe93f013fd8caa"
+  },
+  {
+   "pair_idx": 107,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "97365bfe84d9644188f656ab689eec10"
+  },
+  {
+   "pair_idx": 108,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "a1599d4d29295ace328c0b133967548d"
+  },
+  {
+   "pair_idx": 109,
+   "word_a": "徐",
+   "word_b": "吉田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "648faf566d66faed7d860b568ba09de6"
+  },
+  {
+   "pair_idx": 110,
+   "word_a": "孫",
+   "word_b": "山本",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "e07005cc40f62fe88a4af795aec12fce"
+  },
+  {
+   "pair_idx": 111,
+   "word_a": "孫",
+   "word_b": "山本",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "7b1a76ce2b2c5834a8125942c8d79265"
+  },
+  {
+   "pair_idx": 112,
+   "word_a": "孫",
+   "word_b": "山本",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "098086413c55e681459c035c510354b4"
+  },
+  {
+   "pair_idx": 113,
+   "word_a": "孫",
+   "word_b": "山本",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "de775789ebcd9e452ec21686e5bf8bcf"
+  },
+  {
+   "pair_idx": 114,
+   "word_a": "孫",
+   "word_b": "山本",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "606c69cee77edff7262154cb9dc70a61"
+  },
+  {
+   "pair_idx": 115,
+   "word_a": "孫",
+   "word_b": "山本",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "581696ca8647a83100c64fb280ef7032"
+  },
+  {
+   "pair_idx": 116,
+   "word_a": "孫",
+   "word_b": "山本",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "45bc5df2dd07c81eb93ef587a7495cbe"
+  },
+  {
+   "pair_idx": 117,
+   "word_a": "孫",
+   "word_b": "山本",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "25b64e4a9b28b2b253092572abe2b093"
+  },
+  {
+   "pair_idx": 118,
+   "word_a": "孫",
+   "word_b": "山本",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "ee1874f05205a0924a60c53b230d1c1b"
+  },
+  {
+   "pair_idx": 119,
+   "word_a": "孫",
+   "word_b": "山本",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "5db239554e7f646e94a2d911973792d4"
+  },
+  {
+   "pair_idx": 120,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "22405f8826807caced0a35138027920a"
+  },
+  {
+   "pair_idx": 121,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "205651ee57c1a83d911ebdbfd930bf45"
+  },
+  {
+   "pair_idx": 122,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "8759bfa9560442ebfcfdf1b06c4d0480"
+  },
+  {
+   "pair_idx": 123,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "f989472f556069f309b60ea005bb1408"
+  },
+  {
+   "pair_idx": 124,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "d183899895b9937f59dd800264808a54"
+  },
+  {
+   "pair_idx": 125,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "8eb8b1fe9377a594f4d5f9f56d796ff1"
+  },
+  {
+   "pair_idx": 126,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "19cdb8ed69af8c93fa9e7f20861dfb8d"
+  },
+  {
+   "pair_idx": 127,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "bacf9156804791f0a08c18d00fc6e529"
+  },
+  {
+   "pair_idx": 128,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "20703dde53f1841db582018b9fe2a8f2"
+  },
+  {
+   "pair_idx": 129,
+   "word_a": "馬",
+   "word_b": "佐々木",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "9f3f4fc067e1ece856c0e043f179e1d6"
+  },
+  {
+   "pair_idx": 130,
+   "word_a": "朱",
+   "word_b": "松本",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "e1edb38cc537750c4fff86c7ef162790"
+  },
+  {
+   "pair_idx": 131,
+   "word_a": "朱",
+   "word_b": "松本",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "166c8b01bdc15e90487f11bcbf68b2c8"
+  },
+  {
+   "pair_idx": 132,
+   "word_a": "朱",
+   "word_b": "松本",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "bee83afc8170059a48873e0d1878bb86"
+  },
+  {
+   "pair_idx": 133,
+   "word_a": "朱",
+   "word_b": "松本",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "a56d7eb6674d2ed0fe22c1c8f68213df"
+  },
+  {
+   "pair_idx": 134,
+   "word_a": "朱",
+   "word_b": "松本",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "2c306abe2232e26052b3a3de38c9e30f"
+  },
+  {
+   "pair_idx": 135,
+   "word_a": "朱",
+   "word_b": "松本",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "c8c509b3085b6f010ca35ce567fcd82f"
+  },
+  {
+   "pair_idx": 136,
+   "word_a": "朱",
+   "word_b": "松本",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "38929002653db7cd7de2baea00d5a176"
+  },
+  {
+   "pair_idx": 137,
+   "word_a": "朱",
+   "word_b": "松本",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "63f29b5674ec463d7966a2a5f9313abd"
+  },
+  {
+   "pair_idx": 138,
+   "word_a": "朱",
+   "word_b": "松本",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "8334e313174d32bf9dbbf979c67490aa"
+  },
+  {
+   "pair_idx": 139,
+   "word_a": "朱",
+   "word_b": "松本",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "ff0e5ba613bde90b233e8838be9f3f75"
+  },
+  {
+   "pair_idx": 140,
+   "word_a": "胡",
+   "word_b": "井上",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "9169c4c08bd01763e3934a6e3c280629"
+  },
+  {
+   "pair_idx": 141,
+   "word_a": "胡",
+   "word_b": "井上",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "04a94a1bb82e6c18f5c07d5fde51b06f"
+  },
+  {
+   "pair_idx": 142,
+   "word_a": "胡",
+   "word_b": "井上",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "34fad6cf6c14fdae0c0e560b0c68fb3c"
+  },
+  {
+   "pair_idx": 143,
+   "word_a": "胡",
+   "word_b": "井上",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "3fc98ad8f22d87534a69c438747da6cc"
+  },
+  {
+   "pair_idx": 144,
+   "word_a": "胡",
+   "word_b": "井上",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "badd710323f6418a9a7a1597114ab400"
+  },
+  {
+   "pair_idx": 145,
+   "word_a": "胡",
+   "word_b": "井上",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "770f499127f644398e47ee878f999869"
+  },
+  {
+   "pair_idx": 146,
+   "word_a": "胡",
+   "word_b": "井上",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "0b1d51be60f3f65e9dee9069461e8ea2"
+  },
+  {
+   "pair_idx": 147,
+   "word_a": "胡",
+   "word_b": "井上",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "b5cc44c936f6aeb9a009f34364e93328"
+  },
+  {
+   "pair_idx": 148,
+   "word_a": "胡",
+   "word_b": "井上",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "294097032ccf9265eac9142c9d862ee6"
+  },
+  {
+   "pair_idx": 149,
+   "word_a": "胡",
+   "word_b": "井上",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "e0e1697360cdba0e8f7eb987b70cb876"
+  },
+  {
+   "pair_idx": 150,
+   "word_a": "郭",
+   "word_b": "木村",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "da23d59d8f3b279b3823d827d1792f06"
+  },
+  {
+   "pair_idx": 151,
+   "word_a": "郭",
+   "word_b": "木村",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "5db224ae256500482a4d3fd81df4b41b"
+  },
+  {
+   "pair_idx": 152,
+   "word_a": "郭",
+   "word_b": "木村",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "15cec1d48df20c1e03e50ae4bf3e0783"
+  },
+  {
+   "pair_idx": 153,
+   "word_a": "郭",
+   "word_b": "木村",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "62593e3a07d9d5c9325780009e82e865"
+  },
+  {
+   "pair_idx": 154,
+   "word_a": "郭",
+   "word_b": "木村",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "9728cead8579247a16d70e5c08277cd1"
+  },
+  {
+   "pair_idx": 155,
+   "word_a": "郭",
+   "word_b": "木村",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "e971cfeb6ea3de1bfa2f1e1bcb94ac0e"
+  },
+  {
+   "pair_idx": 156,
+   "word_a": "郭",
+   "word_b": "木村",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "a292e7ede27cb2a42f649621501e8118"
+  },
+  {
+   "pair_idx": 157,
+   "word_a": "郭",
+   "word_b": "木村",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "b97713113c8a58cc7ee323ecdff48125"
+  },
+  {
+   "pair_idx": 158,
+   "word_a": "郭",
+   "word_b": "木村",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "7bc6e71ca97188b3d58d17152e7b77b7"
+  },
+  {
+   "pair_idx": 159,
+   "word_a": "郭",
+   "word_b": "木村",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "64c324ec66838121100e7ff51cd0eac9"
+  },
+  {
+   "pair_idx": 160,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "1820e4d6344e7d912c448cbf4d0f2d1f"
+  },
+  {
+   "pair_idx": 161,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "94336ae51473d127ac1da3eeb001edf2"
+  },
+  {
+   "pair_idx": 162,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "c52f05486d78ec24ecafba0680040501"
+  },
+  {
+   "pair_idx": 163,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "87d695f70aa555ea2429c1b4e3b4dbac"
+  },
+  {
+   "pair_idx": 164,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "9dc3051883056696955e68a7829a1ce2"
+  },
+  {
+   "pair_idx": 165,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "f6de03a41950753028464aef69b0c337"
+  },
+  {
+   "pair_idx": 166,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "af4f5dbce7c12302867611e5c0026982"
+  },
+  {
+   "pair_idx": 167,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "34f4e3c927cccbab07aacceda663cc4d"
+  },
+  {
+   "pair_idx": 168,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "4160ed06bc2de5412bbfb9d59ee6441a"
+  },
+  {
+   "pair_idx": 169,
+   "word_a": "何",
+   "word_b": "斎藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "0721ee1bf4f7ab5fde78f2300a89739f"
+  },
+  {
+   "pair_idx": 170,
+   "word_a": "高",
+   "word_b": "清水",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "a6a0c7ce36c758efa694da3c4f7fa703"
+  },
+  {
+   "pair_idx": 171,
+   "word_a": "高",
+   "word_b": "清水",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "606d1d537b22bf5a6227d02f31585c5f"
+  },
+  {
+   "pair_idx": 172,
+   "word_a": "高",
+   "word_b": "清水",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "f348d152ae60df97ed628fde918082d2"
+  },
+  {
+   "pair_idx": 173,
+   "word_a": "高",
+   "word_b": "清水",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "f4be7aac063df6f13d93261cf3084a5c"
+  },
+  {
+   "pair_idx": 174,
+   "word_a": "高",
+   "word_b": "清水",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "6326f85e68cc08ddfdee57e8f1bf0125"
+  },
+  {
+   "pair_idx": 175,
+   "word_a": "高",
+   "word_b": "清水",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "d4c4dfbd81e1ea0ff8720801c65d960a"
+  },
+  {
+   "pair_idx": 176,
+   "word_a": "高",
+   "word_b": "清水",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "aaf9801b1532e83508d77934a6a44a8b"
+  },
+  {
+   "pair_idx": 177,
+   "word_a": "高",
+   "word_b": "清水",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "d557514fc2bf15eab1ee4cbc23354c67"
+  },
+  {
+   "pair_idx": 178,
+   "word_a": "高",
+   "word_b": "清水",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "c79714c1740132ba7c22270904003df6"
+  },
+  {
+   "pair_idx": 179,
+   "word_a": "高",
+   "word_b": "清水",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "1fe48a498048104d261b0a2ba6b5018a"
+  },
+  {
+   "pair_idx": 180,
+   "word_a": "林",
+   "word_b": "山口",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "8efab24378c14b0bc38cab79ec83e390"
+  },
+  {
+   "pair_idx": 181,
+   "word_a": "林",
+   "word_b": "山口",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "8bea1522ccc91fed086e62560586af24"
+  },
+  {
+   "pair_idx": 182,
+   "word_a": "林",
+   "word_b": "山口",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "3a78f59548b9cfb330feca448114f209"
+  },
+  {
+   "pair_idx": 183,
+   "word_a": "林",
+   "word_b": "山口",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "f22dc08b35814e40e548b01fbbbaf631"
+  },
+  {
+   "pair_idx": 184,
+   "word_a": "林",
+   "word_b": "山口",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "b73b4e05a675aa31395173f7ff4d7255"
+  },
+  {
+   "pair_idx": 185,
+   "word_a": "林",
+   "word_b": "山口",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "87caebea11b818fa2f7a69f3586ef4ba"
+  },
+  {
+   "pair_idx": 186,
+   "word_a": "林",
+   "word_b": "山口",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "73d27f23dcf9dc4a746c9ecd7614e056"
+  },
+  {
+   "pair_idx": 187,
+   "word_a": "林",
+   "word_b": "山口",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "c9a355d83e7db9c0186f79f65eec3cf5"
+  },
+  {
+   "pair_idx": 188,
+   "word_a": "林",
+   "word_b": "山口",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "3b02b0f30126cb6ee0c093c48d18de2c"
+  },
+  {
+   "pair_idx": 189,
+   "word_a": "林",
+   "word_b": "山口",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "1ba3e5caa50c85262fb85ce1744186fa"
+  },
+  {
+   "pair_idx": 190,
+   "word_a": "羅",
+   "word_b": "池田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "03c834bb97f7a20b61207040adeb7ed7"
+  },
+  {
+   "pair_idx": 191,
+   "word_a": "羅",
+   "word_b": "池田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "7bfbe3fdf65ef13d1505a26d0dcc1512"
+  },
+  {
+   "pair_idx": 192,
+   "word_a": "羅",
+   "word_b": "池田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "2d2e131b42a539a6a2e30b9564c1e1cc"
+  },
+  {
+   "pair_idx": 193,
+   "word_a": "羅",
+   "word_b": "池田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "6c25a86de282fdfb6197e1ee4e26fc70"
+  },
+  {
+   "pair_idx": 194,
+   "word_a": "羅",
+   "word_b": "池田",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "695a3cc2a20ca31dbe981108caf3b241"
+  },
+  {
+   "pair_idx": 195,
+   "word_a": "羅",
+   "word_b": "池田",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "1d34035a7e83c374b95fef2ef2a50a69"
+  },
+  {
+   "pair_idx": 196,
+   "word_a": "羅",
+   "word_b": "池田",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "bbb5bfe4ac5489f2ed8ed7771710e918"
+  },
+  {
+   "pair_idx": 197,
+   "word_a": "羅",
+   "word_b": "池田",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "8d7931965b1e4a599f2ef95419d747bd"
+  },
+  {
+   "pair_idx": 198,
+   "word_a": "羅",
+   "word_b": "池田",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "b7ff4073f0353bbdf9b3b4e499a2c8c4"
+  },
+  {
+   "pair_idx": 199,
+   "word_a": "羅",
+   "word_b": "池田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "972861e5a1b2f462a8a4e65c6eb22f53"
+  },
+  {
+   "pair_idx": 200,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "fe922d2b7e334a0774c9ccedef2bd66d"
+  },
+  {
+   "pair_idx": 201,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "ee754699a5e34c9ca5861ecdb84309cf"
+  },
+  {
+   "pair_idx": 202,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "68dff1a8b84de1ed7ce939f8dbaa590c"
+  },
+  {
+   "pair_idx": 203,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "6e525d0986db893891511db8d1dbbb55"
+  },
+  {
+   "pair_idx": 204,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "T_src": 12,
+   "T_new": 10,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "6fb77c5631cd6806d08f605b20164121"
+  },
+  {
+   "pair_idx": 205,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "T_src": 9,
+   "T_new": 7,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "50ccfe4a28c1266d223693d5f5926dcf"
+  },
+  {
+   "pair_idx": 206,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "T_src": 9,
+   "T_new": 7,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "d68c3ee6582f4e1d490375f6ca9ae171"
+  },
+  {
+   "pair_idx": 207,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "T_src": 11,
+   "T_new": 9,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "8aa914252c117fdce86cccee7f186465"
+  },
+  {
+   "pair_idx": 208,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "T_src": 11,
+   "T_new": 9,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "a0b1d8e59dd6f9e4eb47455669545af9"
+  },
+  {
+   "pair_idx": 209,
+   "word_a": "鄭",
+   "word_b": "橋本",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "05f8492d2fe57595d57586ae0b21e1b0"
+  },
+  {
+   "pair_idx": 210,
+   "word_a": "梁",
+   "word_b": "石川",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "2d02caa1bd34a9805a51a7c4ba9bc52b"
+  },
+  {
+   "pair_idx": 211,
+   "word_a": "梁",
+   "word_b": "石川",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "faa024ae02e4335b97c676a6eb375673"
+  },
+  {
+   "pair_idx": 212,
+   "word_a": "梁",
+   "word_b": "石川",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "ed58747f8d5b2f347471082a6874b5e8"
+  },
+  {
+   "pair_idx": 213,
+   "word_a": "梁",
+   "word_b": "石川",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "57b84feb9f37428e167c9d023931df73"
+  },
+  {
+   "pair_idx": 214,
+   "word_a": "梁",
+   "word_b": "石川",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "7db100ef1617345a1ad9568ee8a608bb"
+  },
+  {
+   "pair_idx": 215,
+   "word_a": "梁",
+   "word_b": "石川",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "88e9939355a0b5fa10c9fa7afbc64c27"
+  },
+  {
+   "pair_idx": 216,
+   "word_a": "梁",
+   "word_b": "石川",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "b2181e7c45cc0a9dcea384df94111a5f"
+  },
+  {
+   "pair_idx": 217,
+   "word_a": "梁",
+   "word_b": "石川",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "05474a0f4e16cc669f9e7b495600a1ba"
+  },
+  {
+   "pair_idx": 218,
+   "word_a": "梁",
+   "word_b": "石川",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "5a237e4c93e2fcfa2b995e9405d57d07"
+  },
+  {
+   "pair_idx": 219,
+   "word_a": "梁",
+   "word_b": "石川",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "6dbea858b0a31c2f86d32a5d8a746831"
+  },
+  {
+   "pair_idx": 220,
+   "word_a": "謝",
+   "word_b": "前田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "1a9e3b51a61a88f18eb93caf4dbc79a1"
+  },
+  {
+   "pair_idx": 221,
+   "word_a": "謝",
+   "word_b": "前田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "96dd7a003ff99966d923c9f4d29087ce"
+  },
+  {
+   "pair_idx": 222,
+   "word_a": "謝",
+   "word_b": "前田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "dc99a1737dfe75882d8afa87df612c16"
+  },
+  {
+   "pair_idx": 223,
+   "word_a": "謝",
+   "word_b": "前田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "8ff1fe066581f37f44c56c0289aa2edb"
+  },
+  {
+   "pair_idx": 224,
+   "word_a": "謝",
+   "word_b": "前田",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "4ff50bad1b6d692d958f4f15be39e8b3"
+  },
+  {
+   "pair_idx": 225,
+   "word_a": "謝",
+   "word_b": "前田",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "5aa241ab41d627181c8b8b9186312784"
+  },
+  {
+   "pair_idx": 226,
+   "word_a": "謝",
+   "word_b": "前田",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "9f8c3fa0d87c3f7e01184865bba58396"
+  },
+  {
+   "pair_idx": 227,
+   "word_a": "謝",
+   "word_b": "前田",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "0deb70b0af2ab41a2307d10c457db780"
+  },
+  {
+   "pair_idx": 228,
+   "word_a": "謝",
+   "word_b": "前田",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "ebb159fec0c57daa92d29803103e4aeb"
+  },
+  {
+   "pair_idx": 229,
+   "word_a": "謝",
+   "word_b": "前田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "13a8f8b780ed3b89b4170838a4428914"
+  },
+  {
+   "pair_idx": 230,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "936dfcf838c9f30da385302b37cc1d0e"
+  },
+  {
+   "pair_idx": 231,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "44418da21f475061041be6212b1a3ecb"
+  },
+  {
+   "pair_idx": 232,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "b297b86416881f876cca1601ff97983c"
+  },
+  {
+   "pair_idx": 233,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "da0c0919a2be75763bae00f4f64cc80a"
+  },
+  {
+   "pair_idx": 234,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "T_src": 12,
+   "T_new": 10,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "c4e60aa584baaae12c59706c51b0eb35"
+  },
+  {
+   "pair_idx": 235,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "T_src": 9,
+   "T_new": 7,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "cec1ef3296dbc0865c85d6dfb5dda4b3"
+  },
+  {
+   "pair_idx": 236,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "T_src": 9,
+   "T_new": 7,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "95ed5b1b39b6af2e89fdb24389a9ecb1"
+  },
+  {
+   "pair_idx": 237,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "T_src": 11,
+   "T_new": 9,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "abc20d3263feb6d0924ea76c217e36c3"
+  },
+  {
+   "pair_idx": 238,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "T_src": 11,
+   "T_new": 9,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "b06220e0b08e565edb3c8af493cae0bb"
+  },
+  {
+   "pair_idx": 239,
+   "word_a": "宋",
+   "word_b": "藤田",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "f414b77a6b58f05ea05498da906ec9d9"
+  },
+  {
+   "pair_idx": 240,
+   "word_a": "唐",
+   "word_b": "小川",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "51fa57d5842a75211ff73d1641e0c88f"
+  },
+  {
+   "pair_idx": 241,
+   "word_a": "唐",
+   "word_b": "小川",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "112440ccff02a9bd8a963dec0c268580"
+  },
+  {
+   "pair_idx": 242,
+   "word_a": "唐",
+   "word_b": "小川",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "3b6dc21868f1e765f39534215f88e2fa"
+  },
+  {
+   "pair_idx": 243,
+   "word_a": "唐",
+   "word_b": "小川",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "99b6cdb2c6e1b5289a1f342b2a1d362e"
+  },
+  {
+   "pair_idx": 244,
+   "word_a": "唐",
+   "word_b": "小川",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "fc6ac79d305b35edadd08b66114ccb8a"
+  },
+  {
+   "pair_idx": 245,
+   "word_a": "唐",
+   "word_b": "小川",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "8e1222c7bfbb0c6c0a6f8bbf3079587b"
+  },
+  {
+   "pair_idx": 246,
+   "word_a": "唐",
+   "word_b": "小川",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "c89dd4ea159ed0171365e93636a2bc18"
+  },
+  {
+   "pair_idx": 247,
+   "word_a": "唐",
+   "word_b": "小川",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "73ac4f6afd1a1deae22810795ec54574"
+  },
+  {
+   "pair_idx": 248,
+   "word_a": "唐",
+   "word_b": "小川",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "65cf0ae97d723d43319b98d0e2a8eb8c"
+  },
+  {
+   "pair_idx": 249,
+   "word_a": "唐",
+   "word_b": "小川",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "035b3de668afd3af6303d2e4696da2b6"
+  },
+  {
+   "pair_idx": 250,
+   "word_a": "許",
+   "word_b": "岡田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "3d7685994be8d373c5ff52aa8f9be6d1"
+  },
+  {
+   "pair_idx": 251,
+   "word_a": "許",
+   "word_b": "岡田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "b47d4b42203a98c8320fdf5e7c5ae47a"
+  },
+  {
+   "pair_idx": 252,
+   "word_a": "許",
+   "word_b": "岡田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "46ecda4d9fb4aea36fd0b51eab09d0ef"
+  },
+  {
+   "pair_idx": 253,
+   "word_a": "許",
+   "word_b": "岡田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "6526d823bca1da3ff3a33708a33af453"
+  },
+  {
+   "pair_idx": 254,
+   "word_a": "許",
+   "word_b": "岡田",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "b05184655a1a6dc8cde8c0fcac35f0cd"
+  },
+  {
+   "pair_idx": 255,
+   "word_a": "許",
+   "word_b": "岡田",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "3677b330c829d51f4711bc693de41cbd"
+  },
+  {
+   "pair_idx": 256,
+   "word_a": "許",
+   "word_b": "岡田",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "98574ba43020d7ded34117fb7abd0907"
+  },
+  {
+   "pair_idx": 257,
+   "word_a": "許",
+   "word_b": "岡田",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "656790fb9582f8d520dc2ca801fe9cf3"
+  },
+  {
+   "pair_idx": 258,
+   "word_a": "許",
+   "word_b": "岡田",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "bac1f014954437beef3f65c0f42deaed"
+  },
+  {
+   "pair_idx": 259,
+   "word_a": "許",
+   "word_b": "岡田",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "2a6ba5fe679ea52a37facb939fec3c2b"
+  },
+  {
+   "pair_idx": 260,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "bd20100ff3f9e8c3c288f3f82f31e50e"
+  },
+  {
+   "pair_idx": 261,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "19c7e3f424480a902554ba96ba96b237"
+  },
+  {
+   "pair_idx": 262,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "4fe093f5cd1a726dc2f5bdb4ad70a7c0"
+  },
+  {
+   "pair_idx": 263,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "185c5363a6a98bcd549fd7e5c9ca9485"
+  },
+  {
+   "pair_idx": 264,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "f7de7811296cd9f3ac144f705fdc9de3"
+  },
+  {
+   "pair_idx": 265,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "33ac16a821cf7b5036d8ed43411d6591"
+  },
+  {
+   "pair_idx": 266,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "d26f54bd93b106992c4d39d2632626aa"
+  },
+  {
+   "pair_idx": 267,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "a7167f6c3a48d1c94bba1f7c16903151"
+  },
+  {
+   "pair_idx": 268,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "d54df234d47712dd314a7c69aad7c949"
+  },
+  {
+   "pair_idx": 269,
+   "word_a": "韓",
+   "word_b": "後藤",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "09e590598008b60e32a1060a196faa11"
+  },
+  {
+   "pair_idx": 270,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "83e27327fde337581e430608a01ca551"
+  },
+  {
+   "pair_idx": 271,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "17777b52dfa4c882c285cc55c3b5b9c9"
+  },
+  {
+   "pair_idx": 272,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "f1023fffb2984dd2f6b2d3edff25c4c1"
+  },
+  {
+   "pair_idx": 273,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "d555fa075de618dc78d6647e137d5228"
+  },
+  {
+   "pair_idx": 274,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "T_src": 12,
+   "T_new": 10,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "480a2a671b09a5cda52c32db6ef433d2"
+  },
+  {
+   "pair_idx": 275,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "T_src": 9,
+   "T_new": 7,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "e23b88311e354857aa0cfe332089ff02"
+  },
+  {
+   "pair_idx": 276,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "T_src": 9,
+   "T_new": 7,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "9a34854fb408f945214f2cebd690cc3f"
+  },
+  {
+   "pair_idx": 277,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "T_src": 11,
+   "T_new": 9,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "cb708af2905ef506d1e3b2fac01a8e48"
+  },
+  {
+   "pair_idx": 278,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "T_src": 11,
+   "T_new": 9,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "201190651daaf19c00b7badc277c4c81"
+  },
+  {
+   "pair_idx": 279,
+   "word_a": "馮",
+   "word_b": "近藤",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "50ba46cd49e490afefaa4f7c81f0d86f"
+  },
+  {
+   "pair_idx": 280,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "cdc67a43a50c6758cbce3a50d5899a0d"
+  },
+  {
+   "pair_idx": 281,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "b9691da16368c0905884fd3756666a33"
+  },
+  {
+   "pair_idx": 282,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "5c956b862e330dbc90612a28aa97a971"
+  },
+  {
+   "pair_idx": 283,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "1adadfa16b87b995f48cb94e91882bad"
+  },
+  {
+   "pair_idx": 284,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "T_src": 12,
+   "T_new": 10,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "62f2a72df08edc7259fb45a8a4a4b82d"
+  },
+  {
+   "pair_idx": 285,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "T_src": 9,
+   "T_new": 7,
+   "s_span": [
+    1,
+    4
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "0cdaa28e26d47384ce00bd08d094a70c"
+  },
+  {
+   "pair_idx": 286,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "T_src": 9,
+   "T_new": 7,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "aba26aa58f979f6f0f26c02544d47328"
+  },
+  {
+   "pair_idx": 287,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "T_src": 11,
+   "T_new": 9,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "f24f0d7d6d9f24e3024681a7990e585b"
+  },
+  {
+   "pair_idx": 288,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "T_src": 11,
+   "T_new": 9,
+   "s_span": [
+    2,
+    5
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "1d3c7bccaa100798668ab549d8299a05"
+  },
+  {
+   "pair_idx": 289,
+   "word_a": "鄧",
+   "word_b": "石井",
+   "T_src": 10,
+   "T_new": 8,
+   "s_span": [
+    3,
+    6
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "bc95da3777f46d5830380f4f57782154"
+  },
+  {
+   "pair_idx": 290,
+   "word_a": "曹",
+   "word_b": "村上",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "a05404fb0fc7f45f003a4b804354d473"
+  },
+  {
+   "pair_idx": 291,
+   "word_a": "曹",
+   "word_b": "村上",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "d764361ce056b2a401b962478cec1c73"
+  },
+  {
+   "pair_idx": 292,
+   "word_a": "曹",
+   "word_b": "村上",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "f9c634fa8ca9a932730ba53294231361"
+  },
+  {
+   "pair_idx": 293,
+   "word_a": "曹",
+   "word_b": "村上",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "9863adcd51aa555b8dd33ed25825aa9d"
+  },
+  {
+   "pair_idx": 294,
+   "word_a": "曹",
+   "word_b": "村上",
+   "T_src": 10,
+   "T_new": 10,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "c784734652edfadd56611442423bb12c"
+  },
+  {
+   "pair_idx": 295,
+   "word_a": "曹",
+   "word_b": "村上",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    1,
+    2
+   ],
+   "t_span": [
+    1,
+    2
+   ],
+   "md5_inj": "84e298215eb9cce7d6939b7702a412ed"
+  },
+  {
+   "pair_idx": 296,
+   "word_a": "曹",
+   "word_b": "村上",
+   "T_src": 7,
+   "T_new": 7,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "1a065e7cfff38d2125ddfd9258a30d8d"
+  },
+  {
+   "pair_idx": 297,
+   "word_a": "曹",
+   "word_b": "村上",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "eb9574ceacb75d3463265216bc6e9871"
+  },
+  {
+   "pair_idx": 298,
+   "word_a": "曹",
+   "word_b": "村上",
+   "T_src": 9,
+   "T_new": 9,
+   "s_span": [
+    2,
+    3
+   ],
+   "t_span": [
+    2,
+    3
+   ],
+   "md5_inj": "79383d27bfaa4792400b14c2b77dae8c"
+  },
+  {
+   "pair_idx": 299,
+   "word_a": "曹",
+   "word_b": "村上",
+   "T_src": 8,
+   "T_new": 8,
+   "s_span": [
+    3,
+    4
+   ],
+   "t_span": [
+    3,
+    4
+   ],
+   "md5_inj": "f4b9fba9210561b4830b7c15eab857fc"
+  }
+ ]
+}

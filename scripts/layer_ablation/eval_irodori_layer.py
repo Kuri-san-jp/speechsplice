@@ -30,14 +30,33 @@ Irodori は L=25、公表は l*=25。掃引は **1 / 13 / 25**。
 
 ## 最終層での一致（--inject_layer 25）
 
-層 25（= 最終層）で差し替えたものは、既存の `splice_synthesize` と
-**同じにはならない。**既存は射影・RMSNorm を**通った後**の 512 次元で
-差し替えるが、この版は**通る前**の 768 次元で差し替えるため。
-つまり「同じ位置」ではない。
+層 25 の後にあるのは ModernBERT の final_norm（LayerNorm）、射影
+（Linear と residual MLP）、`* mask`、RMSNorm で、**どれもトークンごとの計算**
+である。だから層 25 の出力で差し替えても、射影後の `text_state` で差し替えても
+（既存の `splice_synthesize`）、有効な位置の値は同じになる。
 
-そこで一致検査は `--inject_layer 25 --after_proj` で行う。
-`--after_proj` を付けると既存と同じ「射影後の text_state を差し替える」
-経路を通り、md5 が一致するはずである。**本番では付けない。**
+一致検査: `--inject_layer 25 --compare_dir <置き換え位置の実行>` で、INJ 音声の
+md5 が置き換え位置の実行（`run_irodori_eval.py`）と全対で一致すること。
+`--after_proj` は既存の経路そのものを通す（比較用）。
+
+## 2026-11-15 の直し（旧版 `_v2` の 3 つの食い違い）
+
+旧版（`_layerabl/ir_ja_L*_v2`、2026-09-20〜29）は、層 25 でも置き換え位置の
+実行と音声が一致しなかった（`meta_ir_equiv_v5`: md5 0/5）。原因は位置の違い
+ではなく次の 3 つだった。
+
+1. **最終層で final_norm が 2 回かかっていた。**transformers 5 の
+   `capture_outputs` は `hidden_states[-1]` を `last_hidden_state`
+   （final_norm 後）に差し替える（`tie_last_hidden_states=True`）。旧版は
+   それを層 25 の出力として戻したので、final_norm がもう一度かかっていた。
+   → 層の出力は forward hook で取る（`layer_output`）。どの版でも正規化前。
+2. **差し替え後の層が詰め物を見ていた。**旧版の運び手は `batch_encode` の
+   256 トークン（詰め物込み）を全部 1 のマスクで流したので、層 L+1..25 の
+   注意が詰め物にも向いていた。本番の合成では詰め物はマスクされる。
+   → 有効長で継ぎ、継いだ後のマスク（`build_splice` の `text_mask`）で流す。
+3. **実体語の範囲が置き換え位置の実行と違っていた。**旧版は
+   `span_extension=True` で、26 対の範囲が置き換え位置の実行（拡張なし）と
+   違った。→ 既定は拡張なし。`--span_extension` で旧版と同じにできる。
 """
 import argparse
 import hashlib
@@ -113,44 +132,75 @@ def text_state_with_splice(bundle, norm_text, text_ids, text_mask,
     return st, sp.n_spliced
 
 
-def text_state_with_splice_carrier(bundle, layers, hook_index,
-                                   h_src, h_tgt, ids_src, ids_tgt,
-                                   s_span, t_span):
-    """**長さが変わってもよい版（2026-09-20 追加）。**
+def layer_output(bundle, layers, hook_index, ids, mask):
+    """層 `hook_index` の出力（final_norm の前）を取る。
 
-    ## なぜ要るか
+    `backbone(..., output_hidden_states=True)` の `hidden_states[25]` は使わない。
+    transformers 5 では最後の要素が `last_hidden_state`（final_norm 後）に
+    差し替わる（`capture_outputs(tie_last_hidden_states=True)`）。forward hook
+    なら、どの版でも層そのものの出力になる。
 
-    上の hook 方式は、呼び出しの入口で決まるマスクと位置が**元の長さのまま**
-    残るので、語の刻み数が変わる対で後続の層と食い違う。旧版はそれを避けるため
-    `length_change` として**54/300 を飛ばしていた**（田中 3 -> タナカ 1 が 50 件）。
-    `n=300 は絶対条件`なので使えない。
-
-    ## 運び手（carrier）方式
-
-    T5Gemma の層別（eval_en_crossculture_t5gemma_layer.py:150-186）と同じ手。
-
-      1. 出所側・目標側をそれぞれ通して層 l の状態を取る（呼び出し側で実施）
-      2. その段で継ぐ    h = [h_src[:s0], h_tgt[u0:u1], h_src[s1:]]
-      3. **同じ長さの ID を作って**本体を呼び直し、層 l の出力を h で丸ごと置換
-
-    ModernBERT は `attention_mask=None` なら入力長から全 1 を作り、
-    `position_ids` も `arange(seq_len)`、`sliding_window_mask` も
-    `_update_attention_mask` が内部で作る（modeling_modernbert.py の
-    ModernBertModel.forward）。**新しい長さの ID を渡すだけで 3 つとも揃う。**
-
-    運び手の**中身は結果に影響しない**（層 l の出力が丸ごと置き換わるため）。
-    長さを決めるためだけに使う。
+    呼び方は置き換え位置の実行（`encode_text_only` -> `text_encoder` ->
+    `pretrained_text_backbone(ids, mask)`）と同じ。詰め物の位置は 0 にする。
     """
     model = bundle.runtime.model
+    got = {}
+
+    def _hook(_m, _i, out):
+        got["h"] = out[0] if isinstance(out, tuple) else out
+
+    hd = layers[hook_index].register_forward_hook(_hook)
+    try:
+        with torch.inference_mode():
+            model.pretrained_text_backbone(ids, mask)
+    finally:
+        hd.remove()
+    h = got["h"]
+    if h.dim() != 3:
+        raise RuntimeError("層の出力が (B, T, D) でない: %s" % (tuple(h.shape),))
+    return h * mask.unsqueeze(-1).to(dtype=h.dtype)
+
+
+def text_state_with_splice_at_layer(bundle, layers, hook_index, src, tgt,
+                                    s_span, t_span, new_mask):
+    """層 `hook_index` の出力で継いでから text_state を作る（長さが変わってもよい）。
+
+      1. 出所側・目標側を置き換え位置の実行と同じ呼び方で通し、層の出力を取る
+      2. 有効長の中で継ぐ   h = [h_src[:s0], h_tgt[u0:u1], h_src[s1:T_src]]
+      3. 継いだ ID 列（後ろは詰め物）と継いだ後のマスク `new_mask`
+         （`build_splice` の `text_mask`）で本体を通し直し、層の出力を h で置換する。
+         詰め物はマスクされるので、後続の層の有効な位置には効かない。
+
+    層 25 では、この後はトークンごとの計算（final_norm、射影、RMSNorm）だけなので、
+    結果は射影後に継ぐ `splice_text_state` と同じになる。
+    """
+    from irodori_splice import mask_valid_length
+
+    model = bundle.runtime.model
+    ids_s, ids_t = src["input_ids"], tgt["input_ids"]
+    h_src = layer_output(bundle, layers, hook_index, ids_s, src["text_mask"])
+    h_tgt = layer_output(bundle, layers, hook_index, ids_t, tgt["text_mask"])
+    n_s = int(src["n_tokens"])
     s0, s1 = s_span
     u0, u1 = t_span
-    h = torch.cat([h_src[:, :s0], h_tgt[:, u0:u1], h_src[:, s1:]], dim=1)
+    max_len = int(ids_s.shape[1])
 
-    car = torch.cat([ids_src[:, :s0], ids_tgt[:, u0:u1], ids_src[:, s1:]], dim=1)
-    if int(car.shape[1]) != int(h.shape[1]):
-        raise AssertionError("運び手 %d と状態 %d の長さが違う"
-                             % (int(car.shape[1]), int(h.shape[1])))
-    mask = torch.ones(car.shape, dtype=text_mask_dtype(model), device=car.device)
+    h = torch.cat([h_src[:, :s0], h_tgt[:, u0:u1], h_src[:, s1:n_s]], dim=1)
+    car = torch.cat([ids_s[:, :s0], ids_t[:, u0:u1], ids_s[:, s1:n_s]], dim=1)
+    t_new = int(h.shape[1])
+    if t_new != mask_valid_length(new_mask[0]):
+        raise AssertionError("継いだ長さ %d とマスクの有効長 %d が違う"
+                             % (t_new, mask_valid_length(new_mask[0])))
+    if t_new > max_len:
+        raise AssertionError("継いだ長さ %d が max_text_len %d を超える"
+                             % (t_new, max_len))
+    if t_new < max_len:
+        pad_id = int(bundle.runtime.tokenizer.pad_token_id)
+        car = torch.cat([car, torch.full((1, max_len - t_new), pad_id,
+                                         dtype=car.dtype, device=car.device)], dim=1)
+        h = torch.cat([h, torch.zeros(1, max_len - t_new, h.shape[2],
+                                      dtype=h.dtype, device=h.device)], dim=1)
+    mask = new_mask.to(device=car.device)
 
     fired = {"n": 0}
 
@@ -172,12 +222,7 @@ def text_state_with_splice_carrier(bundle, layers, hook_index,
     if fired["n"] != 1:
         raise RuntimeError("層 %d が %d 回呼ばれた（1 回のはず）"
                            % (hook_index, fired["n"]))
-    return st, 1, int(h.shape[1])
-
-
-def text_mask_dtype(model):
-    """text_mask の dtype を既存経路に合わせる（bool か long か実物で決める）。"""
-    return torch.bool
+    return st, n_s, t_new
 
 
 def main():
@@ -189,6 +234,9 @@ def main():
     p.add_argument("--after_proj", action="store_true",
                    help="射影後の text_state を差し替える（既存と同じ位置）。"
                         "**一致検査のときだけ。**")
+    p.add_argument("--span_extension", action="store_true",
+                   help="旧版（_v2）と同じく、両側の aligned が揃わない対の範囲を広げる。"
+                        "置き換え位置の実行（run_irodori_eval.py）は広げていないので、既定は広げない")
     p.add_argument("--wav_dir", required=True)
     p.add_argument("--out_dir", required=True)
     p.add_argument("--compare_dir", default=None)
@@ -238,55 +286,32 @@ def main():
         rec = {"pair_idx": i, "word_a": pr["word_a"], "word_b": pr["word_b"]}
         try:
             if a.after_proj:
-                # **既存と同じ位置で差し替える**（一致検査用）
+                # **既存と同じ位置で差し替える**（比較用）
                 out = I.splice_synthesize(
                     bundle, pr["text_a"], pr["word_a"],
                     pr["text_b"], pr["word_b"], seed=a.seed,
                     seconds=a.seconds, num_steps=a.num_steps,
-                    collect_kappa=False, span_extension=True)
+                    collect_kappa=False, span_extension=a.span_extension)
                 wav = out["audio"]
                 rec.update({"s_span": out.get("s_span"),
                             "t_span": out.get("t_span")})
             else:
+                # 範囲とマスクは置き換え位置の実行と同じ build_splice で決める
                 info = I.build_splice(bundle, pr["text_a"], pr["word_a"],
                                       pr["text_b"], pr["word_b"],
-                                      collect_kappa=False, span_extension=True)
+                                      collect_kappa=False,
+                                      span_extension=a.span_extension)
                 s0, s1 = info["s_span"]
                 u0, u1 = info["t_span"]
-                # **長さが変わる対も扱う（2026-09-20）。**旧版はここで
-                # length_change として 54/300 を飛ばしていた。運び手方式に変えた。
-                norm_b = I.normalize_for_runtime(pr["text_b"])
-                tgt = I.encode_text_only(bundle, norm_b, output_hidden_states=True)
-                h_tgt = tgt["backbone_hidden_states"][a.inject_layer]
-
-                norm_a = I.normalize_for_runtime(pr["text_a"])
-                src = I.encode_text_only(bundle, norm_a, output_hidden_states=True)
-                h_src = src["backbone_hidden_states"][a.inject_layer]
-
-                st, n_sp, t_new = text_state_with_splice_carrier(
-                    bundle, layers, hook_index, h_src, h_tgt,
-                    src["input_ids"], tgt["input_ids"], (s0, s1), (u0, u1))
-                rec["T_src"] = int(h_src.shape[1])
+                src = I.encode_text_only(bundle, I.normalize_for_runtime(pr["text_a"]))
+                tgt = I.encode_text_only(bundle, I.normalize_for_runtime(pr["text_b"]))
+                st, t_src, t_new = text_state_with_splice_at_layer(
+                    bundle, layers, hook_index, src, tgt,
+                    (s0, s1), (u0, u1), info["text_mask"])
+                rec["T_src"] = int(t_src)
                 rec["T_new"] = int(t_new)
 
-                # **固定長に詰め直す（2026-09-21）。**運び手は継いだ長さ
-                # （T_new）のまま出てくるが、モデルの text_state は常に
-                # (1, max_text_len, 512) で、ConditionSplicer は形が違うと
-                # 弾く（irodori_splice.py:552-554）。語の刻み数が変わる
-                # 54/300 がここで落ちていた。有効長の外は 0 で埋める
-                # （上流も mask の外を 0 にしているので同じ扱い）。
-                max_len = int(info["text_mask"].shape[1])
-                if int(st.shape[1]) > max_len:
-                    # 目標の語の方が刻み数が多いと 256 を超える。超えた分は
-                    # 末尾の詰め物なので落とす（有効長が収まることは
-                    # build_splice が既に検めている。irodori_splice.py:466-469）。
-                    st = st[:, :max_len]
-                if int(st.shape[1]) < max_len:
-                    pad = torch.zeros(st.shape[0], max_len - int(st.shape[1]),
-                                      st.shape[2], dtype=st.dtype,
-                                      device=st.device)
-                    st = torch.cat([st, pad], dim=1)
-
+                # 合成は splice_synthesize と同じ呼び方（text_state だけが違う）
                 req = SamplingRequest(
                     text=info["spliced_surface_text"],
                     **I._base_request_kwargs(a.seconds, a.seed, a.num_steps, None))
@@ -294,9 +319,8 @@ def main():
                 with torch.inference_mode(), \
                         bundle.splicer.armed(st, info["text_mask"]):
                     result = bundle.runtime.synthesize(req)
-                wav = result.audio if hasattr(result, "audio") else result
-                rec.update({"s_span": [s0, s1], "t_span": [u0, u1],
-                            "n_spliced": n_sp})
+                wav = result.audio.detach().cpu().float()
+                rec.update({"s_span": [s0, s1], "t_span": [u0, u1]})
         except Exception as e:
             rec["skip"] = "%s: %s" % (type(e).__name__, str(e)[:110])
             rows.append(rec)
@@ -345,6 +369,8 @@ def main():
                "inject_layer_passed": a.inject_layer,
                "hook_index": hook_index, "n_layers": n_layers,
                "is_final": is_final, "after_proj": a.after_proj,
+               "span_extension": a.span_extension,
+               "version": "2026-11-15 (pre-norm layer output, masked padding)",
                "seed": a.seed, "n_rows": len(rows),
                "n_skipped": sum(1 for r in rows if r.get("skip")),
                "elapsed_min": round((time.time() - t0) / 60, 2)}

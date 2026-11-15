@@ -5,6 +5,8 @@
 # the audio through, so the evaluation audio carries no watermark), torchcodec, peft and
 # torchao (training, LoRA and quantized checkpoints only).
 # Build: docker build -f docker/Dockerfile.irodori -t irodori-tts:latest docker
+# The versions are those of the runs in the paper (Table 3, rerun 2026-11-15): transformers
+# 5.17.0, dacvae 414c207; docker/irodori_tts_freeze.txt lists every package of that image.
 FROM pytorch/pytorch:2.10.0-cuda12.8-cudnn9-runtime
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -26,7 +28,7 @@ RUN PYDIR="$(python -c 'import sysconfig,os; print(os.path.dirname(sysconfig.get
 ENV PIP_BREAK_SYSTEM_PACKAGES=1
 
 RUN pip install --no-cache-dir \
-        "transformers>=5.12.1,<6" \
+        "transformers==5.17.0" \
         "tokenizers>=0.22" \
         "safetensors>=0.7.0" \
         "huggingface-hub>=0.34.0" \
@@ -40,7 +42,7 @@ RUN pip install --no-cache-dir \
 # dacvae's dependencies first, then dacvae itself without dependencies, so that its
 # "torch" requirement cannot replace the image's CUDA build of torch
 RUN pip install --no-cache-dir "descript-audiotools>=0.7.2" "argbind>=0.3.7"
-RUN pip install --no-cache-dir --no-deps "git+https://github.com/facebookresearch/dacvae"
+RUN pip install --no-cache-dir --no-deps "git+https://github.com/facebookresearch/dacvae@414c20785fc3a28373073ea8ef7a1316eeeaca6e"
 
 COPY verify_irodori_env.py /opt/verify_irodori_env.py
 RUN python /opt/verify_irodori_env.py

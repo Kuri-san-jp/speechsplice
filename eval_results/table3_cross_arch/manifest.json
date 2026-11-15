@@ -344,43 +344,43 @@
    "L": 25,
    "point_mcd": {
     "file": "point_mcd/irodori_ja.json",
-    "source": "eval_results/_caseSPTK_whole_irodori_ja.json",
-    "md5": "b1ccb2d8d3a956de94222ea7657fb7bb"
+    "source": "eval_results/_irodori_fix_20261115/mcd_point.json",
+    "md5": "3001b255a2e7e3762c07849c18675657"
    },
    "point_pib": {
     "file": "point_pib/irodori_ja.json",
-    "source": "eval_results/_v1all_irodori_ja.json",
-    "md5": "ec4e545f3c8ff3c2df0cecb07d19de02"
+    "source": "eval_results/_irodori_fix_20261115/pib_point.json",
+    "md5": "97b4ceb371a6dbf83a3235ed1fe1dcef"
    },
    "sweep": [
     {
      "file": "sweep_pib/irodori_ja_l01.json",
-     "source": "eval_results/_v1L_ir_ja_L1.json",
-     "md5": "625ea33cf0f1767958f3eccab17b1930",
+     "source": "eval_results/_irodori_fix_20261115/pib_L1.json",
+     "md5": "2683ca9951848eecceaa2a8788a2ed47",
      "lstar": 1
     },
     {
      "file": "sweep_pib/irodori_ja_l07.json",
-     "source": "eval_results/_v1L_ir_ja_L7.json",
-     "md5": "6406ebd1bad43f65874d97b7cdff24c6",
+     "source": "eval_results/_irodori_fix_20261115/pib_L7.json",
+     "md5": "7ffea3b8be04cc25df6b70ce161f3876",
      "lstar": 7
     },
     {
      "file": "sweep_pib/irodori_ja_l13.json",
-     "source": "eval_results/_v1L_ir_ja_L13.json",
-     "md5": "47051ccc8358295915aa7b7e33191a9d",
+     "source": "eval_results/_irodori_fix_20261115/pib_L13.json",
+     "md5": "3b4717e7d299cf98807d9d87b91aa05b",
      "lstar": 13
     },
     {
      "file": "sweep_pib/irodori_ja_l19.json",
-     "source": "eval_results/_v1L_ir_ja_L19.json",
-     "md5": "d5981eb7d81b703e25276e9f7ce0f6ad",
+     "source": "eval_results/_irodori_fix_20261115/pib_L19.json",
+     "md5": "1490c21670c9cea00a361f401d4d3ae7",
      "lstar": 19
     },
     {
      "file": "sweep_pib/irodori_ja_l25.json",
-     "source": "eval_results/_v1L_ir_ja_L25.json",
-     "md5": "271823f4d731983b3a3741cadf1be9e5",
+     "source": "eval_results/_irodori_fix_20261115/pib_L25.json",
+     "md5": "b4ece4e18319797c429cfc7dd0af1e28",
      "lstar": 25
     }
    ],
@@ -389,7 +389,8 @@
     "source": "eval_results/multientity_irodori_ja_300/asr_furigana.json",
     "md5": "550b89df1c4f7d1096f58fd8f2ad6585",
     "judge": "furigana_reading"
-   }
+   },
+   "note": "Point and sweep rerun on 2026-11-15 on one NVIDIA H100 80GB in the irodori-tts image (torch 2.10.0+cu128, transformers 5.17.0) after fixing the sweep script (scripts/layer_ablation/eval_irodori_layer.py): the old sweep (2026-09, A100) applied the final LayerNorm twice at l*=25, let the layers after the replacement attend to padding, and widened 26 spans. BL/TGT of every sweep folder are those of the point run. The l*=25 INJ audio is md5-identical to the point run in 300/300 pairs (irodori_rerun_20261115/sweep_l25_generation.json). The two-entity file is unchanged (A100)."
   },
   {
    "model": "Kiseki-TTS",

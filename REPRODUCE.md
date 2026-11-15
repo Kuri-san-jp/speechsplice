@@ -14,7 +14,7 @@ a container they use `$REPO_ROOT`).
 | Image | Definition | Used for |
 |---|---|---|
 | `my-lab-image` | `docker/Dockerfile.main` (+ `docker/my_lab_image_freeze.txt`) | everything not listed below |
-| `irodori-tts` | `docker/Dockerfile.irodori` | Irodori-TTS (PyTorch 2.10, Transformers 5) |
+| `irodori-tts` | `docker/Dockerfile.irodori` (+ `docker/irodori_tts_freeze.txt`) | Irodori-TTS (PyTorch 2.10.0, Transformers 5.17.0) |
 | `xtts-tts` | `docker/Dockerfile.xtts` | XTTS-v2 (adds coqui-tts 0.27.5) |
 | `voicecraft-image` | `docker/Dockerfile.voicecraft` | VoiceCraft (Table 2) |
 
@@ -29,7 +29,9 @@ source scripts/env.sh                       # HF_HOME, offline mode, TORCH_HOME,
 ```
 
 **Hardware.** Every utterance of the paper was synthesized on one NVIDIA
-A100-PCIE-40GB (about 275 GPU-hours; Appendix J). Most systems sample during synthesis,
+A100-PCIE-40GB (about 275 GPU-hours; Appendix J), except the single-entity
+Irodori-TTS runs of Table 3 (replacement point and layer sweep), which were rerun on
+one NVIDIA H100 80GB on 2026-11-15 after a fix to the sweep script (README, notes). Most systems sample during synthesis,
 and SpeechT5 applies dropout at inference, so on a different GPU the audio and the
 per-pair scores change even with the same seeds. Rerunning on an H100 (2026-11-14) gave:
 
@@ -49,8 +51,9 @@ generator and scorer below completed on two pairs or more, with the models of
 T5Gemma-TTS (Table 1 EN/JA, Table 3 point and sweep, two-entity EN/JA, Tables A1, A2, A3,
 A5 baseline, A10 JA/ZH/FR), SpeechT5, LongCat-AudioDiT, Kiseki-TTS, Qwen3-TTS, XTTS-v2
 (with coqui-tts 0.27.5 and its dependencies), Llasa-3B, CSM-1B, Bark (EN and JA),
-EdiTTS, and the PIB, MCD, Whisper, Furigana-Whisper and IPA scorers. Irodori-TTS and
-VoiceCraft need their own images and were not rerun.
+EdiTTS, and the PIB, MCD, Whisper, Furigana-Whisper and IPA scorers. Irodori-TTS ran in
+full (300 pairs, point and five depths) in the `irodori-tts` image on 2026-11-15; those are
+the values of the paper. VoiceCraft needs its own image and was not rerun.
 
 **Seeds.** Every generator seeds with 42 before each synthesis. The pairs in
 `configs/pair_seeds.csv` were regenerated as whole pairs with seed 43 (then 44) because the
@@ -153,9 +156,12 @@ python3 scripts/longcat/run_longcat_eval.py --lang en --n 300
 python3 scripts/longcat/run_longcat_eval.py --lang zh --n 300 && python3 scripts/longcat/run_longcat_eval.py --lang zh --n 300 --span_extension
 python3 scripts/layer_ablation/eval_longcat_layer.py --lang $LANG --n 300 --inject_layer $k --wav_dir $AB/lc_${LANG}_L$k --out_dir $AB/meta_lc_${LANG}_L$k
 
-# Irodori-TTS (irodori-tts image; the point run replaces after the projection, the sweep before it; sweep k = 1 7 13 19 25)
-python3 scripts/irodori/run_irodori_eval.py --lang ja --n 300
-python3 scripts/layer_ablation/eval_irodori_layer.py --lang ja --n 300 --inject_layer $k --wav_dir $AB/ir_ja_L${k}_v2 --out_dir $AB/meta_ir_L${k}_v2
+# Irodori-TTS (irodori-tts image; sweep k = 25 1 7 13 19). The sweep takes BL/TGT from the point run,
+# and at k = 25 its INJ audio must be md5-identical to the point run (300/300 on 2026-11-15)
+IR=eval_results/_irodori_fix_20261115
+python3 scripts/irodori/run_irodori_eval.py --lang ja --n 300 --wav_dir /mnt/$IR/point --out_dir /mnt/$IR/point_meta
+python3 scripts/layer_ablation/eval_irodori_layer.py --lang ja --n 300 --inject_layer $k --wav_dir /mnt/$IR/L$k \
+  --out_dir /mnt/$IR/meta_L$k --link_bl_tgt_from /mnt/$IR/point --compare_dir /mnt/$IR/point
 
 # Kiseki-TTS (point; sweep k = 1 3 6 9 12)
 python3 scripts/kiseki/run_kiseki_eval.py --lang ja --n 300

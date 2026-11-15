@@ -205,9 +205,15 @@ is safe to delete.
   replacement point is taken from the layer-sweep run at that depth, whose MCD
   had not been computed. It was computed on 2026-11-14 with the same function as
   the other MCD files (`manifest.json` marks them).
-- **Table 3, Irodori-TTS** replaces after the projection at our replacement
-  point and before it in the sweep (the dagger in the paper), so its point and
-  sweep files come from different runs by design.
+- **Table 3, Irodori-TTS** was rerun on 2026-11-15 on an NVIDIA H100 80GB
+  (point and sweep in one run; the two-entity columns are the original A100
+  run). The original sweep script applied the final LayerNorm twice at
+  l* = 25, let the layers after the replacement attend to padding, and widened
+  26 spans, so its l* = 25 audio differed from the replacement point. The fixed
+  script (`scripts/layer_ablation/eval_irodori_layer.py`) gives md5-identical
+  audio at l* = 25 in all 300 pairs. The rerun of the replacement point matches
+  the original A100 run closely (same verdict in 297/300 pairs; per-pair MCD
+  within 0.03 dB); its PIB is 49.33 against 49.00 before.
 - **Table 3, SpeechT5 EN sweep:** the l* = 12 file is also the file at our
   replacement point. Its baseline and target entity transcriptions differ from
   those of the other four depth files in 30 of 300 pairs.

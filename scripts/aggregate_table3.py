@@ -25,9 +25,8 @@ Every column of Table 3 is recomputed here from per-pair rows:
     Whisper large-v3 surface matches (EN), Furigana Whisper reading matches
     (JA), and toneless pinyin matches (ZH, the *_ok_pinyin flags).
 
-Irodori-TTS replaces after the projection at our replacement point and before
-it in the sweep (the dagger in the paper), so its point and sweep values come
-from different runs by design.
+Irodori-TTS: the point and the sweep come from one run (2026-11-15, H100); its
+l* = 25 sweep file is the same audio as the point file (see the manifest note).
 """
 import json, os
 from math import sqrt
@@ -93,9 +92,8 @@ def main():
         p, ph, _, _ = pib_cell(e["point_pib"]["file"])
         sweep = [(s["lstar"], pib_cell(s["file"])[0]) for s in e["sweep"]]
         bl, one, both = two_entity(e["two_entity"]["file"], e["two_entity"]["judge"])
-        dag = "+" if e["model"] == "Irodori-TTS" else " "
-        print("%-17s %-4s %3d  %5.2f +- %4.2f  %5.2f +- %4.2f%s %-15s %5.2f-%5.2f  %6.2f %8.2f %8.2f" % (
-            e["model"], e["lang"], e["L"], m, mh, p, ph, dag,
+        print("%-17s %-4s %3d  %5.2f +- %4.2f  %5.2f +- %4.2f %-15s %5.2f-%5.2f  %6.2f %8.2f %8.2f" % (
+            e["model"], e["lang"], e["L"], m, mh, p, ph,
             "/".join(str(l) for l, _ in sweep),
             min(v for _, v in sweep), max(v for _, v in sweep), bl, one, both))
     print()
@@ -103,8 +101,6 @@ def main():
     for e in man["rows"]:
         print("  %-17s %-3s " % (e["model"], e["lang"]) +
               "  ".join("l*=%d: %.2f" % (s["lstar"], pib_cell(s["file"])[0]) for s in e["sweep"]))
-    print()
-    print("+ Irodori-TTS replaces after the projection at our replacement point and before it in the sweep.")
 
 
 if __name__ == "__main__":
