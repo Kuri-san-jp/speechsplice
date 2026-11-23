@@ -46,10 +46,10 @@ this page; each file is a byte-for-byte copy of the file it came from.
 
 | Directory | Files | Rate | What it is | Voice prompt speaker |
 |---|---|---|---|---|
-| `audio/en/` | 20 (10 pairs) | 44.1 kHz | Synthetic. English proper-name stimuli from the AB selection test. | LibriTTS `test-clean` utterance `260_123440_000002_000004` (not redistributed) |
-| `audio/ja/` | 20 (10 pairs) | 44.1 kHz | Synthetic. Japanese proper-name stimuli from the AB selection test. | JSUT `BASIC5000_0011` |
-| `audio/zh/` | 20 (10 pairs) | 44.1 kHz | Synthetic. Chinese proper-name stimuli from the AB selection test. | BZNSYP utterance `000801`, resampled to 44.1 kHz mono (not redistributed) |
-| `audio/ja_het/` | 20 (10 pairs) | 44.1 kHz | Synthetic. Japanese same-surface correction stimuli from the AB selection test. | JSUT `BASIC5000_0011` |
+| `audio/en/` | 20 (10 pairs) | 44.1 kHz | Synthetic. English proper-name stimuli from the paired comparison test. | LibriTTS `test-clean` utterance `260_123440_000002_000004` (not redistributed) |
+| `audio/ja/` | 20 (10 pairs) | 44.1 kHz | Synthetic. Japanese proper-name stimuli from the paired comparison test. | JSUT `BASIC5000_0011` |
+| `audio/zh/` | 20 (10 pairs) | 44.1 kHz | Synthetic. Chinese proper-name stimuli from the paired comparison test. | BZNSYP utterance `000801`, resampled to 44.1 kHz mono (not redistributed) |
+| `audio/ja_het/` | 20 (10 pairs) | 44.1 kHz | Synthetic. Japanese same-surface correction stimuli from the paired comparison test. | JSUT `BASIC5000_0011` |
 | `audio/prompt/` | 1 | 48 kHz | **Real human recording.** The JSUT voice-cloning prompt. | — (this *is* the prompt) |
 
 Filenames follow `{set}-{item id}-{condition}.wav`, where `condition` is `baseline`

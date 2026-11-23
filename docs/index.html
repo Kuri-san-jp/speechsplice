@@ -78,7 +78,7 @@ li{margin:.3em 0}
 <thead><tr>
 <th>Listening-test set</th>
 <th>Listeners</th><th>Items</th><th>Judgments</th>
-<th>SpeechSplice selected<br><span class="small">AB selection test, %</span></th>
+<th>SpeechSplice selected<br><span class="small">Paired comparison test, %</span></th>
 <th>MOS<br>baseline</th><th>MOS<br>SpeechSplice</th><th>MOS<br>Wilcoxon <i>p</i></th>
 </tr></thead>
 <tbody>
@@ -87,12 +87,12 @@ li{margin:.3em 0}
 <tr><td class="set">Chinese proper names</td><td>20</td><td>50</td><td>500</td><td>100.0 (+0.0/&minus;0.0)</td><td>3.67 &plusmn; 0.10</td><td>3.71 &plusmn; 0.10</td><td>0.96</td></tr>
 <tr><td class="set">Japanese same-surface correction</td><td>20</td><td>50</td><td>500</td><td>98.6 (95% CI 97.4&ndash;99.6)</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td></tr>
 </tbody></table></div>
-<p class="note">AB selection test: 20 native listeners per set, 50 items per set, ten independent judgments per item, 500 judgments per set; ties count as failures. For the three proper-name sets the paper gives an item-level bootstrap 95% interval, written as (+upper/&minus;lower); for the same-surface set it gives the interval as a range. Naturalness MOS comes from a separate blinded study on the proper-name stimuli (five-point scale, 20 native listeners per language, ten ratings per clip, item-mean paired Wilcoxon signed-rank test); the same-surface set was not part of the MOS study, so its MOS cells are empty. The paper also reports that the item-level majority reached the target for 50 of the 50 same-surface items.</p>
+<p class="note">Paired comparison test: 20 native listeners per set, 50 items per set, ten independent judgments per item, 500 judgments per set; ties count as failures. For the three proper-name sets the paper gives an item-level bootstrap 95% interval, written as (+upper/&minus;lower); for the same-surface set it gives the interval as a range. Naturalness MOS comes from a separate blinded study on the proper-name stimuli (five-point scale, 20 native listeners per language, ten ratings per clip, item-mean paired Wilcoxon signed-rank test); the same-surface set was not part of the MOS study, so its MOS cells are empty. The paper also reports that the item-level majority reached the target for 50 of the 50 same-surface items.</p>
 
 <h2>Audio samples</h2>
-<p>Every clip below is one of the stimuli that the listeners in the paper's AB selection test actually heard, copied here unchanged. Within each pair, the baseline clip and the SpeechSplice clip were generated from the same input text, the same speaker prompt, the same decoding configuration and the same random seed, so they differ only in the encoder-output splice.</p>
+<p>Every clip below is one of the stimuli that the listeners in the paper's paired comparison test actually heard, copied here unchanged. Within each pair, the baseline clip and the SpeechSplice clip were generated from the same input text, the same speaker prompt, the same decoding configuration and the same random seed, so they differ only in the encoder-output splice.</p>
 <p><b>How these items were chosen.</b> For the three proper-name sets we take the first ten items of each 50-item set in item-id order without looking at their outcome; for the Japanese same-surface set we take the lowest-numbered item of each of its ten misreading categories, so that every category is represented.</p>
-<p class="note">The last column of each table reports, for that item, whether the majority of its ten listener judgments went to the clip realizing the target &mdash; the item-level aggregate of the AB selection test.</p>
+<p class="note">The last column of each table reports, for that item, whether the majority of its ten listener judgments went to the clip realizing the target &mdash; the item-level aggregate of the paired comparison test.</p>
 
 <h2>Japanese same-surface correction</h2>
 <p>Here the written sentence is not changed at all: the baseline misreads the target word, and SpeechSplice supplies the intended reading at inference time. This is the setting the paper's claim rests on. The two grey lines under each sentence are the kana transcripts of the two clips, produced by the furigana ASR model used in the paper.</p>
@@ -249,7 +249,7 @@ Used without modification and without retraining; SpeechSplice changes nothing i
 <p class="note">The same terms, with file-by-file provenance for everything in the audio directory, are repeated in <a href="LICENSE_AUDIO.md">LICENSE_AUDIO.md</a>.</p>
 
 <footer>
-<p><b>What is on this page.</b> 80 synthetic clips (40 baseline / SpeechSplice pairs) taken unchanged from the paper's AB selection test, plus one JSUT prompt recording. All files are 16-bit mono PCM WAV; the synthetic clips are 44.1 kHz, the prompt recording 48 kHz. Nothing was re-encoded, resampled or trimmed for this page.</p>
+<p><b>What is on this page.</b> 80 synthetic clips (40 baseline / SpeechSplice pairs) taken unchanged from the paper's paired comparison test, plus one JSUT prompt recording. All files are 16-bit mono PCM WAV; the synthetic clips are 44.1 kHz, the prompt recording 48 kHz. Nothing was re-encoded, resampled or trimmed for this page.</p>
 <p>The synthetic clips are offered for non-commercial research use. The Japanese same-surface sentence texts are CC BY-SA 4.0 (ja-tts-g2p-bench). The JSUT prompt recording remains under the JSUT terms of use quoted above: academic, non-commercial or personal use, with no redistribution of the corpus. Everything in the sample tables is machine-generated speech, not the utterance of any real speaker.</p>
 <p>No analytics, no external fonts, no third-party scripts, no tracking. This page loads nothing but the audio files stored beside it.</p>
 </footer>

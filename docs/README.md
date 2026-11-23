@@ -8,13 +8,13 @@ speech samples reported in the SpeechSplice paper.
 | Path | What it is |
 |---|---|
 | `index.html` | The whole page. Single file, no external CSS, JS, fonts, CDN or analytics. |
-| `audio/en/`, `audio/ja/`, `audio/zh/` | Synthetic baseline / SpeechSplice pairs from the proper-name AB selection test (10 items each). |
+| `audio/en/`, `audio/ja/`, `audio/zh/` | Synthetic baseline / SpeechSplice pairs from the proper-name paired comparison test (10 items each). |
 | `audio/ja_het/` | Synthetic baseline / SpeechSplice pairs from the Japanese same-surface correction set (10 items, one per misreading category). |
 | `audio/prompt/` | The JSUT voice-cloning prompt. A real human recording, not synthetic — kept apart from the stimuli on purpose. |
 | `LICENSE_AUDIO.md` | Licensing, provenance and attribution for every audio file here. |
 
 Every clip in the four stimulus directories is one of the files the listeners in the
-paper's AB selection test actually heard, copied unchanged. Within a pair, the baseline
+paper's paired comparison test actually heard, copied unchanged. Within a pair, the baseline
 and the SpeechSplice clip share input text, speaker prompt, decoding configuration and
 random seed, so they differ only in the encoder-output splice — and they have identical
 duration.
@@ -23,7 +23,7 @@ duration.
 
 1. The paper title, authors and affiliations.
 2. The paper's Abstract, quoted verbatim.
-3. The reported AB-selection and naturalness-MOS numbers, transcribed from the paper.
+3. The reported paired-comparison and naturalness-MOS numbers, transcribed from the paper.
 4. The Japanese same-surface correction samples, in their own section: the written
    sentence is unchanged, the baseline misreads the target word, SpeechSplice supplies
    the intended reading. Each row also shows the kana ASR transcript of both clips.

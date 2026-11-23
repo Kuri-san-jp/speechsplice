@@ -1,21 +1,21 @@
 # Participant-Facing Instructions (Verbatim)
 
 This file gives the full text shown to listeners in the two listening studies
-of the paper (Appendix G.6): the **AB selection test** (Sections 1–4) and the
+of the paper (Appendix G.6): the **paired comparison test** (Sections 1–4) and the
 **naturalness MOS study** (Sections 5–7), in English, Japanese, and Chinese.
 
 - All participant-facing strings are reproduced verbatim from the deployed web
-  application. The MOS screens and the AB trial screens were checked against
+  application. The MOS screens and the paired-comparison trial screens were checked against
   the screenshots in `screenshots/ui_flow/`.
 - Lines marked *Gloss* are English glosses written by the authors for this
   file. They were not shown to participants.
-- The English and Chinese instructions of the AB selection test were translated
+- The English and Chinese instructions of the paired comparison test were translated
   by the authors and were not independently validated by professional
   translators. The Japanese and Chinese MOS instructions are the authors'
   translations of the English text in Section 5, line by line; the English
   text therefore serves as their gloss.
 
-## 1. AB selection test — name sets (EN)
+## 1. Paired comparison test — name sets (EN)
 
 **Title**: Pronunciation Matching Test
 
@@ -31,7 +31,7 @@ of the paper (Appendix G.6): the **AB selection test** (Sections 1–4) and the
 **Choices**: First voice / Neither says the displayed name / Second voice
 **Practice note**: This is practice. Your answers are not included in the results.
 
-## 2. AB selection test — name sets (JA)
+## 2. Paired comparison test — name sets (JA)
 
 **Title**: 名前の聞き取りテスト
 *Gloss*: Name Listening Test
@@ -57,7 +57,7 @@ of the paper (Appendix G.6): the **AB selection test** (Sections 1–4) and the
 **Practice note**: これは練習です。回答は結果に含まれません。
 *Gloss*: This is practice. Your answers are not included in the results.
 
-## 3. AB selection test — name sets (ZH)
+## 3. Paired comparison test — name sets (ZH)
 
 **Title**: 名字听辨测试
 *Gloss*: Name Listening Test
@@ -83,7 +83,7 @@ of the paper (Appendix G.6): the **AB selection test** (Sections 1–4) and the
 **Practice note**: 这是练习。您的回答不计入结果。
 *Gloss*: This is practice. Your answers are not included in the results.
 
-## 4. AB selection test — Japanese same-surface set (JA only)
+## 4. Paired comparison test — Japanese same-surface set (JA only)
 
 **Title**: 語の読みの聞き取りテスト
 *Gloss*: Word Reading Listening Test
