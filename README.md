@@ -153,6 +153,7 @@ the eight listener–ASR disagreements of Appendix H.
 python3 scripts/aggregate_table1.py      # Table 1, automatic columns (Whisper-INJ, UTMOS, speaker similarity, |dF0| ratio)
 python3 scripts/aggregate_table2.py      # Table 2, every column, with the Wilcoxon and McNemar tests
 python3 scripts/aggregate_table3.py      # Table 3: all 17 rows, every column
+python3 scripts/aggregate_two_entity_paired.py   # Appendix J: paired difference INJ (both) - INJ (one), bootstrap over sentences
 python3 scripts/aggregate_appendix.py    # Tables A1, A2, A3, A5, A6, A10, A11, A12 and the compute figures
 ```
 
@@ -191,6 +192,7 @@ is safe to delete.
 | Listener–ASR disagreements (Appendix H) | `aggregate_failure_cases.py` | `human_eval/results/sheet3_item_level.csv`, the Table 1/2 judge files | — |
 | Six-language same-surface test (not in the paper; its JA and EN pairs feed Table A2) | `aggregate_appendix.py` | `eval_results/supp_six_language/` | §3: `scripts/projection/eval_cjk_n300*.py`, `scripts/regen2/appk_*.py` |
 | Table A7, compute (Appendix I) | `aggregate_appendix.py` | `eval_results/appendix_i_compute/` | `scripts/spanfix/c7_param_count.py`, `c6_compute_budget.py` |
+| Appendix J, paired accuracy difference | `aggregate_two_entity_paired.py` | `eval_results/table3_cross_arch/two_entity/`; writes `two_entity_paired.json` | — |
 | Table A8 | `aggregate_appendix.py` | `eval_results/table_a8_two_entity_utmos/` | §2: `scripts/spanfix/utmos_multi_now.py` |
 
 ### Known caveats in the shipped files
