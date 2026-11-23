@@ -35,9 +35,9 @@ Every experiment of the paper can be checked at two levels:
 | `src/` | The scorers shared by many scripts: phoneme PER / PIB (`phoneme_per.py`), MCD (`mcd_pysptk.py`), and the TRM / G2P-CER scorer of Table A5; `src/_vendor/t5gemma_tts/` is the T5Gemma-TTS inference code (see `NOTICE`) |
 | `third_party/` | Vendored model code: LongCat-AudioDiT and whisper-pinyin (see `NOTICE`) |
 | `docker/` | The container definitions of the runs and the `pip freeze` of the main image |
-| `data/` | **Benchmark item lists**: the 11 sets of 3,500 sentence pairs, the two-entity sentence sets, the Table A3 benchmark items (`data/external/`), and the Table A10 item lists |
+| `data/` | **Benchmark item lists**: the 11 sets of 3,500 sentence pairs, the two-entity sentence sets, the Table A3 benchmark items (`data/external/`), and the six-language same-surface test item lists |
 | `configs/` | Experiment configuration (`table_specs.yaml`, `voice_prompts.yaml`, `pair_seeds.csv`) |
-| `eval_results/` | **Pre-computed per-pair evaluation outputs**, one directory per table (`table1_*`, `table2_*`, `table3_*`, `table_a*`, `appendix_j_compute`). Each `manifest.json` names the experiment file a copy came from and its MD5 |
+| `eval_results/` | **Pre-computed per-pair evaluation outputs**, one directory per table (`table1_*`, `table2_*`, `table3_*`, `table_a*`, `appendix_i_compute`, and `supp_six_language` for the six-language same-surface test, which is not in the paper). Each `manifest.json` names the experiment file a copy came from and its MD5 |
 | `human_eval/` | **Listening-test materials and results**: stimulus manifests, verbatim instructions in three languages, interface screenshots, item-level and aggregate results, and the pre-specified analysis code. See [`human_eval/README.md`](human_eval/README.md) |
 | `docs/` | The audio sample page (`index.html`) and its clips, under the terms in `docs/LICENSE_AUDIO.md` |
 | `REPRODUCE.md` | Commands to rerun every experiment on a GPU |
@@ -62,11 +62,11 @@ independently of our method.
    Table 3, Table A1, and Table A5 use these.
 3. **Two-entity sentence sets: 300 sentences per language** with two entity slots
    each (`data/{en,ja}_multientity_300.py`, `data/zh_multientity_300_v2.py`), used by the
-   two-entity columns of Table 3 and by Table A12.
+   two-entity columns of Table 3 and by Table A8.
 4. **Six-language heteronym / polyphone sets**: EN heteronyms (500 pairs), ZH
    polyphones, KO hanja polyphones, FR and DE heteronyms (300 pairs each). With
    the first two sets above, 3,500 pairs in total across 11 sets, all
-   materialized by one command (§4, step 1). The JA and ZH items of Table A10 come
+   materialized by one command (§4, step 1). The JA and ZH items of the six-language same-surface test come
    from `data/entities_10000.jsonl` and `data/zh_polyphones_v2.json`.
 5. **Listening-test stimulus manifests, 200 items** across four sets
    (EN/JA/ZH name sets and the JA same-surface set, 50 main items each, plus 3
@@ -128,7 +128,7 @@ Add `--dump out/` to write one JSONL file per set.
 python3 scripts/verify_item_lists.py
 ```
 
-Rebuilds the items of Table A10 (JA and ZH), the two-entity sentences of Table 3,
+Rebuilds the items of the six-language same-surface test (JA and ZH), the two-entity sentences of Table 3,
 and the Table A3 benchmark from `data/` and checks them against the items recorded
 in the shipped outputs.
 
@@ -145,7 +145,7 @@ from the item-level counts, reproducing the human columns of Table 1 (EN
 Table A4, the Japanese same-surface set (`98.6 [97.4, 99.6]`, 493/3/4
 judgments, 50/50 items reaching target), and echoes the shipped MOS results.
 The second joins the item-level counts with the automatic verdicts and prints
-the eight disagreements of Table A9.
+the eight listener–ASR disagreements of Appendix H.
 
 **Step 3 - recompute the automatic-evaluation tables.**
 
@@ -187,11 +187,11 @@ is safe to delete.
 | Table A3 | `aggregate_appendix.py` | `eval_results/table_a3_ja_reading/` | §3: `scripts/analysis/numerals_verify_generic.py`, `bench_hetnum77_{inj,furigana}.py` |
 | Table A5 | `aggregate_appendix.py` | `eval_results/table_a5_baselines/` | §3: `scripts/regen2/appg_vc_*.py`, `scripts/projection/eval_baseline_text_edit.py` |
 | Table A6 | `aggregate_appendix.py` | `eval_results/table_a6_cer/`, `data/` (JA needs `pykakasi`) | §1: transcripts of the Table 1 runs |
-| Table A8 | — | `human_eval/results/demographics_aggregate.txt` | — |
-| Table A9 | `aggregate_failure_cases.py` | `human_eval/results/sheet3_item_level.csv`, the Table 1/2 judge files | — |
-| Table A10 | `aggregate_appendix.py` | `eval_results/table_a10_six_language/` | §3: `scripts/projection/eval_cjk_n300*.py`, `scripts/regen2/appk_*.py` |
-| Table A11, compute (Appendix J) | `aggregate_appendix.py` | `eval_results/appendix_j_compute/` | `scripts/spanfix/c7_param_count.py`, `c6_compute_budget.py` |
-| Table A12 | `aggregate_appendix.py` | `eval_results/table_a12_two_entity_utmos/` | §2: `scripts/spanfix/utmos_multi_now.py` |
+| Listener demographics (not in the paper) | — | `human_eval/results/demographics_aggregate.txt` | — |
+| Listener–ASR disagreements (Appendix H) | `aggregate_failure_cases.py` | `human_eval/results/sheet3_item_level.csv`, the Table 1/2 judge files | — |
+| Six-language same-surface test (not in the paper; its JA and EN pairs feed Table A2) | `aggregate_appendix.py` | `eval_results/supp_six_language/` | §3: `scripts/projection/eval_cjk_n300*.py`, `scripts/regen2/appk_*.py` |
+| Table A7, compute (Appendix I) | `aggregate_appendix.py` | `eval_results/appendix_i_compute/` | `scripts/spanfix/c7_param_count.py`, `c6_compute_budget.py` |
+| Table A8 | `aggregate_appendix.py` | `eval_results/table_a8_two_entity_utmos/` | §2: `scripts/spanfix/utmos_multi_now.py` |
 
 ### Known caveats in the shipped files
 
@@ -226,15 +226,15 @@ is safe to delete.
   for pairs 67 and 76, which were regenerated (`REPRODUCE.md` §0.1).
 - **Table 1, speaker similarity and |ΔF0|** are shipped as the summaries the scorers
   wrote ([mean, 1.96·SE, SD]); the per-pair values were not stored and need the audio.
-- **Table A10, Japanese injection success:** the per-row file stores the strict
+- **Six-language same-surface test, Japanese injection success:** the per-row file stores the strict
   containment result (255/300). The paper's 256/300 applies the kana
   normalization `norm_kana` of `scripts/analysis/ja_wordrepl_judge.py`
   (ー expansion, おう = おお, えい = ええ, variant kana), which `scripts/aggregate_appendix.py`
   copies; the only changed item is pair 105.
-- **Table A10, IPA change:** pairs whose BL or INJ IPA transcript is empty are
+- **Six-language same-surface test, IPA change:** pairs whose BL or INJ IPA transcript is empty are
   excluded (KO 10, FR 28, DE 30 pairs; listed in
   `ipa_excluded_empty.json`), as stated in the paper.
-- **Appendix J, compute:** the job-record recount covers jobs up to 2026-10-02
+- **Appendix I, compute:** the job-record recount covers jobs up to 2026-10-02
   (272.86 GPU-hours); a few later regenerations (the Table A2 JA rerun, 8 pairs of
   Table A1, 8 pairs of Table 3) bring it to about 275, the value in the paper.
 - `eval_results/table1_cross_lingual/en_judge.json` records Whisper medium.en

@@ -1,6 +1,6 @@
 """Aggregate the appendix tables A1, A2, A3, A5, A6, A10, A11, and A12 and the compute figures.
 
-Reads eval_results/table_a*/ and eval_results/appendix_j_compute/ (one
+Reads eval_results/table_a*/ and eval_results/appendix_i_compute/ (one
 manifest.json per folder names the experiment file each copy came from).
 Every printed value is recomputed from per-pair rows:
 
@@ -28,13 +28,13 @@ Every printed value is recomputed from per-pair rows:
        Whisper transcript contains the target reading after kana
        normalization), and IPA change over the pairs whose BL and INJ IPA
        transcripts are both non-empty.
-  A11  parameter counts (appendix_j_compute/param_count.json, computed from
+  A7   parameter counts (appendix_i_compute/param_count.json, computed from
        the released weights by scripts/spanfix/c7_param_count.py).
   A12  UTMOS of the two-entity sentences: BL, INJ (one) = mean of
        (inj1 + inj2) / 2, INJ (both), and the paired INJ (both) - BL difference
        with 1.96 * SD (ddof=1) / sqrt(n).
-  Compute (Appendix J): GPU-hours and seconds per utterance recounted from the
-       job records (appendix_j_compute/compute_budget.json, written by
+  Compute (Appendix I): GPU-hours and seconds per utterance recounted from the
+       job records (appendix_i_compute/compute_budget.json, written by
        scripts/spanfix/c6_compute_budget.py).
 """
 import ast, importlib.util, json, os, re, unicodedata
@@ -157,10 +157,10 @@ def table_a3():
     print()
 
 
-def table_a11():
-    print("Table A11  parameter counts (TTS rows exclude the codec/vocoder)")
-    rows = load("appendix_j_compute", "param_count.json")["rows"] + \
-        load("appendix_j_compute", "param_count_added_20261114.json")["rows"]
+def table_a7():
+    print("Table A7  parameter counts (TTS rows exclude the codec/vocoder)")
+    rows = load("appendix_i_compute", "param_count.json")["rows"] + \
+        load("appendix_i_compute", "param_count_added_20261114.json")["rows"]
     for r in rows:
         v = r["params"]
         print("  %-34s %15s" % (r.get("row"), "{:,}".format(v) if isinstance(v, int) else v))
@@ -168,8 +168,8 @@ def table_a11():
 
 
 def compute():
-    print("Appendix J  compute (generation behind the paper, recounted from the job records)")
-    g = load("appendix_j_compute", "compute_budget.json")
+    print("Appendix I  compute (generation behind the paper, recounted from the job records)")
+    g = load("appendix_i_compute", "compute_budget.json")
     a, b = g["generation_behind_paper"], g["scoring_jobs_on_paper_speech"]
     print("  %.2f GPU-h for %d utterances, %.2f s per utterance on average; layer sweep %.2f GPU-h (%.1f%%);"
           " scoring %.2f GPU-h" % (a["gpu_h"], a["utterances"], a["mean_sec_per_utt"], a["layer_sweep_gpu_h"],
@@ -273,7 +273,7 @@ def table_a6():
     print()
 
 
-# Kana normalization of the Table A10 JA judge, copied verbatim from
+# Kana normalization of the the six-language same-surface test JA judge, copied verbatim from
 # scripts/analysis/ja_wordrepl_judge.py (norm_kana): kana unification, ー expansion,
 # おう = おお, えい = ええ, and variant kana.
 VOWEL = {}
@@ -305,18 +305,18 @@ def norm_kana(s):
     return s
 
 
-def table_a10():
-    print("Table A10  six-language same-surface test (injection success %, IPA change %)")
+def six_language():
+    print("Six-language same-surface test, not in the paper (injection success %, IPA change %)")
     succ = {}
     for lang in ("en", "zh"):
-        rows = load("table_a10_six_language", lang + "_injection_judge.json")["rows"]
+        rows = load("supp_six_language", lang + "_injection_judge.json")["rows"]
         k = sum(1 for r in rows if (r["inj_lp_tgt"] - r["inj_lp_src"]) - (r["bl_lp_tgt"] - r["bl_lp_src"]) > 0)
         succ[lang] = fmt_rate(k, len(rows))
-    rows = load("table_a10_six_language", "ja_injection_furigana.json")["rows"]
+    rows = load("supp_six_language", "ja_injection_furigana.json")["rows"]
     k = sum(1 for r in rows if norm_kana(r["word_b"]) in norm_kana(r["oeoi_tr"]))
     succ["ja"] = fmt_rate(k, len(rows))
     for lang in ("en", "ja", "zh", "ko", "fr", "de"):
-        pp = load("table_a10_six_language", "ipa_%s.json" % lang)["per_pair"]
+        pp = load("supp_six_language", "ipa_%s.json" % lang)["per_pair"]
         used = [q for q in pp if (q.get("bl_ipa") or "").strip() and (q.get("inj_ipa") or "").strip()]
         k = sum(1 for q in used if q["ipa_changed"])
         print("  %-3s injection success %-14s IPA change %.2f  (n=%d)" % (
@@ -324,11 +324,11 @@ def table_a10():
     print()
 
 
-def table_a12():
-    print("Table A12  UTMOS of the two-entity sentences (BL, INJ one, INJ both, INJ both - BL)")
+def table_a8():
+    print("Table A8  UTMOS of the two-entity sentences (BL, INJ one, INJ both, INJ both - BL)")
     man = json.load(open(os.path.join(EV, "table3_cross_arch", "manifest.json")))
     for e in man["rows"]:
-        s = load("table_a12_two_entity_utmos", e["key"] + ".json")["scores"]
+        s = load("table_a8_two_entity_utmos", e["key"] + ".json")["scores"]
         keys = sorted(s["bl"])
         n = len(keys)
         bl = sum(s["bl"][k] for k in keys) / n
@@ -341,5 +341,5 @@ def table_a12():
 
 
 if __name__ == "__main__":
-    for fn in (table_a1, table_a2, table_a3, table_a5, table_a6, table_a10, table_a11, table_a12, compute):
+    for fn in (table_a1, table_a2, table_a3, table_a5, table_a6, six_language, table_a7, table_a8, compute):
         fn()

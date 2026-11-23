@@ -84,7 +84,7 @@ shipped verbatim as the two text files above.
 `results/primary_analysis.txt` computes this agreement against the judge JSONs
 in `eval_results/`, which is what `analyze_preference_primary.py` reads.
 `scripts/aggregate_failure_cases.py` repeats the join on the released files and
-prints the eight disagreements of Table A9.
+prints the eight listener–ASR disagreements of Appendix H.
 
 The `auto_inj_says_target` column of `sheet3_item_level.csv` holds the same
 verdicts. Until 2026-11-14 it carried, for two EN items (0047 Delhi, 0056

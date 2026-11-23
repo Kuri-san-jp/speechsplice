@@ -71,42 +71,42 @@ Table A5,Text Hint,T5Gemma-TTS,JA,267,text_hint,43
 Table A5,Text Hint,T5Gemma-TTS,JA,275,text_hint,43
 Table A5,Text Hint,T5Gemma-TTS,JA,277,text_hint,43
 Table A5,Text Hint,T5Gemma-TTS,JA,296,text_hint,43
-Table A10,-,T5Gemma-TTS,EN,23,bl;inj,44
-Table A10,-,T5Gemma-TTS,ZH,104,bl;inj,43
-Table A10,-,T5Gemma-TTS,ZH,150,bl;inj,44
-Table A10,-,T5Gemma-TTS,ZH,200,bl;inj,44
-Table A10,-,T5Gemma-TTS,ZH,220,bl;inj,43
-Table A10,-,T5Gemma-TTS,ZH,232,bl;inj,43
-Table A10,-,T5Gemma-TTS,KO,57,bl;inj,43
-Table A10,-,T5Gemma-TTS,KO,70,bl;inj,43
-Table A10,-,T5Gemma-TTS,KO,94,bl;inj,43
-Table A10,-,T5Gemma-TTS,KO,126,bl;inj,43
-Table A10,-,T5Gemma-TTS,KO,129,bl;inj,43
-Table A10,-,T5Gemma-TTS,KO,205,bl;inj,43
-Table A10,-,T5Gemma-TTS,KO,298,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,0,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,1,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,2,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,56,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,69,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,114,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,135,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,136,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,137,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,138,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,139,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,140,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,214,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,225,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,226,bl;inj,43
-Table A10,-,T5Gemma-TTS,FR,227,bl;inj,43
-Table A10,-,T5Gemma-TTS,DE,54,bl;inj,43
-Table A10,-,T5Gemma-TTS,DE,55,bl;inj,43
-Table A10,-,T5Gemma-TTS,DE,81,bl;inj,43
-Table A10,-,T5Gemma-TTS,DE,82,bl;inj,43
-Table A10,-,T5Gemma-TTS,DE,83,bl;inj,43
-Table A10,-,T5Gemma-TTS,DE,90,bl;inj,43
-Table A10,-,T5Gemma-TTS,DE,91,bl;inj,43
-Table A10,-,T5Gemma-TTS,DE,92,bl;inj,43
-Table A10,-,T5Gemma-TTS,DE,228,bl;inj,43
-Table A10,-,T5Gemma-TTS,DE,229,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,EN,23,bl;inj,44
+Six-language same-surface test,-,T5Gemma-TTS,ZH,104,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,ZH,150,bl;inj,44
+Six-language same-surface test,-,T5Gemma-TTS,ZH,200,bl;inj,44
+Six-language same-surface test,-,T5Gemma-TTS,ZH,220,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,ZH,232,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,KO,57,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,KO,70,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,KO,94,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,KO,126,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,KO,129,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,KO,205,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,KO,298,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,0,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,1,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,2,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,56,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,69,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,114,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,135,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,136,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,137,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,138,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,139,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,140,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,214,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,225,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,226,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,FR,227,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,DE,54,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,DE,55,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,DE,81,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,DE,82,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,DE,83,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,DE,90,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,DE,91,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,DE,92,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,DE,228,bl;inj,43
+Six-language same-surface test,-,T5Gemma-TTS,DE,229,bl;inj,43

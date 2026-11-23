@@ -29,7 +29,7 @@ source scripts/env.sh                       # HF_HOME, offline mode, TORCH_HOME,
 ```
 
 **Hardware.** Every utterance of the paper was synthesized on one NVIDIA
-A100-PCIE-40GB (about 275 GPU-hours; Appendix J), except the single-entity
+A100-PCIE-40GB (about 275 GPU-hours; Appendix I), except the single-entity
 Irodori-TTS runs of Table 3 (replacement point and layer sweep), which were rerun on
 one NVIDIA H100 80GB on 2026-11-15 after a fix to the sweep script (README, notes). Most systems sample during synthesis,
 and SpeechT5 applies dropout at inference, so on a different GPU the audio and the
@@ -70,9 +70,9 @@ rebuilds them from the original corpora and checks their MD5 against the files u
 | `eval_results/_natural_refs_norm/zh_natural_bznsyp_norm.wav` | Databaker (BZNSYP), 44.1 kHz mono | Table 1 ZH, Table 3 Llasa ZH |
 | `eval_results/_natural_refs_norm/ja_natural_norm.wav` | JSUT `BASIC5000_0079`, 44.1 kHz mono | Table A5; Table 3 Qwen3 JA |
 | `eval_results/_natural_refs_norm/zh_natural_norm.wav` | FLEURS `cmn_hans_cn`, 44.1 kHz mono | Table 3 Qwen3 ZH |
-| `eval_results/subjective_eval_jsut_audio/000_GT_BASIC5000_0011.wav` | JSUT `BASIC5000_0011` | Table 1 JA, Table A3, Table A10 EN/FR/DE/KO, two-entity T5Gemma-TTS |
+| `eval_results/subjective_eval_jsut_audio/000_GT_BASIC5000_0011.wav` | JSUT `BASIC5000_0011` | Table 1 JA, Table A3, the six-language same-surface test EN/FR/DE/KO, two-entity T5Gemma-TTS |
 
-T5Gemma-TTS in Table 3 (single entity), Table A1, Table A2, and Table A10 JA/ZH is
+T5Gemma-TTS in Table 3 (single entity), Table A1, Table A2, and the six-language same-surface test JA/ZH is
 zero-shot (no prompt). When a T5Gemma-TTS command gives no `--reference_text`, the prompt
 transcript is produced by Whisper large-v3-turbo. Two details matter for an exact rerun:
 
@@ -121,7 +121,7 @@ python3 scripts/analysis/provenance_table2_duration.py
 python3 scripts/spanfix/cpuprop_cer_utmos_spk_recheck.py      # UTMOS p values and the Table A6 CER cells
 ```
 
-## 2. Table 3 (17 conditions) and Table A12
+## 2. Table 3 (17 conditions) and Table A8
 
 Depth arguments: T5Gemma-TTS `--inject_layer k` and the decoder-only `--layer k` /
 `--injection_layer k` are 0-based (l* = k + 1); the SpeechT5, LongCat-AudioDiT,
@@ -222,7 +222,7 @@ python3 scripts/analysis/rejudge_zh_multientity_pinyin.py --scores /mnt/eval_res
 #   seed-43/44 regeneration of the T5Gemma-TTS EN pairs listed in configs/pair_seeds.csv
 python3 scripts/regen2/regen_multientity_t5gemma_seed.py && python3 scripts/regen2/apply_regen2_multientity.py --apply
 python3 scripts/regen2/regen_multientity_t5gemma_seed.py --campaign thankyou && python3 scripts/regen2/apply_regen2_multientity.py --apply --campaign thankyou
-#   Table A12: UTMOS22 of every two-entity clip
+#   Table A8: UTMOS22 of every two-entity clip
 python3 scripts/spanfix/utmos_multi_now.py
 ```
 
@@ -237,10 +237,10 @@ python3 scripts/projection/eval_crossattn_entity_dtw.py --lang zh --cross_cultur
 #   8 pairs regenerated after the span fix: scripts/spanfix/spanfix_appB_en_{gen,collect}.py,
 #   scripts/spanfix/appB_jazh_{gen,collect}.py, scripts/regen2/g3_{regen_crossattn_pairs,merge_crossattn}.py
 
-# Table A2 (phoneme-level mask; splice of Eq. 1; JA pairs = the Table A10 JA pairs)
+# Table A2 (phoneme-level mask; splice of Eq. 1; JA pairs = the six-language same-surface test JA pairs)
 python3 scripts/spanfix/appc_en_gen.py --seed 42 --part 0   # parts 0-5, then seed 43/44 for the pairs in pair_seeds.csv
 python3 scripts/spanfix/appc_en_aggregate.py
-python3 scripts/spanfix/appc_ja_span_check.py               # builds the JA pair file from the Table A10 JA run
+python3 scripts/spanfix/appc_ja_span_check.py               # builds the JA pair file from the six-language same-surface test JA run
 python3 scripts/spanfix/appc_ja_gen.py --seed 42 --part 0   # parts 0-5
 python3 scripts/spanfix/appc_ja_aggregate.py
 #   (both wrap scripts/projection/eval_crossattn_entity_per.py --lang {en,ja} --n 300)
@@ -266,7 +266,7 @@ python3 scripts/regen2/appg_vc_transcribe.py && python3 scripts/regen2/appg_vc_s
 
 # Table A6 (full-sentence CER): computed by scripts/spanfix/cpuprop_cer_utmos_spk_recheck.py (section 1)
 
-# Table A10 (six-language same-surface test)
+# Six-language same-surface test (not in the paper; its JA and EN pairs feed Table A2)
 python3 scripts/projection/eval_utmos_speaker_fixed.py --lang en --align splice \
   --reference_text 木曽川は、しばしば日本のライン川と呼ばれている。 --output_dir eval_results/utmos_speaker_fixed_en_n300_splice   # fr, de, ko likewise
 python3 scripts/projection/eval_cjk_n300.py --lang ja --output_dir eval_results/cjk_n300_rewav --save_wavs
@@ -278,10 +278,10 @@ python3 scripts/regen2/appk_enjudge_run_gpu.py --stage_dir eval_results/_appk_en
 python3 scripts/regen2/appk_run_ipa.py --langs en,fr,de,ko,ja,zh --out_dir eval_results/_appk_redo \
   --silent_scan eval_results/_appk_redo/silent_scan_n300.json                         # IPA change
 
-# Table A11 and the compute figures of Appendix J (CPU)
+# Table A7 and the compute figures of Appendix I (CPU)
 python3 scripts/spanfix/c7_param_count.py
 python3 scripts/spanfix/c6_compute_budget.py    # needs the Slurm accounting of the runs
 ```
 
-The JA kana normalization of Table A10 is `norm_kana` in
+The JA kana normalization of the six-language same-surface test is `norm_kana` in
 `scripts/analysis/ja_wordrepl_judge.py` (also used by `scripts/aggregate_appendix.py`).

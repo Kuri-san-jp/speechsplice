@@ -43,4 +43,4 @@ usage:
   table_a1_a2_a10_ja_zh: {prompt: null, note: "zero-shot"}
   table_a3:         {prompt: jsut_basic5000_0011, text: ""}
   table_a5:         {prompt: ja_natural_norm, text: ""}
-  table_a10_en_fr_de_ko: {prompt: jsut_basic5000_0011, text: "木曽川は、しばしば日本のライン川と呼ばれている。"}
+  six_language_en_fr_de_ko: {prompt: jsut_basic5000_0011, text: "木曽川は、しばしば日本のライン川と呼ばれている。"}

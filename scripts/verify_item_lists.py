@@ -1,8 +1,8 @@
 """Check that the item lists in data/ rebuild the items the shipped outputs were run on (CPU, stdlib).
 
-  Table A10 JA   300 (kanji, katakana) pairs sampled from data/entities_10000.jsonl with
+  Six-language test JA   300 (kanji, katakana) pairs sampled from data/entities_10000.jsonl with
                  random.Random(42), as scripts/projection/eval_cjk_n300.py:load_ja_pairs
-  Table A10 ZH   300 polyphone context pairs from data/zh_polyphones_v2.json, as
+  Six-language test ZH   300 polyphone context pairs from data/zh_polyphones_v2.json, as
                  scripts/projection/eval_cjk_n300_zhv2.py:load_zh_pairs (characters compared)
   Table 3        the two-entity sentence sets (data/{en,ja}_multientity_300.py,
                  data/zh_multientity_300_v2.py): word pairs and template of every sentence
@@ -43,13 +43,13 @@ all_ok = True
 print("Item lists vs. the items in the shipped outputs:")
 
 ja = function_from(gen, "load_ja_pairs", env)(300)
-out = {r["pair_idx"]: r for r in rows("table_a10_six_language", "ja_injection_furigana.json")}
-all_ok &= report("Table A10 JA (entities_10000.jsonl)",
+out = {r["pair_idx"]: r for r in rows("supp_six_language", "ja_injection_furigana.json")}
+all_ok &= report("the six-language same-surface test JA (entities_10000.jsonl)",
                  sum((p["word_a"], p["word_b"]) == (out[i]["word_a"], out[i]["word_b"]) for i, p in enumerate(ja)), 300)
 
 zh = function_from(gen, "load_zh_pairs", env)(300)
-out = {r["pair_idx"]: r for r in rows("table_a10_six_language", "zh_injection_judge.json")}
-all_ok &= report("Table A10 ZH (zh_polyphones_v2.json)", sum(p["word_a"] == out[i]["char"] for i, p in enumerate(zh)), 300)
+out = {r["pair_idx"]: r for r in rows("supp_six_language", "zh_injection_judge.json")}
+all_ok &= report("the six-language same-surface test ZH (zh_polyphones_v2.json)", sum(p["word_a"] == out[i]["char"] for i, p in enumerate(zh)), 300)
 
 for lang, mod in (("en", "en_multientity_300"), ("ja", "ja_multientity_300"), ("zh", "zh_multientity_300_v2")):
     built = {p["pair_idx"]: p for p in __import__(mod).build_pairs()}

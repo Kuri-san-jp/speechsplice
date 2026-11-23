@@ -1,4 +1,4 @@
-"""Table A9: name items on which the listener majority and the Whisper judgment disagree.
+"""Appendix H: name items on which the listener majority and the Whisper judgment disagree.
 
 Joins the item-level listening counts (human_eval/results/sheet3_item_level.csv) with
 the automatic verdict on the INJ clip of the same pair, as the pre-specified analysis

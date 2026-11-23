@@ -9,7 +9,7 @@
 #   third_party/VoiceCraft        VoiceCraft (also cloned inside docker/Dockerfile.voicecraft) (Table 2)
 #
 # third_party/longcat_audiodit_survey (LongCat-AudioDiT, Table 3), third_party/whisper_pinyin
-# (Table A10, ZH judge) and src/_vendor/t5gemma_tts (T5Gemma-TTS) are shipped in this
+# (ZH judge of the six-language same-surface test) and src/_vendor/t5gemma_tts (T5Gemma-TTS) are shipped in this
 # repository; see NOTICE.
 set -euo pipefail
 cd "$(dirname "$0")/.."

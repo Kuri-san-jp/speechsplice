@@ -1,7 +1,7 @@
 # Participant-Facing Instructions (Verbatim)
 
 This file gives the full text shown to listeners in the two listening studies
-of the paper (Appendix G.6): the **paired comparison test** (Sections 1–4) and the
+of the paper (Appendix G.5): the **paired comparison test** (Sections 1–4) and the
 **naturalness MOS study** (Sections 5–7), in English, Japanese, and Chinese.
 
 - All participant-facing strings are reproduced verbatim from the deployed web
