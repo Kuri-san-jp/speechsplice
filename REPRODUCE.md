@@ -222,7 +222,7 @@ python3 scripts/analysis/rejudge_zh_multientity_pinyin.py --scores /mnt/eval_res
 #   seed-43/44 regeneration of the T5Gemma-TTS EN pairs listed in configs/pair_seeds.csv
 python3 scripts/regen2/regen_multientity_t5gemma_seed.py && python3 scripts/regen2/apply_regen2_multientity.py --apply
 python3 scripts/regen2/regen_multientity_t5gemma_seed.py --campaign thankyou && python3 scripts/regen2/apply_regen2_multientity.py --apply --campaign thankyou
-#   Table A8: UTMOS22 of every two-entity clip
+#   Table A8: UTMOS of every two-entity clip (UTMOS22 strong checkpoint)
 python3 scripts/spanfix/utmos_multi_now.py
 ```
 

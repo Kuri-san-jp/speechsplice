@@ -62,7 +62,7 @@ independently of our method.
    Table 3, Table A1, and Table A5 use these.
 3. **Two-entity sentence sets: 300 sentences per language** with two entity slots
    each (`data/{en,ja}_multientity_300.py`, `data/zh_multientity_300_v2.py`), used by the
-   two-entity columns of Table 3 and by Table A8.
+   multi-entity test (Sections 4.2 and 5.5): the two-entity columns of Table 3 and Table A8.
 4. **Six-language heteronym / polyphone sets**: EN heteronyms (500 pairs), ZH
    polyphones, KO hanja polyphones, FR and DE heteronyms (300 pairs each). With
    the first two sets above, 3,500 pairs in total across 11 sets, all
